@@ -1,0 +1,112 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/inventory/placement_scene.gd" id="Scene"]
+[ext_resource type="Script" path="res://scripts/inventory/item_target.gd" id="Part"]
+[ext_resource type="Resource" path="res://assets/inventory/items/valve_wheel.tres" id="WheelItem"]
+[ext_resource type="Resource" path="res://assets/inventory/items/lever_handle.tres" id="LeverItem"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/valve_wheel.tscn" id="Wheel"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/lever_handle.tscn" id="Lever"]
+[sub_resource type="StandardMaterial3D" id="PanelMaterial"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.24, 0.28, 0.25, 1)
+texture_filter = 0
+[sub_resource type="StandardMaterial3D" id="Metal"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.55, 0.54, 0.46, 1)
+texture_filter = 0
+[sub_resource type="BoxMesh" id="Panel"]
+size = Vector3(1.4, 1.2, 0.12)
+[sub_resource type="BoxMesh" id="Socket"]
+size = Vector3(0.15, 0.18, 0.08)
+[sub_resource type="BoxShape3D" id="PanelCollision"]
+size = Vector3(1.4, 1.2, 0.12)
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.28, 0.3, 0.28)
+
+[node name="PlacementAssemblage" type="Marker3D"]
+script = ExtResource("Scene")
+interaction_label = "EXAMINER LE MECANISME"
+interaction_offset = Vector3(0, 0.75, 0.1)
+once = true
+
+[node name="Modele" type="Node3D" parent="."]
+[node name="Panneau" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 0.65, 0)
+mesh = SubResource("Panel")
+material_override = SubResource("PanelMaterial")
+[node name="FixationRoue" type="MeshInstance3D" parent="Modele"]
+position = Vector3(-0.35, 0.8, 0.1)
+mesh = SubResource("Socket")
+material_override = SubResource("Metal")
+[node name="FixationLevier" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0.35, 0.8, 0.1)
+mesh = SubResource("Socket")
+material_override = SubResource("Metal")
+[node name="Collision" type="StaticBody3D" parent="Modele"]
+collision_mask = 0
+[node name="Volume" type="CollisionShape3D" parent="Modele/Collision"]
+position = Vector3(0, 0.65, 0)
+shape = SubResource("PanelCollision")
+
+[node name="Emplacements" type="Node3D" parent="."]
+[node name="Roue" type="Marker3D" parent="Emplacements"]
+script = ExtResource("Part")
+required_item = ExtResource("WheelItem")
+visual_path = NodePath("../../Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+selection_area_path = NodePath("ZoneSelection")
+selection_label = "FIXATION GAUCHE"
+highlight_paths = Array[NodePath]([NodePath("../../Modele/FixationRoue")])
+[node name="PointInsertion" type="Marker3D" parent="Emplacements/Roue"]
+position = Vector3(-0.35, 0.8, 0.2)
+[node name="PieceInstallee" type="Node3D" parent="Emplacements/Roue/PointInsertion"]
+[node name="Modele" parent="Emplacements/Roue/PointInsertion/PieceInstallee" instance=ExtResource("Wheel")]
+[node name="DepartPiece" type="Marker3D" parent="Emplacements/Roue"]
+position = Vector3(-0.35, 0.9, 0.85)
+[node name="ZoneSelection" type="Area3D" parent="Emplacements/Roue"]
+position = Vector3(-0.35, 0.8, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="Emplacements/Roue/ZoneSelection"]
+shape = SubResource("Selection")
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="Emplacements/Roue"]
+
+[node name="Levier" type="Marker3D" parent="Emplacements"]
+script = ExtResource("Part")
+required_item = ExtResource("LeverItem")
+visual_path = NodePath("../../Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+selection_area_path = NodePath("ZoneSelection")
+selection_label = "FIXATION DROITE"
+highlight_paths = Array[NodePath]([NodePath("../../Modele/FixationLevier")])
+[node name="PointInsertion" type="Marker3D" parent="Emplacements/Levier"]
+position = Vector3(0.35, 0.8, 0.2)
+[node name="PieceInstallee" type="Node3D" parent="Emplacements/Levier/PointInsertion"]
+[node name="Modele" parent="Emplacements/Levier/PointInsertion/PieceInstallee" instance=ExtResource("Lever")]
+[node name="DepartPiece" type="Marker3D" parent="Emplacements/Levier"]
+position = Vector3(0.35, 0.9, 0.85)
+[node name="ZoneSelection" type="Area3D" parent="Emplacements/Levier"]
+position = Vector3(0.35, 0.8, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="Emplacements/Levier/ZoneSelection"]
+shape = SubResource("Selection")
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="Emplacements/Levier"]
+
+[node name="CameraFixe" type="Camera3D" parent="."]
+position = Vector3(0, 1.25, 2)
+rotation = Vector3(-0.3, 0, 0)
+fov = 45.0
+near = 0.05
+far = 55.0

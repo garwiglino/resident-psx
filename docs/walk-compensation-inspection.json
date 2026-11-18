@@ -1,0 +1,1122 @@
+{
+	"backward": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 10.54,
+				"DEF-spine.001": 4.15,
+				"DEF-spine.002": -4.75,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.006681, 0.329277, -0.005264)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 10.54,
+				"DEF-spine.001": 4.15,
+				"DEF-spine.002": -4.75,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.006681, 0.329277, -0.005264)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": -3.15,
+				"DEF-hand.R": -3.35,
+				"DEF-spine": 16.62,
+				"DEF-spine.001": 16.37,
+				"DEF-spine.002": 6.61,
+				"DEF-spine.003": -3.73,
+				"chest_over_pelvis": "(-0.000094, 0.329811, -0.002676)"
+			},
+			"before": {
+				"DEF-hand.L": -3.15,
+				"DEF-hand.R": -3.35,
+				"DEF-spine": 16.62,
+				"DEF-spine.001": 16.37,
+				"DEF-spine.002": 6.61,
+				"DEF-spine.003": -3.73,
+				"chest_over_pelvis": "(-0.000094, 0.329811, -0.002676)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": -1.59,
+				"DEF-hand.R": -1.74,
+				"DEF-spine": 16.11,
+				"DEF-spine.001": 16.14,
+				"DEF-spine.002": 6.74,
+				"DEF-spine.003": -2.13,
+				"chest_over_pelvis": "(-0.000135, 0.329916, 0.002714)"
+			},
+			"before": {
+				"DEF-hand.L": -1.59,
+				"DEF-hand.R": -1.74,
+				"DEF-spine": 16.11,
+				"DEF-spine.001": 16.14,
+				"DEF-spine.002": 6.74,
+				"DEF-spine.003": -2.13,
+				"chest_over_pelvis": "(-0.000135, 0.329916, 0.002714)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": -10.47,
+				"DEF-hand.R": -7.89,
+				"DEF-spine": 20.38,
+				"DEF-spine.001": 20.39,
+				"DEF-spine.002": 5.99,
+				"DEF-spine.003": -8.97,
+				"chest_over_pelvis": "(0.004519, 0.329311, 0.00933)"
+			},
+			"before": {
+				"DEF-hand.L": -10.47,
+				"DEF-hand.R": -7.89,
+				"DEF-spine": 20.38,
+				"DEF-spine.001": 20.39,
+				"DEF-spine.002": 5.99,
+				"DEF-spine.003": -8.97,
+				"chest_over_pelvis": "(0.004519, 0.329311, 0.00933)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": -5.12,
+				"DEF-hand.R": -5.74,
+				"DEF-spine": 13.89,
+				"DEF-spine.001": 13.93,
+				"DEF-spine.002": 3.94,
+				"DEF-spine.003": -5.71,
+				"chest_over_pelvis": "(0.001672, 0.32981, -0.005029)"
+			},
+			"before": {
+				"DEF-hand.L": -5.12,
+				"DEF-hand.R": -5.74,
+				"DEF-spine": 13.89,
+				"DEF-spine.001": 13.93,
+				"DEF-spine.002": 3.94,
+				"DEF-spine.003": -5.71,
+				"chest_over_pelvis": "(0.001672, 0.32981, -0.005029)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"backward_left": [
+		{
+			"after": {
+				"DEF-hand.L": 2.94,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -6.65,
+				"DEF-spine.001": -6.62,
+				"DEF-spine.002": -2.37,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.001081, 0.327651, 0.034919)"
+			},
+			"before": {
+				"DEF-hand.L": 2.94,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -6.65,
+				"DEF-spine.001": -6.62,
+				"DEF-spine.002": -2.37,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.001081, 0.327651, 0.034919)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 10.35,
+				"DEF-hand.R": 7.7,
+				"DEF-spine": -22.44,
+				"DEF-spine.001": -22.49,
+				"DEF-spine.002": -6.97,
+				"DEF-spine.003": 6.84,
+				"chest_over_pelvis": "(0.006355, 0.326094, 0.046088)"
+			},
+			"before": {
+				"DEF-hand.L": 10.35,
+				"DEF-hand.R": 7.7,
+				"DEF-spine": -22.44,
+				"DEF-spine.001": -22.49,
+				"DEF-spine.002": -6.97,
+				"DEF-spine.003": 6.84,
+				"chest_over_pelvis": "(0.006355, 0.326094, 0.046088)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 5.04,
+				"DEF-hand.R": 3.52,
+				"DEF-spine": -3.46,
+				"DEF-spine.001": -3.36,
+				"DEF-spine.002": 0.89,
+				"DEF-spine.003": 2.32,
+				"chest_over_pelvis": "(0.004412, 0.32755, 0.036472)"
+			},
+			"before": {
+				"DEF-hand.L": 5.04,
+				"DEF-hand.R": 3.52,
+				"DEF-spine": -3.46,
+				"DEF-spine.001": -3.36,
+				"DEF-spine.002": 0.89,
+				"DEF-spine.003": 2.32,
+				"chest_over_pelvis": "(0.004412, 0.32755, 0.036472)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 13.08,
+				"DEF-hand.R": 12.19,
+				"DEF-spine": -7.78,
+				"DEF-spine.001": -7.63,
+				"DEF-spine.002": 2.79,
+				"DEF-spine.003": 10.43,
+				"chest_over_pelvis": "(0.006489, 0.325356, 0.041584)"
+			},
+			"before": {
+				"DEF-hand.L": 13.08,
+				"DEF-hand.R": 12.19,
+				"DEF-spine": -7.78,
+				"DEF-spine.001": -7.63,
+				"DEF-spine.002": 2.79,
+				"DEF-spine.003": 10.43,
+				"chest_over_pelvis": "(0.006489, 0.325356, 0.041584)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 2.33,
+				"DEF-hand.R": 0.97,
+				"DEF-spine": -7.93,
+				"DEF-spine.001": -7.82,
+				"DEF-spine.002": -2.74,
+				"DEF-spine.003": -0.25,
+				"chest_over_pelvis": "(0.000949, 0.326784, 0.042618)"
+			},
+			"before": {
+				"DEF-hand.L": 2.33,
+				"DEF-hand.R": 0.97,
+				"DEF-spine": -7.93,
+				"DEF-spine.001": -7.82,
+				"DEF-spine.002": -2.74,
+				"DEF-spine.003": -0.25,
+				"chest_over_pelvis": "(0.000949, 0.326784, 0.042618)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"backward_right": [
+		{
+			"after": {
+				"DEF-hand.L": 2.5,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 41.31,
+				"DEF-spine.001": 41.03,
+				"DEF-spine.002": 8.99,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.019453, 0.327594, 0.032167)"
+			},
+			"before": {
+				"DEF-hand.L": 2.5,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 41.31,
+				"DEF-spine.001": 41.03,
+				"DEF-spine.002": 8.99,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.019453, 0.327594, 0.032167)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 4.38,
+				"DEF-hand.R": 3.16,
+				"DEF-spine": 29.79,
+				"DEF-spine.001": 20.87,
+				"DEF-spine.002": 5.74,
+				"DEF-spine.003": 2.01,
+				"chest_over_pelvis": "(0.009323, 0.327589, 0.034772)"
+			},
+			"before": {
+				"DEF-hand.L": 4.38,
+				"DEF-hand.R": 3.16,
+				"DEF-spine": 29.79,
+				"DEF-spine.001": 20.87,
+				"DEF-spine.002": 5.74,
+				"DEF-spine.003": 2.01,
+				"chest_over_pelvis": "(0.009323, 0.327589, 0.034772)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 1.63,
+				"DEF-hand.R": -0.04,
+				"DEF-spine": 39.8,
+				"DEF-spine.001": 27.75,
+				"DEF-spine.002": 8.35,
+				"DEF-spine.003": -0.84,
+				"chest_over_pelvis": "(0.019494, 0.327117, 0.035724)"
+			},
+			"before": {
+				"DEF-hand.L": 1.63,
+				"DEF-hand.R": -0.04,
+				"DEF-spine": 39.8,
+				"DEF-spine.001": 27.75,
+				"DEF-spine.002": 8.35,
+				"DEF-spine.003": -0.84,
+				"chest_over_pelvis": "(0.019494, 0.327117, 0.035724)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 6.63,
+				"DEF-hand.R": 7.14,
+				"DEF-spine": 31.39,
+				"DEF-spine.001": 22.18,
+				"DEF-spine.002": 7.33,
+				"DEF-spine.003": 4.43,
+				"chest_over_pelvis": "(0.021682, 0.326938, 0.028921)"
+			},
+			"before": {
+				"DEF-hand.L": 6.63,
+				"DEF-hand.R": 7.14,
+				"DEF-spine": 31.39,
+				"DEF-spine.001": 22.18,
+				"DEF-spine.002": 7.33,
+				"DEF-spine.003": 4.43,
+				"chest_over_pelvis": "(0.021682, 0.326938, 0.028921)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": -2.25,
+				"DEF-hand.R": -3.41,
+				"DEF-spine": 34.4,
+				"DEF-spine.001": 22.75,
+				"DEF-spine.002": 3.96,
+				"DEF-spine.003": -4.4,
+				"chest_over_pelvis": "(0.017419, 0.326731, 0.039105)"
+			},
+			"before": {
+				"DEF-hand.L": -2.25,
+				"DEF-hand.R": -3.41,
+				"DEF-spine": 34.4,
+				"DEF-spine.001": 22.75,
+				"DEF-spine.002": 3.96,
+				"DEF-spine.003": -4.4,
+				"chest_over_pelvis": "(0.017419, 0.326731, 0.039105)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"forward_left": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 20.31,
+				"DEF-spine.001": 20.19,
+				"DEF-spine.002": 4.63,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.01107, 0.328431, 0.03011)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 20.31,
+				"DEF-spine.001": 20.19,
+				"DEF-spine.002": 4.63,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.01107, 0.328431, 0.03011)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": -1.65,
+				"DEF-hand.R": -4.72,
+				"DEF-spine": 34.86,
+				"DEF-spine.001": 23.77,
+				"DEF-spine.002": 5.62,
+				"DEF-spine.003": -2.9,
+				"chest_over_pelvis": "(-0.019315, 0.328436, 0.027677)"
+			},
+			"before": {
+				"DEF-hand.L": -1.65,
+				"DEF-hand.R": -4.72,
+				"DEF-spine": 34.86,
+				"DEF-spine.001": 23.77,
+				"DEF-spine.002": 5.62,
+				"DEF-spine.003": -2.9,
+				"chest_over_pelvis": "(-0.019315, 0.328436, 0.027677)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": -0.44,
+				"DEF-hand.R": 0.22,
+				"DEF-spine": 17.88,
+				"DEF-spine.001": 10.41,
+				"DEF-spine.002": -1.28,
+				"DEF-spine.003": -0.2,
+				"chest_over_pelvis": "(-0.009619, 0.328091, 0.026604)"
+			},
+			"before": {
+				"DEF-hand.L": -0.44,
+				"DEF-hand.R": 0.22,
+				"DEF-spine": 17.88,
+				"DEF-spine.001": 10.41,
+				"DEF-spine.002": -1.28,
+				"DEF-spine.003": -0.2,
+				"chest_over_pelvis": "(-0.009619, 0.328091, 0.026604)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": -2.19,
+				"DEF-hand.R": -1.5,
+				"DEF-spine": 24.98,
+				"DEF-spine.001": 15.74,
+				"DEF-spine.002": 1.17,
+				"DEF-spine.003": -2.26,
+				"chest_over_pelvis": "(-0.010614, 0.327917, 0.031679)"
+			},
+			"before": {
+				"DEF-hand.L": -2.19,
+				"DEF-hand.R": -1.5,
+				"DEF-spine": 24.98,
+				"DEF-spine.001": 15.74,
+				"DEF-spine.002": 1.17,
+				"DEF-spine.003": -2.26,
+				"chest_over_pelvis": "(-0.010614, 0.327917, 0.031679)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": -4.59,
+				"DEF-hand.R": -1.93,
+				"DEF-spine": 14.36,
+				"DEF-spine.001": 7.0,
+				"DEF-spine.002": -4.7,
+				"DEF-spine.003": -3.4,
+				"chest_over_pelvis": "(-0.01102, 0.328095, 0.021959)"
+			},
+			"before": {
+				"DEF-hand.L": -4.59,
+				"DEF-hand.R": -1.93,
+				"DEF-spine": 14.36,
+				"DEF-spine.001": 7.0,
+				"DEF-spine.002": -4.7,
+				"DEF-spine.003": -3.4,
+				"chest_over_pelvis": "(-0.01102, 0.328095, 0.021959)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"forward_right": [
+		{
+			"after": {
+				"DEF-hand.L": 8.1,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -23.77,
+				"DEF-spine.001": -23.66,
+				"DEF-spine.002": -20.41,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.001723, 0.328551, 0.029238)"
+			},
+			"before": {
+				"DEF-hand.L": 8.1,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -23.77,
+				"DEF-spine.001": -23.66,
+				"DEF-spine.002": -20.41,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.001723, 0.328551, 0.029238)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 3.68,
+				"DEF-hand.R": -5.27,
+				"DEF-spine": -12.04,
+				"DEF-spine.001": -12.33,
+				"DEF-spine.002": -3.35,
+				"DEF-spine.003": -4.72,
+				"chest_over_pelvis": "(-0.004932, 0.329515, 0.018419)"
+			},
+			"before": {
+				"DEF-hand.L": 3.68,
+				"DEF-hand.R": -5.27,
+				"DEF-spine": -12.04,
+				"DEF-spine.001": -12.33,
+				"DEF-spine.002": -3.35,
+				"DEF-spine.003": -4.72,
+				"chest_over_pelvis": "(-0.004932, 0.329515, 0.018419)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 9.95,
+				"DEF-hand.R": 0.75,
+				"DEF-spine": -21.15,
+				"DEF-spine.001": -20.99,
+				"DEF-spine.002": -2.64,
+				"DEF-spine.003": 0.96,
+				"chest_over_pelvis": "(-0.01098, 0.328441, 0.005846)"
+			},
+			"before": {
+				"DEF-hand.L": 9.95,
+				"DEF-hand.R": 0.75,
+				"DEF-spine": -21.15,
+				"DEF-spine.001": -20.99,
+				"DEF-spine.002": -2.64,
+				"DEF-spine.003": 0.96,
+				"chest_over_pelvis": "(-0.01098, 0.328441, 0.005846)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 3.95,
+				"DEF-hand.R": -3.55,
+				"DEF-spine": -14.25,
+				"DEF-spine.001": -14.09,
+				"DEF-spine.002": -2.31,
+				"DEF-spine.003": -4.13,
+				"chest_over_pelvis": "(-0.027546, 0.327752, 0.003151)"
+			},
+			"before": {
+				"DEF-hand.L": 3.95,
+				"DEF-hand.R": -3.55,
+				"DEF-spine": -14.25,
+				"DEF-spine.001": -14.09,
+				"DEF-spine.002": -2.31,
+				"DEF-spine.003": -4.13,
+				"chest_over_pelvis": "(-0.027546, 0.327752, 0.003151)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 3.0,
+				"DEF-hand.R": -4.17,
+				"DEF-spine": -27.48,
+				"DEF-spine.001": -27.37,
+				"DEF-spine.002": -8.67,
+				"DEF-spine.003": -5.03,
+				"chest_over_pelvis": "(-0.010642, 0.328548, 0.0013)"
+			},
+			"before": {
+				"DEF-hand.L": 3.0,
+				"DEF-hand.R": -4.17,
+				"DEF-spine": -27.48,
+				"DEF-spine.001": -27.37,
+				"DEF-spine.002": -8.67,
+				"DEF-spine.003": -5.03,
+				"chest_over_pelvis": "(-0.010642, 0.328548, 0.0013)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"idle": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 0.0,
+				"DEF-spine.001": 0.0,
+				"DEF-spine.002": 0.0,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.004943, 0.328755, 0.028105)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 0.0,
+				"DEF-spine.001": 0.0,
+				"DEF-spine.002": 0.0,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.004943, 0.328755, 0.028105)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": -0.39,
+				"DEF-hand.R": -0.39,
+				"DEF-spine": 0.12,
+				"DEF-spine.001": 0.13,
+				"DEF-spine.002": 0.07,
+				"DEF-spine.003": -0.08,
+				"chest_over_pelvis": "(0.005294, 0.328811, 0.027357)"
+			},
+			"before": {
+				"DEF-hand.L": -0.39,
+				"DEF-hand.R": -0.39,
+				"DEF-spine": 0.12,
+				"DEF-spine.001": 0.13,
+				"DEF-spine.002": 0.07,
+				"DEF-spine.003": -0.08,
+				"chest_over_pelvis": "(0.005294, 0.328811, 0.027357)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": -0.56,
+				"DEF-hand.R": -0.56,
+				"DEF-spine": 0.42,
+				"DEF-spine.001": 0.42,
+				"DEF-spine.002": 0.29,
+				"DEF-spine.003": 0.02,
+				"chest_over_pelvis": "(0.005546, 0.328701, 0.028621)"
+			},
+			"before": {
+				"DEF-hand.L": -0.56,
+				"DEF-hand.R": -0.56,
+				"DEF-spine": 0.42,
+				"DEF-spine.001": 0.42,
+				"DEF-spine.002": 0.29,
+				"DEF-spine.003": 0.02,
+				"chest_over_pelvis": "(0.005546, 0.328701, 0.028621)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": -0.89,
+				"DEF-hand.R": -0.89,
+				"DEF-spine": -0.1,
+				"DEF-spine.001": -0.11,
+				"DEF-spine.002": -0.18,
+				"DEF-spine.003": -0.21,
+				"chest_over_pelvis": "(0.004635, 0.328717, 0.029019)"
+			},
+			"before": {
+				"DEF-hand.L": -0.89,
+				"DEF-hand.R": -0.89,
+				"DEF-spine": -0.1,
+				"DEF-spine.001": -0.11,
+				"DEF-spine.002": -0.18,
+				"DEF-spine.003": -0.21,
+				"chest_over_pelvis": "(0.004635, 0.328717, 0.029019)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": -0.71,
+				"DEF-hand.R": -0.71,
+				"DEF-spine": -0.1,
+				"DEF-spine.001": -0.11,
+				"DEF-spine.002": 0.01,
+				"DEF-spine.003": 0.31,
+				"chest_over_pelvis": "(0.006341, 0.328736, 0.02869)"
+			},
+			"before": {
+				"DEF-hand.L": -0.71,
+				"DEF-hand.R": -0.71,
+				"DEF-spine": -0.1,
+				"DEF-spine.001": -0.11,
+				"DEF-spine.002": 0.01,
+				"DEF-spine.003": 0.31,
+				"chest_over_pelvis": "(0.006341, 0.328736, 0.02869)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"run": [
+		{
+			"after": {
+				"DEF-hand.L": 55.48,
+				"DEF-hand.R": -5.41,
+				"DEF-spine": 19.08,
+				"DEF-spine.001": 19.57,
+				"DEF-spine.002": 9.26,
+				"DEF-spine.003": 15.47,
+				"chest_over_pelvis": "(-0.014499, 0.324396, -0.058612)"
+			},
+			"before": {
+				"DEF-hand.L": 55.48,
+				"DEF-hand.R": -5.41,
+				"DEF-spine": 19.08,
+				"DEF-spine.001": 19.57,
+				"DEF-spine.002": 9.26,
+				"DEF-spine.003": 15.47,
+				"chest_over_pelvis": "(-0.014499, 0.324396, -0.058612)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 100.67,
+				"DEF-hand.R": 29.12,
+				"DEF-spine": 4.23,
+				"DEF-spine.001": 5.08,
+				"DEF-spine.002": 11.26,
+				"DEF-spine.003": 32.88,
+				"chest_over_pelvis": "(0.008839, 0.324816, -0.055178)"
+			},
+			"before": {
+				"DEF-hand.L": 100.67,
+				"DEF-hand.R": 29.12,
+				"DEF-spine": 4.23,
+				"DEF-spine.001": 5.08,
+				"DEF-spine.002": 11.26,
+				"DEF-spine.003": 32.88,
+				"chest_over_pelvis": "(0.008839, 0.324816, -0.055178)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 61.96,
+				"DEF-hand.R": -11.05,
+				"DEF-spine": 15.69,
+				"DEF-spine.001": 16.04,
+				"DEF-spine.002": 7.93,
+				"DEF-spine.003": 16.31,
+				"chest_over_pelvis": "(-0.009238, 0.325214, -0.055697)"
+			},
+			"before": {
+				"DEF-hand.L": 61.96,
+				"DEF-hand.R": -11.05,
+				"DEF-spine": 15.69,
+				"DEF-spine.001": 16.04,
+				"DEF-spine.002": 7.93,
+				"DEF-spine.003": 16.31,
+				"chest_over_pelvis": "(-0.009238, 0.325214, -0.055697)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 51.95,
+				"DEF-hand.R": -0.85,
+				"DEF-spine": 17.72,
+				"DEF-spine.001": 18.1,
+				"DEF-spine.002": 10.01,
+				"DEF-spine.003": 18.18,
+				"chest_over_pelvis": "(-0.013654, 0.324507, -0.058766)"
+			},
+			"before": {
+				"DEF-hand.L": 51.95,
+				"DEF-hand.R": -0.85,
+				"DEF-spine": 17.72,
+				"DEF-spine.001": 18.1,
+				"DEF-spine.002": 10.01,
+				"DEF-spine.003": 18.18,
+				"chest_over_pelvis": "(-0.013654, 0.324507, -0.058766)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 115.13,
+				"DEF-hand.R": 43.79,
+				"DEF-spine": 7.86,
+				"DEF-spine.001": 7.74,
+				"DEF-spine.002": 20.14,
+				"DEF-spine.003": 46.49,
+				"chest_over_pelvis": "(0.01416, 0.324552, -0.057713)"
+			},
+			"before": {
+				"DEF-hand.L": 115.13,
+				"DEF-hand.R": 43.79,
+				"DEF-spine": 7.86,
+				"DEF-spine.001": 7.74,
+				"DEF-spine.002": 20.14,
+				"DEF-spine.003": 46.49,
+				"chest_over_pelvis": "(0.01416, 0.324552, -0.057713)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"strafe_left": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 10.54,
+				"DEF-spine.001": 10.54,
+				"DEF-spine.002": 4.47,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.005284, 0.329059, -0.007148)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 10.54,
+				"DEF-spine.001": 10.54,
+				"DEF-spine.002": 4.47,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.005284, 0.329059, -0.007148)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 6.13,
+				"DEF-hand.R": 5.03,
+				"DEF-spine": -8.23,
+				"DEF-spine.001": -8.31,
+				"DEF-spine.002": -3.74,
+				"DEF-spine.003": 4.46,
+				"chest_over_pelvis": "(0.012296, 0.327448, 0.027069)"
+			},
+			"before": {
+				"DEF-hand.L": 6.13,
+				"DEF-hand.R": 5.03,
+				"DEF-spine": -8.23,
+				"DEF-spine.001": -8.31,
+				"DEF-spine.002": -3.74,
+				"DEF-spine.003": 4.46,
+				"chest_over_pelvis": "(0.012296, 0.327448, 0.027069)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 6.01,
+				"DEF-hand.R": 6.38,
+				"DEF-spine": 17.89,
+				"DEF-spine.001": 18.0,
+				"DEF-spine.002": 11.43,
+				"DEF-spine.003": 5.9,
+				"chest_over_pelvis": "(0.012298, 0.328271, -0.001151)"
+			},
+			"before": {
+				"DEF-hand.L": 6.01,
+				"DEF-hand.R": 6.38,
+				"DEF-spine": 17.89,
+				"DEF-spine.001": 18.0,
+				"DEF-spine.002": 11.43,
+				"DEF-spine.003": 5.9,
+				"chest_over_pelvis": "(0.012298, 0.328271, -0.001151)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 28.56,
+				"DEF-hand.R": 30.95,
+				"DEF-spine": 58.8,
+				"DEF-spine.001": 59.15,
+				"DEF-spine.002": 46.41,
+				"DEF-spine.003": 31.67,
+				"chest_over_pelvis": "(0.003659, 0.328128, -0.019563)"
+			},
+			"before": {
+				"DEF-hand.L": 28.56,
+				"DEF-hand.R": 30.95,
+				"DEF-spine": 58.8,
+				"DEF-spine.001": 59.15,
+				"DEF-spine.002": 46.41,
+				"DEF-spine.003": 31.67,
+				"chest_over_pelvis": "(0.003659, 0.328128, -0.019563)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 26.47,
+				"DEF-hand.R": 27.68,
+				"DEF-spine": 46.52,
+				"DEF-spine.001": 46.74,
+				"DEF-spine.002": 37.97,
+				"DEF-spine.003": 28.57,
+				"chest_over_pelvis": "(0.014411, 0.327203, -0.019511)"
+			},
+			"before": {
+				"DEF-hand.L": 26.47,
+				"DEF-hand.R": 27.68,
+				"DEF-spine": 46.52,
+				"DEF-spine.001": 46.74,
+				"DEF-spine.002": 37.97,
+				"DEF-spine.003": 28.57,
+				"chest_over_pelvis": "(0.014411, 0.327203, -0.019511)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"strafe_right": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -17.28,
+				"DEF-spine.001": -17.4,
+				"DEF-spine.002": -0.6,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.005341, 0.329131, -0.006568)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": -17.28,
+				"DEF-spine.001": -17.4,
+				"DEF-spine.002": -0.6,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.005341, 0.329131, -0.006568)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": 2.05,
+				"DEF-hand.R": 0.17,
+				"DEF-spine": -5.52,
+				"DEF-spine.001": -5.58,
+				"DEF-spine.002": 6.4,
+				"DEF-spine.003": 1.13,
+				"chest_over_pelvis": "(0.000689, 0.327686, -0.02691)"
+			},
+			"before": {
+				"DEF-hand.L": 2.05,
+				"DEF-hand.R": 0.17,
+				"DEF-spine": -5.52,
+				"DEF-spine.001": -5.58,
+				"DEF-spine.002": 6.4,
+				"DEF-spine.003": 1.13,
+				"chest_over_pelvis": "(0.000689, 0.327686, -0.02691)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 6.51,
+				"DEF-hand.R": 6.34,
+				"DEF-spine": -26.88,
+				"DEF-spine.001": -27.01,
+				"DEF-spine.002": -3.1,
+				"DEF-spine.003": 5.33,
+				"chest_over_pelvis": "(0.020967, 0.32845, 0.003952)"
+			},
+			"before": {
+				"DEF-hand.L": 6.51,
+				"DEF-hand.R": 6.34,
+				"DEF-spine": -26.88,
+				"DEF-spine.001": -27.01,
+				"DEF-spine.002": -3.1,
+				"DEF-spine.003": 5.33,
+				"chest_over_pelvis": "(0.020967, 0.32845, 0.003952)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 3.48,
+				"DEF-hand.R": 2.74,
+				"DEF-spine": -13.32,
+				"DEF-spine.001": -13.37,
+				"DEF-spine.002": 4.43,
+				"DEF-spine.003": 3.51,
+				"chest_over_pelvis": "(0.00005, 0.328846, -0.011091)"
+			},
+			"before": {
+				"DEF-hand.L": 3.48,
+				"DEF-hand.R": 2.74,
+				"DEF-spine": -13.32,
+				"DEF-spine.001": -13.37,
+				"DEF-spine.002": 4.43,
+				"DEF-spine.003": 3.51,
+				"chest_over_pelvis": "(0.00005, 0.328846, -0.011091)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 2.41,
+				"DEF-hand.R": 0.75,
+				"DEF-spine": -29.98,
+				"DEF-spine.001": -30.11,
+				"DEF-spine.002": -6.53,
+				"DEF-spine.003": 0.98,
+				"chest_over_pelvis": "(0.027244, 0.327859, 0.000497)"
+			},
+			"before": {
+				"DEF-hand.L": 2.41,
+				"DEF-hand.R": 0.75,
+				"DEF-spine": -29.98,
+				"DEF-spine.001": -30.11,
+				"DEF-spine.002": -6.53,
+				"DEF-spine.003": 0.98,
+				"chest_over_pelvis": "(0.027244, 0.327859, 0.000497)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	],
+	"walk": [
+		{
+			"after": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 3.5,
+				"DEF-spine.001": 3.32,
+				"DEF-spine.002": -0.02,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.007582, 0.329764, 0.006062)"
+			},
+			"before": {
+				"DEF-hand.L": 0.0,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 3.5,
+				"DEF-spine.001": 3.32,
+				"DEF-spine.002": -0.02,
+				"DEF-spine.003": 0.0,
+				"chest_over_pelvis": "(0.007582, 0.329764, 0.006062)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.0
+		},
+		{
+			"after": {
+				"DEF-hand.L": -1.1,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 0.17,
+				"DEF-spine.001": 0.83,
+				"DEF-spine.002": -0.44,
+				"DEF-spine.003": -0.87,
+				"chest_over_pelvis": "(-0.012517, 0.328023, 0.014479)"
+			},
+			"before": {
+				"DEF-hand.L": -1.1,
+				"DEF-hand.R": 0.0,
+				"DEF-spine": 0.17,
+				"DEF-spine.001": 0.83,
+				"DEF-spine.002": -0.44,
+				"DEF-spine.003": -0.87,
+				"chest_over_pelvis": "(-0.012517, 0.328023, 0.014479)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.3
+		},
+		{
+			"after": {
+				"DEF-hand.L": 5.21,
+				"DEF-hand.R": 5.87,
+				"DEF-spine": -3.9,
+				"DEF-spine.001": -4.38,
+				"DEF-spine.002": -0.52,
+				"DEF-spine.003": 5.84,
+				"chest_over_pelvis": "(0.03026, 0.327855, 0.020569)"
+			},
+			"before": {
+				"DEF-hand.L": 5.21,
+				"DEF-hand.R": 5.87,
+				"DEF-spine": -3.9,
+				"DEF-spine.001": -4.38,
+				"DEF-spine.002": -0.52,
+				"DEF-spine.003": 5.84,
+				"chest_over_pelvis": "(0.03026, 0.327855, 0.020569)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 0.8
+		},
+		{
+			"after": {
+				"DEF-hand.L": 4.58,
+				"DEF-hand.R": 5.58,
+				"DEF-spine": -11.01,
+				"DEF-spine.001": -10.7,
+				"DEF-spine.002": -3.04,
+				"DEF-spine.003": 4.99,
+				"chest_over_pelvis": "(0.01204, 0.328134, 0.010594)"
+			},
+			"before": {
+				"DEF-hand.L": 4.58,
+				"DEF-hand.R": 5.58,
+				"DEF-spine": -11.01,
+				"DEF-spine.001": -10.7,
+				"DEF-spine.002": -3.04,
+				"DEF-spine.003": 4.99,
+				"chest_over_pelvis": "(0.01204, 0.328134, 0.010594)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 1.6
+		},
+		{
+			"after": {
+				"DEF-hand.L": 6.2,
+				"DEF-hand.R": 5.64,
+				"DEF-spine": -3.57,
+				"DEF-spine.001": -4.02,
+				"DEF-spine.002": -0.07,
+				"DEF-spine.003": 6.3,
+				"chest_over_pelvis": "(0.02511, 0.32826, 0.020952)"
+			},
+			"before": {
+				"DEF-hand.L": 6.2,
+				"DEF-hand.R": 5.64,
+				"DEF-spine": -3.57,
+				"DEF-spine.001": -4.02,
+				"DEF-spine.002": -0.07,
+				"DEF-spine.003": 6.3,
+				"chest_over_pelvis": "(0.02511, 0.32826, 0.020952)"
+			},
+			"look_yaw": -0.0000086514222090501,
+			"time": 2.8
+		}
+	]
+}

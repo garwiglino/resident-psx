@@ -1,0 +1,58 @@
+{
+	"errors": [],
+	"observations": {
+		"blocked": "000000ff",
+		"lit": "cec6c6ff",
+		"models": [
+			{
+				"largest_step": 2.9541890577565,
+				"max": 3.99999995408801,
+				"min": 1.04475947165773,
+				"style": 0
+			},
+			{
+				"largest_step": 0.160191810074037,
+				"max": 4.4,
+				"min": 3.170096442722,
+				"style": 1
+			},
+			{
+				"largest_step": 3.18787562298033,
+				"max": 3.98787562298033,
+				"min": 0.8,
+				"style": 2
+			},
+			{
+				"largest_step": 0.807460819952433,
+				"max": 3.90838240444318,
+				"min": 1.14382302758605,
+				"style": 3
+			}
+		],
+		"native": {
+			"anime_source_triangles": 6,
+			"anime_triangles": 14,
+			"batches": 1,
+			"depth_pixels": 18263,
+			"frame_us": 1056,
+			"general_depth": true,
+			"light_occluders": 14,
+			"light_revision": 21,
+			"outline_triangles": 0,
+			"player_depth_pixels": 18263,
+			"player_depth_triangles": 6,
+			"shadow_rays": 0,
+			"shadow_triangle_tests": 0,
+			"shot_light_energy": 0.0,
+			"source_triangles": 6,
+			"triangles": 14,
+			"version": 25,
+			"vertices": 28,
+			"world_lights": 1
+		},
+		"restored": "cec6c6ff",
+		"same_side": "ffffffff",
+		"same_side_reference": "ffffffff"
+	},
+	"ok": true
+}

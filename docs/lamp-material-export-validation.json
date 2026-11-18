@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "fixture": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-lamp-material-export-tdw8zm52",
+  "materials": [
+    {
+      "name": "prop__m_light__couleur",
+      "source_material": "M_light",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "texture": "",
+      "transparent": false
+    },
+    {
+      "name": "prop__m_surfaces__couleur",
+      "source_material": "M_surfaces",
+      "color": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929,
+        1.0
+      ],
+      "texture": "",
+      "transparent": false
+    }
+  ]
+}

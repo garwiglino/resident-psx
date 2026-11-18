@@ -1,0 +1,118 @@
+OBJETS INTERACTIFS - UN SYSTEME COMMUN POUR TOUS LES MODELES
+
+LE PRINCIPE
+La RACINE gere l'entree dans la vue fixe, la camera et le couvercle facultatif.
+Les PARTIES gerent leurs volumes de souris, survols unlit et comportements.
+Un meme modele peut melanger boutons, interrupteurs et pieces manquantes.
+Une partie d'action n'impose aucun objet d'inventaire ni animation.
+Le monde continue de tourner : seule la commande du joueur est reservee.
+
+InteractiveObject3D - racine de l'objet
+  Modele - ton GLB / scene exportee, fixe ou rigge
+  Parties
+    Appeler - MechanismAction3D, bouton d'actions
+      ZoneSelection / Volume
+    Alimentation - MechanismAction3D, comportement interrupteur
+      ZoneSelection / Volume
+    PieceManquante - InventoryUseTarget3D, seulement si necessaire
+      PointInsertion / PieceInstallee
+      DepartPiece
+      ZoneSelection / Volume
+  CameraFixe
+  AnimationPlayer - facultatif, peut aussi etre dans le modele importe
+
+EXEMPLE INTERPHONE PRET A CONFIGURER
+
+Pour le cycle sonnerie -> dialogue automatique ou raccroche sans reponse,
+utiliser scenes/interactions/interphone_interact.tscn et ses types dedies
+Interphone3D / InterphoneButton3D. Reglages par bouton : voir INTERPHONE.txt.
+L'exemple ci-dessous reste une demonstration du bouton d'actions generique.
+Ouvrir scenes/interactions/interphone_example.tscn dans son propre onglet.
+Le bouton Appeler a deja sa zone, son survol unlit et une petite animation d'appui.
+Il emet interphone.call par defaut ; aucun dialogue fictif n'est fourni.
+Selectionner Parties/Appeler :
+1. Behaviour = Bouton / actions.
+2. Deposer ton DialogueSequence .tres dans Dialogue.
+3. After Interaction = Rester sur l'objet pour parler en gros plan,
+   ou Quitter la vue puis lancer les actions pour rendre la camera avant l'appel.
+4. Ajouter les autres effets dans Actions si besoin : evenement, drapeau, objectif,
+   dialogue, effet audio, declenchement d'un noeud, cinematique, etat de mecanisme...
+5. Enregistrer et glisser la scene dans la carte. Donner un Interaction Id unique
+   et stable a sa RACINE dans la carte.
+
+Le raccourci Dialogue joue d'abord ce dialogue, puis Actions dans leur ordre.
+Pour un ordre different, laisser Dialogue vide et mettre Jouer un dialogue au
+bon endroit dans Actions. Ne pas brancher le meme dialogue deux fois via un evenement.
+Les voix, textes, interlocuteurs et l'option intercom restent sur tes repliques,
+avec le filtre radio, le mixage et les sons d'intercom deja existants.
+En gros plan, les conversations manuelles attendent la validation ; les appels
+automatiques avancent avec leurs repliques, sans attendre un canal suspendu.
+Quitter avant un appel automatique permet de continuer a explorer pendant l'appel.
+
+CREER TON PROPRE OBJET
+1. Dupliquer scenes/interactions/interactive_object.tscn, puis ouvrir ta copie.
+2. Deposer ton modele sous Modele. Aucune structure de boite a fusibles n'est imposee.
+3. Sous Parties, garder/dupliquer Action, ou ajouter un MechanismAction3D.
+   Le modele vierge contient des noeuds ordinaires, modifiables directement.
+   scenes/interactions/action_part.tscn est aussi disponible comme partie reusable.
+4. Placer ZoneSelection/Volume sur la zone cliquable, regler sa Shape.
+   Garder la couche physique 20 et Collision Mask a 0.
+5. Sur cette partie, Visual Path vise le modele visible. Highlight Paths choisit
+   precisement les meshes/noeuds a passer en unlit au survol ; les chemins partent de la PARTIE.
+   Selection Label est le texte au survol, par exemple APPELER ou ACTIONNER.
+6. Choisir son Behaviour et remplir ses effets. Le bouton signale une erreur
+   de configuration si aucun dialogue, evenement, action, son ou animation n'est assigne.
+   Cela ne bloque pas l'entree dans la vue fixe ni les autres parties ; seul le
+   clic sur cette partie est refuse tant qu'elle reste incomplete.
+7. Cadrer CameraFixe, enregistrer la scene, puis la placer dans la carte.
+
+Pour plusieurs parties du meme modele, elles peuvent viser des meshes differents
+du meme GLB. Sur un modele rigge, une zone peut suivre un BoneAttachment3D ;
+mettre a jour Selection Area Path. Le survol unlit supporte les meshes skinnes et conserve les textures.
+Une partie du mesh doit etre identifiable comme mesh/noeud distinct si son survol
+doit etre distinct ; le systeme ne devine pas les composants a partir d'une texture.
+Si tu utilises une sous-scene de partie, Enfants editables sur son instance permet
+de regler ses volumes. Rendre la Shape unique avant de modifier une duplication partagee.
+
+BOUTON / ACTIONS
+Le clic joue l'animation et le son facultatifs, puis declenche son dialogue/actions.
+Aucun menu d'inventaire ne s'ouvre. Le clip de bouton doit inclure l'appui et le
+retour si tu veux qu'il remonte ; sa derniere pose est conservee.
+Once decoche : repetition possible apres la fin des actions.
+Once coche : une seule utilisation, memorisee dans les sauvegardes du monde.
+Requirements : conditions du monde a remplir pour que cette partie soit utilisable.
+Une cinematique dans Actions rend toujours la vue d'inspection avant de lancer
+son gestionnaire, meme si Rester sur l'objet etait choisi.
+Les actions deja declenchees continuent si tu quittes normalement la vue.
+La suppression de l'objet, la mort ou une reinitialisation annulent ses actions
+encore reservees dans la vue et stoppent ses propres dialogues.
+
+INTERRUPTEUR
+Behaviour = Interrupteur actif / inactif.
+Actions est la liste quand il passe ACTIF ; Off Actions quand il repasse INACTIF.
+State Flag nomme le drapeau de son etat. Vide : Id de la partie + .active.
+Initially Active est l'etat de depart d'une nouvelle partie.
+Selection Label est le texte pour l'activer ; Off Selection Label pour le desactiver.
+Le drapeau et la pose sont sauvegardes ensemble dans l'etat du monde.
+Pour une condition sur cet etat, utiliser Drapeau avec ce State Flag.
+Activation Animation est le mouvement d'activation ; Deactivation Animation le
+mouvement inverse. Laisser ce dernier vide pour lire le premier a l'envers.
+Au chargement, la pose est restauree directement, sans rejouer actions ni sons.
+
+ANIMATIONS PARTAGEES ET COUVERCLE
+Animation Player Path part de la partie et peut viser l'AnimationPlayer du GLB commun.
+Animated Root Path et Bone Names limitent les noeuds/os concernes. Vide : seules
+les pistes qui varient sont retenues, pour proteger les autres composants du rig.
+Les pistes audio/methodes du clip ne sont pas executees : utiliser les effets prevus.
+Access Settings sur la racine conserve les regles d'ouverture/fermeture existantes.
+Requires Open sur chaque partie distingue les composants internes et les boutons
+exterieurs, utilisables meme avec un couvercle ferme. Les emplacements d'objets
+exigent l'ouverture par defaut ; les boutons sont exterieurs par defaut.
+
+INSTALLER UNE PIECE, UNIQUEMENT QUAND C'EST LE BUT
+Ajouter scenes/interactions/item_socket.tscn sous Parties, choisir Required Item,
+placer sa PieceInstallee, son DepartPiece et sa ZoneSelection comme auparavant.
+Ce type ouvre la rangee d'inventaire apres le clic. Les boutons ne l'ouvrent pas.
+La fin d'assemblage compte seulement les emplacements, pas les boutons/interrupteurs.
+Les anciens mecanismes et leurs sauvegardes conservent leur comportement.
+MECANISMES.txt detaille l'installation et les regles de couvercle.

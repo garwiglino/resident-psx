@@ -1,0 +1,82 @@
+{
+  "catalogue_jp_fr.json": {
+    "sha256": "a5570eaabf299589ebfe4d2f587a6744735019bb7a742346f2e0c43ef9a1b0e4",
+    "identical": true
+  },
+  "ferro_eclipse_atlas_complet_256x512.png": {
+    "sha256": "259326b8f82c1733d6a8b25aee4a9099071352d0997d85915b48d834cadfe5bc",
+    "identical": true
+  },
+  "LIRE_MOI.txt": {
+    "sha256": "76215a4f86b69cabf82b6f96f869d703e3cbd44bb60a3a4bb884eb177e556866",
+    "identical": true
+  },
+  "cartes_64x96\\00_dos_commun.png": {
+    "sha256": "f0582fef9f884c58a1dca4b16a6836833dd003fb4a659f8a5b4133985d7e9156",
+    "identical": true
+  },
+  "cartes_64x96\\01_cendre_01.png": {
+    "sha256": "052b94d0448636ec07500e83b4c8ffc5dc31f21cd0401df128d325d41f217bbf",
+    "identical": true
+  },
+  "cartes_64x96\\02_bastion_07.png": {
+    "sha256": "66ccdd49be0f4ea77e5f2f7a7b090c48ef9e60cad5125efae547e155d4fb69dc",
+    "identical": true
+  },
+  "cartes_64x96\\03_veuve_12.png": {
+    "sha256": "71d215e2136a582f35d26b723e49ba6da98d4c8468650360671de1e2966668a3",
+    "identical": true
+  },
+  "cartes_64x96\\04_maree_04.png": {
+    "sha256": "5f24d4cfacb3283d0547f92a82244897b552c31c4f94c313ed1282764203f250",
+    "identical": true
+  },
+  "cartes_64x96\\05_silex_09.png": {
+    "sha256": "b260fd0c5c967eae2f74dd61547ca45525411843d6c161e990ed449810217a3a",
+    "identical": true
+  },
+  "cartes_64x96\\06_alouette_03.png": {
+    "sha256": "e0995c688ac723a67aa1ea6f024ccb634c6d038399e919718a3f41ccfcd9202c",
+    "identical": true
+  },
+  "cartes_64x96\\07_suture_06.png": {
+    "sha256": "41cbf07e01392bc48e81c9217c2a8940d050aa12199c3f103c878374a3fb796c",
+    "identical": true
+  },
+  "cartes_64x96\\08_ossian_00.png": {
+    "sha256": "ff113ea77f9eef40333f97d8acf4bb5e625005f75a2a3ab2893268bbe75577c3",
+    "identical": true
+  },
+  "cartes_64x96\\09_rapiere_11.png": {
+    "sha256": "1d31b227a2ea35fa98a341d667e17ed46145d4bba9c4b187571a6c849ffddebc",
+    "identical": true
+  },
+  "cartes_64x96\\10_regent_08.png": {
+    "sha256": "11b4803c338a4a4456b1fc7ac22a5f327dd332f97c3c13c5c9ab7a1181f6fb7b",
+    "identical": true
+  },
+  "cartes_64x96\\11_selene_15.png": {
+    "sha256": "24287ddae26aa4be0029fd55b00de50db3abee55169996ada99606f87fb39347",
+    "identical": true
+  },
+  "cartes_64x96\\12_fracas_02.png": {
+    "sha256": "15d6f4c0b8b34abae6d63716175ed39818f35ba8217f5ec0b8911fc268b71ec3",
+    "identical": true
+  },
+  "cartes_64x96\\13_erg_10.png": {
+    "sha256": "bd1de3b5d77d435342a1832416625513a31f233db24530b69e6fbf04c7ce5372",
+    "identical": true
+  },
+  "cartes_64x96\\14_obscur_13.png": {
+    "sha256": "9f25558393dfef43268f5d7171a7f367678c9eaecb8c8a402726937ea4acc75e",
+    "identical": true
+  },
+  "cartes_64x96\\15_vigile_14.png": {
+    "sha256": "87608f8d2f894a3282558032692e2418c78592fe13ab859010aecf8a5f3e6ccc",
+    "identical": true
+  },
+  "cartes_64x96\\16_face_mystere.png": {
+    "sha256": "28b59628a41045eacc02b807337e411d9ac477b162dd6964cc07e212a5c1b2cc",
+    "identical": true
+  }
+}

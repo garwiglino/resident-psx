@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://dh2s1ogob2cw4"]
+
+[ext_resource type="Script" uid="uid://ku1e04cwc7wa" path="res://scripts/dialogue/dialogue_sequence.gd" id="1"]
+[ext_resource type="Script" uid="uid://dtp6gvwo6onsk" path="res://scripts/dialogue/dialogue_line.gd" id="2"]
+
+[sub_resource type="Resource" id="Line1"]
+script = ExtResource("2")
+speaker = "HITOMI"
+text = "Ca ne convient pas."
+
+[sub_resource type="Resource" id="Line2"]
+script = ExtResource("2")
+speaker = "HITOMI"
+text = "Ce n'est pas la bonne piece."
+
+[sub_resource type="Resource" id="Line3"]
+script = ExtResource("2")
+speaker = "HITOMI"
+text = "Il faut autre chose."
+
+[resource]
+script = ExtResource("1")
+id = &"wrong_item"
+mode = 1
+lines = Array[ExtResource("2")]([SubResource("Line1"), SubResource("Line2"), SubResource("Line3")])

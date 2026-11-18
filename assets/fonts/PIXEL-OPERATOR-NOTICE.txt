@@ -1,0 +1,8 @@
+Pixel Operator Bold by Jayvee Enaguas (HarvettFox96).
+Creator distribution: https://www.dafont.com/pixel-operator.font
+License: Creative Commons Zero (CC0) 1.0, stated in the font's own name table.
+See PIXEL-OPERATOR-LICENSE.txt for the dedication.
+Unmodified TTF mirror: https://github.com/glen-assets/fonts/blob/gh-pages/PixelOperator-Bold.ttf
+
+Speaker labels only. Native 16 px, anti-aliasing and subpixel positioning off.
+The dialogue body uses Daniel Linssen's separate m5x7 font.

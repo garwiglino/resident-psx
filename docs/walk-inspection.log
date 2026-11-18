@@ -1,0 +1,5 @@
+00:03.469  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+SPLIT_INSPECTION [('metarig', 'ARMATURE', {'action': None, 'tracks': []}), ('rig', 'ARMATURE', {'action': None, 'tracks': [{'name': 'Action.002', 'mute': False, 'strips': [('player_walk_forward_pistol', 'Action.002', 1.0, 121.0)]}, {'name': 'Action.004', 'mute': False, 'strips': [('player_walk_backward_pistol', 'Action.004', 1.0, 121.0)]}]}), ('gun_amature', 'ARMATURE', {'action': None, 'tracks': []})] [{'name': 'Action.002', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'Action.004', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'rigAction.001', 'frames': [1.0, 1.0], 'slots': ['OBrig']}, {'name': 'Rigify_Take 001', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'Rigify_Take 001.001', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'Take 001', 'frames': [1.0, 121.0], 'slots': ['OBArmature']}, {'name': 'Take 001.001', 'frames': [1.0, 121.0], 'slots': ['OBArmature.001']}]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

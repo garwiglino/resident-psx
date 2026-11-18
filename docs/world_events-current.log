@@ -1,0 +1,28 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ERROR: Action chain resumes when the dialogue ends
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_events.gd:11)
+       [1] run (res://tests/world_events.gd:110)
+       [2] settle (res://tests/world_events.gd:17)
+ERROR: Cancelled dialogues do not masquerade as completed story events
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_events.gd:11)
+       [1] run (res://tests/world_events.gd:111)
+       [2] settle (res://tests/world_events.gd:17)
+ERROR: Event calls wait while a manual conversation owns presentation
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_events.gd:11)
+       [1] run (res://tests/world_events.gd:115)
+       [2] settle (res://tests/world_events.gd:17)
+ERROR: Removing an event source cancels its not-yet-started presentation job
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_events.gd:11)
+       [1] run (res://tests/world_events.gd:134)
+       [2] settle (res://tests/world_events.gd:17)
+WORLD_EVENTS_FAILED ["Action chain resumes when the dialogue ends", "Cancelled dialogues do not masquerade as completed story events", "Event calls wait while a manual conversation owns presentation", "Removing an event source cancels its not-yet-started presentation job"]

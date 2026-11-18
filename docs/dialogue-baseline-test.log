@@ -1,0 +1,23 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Opening plays its own quiet one-shot
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/dialogue.gd:12)
+       [1] run (res://tests/dialogue.gd:47)
+ERROR: Decoded SPU letter tick has real signal at a deliberately quiet output level
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/dialogue.gd:12)
+       [1] run (res://tests/dialogue.gd:68)
+ERROR: Final close plays the matching one-shot
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/dialogue.gd:12)
+       [1] run (res://tests/dialogue.gd:109)
+ERROR: Queued sequences do not close and reopen the window sound
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/dialogue.gd:12)
+       [1] run (res://tests/dialogue.gd:135)
+DIALOGUE_FAILED ["Opening plays its own quiet one-shot", "Decoded SPU letter tick has real signal at a deliberately quiet output level", "Final close plays the matching one-shot", "Queued sequences do not close and reopen the window sound"]

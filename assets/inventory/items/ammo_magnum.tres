@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_definition.gd" id="1_liu6f"]
+[ext_resource type="Script" path="res://scripts/world_events/world_action.gd" id="2_b8yes"]
+
+[resource]
+script = ExtResource("1_liu6f")
+id = &"ammo_magnum"
+display_name = "Munitions Magnum"
+description = "Cartouches pour le Desert Eagle."
+kind = 7
+stack_limit = 99
+ammo_type = &"magnum"

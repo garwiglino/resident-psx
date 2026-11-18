@@ -1,0 +1,16 @@
+{
+	"camera_mask": 252706815,
+	"failures": [],
+	"maximum_viewport_color_error": 0.0,
+	"native_statistics": {
+		"batches": 1,
+		"light_revision": 2,
+		"shot_light_energy": 0.0,
+		"triangles": 368,
+		"version": 11,
+		"vertices": 956,
+		"world_lights": 0
+	},
+	"render_rect": "[P: (177.6667, 0.0), S: (814.6667, 611.0)]",
+	"viewport_size": "(1170, 611)"
+}

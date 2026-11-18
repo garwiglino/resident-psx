@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+VOICE_OUTPUT [{"captured_frames":204800,"nonzero_frames":50109,"peak":0.389434814453125,"phase":0,"radio":false,"rms":0.0478745634733777},{"captured_frames":237568,"nonzero_frames":35484,"peak":0.201812744140625,"phase":0,"radio":true,"rms":0.0123803608163635}]
+DIALOGUE_VOICE_OUTPUT_OK

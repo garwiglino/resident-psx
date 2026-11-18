@@ -1,0 +1,9 @@
+[gd_resource type="Resource" format=3 uid="uid://ca1n6mv2i6rln"]
+
+[ext_resource type="Script" uid="uid://w08rk3tsuqdn" path="res://scripts/audio/audio_mix_profile.gd" id="1"]
+
+[resource]
+resource_name = "Mixage audio du jeu"
+script = ExtResource("1")
+volume_general_db = 0.0
+pas_db = -15.0

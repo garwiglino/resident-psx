@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/fracas_02.res" id="1_rx4m1"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_p8xy2"]
+
+[resource]
+script = ExtResource("2_p8xy2")
+id = &"fracas_02"
+display_name = "FRACAS-02"
+description = "Unité orange trapue avec bras industriels renforcés et protections épaisses."
+lore = "Ouvre un chemin au milieu des décombres."
+rarity = "R"
+image = ExtResource("1_rx4m1")
+source_index = 12

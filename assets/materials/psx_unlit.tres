@@ -1,0 +1,15 @@
+[gd_resource type="StandardMaterial3D" script_class="PSXUnlitMaterial" format=3 uid="uid://dd5skhwl5rlpg"]
+
+[ext_resource type="Script" uid="uid://bnxc3di77e0of" path="res://scripts/materials/psx_unlit_material.gd" id="Unlit"]
+
+[resource]
+resource_name = "PSX Unlit"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(1, 0.7086667, 0.53999996, 1)
+texture_filter = 0
+script = ExtResource("Unlit")
+color = Color(1, 0.7086667, 0.53999996, 1)

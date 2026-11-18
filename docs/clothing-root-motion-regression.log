@@ -1,0 +1,83 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Player rotation transforms authored root displacement
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:49)
+ERROR: Controller selects authored forward clip
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:56)
+ERROR: Authored root-motion strafe direction: left (0.0, 0.000247, 2.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:70)
+ERROR: Authored root-motion strafe direction: right (0.0, 0.000247, 2.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:70)
+ERROR: Controller plays authored diagonal: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:91)
+ERROR: Diagonal follows camera-relative input: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:92)
+ERROR: Diagonal retains authored speed without sqrt(2) boost: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:93)
+ERROR: Controller plays authored diagonal: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:91)
+ERROR: Diagonal follows camera-relative input: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:92)
+ERROR: Diagonal retains authored speed without sqrt(2) boost: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:93)
+ERROR: Controller plays authored diagonal: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:91)
+ERROR: Diagonal follows camera-relative input: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:92)
+ERROR: Diagonal retains authored speed without sqrt(2) boost: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:93)
+ERROR: Controller plays authored diagonal: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:91)
+ERROR: Diagonal follows camera-relative input: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:92)
+ERROR: Diagonal retains authored speed without sqrt(2) boost: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:93)
+ROOT_MOTION_FAILED ["Player rotation transforms authored root displacement", "Controller selects authored forward clip", "Authored root-motion strafe direction: left (0.0, 0.000247, 2.0)", "Authored root-motion strafe direction: right (0.0, 0.000247, 2.0)", "Controller plays authored diagonal: forward_left", "Diagonal follows camera-relative input: forward_left", "Diagonal retains authored speed without sqrt(2) boost: forward_left", "Controller plays authored diagonal: forward_right", "Diagonal follows camera-relative input: forward_right", "Diagonal retains authored speed without sqrt(2) boost: forward_right", "Controller plays authored diagonal: backward_left", "Diagonal follows camera-relative input: backward_left", "Diagonal retains authored speed without sqrt(2) boost: backward_left", "Controller plays authored diagonal: backward_right", "Diagonal follows camera-relative input: backward_right", "Diagonal retains authored speed without sqrt(2) boost: backward_right"]

@@ -1,0 +1,59 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drw2m"]
+resource_name = "M_dark"
+specular_mode = 2
+albedo_color = Color(0.09, 0.105, 0.11, 1)
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_k1lgx"]
+material = SubResource("StandardMaterial3D_drw2m")
+top_radius = 0.21
+bottom_radius = 0.21
+height = 0.06
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cm2dp"]
+resource_name = "M_metal"
+specular_mode = 2
+albedo_color = Color(0.32, 0.35, 0.36, 1)
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u005x"]
+material = SubResource("StandardMaterial3D_cm2dp")
+top_radius = 0.195
+bottom_radius = 0.195
+height = 0.045
+radial_segments = 8
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgxbf"]
+resource_name = "M_light"
+specular_mode = 2
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_auhmw"]
+material = SubResource("StandardMaterial3D_xgxbf")
+top_radius = 0.16
+bottom_radius = 0.16
+height = 0.022
+radial_segments = 8
+rings = 1
+
+[node name="PlafonnierModele" type="Node3D" unique_id=1209980886]
+
+[node name="Socle" type="MeshInstance3D" parent="." unique_id=1677689257]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.065, 0)
+mesh = SubResource("CylinderMesh_k1lgx")
+
+[node name="Couronne" type="MeshInstance3D" parent="." unique_id=1195094044]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.03, 0)
+mesh = SubResource("CylinderMesh_u005x")
+
+[node name="Diffuseur" type="MeshInstance3D" parent="." unique_id=1168445920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.006, 0)
+mesh = SubResource("CylinderMesh_auhmw")

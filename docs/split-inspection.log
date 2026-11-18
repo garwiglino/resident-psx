@@ -1,0 +1,5 @@
+00:03.453  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_idle.blend"
+SPLIT_INSPECTION [('metarig', 'ARMATURE', {'action': None, 'tracks': []}), ('rig', 'ARMATURE', {'action': None, 'tracks': [{'name': 'Action.001', 'mute': False, 'strips': [('player_pistol_idle', 'Action.001', 1.0, 121.0)]}]}), ('gun_amature', 'ARMATURE', {'action': None, 'tracks': []})] [{'name': 'Action.001', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'CameraAction', 'frames': [0.0, 0.0], 'slots': ['OBCamera']}, {'name': 'rigAction', 'frames': [0.0, 0.0], 'slots': ['OBrig']}, {'name': 'Rigify_Take 001.001', 'frames': [1.0, 1.0], 'slots': ['OBrig']}, {'name': 'Rigify_Take 001.002', 'frames': [1.0, 121.0], 'slots': ['OBrig']}, {'name': 'Take 001', 'frames': [1.0, 121.0], 'slots': ['OBArmature']}, {'name': 'Take 001.001', 'frames': [1.0, 121.0], 'slots': ['OBArmature']}, {'name': 'Take 001.002', 'frames': [1.0, 121.0], 'slots': ['OBArmature.001']}]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

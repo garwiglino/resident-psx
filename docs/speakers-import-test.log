@@ -1,0 +1,12 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+SCRIPT ERROR: Parse Error: Function "emit_multiple_changed()" not found in base self.
+   at: GDScript::reload (res://addons/cinematic_montage/speaker_property.gd:10)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://addons/cinematic_montage/audio_inspector.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://addons/cinematic_montage/plugin.gd:0)
+ERROR: Failed to load script "res://addons/cinematic_montage/plugin.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+INTERCOM_CACHE_EDITOR_OK: new radio voices externalized, reused, duplicated, exported and reopened without inline sample data

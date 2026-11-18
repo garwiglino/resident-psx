@@ -1,0 +1,3 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+{"bounds":"[P: (-0.615899, -0.115749, -0.139885), S: (1.231797, 0.115749, 0.278683)]","surfaces":[{"index":0,"meta":[],"name":"prop__m_surfaces__512_512_64_128","type":"StandardMaterial3D","vertices":24},{"index":1,"meta":[],"name":"prop__m_light__384_512_128_64","type":"StandardMaterial3D","vertices":6},{"index":2,"meta":[],"name":"prop__m_surfaces__384_512_16_64","type":"StandardMaterial3D","vertices":6},{"index":3,"meta":[],"name":"prop__m_surfaces__384_512_128_64","type":"StandardMaterial3D","vertices":12},{"index":4,"meta":[],"name":"prop__m_surfaces__448_512_32_64","type":"StandardMaterial3D","vertices":6}]}

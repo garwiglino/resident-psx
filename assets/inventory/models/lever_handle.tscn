@@ -1,0 +1,53 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7n34u"]
+shading_mode = 0
+diffuse_mode = 1
+specular_mode = 2
+albedo_color = Color(0.5, 0.53, 0.48, 1)
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_titot"]
+top_radius = 0.014
+bottom_radius = 0.014
+height = 0.28
+radial_segments = 12
+rings = 1
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_v6mvb"]
+top_radius = 0.026
+bottom_radius = 0.026
+height = 0.025
+radial_segments = 12
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2h6rv"]
+shading_mode = 0
+diffuse_mode = 1
+specular_mode = 2
+albedo_color = Color(0.45, 0.16, 0.11, 1)
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jcm21"]
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.15
+radial_segments = 12
+rings = 1
+
+[node name="PoigneeLevier" type="Node3D" unique_id=71517126]
+
+[node name="Tige" type="MeshInstance3D" parent="." unique_id=1895092224]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, 0)
+material_override = SubResource("StandardMaterial3D_7n34u")
+mesh = SubResource("CylinderMesh_titot")
+
+[node name="Embase" type="MeshInstance3D" parent="." unique_id=840171746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.16, 0)
+material_override = SubResource("StandardMaterial3D_7n34u")
+mesh = SubResource("CylinderMesh_v6mvb")
+
+[node name="Poignee" type="MeshInstance3D" parent="." unique_id=282045644]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.13, 0)
+material_override = SubResource("StandardMaterial3D_2h6rv")
+mesh = SubResource("CylinderMesh_jcm21")

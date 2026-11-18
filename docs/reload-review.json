@@ -1,0 +1,74 @@
+[
+	{
+		"ammo": 2,
+		"body_time": 0.0,
+		"gun_time": 0.0,
+		"phase": 1,
+		"player_source_frame": 1.0,
+		"tick_60hz": 0
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.166666666666667,
+		"gun_time": 0.166666666666667,
+		"phase": 1,
+		"player_source_frame": 5.0,
+		"tick_60hz": 10
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.216666666666667,
+		"gun_time": 0.216666666666667,
+		"phase": 2,
+		"player_source_frame": 6.2,
+		"tick_60hz": 13
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.383333333333333,
+		"gun_time": 0.383333333333333,
+		"phase": 2,
+		"player_source_frame": 10.2,
+		"tick_60hz": 23
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.65,
+		"gun_time": 0.65,
+		"phase": 2,
+		"player_source_frame": 16.6,
+		"tick_60hz": 39
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.666666666666667,
+		"gun_time": 0.666666666666667,
+		"phase": 3,
+		"player_source_frame": 17.0,
+		"tick_60hz": 40
+	},
+	{
+		"ammo": 2,
+		"body_time": 0.983333333333335,
+		"gun_time": 0.983333333333335,
+		"phase": 3,
+		"player_source_frame": 24.6,
+		"tick_60hz": 59
+	},
+	{
+		"ammo": 12,
+		"body_time": 1.41666666666667,
+		"gun_time": -1.0,
+		"phase": 3,
+		"player_source_frame": 35.0,
+		"tick_60hz": 85
+	},
+	{
+		"ammo": 12,
+		"body_time": -1.0,
+		"gun_time": -1.0,
+		"phase": 3,
+		"player_source_frame": 37.4,
+		"tick_60hz": 91
+	}
+]

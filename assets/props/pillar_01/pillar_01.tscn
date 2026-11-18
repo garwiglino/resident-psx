@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c71tphv68c7gl"]
+
+[ext_resource type="ArrayMesh" path="res://assets/props/pillar_01/pillar_01.mesh.res" id="1_j6vx8"]
+[ext_resource type="Shape3D" path="res://assets/props/pillar_01/pillar_01.collision.res" id="2_x1jog"]
+
+[node name="pillar_01" type="Node3D" unique_id=834012733]
+metadata/psx_asset_type = "prop"
+
+[node name="Modele" type="MeshInstance3D" parent="." unique_id=257220028]
+mesh = ExtResource("1_j6vx8")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=612608682]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision" unique_id=692985464]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, 1.5, -2.9802322e-08)
+shape = ExtResource("2_x1jog")

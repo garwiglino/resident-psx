@@ -1,0 +1,424 @@
+{
+	"camera": {
+		"aim_distance_m": 0.850000023841858,
+		"aim_fov": 40.0,
+		"aim_offset": "(0.32, 1.45, 0.85)",
+		"base_fov": 51.6100006103516
+	},
+	"directions": [
+		{
+			"clip": "walk",
+			"first_tick_distance_m": 0.0245652198791504
+		},
+		{
+			"clip": "forward_right",
+			"first_tick_distance_m": 0.0245651286095381
+		},
+		{
+			"clip": "strafe_right",
+			"first_tick_distance_m": 0.0245650466531515
+		},
+		{
+			"clip": "backward_right",
+			"first_tick_distance_m": 0.0245651286095381
+		},
+		{
+			"clip": "backward",
+			"first_tick_distance_m": 0.0245652198791504
+		},
+		{
+			"clip": "backward_left",
+			"first_tick_distance_m": 0.0245651286095381
+		},
+		{
+			"clip": "strafe_left",
+			"first_tick_distance_m": 0.0245650466531515
+		},
+		{
+			"clip": "forward_left",
+			"first_tick_distance_m": 0.0245651286095381
+		}
+	],
+	"failures": [
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: idle",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: idle",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: idle",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: idle",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: walk",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: walk",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: walk",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: walk",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left",
+		"Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: base",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: bullet",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: hammer",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: mag",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: slide",
+		"Attached pistol matches the saved Blender aim grip within 1 mm: trigger",
+		"Pelvis rotations cannot steer the aimed upper body: (0.0, 70.0, 0.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (0.0, -70.0, 0.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (25.0, 0.0, 0.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (-25.0, 0.0, 0.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, 20.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, -20.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll",
+		"Pelvis rotations cannot steer the aimed upper body: (20.0, 55.0, -15.0)",
+		"Pistol follows pelvis translation without inheriting yaw, pitch or roll"
+	],
+	"pelvis_rotation": [
+		{
+			"muzzle_rotation_error_degrees": 69.9999860108194,
+			"pelvis_degrees": "(0.0, 70.0, 0.0)",
+			"upper_position_error_m": 0.454202145338058,
+			"upper_rotation_error_degrees": 70.0000338221436
+		},
+		{
+			"muzzle_rotation_error_degrees": 70.0000065013869,
+			"pelvis_degrees": "(0.0, -70.0, 0.0)",
+			"upper_position_error_m": 0.454202115535736,
+			"upper_rotation_error_degrees": 70.0000338221436
+		},
+		{
+			"muzzle_rotation_error_degrees": 25.0000291548099,
+			"pelvis_degrees": "(25.0, 0.0, 0.0)",
+			"upper_position_error_m": 0.22341813147068,
+			"upper_rotation_error_degrees": 25.0000923340597
+		},
+		{
+			"muzzle_rotation_error_degrees": 24.9999642680128,
+			"pelvis_degrees": "(-25.0, 0.0, 0.0)",
+			"upper_position_error_m": 0.223418056964874,
+			"upper_rotation_error_degrees": 25.0000291548099
+		},
+		{
+			"muzzle_rotation_error_degrees": 19.9999413615779,
+			"pelvis_degrees": "(0.0, 0.0, 20.0)",
+			"upper_position_error_m": 0.199342757463455,
+			"upper_rotation_error_degrees": 20.0001001634761
+		},
+		{
+			"muzzle_rotation_error_degrees": 20.0000199087534,
+			"pelvis_degrees": "(0.0, 0.0, -20.0)",
+			"upper_position_error_m": 0.199342757463455,
+			"upper_rotation_error_degrees": 20.0000608898884
+		},
+		{
+			"muzzle_rotation_error_degrees": 62.3486783289769,
+			"pelvis_degrees": "(20.0, 55.0, -15.0)",
+			"upper_position_error_m": 0.47402685880661,
+			"upper_rotation_error_degrees": 62.3487193101119
+		}
+	],
+	"poses": [
+		{
+			"clip": "idle",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.127423197031021,
+			"upper_rotation_error_degrees": 17.9205534480173
+		},
+		{
+			"clip": "idle",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.129531547427177,
+			"upper_rotation_error_degrees": 18.3678164329846
+		},
+		{
+			"clip": "idle",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.123627483844757,
+			"upper_rotation_error_degrees": 17.5193566739073
+		},
+		{
+			"clip": "idle",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.127602592110634,
+			"upper_rotation_error_degrees": 18.1123263768911
+		},
+		{
+			"clip": "walk",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.0964612737298012,
+			"upper_rotation_error_degrees": 18.8812912717659
+		},
+		{
+			"clip": "walk",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.0609719231724739,
+			"upper_rotation_error_degrees": 10.3757378068454
+		},
+		{
+			"clip": "walk",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.138973563909531,
+			"upper_rotation_error_degrees": 15.9318021447428
+		},
+		{
+			"clip": "walk",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.0498403571546078,
+			"upper_rotation_error_degrees": 8.27080071692079
+		},
+		{
+			"clip": "forward_right",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.145545020699501,
+			"upper_rotation_error_degrees": 14.2028959969314
+		},
+		{
+			"clip": "forward_right",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.098065584897995,
+			"upper_rotation_error_degrees": 9.54604313873907
+		},
+		{
+			"clip": "forward_right",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.0850939452648163,
+			"upper_rotation_error_degrees": 8.64872191388677
+		},
+		{
+			"clip": "forward_right",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.0925760194659233,
+			"upper_rotation_error_degrees": 9.84993703793316
+		},
+		{
+			"clip": "strafe_right",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.0375598073005676,
+			"upper_rotation_error_degrees": 3.52425637586881
+		},
+		{
+			"clip": "strafe_right",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.0820643231272697,
+			"upper_rotation_error_degrees": 9.75626696988195
+		},
+		{
+			"clip": "strafe_right",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.0643368512392044,
+			"upper_rotation_error_degrees": 10.3728938868298
+		},
+		{
+			"clip": "strafe_right",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.0915216282010078,
+			"upper_rotation_error_degrees": 10.1928680295548
+		},
+		{
+			"clip": "backward_right",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.366909474134445,
+			"upper_rotation_error_degrees": 57.9519352960779
+		},
+		{
+			"clip": "backward_right",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.356533497571945,
+			"upper_rotation_error_degrees": 53.9771101236836
+		},
+		{
+			"clip": "backward_right",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.303475260734558,
+			"upper_rotation_error_degrees": 43.9291095526511
+		},
+		{
+			"clip": "backward_right",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.345140188932419,
+			"upper_rotation_error_degrees": 51.6073042741614
+		},
+		{
+			"clip": "backward",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.150788635015488,
+			"upper_rotation_error_degrees": 25.624909501596
+		},
+		{
+			"clip": "backward",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.217235490679741,
+			"upper_rotation_error_degrees": 35.6673810344954
+		},
+		{
+			"clip": "backward",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.176386058330536,
+			"upper_rotation_error_degrees": 28.7427303482614
+		},
+		{
+			"clip": "backward",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.20053468644619,
+			"upper_rotation_error_degrees": 35.8919952204459
+		},
+		{
+			"clip": "backward_left",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.144078567624092,
+			"upper_rotation_error_degrees": 15.601733253102
+		},
+		{
+			"clip": "backward_left",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.149306029081345,
+			"upper_rotation_error_degrees": 16.161796812212
+		},
+		{
+			"clip": "backward_left",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.150686979293823,
+			"upper_rotation_error_degrees": 14.3732656742672
+		},
+		{
+			"clip": "backward_left",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.140422999858856,
+			"upper_rotation_error_degrees": 14.4297547537978
+		},
+		{
+			"clip": "strafe_left",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.150788620114326,
+			"upper_rotation_error_degrees": 25.6249419449946
+		},
+		{
+			"clip": "strafe_left",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.166205391287804,
+			"upper_rotation_error_degrees": 25.3117948470224
+		},
+		{
+			"clip": "strafe_left",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.580218553543091,
+			"upper_rotation_error_degrees": 91.3173137689418
+		},
+		{
+			"clip": "strafe_left",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.178971916437149,
+			"upper_rotation_error_degrees": 26.8841880637767
+		},
+		{
+			"clip": "forward_left",
+			"root_difference_m": 0.0,
+			"time": 0.0,
+			"upper_position_error_m": 0.241355568170547,
+			"upper_rotation_error_degrees": 37.0304648116819
+		},
+		{
+			"clip": "forward_left",
+			"root_difference_m": 0.0,
+			"time": 0.7,
+			"upper_position_error_m": 0.302460730075836,
+			"upper_rotation_error_degrees": 39.1697142106758
+		},
+		{
+			"clip": "forward_left",
+			"root_difference_m": 0.0,
+			"time": 2.3,
+			"upper_position_error_m": 0.35283762216568,
+			"upper_rotation_error_degrees": 49.032039504216
+		},
+		{
+			"clip": "forward_left",
+			"root_difference_m": 0.0,
+			"time": 3.7,
+			"upper_position_error_m": 0.298782259225845,
+			"upper_rotation_error_degrees": 39.440240928227
+		}
+	],
+	"weapon_source": [
+		{
+			"error_m": 0.14017440873891,
+			"mesh": "base"
+		},
+		{
+			"error_m": 0.118310353069957,
+			"mesh": "bullet"
+		},
+		{
+			"error_m": 0.10977352290401,
+			"mesh": "hammer"
+		},
+		{
+			"error_m": 0.118873531311421,
+			"mesh": "mag"
+		},
+		{
+			"error_m": 0.126819004224342,
+			"mesh": "slide"
+		},
+		{
+			"error_m": 0.125903929242342,
+			"mesh": "trigger"
+		}
+	]
+}

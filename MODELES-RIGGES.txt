@@ -1,0 +1,79 @@
+MODELES ANIMES / RIGGES - ADDON PSX 1.2.0
+
+Le meme export sert aux boites, tiroirs, machines, trappes et autres mecanismes.
+Il conserve le MODELE. Le gameplay se construit dans ta scene de placement Godot,
+avec autant d'emplacements que necessaire. Il n'y a pas de regle speciale pour les fusibles.
+
+BLENDER
+
+1. Mettre meshes, rig et reperes sous un Empty racine. Si tout appartient deja
+   a l'armature, celle-ci peut servir de racine. Garder le skin existant.
+2. Ajouter si besoin des Empty aux positions finales de fixation des pieces.
+   Noms et nombre libres. Pour suivre un os, parenter le repere a cet os puis
+   l'aligner. Les os de fixation non deformants sont conserves a l'export.
+3. Garder les parties a surligner comme meshes/noeuds distincts, meme si elles
+   partagent un rig. C'est leur noeud qui sera choisi dans Highlight Paths.
+4. Les pieces qui sortent de l'inventaire sont des MODELES INDEPENDANTS du socle.
+   Les exporter separement, en decor fixe ou avec leur propre rig. Ne pas les
+   fusionner au skin de la boite : elles seront fixees a ses reperes en jeu.
+5. En mode Objet, rendre actif l'Empty racine ou l'armature. N > PSX Export >
+   Type > Objet anime / rigge. Donner un nom puis Exporter vers Godot.
+
+CLIPS
+
+- Actions et actions rangees : actions actives ou conservees dans la NLA,
+  avec leurs noms. Ranger les autres actions voulues dans la NLA.
+- Pistes NLA : un clip par piste, pour plusieurs mouvements nommes.
+- Sequence actuelle : UN clip sur la plage debut/fin de la scene ; objets et rigs
+  restent synchronises. Exporter les animations decoche : modele sans clips.
+Les clips commencent a zero, avec les intervalles et la vitesse d'origine.
+Les contraintes sont evaluees a chaque image, a la frequence de la scene.
+Le .blend, son frame courant, ses UV, ses materiaux et son skin restent intacts.
+Les clips ne se lancent pas automatiquement dans Godot : attribuer celui voulu
+au lecteur ou a l'interaction. Les actions inutilisees du reste du .blend sont exclues.
+
+GODOT : CONSTRUIRE UNE SCENE REUTILISABLE
+
+1. Dupliquer scenes/inventory/placement_target.tscn et ouvrir ta copie.
+2. Deposer assets/props/<nom>/<nom>.tscn sous Modele.
+3. Sous Emplacements, garder un noeud par piece attendue. Le dupliquer pour
+   ajouter des pieces, sans limite a deux. Assigner Required Item a chaque noeud
+   et placer son modele independant sous PointInsertion/PieceInstallee.
+4. Pour utiliser un repere Blender anime, rendre les enfants du modele editables
+   (idem sur une instance imbriquee si elle reste verrouillee). Deplacer
+   PointInsertion sous cet Empty importe et remettre sa position/rotation locales
+   a zero, son echelle a 1. Mettre a jour Placement Socket Path et Installed Visual
+   Path sur le noeud d'emplacement, vers les nouveaux chemins.
+5. Si ZoneSelection doit suivre cet os, la deplacer aussi sous le repere et
+   actualiser Selection Area Path. Regler sa Shape. Highlight Paths vise les
+   meshes visibles du socle a entourer au survol, pas la piece manquante.
+6. Animation Player Path peut viser le lecteur importe du modele. Installation
+   Animation contient le nom du clip voulu pour cette piece ; il joue apres insertion.
+7. Regler CameraFixe, enregistrer, puis glisser CETTE SCENE DE PLACEMENT dans la carte.
+   Donner un Interaction Id unique a sa racine. Chaque emplacement a ses objets
+   requis, ses Actions et son etat. Voir MECANISMES.txt pour le curseur et les zones.
+
+Le rig anime le socle, son couvercle ou ses composants. Les pieces manquantes sont
+inserees par le jeu puis suivent leurs fixations. Ajouter les collisions de gameplay
+dans Godot ; elles peuvent suivre des bones via BoneAttachment3D.
+
+REEXPORTS
+
+<nom>.model.scn : donnees generees du modele, du rig et des clips.
+<nom>.tscn : petite scene editable utilisant ces donnees.
+source.json : noms des noeuds, bones, reperes et clips retrouves a l'import.
+
+Au reexport avec le MEME nom, seul le modele .model.scn est regenere. La scene
+.tscn existante reste intacte. Ta scene de placement, ses zones, sa camera,
+ses objets requis et ses evenements ne sont pas reecrits. Garder les noms et
+la hierarchie des noeuds deja references. Ne pas modifier le .model.scn a la main.
+Si le nom appartient deja a un ancien decor statique, choisir un autre nom.
+
+Les grandes textures sont recadrees sans reduction des texels ; les materiaux
+gardent le rendu PSX sans speculaire moderne. Ce chemin accepte huit influences
+d'os par sommet : un depassement est refuse, sans tronquer le skin. Avec des
+shape keys, appliquer les autres modificateurs avant export ; conserver l'armature.
+
+ZIP : C:/Users/sheensaw/Downloads/PSX_Export_Godot.zip
+Installer le ZIP mis a jour dans Blender puis recharger l'addon (version 1.2.0).
+Teste avec Blender 5.1.2, Blender 5.2.2 LTS et le projet Godot actuel.

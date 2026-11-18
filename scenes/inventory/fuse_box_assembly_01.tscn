@@ -1,0 +1,137 @@
+[gd_scene format=3 uid="uid://dqgt7gyq2kk8j"]
+
+[ext_resource type="PackedScene" path="res://assets/inventory/models/lever_handle.tscn" id="Lever"]
+[ext_resource type="Resource" uid="uid://5ghy3j18v4ar" path="res://assets/inventory/items/lever_handle.tres" id="LeverItem"]
+[ext_resource type="Script" uid="uid://d20x16abvtdmw" path="res://scripts/inventory/item_target.gd" id="Part"]
+[ext_resource type="Script" uid="uid://3l3g4ifwssn4" path="res://scripts/inventory/placement_scene.gd" id="Scene"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/valve_wheel.tscn" id="Wheel"]
+[ext_resource type="Resource" uid="uid://bnydeq4jsqoy7" path="res://assets/inventory/items/valve_wheel.tres" id="WheelItem"]
+
+[sub_resource type="StandardMaterial3D" id="PanelMaterial"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.24, 0.28, 0.25, 1)
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="Panel"]
+size = Vector3(1.4, 1.2, 0.12)
+
+[sub_resource type="StandardMaterial3D" id="Metal"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.55, 0.54, 0.46, 1)
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="Socket"]
+size = Vector3(0.15, 0.18, 0.08)
+
+[sub_resource type="BoxShape3D" id="PanelCollision"]
+size = Vector3(1.4, 1.2, 0.12)
+
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.28, 0.3, 0.28)
+
+[node name="PlacementAssemblage" type="Marker3D" unique_id=594204709]
+script = ExtResource("Scene")
+interaction_label = "EXAMINER LE MECANISME"
+interaction_offset = Vector3(0, 0.75, 0.1)
+once = true
+
+[node name="Modele" type="Node3D" parent="." unique_id=319171818]
+
+[node name="Panneau" type="MeshInstance3D" parent="Modele" unique_id=683147531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+material_override = SubResource("PanelMaterial")
+mesh = SubResource("Panel")
+
+[node name="FixationRoue" type="MeshInstance3D" parent="Modele" unique_id=904885806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.8, 0.1)
+material_override = SubResource("Metal")
+mesh = SubResource("Socket")
+
+[node name="FixationLevier" type="MeshInstance3D" parent="Modele" unique_id=1873636031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.8, 0.1)
+material_override = SubResource("Metal")
+mesh = SubResource("Socket")
+
+[node name="Collision" type="StaticBody3D" parent="Modele" unique_id=9915452]
+collision_mask = 0
+
+[node name="Volume" type="CollisionShape3D" parent="Modele/Collision" unique_id=1322426305]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.65, 0)
+shape = SubResource("PanelCollision")
+
+[node name="Emplacements" type="Node3D" parent="." unique_id=1292877799]
+
+[node name="Roue" type="Marker3D" parent="Emplacements" unique_id=1605158637]
+script = ExtResource("Part")
+required_item = ExtResource("WheelItem")
+visual_path = NodePath("../../Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+selection_label = "FIXATION GAUCHE"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/FixationRoue")])
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+
+[node name="PointInsertion" type="Marker3D" parent="Emplacements/Roue" unique_id=2143252805]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.8, 0.2)
+
+[node name="PieceInstallee" type="Node3D" parent="Emplacements/Roue/PointInsertion" unique_id=1304901937]
+
+[node name="Modele" parent="Emplacements/Roue/PointInsertion/PieceInstallee" unique_id=981766441 instance=ExtResource("Wheel")]
+
+[node name="DepartPiece" type="Marker3D" parent="Emplacements/Roue" unique_id=1263541472]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.9, 0.85)
+
+[node name="ZoneSelection" type="Area3D" parent="Emplacements/Roue" unique_id=1693258516]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.35, 0.8, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Emplacements/Roue/ZoneSelection" unique_id=987529928]
+shape = SubResource("Selection")
+
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="Emplacements/Roue" unique_id=640813687]
+
+[node name="Levier" type="Marker3D" parent="Emplacements" unique_id=294073745]
+script = ExtResource("Part")
+required_item = ExtResource("LeverItem")
+visual_path = NodePath("../../Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+selection_label = "FIXATION DROITE"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/FixationLevier")])
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+
+[node name="PointInsertion" type="Marker3D" parent="Emplacements/Levier" unique_id=1692389543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.8, 0.2)
+
+[node name="PieceInstallee" type="Node3D" parent="Emplacements/Levier/PointInsertion" unique_id=1970784286]
+
+[node name="Modele" parent="Emplacements/Levier/PointInsertion/PieceInstallee" unique_id=2105704870 instance=ExtResource("Lever")]
+
+[node name="DepartPiece" type="Marker3D" parent="Emplacements/Levier" unique_id=114634692]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.9, 0.85)
+
+[node name="ZoneSelection" type="Area3D" parent="Emplacements/Levier" unique_id=1415714504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35, 0.8, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Emplacements/Levier/ZoneSelection" unique_id=2137538104]
+shape = SubResource("Selection")
+
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="Emplacements/Levier" unique_id=534243112]
+
+[node name="CameraFixe" type="Camera3D" parent="." unique_id=1926406635]
+transform = Transform3D(0.9998477, 0.00903788, -0.014929936, 0, 0.85546607, 0.51785886, 0.0174524, -0.51778, 0.8553358, -0.053824425, 1.6830664, 1.6093845)
+fov = 45.0
+far = 55.0

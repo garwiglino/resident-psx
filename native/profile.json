@@ -1,0 +1,1 @@
+{"enabled_classes":["RefCounted","MeshInstance3D","Skeleton3D","Texture2D","Image","ImageTexture","OS","Engine","AudioStream","AudioStreamPlayback","AudioStreamWAV","AudioServer","AudioEffect","AudioEffectInstance","AudioFrame"]}

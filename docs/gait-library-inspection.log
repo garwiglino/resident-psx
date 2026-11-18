@@ -1,0 +1,75 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+parameters/current_length = 4.0
+parameters/current_position = 0.0
+parameters/current_delta = 0.01666666666667
+parameters/output/current_length = 4.0
+parameters/output/current_position = 0.0
+parameters/output/current_delta = 0.01666666666667
+parameters/Idle/current_length = 4.0
+parameters/Idle/current_position = 0.0
+parameters/Idle/current_delta = 0.01666666666667
+parameters/Idle/backward = false
+parameters/Gait/current_length = 4.0
+parameters/Gait/current_position = 0.25
+parameters/Gait/current_delta = -0.25
+parameters/Gait/blend_position = (0.0, -1.0)
+parameters/Gait/closest = 0
+parameters/Gait/walk/current_length = 4.0
+parameters/Gait/walk/current_position = 0.25
+parameters/Gait/walk/current_delta = -0.25
+parameters/Gait/walk/backward = false
+parameters/Gait/strafe_right/current_length = 4.0
+parameters/Gait/strafe_right/current_position = 0.25
+parameters/Gait/strafe_right/current_delta = -0.25
+parameters/Gait/strafe_right/backward = false
+parameters/Gait/backward/current_length = 4.0
+parameters/Gait/backward/current_position = 0.25
+parameters/Gait/backward/current_delta = -0.25
+parameters/Gait/backward/backward = false
+parameters/Gait/strafe_left/current_length = 4.0
+parameters/Gait/strafe_left/current_position = 0.25
+parameters/Gait/strafe_left/current_delta = -0.25
+parameters/Gait/strafe_left/backward = false
+parameters/GaitSeek/current_length = 4.0
+parameters/GaitSeek/current_position = 0.25
+parameters/GaitSeek/current_delta = -0.25
+parameters/GaitSeek/seek_request = -1.0
+parameters/GaitClock/current_length = 4.0
+parameters/GaitClock/current_position = 0.25
+parameters/GaitClock/current_delta = -0.25
+parameters/GaitClock/scale = 1.0
+parameters/Locomotion/current_length = 4.0
+parameters/Locomotion/current_position = 0.0
+parameters/Locomotion/current_delta = 0.01666666666667
+parameters/Locomotion/blend_amount = 0.07400900125504
+walk len 4.0 root first (0.0, 0.0, 0.0) end (0.0, 0.0, 5.895611)
+t=0.0 root (0.0, 0.0, 0.0) foot (0.03315, 0.142735, 0.119313)
+t=0.2 root (0.0, 0.0, 0.294781) foot (0.036804, 0.359715, 0.235074)
+t=0.4 root (0.0, 0.0, 0.589561) foot (0.026933, 0.080487, 0.234767)
+t=0.6 root (0.0, 0.0, 0.884342) foot (0.048859, -0.367885, 0.122817)
+t=0.8 root (0.0, 0.0, 1.179122) foot (0.039174, -0.107158, 0.107428)
+t=1.0 root (0.0, 0.0, 1.473903) foot (0.033297, 0.149404, 0.120649)
+backward len 4.0 root first (0.0, 0.0, 0.0) end (0.0, 0.0, -5.895611)
+t=0.0 root (0.0, 0.0, 0.0) foot (0.079608, -0.266876, 0.109926)
+t=0.2 root (0.0, 0.0, -0.294781) foot (0.056293, -0.001549, 0.159)
+t=0.4 root (0.0, 0.0, -0.589561) foot (0.082051, 0.39543, 0.293187)
+t=0.6 root (0.0, 0.0, -0.884342) foot (0.066168, 0.308205, 0.134316)
+t=0.8 root (0.0, 0.0, -1.179122) foot (0.070483, 0.022018, 0.109819)
+t=1.0 root (0.0, 0.0, -1.473903) foot (0.0756, -0.258083, 0.105655)
+strafe_left len 4.0 root first (0.0, 0.0, 0.0) end (5.895611, 0.0, 0.0)
+t=0.0 root (0.0, 0.0, 0.0) foot (0.182735, 0.031474, 0.120457)
+t=0.2 root (0.294781, 0.0, 0.0) foot (-0.084239, 0.002455, 0.12754)
+t=0.4 root (0.589561, 0.0, 0.0) foot (-0.206952, -0.088011, 0.126457)
+t=0.6 root (0.884342, 0.0, 0.0) foot (0.171072, 0.032276, 0.200383)
+t=0.8 root (1.179122, 0.0, 0.0) foot (0.373407, 0.182544, 0.175848)
+t=1.0 root (1.473903, 0.0, 0.0) foot (0.108781, 0.225081, 0.130388)
+strafe_right len 4.0 root first (0.0, 0.0, 0.0) end (-5.895611, 0.0, 0.0)
+t=0.0 root (0.0, 0.0, 0.0) foot (0.047862, -0.022536, 0.113645)
+t=0.2 root (-0.294781, 0.0, 0.0) foot (0.302335, -0.028761, 0.127627)
+t=0.4 root (-0.589561, 0.0, 0.0) foot (0.357581, 0.01267, 0.27092)
+t=0.6 root (-0.884342, 0.0, 0.0) foot (-0.094967, -0.062173, 0.137884)
+t=0.8 root (-1.179122, 0.0, 0.0) foot (-0.241467, -0.045256, 0.101975)
+t=1.0 root (-1.473903, 0.0, 0.0) foot (0.023047, -0.03504, 0.11079)
+ERROR: Parameter "material" is null.
+   at: material_get_instance_shader_parameters (servers/rendering/dummy/storage/material_storage.cpp:264)

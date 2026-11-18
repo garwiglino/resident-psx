@@ -1,0 +1,20 @@
+{
+  "clip": "player_pistol_aim_pose",
+  "loop": true,
+  "fps": 24.0,
+  "start_frame": 1,
+  "end_frame": 2,
+  "duration": 0.041666666666666664,
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims.blend",
+  "source_sha256": "270e5e71f31f201d9d8632d093e8f701f5c0b42533cf5b118eb951269da0be97",
+  "pose_frame": 1,
+  "root_motion": false,
+  "root_motion_track": "rig/Skeleton3D:RootMotion",
+  "root_motion_distance": 0.0,
+  "average_speed": 0.0,
+  "root_motion_vector": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

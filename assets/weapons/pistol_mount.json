@@ -1,0 +1,35 @@
+{
+  "bone": "DEF-hand.R",
+  "transform_rows": [
+    [
+      -0.9712387323379517,
+      -0.23810744285583496,
+      -2.4531036615371704e-06,
+      -0.027094874531030655
+    ],
+    [
+      -0.04134925827383995,
+      0.16865327954292297,
+      0.9848078489303589,
+      0.053924329578876495
+    ],
+    [
+      -0.23448984324932098,
+      0.9564837217330933,
+      -0.17364805936813354,
+      -0.016797486692667007
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend",
+  "reference_frame": 1,
+  "weapon_scene": "res://scenes/pistol.tscn",
+  "muzzle_bone": "b_muzzlespot",
+  "player_clip": "player_pistol_idle",
+  "weapon_clip": "pistol_idle"
+}

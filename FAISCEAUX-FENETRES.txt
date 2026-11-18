@@ -1,0 +1,51 @@
+FAISCEAUX DE LUMIERE PSX POUR LES FENETRES
+
+Glisser une de ces scenes depuis Fichiers dans ta carte :
+scenes/effects/window_light_shaft.tscn : un faisceau large, froid par defaut.
+scenes/effects/window_light_rays.tscn : plusieurs rayons, chauds par defaut.
+scenes/effects/thin_light_ray.tscn : un rayon fin a placer independamment.
+
+PLACEMENT
+Mettre l'origine au centre de la fenetre, legerement a l'interieur du mur.
+L'axe local -Z pointe de la fenetre VERS LA PIECE. Tourner l'instance si besoin.
+Source Size est la largeur/hauteur de depart en metres.
+Length est la profondeur du faisceau depuis cette origine.
+End Size est la largeur/hauteur a l'autre extremite.
+End Offset est le decalage horizontal/vertical de cette extremite : Y negatif
+fait descendre le faisceau vers le sol. Regler sa longueur pour l'arreter au sol.
+Shape choisit le faisceau large ou les rayons etroits.
+En rayons etroits, Ray Count et Ray Width reglent leur nombre et leur largeur.
+Segments decoupe la longueur pour le tri des polygones et les UV affines ;
+4 convient normalement. Aucun billboard : le faisceau garde sa direction dans le monde.
+
+MATERIAU
+Ouvrir Shaft Material sur l'instance :
+Color : teinte de la lumiere.
+Strength : intensite du faisceau (0 le rend invisible).
+Texture : masque d'intensite RGB ; noir = aucune lumiere ajoutee.
+Les materiaux des instances de ces scenes sont independants.
+Tu peux aussi dupliquer window_light_shaft.tres ou window_light_ray.tres,
+dans assets/materials, et les assigner a tes propres meshes avec leurs UVs.
+
+Les meshes ont deja leurs UV, des faces dans les deux sens et une fin progressive.
+La scene ne sauvegarde que les reglages ; le petit mesh est reconstruit a l'ouverture.
+Les textures fournies sont en 64x128, niveaux RGB555 et masque binaire.
+Pour une texture personnelle, faire varier la luminosite RGB plutot qu'un alpha
+progressif. La transparence utilise le mode PSX ABR=3 : fond + source/4.
+La force varie la source avant ce melange fixe, sans changer le ratio materiel.
+Les nappes ignorent l'eclairage, n'occultent pas les lumieres et ne masquent pas
+la geometrie derriere elles. Les murs et objets opaques devant les masquent.
+Le fog du niveau les attenue. Ni bloom, ni filtre de flou, ni volume moderne.
+
+Ces effets simulent la lumiere visible dans l'air. Pour eclairer le sol et le
+decor, placer ta PSXLight3D separement et l'orienter dans le meme sens.
+Le faisceau n'adapte pas automatiquement sa forme a chaque obstacle.
+La transparence garde l'ordre des polygones PSX ; limiter le nombre de nappes
+superposees et terminer les faisceaux sur le sol donne le resultat le plus propre.
+
+Enregistrer les scenes et rouvrir Godot une fois pour charger le moteur v21.
+Les fichiers et niveaux existants ne sont pas reexportes par cette fonction.
+
+References techniques consultees :
+https://psx-spx.consoledev.net/graphicsprocessingunitgpu/#semi-transparency
+https://docs.godotengine.org/en/stable/tutorials/shaders/shader_reference/canvas_item_shader.html

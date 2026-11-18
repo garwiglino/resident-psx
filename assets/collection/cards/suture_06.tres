@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/suture_06.res" id="1_yjyhq"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_cgorn"]
+
+[resource]
+script = ExtResource("2_cgorn")
+id = &"suture_06"
+display_name = "SUTURE-06"
+description = "Machine jaune à bras-outils, coffres de pièces et manipulateurs de précision."
+lore = "Répare les machines que chacun abandonne."
+rarity = "R"
+image = ExtResource("1_yjyhq")
+source_index = 7

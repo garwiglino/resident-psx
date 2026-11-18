@@ -1,0 +1,49 @@
+{
+  "preexisting_reload_collision": {
+    "current_pose_checks_passed": true,
+    "same_as_baseline": true,
+    "current_minimum_y": -0.0330733396112919,
+    "baseline_minimum_y": -0.0330733396112919,
+    "baseline_log": "docs/whole-body-turn-reload-baseline.log"
+  },
+  "turn": {
+    "aim_direction_error_degrees": 1.73559805457195E-05,
+    "aimed_torso_motion_m": 0.0276124328374863,
+    "aimed_torso_roll_degrees": 3.20063390214397,
+    "body_bones": 269,
+    "failures": [],
+    "final_lower_position_error_m": 3.72529029846191E-09,
+    "final_lower_rotation_error_degrees": 0.0559529096807445,
+    "foot_lift_m": [
+      0.00692646391689777,
+      0.0104051195085049
+    ],
+    "protected_lower_bones": 105,
+    "root_angles": [
+      0.752325740823589,
+      0.752325740823589
+    ],
+    "source_angle_degrees": 43.1050897682447,
+    "source_position_error_m": 5.36441802978516E-07,
+    "source_rotation_error_degrees": 0.0559529096807445
+  },
+  "checks": {
+    "pelvis": {
+      "passed": true,
+      "log": "docs/whole-body-turn-pelvis.log"
+    },
+    "root_motion": {
+      "passed": true,
+      "log": "docs/whole-body-turn-root-motion.log"
+    },
+    "turn": {
+      "passed": true,
+      "log": "docs/whole-body-turn.log"
+    },
+    "aim": {
+      "passed": true,
+      "log": "docs/whole-body-turn-aim.log"
+    }
+  },
+  "date": "2026-11-07"
+}

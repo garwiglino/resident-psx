@@ -1,0 +1,18 @@
+ANCIENNE HARMONISATION RETIREE DU JEU
+
+Idle : C:\Users\sheensaw\Downloads\cop_idle.blend
+Marches, diagonales, course et pivot : C:\Users\sheensaw\Downloads\cop_anims_walk.blend
+
+Les clips installes sont exportes directement depuis ces fichiers originaux.
+Le bassin conserve ses translations, rotations et echelles animees.
+Aucune hauteur commune, flexion minimale des genoux, correction d'appui
+ou limitation d'etirement n'est ajoutee pendant cet export ou en jeu.
+Le root motion et le melange habituel des animations restent actifs.
+
+Les anciennes copies exports/blender/*_harmonized.blend sont conservees
+pour historique et ne servent plus aux animations installees.
+Ne pas les utiliser pour les prochains exports.
+
+Sauvegarde des neuf clips remplaces : voir docs/source-locomotion-export.json.
+Comparaison des poses sources/copies : docs/locomotion-blender-audit.json.
+Verification des poses du bassin et des jambes en jeu : docs/pelvis-runtime-validation.json.

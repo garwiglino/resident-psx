@@ -1,0 +1,47 @@
+{
+	"blocked_preview_100_calls_ms": 0.024,
+	"errors": [],
+	"measurements": [
+		{
+			"cpu_ms_mean": 10.1716285714286,
+			"cpu_ms_p95": 11.348,
+			"native": true,
+			"samples": 35,
+			"scenario": "native_v17_constant_neon",
+			"triangles": 269
+		},
+		{
+			"cpu_ms_mean": 10.1993142857143,
+			"cpu_ms_p95": 10.944,
+			"native": true,
+			"samples": 35,
+			"scenario": "native_v17_flickering_neon",
+			"triangles": 268
+		},
+		{
+			"cpu_ms_mean": 50.364,
+			"cpu_ms_p95": 51.652,
+			"native": false,
+			"samples": 3,
+			"scenario": "old_whole_level_script_fallback",
+			"triangles": 272
+		}
+	],
+	"native": {
+		"batches": 1,
+		"depth_pixels": 76800,
+		"general_depth": true,
+		"light_occluders": 17217,
+		"light_revision": 48,
+		"player_depth_pixels": 76800,
+		"player_depth_triangles": 272,
+		"shadow_rays": 508,
+		"shadow_triangle_tests": 5560,
+		"shot_light_energy": 0.0,
+		"triangles": 272,
+		"version": 17,
+		"vertices": 51855,
+		"world_lights": 4
+	},
+	"ok": true
+}

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" format=3 uid="uid://cibh7mur6fwwk"]
+
+[ext_resource type="Script" uid="uid://cwo8is58gae4i" path="res://scripts/weapon_definition.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/pistol.tscn" id="2"]
+[ext_resource type="AudioStream" uid="uid://d3cucv5nqgebf" path="res://assets/audio/weapons/d_eagle/eagle_shoot.wav" id="3"]
+[ext_resource type="AudioStream" uid="uid://bs105uckg78w6" path="res://assets/audio/weapons/d_eagle/deagle_reload.wav" id="4"]
+[ext_resource type="AudioStream" uid="uid://0b5ew20y7fu6" path="res://assets/audio/weapons/d_eagle/deagle_aim.wav" id="5"]
+[ext_resource type="AudioStream" uid="uid://bg3kk7hkqwcq0" path="res://assets/audio/weapons/d_eagle/deagle_dry_01.wav" id="6"]
+[ext_resource type="AudioStream" uid="uid://b4io7mp8hu367" path="res://assets/audio/weapons/d_eagle/deagle_dry_02.wav" id="7"]
+
+[resource]
+script = ExtResource("1")
+scene = ExtResource("2")
+reload_duration = 1.4166667
+aim_sound = ExtResource("5")
+shot_sound = ExtResource("3")
+reload_sound = ExtResource("4")
+empty_sound_variants = Array[AudioStream]([ExtResource("6"), ExtResource("7")])

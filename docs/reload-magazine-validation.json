@@ -1,0 +1,39 @@
+{
+	"authored_floor_y": 0.00000000372529029846191,
+	"body_transform": "[X: (-0.16779, 0.912236, -0.373728), Y: (0.871476, -0.039964, -0.488808), Z: (-0.460844, -0.407712, -0.788286), O: (0.296331, -0.00838, 3.962285)]",
+	"box_size": "(0.018151, 0.122865, 0.047841)",
+	"drop_scale": "(1.0, 1.0, 1.0)",
+	"failures": [
+		"Dropped magazine collides with the actual authored floor instead of passing through it"
+	],
+	"floor_minimum_y": -0.0330733396112919,
+	"frames": [
+		{
+			"phase": 2,
+			"player_frame": 6,
+			"source_position_error_m": 0.000000359176709707754,
+			"time": 0.208333333333333
+		},
+		{
+			"phase": 3,
+			"player_frame": 17,
+			"source_position_error_m": 0.000000370586803910555,
+			"time": 0.666666666666667
+		},
+		{
+			"phase": 3,
+			"player_frame": 24,
+			"source_position_error_m": 0.000000259411365277629,
+			"time": 0.958333333333333
+		},
+		{
+			"phase": 3,
+			"player_frame": 35,
+			"source_position_error_m": 0.000000390729496757558,
+			"time": 1.41666666666667
+		}
+	],
+	"gravity_drop_m": 0.469778776168823,
+	"magazine_bounds": "[P: (-0.009076, -0.002813, -0.019348), S: (0.018151, 0.122865, 0.047841)]",
+	"pool_size": 4
+}

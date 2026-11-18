@@ -1,0 +1,21 @@
+{
+	"failures": [],
+	"reports": [
+		{
+			"captured_frames": 220160,
+			"nonzero_frames": 54519,
+			"peak": 0.389621913433075,
+			"phase": 0,
+			"radio": false,
+			"rms": 0.0481679981832747
+		},
+		{
+			"captured_frames": 242688,
+			"nonzero_frames": 38616,
+			"peak": 0.201653838157654,
+			"phase": 0,
+			"radio": true,
+			"rms": 0.0127721436309973
+		}
+	]
+}

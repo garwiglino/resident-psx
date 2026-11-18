@@ -1,0 +1,185 @@
+CARTES 2M - CONSTRUIRE UN NIVEAU
+
+LANCEMENT ET AMBIANCE : chaque carte a maintenant ReglagesNiveau pour son fog,
+ses couleurs, son eclairage ambiant et son profil audio/musique. F6 lance la
+carte directement avec le joueur et les systemes PSX communs. Voir NIVEAUX.txt.
+Objets, cles, mecanismes et cartes de collection : voir INVENTAIRE.txt.
+
+1. Dans Godot, ouvrir scenes/maps/modular_example.tscn pour essayer.
+   Le panneau "Cartes 2m" se trouve a gauche, sous l'arbre de scene.
+   Pour partir de zero : "Nouvelle carte", choisir un fichier .tscn.
+   Si le panneau manque, reactiver "Cartes 2m" dans Projet > Parametres du
+   projet > Extensions, ou rouvrir le projet apres cette installation.
+
+2. Choisir "Nouvelle piece" dans la liste, puis l'outil "Piece".
+   Glisser dans le plan quadrille pour dessiner un rectangle.
+   Les cases font exactement 2 x 2 m. Les murs font 3 m de haut.
+   Une piece voisine recoit une seule cloison commune, visible des deux cotes.
+   Pour agrandir une piece avec ses cloisons : la choisir puis utiliser "Piece".
+   Pour une autre piece : rechoisir "Nouvelle piece".
+   "Sol" ajoute seulement du sol : aucun mur ni plafond automatique.
+   "Mur" peint un bord meme sans sol. "Plafond" peint seulement le plafond.
+
+3. "Porte" ou "Fenetre" : choisir la variante puis cliquer sur un BORD
+   de case, pas au milieu. On peut glisser le long des bords.
+   Orange = porte. Bleu = fenetre. Clair = mur.
+   Porte pleine / vitree / double. La porte double occupe deux bords, soit
+   4 m de facade, pour une ouverture de 2 m. Ne pas la placer sur un T.
+   Fenetre vitree / condamnee avec les planches / ouverture sans panneau.
+   "Mur" remet une cloison. "Passage" ouvre le bord sans cadre.
+
+4. "Effacer" retire la case et ouvre ses bords.
+   Maj ou clic droit avec "Sol" retire seulement le sol, en gardant les murs.
+   Avec un outil de bord, Maj/clic droit ouvre le bord et retire sa collision.
+   "Retablir le bord automatique" reste disponible dans les reglages d'une porte.
+   Ctrl+Z annule un geste entier, Ctrl+Maj+Z le refait. Echap annule le geste
+   en cours. "Cadrer" recentre le plan. Molette = zoom ; milieu = deplacement.
+
+5. Pour peindre directement dans la vue 3D : cocher "Peindre dans la vue 3D".
+   Les outils sont les memes, a la hauteur de l'etage selectionne.
+   Clic gauche peint, Maj efface. Clic droit et milieu restent disponibles
+   pour naviguer dans la vue. Decocher la case pour selectionner normalement.
+   Selectionner le noeud Map pour voir sa grille et son volume dans l'editeur.
+
+6. "Regler", puis cliquer sur une porte : regler son identifiant, son etat
+   Libre, A cle / carte d'acces ou Verrouillee sans cle, ainsi que ses evenements.
+   Les portes utilisent deja les interactions et WorldEvents du projet.
+   Sans identifiant manuel : <Event Namespace de la carte>.<bord de grille>.
+   Donner un Event Namespace different a chaque carte distincte.
+
+7. Dans l'inspecteur du noeud Map : Ceilings active les plafonds en jeu.
+   Show Ceilings In Editor les affiche aussi dans l'editeur. Ils sont caches
+   par defaut dans l'editeur pour travailler a l'interieur.
+   Garder l'echelle du noeud Map a (1,1,1).
+   Les modules sont visibles avec le rendu PSX et les PSXLight3D existants.
+   Placer les lumieres manuellement comme dans le reste du projet.
+   Pour construire sans eclairage, le bouton PSX de la vue 3D permet de
+   basculer sur l'affichage ordinaire ; il ne change pas le rendu en jeu.
+
+8. Sauvegarder la scene normalement avec Ctrl+S. Seul le plan est enregistre.
+   Les meshes et collisions sont reconstruits en cache ; ne pas modifier les
+   enfants temporaires Construction. Ajouter personnages, lumieres, zones,
+   cinematiques et objets comme d'autres enfants de Map, a cote de Construction.
+   Ils sont conserves quand on repeint.
+   F6 lance directement la carte. Aucun Player, PSXRenderer ou AudioNiveau a
+   recopier. Gameplay/PlayerSpawn donne le depart ; sans marqueur, le lancement
+   utilise le centre de la premiere case peinte. Voir NIVEAUX.txt.
+
+PORTES A CLE ET REPLIQUES ALEATOIRES
+
+Dans Cartes 2m, choisir Regler puis cliquer sur la porte dans le plan.
+Renseigner ID de la cle / carte d'acces requise avec l'Id exact de l'objet,
+par exemple key_archives. Cet objet doit etre une definition d'inventaire
+de type Cle, ajoutee dans Items de assets/inventory/catalogue.tres.
+Placer scenes/inventory/item_pickup.tscn dans la carte et lui attribuer cette
+meme definition dans Item. Chaque cle differente a son propre Id, sans stack.
+La porte exigeant un objet commence verrouillee automatiquement. E la deverrouille
+et l'ouvre lorsque le joueur possede la bonne cle. Elle reste deverrouillee ensuite.
+Consommer la cle au deverrouillage est facultatif et decoche par defaut.
+Choisir "A cle / carte d'acces" pour cette configuration.
+Une porte condamnee : choisir "Verrouillee sans cle". Elle ne peut pas etre
+deverrouillee, meme par une cle ou un evenement d'ouverture.
+
+Les repliques communes utilisent directement :
+assets/audio/dialogs/locked_doors_key/locked_doors_key.tres
+Ajouter toutes les possibilites dans Lines de ce seul DialogueSequence.
+Chaque entree contient son locuteur, son texte et son WAV facultatif.
+Une variante de locked_door_1.wav / locked_door_2.wav joue a la porte d'abord.
+La replique suit presque aussitot : Locked Dialogue Delay vaut 0,03 s par defaut.
+Le jeu choisit UNE ligne aleatoire sans attendre la fin du son de serrure.
+Il force uniquement cette lecture en automatique, sans modifier le mode enregistre
+dans ton fichier. Aucun dialogue separe n'est necessaire pour chaque replique.
+La liste est laissee a remplir par l'auteur ; une liste vide ne joue rien.
+
+La banque locked_doors_key concerne uniquement une Cle manquante.
+Les portes "Verrouillee sans cle" utilisent une autre banque commune :
+assets/audio/dialogs/locked_doors/locked_doors.tres
+Ajouter ses variantes dans Lines : une seule replique est choisie aleatoirement,
+juste apres le debut du meme son de serrure. Les banques restent distinctes.
+Les portes a carte d'acces ou a mecanisme ne declenchent pas les repliques de cle.
+
+BRIS DE VERRE
+
+Les portes 01, 02 et 03, simples ou doubles, reprennent les huit eclats de
+door_01. Le jeu ajuste leur taille et celle du contour casse a l'ouverture.
+Chaque vitre conserve sa texture et son reflet PSX, ainsi que son propre etat.
+Pour un autre modele, une seule surface vitree rectangulaire suffit. Le materiau
+transparent doit porter un nom de verre reconnu par l'exporteur modulaire.
+Une forme de vitre differente ou un motif de bris particulier demande un modele
+de fracture adapte. Le son se regle dans Carte > Bris de verre.
+Les commandes et la camera restent libres. Le WAV et le texte suivent le systeme
+de dialogue existant, y compris les longues pages et l'audio PSX avec reverb normale.
+Un dialogue deja en cours est preserve : les tentatives ne remplissent pas une file.
+Pas de repetition immediate si plusieurs lignes differentes sont disponibles.
+
+Dans le panneau de la porte, "Repliques si verrouillee" peut les desactiver.
+Modifier les repliques communes de la carte ouvre directement le fichier utilise.
+Le champ Repliques de la porte accepte un autre DialogueSequence si cette porte
+doit avoir sa propre liste. Vide, il reprend la liste de la carte.
+Sur Map, Portes verrouillees > Locked Door Dialogues change la liste des cles ;
+Permanent Door Dialogues change celle des portes condamnees.
+Locked Dialogue Cooldown regle le delai entre tentatives, 4 secondes par defaut.
+Locked Dialogue Delay regle le petit decalage entre le debut du son et la replique ;
+mettre 0 pour ouvrir la fenetre dans la meme mise a jour que l'interaction.
+Locked Door Sounds et Locked Sound Volume Db reglent les effets de serrure.
+Ils utilisent le son spatial PSX et la reverb du niveau. Meme si la liste de
+repliques est encore vide, le son de serrure reste disponible.
+Ce delai est partage entre les portes pour eviter de contourner la limite.
+Les references et les options se sauvegardent avec le plan et suivent Ctrl+Z.
+
+ETAGES, SOUS-SOLS ET ESCALIERS
+
+La liste au-dessus des outils choisit le plan actif : RDC a Y=0, Etage 1 a Y=3 m,
+Etage 2 a Y=6 m, Sous-sol 1 a Y=-3 m. "+ etage" et "- sous-sol" en ajoutent.
+Les cases, murs, portes, fenetres et plafonds sont independants a chaque etage.
+Dans la vue 3D aussi, le pinceau travaille toujours sur l'etage selectionne.
+"Autres etages" affiche les autres niveaux dans l'editeur ; en jeu ils sont
+tous presents. "Plafonds" ne change que leur visibilite dans l'editeur.
+Les sols superposes partagent une dalle de 10 cm, sans collision qui depasse.
+
+Placer le prefab stairs_01 comme un enfant de Map, a la hauteur de depart.
+Selectionner cet escalier dans l'arbre, puis "Ouvrir tremie sur escalier" :
+le plugin retire le sol de l'etage au-dessus et le plafond de celui du dessous,
+sur l'empreinte de l'escalier. Le collider stairs_collision reste la rampe lisse.
+Peindre le palier et les pieces du haut avec les outils habituels.
+L'outil "Tremie" permet aussi de dessiner les ouvertures a la main sur le plan
+du haut. Maj rebouche une tremie. Les modifications suivent Ctrl+Z et Ctrl+S.
+Sans PlayerSpawn, F6 choisit une vraie case de sol, meme si la carte commence
+sur un etage ou dans un sous-sol.
+
+KIT BLENDER ET RACCORDS
+
+Export individuel en un clic : addon Blender PSX - Export Godot.
+Installation et utilisation : EXPORT-BLENDER.txt.
+Il permet aussi d'exporter un objet decoratif en scene Godot avec collision.
+Ses modules sont references dans Kit > Module Overrides, independamment du
+kit de base ; reconstruire ce dernier conserve les remplacements individuels.
+
+Source : C:/Users/sheensaw/Downloads/scene.blend, collection Modular.
+Copie corrigee : exports/modular/scene_modular_2m.blend, collection Modular_2m.
+Bibliotheque GLB : assets/environment/modular_2m/modules.glb.
+Le fichier source Blender reste intact.
+
+Les profils et les textures d'origine sont conserves. Pas de miroir d'une
+deuxieme cloison entiere : les deux panneaux bas existent deja. Les faces
+manquantes au dos du papier peint et les normales du mur simple sont corrigees.
+Les deux cadres de porte depassaient de 10 cm par bout : seuls les retours
+exterieurs sont raccourcis. Les ouvertures gardent leur largeur et leur hauteur.
+Les raccords suivent des coupes a 45 degres, en T ou en croix selon les voisins.
+Les petits retours de bout sont conserves quand le mur se termine librement.
+Pas de bevel arrondi ajoute : il creerait des jours entre les modules.
+
+Les pages de texture sont recadrees depuis l'atlas, pixel pour pixel, jamais
+reduites depuis 1024 vers 256. Materiaux sans speculaire moderne, filtrage nearest.
+Kit peut etre rendu unique dans l'inspecteur pour ses Material Overrides.
+Les fichiers de geometrie sont binaires (.res) pour garder les .tscn petits.
+
+Pour reexporter apres modification du Blender, dans PowerShell a la racine
+du projet (les commandes suivantes doivent etre executees dans cet ordre) :
+
+& 'C:\Program Files\Blender Foundation\Blender 5.2\blender.exe' -b 'C:\Users\sheensaw\Downloads\scene.blend' --python tools/export_modular_kit.py
+& 'C:\Users\sheensaw\MyApps\Godot_v4.7.1-stable_win64.exe\Godot_v4.7.1-stable_win64_console.exe' --headless --path . --script tools/build_modular_kit.gd
+
+Garder les noms des modules, leurs UV et la reference de 2 m dans Modular.
+Le premier export produit une copie de travail et les pages ; le second prepare
+le kit binaire utilise par les cartes. Le plan peint reste independant du kit.

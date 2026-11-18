@@ -1,0 +1,16 @@
+{
+	"asset_name": "door_glass",
+	"asset_type": "door_glass",
+	"backup": "res://exports/backups/blender_addon/1794081971_236968/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "fe2f01624a8182a25e94dbc29c2aeca1eb88f31ba40aa3116d6469d8a5d7c849",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/environment/custom_modules/door_glass/door_glass.res",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"door_glass"
+	],
+	"triangles": 180
+}

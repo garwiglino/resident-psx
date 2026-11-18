@@ -1,0 +1,285 @@
+{
+	"assets": [
+		{
+			"adpcm_bytes": 3457792,
+			"path": "res://assets/audio/ambiance/outdoor_city.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 5436224,
+			"path": "res://assets/audio/ambiance/room_tone.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 209872,
+			"path": "res://assets/audio/dialogs/1/10_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 112112,
+			"path": "res://assets/audio/dialogs/1/1_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 39872,
+			"path": "res://assets/audio/dialogs/1/1_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 87872,
+			"path": "res://assets/audio/dialogs/1/2_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 90176,
+			"path": "res://assets/audio/dialogs/1/2_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 159216,
+			"path": "res://assets/audio/dialogs/1/3_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 161632,
+			"path": "res://assets/audio/dialogs/1/3_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 129072,
+			"path": "res://assets/audio/dialogs/1/4_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 355088,
+			"path": "res://assets/audio/dialogs/1/4_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 272432,
+			"path": "res://assets/audio/dialogs/1/5_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 77536,
+			"path": "res://assets/audio/dialogs/1/5_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 141536,
+			"path": "res://assets/audio/dialogs/1/6_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 8032,
+			"path": "res://assets/audio/dialogs/1/6_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 245936,
+			"path": "res://assets/audio/dialogs/1/7_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 64176,
+			"path": "res://assets/audio/dialogs/1/7_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 258352,
+			"path": "res://assets/audio/dialogs/1/8_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 152384,
+			"path": "res://assets/audio/dialogs/1/9_Chapter_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 39872,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 90176,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 161632,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 355088,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 77536,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 8032,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 64176,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 8736,
+			"path": "res://assets/audio/dialogs/talkie_end.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 20368,
+			"path": "res://assets/audio/dialogs/talkie_loop.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 10432,
+			"path": "res://assets/audio/dialogs/talkie_start.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 28432,
+			"path": "res://assets/audio/interactables/locked_door_1.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 35552,
+			"path": "res://assets/audio/interactables/locked_door_2.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 1163088,
+			"path": "res://assets/audio/music/dark_music_01.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 912,
+			"path": "res://assets/audio/ui/dialogue_close.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 912,
+			"path": "res://assets/audio/ui/dialogue_open.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 208,
+			"path": "res://assets/audio/ui/dialogue_tick.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 24352,
+			"path": "res://assets/audio/weapons/d_eagle/deagle_aim.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 7632,
+			"path": "res://assets/audio/weapons/d_eagle/deagle_dry_01.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 8512,
+			"path": "res://assets/audio/weapons/d_eagle/deagle_dry_02.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 41072,
+			"path": "res://assets/audio/weapons/d_eagle/deagle_reload.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 45200,
+			"path": "res://assets/audio/weapons/d_eagle/eagle_shoot.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 26416,
+			"path": "res://assets/audio/weapons/bullet_floor_01.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 19264,
+			"path": "res://assets/audio/weapons/bullet_floor_02.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 27632,
+			"path": "res://assets/audio/weapons/bullet_floor_03.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 8720,
+			"path": "res://assets/audio/weapons/hit_marker.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 53680,
+			"path": "res://assets/audio/weapons/mag_floor.wav",
+			"rate": 44100
+		},
+		{
+			"adpcm_bytes": 50400,
+			"path": "res://assets/audio/hum.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 3792,
+			"path": "res://assets/audio/hurt.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 3792,
+			"path": "res://assets/audio/pickup.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 6944,
+			"path": "res://assets/audio/reload.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 8192,
+			"path": "res://assets/audio/shot.wav",
+			"rate": 22050
+		},
+		{
+			"adpcm_bytes": 1776,
+			"path": "res://assets/audio/step.wav",
+			"rate": 22050
+		}
+	],
+	"failures": [],
+	"first_floor_tick": 33,
+	"impact": "(0.328507, 0.0, 3.75415)",
+	"players": [
+		"/root/SousScelles/Map/AudioNiveau/Ambience0",
+		"/root/SousScelles/Map/AudioNiveau/Exploration",
+		"/root/SousScelles/Player/@AudioStreamPlayer@67",
+		"/root/SousScelles/Player/@AudioStreamPlayer@68",
+		"/root/SousScelles/Player/@AudioStreamPlayer@69",
+		"/root/SousScelles/Player/@AudioStreamPlayer@70",
+		"/root/SousScelles/Player/@AudioStreamPlayer@71",
+		"/root/SousScelles/Player/@AudioStreamPlayer@72",
+		"/root/SousScelles/Player/@AudioStreamPlayer@73",
+		"/root/SousScelles/Dialogue/LetterTick",
+		"/root/SousScelles/ExplorationDialogue/LetterTick",
+		"/root/SousScelles/HitMarker",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/CasingFloor0",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/CasingFloor1",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/CasingFloor2",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/CasingFloor3",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/MagazineFloor0",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/MagazineFloor1",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/MagazineFloor2",
+		"/root/SousScelles/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/MagazineFloor3"
+	],
+	"voice_pool": 4
+}

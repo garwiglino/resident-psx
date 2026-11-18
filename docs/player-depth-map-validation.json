@@ -1,0 +1,187 @@
+{
+	"failures": [],
+	"player_surfaces": 25,
+	"results": [
+		{
+			"correction": false,
+			"frame": {
+				"max_ms": 9.185,
+				"mean_ms": 7.51408888888889,
+				"p95_ms": 8.707
+			},
+			"geometry": {
+				"max_ms": 7.2,
+				"mean_ms": 5.85328888888889,
+				"p95_ms": 7.072
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 0,
+				"general_depth": false,
+				"light_occluders": 3242,
+				"light_revision": 4,
+				"player_depth_pixels": 0,
+				"player_depth_triangles": 0,
+				"shadow_rays": 3145,
+				"shadow_triangle_tests": 107577,
+				"shot_light_energy": 0.0,
+				"triangles": 2752,
+				"version": 15,
+				"vertices": 8273,
+				"world_lights": 1
+			},
+			"view": "shoulder"
+		},
+		{
+			"correction": true,
+			"frame": {
+				"max_ms": 13.594,
+				"mean_ms": 10.4355777777778,
+				"p95_ms": 12.4
+			},
+			"geometry": {
+				"max_ms": 10.837,
+				"mean_ms": 8.57242222222222,
+				"p95_ms": 10.419
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 76791,
+				"general_depth": true,
+				"light_occluders": 3242,
+				"light_revision": 5,
+				"player_depth_pixels": 76791,
+				"player_depth_triangles": 2752,
+				"shadow_rays": 3145,
+				"shadow_triangle_tests": 107577,
+				"shot_light_energy": 0.0,
+				"triangles": 2752,
+				"version": 15,
+				"vertices": 8273,
+				"world_lights": 1
+			},
+			"view": "shoulder"
+		},
+		{
+			"correction": false,
+			"frame": {
+				"max_ms": 9.656,
+				"mean_ms": 8.04604444444444,
+				"p95_ms": 9.432
+			},
+			"geometry": {
+				"max_ms": 7.755,
+				"mean_ms": 6.33503333333333,
+				"p95_ms": 7.676
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 0,
+				"general_depth": false,
+				"light_occluders": 3242,
+				"light_revision": 6,
+				"player_depth_pixels": 0,
+				"player_depth_triangles": 0,
+				"shadow_rays": 4249,
+				"shadow_triangle_tests": 123070,
+				"shot_light_energy": 0.0,
+				"triangles": 2622,
+				"version": 15,
+				"vertices": 8273,
+				"world_lights": 1
+			},
+			"view": "aim"
+		},
+		{
+			"correction": true,
+			"frame": {
+				"max_ms": 19.295,
+				"mean_ms": 10.7739777777778,
+				"p95_ms": 12.417
+			},
+			"geometry": {
+				"max_ms": 15.128,
+				"mean_ms": 8.91737777777778,
+				"p95_ms": 9.638
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 76791,
+				"general_depth": true,
+				"light_occluders": 3242,
+				"light_revision": 7,
+				"player_depth_pixels": 76791,
+				"player_depth_triangles": 2622,
+				"shadow_rays": 4249,
+				"shadow_triangle_tests": 123070,
+				"shot_light_energy": 0.0,
+				"triangles": 2622,
+				"version": 15,
+				"vertices": 8273,
+				"world_lights": 1
+			},
+			"view": "aim"
+		},
+		{
+			"correction": false,
+			"frame": {
+				"max_ms": 7.488,
+				"mean_ms": 5.39597777777778,
+				"p95_ms": 6.096
+			},
+			"geometry": {
+				"max_ms": 5.633,
+				"mean_ms": 3.7251,
+				"p95_ms": 3.925
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 0,
+				"general_depth": false,
+				"light_occluders": 3242,
+				"light_revision": 8,
+				"player_depth_pixels": 0,
+				"player_depth_triangles": 0,
+				"shadow_rays": 3120,
+				"shadow_triangle_tests": 74412,
+				"shot_light_energy": 0.0,
+				"triangles": 1190,
+				"version": 15,
+				"vertices": 4215,
+				"world_lights": 1
+			},
+			"view": "close_body_weapon"
+		},
+		{
+			"correction": true,
+			"frame": {
+				"max_ms": 21.13,
+				"mean_ms": 7.85113333333334,
+				"p95_ms": 8.635
+			},
+			"geometry": {
+				"max_ms": 8.76,
+				"mean_ms": 5.9871,
+				"p95_ms": 6.187
+			},
+			"stats": {
+				"batches": 1,
+				"depth_pixels": 76797,
+				"general_depth": true,
+				"light_occluders": 3242,
+				"light_revision": 9,
+				"player_depth_pixels": 76797,
+				"player_depth_triangles": 1190,
+				"shadow_rays": 3120,
+				"shadow_triangle_tests": 74412,
+				"shot_light_energy": 0.0,
+				"triangles": 1190,
+				"version": 15,
+				"vertices": 4215,
+				"world_lights": 1
+			},
+			"view": "close_body_weapon"
+		}
+	],
+	"weapon_surfaces": 20
+}

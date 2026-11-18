@@ -1,0 +1,10 @@
+{
+	"ambience_pool": 8,
+	"effect_pools": [
+		4,
+		4
+	],
+	"failures": [],
+	"music_players": 2,
+	"native_stream": "AudioStreamPSX"
+}

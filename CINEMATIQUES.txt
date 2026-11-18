@@ -1,0 +1,168 @@
+MONTAGE DES CINEMATIQUES
+
+OUVRIR LE MONTAGE
+Ouvrir scenes/main.tscn et selectionner Map > CinematicSequence, sa camera ou sa zone.
+Le panneau Cinematiques se trouve en bas de Godot, a cote d'Animation.
+Le plugin Montage Cinematiques est active dans Projet > Parametres > Plugins.
+Le montage fonctionne dans la carte : inutile d'ouvrir la cinematique seule.
+
+Un plan associe une camera, une animation, une portion de cette animation et
+un dialogue facultatif. La liste de gauche donne l'ordre de lecture.
+La piste bleue montre le mouvement ; la piste ocre indique le debut du texte.
+La duree du texte depend du lecteur, pas de la longueur de la barre.
+La phrase sous Passage explique la condition exacte du plan selectionne.
+
+PERSONNAGES ET ANIMATIONS
+Sous Camera, Dialogue et Audio, les pistes vertes montrent les personnages.
+1. Selectionner le plan, puis ouvrir l'onglet Personnages du panneau.
+2. Cliquer + Personnage / animation.
+3. Selectionner le personnage dans l'arbre de la carte, puis Utiliser la selection.
+   Le chemin est relatif a la cinematique ; le personnage peut rester ailleurs dans la carte.
+4. Choisir son animation. Pour un clip Blender exporte separement, glisser le GLB
+   dans Animation GLB, puis choisir le nom du clip dans la liste a droite.
+   Pour le joueur : assets/character/animations/player_walk_forward_pistol.glb, par exemple.
+5. Debut place le clip sur la piste, en secondes depuis le debut du plan.
+   Dans le clip saute le debut de la source sans modifier son fichier.
+   Duree = -1 lit le reste du clip une fois. Une autre duree peut raccourcir le clip
+   ou maintenir sa derniere pose. Boucler repete la source pendant la duree indiquee.
+   Vitesse change ensemble la cadence et le root motion.
+6. Appliquer le root motion deplace et tourne vraiment le personnage suivant le clip.
+   Le lecteur du personnage doit declarer sa piste Root Motion Track ; le squelette
+   Rigify du joueur est reconnu automatiquement.
+
+Ajouter plusieurs personnages cree des pistes simultanees. Ajouter plusieurs clips
+sur le meme personnage permet d'enchainer ses animations sans chevauchement.
+Cliquer une piste verte choisit son clip ; Suppr retire ce clip quand cette piste a le focus.
+Le personnage doit deja etre place dans la carte. Cette fonction ne cree pas de PNJ.
+Les clips utilisent le meme curseur que la camera. Si un clip finit apres la camera,
+la camera garde sa pose pendant que le personnage termine. La validation rapide d'un
+dialogue lie termine aussi les mouvements de personnages du plan.
+Leur derniere pose reste maintenue pendant l'attente du texte.
+Au retour en jeu, les personnages gardent le deplacement racine atteint et leurs
+controles/animations habituels reprennent. Arreter l'apercu restaure tout dans l'editeur.
+Les autres personnages et le monde continuent ; seuls les acteurs des pistes sont pris en charge.
+Ctrl+Z / Ctrl+Maj+Z et l'enregistrement de la carte conservent aussi ces pistes.
+
+AUDIO DES REPLIQUES
+Mode du dialogue permet aussi de choisir Conversation (validation manuelle) ou Appel
+(repliques automatiques). Le choix est conserve dans la ressource DialogueSequence.
+Hors cinematique, Appel laisse toutes les actions du joueur libres. Dans un plan,
+le gestionnaire de cinematique reste proprietaire de sa camera et des acteurs.
+La fin automatique du texte remplace alors sa validation dans la condition de passage.
+L'apercu Lire simule egalement cette progression a partir du WAV et des temps de lecture.
+Les appels qui jouaient deja pendant l'exploration sont suspendus puis repris a la sortie.
+Dans l'onglet Dialogue et voix, choisir la replique puis glisser son WAV/OGG/MP3
+dans Audio. Le volume se regle en dB. Ecouter permet de verifier sans lancer le jeu.
+La case Audio affiche le nom du son. On peut aussi cliquer dessus pour choisir
+un fichier ; X retire l'audio. Le depot fonctionne sur toute la case, bouton compris.
+Creer d'abord le dialogue et sa replique avant d'assigner un son.
+Is Intercom active la voix radio et les sons talkie_start/talkie_end du style de dialogue.
+La piste violette represente l'audio de la replique selectionnee ; les repliques suivantes
+demarrent lors de leur lecture, pas a des secondes imposees dans le mouvement camera.
+Une voix continue sur toutes les pages de sa replique et pendant les changements de camera.
+Passer a la replique suivante coupe la voix precedente et ferme la transmission radio.
+Reveler seulement le typewriter ne coupe pas l'audio. Fin de voix ne ferme pas le texte.
+Details et reglages du filtre dans DIALOGUES.txt.
+
+CAMERA ET TEXTE : DEUX HORLOGES
+La camera continue pendant le dialogue. Quand son mouvement est fini, elle garde
+sa derniere pose, sans fermer le texte. Une validation peut terminer le mouvement
+restant si l'option correspondante est cochee.
+En jeu : le premier appui revele le typewriter ; les suivants changent les pages
+et repliques. Seule la validation de la derniere replique du plan compte.
+
+PASSAGE AU PLAN SUIVANT
+Camera + dialogue valides : attend mouvement fini ET dialogue valide.
+  Valider le texte termine le mouvement coche : la validation applique la pose
+  finale du mouvement restant, puis passe au plan suivant.
+  Option decochee : meme un lecteur rapide attend la fin naturelle de la camera.
+  Sans dialogue : passage automatique a la fin du mouvement.
+Camera seule / texte libre : la camera avance a sa fin, le texte continue ouvert.
+  Les textes suivants se mettent en file. Confirmer un ancien texte ne termine
+  jamais le mauvais plan. Les textes retardes gardent leur propre horloge.
+Commande manuelle : garde la derniere image jusqu'a une commande explicite.
+  E / Entree / Espace sans texte ouvert, ou CinematicSequence.next_plan().
+La fin du montage attend toujours les textes encore ouverts ou prevus.
+Entree dans la cinematique et retour au jeu : cut immediat.
+
+CREER OU MODIFIER UN PLAN
++ Plan cree un plan avec sa propre animation, sans changer les autres mouvements.
+Copier copie aussi son animation et son texte : ses cles deviennent independantes.
+Monter / Descendre changent l'ordre. Retirer n'efface pas l'animation d'origine.
+Choisir Camera et Animation. Debut / Fin delimitent la portion lue, en secondes.
+Fin du clip suit automatiquement la duree de l'animation.
+Texte apres regle le delai d'ouverture du texte depuis le debut du plan.
+Un dialogue peut commencer apres la fin du mouvement : la camera attend alors.
+
+ECRIRE OU ASSIGNER UN DIALOGUE
+Texte existant... propose les dialogues deja presents dans la cinematique.
+Le champ ressource accepte aussi un DialogueSequence existant par glisser-deposer.
+Nouveau texte cree un dialogue local. Regler Locuteur puis ecrire la replique.
++ Replique / - Replique gerent les lignes ; la liste choisit laquelle editer.
+Les modifications de texte restent locales au montage, sans reecrire le fichier
+utilise comme modele. Enregistrer la scene pour conserver ces choix.
+Vider le champ ressource retire le lien au dialogue pour ce plan.
+
+POSER ET SUPPRIMER LES CLES CAMERA DANS LA CARTE
+1. Selectionner le plan. Cliquer dans la piste bleue pour placer le curseur.
+2. Mettre l'apercu en pause, puis deplacer/orienter sa Camera3D dans la vue 3D.
+3. Cle camera enregistre position, rotation et FOV a ce temps.
+4. Recommencer plus loin pour creer le mouvement.
+Les losanges jaunes sont les cles. Cliquer sur un losange choisit son temps.
+Suppr. cle supprime vraiment les cles a ce temps, meme dans une scene instanciee.
+La touche Suppr fait pareil lorsque la piste de montage a le focus.
+Gauche / Droite deplacent le curseur d'1/30 s. Espace lance/met en pause l'apercu.
+Les bibliotheques sont rendues uniques automatiquement pour preserver les autres
+instances et le fichier de cinematique utilise comme modele.
+Ctrl+Z / Ctrl+Maj+Z annulent/refont les changements dans l'historique de la carte.
+Animation Godot ouvre l'editeur natif pour les courbes et les autres pistes.
+
+APERCU DANS L'EDITEUR
+Lire joue le mouvement dans la carte. Voir camera cadre la vue depuis le plan.
+Confirmer (simulation) simule la validation de tout le dialogue de ce plan.
+L'apercu peut garder la derniere image en attendant cette confirmation.
+Arreter restaure les cameras, les personnages et la vue de travail. Enregistrer la scene arrete
+l'apercu pour ne jamais sauver une pose temporaire comme pose de base.
+L'apercu n'execute pas les appels de methode ni les sons des animations.
+Le jeu garde son typewriter, ses sons et ses controles de dialogue habituels.
+
+CREER LA CINEMATIQUE ET SA ZONE
+Nouvelle cree dans la carte une cinematique, CameraA, Timeline et un plan.
++ Camera place une camera depuis la vue 3D et l'assigne au plan selectionne.
+Ajouter zone cree une Area3D avec un vrai cube Volume deja lie a la cinematique.
+Deplacer la zone ; changer Volume > Shape > Size pour ses dimensions.
+Garder Scale a 1. Automatic On Enter declenche a l'entree du joueur.
+Once empeche les repetitions ; reset() permet de rearmer la zone.
+Tester main.tscn avec F6, ou le jeu avec F5. Backspace passe si Skippable est actif.
+
+ANCIENNES CINEMATIQUES
+Les reperes cut_to / show_dialogue sont lus comme des plans sans reecrire de cle.
+Une ancienne camera absente est ignoree lors de cette conversion.
+Conserver les plans enregistre cette organisation explicitement dans la scene.
+Modifier le montage le conserve egalement. Les anciens reperes ne pilotent plus
+le dialogue : les champs du panneau deviennent la reference.
+Les autres pistes natives, les durees et les cles restent disponibles.
+
+GESTION EN JEU
+Le monde, la physique, les animations et les sons continuent pendant la lecture.
+Seules les commandes du joueur sont bloquees. Echap suspend vraiment le jeu.
+Annulation, suppression d'une camera/sequence, mort ou fin de niveau restaurent
+la camera precedente et liberent seulement les controles pris par le montage.
+Signaux : plan_started(index, plan), plan_finished(index, plan), started(sequence),
+finished(sequence, raison), event_reached(sequence, id).
+Finished Event, dans l'inspecteur du plan, emet une fin une seule fois, meme si
+une validation termine le mouvement avant les dernieres cles.
+Une fin rapide n'execute pas les appels/sons sautes dans l'animation.
+
+REFERENCE DE COMPORTEMENT
+Ocarina of Time attend notamment a une borne de cinematique tant que le texte
+n'est pas ferme. La fin rapide du mouvement est ici un choix par plan ; tous les
+dialogues de Zelda ne font pas necessairement avancer la camera ainsi.
+Source : https://github.com/zeldaret/oot/blob/main/src/code/z_demo.c#L1568-L1638
+
+VERIFICATIONS
+Tests montage : attentes, validation rapide, files, textes retardes, commande
+manuelle, pause, skip et lecture de la carte existante.
+Tests visuels : vraies images PSX, FOV, dialogues, cuts et retour au jeu.
+Tests editeur : panneau, cles dans une scene instanciee, annuler/refaire,
+dialogues, plans, cameras, zone et preservation de la scene source.

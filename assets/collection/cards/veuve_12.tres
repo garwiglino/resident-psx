@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/veuve_12.res" id="1_jac5g"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_4dhu8"]
+
+[resource]
+script = ExtResource("2_4dhu8")
+id = &"veuve_12"
+display_name = "VEUVE-12"
+description = "Machine violette insectoïde équipée de capteurs articulés."
+lore = "Ses capteurs entendent les réseaux éteints."
+rarity = "R"
+image = ExtResource("1_jac5g")
+source_index = 3

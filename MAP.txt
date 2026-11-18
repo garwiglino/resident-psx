@@ -1,0 +1,24 @@
+MAP ACTIVE : scenes/couloir_pieces.tscn, instancee sous Map dans scenes/main.tscn.
+
+Kit importe depuis C:\Users\sheensaw\Downloads\scene.blend.
+Les sept elements et la texture d'origine sont dans assets/environment/scene_kit.glb.
+Le fichier Blender original reste intact.
+L'atlas 1024 x 1024 est decoupe en pages PSX sans reduire ses pixels.
+Les tuiles de 128 pixels gardent leurs 128 pixels, leurs UV et leur repetition d'origine.
+Les fichiers surfaces_page_*.png sont les regions utilisees par les modules (256 x 256 maximum).
+Le panneau utilise surfaces_panel.png. La quantification RGB555 reste appliquee au chargement.
+
+Organisation : entree 8 x 6 m, couloir central de 4 m de large,
+deux pieces laterales de 6 x 6 m, salle du fond de 8 x 8 m.
+Hauteur : 3 m. Ouvertures de portes : 1,5 m pour le personnage et sa camera a l'epaule.
+Les deux portes laterales sont ouvertes ; la porte du fond garde sa collision.
+
+La scene est statique et editable dans Godot. Chaque module est un noeud separe,
+avec son maillage et ses collisions. Les angles utilisent les deux pieces du kit.
+Les points Gameplay reglent le depart, les objets existants, le panneau et la sortie.
+Les positions des ennemis restent reglables sur la racine de scenes/main.tscn.
+L'ancienne scene scenes/annexe.tscn reste disponible.
+
+Pour reconstruire la disposition de base : lancer tools/build_simple_map.gd
+avec Godot --headless --path <dossier du projet> --script res://tools/build_simple_map.gd.
+Cela remplace couloir_pieces.tscn : garder une copie avant de reconstruire une map editee.

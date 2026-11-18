@@ -1,0 +1,14 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+WARNING: 'res://assets/environment/modular_2m/kit_data.res': In external resource #0, invalid UID: 'uid://c4pam3i0tp21k' - using text path instead: 'res://scripts/modular_map/kit_data.gd'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/neon_export_editor.gd:35)
+       [1] settle (res://tests/neon_export_editor.gd:7)
+WARNING: 'res://assets/environment/custom_modules/door_01/door_01.res': In external resource #0, invalid UID: 'uid://c4pam3i0tp21k' - using text path instead: 'res://scripts/modular_map/kit_data.gd'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/neon_export_editor.gd:35)
+       [1] settle (res://tests/neon_export_editor.gd:7)
+NEON_EXPORT_EDITOR_OK []

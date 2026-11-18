@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" script_class="PSXLightShaftMaterial" format=3]
+[ext_resource type="Script" path="res://scripts/materials/psx_light_shaft_material.gd" id="Material"]
+[ext_resource type="Texture2D" path="res://assets/effects/light_shafts/window_beam.png" id="Texture"]
+[resource]
+resource_name = "PSX Window Light Shaft"
+script = ExtResource("Material")
+color = Color(0.8, 0.86, 1, 1)
+strength = 0.8
+texture = ExtResource("Texture")

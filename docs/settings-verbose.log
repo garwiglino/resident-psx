@@ -1,0 +1,149 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 3769296884
+EDITOR API HASH: 3146738256
+Loading resource: res://tests/settings.gd remapped: res://tests/settings.gd
+Completed load for: 'res://tests/settings.gd' remapped 'res://tests/settings.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loaded system CA certificates
+Loading resource: res://scenes/main.tscn remapped: res://scenes/main.tscn
+Loading resource: res://scripts/game.gd remapped: res://scripts/game.gd
+Completed load for: 'res://scripts/game.gd' remapped 'res://scripts/game.gd' at thread -1
+Loading resource: res://scenes/annexe.tscn remapped: res://scenes/annexe.tscn
+Loading resource: res://assets/textures/floor.png remapped: res://assets/textures/floor.png
+Loading resource: res://.godot/imported/floor.png-bc19f2b688ab458014752317127027f7.s3tc.ctex remapped: res://.godot/imported/floor.png-bc19f2b688ab458014752317127027f7.s3tc.ctex
+Completed load for: 'res://assets/textures/floor.png' remapped 'res://assets/textures/floor.png' at thread -1
+Loading resource: res://assets/textures/steel.png remapped: res://assets/textures/steel.png
+Loading resource: res://.godot/imported/steel.png-019676abd0c12a3a93156532637e8a95.s3tc.ctex remapped: res://.godot/imported/steel.png-019676abd0c12a3a93156532637e8a95.s3tc.ctex
+Completed load for: 'res://assets/textures/steel.png' remapped 'res://assets/textures/steel.png' at thread -1
+Loading resource: res://assets/textures/wall.png remapped: res://assets/textures/wall.png
+Loading resource: res://.godot/imported/wall.png-35b80c25b8f7299ed1631f28676b0e6a.s3tc.ctex remapped: res://.godot/imported/wall.png-35b80c25b8f7299ed1631f28676b0e6a.s3tc.ctex
+Completed load for: 'res://assets/textures/wall.png' remapped 'res://assets/textures/wall.png' at thread -1
+Loading resource: res://assets/textures/wood.png remapped: res://assets/textures/wood.png
+Loading resource: res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.s3tc.ctex remapped: res://.godot/imported/wood.png-eeb3ea6fc91501562e05b28492ed90b0.s3tc.ctex
+Completed load for: 'res://assets/textures/wood.png' remapped 'res://assets/textures/wood.png' at thread -1
+Completed load for: 'res://scenes/annexe.tscn' remapped 'res://scenes/annexe.tscn' at thread -1
+Loading resource: res://scenes/player.tscn remapped: res://scenes/player.tscn
+Loading resource: res://assets/character/cop.glb remapped: res://assets/character/cop.glb
+Loading resource: res://.godot/imported/cop.glb-3f44606f5931d26268b1dbc55f7ecac3.scn remapped: res://.godot/imported/cop.glb-3f44606f5931d26268b1dbc55f7ecac3.scn
+Loading resource: res://assets/character/cop_Image_0.png remapped: res://assets/character/cop_Image_0.png
+Loading resource: res://.godot/imported/cop_Image_0.png-4469b547537ddffdc61ddeb9bd6f235a.s3tc.ctex remapped: res://.godot/imported/cop_Image_0.png-4469b547537ddffdc61ddeb9bd6f235a.s3tc.ctex
+Completed load for: 'res://assets/character/cop_Image_0.png' remapped 'res://assets/character/cop_Image_0.png' at thread -1
+Loading resource: res://assets/character/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-57400d0be8f5381a66229698e4bff813.s3tc.ctex remapped: res://.godot/imported/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-57400d0be8f5381a66229698e4bff813.s3tc.ctex
+Completed load for: 'res://assets/character/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/cop_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/cop.glb' remapped 'res://assets/character/cop.glb' at thread -1
+Completed load for: 'res://scenes/player.tscn' remapped 'res://scenes/player.tscn' at thread -1
+Completed load for: 'res://scenes/main.tscn' remapped 'res://scenes/main.tscn' at thread -1
+Loading resource: res://assets/character/walk.glb remapped: res://assets/character/walk.glb
+Loading resource: res://.godot/imported/walk.glb-943a331eda707eff123957bce4e935a0.scn remapped: res://.godot/imported/walk.glb-943a331eda707eff123957bce4e935a0.scn
+Loading resource: res://assets/character/walk_Image_0.png remapped: res://assets/character/walk_Image_0.png
+Loading resource: res://.godot/imported/walk_Image_0.png-092be72545795d37e3bbd6ce45e85f77.ctex remapped: res://.godot/imported/walk_Image_0.png-092be72545795d37e3bbd6ce45e85f77.ctex
+Completed load for: 'res://assets/character/walk_Image_0.png' remapped 'res://assets/character/walk_Image_0.png' at thread -1
+Loading resource: res://assets/character/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b7e6fdc75ec01d70e42218b7777c5e57.ctex remapped: res://.godot/imported/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b7e6fdc75ec01d70e42218b7777c5e57.ctex
+Completed load for: 'res://assets/character/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/walk.glb' remapped 'res://assets/character/walk.glb' at thread -1
+Loading resource: res://assets/character/backward.glb remapped: res://assets/character/backward.glb
+Loading resource: res://.godot/imported/backward.glb-a3f5fd5f96175c27d9b81c30d5eeae96.scn remapped: res://.godot/imported/backward.glb-a3f5fd5f96175c27d9b81c30d5eeae96.scn
+Loading resource: res://assets/character/backward_Image_0.png remapped: res://assets/character/backward_Image_0.png
+Loading resource: res://.godot/imported/backward_Image_0.png-6493af4643a03ad2cc166448dfe7e1b1.ctex remapped: res://.godot/imported/backward_Image_0.png-6493af4643a03ad2cc166448dfe7e1b1.ctex
+Completed load for: 'res://assets/character/backward_Image_0.png' remapped 'res://assets/character/backward_Image_0.png' at thread -1
+Loading resource: res://assets/character/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-fbbec3735e98d1f8ff3ce1a184f1b56f.ctex remapped: res://.godot/imported/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-fbbec3735e98d1f8ff3ce1a184f1b56f.ctex
+Completed load for: 'res://assets/character/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/backward_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/backward.glb' remapped 'res://assets/character/backward.glb' at thread -1
+Loading resource: res://assets/character/strafe_left.glb remapped: res://assets/character/strafe_left.glb
+Loading resource: res://.godot/imported/strafe_left.glb-7ad9c85fe7a6cd0d255062eb094e5a88.scn remapped: res://.godot/imported/strafe_left.glb-7ad9c85fe7a6cd0d255062eb094e5a88.scn
+Loading resource: res://assets/character/strafe_left_Image_0.png remapped: res://assets/character/strafe_left_Image_0.png
+Loading resource: res://.godot/imported/strafe_left_Image_0.png-9ad003b14082a53f50eaf704279b5d7c.ctex remapped: res://.godot/imported/strafe_left_Image_0.png-9ad003b14082a53f50eaf704279b5d7c.ctex
+Completed load for: 'res://assets/character/strafe_left_Image_0.png' remapped 'res://assets/character/strafe_left_Image_0.png' at thread -1
+Loading resource: res://assets/character/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-8dea5ca0ff3d42af8fdda9b5cec11891.ctex remapped: res://.godot/imported/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-8dea5ca0ff3d42af8fdda9b5cec11891.ctex
+Completed load for: 'res://assets/character/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/strafe_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/strafe_left.glb' remapped 'res://assets/character/strafe_left.glb' at thread -1
+Loading resource: res://assets/character/strafe_right.glb remapped: res://assets/character/strafe_right.glb
+Loading resource: res://.godot/imported/strafe_right.glb-2a9a0edfdb0e6e69d06f62dd3c85930a.scn remapped: res://.godot/imported/strafe_right.glb-2a9a0edfdb0e6e69d06f62dd3c85930a.scn
+Loading resource: res://assets/character/strafe_right_Image_0.png remapped: res://assets/character/strafe_right_Image_0.png
+Loading resource: res://.godot/imported/strafe_right_Image_0.png-72df1441b026c268656cb718c3858872.ctex remapped: res://.godot/imported/strafe_right_Image_0.png-72df1441b026c268656cb718c3858872.ctex
+Completed load for: 'res://assets/character/strafe_right_Image_0.png' remapped 'res://assets/character/strafe_right_Image_0.png' at thread -1
+Loading resource: res://assets/character/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-4296878fe0b623916eaa7848c1607ed0.ctex remapped: res://.godot/imported/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-4296878fe0b623916eaa7848c1607ed0.ctex
+Completed load for: 'res://assets/character/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/strafe_right_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/strafe_right.glb' remapped 'res://assets/character/strafe_right.glb' at thread -1
+Loading resource: res://assets/character/run.glb remapped: res://assets/character/run.glb
+Loading resource: res://.godot/imported/run.glb-d37392875bcce719bf50831f19ffa135.scn remapped: res://.godot/imported/run.glb-d37392875bcce719bf50831f19ffa135.scn
+Loading resource: res://assets/character/run_Image_0.png remapped: res://assets/character/run_Image_0.png
+Loading resource: res://.godot/imported/run_Image_0.png-bf58d4733c7e0c73882513a8ce20a8bd.ctex remapped: res://.godot/imported/run_Image_0.png-bf58d4733c7e0c73882513a8ce20a8bd.ctex
+Completed load for: 'res://assets/character/run_Image_0.png' remapped 'res://assets/character/run_Image_0.png' at thread -1
+Loading resource: res://assets/character/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-1e1cb4a16c4a1236cdc419be4ab510c8.ctex remapped: res://.godot/imported/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-1e1cb4a16c4a1236cdc419be4ab510c8.ctex
+Completed load for: 'res://assets/character/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/run_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/run.glb' remapped 'res://assets/character/run.glb' at thread -1
+Loading resource: res://assets/character/aim.glb remapped: res://assets/character/aim.glb
+Loading resource: res://.godot/imported/aim.glb-264ecbffc07847ccecb63b4559224ecb.scn remapped: res://.godot/imported/aim.glb-264ecbffc07847ccecb63b4559224ecb.scn
+Loading resource: res://assets/character/aim_Image_0.png remapped: res://assets/character/aim_Image_0.png
+Loading resource: res://.godot/imported/aim_Image_0.png-f13c72275844123148ed143e495de724.ctex remapped: res://.godot/imported/aim_Image_0.png-f13c72275844123148ed143e495de724.ctex
+Completed load for: 'res://assets/character/aim_Image_0.png' remapped 'res://assets/character/aim_Image_0.png' at thread -1
+Loading resource: res://assets/character/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-e5d121c3d72678fc3ce9675ddbb28826.ctex remapped: res://.godot/imported/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-e5d121c3d72678fc3ce9675ddbb28826.ctex
+Completed load for: 'res://assets/character/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/aim_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/aim.glb' remapped 'res://assets/character/aim.glb' at thread -1
+Loading resource: res://assets/character/aim_walk.glb remapped: res://assets/character/aim_walk.glb
+Loading resource: res://.godot/imported/aim_walk.glb-c88b2c2ffdddc46bd03f955d34c147b3.scn remapped: res://.godot/imported/aim_walk.glb-c88b2c2ffdddc46bd03f955d34c147b3.scn
+Loading resource: res://assets/character/aim_walk_Image_0.png remapped: res://assets/character/aim_walk_Image_0.png
+Loading resource: res://.godot/imported/aim_walk_Image_0.png-660e35cdac4f06ef3ae838188ffe96be.ctex remapped: res://.godot/imported/aim_walk_Image_0.png-660e35cdac4f06ef3ae838188ffe96be.ctex
+Completed load for: 'res://assets/character/aim_walk_Image_0.png' remapped 'res://assets/character/aim_walk_Image_0.png' at thread -1
+Loading resource: res://assets/character/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-6a97cb3eca5c92ac1e6dcd9b1d036d68.ctex remapped: res://.godot/imported/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-6a97cb3eca5c92ac1e6dcd9b1d036d68.ctex
+Completed load for: 'res://assets/character/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/aim_walk_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/aim_walk.glb' remapped 'res://assets/character/aim_walk.glb' at thread -1
+Loading resource: res://assets/audio/shot.wav remapped: res://assets/audio/shot.wav
+Loading resource: res://.godot/imported/shot.wav-ac6ed86fa6b7982e876275e953a6b851.sample remapped: res://.godot/imported/shot.wav-ac6ed86fa6b7982e876275e953a6b851.sample
+Completed load for: 'res://assets/audio/shot.wav' remapped 'res://assets/audio/shot.wav' at thread -1
+Loading resource: res://assets/audio/step.wav remapped: res://assets/audio/step.wav
+Loading resource: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample remapped: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.sample
+Completed load for: 'res://assets/audio/step.wav' remapped 'res://assets/audio/step.wav' at thread -1
+Loading resource: res://assets/audio/reload.wav remapped: res://assets/audio/reload.wav
+Loading resource: res://.godot/imported/reload.wav-50f2d65be979b5afe34a1e31b08f63e8.sample remapped: res://.godot/imported/reload.wav-50f2d65be979b5afe34a1e31b08f63e8.sample
+Completed load for: 'res://assets/audio/reload.wav' remapped 'res://assets/audio/reload.wav' at thread -1
+Loading resource: res://assets/audio/hurt.wav remapped: res://assets/audio/hurt.wav
+Loading resource: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample remapped: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.sample
+Completed load for: 'res://assets/audio/hurt.wav' remapped 'res://assets/audio/hurt.wav' at thread -1
+Loading resource: res://assets/audio/pickup.wav remapped: res://assets/audio/pickup.wav
+Loading resource: res://.godot/imported/pickup.wav-005c0482069dd16ebcd4cedd7f327134.sample remapped: res://.godot/imported/pickup.wav-005c0482069dd16ebcd4cedd7f327134.sample
+Completed load for: 'res://assets/audio/pickup.wav' remapped 'res://assets/audio/pickup.wav' at thread -1
+Loading resource: res://assets/fonts/console.ttf remapped: res://assets/fonts/console.ttf
+Loading resource: res://.godot/imported/console.ttf-6ce310498465c473ec034d13791c50a8.fontdata remapped: res://.godot/imported/console.ttf-6ce310498465c473ec034d13791c50a8.fontdata
+Completed load for: 'res://assets/fonts/console.ttf' remapped 'res://assets/fonts/console.ttf' at thread -1
+Loading resource: res://shaders/psx_raster.gdshader remapped: res://shaders/psx_raster.gdshader
+Completed load for: 'res://shaders/psx_raster.gdshader' remapped 'res://shaders/psx_raster.gdshader' at thread -1
+Loading resource: res://assets/audio/hum.wav remapped: res://assets/audio/hum.wav
+Loading resource: res://.godot/imported/hum.wav-3e8cb3ba3785f99343e3a053b39d59c0.sample remapped: res://.godot/imported/hum.wav-3e8cb3ba3785f99343e3a053b39d59c0.sample
+Completed load for: 'res://assets/audio/hum.wav' remapped 'res://assets/audio/hum.wav' at thread -1
+Loading resource: res://assets/character/cop.glb remapped: res://assets/character/cop.glb
+Loading resource: res://.godot/imported/cop.glb-3f44606f5931d26268b1dbc55f7ecac3.scn remapped: res://.godot/imported/cop.glb-3f44606f5931d26268b1dbc55f7ecac3.scn
+Completed load for: 'res://assets/character/cop.glb' remapped 'res://assets/character/cop.glb' at thread -1
+SETTINGS_OK: inspector, live camera/collision/scale, persistence, Blender reset, weapon, render settings
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: AudioStreamWAV:9223372111395949939 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372115825135164 - Reference count: 1
+Leaked instance: AudioStreamWAV:9223372115774803518 - Reference count: 1
+Leaked instance: AudioStreamPlaybackWAV:9223372116630441536 - Reference count: 1
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+Resource still in use: res://assets/audio/reload.wav (AudioStreamWAV)
+Resource still in use: res://assets/audio/hum.wav (AudioStreamWAV)
+Orphan StringName: DITHER (static: 0, total: 1)
+Orphan StringName: Master (static: 0, total: 2)
+StringName: 2 unclaimed string names at exit.
+WARNING: 4 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 2 resources still in use at exit.
+   at: clear (core/io/resource.cpp:817)

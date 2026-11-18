@@ -1,0 +1,23 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/inventory/item_target.gd" id="Part"]
+[sub_resource type="BoxShape3D" id="Selection"]
+resource_local_to_scene = true
+size = Vector3(0.3, 0.3, 0.25)
+[node name="EmplacementObjet" type="Marker3D"]
+script = ExtResource("Part")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+selection_area_path = NodePath("ZoneSelection")
+[node name="PointInsertion" type="Marker3D" parent="."]
+[node name="PieceInstallee" type="Node3D" parent="PointInsertion"]
+[node name="DepartPiece" type="Marker3D" parent="."]
+position = Vector3(0, 0.15, 0.6)
+[node name="ZoneSelection" type="Area3D" parent="."]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="ZoneSelection"]
+shape = SubResource("Selection")

@@ -1,0 +1,116 @@
+PSX - EXPORT GODOT
+
+INSTALLATION
+ZIP : Downloads/PSX_Export_Godot.zip
+Dans Blender : Edition > Preferences > Add-ons > menu en haut a droite >
+Install from Disk / Installer depuis le disque. Choisir le ZIP sans le decompresser,
+puis activer PSX - Export Godot. Dans la vue 3D, touche N > onglet PSX Export.
+Version 1.2.0 : modeles animes / rigges ajoutes. Teste avec Blender 5.1.2,
+Blender 5.2.2 LTS et le projet Godot actuel.
+Les chemins du projet et de Godot sont deja remplis pour ce poste.
+Si le projet est deplace : deplier Reglages dans le panneau et les modifier.
+Guide officiel : https://docs.blender.org/manual/en/latest/editors/preferences/addons.html
+
+EXPORTER EN UN CLIC
+1. Selectionner le modele en mode Objet. Pour un assemblage, selectionner ses
+   meshes et rendre actif celui dont l'origine servira de pivot ; un Empty parent
+   selectionne permet aussi d'inclure ses enfants.
+2. Choisir Type : porte, mur, cadre avec son mur, fenetre, sol, plafond, escalier ou decor.
+3. Cliquer Exporter vers Godot. Le message de fin apparait sous le bouton.
+L'export utilise directement l'etat actuel dans Blender, meme non enregistre.
+Les modificateurs sont evalues uniquement dans la copie exportee. Les objets,
+materiaux, normales, UV, noms et transformations de la scene restent intacts.
+Enregistrer le .blend normalement conserve le type choisi pour chaque objet.
+
+MODULES CARTES 2M
+Porte pleine / vitree : le vantail seul, 1 m de large x 2,20 m de haut.
+Mur / mur simple : cloison complete, 2 m de large x 3 m de haut.
+Mur avec cadre de porte : cloison et cadre, sans le vantail, 2 m x 3 m.
+Mur avec cadre double : cloison et cadre, sans les vantaux, 4 m x 3 m.
+Mur avec cadre de fenetre : cloison et cadre, sans le panneau, 2 m x 3 m.
+Panneau de fenetre vitre / condamne : panneau seul, avec sa hauteur dans le mur.
+Sol / plafond : 2 m x 2 m. Les normales du plafond doivent regarder vers le bas.
+Axes dans Blender : X = largeur, Y = profondeur, Z = hauteur. Les unites de la
+scene sont converties en metres. Le decor libre n'a aucune contrainte de taille.
+
+Le type choisi met a jour la variante correspondante dans le kit commun.
+Il ne cree pas une nouvelle variante dans la liste du peintre.
+Toutes les cartes utilisant ce kit recoivent le modele actualise ; leur plan,
+portes placees, cles, collisions de porte et evenements restent en place.
+Le gabarit est controle avant l'envoi : aucun redimensionnement silencieux.
+Les anciens cadres de scene.blend mesurant 2,20 / 4,20 m recoivent uniquement
+la correction connue des retours de 10 cm, sans changer leur ouverture.
+
+MODELES ANIMES / RIGGES
+Choisir Type > Objet anime / rigge et suivre MODELES-RIGGES.txt.
+Le modele, son skin, ses clips et ses reperes sont conserves. La scene Godot
+editable reste intacte au reexport. Ce type general n'impose ni modele de
+boite ni nombre d'emplacements : le gameplay se construit dans Godot.
+
+OBJETS DECORATIFS
+Choisir Objet decoratif. Nom vide utilise le nom de l'objet actif.
+Collision : Boite, Forme du modele (statique), Aucune, ou Mesh separe.
+Mesh separe permet d'attribuer un modele de physique invisible dans Mesh Collision.
+Godot recoit assets/props/<nom>/<nom>.tscn : glisser cette scene dans la carte.
+Le mesh et la collision sont des ressources binaires separees pour garder la
+scene textuelle petite. Reexporter avec le meme nom met a jour le meme decor.
+Depuis la version 1.1.2, chaque materiau garde aussi son nom Blender d'origine.
+Pour une lampe PSX, nommer sa partie lumineuse M_light, exporter en decor,
+puis attribuer cette scene a Model Scene de la lampe. Le boitier reste eclaire
+normalement et M_light suit la puissance et le flicker de cette lampe.
+La position de presentation dans Blender n'est pas exportee comme placement
+dans le niveau ; l'origine de l'objet actif reste le pivot du decor.
+
+ESCALIER AVEC RAMPE INVISIBLE
+1. Selectionner stairs_01, le modele visible, et choisir Type > Escalier.
+2. stairs_collision est reconnu automatiquement dans la scene Blender. Pour
+   utiliser une autre rampe, la choisir dans Mesh Collision avec la pipette.
+3. Cliquer Exporter vers Godot puis glisser assets/props/stairs_01/stairs_01.tscn
+   dans la carte. Deplacer ou tourner la scene deplace les deux ensemble.
+Le maillage des marches sert seulement a l'image. Seul le mesh de rampe est
+utilise pour la physique, jamais affiche, meme s'il est selectionne dans Blender.
+La rampe n'a pas besoin d'UV ou de materiau. Ses modificateurs sont evalues.
+Son placement relatif aux marches reste exactement celui de Blender, y compris
+ses differences d'origine, de rotation et d'echelle. Pas de recentrage individuel.
+Le pivot automatique cale l'entree de la surface montante au niveau du sol ;
+Origine actuelle garde le pivot prepare par l'artiste pour un placement specifique.
+Reinstaller le ZIP mis a jour (version 1.1.1) pour obtenir ce type et la correction
+des faces manquantes : l'affichage double face des materiaux Blender est conserve.
+Le type Escalier cree une scene placable ; il ne remplace pas une case du peintre.
+
+PIVOTS ET FACES
+Reglages > Pivot > Gabarit automatique :
+- Porte : pied a zero et bord gauche sur la charniere.
+- Mur/cadre : centre en largeur et pied a zero.
+- Sol/plafond : centre de la case, face de reference a zero.
+- Decor et panneau de fenetre : origine actuelle, hauteur du panneau conservee.
+Origine actuelle conserve le pivot exactement prepare par l'artiste, pour les
+modeles dont le pied ou la charniere sont deja places. L'orientation visible
+dans Blender est cuite dans le modele ; les axes du gabarit restent X/Y/Z.
+Les materiaux dont Backface Culling est desactive dans Blender gardent leurs deux
+faces a l'export. Faces visibles des deux cotes force aussi cela pour les autres
+materiaux. Le verre et les cloisons fines gardent leurs faces arriere necessaires.
+
+TEXTURES ET MATERIAUX
+Utiliser Principled avec une couleur unie ou une Image Texture reliee directement
+a Base Color. Les textures procedurales ou les assemblages de noeuds doivent
+etre bakes en image. Les UV peuvent venir de la couche active ou d'un noeud UV Map.
+Pas de reduction des images : les pages sont recadrees sans reechantillonnage.
+Les textures <=256 px gardent leurs repetitions UV. Pour un grand atlas, chaque
+face doit tenir dans une page de 256 x 256 texels ; sinon l'export explique la
+face a revoir. Le materiau du verre reste distinct du corps opaque.
+Les materiaux Godot sont ceux du moteur PSX du projet : nearest, sans speculaire
+moderne. Les normales lissees et personnalisees de Blender sont conservees.
+Les pages PNG sont aussi copiees a cote du modele pour les retrouver facilement.
+
+FICHIERS ET REEXPORTS
+Modules : assets/environment/custom_modules/<type>/<type>.res
+Le kit reference ces modules separes dans Module Overrides. Une reconstruction
+du kit de base avec l'ancien exporteur conserve ces remplacements.
+Pour revenir au modele de base d'un type : retirer son entree de Module Overrides
+dans le Kit, pas supprimer le fichier .res encore reference.
+Les Material Overrides deja assignes au kit restent conserves.
+Avant remplacement, les anciens fichiers sont copies dans
+exports/backups/blender_addon/. Le journal est dans exports/blender_addon_exports/.
+La conversion s'effectue dans une petite session Godot sans les systemes du jeu,
+sans ouvrir de fenetre et sans toucher au .blend source.

@@ -1,0 +1,9 @@
+{
+	"failures": [],
+	"measurements": {
+		"mono_rms": 0.362959266931804,
+		"pitch_crossings": 45,
+		"reverb_right_energy": 0.00152386724948883,
+		"reverb_seconds_for_2s_audio": 0.009952
+	}
+}

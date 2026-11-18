@@ -1,0 +1,495 @@
+[gd_scene format=3 uid="uid://ddxt0a8blvdyh"]
+
+[ext_resource type="Script" uid="uid://b8nptyw3i2xpj" path="res://scripts/modular_map/map_3d.gd" id="1_4lphm"]
+[ext_resource type="Script" uid="uid://c8c82w820060c" path="res://scripts/modular_map/layout.gd" id="2_vo3bw"]
+[ext_resource type="Resource" uid="uid://b7msvluqyptqh" path="res://assets/environment/modular_2m/default_kit.tres" id="3_lj5su"]
+[ext_resource type="Script" uid="uid://7sydkht8cjad" path="res://scripts/levels/psx_level_settings.gd" id="4_hhoex"]
+[ext_resource type="Script" uid="uid://dleg5cu1x4g4g" path="res://scripts/audio/ambience_layer.gd" id="5_ieiad"]
+[ext_resource type="AudioStream" uid="uid://co7u2mme5uow7" path="res://assets/audio/ambiance/room_tone.wav" id="6_iww52"]
+[ext_resource type="Script" uid="uid://dx4vmxthc0f13" path="res://scripts/audio/audio_cue.gd" id="6_prsw4"]
+[ext_resource type="Script" uid="uid://b526sbqeqrb4k" path="res://scripts/audio/level_audio_profile.gd" id="7_n54vv"]
+[ext_resource type="AudioStream" uid="uid://c72ffoj50v2s3" path="res://assets/audio/music/dark_music_01.wav" id="8_4lphm"]
+[ext_resource type="Script" uid="uid://buonlwusvrqfj" path="res://scripts/psx_light_3d.gd" id="8_vlmqt"]
+[ext_resource type="PackedScene" path="res://scenes/inventory/item_pickup.tscn" id="9_mhuak"]
+[ext_resource type="Resource" path="res://assets/inventory/items/key_archives.tres" id="11_ad85e"]
+[ext_resource type="Resource" path="res://assets/inventory/items/ammo_magnum.tres" id="12_v56xx"]
+[ext_resource type="Resource" path="res://assets/inventory/items/maintenance_note.tres" id="14_d45r4"]
+[ext_resource type="Resource" uid="uid://bnydeq4jsqoy7" path="res://assets/inventory/items/valve_wheel.tres" id="15_y1sv3"]
+[ext_resource type="PackedScene" path="res://scenes/inventory/card_pickup.tscn" id="16_fj4tl"]
+[ext_resource type="PackedScene" uid="uid://du0wsifnw1pm0" path="res://assets/props/stairs_01/stairs_01.tscn" id="19_iww52"]
+[ext_resource type="Script" uid="uid://bkx8ndylof05d" path="res://scripts/world_events/world_action.gd" id="20_ud8el"]
+[ext_resource type="Script" uid="uid://b3t0j456atfjw" path="res://scripts/enemy.gd" id="20_vo3bw"]
+[ext_resource type="Resource" uid="uid://bdebg0ugna24b" path="res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres" id="21_lj5su"]
+[ext_resource type="PackedScene" uid="uid://c71tphv68c7gl" path="res://assets/props/pillar_01/pillar_01.tscn" id="22_lj5su"]
+[ext_resource type="PackedScene" uid="uid://dklvgody0aph8" path="res://assets/props/woodboard_01/woodboard_01.tscn" id="23_hhoex"]
+[ext_resource type="PackedScene" path="res://scenes/lighting/neon.tscn" id="24_ieiad"]
+[ext_resource type="PackedScene" path="res://scenes/inventory/placement_access_example.tscn" id="25_n54vv"]
+[ext_resource type="PackedScene" uid="uid://d2j4ig32enlt4" path="res://assets/props/neon_light_01/neon_light_01.tscn" id="25_prsw4"]
+[ext_resource type="Script" uid="uid://bfy5jhur1iou8" path="res://scripts/inventory/mechanism_access_settings.gd" id="26_vlmqt"]
+
+[sub_resource type="Resource" id="Resource_hhoex"]
+resource_local_to_scene = true
+script = ExtResource("2_vo3bw")
+cells = {
+Vector2i(0, 0): 1,
+Vector2i(0, 1): 1,
+Vector2i(0, 2): 1,
+Vector2i(0, 3): 3,
+Vector2i(1, 0): 1,
+Vector2i(1, 1): 1,
+Vector2i(1, 2): 1,
+Vector2i(1, 3): 3,
+Vector2i(2, 0): 1,
+Vector2i(2, 1): 1,
+Vector2i(2, 2): 1,
+Vector2i(2, 3): 3,
+Vector2i(3, 0): 2,
+Vector2i(3, 1): 2,
+Vector2i(3, 2): 2,
+Vector2i(3, 3): 3,
+Vector2i(3, 4): 3,
+Vector2i(3, 5): 3,
+Vector2i(4, 0): 2,
+Vector2i(4, 1): 2,
+Vector2i(4, 2): 2,
+Vector2i(4, 3): 3,
+Vector2i(4, 4): 3,
+Vector2i(4, 5): 3,
+Vector2i(5, 0): 2,
+Vector2i(5, 1): 2,
+Vector2i(5, 2): 2
+}
+edges = {
+"h:1:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:1:6": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:6": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:4:0": {
+"kind": 3,
+"variant": "glass"
+},
+"h:4:3": {
+"kind": 2,
+"variant": "solid"
+},
+"v:0:3": {
+"kind": 2,
+"lock_mode": 2,
+"locked": true,
+&"open": false,
+"permanent_dialogue_pool": null,
+"variant": "solid"
+},
+"v:3:1": {
+"kind": 2,
+"required_item_id": "key_archives",
+"variant": "solid"
+},
+"v:3:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"v:3:5": {
+"kind": 0,
+"variant": ""
+}
+}
+rooms = {
+1: "Piece 1",
+2: "Piece 2",
+3: "Piece 3",
+4: "Piece 4"
+}
+next_room = 5
+storeys = {
+1: {
+"ceiling_holes": {},
+"ceiling_tiles": {
+Vector2i(1, 5): true,
+Vector2i(2, 5): true
+},
+"cells": {
+Vector2i(0, 4): 4,
+Vector2i(0, 5): 4
+},
+"edges": {
+"h:1:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:1:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:1:6": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:6": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"v:1:4": {
+"kind": 0,
+"variant": ""
+},
+"v:1:5": {
+"kind": 0,
+"variant": ""
+},
+"v:3:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"v:3:5": {
+"kind": 1,
+"variant": "wall_loop"
+}
+},
+"floor_holes": {},
+"floor_only": {}
+},
+2: {
+"ceiling_holes": {},
+"ceiling_tiles": {
+Vector2i(1, 4): true,
+Vector2i(2, 4): true
+},
+"cells": {
+Vector2i(3, 4): 5,
+Vector2i(3, 5): 5
+},
+"edges": {
+"h:10:1": {
+"kind": 2,
+"variant": "solid"
+},
+"h:13:-3": {
+"kind": 2,
+"variant": "solid"
+},
+"h:15:-10": {
+"kind": 2,
+"variant": "solid"
+},
+"h:1:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:1:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:5": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:2:6": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:3:4": {
+"kind": 2,
+"lock_mode": 0,
+&"locked": false,
+"locked_dialogue_enabled": true,
+"open": false,
+"variant": "solid"
+},
+"h:4:-1": {
+"kind": 2,
+"variant": "solid"
+},
+"h:5:-2": {
+"kind": 2,
+"variant": "solid"
+},
+"h:6:0": {
+"kind": 2,
+"variant": "solid"
+},
+"h:7:0": {
+"kind": 2,
+"variant": "solid"
+},
+"h:8:0": {
+"kind": 2,
+"variant": "solid"
+},
+"v:14:-3": {
+"kind": 2,
+"variant": "solid"
+},
+"v:16:-9": {
+"kind": 2,
+"variant": "solid"
+},
+"v:17:-9": {
+"kind": 2,
+"variant": "solid"
+},
+"v:1:4": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"v:3:4": {
+"kind": 0,
+"variant": ""
+},
+"v:3:5": {
+"kind": 0,
+"variant": ""
+},
+"v:4:-1": {
+"kind": 2,
+"variant": "solid"
+},
+"v:51:-39": {
+"kind": 2,
+"variant": "solid"
+},
+"v:5:-2": {
+"kind": 2,
+"variant": "solid"
+},
+"v:61:-45": {
+"kind": 2,
+"variant": "solid"
+},
+"v:7:-1": {
+"kind": 2,
+"variant": "solid"
+},
+"v:8:-1": {
+"kind": 2,
+"variant": "solid"
+},
+"v:9:-1": {
+"kind": 2,
+"variant": "solid"
+}
+},
+"floor_holes": {},
+"floor_only": {}
+}
+}
+
+[sub_resource type="Resource" id="Resource_1voo6"]
+script = ExtResource("5_ieiad")
+stream = ExtResource("6_iww52")
+metadata/_custom_type_script = "uid://dleg5cu1x4g4g"
+
+[sub_resource type="Resource" id="Resource_fqgw4"]
+script = ExtResource("7_n54vv")
+ambience_layers = Array[ExtResource("5_ieiad")]([SubResource("Resource_1voo6")])
+exploration_music = ExtResource("8_4lphm")
+
+[sub_resource type="Resource" id="Resource_g4fux"]
+script = ExtResource("20_ud8el")
+kind = 4
+dialogue = ExtResource("21_lj5su")
+metadata/_custom_type_script = "uid://bkx8ndylof05d"
+
+[sub_resource type="Resource" id="Resource_n54vv"]
+resource_local_to_scene = true
+script = ExtResource("26_vlmqt")
+enabled = true
+animation_player_path = NodePath("AnimationCouvercle")
+opening_animation = &"ouvrir"
+animated_root_path = NodePath("Modele/Charniere")
+bone_names = PackedStringArray()
+
+[node name="Map" type="Node3D" unique_id=1258327139]
+script = ExtResource("1_4lphm")
+layout = SubResource("Resource_hhoex")
+kit = ExtResource("3_lj5su")
+show_ceilings_in_editor = true
+editor_storey = 2
+show_other_storeys_in_editor = true
+event_namespace = "demo_inventaire"
+
+[node name="ReglagesNiveau" type="Node" parent="." unique_id=2016489538]
+script = ExtResource("4_hhoex")
+fog_enabled = false
+fog_start = 0.0
+fog_end = 41.4
+fog_color = Color(0.46861, 0.87094146, 0.97957987, 1)
+color_tint = Color(0.78579134, 0.861369, 0.9871475, 1)
+ambient_light_color = Color(0.0010781288, 0.013370662, 0.080994, 1)
+profile = SubResource("Resource_fqgw4")
+
+[node name="Gameplay" type="Node3D" parent="." unique_id=1681526550]
+
+[node name="PlayerSpawn" type="Marker3D" parent="Gameplay" unique_id=1676039927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.05, 4.5)
+
+[node name="Lampe5" type="Marker3D" parent="." unique_id=210667439]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.900132, 1.8449032, 0.6729729)
+script = ExtResource("8_vlmqt")
+light_energy = 3.4
+light_range = 3.0
+
+[node name="Lampe6" type="Marker3D" parent="." unique_id=1832586376]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 11.28405, 1.8290752, 2.5900812)
+script = ExtResource("8_vlmqt")
+light_type = 1
+light_color = Color(1, 0, 0, 1)
+light_energy = 1.75
+light_range = 15.1
+spot_angle_degrees = 92.0
+
+[node name="Lampe4" type="Marker3D" parent="." unique_id=2050943891]
+transform = Transform3D(1, 0, 0, 0, -0.66313314, 0.7485014, 0, -0.7485014, -0.66313314, 9.360974, 1.5973265, -0.39596343)
+script = ExtResource("8_vlmqt")
+light_type = 1
+light_energy = 3.15
+light_range = 8.1
+spot_angle_degrees = 107.0
+spot_softness = 0.15
+
+[node name="Objet_key_archives" parent="." unique_id=685541461 instance=ExtResource("9_mhuak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1.2)
+item = ExtResource("11_ad85e")
+interaction_offset = Vector3(0, 0.15275, 0)
+
+[node name="Objet_ammo_magnum" parent="." unique_id=323207674 instance=ExtResource("9_mhuak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1.2)
+item = ExtResource("12_v56xx")
+quantity = 12
+interaction_offset = Vector3(0, 0.15, 0)
+
+[node name="Objet_medkit" parent="." unique_id=802009951 instance=ExtResource("9_mhuak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1.2)
+interaction_offset = Vector3(0, 0.15, 0)
+
+[node name="Objet_maintenance_note" parent="." unique_id=117033148 instance=ExtResource("9_mhuak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1.2)
+item = ExtResource("14_d45r4")
+interaction_offset = Vector3(0, 0.15, 0)
+
+[node name="Objet_valve_wheel" parent="." unique_id=2003341139 instance=ExtResource("9_mhuak")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1.2)
+item = ExtResource("15_y1sv3")
+interaction_offset = Vector3(0, 0.25800002, 0)
+
+[node name="Carte_1" parent="." unique_id=1764290757 instance=ExtResource("16_fj4tl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+hide_when_owned = false
+rotation_speed = 65.0
+minimum_light = 1.0
+interaction_offset = Vector3(0, 0.21, 0)
+
+[node name="Carte_2" parent="." unique_id=1064280813 instance=ExtResource("16_fj4tl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.5, 0, 2)
+card_id = &"bastion_07"
+hide_when_owned = false
+rotation_speed = 65.0
+minimum_light = 1.0
+interaction_offset = Vector3(0, 0.21, 0)
+
+[node name="Carte_3" parent="." unique_id=694534079 instance=ExtResource("16_fj4tl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 2)
+card_id = &"veuve_12"
+hide_when_owned = false
+rotation_speed = 65.0
+minimum_light = 1.0
+interaction_offset = Vector3(0, 0.21, 0)
+
+[node name="stairs_01" parent="." unique_id=1623720594 instance=ExtResource("19_iww52")]
+transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, 6, 0, 11)
+
+[node name="stairs_02" parent="." unique_id=1070708416 instance=ExtResource("19_iww52")]
+transform = Transform3D(-1.172251e-07, 0, -1, 0, 1, 0, 1, 0, -1.172251e-07, 2.0000002, 3, 9)
+
+[node name="stairs_03" parent="." unique_id=1688084886 instance=ExtResource("19_iww52")]
+transform = Transform3D(2.9802322e-08, 0, 1, 0, 1, 0, -1, 0, 2.9802322e-08, 6, 6, 11)
+
+[node name="WorldEnemy3D" type="CharacterBody3D" parent="." unique_id=1895662146]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 8)
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("20_vo3bw")
+death_actions = Array[ExtResource("20_ud8el")]([SubResource("Resource_g4fux")])
+metadata/_custom_type_script = "uid://b3t0j456atfjw"
+
+[node name="pillar_01" parent="." unique_id=834012733 instance=ExtResource("22_lj5su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 3, 10)
+
+[node name="pillar_05" parent="." unique_id=1213205762 instance=ExtResource("22_lj5su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 6, 10)
+
+[node name="pillar_02" parent="." unique_id=1212012553 instance=ExtResource("22_lj5su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.85, 0, 11.85)
+
+[node name="pillar_03" parent="." unique_id=946251040 instance=ExtResource("22_lj5su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9500003, 0, 9.950001)
+
+[node name="pillar_04" parent="." unique_id=104267837 instance=ExtResource("22_lj5su")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9500003, 0, 8.05)
+
+[node name="woodboard_01" parent="." unique_id=1698082532 instance=ExtResource("23_hhoex")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.028305, 1.6, 9.000001)
+
+[node name="Neon" parent="." unique_id=191304368 instance=ExtResource("24_ieiad")]
+process_priority = -20
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.4690742, 2.9451528, 1.9306433)
+model_scene = ExtResource("25_prsw4")
+emissive_material_names = PackedStringArray("M_light")
+emission_color = Color(0.96714586, 0.8884585, 0.64116114, 1)
+emission_strength = 1.5
+audio_volume_db = 0.0
+audio_max_distance = 27.5
+light_color = Color(0.96714586, 0.8884585, 0.64116114, 1)
+light_energy = 4.55
+spot_angle_degrees = 113.0
+flicker = true
+flicker_amount = 0.38
+flicker_minimum = 0.56
+dropout_chance = 0.0
+
+[node name="Neon2" parent="." unique_id=1484341782 instance=ExtResource("24_ieiad")]
+process_priority = -20
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.004942, 2.9386446, 8.979701)
+model_scene = ExtResource("25_prsw4")
+emissive_material_names = PackedStringArray("M_light")
+emission_color = Color(0.96714586, 0.8884585, 0.64116114, 1)
+audio_volume_db = -11.0
+light_color = Color(0.96714586, 0.8884585, 0.64116114, 1)
+light_energy = 2.6
+spot_angle_degrees = 113.0
+flicker_speed = 30.0
+flicker_minimum = 0.56
+dropout_chance = 0.0
+
+[node name="MecanismeAvecCouvercle" parent="." unique_id=1242162181 instance=ExtResource("25_n54vv")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 11.809318, -4.8428774e-08, 1.7686923)
+access_settings = SubResource("Resource_n54vv")

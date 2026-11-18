@@ -1,0 +1,22 @@
+[
+	{
+		"clip": "walk",
+		"expected": "(0.0, 0.0, 5.895611)",
+		"extracted": "(0.0, 0.0, 5.895604)"
+	},
+	{
+		"clip": "strafe_right",
+		"expected": "(-5.895611, 0.0, 0.0)",
+		"extracted": "(-5.89561, 0.0, 0.0)"
+	},
+	{
+		"clip": "backward",
+		"expected": "(0.0, 0.0, -5.895611)",
+		"extracted": "(0.0, 0.0, -5.895614)"
+	},
+	{
+		"clip": "strafe_left",
+		"expected": "(5.895611, 0.0, 0.0)",
+		"extracted": "(5.89561, 0.0, 0.0)"
+	}
+]

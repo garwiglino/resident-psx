@@ -1,0 +1,7 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+WARNING: Loaded resource as image file, this will not work on export: 'res://assets/effects/muzzle_flash_atlas.png'. Instead, import the image file as an Image resource and load it normally as a resource.
+   at: load_from_file (core/io/image.cpp:2780)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/shot_lighting.gd:59)
+SHOT_LIGHTING_OK: native/fallback diffuse vertex light, radius, normals, static restoration, 16 atlas cells and PSX packets

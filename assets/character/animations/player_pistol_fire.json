@@ -1,0 +1,19 @@
+{
+  "clip": "player_pistol_fire",
+  "loop": false,
+  "fps": 24.0,
+  "start_frame": 1,
+  "end_frame": 8,
+  "duration": 0.2916666666666667,
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_shoot.blend",
+  "source_sha256": "4cbd94afe0206db367978b0d0ca7d79bfc2933cd71b36483a648593373a7f786",
+  "root_motion": false,
+  "root_motion_track": "rig/Skeleton3D:RootMotion",
+  "root_motion_distance": 0.0,
+  "average_speed": 0.0,
+  "root_motion_vector": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

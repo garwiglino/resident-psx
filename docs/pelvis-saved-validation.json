@@ -1,0 +1,83 @@
+[
+  {
+    "clip": "player_pistol_idle",
+    "samples": 241,
+    "minimum_knee_degrees": 38.13807742948072,
+    "max_foot_shift_m": 0.00017536431091985603,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999993254663402,
+    "leg_length_ratio_max": 1.0000007797772887
+  },
+  {
+    "clip": "player_walk_forward_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.08294913863628,
+    "max_foot_shift_m": 0.00020933077391531034,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999993445676033,
+    "leg_length_ratio_max": 1.0000007144127714
+  },
+  {
+    "clip": "player_walk_strafe_left_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.075258345630857,
+    "max_foot_shift_m": 0.0002049431724849385,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999994258655865,
+    "leg_length_ratio_max": 1.0000007988471664
+  },
+  {
+    "clip": "player_walk_forward_left_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.073195628501509,
+    "max_foot_shift_m": 0.00021750597323826057,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999991728130462,
+    "leg_length_ratio_max": 1.0000007617110886
+  },
+  {
+    "clip": "player_walk_forward_right_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.070818722670339,
+    "max_foot_shift_m": 0.00021670726704572178,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999991990341602,
+    "leg_length_ratio_max": 1.0000008688536877
+  },
+  {
+    "clip": "player_walk_backward_left_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 12.459052339090647,
+    "max_foot_shift_m": 0.00020458121076827524,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999992999038938,
+    "leg_length_ratio_max": 1.0000008697319056
+  },
+  {
+    "clip": "player_walk_backward_right_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.017966718872799,
+    "max_foot_shift_m": 0.0002098099688344212,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999993686558954,
+    "leg_length_ratio_max": 1.0000009268160723
+  },
+  {
+    "clip": "player_walk_strafe_right_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.521474604107794,
+    "max_foot_shift_m": 0.00020449988503947288,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.999999271299045,
+    "leg_length_ratio_max": 1.0000009870367284
+  },
+  {
+    "clip": "player_walk_backward_pistol",
+    "samples": 241,
+    "minimum_knee_degrees": 13.070122043374994,
+    "max_foot_shift_m": 0.00021447789248018437,
+    "root_matrix_error": 0,
+    "leg_length_ratio_min": 0.9999993164489128,
+    "leg_length_ratio_max": 1.0000012754842107
+  }
+]

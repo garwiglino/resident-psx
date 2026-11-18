@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+TURN_SOURCE angle=43.1050897682447 lower_bones=105
+TURN_IN_PLACE_OK: original left step, lower-only mask, exact angular root motion, stable aimed upper body, smooth blending, movement/reversal interrupts and one PSX batch

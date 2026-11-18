@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ERROR: Required virtual method AudioEffect::_instantiate must be overridden before calling.
+   at: _gdvirtual__instantiate_call (servers/audio/audio_effect.h:55)

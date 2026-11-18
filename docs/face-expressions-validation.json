@@ -1,0 +1,18 @@
+{
+	"batches": 1,
+	"failures": [],
+	"joints": 270,
+	"maximum_influences": 10,
+	"maximum_source_error_m": 0.000111091689548373,
+	"presets": [
+		"neutre",
+		"clignement",
+		"parole_a",
+		"parole_e",
+		"parole_o",
+		"colere",
+		"inquietude",
+		"sourire"
+	],
+	"texture_pages": 6
+}

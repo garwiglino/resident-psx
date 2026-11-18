@@ -1,0 +1,79 @@
+TENUES DU JOUEUR
+
+EN JEU
+Ouvrir l'inventaire avec I, puis choisir HITOMI. A gauche, selectionner
+la categorie puis utiliser les fleches Vetement pour equiper une piece.
+Choisir Aucun la retire. Les fleches Couleur changent sa finition.
+Au clavier, haut/bas choisit la categorie, gauche/droite la couleur, et
+Maj avec gauche/droite change le vetement.
+A droite, Hitomi joue la boucle cloth_idle exportee depuis cop_idle_2.blend.
+Maintenir le clic gauche sur l'apercu et glisser horizontalement pour tourner
+Hitomi et voir sa tenue de dos.
+Les changements s'appliquent tout de suite et suivent la sauvegarde du monde.
+
+DANS L'EDITEUR
+
+Dans Player > Tenue, Couche 1 propose Chaussures, Pantalon, Haut et Tenue
+complete. Une tenue complete prend la place du haut et du pantalon. Les
+chaussures restent independantes. Vider Tenue complete fait reapparaitre
+les pieces separees assignees.
+Couche 1 > Pants contient large_jeans_01, et Shoes contient sneakers.
+Couche 2 > Outerwear contient la doudoune. Vider ce champ montre le corps
+de base avec le crop et le short, ou les vetements de couche 1 assignes.
+
+Godot calcule le masque quand on change de tenue dans l'editeur ou en jeu.
+Les vetements portes couvrent le corps. La couche 2 masque aussi la couche 1
+la ou elle la couvre. Le calcul utilise les maillages skinnes en pose de repos
+et garde les triangles exposes par une ouverture. Les cheveux et les deux
+surfaces d'expressions du visage sont proteges. Retirer un vetement restaure
+les triangles qu'il couvrait. Aucun materiau de masque n'est a peindre dans Blender.
+
+AJOUTER UN VETEMENT
+Exporter le maillage skinne avec des noms de joints et des binds compatibles
+avec le joueur. Dans Godot, creer une ressource ClothingItem avec un Id unique,
+la Scene importee et le Slot approprie. Assigner Skin Metadata si l'export
+fournit un fichier JSON pour les poids B-Bone.
+Laisser Automatic Mask coche pour calculer sa couverture.
+Ajouter la ressource a Available Items pour la rendre disponible par Id,
+puis l'assigner dans Couche 1 ou Couche 2 pour la porter des le chargement.
+
+TEXTURES
+Dans Player > Tenue > Variantes de texture, choisir la finition du
+vetement assigne. Origine utilise sa texture exportee (ou Texture si ce
+champ a ete assigne dans la ressource ClothingItem).
+Chaque joueur garde sa propre selection par vetement, meme en changeant
+de piece. Les variantes gardent les UV, le skinning et les masques.
+
+Pour ajouter une finition, ouvrir le ClothingItem > Apparence > Texture
+Set, puis ajouter une entree dans Variants. La cle est le nom visible dans
+la liste (sans virgule ni deux-points). Glisser le PNG dans la valeur.
+Le nom et le dossier du fichier PNG sont libres. La texture doit suivre
+les UV du modele concerne. Pour un modele a plusieurs atlas, indiquer
+dans Material Name le nom du materiau importe qui recoit les variantes.
+
+assets/character/clothing/textures contient les profils pour doudoune UV2,
+jean large, sneakers montantes et bottes. Le profil des sneakers est lie
+a sneakers.tres. Le profil des bottes est disponible pour leur modele.
+
+Dans Player > Apparence > Texture Corps, le remplacement concerne le corps.
+Le visage, les cheveux et les vetements gardent leurs propres textures.
+
+DEPUIS UN SCRIPT
+Player/Tenue.equip_id(&"winter_jacket") equipe la doudoune.
+Player/Tenue.equip(item) equipe une ressource ClothingItem selon son slot.
+Player/Tenue.unequip() retire la couche 2. Passer un ClothingItem.Slot
+pour retirer une autre piece. is_equipped(id) indique les pieces portees.
+Player/Tenue.set_texture_variant(ClothingItem.Slot.OUTERWEAR, &"Seikai")
+applique une finition sur la doudoune. Une cle vide restaure Origine.
+
+REEXPORTER DEPUIS BLENDER
+Enregistrer le fichier source puis lancer Reexporter-Joueur.ps1 avec
+-BlendFile suivi de son chemin. L'outil lit body_base, hairs et le maillage
+portant M_WinterJacket, puis exporte le corps et les cheveux dans
+cop_player.glb et la doudoune dans winter_jacket.glb.
+Ajouter -InclureVetement large_jeans_01,sneakers pour exporter aussi le jean
+et les sneakers. Utiliser les noms exacts des objets Blender. Le squelette
+commun recoit les joints necessaires aux pieces exportees. Le lien Texture
+Set se regle dans Godot.
+Les fichiers d'animations de jeu restent en place. L'outil sauvegarde les
+anciens exports sous exports/backups et ne modifie pas le fichier Blender.

@@ -1,0 +1,248 @@
+{
+  "target_mean_height": 0.905,
+  "minimum_knee_degrees": 12.0,
+  "max_step_follow_m": 0.08,
+  "files": [
+    {
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend",
+      "source_sha256": "37c8a89c5bf81f92d6ad221db65427c3ed2e769eb908dc7f521cb9c4ec60939a",
+      "clips": [
+        {
+          "clip": "player_pistol_idle",
+          "mean_before": 0.9337435896197955,
+          "mean_after": 0.9050000215570132,
+          "height_min": 0.9043009281158447,
+          "height_max": 0.9056653380393982,
+          "minimum_knee_degrees": 38.13807742948072,
+          "leg_length_ratio_min": 0.999999397574391,
+          "leg_length_ratio_max": 1.0000007797772887,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00017536431091985603,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 1.4906730808017335e-08,
+          "root_curves_sha256": "e0aca8a9fabb19fd50a8d8aa816acad36b164986a19c29d2b762780e16169073",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.028801560401916504,
+            "DEF-foot.L": 0.0013630986213684082,
+            "DEF-toe.L": 6.332993507385254e-07,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.02880159020423889,
+            "DEF-foot.R": 0.001453101634979248,
+            "DEF-toe.R": 5.662441253662109e-07
+          }
+        }
+      ],
+      "output": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend",
+      "output_sha256": "747e447f913e1e95eff1a3dcd5179a1bff15a3d3c66748a956c25533548afd5d"
+    },
+    {
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "bf800cb0c06346d37d3e4990562ccbc7c77004a57114f1fefb81e6d4eaa67640",
+      "clips": [
+        {
+          "clip": "player_walk_forward_pistol",
+          "mean_before": 0.9390941654642423,
+          "mean_after": 0.9049999967217446,
+          "height_min": 0.8934498429298401,
+          "height_max": 0.9169919490814209,
+          "minimum_knee_degrees": 13.08294913863628,
+          "leg_length_ratio_min": 0.9999993726706107,
+          "leg_length_ratio_max": 1.0000007045554125,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00020933077394845833,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.02574373151710546,
+          "root_curves_sha256": "6ebd0f23cdad1e4d5e5fdcec0471fa8972fbbfdf2ae06a3d4fb4e7303dda6a64",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.05253267288208008,
+            "DEF-foot.L": 0.0016890764236450195,
+            "DEF-toe.L": 1.430511474609375e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.05253267288208008,
+            "DEF-foot.R": 0.001711428165435791,
+            "DEF-toe.R": 1.430511474609375e-06
+          }
+        },
+        {
+          "clip": "player_walk_strafe_left_pistol",
+          "mean_before": 0.9372083678841591,
+          "mean_after": 0.9049999912579855,
+          "height_min": 0.8769227862358093,
+          "height_max": 0.9173920750617981,
+          "minimum_knee_degrees": 13.075258345630857,
+          "leg_length_ratio_min": 0.9999994529143867,
+          "leg_length_ratio_max": 1.0000007988471664,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00020494317465182799,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.041179105004926386,
+          "root_curves_sha256": "4a85766f0c565e2e0eb4d5e489a09b44394aaa7e4acd63c2192f05b9b8382af4",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.05615663528442383,
+            "DEF-foot.L": 0.0016497969627380371,
+            "DEF-toe.L": 9.5367431640625e-07,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.05615663528442383,
+            "DEF-foot.R": 0.0016345381736755371,
+            "DEF-toe.R": 1.430511474609375e-06
+          }
+        },
+        {
+          "clip": "player_walk_forward_left_pistol",
+          "mean_before": 0.9678519532084465,
+          "mean_after": 0.9050000314911206,
+          "height_min": 0.8921132683753967,
+          "height_max": 0.9193928241729736,
+          "minimum_knee_degrees": 13.073195628501509,
+          "leg_length_ratio_min": 0.9999991749458642,
+          "leg_length_ratio_max": 1.0000007617110886,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.0002175059696652271,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.05708761230751198,
+          "root_curves_sha256": "36faf7ab92858985eb354958ce0f80006145f716413c982e98a1a19fa3380c8a",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.079184889793396,
+            "DEF-foot.L": 0.0017492175102233887,
+            "DEF-toe.L": 1.430511474609375e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.079184889793396,
+            "DEF-foot.R": 0.001700282096862793,
+            "DEF-toe.R": 1.1920928955078125e-06
+          }
+        },
+        {
+          "clip": "player_walk_forward_right_pistol",
+          "mean_before": 0.9669019127885501,
+          "mean_after": 0.9049999589721361,
+          "height_min": 0.8876162767410278,
+          "height_max": 0.9176653623580933,
+          "minimum_knee_degrees": 13.070818722670339,
+          "leg_length_ratio_min": 0.9999993315197783,
+          "leg_length_ratio_max": 1.0000008149560307,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00021670726755803642,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.03967052159436649,
+          "root_curves_sha256": "6e94181f9848898c3eb41f3583ba20a1a31f7d7ebd0d704be43f9adcd66c18cf",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.07730424404144287,
+            "DEF-foot.L": 0.0017177462577819824,
+            "DEF-toe.L": 1.1920928955078125e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.07730424404144287,
+            "DEF-foot.R": 0.0017803311347961426,
+            "DEF-toe.R": 1.6689300537109375e-06
+          }
+        },
+        {
+          "clip": "player_walk_backward_left_pistol",
+          "mean_before": 0.9503948574264844,
+          "mean_after": 0.9049999698996544,
+          "height_min": 0.8848467469215393,
+          "height_max": 0.9189850687980652,
+          "minimum_knee_degrees": 13.076774647626593,
+          "leg_length_ratio_min": 0.9999994116404536,
+          "leg_length_ratio_max": 1.0000008697319056,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00020458121076827524,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.04539419862866437,
+          "root_curves_sha256": "dcc10dedc9346273e6504ebacc5d84b158629c0c4be94c966e5c672664d7a5cf",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.06154310703277588,
+            "DEF-foot.L": 0.0016266107559204102,
+            "DEF-toe.L": 1.430511474609375e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.06154310703277588,
+            "DEF-foot.R": 0.0016489028930664062,
+            "DEF-toe.R": 1.1920928955078125e-06
+          }
+        },
+        {
+          "clip": "player_walk_backward_right_pistol",
+          "mean_before": 0.9681692828734716,
+          "mean_after": 0.9050000379482905,
+          "height_min": 0.8920345306396484,
+          "height_max": 0.9166792631149292,
+          "minimum_knee_degrees": 13.07613260984462,
+          "leg_length_ratio_min": 0.9999994071842563,
+          "leg_length_ratio_max": 1.0000009268160723,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.00020980997095104709,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.06255856721359898,
+          "root_curves_sha256": "9cef9acd3b7009fdc1b701f1b576dd18f2e64d70bd6eec20811aa784e446aeb3",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.08186852931976318,
+            "DEF-foot.L": 0.0016726255416870117,
+            "DEF-toe.L": 9.5367431640625e-07,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.08186852931976318,
+            "DEF-foot.R": 0.0016940832138061523,
+            "DEF-toe.R": 9.5367431640625e-07
+          }
+        },
+        {
+          "clip": "player_walk_strafe_right_pistol",
+          "mean_before": 0.9190926437576612,
+          "mean_after": 0.9050000101327896,
+          "height_min": 0.8801936507225037,
+          "height_max": 0.9210931658744812,
+          "minimum_knee_degrees": 13.521474604107794,
+          "leg_length_ratio_min": 0.99999939768909,
+          "leg_length_ratio_max": 1.0000008505679345,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.0002044998812391963,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.023324859318497804,
+          "root_curves_sha256": "73084f34bcad0f75bf1d3af3dac4e62f12e0b01032a95136017451d9bbbd8920",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.03534960746765137,
+            "DEF-foot.L": 0.001634359359741211,
+            "DEF-toe.L": 1.430511474609375e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.03534960746765137,
+            "DEF-foot.R": 0.0016841888427734375,
+            "DEF-toe.R": 9.5367431640625e-07
+          }
+        },
+        {
+          "clip": "player_walk_backward_pistol",
+          "mean_before": 0.9706596458951632,
+          "mean_after": 0.9050000250339508,
+          "height_min": 0.8791767954826355,
+          "height_max": 0.9186092615127563,
+          "minimum_knee_degrees": 13.070122043374994,
+          "leg_length_ratio_min": 0.9999993352365265,
+          "leg_length_ratio_max": 1.0000012754842107,
+          "foot_goal_max_matrix_error": 0.0,
+          "foot_position_max_error_m": 0.0002092890205237594,
+          "root_max_matrix_error": 0.0,
+          "max_step_follow_m": 0.051473541443821824,
+          "root_curves_sha256": "ab3c0dccb85ef9db918430b296e818e1cf009d7dc1f6273c69aa3198d1bd526d",
+          "foot_matrix_errors": {
+            "foot_ik.L": 0,
+            "thigh_ik_target.L": 0.08063924312591553,
+            "DEF-foot.L": 0.0017377138137817383,
+            "DEF-toe.L": 1.430511474609375e-06,
+            "foot_ik.R": 0,
+            "thigh_ik_target.R": 0.08063924312591553,
+            "DEF-foot.R": 0.0016197562217712402,
+            "DEF-toe.R": 9.5367431640625e-07
+          }
+        }
+      ],
+      "output": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_anims_walk_harmonized.blend",
+      "output_sha256": "9981a8a62d565b418bde39e91d328971460a55a683e71c4d88cdf590113a803e"
+    }
+  ]
+}

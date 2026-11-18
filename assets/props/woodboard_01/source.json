@@ -1,0 +1,16 @@
+{
+	"asset_name": "woodboard_01",
+	"asset_type": "prop",
+	"backup": "res://exports/backups/blender_addon/1794081867_208557/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "43ac83c75b9b587cb2298cfefb6a43f6d025d7d3fe0e5495cdce58d23bec5999",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/props/woodboard_01/woodboard_01.tscn",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"Cube.004"
+	],
+	"triangles": 18
+}

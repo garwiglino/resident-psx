@@ -1,0 +1,148 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Authored root motion responds on the first tick, independent of a 0.5 s pose blend: walk
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:32)
+ERROR: Authored root motion responds on the first tick, independent of a 0.5 s pose blend: strafe_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:32)
+ERROR: Authored root motion responds on the first tick, independent of a 0.5 s pose blend: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:32)
+ERROR: Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.10 s, weight 0.074
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.25 s, weight 0.450
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.40 s, weight 0.862
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Pose lies between both advancing animations: DEF-foot.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-foot.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.10 s, weight 1.944
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Pose lies between both advancing animations: DEF-foot.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-foot.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-foot.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-foot.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-toe.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.L
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Pose lies between both advancing animations: DEF-hand.R
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:49)
+ERROR: Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.40 s, weight 0.955
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.10 s, weight 0.074
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.25 s, weight 0.450
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ERROR: Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.40 s, weight 0.862
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_response.gd:6)
+       [1] run (res://tests/animation_response.gd:57)
+ANIMATION_RESPONSE_FAILED ["Authored root motion responds on the first tick, independent of a 0.5 s pose blend: walk", "Authored root motion responds on the first tick, independent of a 0.5 s pose blend: strafe_right", "Authored root motion responds on the first tick, independent of a 0.5 s pose blend: backward_left", "Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.10 s, weight 0.074", "Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.25 s, weight 0.450", "Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.40 s, weight 0.862", "Pose lies between both advancing animations: DEF-foot.L", "Pose lies between both advancing animations: DEF-foot.R", "Pose lies between both advancing animations: DEF-toe.L", "Pose lies between both advancing animations: DEF-toe.R", "Pose lies between both advancing animations: DEF-hand.L", "Pose lies between both advancing animations: DEF-hand.R", "Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.10 s, weight 1.944", "Pose lies between both advancing animations: DEF-foot.L", "Pose lies between both advancing animations: DEF-foot.R", "Pose lies between both advancing animations: DEF-toe.L", "Pose lies between both advancing animations: DEF-toe.R", "Pose lies between both advancing animations: DEF-hand.L", "Pose lies between both advancing animations: DEF-hand.R", "Pose lies between both advancing animations: DEF-foot.L", "Pose lies between both advancing animations: DEF-foot.R", "Pose lies between both advancing animations: DEF-toe.L", "Pose lies between both advancing animations: DEF-toe.R", "Pose lies between both advancing animations: DEF-hand.L", "Pose lies between both advancing animations: DEF-hand.R", "Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.40 s, weight 0.955", "Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.10 s, weight 0.074", "Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.25 s, weight 0.450", "Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.40 s, weight 0.862"]

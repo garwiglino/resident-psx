@@ -1,0 +1,8 @@
+00:02.375  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_shoot.blend"
+00:02.515  blend            | Read blend: "C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\exports\blender\cop_shoot_reload_bezier.blend"
+SAVED_RELOAD_BEZIER_OK {"file": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_shoot_reload_bezier.blend", "original_transform_keys_preserved": 1189, "max_reference_pose_error_m": 0.0, "interpolated_pose_change_m": 0.18596827897900253}
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+scripts disabled for "C:\Users\sheensaw\Downloads\cop_shoot.blend", skipping 'rig_ui.py'
+scripts disabled for "C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\exports\blender\cop_shoot_reload_bezier.blend", skipping 'rig_ui.py'
+
+Blender quit

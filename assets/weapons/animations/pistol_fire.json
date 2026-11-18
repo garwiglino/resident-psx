@@ -1,0 +1,10 @@
+{
+  "clip": "pistol_fire",
+  "loop": false,
+  "fps": 24.0,
+  "start_frame": 1,
+  "end_frame": 9,
+  "duration": 0.3333333333333333,
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_shoot.blend",
+  "source_sha256": "4cbd94afe0206db367978b0d0ca7d79bfc2933cd71b36483a648593373a7f786"
+}

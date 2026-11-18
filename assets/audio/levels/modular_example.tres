@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="LevelAudioProfile" format=3 uid="uid://b0swegy5vkvjw"]
+
+[ext_resource type="Script" uid="uid://b526sbqeqrb4k" path="res://scripts/audio/level_audio_profile.gd" id="1"]
+[ext_resource type="Script" uid="uid://dleg5cu1x4g4g" path="res://scripts/audio/ambience_layer.gd" id="2"]
+[ext_resource type="AudioStream" uid="uid://co7u2mme5uow7" path="res://assets/audio/ambiance/room_tone.wav" id="3"]
+[ext_resource type="Script" uid="uid://dx4vmxthc0f13" path="res://scripts/audio/audio_cue.gd" id="3_q1nvx"]
+[ext_resource type="AudioStream" uid="uid://c72ffoj50v2s3" path="res://assets/audio/music/dark_music_01.wav" id="4_io7mo"]
+
+[sub_resource type="Resource" id="RoomTone"]
+script = ExtResource("2")
+stream = ExtResource("3")
+
+[resource]
+script = ExtResource("1")
+ambience_layers = Array[ExtResource("2")]([SubResource("RoomTone")])
+exploration_music = ExtResource("4_io7mo")
+exploration_volume_db = -8.5

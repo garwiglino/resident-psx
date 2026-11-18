@@ -1,0 +1,112 @@
+{
+	"failures": [
+		"Authored root motion responds on the first tick, independent of a 0.5 s pose blend: walk",
+		"Authored root motion responds on the first tick, independent of a 0.5 s pose blend: strafe_right",
+		"Authored root motion responds on the first tick, independent of a 0.5 s pose blend: backward_left",
+		"Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.10 s, weight 0.074",
+		"Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.25 s, weight 0.450",
+		"Continuous pose crossfade, rather than a delayed start: idle -> walk at 0.40 s, weight 0.862",
+		"Pose lies between both advancing animations: DEF-foot.L",
+		"Pose lies between both advancing animations: DEF-foot.R",
+		"Pose lies between both advancing animations: DEF-toe.L",
+		"Pose lies between both advancing animations: DEF-toe.R",
+		"Pose lies between both advancing animations: DEF-hand.L",
+		"Pose lies between both advancing animations: DEF-hand.R",
+		"Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.10 s, weight 1.944",
+		"Pose lies between both advancing animations: DEF-foot.L",
+		"Pose lies between both advancing animations: DEF-foot.R",
+		"Pose lies between both advancing animations: DEF-toe.L",
+		"Pose lies between both advancing animations: DEF-toe.R",
+		"Pose lies between both advancing animations: DEF-hand.L",
+		"Pose lies between both advancing animations: DEF-hand.R",
+		"Pose lies between both advancing animations: DEF-foot.L",
+		"Pose lies between both advancing animations: DEF-foot.R",
+		"Pose lies between both advancing animations: DEF-toe.L",
+		"Pose lies between both advancing animations: DEF-toe.R",
+		"Pose lies between both advancing animations: DEF-hand.L",
+		"Pose lies between both advancing animations: DEF-hand.R",
+		"Continuous pose crossfade, rather than a delayed start: walk -> strafe_left at 0.40 s, weight 0.955",
+		"Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.10 s, weight 0.074",
+		"Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.25 s, weight 0.450",
+		"Continuous pose crossfade, rather than a delayed start: strafe_right -> backward_left at 0.40 s, weight 0.862"
+	],
+	"pose_weights": [
+		{
+			"actual_weight": 0.0740740733686802,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 0.450073995180343,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 0.862074098487171,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 1.94441113291478,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.476484032595385,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.954881087224646,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.0740740810719272,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "strafe_right",
+			"to": "backward_left"
+		},
+		{
+			"actual_weight": 0.450074028539768,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "strafe_right",
+			"to": "backward_left"
+		},
+		{
+			"actual_weight": 0.862073993234108,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "strafe_right",
+			"to": "backward_left"
+		}
+	],
+	"startup": [
+		{
+			"clip": "walk",
+			"first_tick_root_ratio": 0.0000100000002743474
+		},
+		{
+			"clip": "strafe_right",
+			"first_tick_root_ratio": 0.0000100000002743474
+		},
+		{
+			"clip": "backward_left",
+			"first_tick_root_ratio": 0.00000999999987559956
+		}
+	]
+}

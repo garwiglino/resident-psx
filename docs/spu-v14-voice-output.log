@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+VOICE_OUTPUT [{"captured_frames":220160,"nonzero_frames":54519,"peak":0.389621913433075,"phase":0,"radio":false,"rms":0.0481679981832747},{"captured_frames":242688,"nonzero_frames":38616,"peak":0.201653838157654,"phase":0,"radio":true,"rms":0.0127721436309973}]
+DIALOGUE_VOICE_OUTPUT_OK

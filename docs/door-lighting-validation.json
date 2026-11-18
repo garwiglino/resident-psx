@@ -1,0 +1,24 @@
+{
+	"errors": [],
+	"observations": [
+		{
+			"lit": "ffffffff",
+			"position": "(0.0, 1.5, 1.2)",
+			"reference": "ffffffff",
+			"without_frame": "ffffffff"
+		},
+		{
+			"lit": "ffffffff",
+			"position": "(0.5, 2.0, 1.0)",
+			"reference": "ffffffff",
+			"without_frame": "ffffffff"
+		},
+		{
+			"lit": "ffffffff",
+			"position": "(-0.5, 1.0, 1.0)",
+			"reference": "ffffffff",
+			"without_frame": "ffffffff"
+		}
+	],
+	"ok": true
+}

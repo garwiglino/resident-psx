@@ -1,0 +1,12 @@
+00:03.657  blend            | Read blend: "C:\Users\sheensaw\Downloads\scene.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\review_stairs_source.py:11: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('__review_'+old.name);mat.use_nodes=True
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\review_stairs_source.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  image=next((n.image for n in old.node_tree.nodes if n.type=='TEX_IMAGE' and n.image),None) if old.use_nodes else None
+00:04.079  render           | Saved: 'C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\docs\stairs-source-front.png'
+00:04.141  render           | Saved: 'C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\docs\stairs-source-side.png'
+00:04.219  render           | Saved: 'C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\docs\stairs-source-back.png'
+STAIRS_SOURCE_RENDER_OK
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

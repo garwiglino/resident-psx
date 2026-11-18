@@ -1,0 +1,182 @@
+INVENTAIRE ET COLLECTION
+
+POUR ESSAYER
+
+Rouvrir Godot une fois pour charger InventoryState et les nouvelles ressources.
+Ouvrir scenes/examples/inventory_demo.tscn puis F6.
+La scene contient des objets, trois cartes, une porte a cle et un emplacement
+pour la roue. Elle n'ajoute rien aux cartes sur lesquelles tu travailles.
+
+I : ouvrir/fermer le menu. Echap : revenir en arriere, puis fermer le menu.
+Le menu suspend le monde pendant la consultation ; dialogues et cinematiques
+gardent leur propre gestion des controles. Pas d'ouverture pendant une scene
+qui possede deja les controles. H reste le raccourci pour un soin.
+
+OBJETS ET ARMES
+
+Le menu occupe tout l'ecran a la resolution native de 320 x 240.
+Les fleches < et > font defiler OBJETS et ARMES / MUNITIONS dans la meme grille.
+Une seule categorie est affichee a la fois. Page precedente/suivante au clavier
+permet aussi de changer de categorie. L'onglet COLLECTION utilise la meme fenetre.
+L'onglet HITOMI affiche la tenue et permet de changer les vetements et couleurs.
+Les commandes de cet onglet sont dans TENUES.txt.
+Glisser une case sur une autre pour les permuter dans leur groupe.
+Deux piles identiques fusionnent si la limite le permet. Le surplus reste dans
+la case de depart. Une arme ne peut pas prendre une case reservee aux objets.
+Le compteur apparait en bas a droite uniquement pour une quantite superieure a 1.
+Les munitions affichees sont les vraies reserves utilisees par le rechargement.
+Une arme jetee puis recuperee conserve les balles de son chargeur.
+
+Clic droit sur une case : CONSOMMER, UTILISER, LIRE ou EQUIPER selon l'objet,
+et JETER si c'est autorise. Pour une pile, choisir la quantite avec le curseur.
+TOUT JETER ouvre un avertissement avec confirmation. Les objets jetes restent
+recuperables dans le niveau. Les objets essentiels, cles et badges sont proteges.
+Les documents s'ouvrent dans un lecteur et restent dans l'inventaire.
+
+CREER UN NOUVEL OBJET
+
+1. Dans le panneau Fichiers, dupliquer un exemple de assets/inventory/items,
+   ou creer une nouvelle ressource InventoryItemDefinition et l'enregistrer.
+2. Donner un Id unique et stable, un Display Name et une Description.
+3. Choisir Kind : consommable, quete, mecanisme, document, cle, carte d'acces,
+   arme, munitions, outil, materiau ou autre.
+4. Icon est facultatif : sans image, une petite silhouette correspond au type.
+   Stack Limit regle la pile. Essential et Allow Discard reglent la protection.
+   Les cles, badges, armes, documents et objets de quete ne se stackent jamais.
+5. Consumable : Healing et Consumed On Use ; Use Actions pour d'autres effets.
+   Document : Document Text. Weapon : la WeaponDefinition existante.
+   Ammo : le meme Ammo Type que l'arme, par exemple magnum.
+   World Model : scene 3D facultative, pour remplacer le petit objet de base.
+
+Ajouter la ressource dans Items de assets/inventory/catalogue.tres pour la
+retrouver par Id depuis les actions du monde. Un pickup enregistre aussi
+automatiquement la definition qui lui est attribuee.
+Item Capacity et Equipment Capacity reglent les capacites au debut d'une partie.
+Chaque variante de cle/badge doit avoir son propre Id, meme avec la meme icone :
+key_archives et key_bureau_102 sont deux objets distincts.
+
+PLACER UN OBJET A RAMASSER
+
+Glisser scenes/inventory/item_pickup.tscn dans le niveau.
+Choisir Item et Quantity dans l'inspecteur ; positionner l'objet normalement.
+Donner un Interaction Id unique pour conserver son etat entre visites.
+E ramasse la pile entiere ; si le sac est plein, elle reste dans le niveau.
+Conditions et Actions sont celles des autres interactions du monde.
+
+PORTE AVEC CLE OU BADGE
+
+Porte peinte : outil Regler du panneau Cartes 2m, puis cliquer sur la porte.
+Renseigner Required Item Id avec l'Id exact de la cle ou du badge.
+Sur une WorldDoor3D placee directement : meme champ dans l'inspecteur.
+La porte commence verrouillee et E utilise la bonne cle si elle est possedee.
+Consume Key On Unlock retire la cle une fois utilisee, si souhaite.
+Les portes a cle peuvent jouer une ligne aleatoire de locked_doors_key quand
+la cle manque. Les portes a badge ou condamnees restent exclues de ces repliques.
+Le reglage se trouve dans Cartes 2m > Regler > porte ; voir CARTES-2M.txt.
+Depuis le menu, UTILISER sur la bonne cle marche aussi a portee de la porte.
+
+ROUE, LEVIER OU AUTRE MECANISME
+
+Voir MECANISMES.txt pour le guide de configuration et d'export Blender.
+scenes/inventory/item_target.tscn est l'exemple de la roue existante.
+scenes/inventory/placement_target.tscn est le modele vierge pour tes socles.
+scenes/inventory/placement_valve.tscn est une scene complete avec modeles
+visibles, camera et animation : dupliquer ce fichier, construire son placement
+dans l'editeur, puis glisser la copie .tscn dans la carte.
+scenes/inventory/placement_assembly.tscn est l'exemple a plusieurs emplacements.
+E ouvre la camera fixe avec un curseur : survoler une fixation pour son contour,
+puis cliquer pour ouvrir les objets en bas sur une seule rangee defilante.
+Tous les objets placables possedes restent proposes, meme les mauvais.
+Le bon choix s'insere doucement ; un mauvais joue une ligne de wrong_item.
+Consume Item retire la piece uniquement a la fin complete de l'installation.
+Les mecanismes sont placables automatiquement ; pour un autre type d'objet,
+cocher Placeable dans sa definition. Animations et fixations sur os possibles.
+Les Actions du socle partent apres le retour de camera.
+
+LIEN AVEC LES EVENEMENTS DU MONDE
+
+Nouvelles WorldAction : Donner un objet, Retirer un objet, Trouver une carte
+de collection. Nouvelles WorldCondition : Objet dans l'inventaire,
+Document lu, Carte de collection trouvee.
+Elles se combinent aux zones, morts d'ennemis, objectifs et dialogues existants.
+Un don en attente de place attend qu'une case se libere ; preferer un pickup
+visible pour une recompense qui doit rester sur place.
+
+Faits publies : inventory.<id>.count, document.<id>.read,
+collection.<id>.owned. Evenements : inventory.<id>.used,
+inventory.<id>.dropped, document.<id>.read, collection.<id>.found.
+WorldEvents.snapshot()/restore() incluent cases, quantites, chargeurs et
+objets jetes. L'inventaire suit le joueur entre niveaux dans la meme partie.
+Un redemarrage de partie vide le sac ; la collection reste acquise.
+
+CARTES FERRO / ECLIPSE
+
+Les 15 cartes sont importees depuis ton pack, avec leur nom et description.
+Les fichiers sources sont conserves dans assets/collection/source.
+Les definitions modifiables sont dans assets/collection/cards.
+Le catalogue assets/inventory/catalogue.tres contient leur liste.
+Aucun bonus de statistiques ni case du sac n'est associe a ces cartes.
+
+Glisser scenes/inventory/card_pickup.tscn dans le niveau.
+Choisir Card Id dans la liste deroulante. La carte fait 30 cm de haut par
+defaut, tourne et flotte legerement. Avant ramassage, elle montre le point
+d'interrogation et le dos commun de ton atlas. Une carte deja acquise est cachee.
+Hide When Owned controle ce dernier comportement. Il est active par defaut
+dans les niveaux normaux. Dans inventory_demo, il est desactive pour revoir
+les cartes a chaque nouveau test F6, meme si elles sont deja dans ta collection.
+Cela n'efface pas la collection et n'ajoute aucun doublon ni bonus.
+Dans COLLECTION, survoler une case revele sa grande illustration a droite,
+puis son nom et son texte. Les cartes inconnues gardent le point d'interrogation.
+La description se fait defiler a la molette si elle depasse la zone disponible.
+
+La collection se sauvegarde automatiquement dans le profil local :
+user://ferro_eclipse_collection.json. Elle est commune aux niveaux et demeure
+apres une nouvelle partie. L'inventaire normal reste lie a l'etat de la partie.
+Pour ajouter une carte plus tard : creer une CollectionCardDefinition, assigner
+ses images et son texte, puis l'ajouter a Cards dans le catalogue.
+
+APPARENCE
+
+Le menu reprend l'encart du menu Pause. Son contenu utilise la police du dialogue.
+INVENTAIRE et COLLECTION gardent leur police de titre, explicitement a 16 pixels.
+Le DialogueStyle de la partie fournit aussi les sons d'ouverture/fermeture.
+La grande carte conserve ses 64 x 96 pixels d'origine, sans reduction de details.
+Il respecte le rendu logique 320 x 240 et les sons d'interface passent par
+la meme chaine audio PSX que le reste du jeu.
+
+RAMASSAGE ET DECOUVERTE
+
+Tout ramassage reussi joue assets/audio/ui/item_pickup.wav, une fois par pile.
+Pour un objet essentiel, essential_item_found.wav suit directement ce son.
+Pour une carte ramassee, secret_card_found.wav le suit a la place.
+Les ramassages rapproches demarrent chacun tout de suite ; leurs volumes sont
+equilibres lorsqu'ils se superposent, sans retarder le son du nouvel objet.
+Un sac plein ne joue aucun son de ramassage. Recharger une arme, restaurer une
+sauvegarde ou recevoir l'equipement de depart ne joue pas ces effets non plus.
+
+Les types Quete, Cle, Carte d'acces et Mecanisme sont essentiels automatiquement.
+Pour tout autre objet lie a l'histoire, cocher Essential sur sa definition.
+La roue et la poignee de levier sont deja preparees.
+
+Un objet essentiel ouvre TROUVE : dans un petit encart centre, avec son modele
+en 3D legerement incline et tournant a 40 degres par seconde,
+son nom et OK. Le jeu est en pause et sa derniere image est grisee derriere
+l'encart. La souris redevient disponible. OK, Entree, Espace ou E reprend le jeu
+apres relachement de la touche de ramassage. Plusieurs objets essentiels sont
+presentes l'un apres l'autre ; les dialogues et la camera reprennent leur etat.
+Les cartes de collection gardent une decouverte sans pause, avec leur son.
+
+World Model sert au modele pose dans le niveau et a la decouverte.
+Inspection Model est facultatif : l'attribuer pour un modele dedie a l'encart.
+L'apercu utilise le moteur PSX du projet, sans speculaire, avec un eclairage
+de presentation independant du niveau. Les scripts, sons, collisions et actions
+du modele ne sont pas actifs dans l'apercu : seules ses geometries sont affichees.
+
+Pour regler les trois sons, leurs volumes et la vitesse de rotation : ouvrir
+scenes/inventory/pickup_feedback.tscn et selectionner DecouverteObjet.
+Preview Tilt Degrees regle la faible inclinaison fixe. Les volumes par defaut
+sont -12 dB pour le ramassage et -10 dB pour les sons de decouverte.
+Ces reglages sont communs a tous les niveaux et les sons restent dans le SPU.
+
+L'action Donner un objet propose Wait For Completion : active, la suite de la
+chaine attend OK lorsque l'objet ouvre une fenetre de decouverte.

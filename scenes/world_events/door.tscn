@@ -1,0 +1,24 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/world_events/world_door_3d.gd" id="1"]
+[sub_resource type="StandardMaterial3D" id="Material"]
+shading_mode = 0
+albedo_color = Color(0.24,0.29,0.27,1)
+metallic_specular = 0.0
+roughness = 1.0
+texture_filter = 0
+[sub_resource type="BoxMesh" id="Mesh"]
+material = SubResource("Material")
+size = Vector3(1,2.2,0.12)
+[sub_resource type="BoxShape3D" id="Shape"]
+size = Vector3(1,2.2,0.12)
+[node name="Porte" type="Marker3D"]
+script = ExtResource("1")
+interaction_offset = Vector3(0.5,1.1,0)
+[node name="Pivot" type="Node3D" parent="."]
+[node name="Mesh" type="MeshInstance3D" parent="Pivot"]
+position = Vector3(0.5,1.1,0)
+mesh = SubResource("Mesh")
+[node name="Collision" type="StaticBody3D" parent="Pivot"]
+[node name="Shape" type="CollisionShape3D" parent="Pivot/Collision"]
+position = Vector3(0.5,1.1,0)
+shape = SubResource("Shape")

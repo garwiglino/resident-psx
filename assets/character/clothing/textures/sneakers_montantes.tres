@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ClothingTextureSet" format=3 uid="uid://gr41g22ilf61"]
+
+[ext_resource type="Script" uid="uid://cowdnl8xhrkki" path="res://scripts/clothing/clothing_texture_set.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://0dpqf485cci3" path="res://assets/character/clothing/textures/sneakers_montantes/sorami_psx_256.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dd3baa56mhk8t" path="res://assets/character/clothing/textures/sneakers_montantes/sakura_psx_256.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bkydx355u7o33" path="res://assets/character/clothing/textures/sneakers_montantes/nami_psx_256.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://df10n1pne6iff" path="res://assets/character/clothing/textures/sneakers_montantes/ivoire_psx_256.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cq51jbejewx24" path="res://assets/character/clothing/textures/sneakers_montantes/eclair_psx_256.png" id="6"]
+
+[resource]
+script = ExtResource("1")
+original_label = "Sakura"
+variants = Dictionary[StringName, Texture2D]({
+&"Eclair": ExtResource("6"),
+&"Ivoire": ExtResource("5"),
+&"Nami": ExtResource("4"),
+&"Sakura": ExtResource("3"),
+&"Sorami": ExtResource("2")
+})

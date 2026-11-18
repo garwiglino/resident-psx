@@ -1,0 +1,13 @@
+{
+	"failures": [],
+	"modules": [
+		"floor_tile",
+		"ceiling_tile",
+		"corner_outer",
+		"corner_inner",
+		"wall_straight",
+		"wall_door_frame",
+		"door"
+	],
+	"static_triangles": 3240
+}

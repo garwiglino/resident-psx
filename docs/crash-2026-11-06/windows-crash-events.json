@@ -1,0 +1,26 @@
+[
+  {
+    "TimeCreated": "2026-11-06T20:59:42.6127661+01:00",
+    "Id": 1000,
+    "ProviderName": "Application Error",
+    "Message": "Nom de l'application défaillante : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nNom du module défaillant : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nException code: 0xc0000005\r\nFault offset: 0x00000000031d57d3\r\nIdentifiant du processus défaillant : 0x5744\r\nHeure de début de l'application défaillante : 0x1DD6E295C782EC1\r\nChemin de l'application défaillante : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nChemin du module défaillant : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nID du rapport : 3ee20ae3-c43f-47a4-95a5-5348ff098e54\r\nNom complet du package défaillant : \r\nPackage défaillant – ID d'application relatif : "
+  },
+  {
+    "TimeCreated": "2026-11-06T20:59:11.5115073+01:00",
+    "Id": 1000,
+    "ProviderName": "Application Error",
+    "Message": "Nom de l'application défaillante : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nNom du module défaillant : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nException code: 0xc0000005\r\nFault offset: 0x00000000031d57d3\r\nIdentifiant du processus défaillant : 0x75F8\r\nHeure de début de l'application défaillante : 0x1DD6E2949F5EDF9\r\nChemin de l'application défaillante : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nChemin du module défaillant : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nID du rapport : dcd8cd59-adae-4fd0-9eea-fb6401398c82\r\nNom complet du package défaillant : \r\nPackage défaillant – ID d'application relatif : "
+  },
+  {
+    "TimeCreated": "2026-11-06T20:59:04.4738565+01:00",
+    "Id": 1000,
+    "ProviderName": "Application Error",
+    "Message": "Nom de l'application défaillante : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nNom du module défaillant : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nException code: 0xc0000005\r\nFault offset: 0x00000000031d57d3\r\nIdentifiant du processus défaillant : 0x42FC\r\nHeure de début de l'application défaillante : 0x1DD6E2945D4337A\r\nChemin de l'application défaillante : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nChemin du module défaillant : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nID du rapport : 861d73fa-f4b9-440e-b875-90bd6c22b90c\r\nNom complet du package défaillant : \r\nPackage défaillant – ID d'application relatif : "
+  },
+  {
+    "TimeCreated": "2026-11-06T20:58:52.117996+01:00",
+    "Id": 1000,
+    "ProviderName": "Application Error",
+    "Message": "Nom de l'application défaillante : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nNom du module défaillant : Godot_v4.7.1-stable_win64.exe, version : 4.7.1.0, horodatage : 0x6a555519\r\nException code: 0xc0000005\r\nFault offset: 0x00000000031d57d3\r\nIdentifiant du processus défaillant : 0x6C58\r\nHeure de début de l'application défaillante : 0x1DD6E293E6B1A24\r\nChemin de l'application défaillante : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nChemin du module défaillant : C:\\Users\\sheensaw\\MyApps\\Godot_v4.7.1-stable_win64.exe\\Godot_v4.7.1-stable_win64.exe\r\nID du rapport : da607621-df03-485f-8dd8-6dc304599896\r\nNom complet du package défaillant : \r\nPackage défaillant – ID d'application relatif : "
+  }
+]

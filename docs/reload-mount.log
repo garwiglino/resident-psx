@@ -1,0 +1,3 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+RELOAD_MOUNT_OK {"bone":"DEF-hand.L","drop_frame":6,"fps":24.0,"insertion_error_m":0.000000122934579849243,"magazine_bone":"b_mag","palm_to_magazine_center_m":0.10986801981926,"reference_frame":17,"source":"C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_shoot_reload_bezier.blend","source_sha256":"862020db872f827725fb8ab660ecb455dadf69ee838a0cab32aa70c21f2348dd","transform_rows":[[-0.414937525987625,0.909848034381866,0.00181956589221954,0.0360358133912086],[0.178495049476624,0.0794414877891541,0.980728507041931,0.0531250238418579],[0.892169654369354,0.407265871763229,-0.195366457104683,-0.00395059585571289],[0,0,0,1]]}

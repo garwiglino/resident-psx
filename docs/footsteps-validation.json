@@ -1,0 +1,1598 @@
+{
+	"clips": [
+		{
+			"aiming": false,
+			"clip": "walk",
+			"events": [
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684460252523422,
+					"source_frame": 19.5,
+					"time": 0.616666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600872933864594,
+					"source_frame": 35.0,
+					"time": 1.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00431035459041595,
+					"source_frame": 49.5,
+					"time": 1.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00732957571744919,
+					"source_frame": 65.0,
+					"time": 2.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00524610280990601,
+					"source_frame": 80.0,
+					"time": 2.63333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00724942982196808,
+					"source_frame": 95.5,
+					"time": 3.15
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00643368065357208,
+					"source_frame": 110.5,
+					"time": 3.65
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00365085899829865,
+					"source_frame": 5.00000000000001,
+					"time": 4.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684460252523422,
+					"source_frame": 19.5,
+					"time": 4.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600872933864594,
+					"source_frame": 35.0,
+					"time": 5.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00431035459041595,
+					"source_frame": 49.5,
+					"time": 5.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00732957571744919,
+					"source_frame": 65.0,
+					"time": 6.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00524610280990601,
+					"source_frame": 80.0,
+					"time": 6.63333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00724942982196808,
+					"source_frame": 95.5,
+					"time": 7.15
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00643368065357208,
+					"source_frame": 110.5,
+					"time": 7.65
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "forward_right",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.000656373798847198,
+					"source_frame": 13.0,
+					"time": 0.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00759876519441605,
+					"source_frame": 24.0,
+					"time": 0.766666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00493807345628738,
+					"source_frame": 42.5,
+					"time": 1.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00740613788366318,
+					"source_frame": 57.5,
+					"time": 1.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600225478410721,
+					"source_frame": 73.0,
+					"time": 2.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00475023686885834,
+					"source_frame": 88.0,
+					"time": 2.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00565730780363083,
+					"source_frame": 103.5,
+					"time": 3.41666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00794541090726852,
+					"source_frame": 118.5,
+					"time": 3.91666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.000656373798847198,
+					"source_frame": 13.0,
+					"time": 4.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00759876519441605,
+					"source_frame": 24.0,
+					"time": 4.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00493807345628738,
+					"source_frame": 42.5,
+					"time": 5.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00740613788366318,
+					"source_frame": 57.5,
+					"time": 5.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600225478410721,
+					"source_frame": 73.0,
+					"time": 6.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00475023686885834,
+					"source_frame": 88.0,
+					"time": 6.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00565730780363083,
+					"source_frame": 103.5,
+					"time": 7.41666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00794541090726852,
+					"source_frame": 118.5,
+					"time": 7.91666666666667
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "strafe_right",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00141485780477524,
+					"source_frame": 9.0,
+					"time": 0.266666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00238413363695145,
+					"source_frame": 24.0,
+					"time": 0.766666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00693628191947937,
+					"source_frame": 39.0,
+					"time": 1.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.000157736241817474,
+					"source_frame": 54.0,
+					"time": 1.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00275184959173203,
+					"source_frame": 69.5,
+					"time": 2.28333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.000900357961654663,
+					"source_frame": 84.0,
+					"time": 2.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00379884988069534,
+					"source_frame": 99.5,
+					"time": 3.28333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00598885118961334,
+					"source_frame": 114.5,
+					"time": 3.78333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00141485780477524,
+					"source_frame": 9.0,
+					"time": 4.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00238413363695145,
+					"source_frame": 24.0,
+					"time": 4.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00693628191947937,
+					"source_frame": 39.0,
+					"time": 5.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.000157736241817474,
+					"source_frame": 54.0,
+					"time": 5.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00275184959173203,
+					"source_frame": 69.5,
+					"time": 6.28333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.000900357961654663,
+					"source_frame": 84.0,
+					"time": 6.76666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00379884988069534,
+					"source_frame": 99.5,
+					"time": 7.28333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00598885118961334,
+					"source_frame": 114.5,
+					"time": 7.78333333333333
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "backward_right",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00781816989183426,
+					"source_frame": 15.5,
+					"time": 0.483333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00620195455849171,
+					"source_frame": 32.0,
+					"time": 1.03333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00635554082691669,
+					"source_frame": 46.0,
+					"time": 1.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00601844117045403,
+					"source_frame": 63.0,
+					"time": 2.06666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00745801627635956,
+					"source_frame": 75.5,
+					"time": 2.48333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00714165158569813,
+					"source_frame": 92.5,
+					"time": 3.05
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00785944610834122,
+					"source_frame": 106.5,
+					"time": 3.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00721652247011662,
+					"source_frame": 2.0,
+					"time": 4.03333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00781816989183426,
+					"source_frame": 15.5,
+					"time": 4.48333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00620195455849171,
+					"source_frame": 32.0,
+					"time": 5.03333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00635554082691669,
+					"source_frame": 46.0,
+					"time": 5.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00601844117045403,
+					"source_frame": 63.0,
+					"time": 6.06666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00745801627635956,
+					"source_frame": 75.5,
+					"time": 6.48333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00714165158569813,
+					"source_frame": 92.5,
+					"time": 7.05
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00785944610834122,
+					"source_frame": 106.5,
+					"time": 7.51666666666667
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "backward",
+			"events": [
+				{
+					"foot": "L",
+					"sole_height_m": 0.00569925270974636,
+					"source_frame": 20.0,
+					"time": 0.633333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00682919472455978,
+					"source_frame": 36.0,
+					"time": 1.16666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00530382618308067,
+					"source_frame": 50.0,
+					"time": 1.63333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00666099414229393,
+					"source_frame": 66.0,
+					"time": 2.16666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00732076354324818,
+					"source_frame": 79.5,
+					"time": 2.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00675876811146736,
+					"source_frame": 95.0,
+					"time": 3.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00594697520136833,
+					"source_frame": 110.5,
+					"time": 3.65
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00729705393314362,
+					"source_frame": 4.49999999999999,
+					"time": 4.11666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00569925270974636,
+					"source_frame": 20.0,
+					"time": 4.63333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00682919472455978,
+					"source_frame": 36.0,
+					"time": 5.16666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00530382618308067,
+					"source_frame": 50.0,
+					"time": 5.63333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00666099414229393,
+					"source_frame": 66.0,
+					"time": 6.16666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00732076354324818,
+					"source_frame": 79.5,
+					"time": 6.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00675876811146736,
+					"source_frame": 95.0,
+					"time": 7.13333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00594697520136833,
+					"source_frame": 110.5,
+					"time": 7.65
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "backward_left",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00797159224748611,
+					"source_frame": 15.5,
+					"time": 0.483333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00745960883796215,
+					"source_frame": 29.5,
+					"time": 0.95
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00778447836637497,
+					"source_frame": 46.0,
+					"time": 1.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00740480981767178,
+					"source_frame": 60.5,
+					"time": 1.98333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00707530416548252,
+					"source_frame": 76.0,
+					"time": 2.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00681854970753193,
+					"source_frame": 92.0,
+					"time": 3.03333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00714877434074879,
+					"source_frame": 106.5,
+					"time": 3.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00798735395073891,
+					"source_frame": 1.0,
+					"time": 4.0
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00797159224748611,
+					"source_frame": 15.5,
+					"time": 4.48333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00745960883796215,
+					"source_frame": 29.5,
+					"time": 4.95
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00778447836637497,
+					"source_frame": 46.0,
+					"time": 5.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00740480981767178,
+					"source_frame": 60.5,
+					"time": 5.98333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00707530416548252,
+					"source_frame": 76.0,
+					"time": 6.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00681854970753193,
+					"source_frame": 92.0,
+					"time": 7.03333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00714877434074879,
+					"source_frame": 106.5,
+					"time": 7.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00798735395073891,
+					"source_frame": 1.0,
+					"time": 8.0
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "strafe_left",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.0075224582105875,
+					"source_frame": 16.0,
+					"time": 0.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00710422545671463,
+					"source_frame": 28.0,
+					"time": 0.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0020083412528038,
+					"source_frame": 41.0,
+					"time": 1.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00246773287653923,
+					"source_frame": 55.5,
+					"time": 1.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00426680594682693,
+					"source_frame": 70.5,
+					"time": 2.31666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00792542099952698,
+					"source_frame": 85.5,
+					"time": 2.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00719619728624821,
+					"source_frame": 106.5,
+					"time": 3.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684316083788872,
+					"source_frame": 117.5,
+					"time": 3.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0075224582105875,
+					"source_frame": 16.0,
+					"time": 4.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00710422545671463,
+					"source_frame": 28.0,
+					"time": 4.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0020083412528038,
+					"source_frame": 41.0,
+					"time": 5.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00246773287653923,
+					"source_frame": 55.5,
+					"time": 5.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00426680594682693,
+					"source_frame": 70.5,
+					"time": 6.31666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00792542099952698,
+					"source_frame": 85.5,
+					"time": 6.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00719619728624821,
+					"source_frame": 106.5,
+					"time": 7.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684316083788872,
+					"source_frame": 117.5,
+					"time": 7.88333333333333
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "forward_left",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.0046989917755127,
+					"source_frame": 11.5,
+					"time": 0.35
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00229228287935257,
+					"source_frame": 26.0,
+					"time": 0.833333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00615821033716202,
+					"source_frame": 41.0,
+					"time": 1.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.0030520111322403,
+					"source_frame": 56.5,
+					"time": 1.85
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.000865064561367035,
+					"source_frame": 72.5,
+					"time": 2.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.0010727122426033,
+					"source_frame": 87.0,
+					"time": 2.86666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00369678437709808,
+					"source_frame": 102.5,
+					"time": 3.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00117076933383942,
+					"source_frame": 117.5,
+					"time": 3.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0046989917755127,
+					"source_frame": 11.5,
+					"time": 4.35
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00229228287935257,
+					"source_frame": 26.0,
+					"time": 4.83333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00615821033716202,
+					"source_frame": 41.0,
+					"time": 5.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.0030520111322403,
+					"source_frame": 56.5,
+					"time": 5.85
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.000865064561367035,
+					"source_frame": 72.5,
+					"time": 6.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.0010727122426033,
+					"source_frame": 87.0,
+					"time": 6.86666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00369678437709808,
+					"source_frame": 102.5,
+					"time": 7.38333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00117076933383942,
+					"source_frame": 117.5,
+					"time": 7.88333333333333
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "run",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00649166107177734,
+					"source_frame": 6.0,
+					"time": 0.166666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00371232628822327,
+					"source_frame": 18.0,
+					"time": 0.566666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00590191036462784,
+					"source_frame": 30.5,
+					"time": 0.983333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00269321352243423,
+					"source_frame": 42.5,
+					"time": 1.38333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00204488635063171,
+					"source_frame": 55.0,
+					"time": 1.8
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00447285175323486,
+					"source_frame": 66.5,
+					"time": 2.18333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00167640298604965,
+					"source_frame": 79.0,
+					"time": 2.6
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00512262433767319,
+					"source_frame": 90.5,
+					"time": 2.98333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00268459320068359,
+					"source_frame": 103.0,
+					"time": 3.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00687403976917267,
+					"source_frame": 114.5,
+					"time": 3.78333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00649166107177734,
+					"source_frame": 6.00000000000001,
+					"time": 4.16666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00371232628822327,
+					"source_frame": 18.0,
+					"time": 4.56666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00590191036462784,
+					"source_frame": 30.5,
+					"time": 4.98333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00269321352243423,
+					"source_frame": 42.5,
+					"time": 5.38333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00204488635063171,
+					"source_frame": 55.0,
+					"time": 5.8
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00447285175323486,
+					"source_frame": 66.5,
+					"time": 6.18333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00167640298604965,
+					"source_frame": 79.0,
+					"time": 6.6
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00512262433767319,
+					"source_frame": 90.5,
+					"time": 6.98333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00268459320068359,
+					"source_frame": 103.0,
+					"time": 7.4
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00687403976917267,
+					"source_frame": 114.5,
+					"time": 7.78333333333333
+				}
+			],
+			"settled_loop_steps": 10,
+			"speed": 1.0
+		},
+		{
+			"aiming": false,
+			"clip": "run",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00762009620666504,
+					"source_frame": 5.95,
+					"time": 0.15
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00339750200510025,
+					"source_frame": 18.05,
+					"time": 0.516666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00400485098361969,
+					"source_frame": 30.7,
+					"time": 0.9
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00544916838407516,
+					"source_frame": 42.25,
+					"time": 1.25
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00316548347473145,
+					"source_frame": 54.9,
+					"time": 1.63333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00516724586486816,
+					"source_frame": 66.45,
+					"time": 1.98333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00160156190395355,
+					"source_frame": 79.1,
+					"time": 2.36666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00286605954170227,
+					"source_frame": 90.65,
+					"time": 2.71666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00645468384027481,
+					"source_frame": 102.75,
+					"time": 3.08333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00180590897798538,
+					"source_frame": 114.85,
+					"time": 3.45
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00435192137956619,
+					"source_frame": 6.39999999999999,
+					"time": 3.8
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00484178960323334,
+					"source_frame": 17.95,
+					"time": 4.15
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0049244612455368,
+					"source_frame": 30.6,
+					"time": 4.53333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00662973523139954,
+					"source_frame": 42.15,
+					"time": 4.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00436003506183624,
+					"source_frame": 54.8,
+					"time": 5.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00659722089767456,
+					"source_frame": 66.35,
+					"time": 5.61666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00167641043663025,
+					"source_frame": 79.0,
+					"time": 6.0
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00435025990009308,
+					"source_frame": 90.55,
+					"time": 6.35
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0024464875459671,
+					"source_frame": 103.2,
+					"time": 6.73333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00313007086515427,
+					"source_frame": 114.75,
+					"time": 7.08333333333333
+				}
+			],
+			"settled_loop_steps": 10,
+			"speed": 1.1
+		},
+		{
+			"aiming": false,
+			"clip": "run",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00649166107177734,
+					"source_frame": 6.0,
+					"time": 0.0833333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00371232628822327,
+					"source_frame": 18.0,
+					"time": 0.283333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00159404426813126,
+					"source_frame": 31.0,
+					"time": 0.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00197296589612961,
+					"source_frame": 43.0,
+					"time": 0.7
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00204488635063171,
+					"source_frame": 55.0,
+					"time": 0.9
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00171048939228058,
+					"source_frame": 67.0,
+					"time": 1.1
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00167640298604965,
+					"source_frame": 79.0,
+					"time": 1.3
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00169095396995544,
+					"source_frame": 91.0,
+					"time": 1.5
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00268459320068359,
+					"source_frame": 103.0,
+					"time": 1.7
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00000652670860290527,
+					"source_frame": 115.0,
+					"time": 1.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00649166107177734,
+					"source_frame": 6.00000000000001,
+					"time": 2.08333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00371232628822327,
+					"source_frame": 18.0,
+					"time": 2.28333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00159404426813126,
+					"source_frame": 31.0,
+					"time": 2.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00197296589612961,
+					"source_frame": 43.0,
+					"time": 2.7
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00204488635063171,
+					"source_frame": 55.0,
+					"time": 2.9
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00171048939228058,
+					"source_frame": 67.0,
+					"time": 3.1
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00167640298604965,
+					"source_frame": 79.0,
+					"time": 3.3
+				},
+				{
+					"foot": "L",
+					"sole_height_m": -0.00169095396995544,
+					"source_frame": 91.0,
+					"time": 3.5
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00268459320068359,
+					"source_frame": 103.0,
+					"time": 3.7
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00000652670860290527,
+					"source_frame": 115.0,
+					"time": 3.9
+				}
+			],
+			"settled_loop_steps": 10,
+			"speed": 2.0
+		},
+		{
+			"aiming": false,
+			"clip": "walk",
+			"events": [
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684460252523422,
+					"source_frame": 19.5,
+					"time": 1.23333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600872933864594,
+					"source_frame": 35.0,
+					"time": 2.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00431035459041595,
+					"source_frame": 49.5,
+					"time": 3.23333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00732957571744919,
+					"source_frame": 65.0,
+					"time": 4.26666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00524610280990601,
+					"source_frame": 80.0,
+					"time": 5.26666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00724942982196808,
+					"source_frame": 95.5,
+					"time": 6.3
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00643368065357208,
+					"source_frame": 110.5,
+					"time": 7.3
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00761550664901733,
+					"source_frame": 4.75,
+					"time": 8.25
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684460252523422,
+					"source_frame": 19.5,
+					"time": 9.23333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00600872933864594,
+					"source_frame": 35.0,
+					"time": 10.2666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00431035459041595,
+					"source_frame": 49.5,
+					"time": 11.2333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00732957571744919,
+					"source_frame": 65.0,
+					"time": 12.2666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00524610280990601,
+					"source_frame": 80.0,
+					"time": 13.2666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00724942982196808,
+					"source_frame": 95.5,
+					"time": 14.3
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00643368065357208,
+					"source_frame": 110.5,
+					"time": 15.3
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 0.5
+		},
+		{
+			"aiming": true,
+			"clip": "strafe_left",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.0075224582105875,
+					"source_frame": 16.0,
+					"time": 0.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00710422545671463,
+					"source_frame": 28.0,
+					"time": 0.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0020083412528038,
+					"source_frame": 41.0,
+					"time": 1.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00246773287653923,
+					"source_frame": 55.5,
+					"time": 1.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00426680594682693,
+					"source_frame": 70.5,
+					"time": 2.31666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00792542099952698,
+					"source_frame": 85.5,
+					"time": 2.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00719619728624821,
+					"source_frame": 106.5,
+					"time": 3.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684316083788872,
+					"source_frame": 117.5,
+					"time": 3.88333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0075224582105875,
+					"source_frame": 16.0,
+					"time": 4.5
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00710422545671463,
+					"source_frame": 28.0,
+					"time": 4.9
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0020083412528038,
+					"source_frame": 41.0,
+					"time": 5.33333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00246773287653923,
+					"source_frame": 55.5,
+					"time": 5.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00426680594682693,
+					"source_frame": 70.5,
+					"time": 6.31666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00792542099952698,
+					"source_frame": 85.5,
+					"time": 6.81666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00719619728624821,
+					"source_frame": 106.5,
+					"time": 7.51666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00684316083788872,
+					"source_frame": 117.5,
+					"time": 7.88333333333333
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.0
+		},
+		{
+			"aiming": true,
+			"clip": "backward_right",
+			"events": [
+				{
+					"foot": "R",
+					"sole_height_m": 0.00794083997607231,
+					"source_frame": 15.45,
+					"time": 0.283333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00783748924732208,
+					"source_frame": 31.6,
+					"time": 0.6
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.0062329787760973,
+					"source_frame": 46.05,
+					"time": 0.883333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00583852268755436,
+					"source_frame": 63.05,
+					"time": 1.21666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00579172745347023,
+					"source_frame": 75.8,
+					"time": 1.46666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00560900941491127,
+					"source_frame": 92.8,
+					"time": 1.8
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00597646646201611,
+					"source_frame": 107.25,
+					"time": 2.08333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00523430295288563,
+					"source_frame": 2.55,
+					"time": 2.38333333333333
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00631334632635117,
+					"source_frame": 16.15,
+					"time": 2.65
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00506052933633327,
+					"source_frame": 32.3,
+					"time": 2.96666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00676010176539421,
+					"source_frame": 45.9,
+					"time": 3.23333333333333
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00649428181350231,
+					"source_frame": 62.9,
+					"time": 3.56666666666667
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00662478804588318,
+					"source_frame": 75.65,
+					"time": 3.81666666666667
+				},
+				{
+					"foot": "L",
+					"sole_height_m": 0.00637528486549854,
+					"source_frame": 92.65,
+					"time": 4.15
+				},
+				{
+					"foot": "R",
+					"sole_height_m": 0.00623369216918945,
+					"source_frame": 107.1,
+					"time": 4.43333333333333
+				}
+			],
+			"settled_loop_steps": 8,
+			"speed": 1.7
+		}
+	],
+	"controller": [
+		{
+			"stage": "walk",
+			"steps": 2
+		},
+		{
+			"stage": "run",
+			"steps": 3
+		},
+		{
+			"stage": "aim_walk",
+			"steps": 3
+		}
+	],
+	"crossfade_steps": 15,
+	"failures": [],
+	"played": [
+		{
+			"clip": "walk",
+			"foot": "L",
+			"position": "(-0.03785, 0.007177, 4.903621)",
+			"time": 0.616666666666667
+		},
+		{
+			"clip": "walk",
+			"foot": "R",
+			"position": "(0.036591, 0.00616, 4.16632)",
+			"time": 1.13333333333333
+		},
+		{
+			"clip": "run",
+			"foot": "L",
+			"position": "(-0.021387, 0.003583, 2.055316)",
+			"time": 0.568333345651627
+		},
+		{
+			"clip": "run",
+			"foot": "R",
+			"position": "(0.023268, 0.004275, 0.841526)",
+			"time": 0.990000021457673
+		},
+		{
+			"clip": "run",
+			"foot": "L",
+			"position": "(-0.005477, 0.006062, -0.305197)",
+			"time": 1.37500002980232
+		},
+		{
+			"clip": "walk",
+			"foot": "R",
+			"position": "(0.015601, 0.007252, -1.356702)",
+			"time": 0.133333333333333
+		},
+		{
+			"clip": "walk",
+			"foot": "L",
+			"position": "(-0.03785, 0.007092, -2.1695)",
+			"time": 0.616666666666667
+		},
+		{
+			"clip": "walk",
+			"foot": "R",
+			"position": "(0.036591, 0.006262, -2.906746)",
+			"time": 1.13333333333333
+		},
+		{
+			"clip": "idle",
+			"foot": "L",
+			"position": "(-0.060182, 0.001737, -3.52785)",
+			"time": 0.116666666666667
+		},
+		{
+			"clip": "idle",
+			"foot": "R",
+			"position": "(0.107137, 0.00613, -3.430397)",
+			"time": 0.433333333333333
+		},
+		{
+			"clip": "strafe_left",
+			"foot": "L",
+			"position": "(-0.204907, 0.004729, 1.708485)",
+			"time": 0.116666666666667
+		},
+		{
+			"clip": "strafe_left",
+			"foot": "R",
+			"position": "(-0.832528, 0.004542, 2.12422)",
+			"time": 0.5
+		},
+		{
+			"clip": "strafe_left",
+			"foot": "L",
+			"position": "(-1.607855, -0.002431, 2.169151)",
+			"time": 0.900000000000001
+		}
+	]
+}

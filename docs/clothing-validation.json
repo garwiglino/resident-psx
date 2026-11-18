@@ -1,0 +1,24 @@
+{
+	"body_error_m": 0.000111091689548373,
+	"body_source_sha256": "317a5e4582968e0e7c3ec4fac32a3a8456199524dc3b7402e4f0a507cbe157ee",
+	"clips": [
+		"idle",
+		"walk",
+		"backward",
+		"strafe_left",
+		"strafe_right",
+		"forward_left",
+		"forward_right",
+		"backward_left",
+		"backward_right",
+		"run"
+	],
+	"failures": [],
+	"jacket_error_m": 0.0000877262480006217,
+	"jacket_max_influences": 10.0,
+	"jacket_overflow_vertices": 1,
+	"jacket_source_sha256": "c39f285e3725c901058bc076c7b8f986de45fefc27beec1b038b8257ac03c433",
+	"joints": 270,
+	"mask_faces": 150.0,
+	"texture_override_verified": true
+}

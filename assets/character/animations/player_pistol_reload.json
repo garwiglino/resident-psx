@@ -1,0 +1,19 @@
+{
+  "clip": "player_pistol_reload",
+  "loop": false,
+  "fps": 24.0,
+  "start_frame": 1,
+  "end_frame": 35,
+  "duration": 1.4166666666666667,
+  "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_shoot_reload_bezier.blend",
+  "source_sha256": "862020db872f827725fb8ab660ecb455dadf69ee838a0cab32aa70c21f2348dd",
+  "root_motion": false,
+  "root_motion_track": "rig/Skeleton3D:RootMotion",
+  "root_motion_distance": 0.0,
+  "average_speed": 0.0,
+  "root_motion_vector": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,22 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" uid="uid://cbauu7ts2y0r7" path="res://scripts/game.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bd3yqcsajlmsu" path="res://scenes/player.tscn" id="3"]
+[ext_resource type="Script" uid="uid://rtc3vffdr4je" path="res://scripts/psx_renderer.gd" id="4"]
+
+[node name="SessionJeu" type="Node3D"]
+script = ExtResource("1")
+
+[node name="Player" parent="." unique_id=60974910 instance=ExtResource("3")]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 6.2)
+animation_blend_time = 0.5
+camera_offset = Vector3(0.5, 1.4, 1.3)
+
+[node name="PSXRenderer" type="Node2D" parent="." unique_id=1615396238]
+process_mode = 1
+script = ExtResource("4")
+affine_texture_strength = 0.0
+fog_start = 1.0
+target_fps = 30
+

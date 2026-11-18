@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/bastion_07.res" id="1_chlvi"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_1bo31"]
+
+[resource]
+script = ExtResource("2_1bo31")
+id = &"bastion_07"
+display_name = "BASTION-07"
+description = "Unité lourde bleu marine à blindage épais et grand bouclier asymétrique."
+lore = "Dernier rempart de la cité d’Orne."
+rarity = "C"
+image = ExtResource("1_chlvi")
+source_index = 2

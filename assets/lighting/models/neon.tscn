@@ -1,0 +1,79 @@
+[gd_scene format=3]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cm2dp"]
+resource_name = "M_metal"
+specular_mode = 2
+albedo_color = Color(0.32, 0.35, 0.36, 1)
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_cvu8m"]
+material = SubResource("StandardMaterial3D_cm2dp")
+size = Vector3(1.24, 0.055, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drw2m"]
+resource_name = "M_dark"
+specular_mode = 2
+albedo_color = Color(0.09, 0.105, 0.11, 1)
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_c3wkj"]
+material = SubResource("StandardMaterial3D_drw2m")
+size = Vector3(1.12, 0.012, 0.17)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kefn2"]
+material = SubResource("StandardMaterial3D_cm2dp")
+size = Vector3(0.065, 0.075, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xgxbf"]
+resource_name = "M_light"
+specular_mode = 2
+metallic_specular = 0.0
+texture_filter = 0
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jh0ch"]
+material = SubResource("StandardMaterial3D_xgxbf")
+top_radius = 0.022
+bottom_radius = 0.022
+height = 1.07
+radial_segments = 8
+rings = 1
+
+[sub_resource type="BoxMesh" id="BoxMesh_47ow4"]
+material = SubResource("StandardMaterial3D_cm2dp")
+size = Vector3(0.065, 0.075, 0.2)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_8vr4a"]
+material = SubResource("StandardMaterial3D_xgxbf")
+top_radius = 0.022
+bottom_radius = 0.022
+height = 1.07
+radial_segments = 8
+rings = 1
+
+[node name="NeonModele" type="Node3D" unique_id=1340503008]
+
+[node name="Rail" type="MeshInstance3D" parent="." unique_id=1794782620]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.075, 0)
+mesh = SubResource("BoxMesh_cvu8m")
+
+[node name="Interieur" type="MeshInstance3D" parent="." unique_id=1642521410]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.041, 0)
+mesh = SubResource("BoxMesh_c3wkj")
+
+[node name="Support-1" type="MeshInstance3D" parent="." unique_id=755316068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.58, 0.045, 0)
+mesh = SubResource("BoxMesh_kefn2")
+
+[node name="Tube-1" type="MeshInstance3D" parent="." unique_id=419888282]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.025, -0.05)
+mesh = SubResource("CylinderMesh_jh0ch")
+
+[node name="Support1" type="MeshInstance3D" parent="." unique_id=1383452546]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.58, 0.045, 0)
+mesh = SubResource("BoxMesh_47ow4")
+
+[node name="Tube1" type="MeshInstance3D" parent="." unique_id=971783292]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 0, 0.025, 0.05)
+mesh = SubResource("CylinderMesh_8vr4a")

@@ -1,0 +1,27 @@
+00:03.672  blend            | Read blend: "C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\exports\blender\cop_idle_harmonized.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+16:49:26 | INFO: Starting glTF 2.0 export
+16:49:26 | INFO: Extracting primitive: Mesh_0.001
+16:49:26 | INFO: Primitives created: 1
+16:49:30 | INFO: Finished glTF 2.0 export in 3.7906157970428467 s
+
+16:49:31 | INFO: Starting glTF 2.0 export
+16:49:31 | INFO: Extracting primitive: Cube.002_Material_0.002
+16:49:31 | INFO: Primitives created: 1
+16:49:31 | INFO: Extracting primitive: Cylinder_Material_0.002
+16:49:31 | INFO: Primitives created: 1
+16:49:31 | INFO: Extracting primitive: Cube.003_Material_0.002
+16:49:31 | INFO: Primitives created: 1
+16:49:31 | INFO: Extracting primitive: Cube.001_Material_0.001
+16:49:31 | INFO: Primitives created: 1
+16:49:31 | INFO: Extracting primitive: Cube.005_Material_0.002
+16:49:31 | INFO: Primitives created: 1
+16:49:31 | INFO: Extracting primitive: Cube.004_Material_0.002
+16:49:31 | INFO: Primitives created: 1
+16:49:32 | INFO: Finished glTF 2.0 export in 0.8019886016845703 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend", "clip": "player_pistol_idle", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_idle.glb", "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\animations\\pistol_idle.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272, "weapon_joint_count": 5, "mount": {"bone": "DEF-hand.R", "transform_rows": [[-0.9712387323379517, -0.23810744285583496, -2.4531036615371704e-06, -0.027094874531030655], [-0.04134925827383995, 0.16865327954292297, 0.9848078489303589, 0.053924329578876495], [-0.23448984324932098, 0.9564837217330933, -0.17364805936813354, -0.016797486692667007], [0.0, 0.0, 0.0, 1.0]], "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend", "reference_frame": 1, "weapon_scene": "res://scenes/pistol.tscn", "muzzle_bone": "b_muzzlespot", "player_clip": "player_pistol_idle", "weapon_clip": "pistol_idle"}}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

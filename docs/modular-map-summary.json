@@ -1,0 +1,32 @@
+{
+  "source_unchanged": true,
+  "source_sha256": "16adb0301720bbb5f5edd9b9d933af154e02dd02da4f1f3cd36c17195b572601",
+  "source_modules": 15,
+  "texture_pages": 15,
+  "cell_size_m": 2,
+  "height_m": 3,
+  "repairs": [
+    "wall_door: shorten outer returns by 0.10m at both ends; opening unchanged",
+    "wall_door: restore 8 missing reverse upper skin faces only",
+    "wall_corner_in: restore 8 missing reverse upper skin faces only",
+    "wall_door_double: shorten outer returns by 0.10m at both ends; opening unchanged",
+    "wall_door_double: restore 10 missing reverse upper skin faces only",
+    "wall_loop: restore 4 missing reverse upper skin faces only",
+    "wall_loop_simple: orient the positive-depth skin outward",
+    "wall_corner_out: restore 8 missing reverse upper skin faces only",
+    "wall_loop_window: restore 8 missing reverse upper skin faces only"
+  ],
+  "runtime": {
+    "corner_vertices": 42,
+    "errors": [],
+    "joint_variants": 320,
+    "ok": true
+  },
+  "editor": {
+    "cells": 19,
+    "edges": 23,
+    "errors": [],
+    "ok": true
+  },
+  "example_scene_bytes": 1697
+}

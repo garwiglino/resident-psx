@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+FRAME_PACING {"average_fps":60.0133709790541,"camera_fov":51.61,"camera_offset":"(0.5, 1.4, 1.3)","cpu_geometry_and_submission_ms":{"max":2.971,"mean":1.36159,"p95":2.026,"p99":2.391},"elapsed_seconds":9.997772,"frame_ms":{"max":18.306,"mean":16.6629316666667,"p95":17.247,"p99":17.804},"frames":600,"locomotion_clips":["walk","backward","strafe_left","strafe_right","run"],"monitor_hz":119.982002258301,"native_geometry_ms":{"max":2.797,"mean":1.27126833333333,"p95":1.891,"p99":2.278},"viewport_size":"(320.0, 240.0)","vsync":1}

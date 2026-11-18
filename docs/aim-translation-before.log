@@ -1,0 +1,287 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: idle
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: idle
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: idle
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: idle
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: walk
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: walk
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: walk
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: walk
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:52)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: base
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: bullet
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: hammer
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: mag
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: slide
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Attached pistol matches the saved Blender aim grip within 1 mm: trigger
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:89)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (0.0, 70.0, 0.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (0.0, -70.0, 0.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (25.0, 0.0, 0.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (-25.0, 0.0, 0.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, 20.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, -20.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+ERROR: Pelvis rotations cannot steer the aimed upper body: (20.0, 55.0, -15.0)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:120)
+ERROR: Pistol follows pelvis translation without inheriting yaw, pitch or roll
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/aim_layer.gd:6)
+       [1] run (res://tests/aim_layer.gd:121)
+AIM_LAYER_FAILED ["Aimed upper body follows only pelvis translation while retaining the saved orientation: idle", "Aimed upper body follows only pelvis translation while retaining the saved orientation: idle", "Aimed upper body follows only pelvis translation while retaining the saved orientation: idle", "Aimed upper body follows only pelvis translation while retaining the saved orientation: idle", "Aimed upper body follows only pelvis translation while retaining the saved orientation: walk", "Aimed upper body follows only pelvis translation while retaining the saved orientation: walk", "Aimed upper body follows only pelvis translation while retaining the saved orientation: walk", "Aimed upper body follows only pelvis translation while retaining the saved orientation: walk", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_right", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: backward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: strafe_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left", "Aimed upper body follows only pelvis translation while retaining the saved orientation: forward_left", "Attached pistol matches the saved Blender aim grip within 1 mm: base", "Attached pistol matches the saved Blender aim grip within 1 mm: bullet", "Attached pistol matches the saved Blender aim grip within 1 mm: hammer", "Attached pistol matches the saved Blender aim grip within 1 mm: mag", "Attached pistol matches the saved Blender aim grip within 1 mm: slide", "Attached pistol matches the saved Blender aim grip within 1 mm: trigger", "Pelvis rotations cannot steer the aimed upper body: (0.0, 70.0, 0.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (0.0, -70.0, 0.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (25.0, 0.0, 0.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (-25.0, 0.0, 0.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, 20.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (0.0, 0.0, -20.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll", "Pelvis rotations cannot steer the aimed upper body: (20.0, 55.0, -15.0)", "Pistol follows pelvis translation without inheriting yaw, pitch or roll"]
+WARNING: 2 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 1 resources still in use at exit (run with --verbose for details).
+   at: clear (core/io/resource.cpp:822)

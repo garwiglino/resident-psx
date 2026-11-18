@@ -1,0 +1,205 @@
+EXPORTER LE PERSONNAGE ET L'ARME DEPUIS BLENDER
+
+Les animations installees utilisent les fichiers originaux de Downloads :
+cop_idle.blend et cop_anims_walk.blend. L'ancienne harmonisation est retiree.
+Le bassin et les jambes gardent leurs translations, rotations et echelles source.
+Ne plus utiliser les anciennes copies *_harmonized.blend pour les exports.
+
+Le fichier Blender original reste intact. L'exporteur utilise Blender en arriere-plan.
+Ouvrir PowerShell dans le dossier resident-psx pour les commandes ci-dessous.
+Les noms des objets doivent rester rig, cop_char et gun_amature dans la scene complete.
+Le fichier de travail peut garder les controles Rigify, contraintes et B-Bones.
+L'exporteur echantillonne leur resultat vers un squelette de jeu compatible Godot.
+Ne pas utiliser un export glTF direct "Deformation bones only" pour ce Rigify :
+les segments des B-Bones ne sont pas representes et la deformation change.
+
+CE QUI EST INSTALLE
+
+assets/character/cop_player.glb : personnage et squelette, sans arme.
+assets/character/animations/ : clips du personnage et leurs metadonnees JSON.
+assets/weapons/pistol.glb : arme, squelette independant de 5 os et 6 meshes.
+assets/weapons/animations/ : clips mecaniques de l'arme.
+assets/weapons/pistol_mount.json : placement exact de l'arme par rapport a DEF-hand.R.
+scenes/pistol.tscn : scene de l'arme reutilisable.
+exports/blender/pistol_animation_template.blend : copie nettoyee pour animer l'arme seule.
+
+Dans le jeu : rig/Skeleton3D > WeaponHandAttachment (DEF-hand.R)
+> WeaponSocket > Pistol. Le personnage et l'arme ont chacun leur AnimationPlayer.
+b_muzzlespot reste disponible comme point de sortie du canon.
+
+EXPORTER LA SCENE COMPLETE DE REFERENCE (IDLE)
+
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_idle.blend" -Mode both -Clip player_pistol_idle -UpdateBase -Template
+
+UpdateBase remplace les deux modeles de reference et recalcule l'attache de la main.
+Template genere une copie de travail de l'arme, sans le personnage ni sa contrainte Child Of.
+Ne pas utiliser UpdateBase pour chaque animation : garder la base idle pour le jeu.
+
+EXPORTER UNE PROCHAINE ANIMATION DU PERSONNAGE
+
+1. Animer normalement le rig Rigify dans une copie de la meme scene.
+2. Donner un nom clair au strip NLA et conserver le meme rig et le meme maillage.
+3. Enregistrer le .blend. Le nom du strip est celui du clip, pas le nom Action.00x.
+4. Lancer, par exemple :
+
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_reload.blend" -Mode player -NlaStrip player_pistol_reload
+
+Pour une action active sans NLA :
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_reload.blend" -Mode player -Clip player_pistol_reload -StartFrame 1 -EndFrame 45
+
+NlaStrip isole automatiquement le strip demande et utilise sa plage de frames.
+S'il y a plusieurs strips actifs, il faut choisir NlaStrip pour eviter de les melanger.
+StartFrame/EndFrame permettent de remplacer la plage de la scene ou du strip.
+La cadence vient de la scene Blender : les fichiers fournis sont a 30 images/s.
+Godot reimporte le GLB et decouvre le clip automatiquement au prochain lancement.
+Les noms player_pistol_idle/fire/reload deviennent idle/fire/reload dans le controleur.
+Les actions fire/reload sont branchees si les clips existent ; aucun tir anime n'est invente.
+idle, walk, backward, run et strafe bouclent. fire et reload ne bouclent pas.
+Le champ loop du JSON peut etre change pour un nom inhabituel.
+
+MARCHES EN ROOT MOTION
+
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_forward_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_backward_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_strafe_left_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_strafe_right_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_forward_left_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_forward_right_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_backward_left_pistol
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -NlaStrip player_walk_backward_right_pistol
+
+Course actuelle, depuis le fichier source mis a jour :
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -Clip player_run_pistol -NlaStrip player_run_pistol
+Ce clip devient run dans le controleur : Maj + avant, hors visee.
+Il conserve les images 1..121 a 30 images/s (4 s) et 11,78736 m de root motion par boucle,
+soit 2,94684 m/s. Pas de -UpdateBase, pas de remise sur place et pas de correction des pieds.
+
+Ces huit clips sont installes comme walk, backward, strafe_left, strafe_right,
+forward_left, forward_right, backward_left et backward_right. Ils parcourent chacun
+5.89561 metres en 4 secondes, soit 1.47390 m/s a la vitesse de lecture 1.
+Les combinaisons avant/arriere + gauche/droite jouent les diagonales dediees.
+La vitesse reste celle de Blender, sans acceleration supplementaire en diagonale.
+Conserver le mouvement horizontal du controle root de Rigify ; ne pas le remettre sur place.
+L'exporteur genere l'os RootMotion et separe translation horizontale et rotation de lacet.
+Le rebond vertical reste dans la pose du corps. Godot extrait RootMotion du squelette
+et l'applique a la capsule via move_and_slide : les murs bloquent bien le joueur.
+Les boucles ne ramenent pas la capsule au point de depart.
+Player > Root motion dans l'inspecteur : activation, echelle de distance,
+vitesse de lecture, application de la rotation et direction suivie depuis l'entree.
+Player > Transitions > animation_blend_time regle le fondu entre les animations (0,22 s).
+Le blend melange les animations pendant qu'elles continuent de jouer, avec des poids lineaires.
+En visee, ces memes huit animations restent actives pour le bassin, les jambes et le root motion.
+La pose du haut du corps vient de player_pistol_aim_pose, image 1 de Downloads/cop_anims.blend.
+Elle suit uniquement les translations du bassin ; les rotations du bassin restent dans le bas du corps.
+Pour remplacer cette pose apres modification du fichier, depuis le dossier du projet :
+& "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --background "C:\Users\sheensaw\Downloads\cop_anims.blend" --python-exit-code 1 --python tools/export_split_rig.py -- --mode player --clip player_pistol_aim_pose --start 1 --end 2 --pose-frame 1
+Godot reimporte ensuite le GLB. Ne pas utiliser -UpdateBase pour cette pose seule.
+Un changement rapide conserve les clips encore presents dans le melange, sans capturer une pose figee.
+Le deplacement reagit des le premier tick au root motion du nouveau clip : augmenter
+la duree du blend ne retarde pas le depart. La cadence et les boucles restent celles des clips.
+Les clips exportes sont lus directement, sans correction des pieds ni modification des boucles.
+Le root motion de l'animation precedente reste applique pendant le retour vers idle.
+root_motion_steer_with_input conserve la direction d'entree pour le deplacement du joueur.
+walk_speed reste le reglage des anciens clips sans root motion.
+La course utilise desormais player_run_pistol ; les anciens clips de visee restent disponibles.
+Pour remplacer ces derniers, exporter player_pistol_aim ou player_pistol_aim_walk avec le meme rig.
+
+HAUTEUR DU BASSIN ET RACCORDS
+
+L'export conserve la hauteur animee du corps. RootMotion extrait seulement le
+deplacement horizontal et le yaw : le rebond vertical reste dans les poses originales.
+Un fondu ne peut pas supprimer une difference de posture entre deux animations.
+Pour des raccords naturels, conserver dans Blender le meme repere de sol, une
+hauteur moyenne de bassin coherente et des poses d'appui compatibles entre les clips.
+Ne pas aplatir le rebond vertical d'une marche et ne pas replacer automatiquement les pieds.
+Les mesures des clips actuellement installes sont dans docs/animation-heights.json.
+L'ancienne hauteur imposee de 0,905 m et la flexion minimale des genoux ont ete retirees.
+Le jeu lit les poses source sans corriger le bassin ou les pieds ; voir HARMONISATION.txt.
+Les anciens clips de course/visee ont ete reconvertis depuis l'animation du corps
+(rig), avec des transformations locales au parent du squelette de jeu.
+
+ANIMER ET EXPORTER L'ARME SEPAREMENT
+
+Tir actuellement installe depuis cop_shoot.blend, sans modifier l'original :
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_shoot.blend" -Mode player -Clip player_pistol_fire -NlaStrip player_gun_shoot
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_shoot.blend" -Mode weapon -Clip pistol_fire -NlaStrip gun_amatureAction
+Ces commandes conservent les strips actuels : personnage images 1 a 8, arme images 1 a 9
+(culasse animee sur les images 1 a 4, puis maintien), a 24 images/s sans etirer les durees.
+Les animations commencent ensemble. Les effets, le son du tir et le shake se declenchent
+sur l'image 2, soit 41,7 ms apres le debut, depuis la meme horloge que les animations.
+Ne pas utiliser -UpdateBase : les clips player_pistol_fire et pistol_fire restent separes des modeles.
+Le jeu superpose uniquement le haut du corps ; le bassin garde ses translations de locomotion,
+sans transmettre ses rotations a la visee. L'ejection b_bullet est ajoutee en jeu a l'image 2,
+avec retour du bone a l'image 4. Les douilles deja ejectees continuent leur trajectoire.
+
+1. Ouvrir exports/blender/pistol_animation_template.blend et enregistrer une copie.
+2. Garder gun_amature et ses os existants, les meshes et leurs poids.
+3. Animer b_slide, b_mag ou b_bullet en Pose Mode pour la mecanique.
+   b_base est la base ; b_muzzlespot est le repere du canon.
+   hammer et trigger sont des meshes existants, sans os dedie dans ce fichier.
+   Pour les animer separement, il faudra ajouter leurs os et mettre a jour la base arme.
+4. Conserver l'origine et les transformations des objets de ce modele nettoye.
+   La main fournit deja le mouvement global : ne pas recopier sa trajectoire dans l'arme.
+5. Exporter par exemple :
+
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\pistol_fire.blend" -Mode weapon -Clip pistol_fire -StartFrame 1 -EndFrame 10
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\pistol_reload.blend" -Mode weapon -Clip pistol_reload -StartFrame 1 -EndFrame 45
+
+Avec plusieurs strips sur l'arme, utiliser -NlaStrip pistol_fire ou pistol_reload.
+Les clips pistol_fire et pistol_reload sont joues par le script de l'arme quand ils existent.
+Les clips de recharge demarrent ensemble et conservent chacun leur duree source.
+Le personnage determine le temps de recharge ; reload_duration est un secours si son clip manque.
+Pour changer le modele de l'arme seule : -Mode weapon -Clip pistol_idle -UpdateBase.
+Cela conserve le socket existant. Un nouveau modele avec une prise en main differente
+doit d'abord etre place dans la scene complete, puis reexporte avec -Mode both -UpdateBase.
+
+RECHARGEMENT ACTUEL
+
+Source mise a jour : exports/blender/cop_shoot_reload_bezier.blend.
+Le strip personnage s'appelle player_gun_reload, le strip arme gun_reload.
+
+./Exporter-Animations.ps1 -BlendFile ".\exports\blender\cop_shoot_reload_bezier.blend" -Mode player -Clip player_pistol_reload -NlaStrip player_gun_reload
+./Exporter-Animations.ps1 -BlendFile ".\exports\blender\cop_shoot_reload_bezier.blend" -Mode weapon -Clip pistol_reload -NlaStrip gun_reload
+
+Le personnage conserve 1..35 et l'arme 1..28 a 24 images/s. Pas de -UpdateBase.
+Les courbes Bezier et les commutations Rigify sont evaluees dans Blender, puis echantillonnees
+sans deplacer les poses dans le temps. Le squelette exporte conserve aussi les B-Bones deformes.
+Image 6 du personnage : ancien chargeur en physique et nouveau chargeur dans DEF-hand.L.
+Image 17 : la copie tenue disparait et le chargeur revient dans le pistolet.
+Dans Pistol > Chargeur, les deux numeros se reglent en images source du personnage (1 = debut).
+
+Apres avoir exporte les deux clips, attendre la reimportation Godot puis recalibrer la main gauche :
+& "C:\Users\sheensaw\MyApps\Godot_v4.7.1-stable_win64.exe\Godot_v4.7.1-stable_win64_console.exe" --headless --editor --path . --import
+& "C:\Users\sheensaw\MyApps\Godot_v4.7.1-stable_win64.exe\Godot_v4.7.1-stable_win64_console.exe" --headless --path . --script tools/build_reload_mount.gd
+
+Ce calcul utilise l'image 17 et enregistre assets/weapons/reload_magazine_mount.json.
+Le nouveau chargeur suit ensuite la main gauche avec ce decalage constant, sans IK ajoutee.
+Si l'image d'insertion change, adapter aussi la reference time dans tools/build_reload_mount.gd
+avant de regenerer le montage, afin de conserver la meme orientation a la jonction.
+
+ROTATION SUR PLACE GAUCHE
+
+Source : C:\Users\sheensaw\Downloads\cop_anims_walk.blend.
+Strip NLA player_turn_in_place_left, images 1 a 31 a 30 images/s, sans boucle.
+
+./Exporter-Animations.ps1 -BlendFile "C:\Users\sheensaw\Downloads\cop_anims_walk.blend" -Mode player -Clip player_turn_in_place_left -NlaStrip player_turn_in_place_left
+
+Ne pas utiliser -UpdateBase. Garder -NlaStrip : le fichier contient plusieurs pistes actives
+qui se superposeraient sans l'isolation du strip. L'original Blender reste intact.
+Le jeu charge automatiquement le clip apres la reimportation Godot et au prochain lancement.
+La pose du turn est superposee au corps entier, y compris ventre, poitrine et epaules.
+Le bassin et les jambes conservent tous leurs mouvements source. En visee, la posture
+des bras accompagne le mouvement du torse ; le yaw/pitch souris est applique ensuite.
+La rotation racine tourne le personnage de l'angle Blender (43,105 degres pour l'export actuel).
+Le pas ne translate pas le personnage. Le champ root_motion du JSON indique la translation :
+il reste false ici ; la rotation est lue separement par la couche Rotation sur place.
+Reglages dans Player > Rotation sur place. Seuil dans Buste et orientation.
+Validation : tests/turn_in_place.gd et docs/turn-in-place-validation.json.
+
+VERIFICATION
+
+Les comptes rendus sont dans docs/split-export-<clip>.json.
+Le modele fourni est compare aux sommets evalues de Blender a cinq instants du clip.
+Les animations de deplacement sont testees sur deux boucles, avec rotation et collision.
+Blender : https://docs.blender.org/api/current/bpy.types.PoseBone.html
+Godot : https://docs.godotengine.org/en/stable/classes/class_animationmixer.html

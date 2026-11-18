@@ -1,0 +1,35 @@
+{
+	"events": [
+		"opening",
+		"opening",
+		"closing",
+		"opening",
+		"opening",
+		"opening",
+		"opening",
+		"closing",
+		"opening",
+		"opening",
+		"opening",
+		"opening",
+		"opening",
+		"opening",
+		"opening"
+	],
+	"failures": [],
+	"finish_reasons": [
+		"cancelled",
+		"completed",
+		"cancelled",
+		"skipped",
+		"cancelled",
+		"completed",
+		"cancelled",
+		"missing_camera",
+		"sequence_removed",
+		"callback_cancel",
+		"cancelled",
+		"level_finished",
+		"manager_removed"
+	]
+}

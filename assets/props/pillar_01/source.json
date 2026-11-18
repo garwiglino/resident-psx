@@ -1,0 +1,16 @@
+{
+	"asset_name": "pillar_01",
+	"asset_type": "prop",
+	"backup": "res://exports/backups/blender_addon/1794078445_299493/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "d4def8280b8e5bd2b8703e392db08270c198fca4b067adfdc1e4714b65544e66",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/props/pillar_01/pillar_01.tscn",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"pillar"
+	],
+	"triangles": 120
+}

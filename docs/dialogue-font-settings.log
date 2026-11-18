@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+DIALOGUE_FONT_IMPORTS_OK: native pixel glyphs, normal spacing, separate true bold speaker font
+ERROR: Class 'AudioEffectInstancePSX' doesn't exist.
+   at: godot::ClassDB::get_virtual_func (C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\native\godot-cpp\src\core\class_db.cpp:294)

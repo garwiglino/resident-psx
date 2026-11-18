@@ -1,0 +1,88 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Level has no default or hidden point lights
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:20)
+ERROR: A manually placed PSXLight3D reaches the native renderer
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:28)
+ERROR: Moving the light outside its radius removes its contribution
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:54)
+ERROR: Moving the light outside its radius removes its contribution
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:54)
+ERROR: Moving the light outside its radius removes its contribution
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:54)
+ERROR: Hiding the source disables it
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:64)
+ERROR: Showing the source enables it again
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:66)
+ERROR: Deleting a source removes it from rendering
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:68)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+ERROR: Editable ambient light matches in both paths
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/manual_lights.gd:7)
+       [1] run (res://tests/manual_lights.gd:74)
+MANUAL_LIGHTS_FAILED ["Level has no default or hidden point lights", "A manually placed PSXLight3D reaches the native renderer", "Moving the light outside its radius removes its contribution", "Moving the light outside its radius removes its contribution", "Moving the light outside its radius removes its contribution", "Hiding the source disables it", "Showing the source enables it again", "Deleting a source removes it from rendering", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths", "Editable ambient light matches in both paths"]

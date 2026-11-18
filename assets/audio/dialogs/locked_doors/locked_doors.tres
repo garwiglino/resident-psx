@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://cvolhho85ff7o"]
+
+[ext_resource type="Script" uid="uid://dtp6gvwo6onsk" path="res://scripts/dialogue/dialogue_line.gd" id="1_6ih52"]
+[ext_resource type="AudioStream" uid="uid://ciusyfoh8niiw" path="res://assets/audio/dialogs/locked_doors/1_locked_doors.wav" id="2_2jv3l"]
+[ext_resource type="AudioStream" uid="uid://bu71kd0nbply0" path="res://assets/audio/dialogs/locked_doors/2_locked_doors.wav" id="3_asekk"]
+[ext_resource type="AudioStream" uid="uid://c2xlwkqjocos7" path="res://assets/audio/dialogs/locked_doors/3_locked_doors.wav" id="4_fwo46"]
+[ext_resource type="AudioStream" uid="uid://bajr1k808txdb" path="res://assets/audio/dialogs/locked_doors/4_locked_doors.wav" id="5_85k4n"]
+[ext_resource type="Script" uid="uid://ku1e04cwc7wa" path="res://scripts/dialogue/dialogue_sequence.gd" id="6_6ll38"]
+
+[sub_resource type="Resource" id="Resource_1voo6"]
+script = ExtResource("1_6ih52")
+speaker = "HITOMI"
+text = "Rien à faire, c’est condamné."
+audio = ExtResource("2_2jv3l")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_qpckd"]
+script = ExtResource("1_6ih52")
+speaker = "HITOMI"
+text = "Je ne pourrai pas l’ouvrir."
+audio = ExtResource("3_asekk")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_edoel"]
+script = ExtResource("1_6ih52")
+speaker = "HITOMI"
+text = "Aucun moyen de l’ouvrir."
+audio = ExtResource("4_fwo46")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_tfowd"]
+script = ExtResource("1_6ih52")
+speaker = "HITOMI"
+text = "J’ai beau pousser, elle ne bouge pas."
+audio = ExtResource("5_85k4n")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[resource]
+script = ExtResource("6_6ll38")
+mode = 1
+lines = Array[ExtResource("1_6ih52")]([SubResource("Resource_1voo6"), SubResource("Resource_qpckd"), SubResource("Resource_edoel"), SubResource("Resource_tfowd")])
+minimum_page_seconds = 1.0
+reading_characters_per_second = 65.0
+reply_gap = 0.0
+metadata/_custom_type_script = "uid://ku1e04cwc7wa"

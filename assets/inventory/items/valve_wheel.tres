@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3 uid="uid://bnydeq4jsqoy7"]
+
+[ext_resource type="Script" uid="uid://q1pmfy3gt2gd" path="res://scripts/inventory/item_definition.gd" id="1_ycrnm"]
+[ext_resource type="Script" uid="uid://bkx8ndylof05d" path="res://scripts/world_events/world_action.gd" id="2_v7hj4"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/valve_wheel.tscn" id="3_v7hj4"]
+
+[resource]
+script = ExtResource("1_ycrnm")
+id = &"valve_wheel"
+display_name = "Roue de vanne"
+description = "Une roue a installer sur une vanne."
+kind = 2
+essential = true
+world_model = ExtResource("3_v7hj4")

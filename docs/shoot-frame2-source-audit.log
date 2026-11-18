@@ -1,0 +1,5 @@
+00:08.531  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_shoot.blend"
+SHOOT_SOURCE {"fps": 24.0, "meshes": [{"name": "bullet", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_bullet"]}, {"name": "mag", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_mag"]}, {"name": "base", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_base"]}, {"name": "hammer", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_base"]}, {"name": "trigger", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_base"]}, {"name": "slide", "groups": ["b_base", "b_slide", "b_mag", "b_bullet"], "weighted_groups": ["b_slide"]}], "slide": [[1, [0.0, 0.0, 0.0]], [2, [0.0, -0.0381137952208519, 0.0]], [3, [0.0, -0.01905689761042595, 0.0]], [4, [0.0, 0.0, 0.0]], [5, [0.0, 0.0, 0.0]], [6, [0.0, 0.0, 0.0]], [7, [0.0, 0.0, 0.0]], [8, [0.0, 0.0, 0.0]], [9, [0.0, 0.0, 0.0]]]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

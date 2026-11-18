@@ -1,0 +1,206 @@
+{
+  "backup": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\backups\\source_locomotion_20261106_211148",
+  "source_hashes": {
+    "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend": "d28ea13469b394fddc123480f5532c7abcb944cdf21041cdce703ea3b9255a90",
+    "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02"
+  },
+  "protected_hashes_before": {
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\aim.glb": "dfd6b6fab231eac4d84e89309ef411dbae53011c394e098580c027221bf89b53",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\aim_walk.glb": "e93138d444a347c4ea10a77d0ad07e44173df73cce803e8f5749985b87222a01",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\backward.glb": "94ff08d2a9fda4a716657708660bda56b22627585d782fb11022e0f10ca6fd9c",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop.glb": "fadb0129f43cd71acf9dda0be52fb2c7c1adfd29729c2d26400114cb154fec85",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop_player.glb": "d8331370976cb22dc69d5b067f4f45faca1a2177c0d1ad8ff30b0ba04b7952ef",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\run.glb": "d01eda72c09259e975a5f65968f797e52839c5f7647ef0a3ace2f4ffa67749bf",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\strafe_left.glb": "e13dea4150dbdb322a937d0049bb3e3112e2a8b880e572ca07c093a4f6f18ccf",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\strafe_right.glb": "313bec962deb3ab617c2cdf391065df1d0e0afc73b39ba74417573159a87ab27",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\walk.glb": "bd1495e1583a88e9830a5e4fc67f0c65f76355f27f203a6f831690b46eaf5cb4",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\clothing\\winter_jacket.glb": "e6d5e8b3477805d9fa0b681e8c373bb0ae38dd83ef4ed4530a399711f1ace76a",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\pistol.glb": "0d45152eeddc5ded8055a73185bc2f3116f4e9395f900ba7a520f35cfc913958"
+  },
+  "clips": [
+    {
+      "clip": "player_pistol_idle",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend",
+      "source_sha256": "d28ea13469b394fddc123480f5532c7abcb944cdf21041cdce703ea3b9255a90",
+      "root_motion": false,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 0.0,
+      "average_speed": 0.0,
+      "root_motion_vector": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "clip": "player_walk_forward_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895610935433405,
+      "average_speed": 1.4739027338583512,
+      "root_motion_vector": [
+        0.0,
+        2.577053237473592e-07,
+        5.895610809326172
+      ]
+    },
+    {
+      "clip": "player_walk_backward_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895610935433405,
+      "average_speed": 1.4739027338583512,
+      "root_motion_vector": [
+        0.0,
+        -2.577053237473592e-07,
+        -5.895610809326172
+      ]
+    },
+    {
+      "clip": "player_walk_strafe_left_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895610935433405,
+      "average_speed": 1.4739027338583512,
+      "root_motion_vector": [
+        5.895610809326172,
+        1.5779900231497988e-23,
+        3.610020539879938e-16
+      ]
+    },
+    {
+      "clip": "player_walk_strafe_right_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895610935433405,
+      "average_speed": 1.4739027338583512,
+      "root_motion_vector": [
+        -5.895610809326172,
+        1.5779900231497988e-23,
+        3.610020539879938e-16
+      ]
+    },
+    {
+      "clip": "player_walk_forward_left_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895609641352868,
+      "average_speed": 1.473902410338217,
+      "root_motion_vector": [
+        4.168825626373291,
+        1.822251505245731e-07,
+        4.168825626373291
+      ]
+    },
+    {
+      "clip": "player_walk_forward_right_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895609641352868,
+      "average_speed": 1.473902410338217,
+      "root_motion_vector": [
+        -4.168825626373291,
+        1.822251505245731e-07,
+        4.168825626373291
+      ]
+    },
+    {
+      "clip": "player_walk_backward_left_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895609641352868,
+      "average_speed": 1.473902410338217,
+      "root_motion_vector": [
+        4.168825626373291,
+        -1.822251505245731e-07,
+        -4.168825626373291
+      ]
+    },
+    {
+      "clip": "player_walk_backward_right_pistol",
+      "loop": true,
+      "fps": 30.0,
+      "start_frame": 1,
+      "end_frame": 121,
+      "duration": 4.0,
+      "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+      "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+      "root_motion": true,
+      "root_motion_track": "rig/Skeleton3D:RootMotion",
+      "root_motion_distance": 5.895609641352868,
+      "average_speed": 1.473902410338217,
+      "root_motion_vector": [
+        -4.168825626373291,
+        -1.822251505245731e-07,
+        -4.168825626373291
+      ]
+    }
+  ],
+  "protected_hashes_after": {
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\aim.glb": "dfd6b6fab231eac4d84e89309ef411dbae53011c394e098580c027221bf89b53",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\aim_walk.glb": "e93138d444a347c4ea10a77d0ad07e44173df73cce803e8f5749985b87222a01",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\backward.glb": "94ff08d2a9fda4a716657708660bda56b22627585d782fb11022e0f10ca6fd9c",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop.glb": "fadb0129f43cd71acf9dda0be52fb2c7c1adfd29729c2d26400114cb154fec85",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop_player.glb": "d8331370976cb22dc69d5b067f4f45faca1a2177c0d1ad8ff30b0ba04b7952ef",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\run.glb": "d01eda72c09259e975a5f65968f797e52839c5f7647ef0a3ace2f4ffa67749bf",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\strafe_left.glb": "e13dea4150dbdb322a937d0049bb3e3112e2a8b880e572ca07c093a4f6f18ccf",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\strafe_right.glb": "313bec962deb3ab617c2cdf391065df1d0e0afc73b39ba74417573159a87ab27",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\walk.glb": "bd1495e1583a88e9830a5e4fc67f0c65f76355f27f203a6f831690b46eaf5cb4",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\clothing\\winter_jacket.glb": "e6d5e8b3477805d9fa0b681e8c373bb0ae38dd83ef4ed4530a399711f1ace76a",
+    "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\pistol.glb": "0d45152eeddc5ded8055a73185bc2f3116f4e9395f900ba7a520f35cfc913958"
+  }
+}

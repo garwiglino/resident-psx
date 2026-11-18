@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "attenuation_at_14khz_db": -105.66329478691571,
+  "difference_at_1khz_db": -0.002619515843395423,
+  "device_hz": 48000,
+  "mix_hz": 22050
+}

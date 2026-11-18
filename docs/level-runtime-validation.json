@@ -1,0 +1,9 @@
+{
+	"errors": [],
+	"observations": {
+		"lights": 2,
+		"triangles": 1146,
+		"visible_pixels": 32840
+	},
+	"ok": true
+}

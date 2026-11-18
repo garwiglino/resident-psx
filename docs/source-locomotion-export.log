@@ -1,0 +1,327 @@
+SOURCE_EXPORT_BEGIN 1 9 player_pistol_idle
+00:05.094  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_idle.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+21:11:59 | INFO: Starting glTF 2.0 export
+21:11:59 | INFO: Extracting primitive: Mesh_0.001
+21:11:59 | INFO: Primitives created: 1
+21:12:02 | INFO: Finished glTF 2.0 export in 3.6340408325195312 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend", "clip": "player_pistol_idle", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_idle.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 1 9 player_pistol_idle
+SOURCE_EXPORT_BEGIN 2 9 player_walk_forward_pistol
+00:17.391  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:12:10 | INFO: Starting glTF 2.0 export
+21:12:10 | INFO: Extracting primitive: Mesh_0.001
+21:12:10 | INFO: Primitives created: 1
+21:12:13 | INFO: Finished glTF 2.0 export in 3.208667278289795 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_forward_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 2 9 player_walk_forward_pistol
+SOURCE_EXPORT_BEGIN 3 9 player_walk_backward_pistol
+00:28.407  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:12:21 | INFO: Starting glTF 2.0 export
+21:12:21 | INFO: Extracting primitive: Mesh_0.001
+21:12:21 | INFO: Primitives created: 1
+21:12:24 | INFO: Finished glTF 2.0 export in 3.207460880279541 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_backward_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 3 9 player_walk_backward_pistol
+SOURCE_EXPORT_BEGIN 4 9 player_walk_strafe_left_pistol
+00:39.438  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:12:32 | INFO: Starting glTF 2.0 export
+21:12:32 | INFO: Extracting primitive: Mesh_0.001
+21:12:32 | INFO: Primitives created: 1
+21:12:35 | INFO: Finished glTF 2.0 export in 3.2125213146209717 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_strafe_left_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_left_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 4 9 player_walk_strafe_left_pistol
+SOURCE_EXPORT_BEGIN 5 9 player_walk_strafe_right_pistol
+00:50.375  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:12:43 | INFO: Starting glTF 2.0 export
+21:12:43 | INFO: Extracting primitive: Mesh_0.001
+21:12:43 | INFO: Primitives created: 1
+21:12:46 | INFO: Finished glTF 2.0 export in 3.370680332183838 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_strafe_right_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_right_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 5 9 player_walk_strafe_right_pistol
+SOURCE_EXPORT_BEGIN 6 9 player_walk_forward_left_pistol
+01:01.438  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:12:54 | INFO: Starting glTF 2.0 export
+21:12:54 | INFO: Extracting primitive: Mesh_0.001
+21:12:54 | INFO: Primitives created: 1
+21:12:57 | INFO: Finished glTF 2.0 export in 3.194890260696411 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_forward_left_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_left_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 6 9 player_walk_forward_left_pistol
+SOURCE_EXPORT_BEGIN 7 9 player_walk_forward_right_pistol
+01:12.266  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:13:05 | INFO: Starting glTF 2.0 export
+21:13:05 | INFO: Extracting primitive: Mesh_0.001
+21:13:05 | INFO: Primitives created: 1
+21:13:08 | INFO: Finished glTF 2.0 export in 3.2921178340911865 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_forward_right_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_right_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 7 9 player_walk_forward_right_pistol
+SOURCE_EXPORT_BEGIN 8 9 player_walk_backward_left_pistol
+01:23.344  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:13:17 | INFO: Starting glTF 2.0 export
+21:13:17 | INFO: Extracting primitive: Mesh_0.001
+21:13:17 | INFO: Primitives created: 1
+21:13:20 | INFO: Finished glTF 2.0 export in 3.188595771789551 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_backward_left_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_left_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 8 9 player_walk_backward_left_pistol
+SOURCE_EXPORT_BEGIN 9 9 player_walk_backward_right_pistol
+01:34.797  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+register_class(...):
+Info: Registering panel class: 'RigBakeSettings', bl_idname 'VIEW3D_PT_rig_bake_settings_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigUI', bl_idname 'VIEW3D_PT_rig_ui_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering panel class: 'RigLayers', bl_idname 'VIEW3D_PT_rig_layers_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'RIGIFY_OT_get_frame_range', bl_idname 'rigify.get_frame_range_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap', bl_idname 'pose.rigify_generic_snap_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_generic_snap_bake', bl_idname 'pose.rigify_generic_snap_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_clear_keyframes', bl_idname 'pose.rigify_clear_keyframes_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk', bl_idname 'pose.rigify_limb_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_ik2fk_bake', bl_idname 'pose.rigify_limb_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole', bl_idname 'pose.rigify_limb_toggle_pole_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_limb_toggle_pole_bake', bl_idname 'pose.rigify_limb_toggle_pole_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk', bl_idname 'pose.rigify_leg_roll_ik2fk_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_leg_roll_ik2fk_bake', bl_idname 'pose.rigify_leg_roll_ik2fk_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent', bl_idname 'pose.rigify_switch_parent_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+register_class(...):
+Info: Registering operator class: 'POSE_OT_rigify_switch_parent_bake', bl_idname 'pose.rigify_switch_parent_bake_fnwwc3y4173b9ea6' has been registered before, unregistering previous
+21:13:27 | INFO: Starting glTF 2.0 export
+21:13:27 | INFO: Extracting primitive: Mesh_0.001
+21:13:27 | INFO: Primitives created: 1
+21:13:31 | INFO: Finished glTF 2.0 export in 3.1640591621398926 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_backward_right_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_right_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+SOURCE_EXPORT_DONE 9 9 player_walk_backward_right_pistol
+SOURCE_LOCOMOTION_EXPORT_OK: nine original clips; source, model, clothing and weapon unchanged
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

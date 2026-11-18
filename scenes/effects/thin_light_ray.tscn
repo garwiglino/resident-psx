@@ -1,0 +1,13 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/lighting/psx_light_shaft_3d.gd" id="Shaft"]
+[ext_resource type="Material" path="res://assets/materials/window_light_ray.tres" id="Material"]
+[node name="RayonFin" type="MeshInstance3D"]
+script = ExtResource("Shaft")
+shape = 1
+source_size = Vector2(0.3, 0.55)
+end_size = Vector2(0.45, 0.8)
+length = 3.0
+end_offset = Vector2(0, -0.9)
+ray_count = 1
+ray_width = 0.1
+shaft_material = ExtResource("Material")

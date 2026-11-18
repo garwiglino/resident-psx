@@ -1,0 +1,8 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+ERROR: Dropped magazine collides with the actual authored floor instead of passing through it
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/reload_magazine.gd:6)
+       [1] run (res://tests/reload_magazine.gd:92)
+RELOAD_MAGAZINE_FAILED ["Dropped magazine collides with the actual authored floor instead of passing through it"]

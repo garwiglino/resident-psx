@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dklvgody0aph8"]
+
+[ext_resource type="ArrayMesh" path="res://assets/props/woodboard_01/woodboard_01.mesh.res" id="1_yekwn"]
+
+[node name="woodboard_01" type="Node3D" unique_id=1698082532]
+metadata/psx_asset_type = "prop"
+
+[node name="Modele" type="MeshInstance3D" parent="." unique_id=1473652348]
+mesh = ExtResource("1_yekwn")

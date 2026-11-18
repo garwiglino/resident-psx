@@ -1,0 +1,69 @@
+{
+	"cases": [
+		{
+			"case": "player_weapon_crossing",
+			"corrected": 2,
+			"left": "ff0000ff",
+			"pixels": 26829,
+			"right": "0000ffff",
+			"triangles": 2
+		},
+		{
+			"case": "reversed_submission",
+			"corrected": 2,
+			"left": "0000ffff",
+			"pixels": 26829,
+			"right": "ff0000ff",
+			"triangles": 2
+		},
+		{
+			"case": "world_nearer_than_player",
+			"corrected": 2,
+			"left": "00ff00ff",
+			"pixels": 26656,
+			"right": "ff0000ff",
+			"triangles": 2
+		},
+		{
+			"case": "player_nearer_than_late_world",
+			"corrected": 2,
+			"left": "ff0000ff",
+			"pixels": 26959,
+			"right": "00ff00ff",
+			"triangles": 2
+		},
+		{
+			"case": "world_crossing_depth_corrected",
+			"corrected": 2,
+			"left": "ff0000ff",
+			"pixels": 26959,
+			"right": "00ff00ff",
+			"triangles": 2
+		},
+		{
+			"case": "player_alpha_cutout",
+			"corrected": 2,
+			"left": "00ff00ff",
+			"pixels": 26829,
+			"right": "ff0000ff",
+			"triangles": 2
+		},
+		{
+			"case": "world_alpha_cutout_perspective",
+			"corrected": 2,
+			"left": "00ff00ff",
+			"pixels": 26664,
+			"right": "ff0000ff",
+			"triangles": 2
+		},
+		{
+			"case": "orthographic_visibility",
+			"corrected": 2,
+			"left": "ff0000ff",
+			"pixels": 26618,
+			"right": "0000ffff",
+			"triangles": 2
+		}
+	],
+	"failures": []
+}

@@ -1,0 +1,160 @@
+{
+  "tile_size": 128,
+  "atlas_size": [
+    512,
+    256
+  ],
+  "columns": 4,
+  "rows": 2,
+  "udim": 1002,
+  "uv_tile_origin": [
+    1,
+    0
+  ],
+  "uv_formula": "atlas_u=(u-1+column)/4; atlas_v=(v+1-row_from_top)/2",
+  "mirrored_half_face": true,
+  "materials": {
+    "top": "M_face_top",
+    "bottom": "M_face_bottom"
+  },
+  "frames": {
+    "top": [
+      {
+        "id": 0,
+        "name": "neutre",
+        "column": 0,
+        "row_from_top": 0
+      },
+      {
+        "id": 1,
+        "name": "mi_clignement",
+        "column": 1,
+        "row_from_top": 0
+      },
+      {
+        "id": 2,
+        "name": "ferme",
+        "column": 2,
+        "row_from_top": 0
+      },
+      {
+        "id": 3,
+        "name": "alerte",
+        "column": 3,
+        "row_from_top": 0
+      },
+      {
+        "id": 4,
+        "name": "colere",
+        "column": 0,
+        "row_from_top": 1
+      },
+      {
+        "id": 5,
+        "name": "inquietude",
+        "column": 1,
+        "row_from_top": 1
+      },
+      {
+        "id": 6,
+        "name": "regard_haut",
+        "column": 2,
+        "row_from_top": 1
+      },
+      {
+        "id": 7,
+        "name": "regard_bas",
+        "column": 3,
+        "row_from_top": 1
+      }
+    ],
+    "bottom": [
+      {
+        "id": 0,
+        "name": "repos",
+        "column": 0,
+        "row_from_top": 0
+      },
+      {
+        "id": 1,
+        "name": "a_aa",
+        "column": 1,
+        "row_from_top": 0
+      },
+      {
+        "id": 2,
+        "name": "e_i",
+        "column": 2,
+        "row_from_top": 0
+      },
+      {
+        "id": 3,
+        "name": "o_ou",
+        "column": 3,
+        "row_from_top": 0
+      },
+      {
+        "id": 4,
+        "name": "m_b_p",
+        "column": 0,
+        "row_from_top": 1
+      },
+      {
+        "id": 5,
+        "name": "f_v",
+        "column": 1,
+        "row_from_top": 1
+      },
+      {
+        "id": 6,
+        "name": "sourire",
+        "column": 2,
+        "row_from_top": 1
+      },
+      {
+        "id": 7,
+        "name": "dents_serrees",
+        "column": 3,
+        "row_from_top": 1
+      }
+    ]
+  },
+  "presets": {
+    "neutre": [
+      0,
+      0
+    ],
+    "clignement": [
+      2,
+      0
+    ],
+    "alerte": [
+      3,
+      3
+    ],
+    "colere": [
+      4,
+      7
+    ],
+    "inquietude": [
+      5,
+      0
+    ],
+    "sourire": [
+      0,
+      6
+    ],
+    "parole_a": [
+      0,
+      1
+    ],
+    "parole_e": [
+      0,
+      2
+    ],
+    "parole_o": [
+      0,
+      3
+    ]
+  }
+}

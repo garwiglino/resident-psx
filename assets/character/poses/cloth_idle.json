@@ -1,0 +1,10 @@
+{
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_idle_2.blend",
+  "source_sha256": "a4ffef0117e4d66e8e47458f905a0ab2b0164dd78bb0a0de11320a4d4967c069",
+  "clip": "cloth_idle",
+  "start_frame": 1,
+  "end_frame": 121,
+  "duration": 4.0,
+  "fps": 30.0,
+  "root_motion_distance": 0.0
+}

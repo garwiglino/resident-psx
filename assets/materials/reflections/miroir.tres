@@ -1,0 +1,19 @@
+[gd_resource type="StandardMaterial3D" script_class="PSXReflectiveMaterial" format=3]
+
+[ext_resource type="Script" path="res://scripts/materials/psx_reflective_material.gd" id="Material"]
+[ext_resource type="Texture2D" path="res://assets/materials/reflections/miroir.png" id="Texture"]
+
+[resource]
+resource_name = "Miroir peint"
+albedo_color = Color(0.28, 0.36, 0.43, 1)
+shading_mode = 0
+specular_mode = 2
+texture_filter = 0
+script = ExtResource("Material")
+reflection_texture = ExtResource("Texture")
+reflection_projection = 1
+reflection_strength = 1.8
+reflection_light_response = 1.0
+reflection_width = 1.65
+scene_reflection = 0.8
+reflection_motion = 0.22

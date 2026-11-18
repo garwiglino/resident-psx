@@ -1,0 +1,19 @@
+{
+  "clip": "player_pistol_idle",
+  "loop": true,
+  "fps": 30.0,
+  "start_frame": 1,
+  "end_frame": 121,
+  "duration": 4.0,
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend",
+  "source_sha256": "d28ea13469b394fddc123480f5532c7abcb944cdf21041cdce703ea3b9255a90",
+  "root_motion": false,
+  "root_motion_track": "rig/Skeleton3D:RootMotion",
+  "root_motion_distance": 0.0,
+  "average_speed": 0.0,
+  "root_motion_vector": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

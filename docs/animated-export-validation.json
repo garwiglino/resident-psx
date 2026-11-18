@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "fixture": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-animated-export-sewzzyvs",
+  "source_unchanged": true,
+  "scene_preserved": true,
+  "source_slots": 3,
+  "first": {
+    "animations": [
+      {
+        "length": 1.0,
+        "name": "open_panel",
+        "player": "Origine/model/AnimationPlayer"
+      }
+    ],
+    "asset_uid": "uid://c77iv55762f36",
+    "backup": "res://exports/backups/blender_addon/1794151038_216116/",
+    "message": "Modele anime pret. Construire les interactions dans sa scene de placement Godot.",
+    "model_resource": "res://assets/props/generic_machine/generic_machine.model.scn",
+    "ok": true,
+    "resource": "res://assets/props/generic_machine/generic_machine.tscn",
+    "scene_preserved": false,
+    "triangles": 12
+  },
+  "nla": [
+    {
+      "length": 0.5,
+      "name": "closing",
+      "player": "Origine/model/AnimationPlayer"
+    },
+    {
+      "length": 1.0,
+      "name": "opening",
+      "player": "Origine/model/AnimationPlayer"
+    }
+  ],
+  "sequence": [
+    {
+      "length": 2.04166674613953,
+      "name": "Scene",
+      "player": "Origine/model/AnimationPlayer"
+    }
+  ],
+  "without_animation": true
+}

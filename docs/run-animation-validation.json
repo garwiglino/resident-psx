@@ -1,0 +1,9 @@
+{
+	"controller_one_second_distance_m": 3.24151682853699,
+	"expected_source_time": 1.1,
+	"failures": [],
+	"largest_step_m": 0.0491147041320801,
+	"run_animation_speed": 1.1,
+	"source_sha256": "9ad5138538ecf1a5cf15a32826c44dcecca95c6b9f3bcb850dc108a9e5039ce5",
+	"two_loop_distance_m": 23.5747718811035
+}

@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="SOUS SCELLÉS — Prototype PSX"
+config/description="Survival horror à l'épaule. Rendu géométrique PSX, personnage Rigify."
+run/main_scene="uid://ctufhwvob6kts"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[audio]
+
+buses/default_bus_layout="uid://b2u7cammw301f"
+driver/mix_rate=22050
+
+[autoload]
+
+PSXAudio="*res://scripts/psx_audio.gd"
+WorldEvents="*res://scripts/world_events/world_events.gd"
+InventoryState="*res://scripts/inventory/inventory_state.gd"
+LevelRuntime="*res://scripts/levels/level_runtime.gd"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=240
+window/size/window_width_override=960
+window/size/window_height_override=720
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/psx_audio/plugin.cfg", "res://addons/psx_viewport/plugin.cfg", "res://addons/cinematic_montage/plugin.cfg", "res://addons/modular_map/plugin.cfg")
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.025, 0.035, 0.038, 1)

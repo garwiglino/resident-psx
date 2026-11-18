@@ -1,0 +1,104 @@
+CMake is re-running because C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/CMakeFiles/generate.stamp is out-of-date.
+  the file 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/CMakeLists.txt'
+  is newer than 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/CMakeFiles/generate.stamp.depend'
+  result='-1'
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Auto-detected 16 CPU cores available for build parallelism.
+-- If not already cached, setting CMAKE_MSVC_RUNTIME_LIBRARY.
+	For more information please read godot-cpp/cmake/windows.cmake
+-- Using 15 cores for multi-threaded compilation.
+-- Using build profile to trim api file
+-- 	BUILD_PROFILE = 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/profile.json'
+-- 	API_SOURCE = 'gdextension/extension_api.json'
+-- GODOTCPP_GDEXTENSION_API_FILE = 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/godot-cpp/extension_api.json'
+-- There are 112 Files to generate
+=> Default build type is Debug. For other build types add --config <type> to build command
+-- Configuring done (1.5s)
+-- Generating done (0.4s)
+-- Build files have been written to: C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build
+Version MSBuild 18.11.1-1.26513.3+940033be3 pour .NET Framework
+
+  Checking File Globs
+  Generating bindings
+  Built-in type config: float_64
+  editor_plugin_registration.cpp
+  low_level.cpp
+  wrapped.cpp
+  class_db.cpp
+  error_macros.cpp
+  method_bind.cpp
+  print_string.cpp
+  godot.cpp
+  aabb.cpp
+  basis.cpp
+  callable_custom.cpp
+  callable_method_pointer.cpp
+  char_string.cpp
+  color.cpp
+  packed_arrays.cpp
+  plane.cpp
+  projection.cpp
+  quaternion.cpp
+  rect2.cpp
+  rect2i.cpp
+  transform2d.cpp
+  transform3d.cpp
+  variant.cpp
+  variant_internal.cpp
+  vector2.cpp
+  vector2i.cpp
+  vector3.cpp
+  vector3i.cpp
+  vector4.cpp
+  vector4i.cpp
+  string.cpp
+  string_name.cpp
+  node_path.cpp
+  rid.cpp
+  callable.cpp
+  signal.cpp
+  dictionary.cpp
+  array.cpp
+  packed_byte_array.cpp
+  packed_int32_array.cpp
+  packed_int64_array.cpp
+  packed_float32_array.cpp
+  packed_float64_array.cpp
+  packed_string_array.cpp
+  packed_vector2_array.cpp
+  packed_vector3_array.cpp
+  packed_color_array.cpp
+  packed_vector4_array.cpp
+  audio_effect.cpp
+  audio_effect_instance.cpp
+  audio_server.cpp
+  audio_stream.cpp
+  audio_stream_playback.cpp
+  audio_stream_wav.cpp
+  class_db_singleton.cpp
+  engine.cpp
+  file_access.cpp
+  geometry_instance3d.cpp
+  image.cpp
+  image_texture.cpp
+  mesh_instance3d.cpp
+  node.cpp
+  node3d.cpp
+  os.cpp
+  ref_counted.cpp
+  resource.cpp
+  semaphore.cpp
+  skeleton3d.cpp
+  texture.cpp
+  texture2d.cpp
+  visual_instance3d.cpp
+  worker_thread_pool.cpp
+  xml_parser.cpp
+  utility_functions.cpp
+  object.cpp
+  object.cpp
+  godot-cpp.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\native\build\bin\libgodot-cpp.windows.template_release.x86_64.lib
+  geometry.cpp
+  spu_audio.cpp
+     Création de la bibliothèque C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry_v13.lib et de l'objet C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry_v13.exp
+  psx_geometry.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\bin\psx_geometry_v13.dll

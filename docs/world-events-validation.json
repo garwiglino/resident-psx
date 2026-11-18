@@ -1,0 +1,19 @@
+{
+	"completed_objectives": [
+		"test.room_and_panel",
+		"test.existing",
+		"couloir.fuse_found",
+		"couloir.power_restored",
+		"couloir.exit_opened"
+	],
+	"dynamic_enemy_meshes": 48,
+	"enemy_ids": [
+		"couloir.archives",
+		"couloir.fond",
+		"couloir.atelier",
+		"couloir.reserve"
+	],
+	"events": 27,
+	"facts": 60,
+	"failures": []
+}

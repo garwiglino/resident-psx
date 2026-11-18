@@ -1,0 +1,28 @@
+{
+	"amount": 0.55,
+	"cel_triangles": 2686,
+	"enabled_in_game": false,
+	"gameplay_changed_pixels": 4017,
+	"lit-stronger_changed_pixels": 20160,
+	"lit_changed_pixels": 19480,
+	"lit_comparison": "separate neutral lighting test, identical before and after",
+	"method": "Character cel-light bands split into triangles on the CPU, thin inverted-geometry contour; existing PSX raster, textures, UVs, RGB555 and dithering; world unchanged",
+	"native_version": 22,
+	"portrait-stronger_changed_pixels": 6153,
+	"portrait_changed_pixels": 6082,
+	"production_unchanged": true,
+	"resolution": [
+		320,
+		240
+	],
+	"same_camera_pose_lights": true,
+	"scene": "res://scenes/level_1.tscn",
+	"source_hashes": {
+		"res://scenes/level_1.tscn": "9dc2fb603b7c8bee872404b1dbbfe90c35428804be397d2b3291a424ba2daa10",
+		"res://scenes/player.tscn": "ea7142d70605bb1add798e151a7c9d3187dfb1fd95f2eaf834edf27b4fc1b9ca",
+		"res://scripts/psx_renderer.gd": "53c8092603adc776109e7027c51952d6835925451c7965cda64097ed3bf4759f",
+		"res://shaders/psx_raster_common.gdshaderinc": "5045bd20f43f6425f562c3f68d1bb3db7bde2c899a3187c9adf9137b21820bff"
+	},
+	"source_triangles": 2179,
+	"stronger_changed_pixels": 4065
+}

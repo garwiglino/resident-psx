@@ -1,0 +1,14 @@
+[
+  {
+    "path": "scenes/main.tscn",
+    "non_audio_content_unchanged": false,
+    "differences": 1,
+    "live_editor_change": "target_fps = 30 (preserved)",
+    "camera_dialogue_and_animation_content_preserved": true
+  },
+  {
+    "path": "assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres",
+    "non_audio_content_unchanged": true,
+    "differences": 0
+  }
+]

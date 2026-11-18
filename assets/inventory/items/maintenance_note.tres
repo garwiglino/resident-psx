@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_definition.gd" id="1_fl5lq"]
+[ext_resource type="Script" path="res://scripts/world_events/world_action.gd" id="2_jh28f"]
+
+[resource]
+script = ExtResource("1_fl5lq")
+id = &"maintenance_note"
+display_name = "Note de maintenance"
+description = "Une note laissee par le service technique."
+kind = 3
+document_text = "NOTE DE MAINTENANCE
+
+Le systeme de secours est hors tension.
+Verifier le fusible avant toute intervention.
+
+Ne pas forcer la vanne sans sa roue."

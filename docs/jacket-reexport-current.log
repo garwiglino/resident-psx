@@ -1,0 +1,84 @@
+18:12:26 - tripo_addon - [task.py:25] - INFO - TaskManager timer started
+18:12:26 - tripo_addon - [task.py:32] - INFO - WebSocket server started on port 60600
+18:12:26 - tripo_addon - [task.py:78] - INFO - TaskManager registered
+18:12:26 - tripo_addon - [ws_server.py:66] - ERROR - Error in event loop: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 60600): [winerror 10048] une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée
+18:12:26 - tripo_addon - [ws_server.py:77] - INFO - Event loop closed
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\__init__.py", line 48, in <module>
+    from .registration import register_all, unregister_all
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\registration.py", line 11, in <module>
+    from . operators.booleans.dice.shader import remove_dice_draw_shader
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 12, in <module>
+    class SD:
+    ...<54 lines>...
+            SD.pause_drawing = False
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 24, in SD
+    shader = gpu.shader.from_builtin(built_in_shader)
+SystemError: GPU functions for drawing are not available in background mode
+Traceback (most recent call last):
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 63, in <module>
+    shaderEx = gpu.types.GPUShader(dot_line_vertex_shader, dot_line_fragment_shader)
+TypeError: cannot create 'GPUShader' instances
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\__init__.py", line 16, in <module>
+    from .pq_operator import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\pq_operator.py", line 26, in <module>
+    from .utils.pqutil import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\__init__.py", line 24, in <module>
+    from . import mouse_event_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\mouse_event_util.py", line 21, in <module>
+    from . import draw_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 65, in <module>
+    shaderEx = gpu.shader.from_builtin('UNIFORM_COLOR')
+SystemError: GPU functions for drawing are not available in background mode
+00:11.265  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+[Tripo3D] Log file: C:\Users\sheensaw\AppData\Local\Temp\tripo3d_blender_bridge.log
+Cannot read ARP prefs
+Update armature presets...
+Reloading external rigs...
+Reloading external metarigs...
+Error adding tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+[Pixel Art Studio 1.4.2] chargé — Vue 3D › barre latérale (N) › onglet « Pixel Art »
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+INFO Draco mesh compression is available, use library at C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\addons_core\io_scene_gltf2\extern_draco.dll
+18:12:34 | INFO: Starting glTF 2.0 export
+18:12:34 | INFO: Extracting primitive: tripo_mesh_d500ee3b-cdfb-4132-90a0-3742af424f37
+18:12:34 | INFO: Primitives created: 1
+18:12:34 | INFO: Finished glTF 2.0 export in 0.17914628982543945 s
+
+WINTER_JACKET_DIRECT_EXPORTED {"sha256": "cbfb38ae2f990e870efda7025fed754e985e0d501468b17e6cd9e1db8ab317cd", "joints": 47, "weights_redistributed": false, "max_influences": 9, "overflow_vertices": 2, "bounds_y": [1.034225583076477, 1.437160849571228]}
+18:12:34 - tripo_addon - [task.py:61] - INFO - WebSocket server stop requested
+18:12:34 - tripo_addon - [task.py:68] - INFO - WebSocket thread will exit automatically (daemon)
+18:12:34 - tripo_addon - [task.py:86] - INFO - TaskManager unregistered
+Error removing tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+
+Blender quit

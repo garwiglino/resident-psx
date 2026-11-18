@@ -1,0 +1,3 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+SIMPLE_MAP_BUILD_OK {"ceiling_height":3.0,"corridor_width":4.0,"doorway_clearance":1.5,"floor_tiles":68,"modules":196,"rooms":["Entry 8x6","Left 6x6","Right 6x6","End 8x8"],"source":"res://assets/environment/scene_kit.glb"}

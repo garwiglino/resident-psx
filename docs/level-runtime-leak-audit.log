@@ -1,0 +1,176 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://default_bus_layout.tres remapped: res://default_bus_layout.tres
+Completed load for: 'res://default_bus_layout.tres' remapped 'res://default_bus_layout.tres' at thread -1
+CORE API HASH: 3769296884
+EDITOR API HASH: 3146738256
+Loading resource: res://tests/modular_map.gd remapped: res://tests/modular_map.gd
+Completed load for: 'res://tests/modular_map.gd' remapped 'res://tests/modular_map.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://scripts/psx_audio.gd remapped: res://scripts/psx_audio.gd
+Completed load for: 'res://scripts/psx_audio.gd' remapped 'res://scripts/psx_audio.gd' at thread -1
+Loading resource: res://scripts/world_events/world_events.gd remapped: res://scripts/world_events/world_events.gd
+Loading resource: res://assets/dialogue/default_style.tres remapped: res://assets/dialogue/default_style.tres
+Loading resource: res://scripts/dialogue/dialogue_style.gd remapped: res://scripts/dialogue/dialogue_style.gd
+Loading resource: res://assets/fonts/m5x7.ttf remapped: res://assets/fonts/m5x7.ttf
+Loading resource: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata remapped: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata
+Completed load for: 'res://assets/fonts/m5x7.ttf' remapped 'res://assets/fonts/m5x7.ttf' at thread -1
+Loading resource: res://assets/fonts/pixel-operator-bold.ttf remapped: res://assets/fonts/pixel-operator-bold.ttf
+Loading resource: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata remapped: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata
+Completed load for: 'res://assets/fonts/pixel-operator-bold.ttf' remapped 'res://assets/fonts/pixel-operator-bold.ttf' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_open.wav remapped: res://assets/audio/ui/dialogue_open.wav
+Loading resource: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res remapped: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res
+Completed load for: 'res://assets/audio/ui/dialogue_open.wav' remapped 'res://assets/audio/ui/dialogue_open.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_close.wav remapped: res://assets/audio/ui/dialogue_close.wav
+Loading resource: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res remapped: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res
+Completed load for: 'res://assets/audio/ui/dialogue_close.wav' remapped 'res://assets/audio/ui/dialogue_close.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_tick.wav remapped: res://assets/audio/ui/dialogue_tick.wav
+Loading resource: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res remapped: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res
+Completed load for: 'res://assets/audio/ui/dialogue_tick.wav' remapped 'res://assets/audio/ui/dialogue_tick.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/talkie_start.wav remapped: res://assets/audio/dialogs/talkie_start.wav
+Loading resource: res://.godot/imported/talkie_start.wav-7e85a4cab6b1c053f23208b3381cf5cf.res remapped: res://.godot/imported/talkie_start.wav-7e85a4cab6b1c053f23208b3381cf5cf.res
+Completed load for: 'res://assets/audio/dialogs/talkie_start.wav' remapped 'res://assets/audio/dialogs/talkie_start.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/talkie_end.wav remapped: res://assets/audio/dialogs/talkie_end.wav
+Loading resource: res://.godot/imported/talkie_end.wav-b5224c663541efbaa51e247afc4d87a1.res remapped: res://.godot/imported/talkie_end.wav-b5224c663541efbaa51e247afc4d87a1.res
+Completed load for: 'res://assets/audio/dialogs/talkie_end.wav' remapped 'res://assets/audio/dialogs/talkie_end.wav' at thread -1
+Completed load for: 'res://scripts/dialogue/dialogue_style.gd' remapped 'res://scripts/dialogue/dialogue_style.gd' at thread -1
+Completed load for: 'res://assets/dialogue/default_style.tres' remapped 'res://assets/dialogue/default_style.tres' at thread -1
+Completed load for: 'res://scripts/world_events/world_events.gd' remapped 'res://scripts/world_events/world_events.gd' at thread -1
+Loading resource: res://scripts/levels/level_runtime.gd remapped: res://scripts/levels/level_runtime.gd
+Completed load for: 'res://scripts/levels/level_runtime.gd' remapped 'res://scripts/levels/level_runtime.gd' at thread -1
+Loaded system CA certificates
+Loading resource: res://scripts/modular_map/map_3d.gd remapped: res://scripts/modular_map/map_3d.gd
+Completed load for: 'res://scripts/modular_map/map_3d.gd' remapped 'res://scripts/modular_map/map_3d.gd' at thread -1
+Loading resource: res://assets/environment/modular_2m/default_kit.tres remapped: res://assets/environment/modular_2m/default_kit.tres
+Loading resource: res://assets/environment/modular_2m/kit_data.res remapped: res://assets/environment/modular_2m/kit_data.res
+Completed load for: 'res://assets/environment/modular_2m/kit_data.res' remapped 'res://assets/environment/modular_2m/kit_data.res' at thread -1
+Completed load for: 'res://assets/environment/modular_2m/default_kit.tres' remapped 'res://assets/environment/modular_2m/default_kit.tres' at thread -1
+Loading resource: res://exports/modular/runtime_roundtrip.tscn remapped: res://exports/modular/runtime_roundtrip.tscn
+Completed load for: 'res://exports/modular/runtime_roundtrip.tscn' remapped 'res://exports/modular/runtime_roundtrip.tscn' at thread -1
+Loading resource: res://exports/modular/runtime_roundtrip.tscn remapped: res://exports/modular/runtime_roundtrip.tscn
+Completed load for: 'res://exports/modular/runtime_roundtrip.tscn' remapped 'res://exports/modular/runtime_roundtrip.tscn' at thread -1
+Loading resource: res://exports/modular/instance_roundtrip.tscn remapped: res://exports/modular/instance_roundtrip.tscn
+Completed load for: 'res://exports/modular/instance_roundtrip.tscn' remapped 'res://exports/modular/instance_roundtrip.tscn' at thread -1
+MODULAR_MAP_OK {"corner_vertices":42,"errors":[],"joint_variants":320,"ok":true}
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Leaked instance: GDScriptNativeClass:9223372042340925731 - Reference count: 1
+Leaked instance: GDScriptNativeClass:9223372042961682760 - Reference count: 4
+Leaked instance: GDScriptNativeClass:9223372043347558751 - Reference count: 1
+Leaked instance: GDScriptNativeClass:9223372052977681309 - Reference count: 2
+Leaked instance: :9223372062993679812
+Leaked instance: :9223372063010457029
+Leaked instance: GDScript:9223372064436520407 - Reference count: 2
+Leaked instance: GDScript:9223372066902771174 - Reference count: 2
+Hint: Leaked instances typically happen when nodes are removed from the scene tree (with `remove_child()`) but not freed (with `free()` or `queue_free()`).
+Resource still in use: res://default_bus_layout.tres::AudioEffectPSXReverb_j3pel ()
+Resource still in use: res://default_bus_layout.tres::AudioEffectPSXReverb_g28q7 ()
+Resource still in use: res://scripts/audio/psx_audio_routing.gd (GDScript)
+Resource still in use: res://scripts/dialogue/intercom_filter.gd (GDScript)
+Orphan StringName: _psx_reverb_bus (static: 0, total: 1)
+Orphan StringName: panning_strength (static: 0, total: 1)
+Orphan StringName: res://scripts/dialogue/intercom_filter.gd (static: 0, total: 7)
+Orphan StringName: @static_initializer (static: 1, total: 3)
+Orphan StringName: max_db (static: 0, total: 1)
+Orphan StringName: prepare (static: 0, total: 1)
+Orphan StringName: stream_paused (static: 0, total: 1)
+Orphan StringName: res://scripts/audio/psx_audio_routing.gd (static: 0, total: 10)
+Orphan StringName: stop (static: 0, total: 4)
+Orphan StringName: clampf (static: 0, total: 1)
+Orphan StringName: "scripts/dialogue/intercom_filter.gd" (static: 0, total: 1)
+Orphan StringName: RATE (static: 0, total: 2)
+Orphan StringName: typeof (static: 0, total: 2)
+Orphan StringName: set_wet (static: 0, total: 1)
+Orphan StringName: mix_rate (static: 0, total: 1)
+Orphan StringName: _master_sync_frame (static: 0, total: 3)
+Orphan StringName: has_method (static: 0, total: 1)
+Orphan StringName: loop (static: 0, total: 1)
+Orphan StringName: format (static: 0, total: 1)
+Orphan StringName: reverb_level (static: 0, total: 1)
+Orphan StringName: CACHE_VERSION (static: 0, total: 2)
+Orphan StringName: push_warning (static: 0, total: 1)
+Orphan StringName: get_ref (static: 0, total: 1)
+Orphan StringName: key_off_all (static: 0, total: 1)
+Orphan StringName: AudioEffect (static: 0, total: 5)
+Orphan StringName: AudioStreamPSX (static: 0, total: 3)
+Orphan StringName: play (static: 0, total: 5)
+Orphan StringName: get_playback_position (static: 0, total: 1)
+Orphan StringName: build (static: 0, total: 3)
+Orphan StringName: cache (static: 0, total: 2)
+Orphan StringName: setup (static: 0, total: 5)
+Orphan StringName: bus (static: 0, total: 2)
+Orphan StringName: AudioStreamWAV (static: 0, total: 1)
+Orphan StringName: root/PSXAudio (static: 0, total: 1)
+Orphan StringName: AudioStream (static: 0, total: 17)
+Orphan StringName: AudioStreamPlayer3D (static: 0, total: 1)
+Orphan StringName: _send_slot (static: 0, total: 3)
+Orphan StringName: make_voice (static: 0, total: 2)
+Orphan StringName: _configured (static: 0, total: 3)
+Orphan StringName: root (static: 0, total: 1)
+Orphan StringName: has (static: 0, total: 3)
+Orphan StringName: WET_BUS (static: 0, total: 2)
+Orphan StringName: maxf (static: 0, total: 1)
+Orphan StringName: _output (static: 0, total: 2)
+Orphan StringName: DRY_BUS (static: 0, total: 2)
+Orphan StringName: push_error (static: 0, total: 1)
+Orphan StringName: Master (static: 0, total: 3)
+Orphan StringName: global_position (static: 0, total: 1)
+Orphan StringName: data (static: 0, total: 1)
+Orphan StringName: PSXAudio (static: 0, total: 1)
+Orphan StringName: volume_db (static: 0, total: 1)
+Orphan StringName: new (static: 4, total: 5)
+Orphan StringName: sync_player (static: 0, total: 4)
+Orphan StringName: set_native_mixer (static: 0, total: 2)
+Orphan StringName: set_spu_controls (static: 0, total: 1)
+Orphan StringName: _psx_source (static: 0, total: 2)
+Orphan StringName: stream (static: 0, total: 2)
+Orphan StringName: _coefficients (static: 0, total: 4)
+Orphan StringName: store_prepared (static: 0, total: 4)
+Orphan StringName: psx_reverb (static: 0, total: 3)
+Orphan StringName: max_distance (static: 0, total: 1)
+Orphan StringName: str (static: 0, total: 2)
+Orphan StringName: configure_source (static: 0, total: 2)
+Orphan StringName: attenuation_model (static: 0, total: 1)
+Orphan StringName: global_transform (static: 0, total: 1)
+Orphan StringName: stereo (static: 0, total: 1)
+Orphan StringName: prepared_path (static: 0, total: 5)
+Orphan StringName: _warned (static: 0, total: 3)
+Orphan StringName: Node (static: 2, total: 12)
+Orphan StringName: wet (static: 0, total: 2)
+Orphan StringName: PSX Reverb (static: 0, total: 4)
+Orphan StringName: playing (static: 0, total: 1)
+Orphan StringName: RefCounted (static: 0, total: 1)
+Orphan StringName: db_to_linear (static: 0, total: 1)
+Orphan StringName: route (static: 0, total: 5)
+Orphan StringName: weakref (static: 0, total: 1)
+Orphan StringName: invalidate (static: 0, total: 3)
+Orphan StringName: resource_name (static: 0, total: 2)
+Orphan StringName: AudioEffectPSXReverb (static: 0, total: 1)
+Orphan StringName: "scripts/audio/psx_audio_routing.gd" (static: 0, total: 1)
+Orphan StringName: sync_master (static: 0, total: 4)
+Orphan StringName: erase (static: 0, total: 2)
+Orphan StringName: _output_slot (static: 0, total: 3)
+Orphan StringName: is_instance_valid (static: 0, total: 1)
+Orphan StringName: set_reverb_enabled (static: 0, total: 3)
+Orphan StringName: _send (static: 0, total: 2)
+Orphan StringName: @implicit_new (static: 0, total: 2)
+Orphan StringName: resource_path (static: 0, total: 2)
+Orphan StringName: is_managed (static: 0, total: 1)
+Orphan StringName: native_mixer (static: 0, total: 1)
+Orphan StringName: PSX Dry (static: 0, total: 3)
+Orphan StringName: unit_size (static: 0, total: 1)
+Orphan StringName: source_of (static: 0, total: 3)
+Orphan StringName: CACHE_DIRECTORY (static: 0, total: 2)
+StringName: 94 unclaimed string names at exit.
+WARNING: 8 ObjectDB instances were leaked at exit (run with `--verbose` for details).
+   at: cleanup (core/object/object.cpp:2536)
+ERROR: 4 resources still in use at exit.
+   at: clear (core/io/resource.cpp:817)
+ERROR: Pages in use exist at exit in PagedAllocator: N12VariantPools12BucketMediumE
+   at: ~PagedAllocator (./core/templates/paged_allocator.h:170)

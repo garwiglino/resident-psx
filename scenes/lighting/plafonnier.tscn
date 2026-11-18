@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/lighting/psx_lamp_3d.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/lighting/models/plafonnier.tscn" id="2"]
+
+[node name="Plafonnier" type="Marker3D"]
+script = ExtResource("1")
+light_color = Color(1, 0.93, 0.78, 1)
+light_energy = 1.5
+light_range = 5.0
+model_scene = ExtResource("2")

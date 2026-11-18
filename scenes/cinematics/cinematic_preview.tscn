@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://c22gmef5p6efq"]
+
+[ext_resource type="Script" uid="uid://cutyl0p42y0n" path="res://scripts/cinematics/cinematic_preview.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://cmhjgsdxq5jwe" path="res://scenes/main.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/cinematics/cinematic_sequence.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/cinematics/cinematic_trigger.tscn" id="4"]
+
+[node name="CinematicPreview" type="Node" unique_id=464217706]
+script = ExtResource("1")
+
+[node name="Level" parent="." unique_id=1814832030 instance=ExtResource("2")]
+
+[node name="Example" parent="Level" unique_id=1919299719 instance=ExtResource("3")]
+
+[node name="Trigger" parent="Level" unique_id=356167303 instance=ExtResource("4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 4.2)
+sequence_path = NodePath("../Example")

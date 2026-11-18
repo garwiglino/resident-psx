@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scripts/audio/audio_cue_trigger_3d.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/audio/audio_cue.gd" id="2"]
+
+[sub_resource type="Resource" id="Scare"]
+resource_local_to_scene = true
+script = ExtResource("2")
+id = &"scare"
+
+[sub_resource type="BoxShape3D" id="Box"]
+resource_local_to_scene = true
+size = Vector3(2,3,2)
+
+[node name="EffetPeur" type="Area3D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1")
+cue = SubResource("Scare")
+
+[node name="Volume" type="CollisionShape3D" parent="."]
+position = Vector3(0,1.5,0)
+shape = SubResource("Box")

@@ -1,0 +1,18 @@
+[
+  {
+    "Path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop_player.glb",
+    "Hash": "D8331370976CB22DC69D5B067F4F45FACA1A2177C0D1AD8FF30B0BA04B7952EF"
+  },
+  {
+    "Path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop_player.json",
+    "Hash": "859A0CE38E84BFB511C9B87A67C66D6C419B906B96C772BD7EA4B69216942F21"
+  },
+  {
+    "Path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\clothing\\winter_jacket.tres",
+    "Hash": "D56B9F45C649E91E35ED74DE24BCDE4DC6664634A3BDABB4BCB6602094F8B1F1"
+  },
+  {
+    "Path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\scenes\\player.tscn",
+    "Hash": "EA7142D70605BB1ADD798E151A7C9D3187DFB1FD95F2EAF834EDF27B4FC1B9CA"
+  }
+]

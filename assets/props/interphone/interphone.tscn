@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c0g8ooti21bvl"]
+
+[ext_resource type="PackedScene" path="res://assets/props/interphone/interphone.model.scn" id="1_i05s2"]
+
+[node name="interphone" type="Node3D" unique_id=2017592777]
+metadata/psx_asset_type = "animated"
+
+[node name="Modele" type="Node3D" parent="." unique_id=306108849 groups=["psx_dynamic_geometry"] instance=ExtResource("1_i05s2")]
+metadata/psx_asset_type = "animated"

@@ -1,0 +1,24 @@
+MGS1 Codec and MGS1 Ammo glyphs
+Original recreation by Andrew Gleeson (gleeson), 2025.
+Author and source: https://gleeson.itch.io/mgs1-fonts
+License: Creative Commons Attribution-ShareAlike 4.0 International.
+License text: MGS1-LICENSE.txt
+
+Original font downloaded from the public source mirror:
+https://github.com/Drommedhar/mgs-reintegral/blob/main/assets/fonts/mgs1-codec-gleeson.ttf
+Verified SHA-256:
+eed89314c9ef961f38842f0533d496e6a4af28a93f10fa3f40ea964e550f9736
+
+These are recreations of bitmap interface glyphs seen in Metal Gear Solid (Konami, 1998),
+not a universal PlayStation system font and not a Resident Evil font.
+
+Local derivatives, 2026:
+- mgs1-codec-fr.ttf (MGS1 Codec FR): added French accented pixel glyphs, OE ligatures,
+  typographic punctuation aliases and adjusted vertical metrics. Base Latin outlines preserved.
+- mgs1-ammo-hud.ttf (MGS1 Ammo HUD): remaps existing optional five-pixel-wide ammo
+  glyphs to the ordinary digits 0-9. Source font glyph outlines are unchanged.
+These font adaptations remain licensed under CC BY-SA 4.0.
+The game code and unrelated assets are not assigned this font license.
+Reproduction script: tools/prepare_psx_fonts.py
+
+Render at 16 px, with anti-aliasing and subpixel positioning disabled, nearest filtering.

@@ -1,0 +1,110 @@
+{
+	"event_frame": 2,
+	"event_time": 0.0416666666666667,
+	"events": [
+		{
+			"body_time": 0.0416666666666667,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.0,
+			"time": 0.0416666666666667
+		},
+		{
+			"body_time": 0.0416666666666667,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.0,
+			"time": 0.0416666666666667
+		},
+		{
+			"body_time": 0.0666666666666667,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.6,
+			"time": 0.0666666666666667
+		},
+		{
+			"body_time": 0.05,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.2,
+			"time": 0.05
+		},
+		{
+			"body_time": 0.0416666666666667,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.0,
+			"time": 0.0416666666666667
+		},
+		{
+			"body_time": 0.05,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.2,
+			"time": 0.05
+		},
+		{
+			"body_time": 0.05,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.2,
+			"time": 0.05
+		},
+		{
+			"body_time": 0.05,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.2,
+			"time": 0.05
+		},
+		{
+			"body_time": 0.05,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.2,
+			"time": 0.05
+		},
+		{
+			"body_time": 0.075,
+			"flash": 0.055,
+			"shake": 0.12,
+			"sound_playing": true,
+			"source_frame": 2.8,
+			"time": 0.075
+		}
+	],
+	"failures": [],
+	"rates": [
+		{
+			"event_key_time": 0.0416666666666667,
+			"event_time": 0.0416666666666667,
+			"step_hz": 24
+		},
+		{
+			"event_key_time": 0.0416666666666667,
+			"event_time": 0.0666666666666667,
+			"step_hz": 30
+		},
+		{
+			"event_key_time": 0.0416666666666667,
+			"event_time": 0.05,
+			"step_hz": 60
+		},
+		{
+			"event_key_time": 0.0416666666666667,
+			"event_time": 0.0416666666666667,
+			"step_hz": 120
+		}
+	],
+	"source_fps": 24.0
+}

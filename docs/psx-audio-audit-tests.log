@@ -1,0 +1,3 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PSX_AUDIO_OK: automatic wrapping, source cache, SPU ADPCM, Gaussian pitch, mono/stereo, loops, 24 voices, serialization, reverb tail/decay and master routing

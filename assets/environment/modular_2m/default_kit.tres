@@ -1,0 +1,8 @@
+[gd_resource type="Resource" format=3 uid="uid://b7msvluqyptqh"]
+
+[ext_resource type="Resource" path="res://assets/environment/modular_2m/kit_data.res" id="1_xyuik"]
+[ext_resource type="Script" path="res://scripts/modular_map/kit.gd" id="2_5fv6t"]
+
+[resource]
+script = ExtResource("2_5fv6t")
+data = ExtResource("1_xyuik")

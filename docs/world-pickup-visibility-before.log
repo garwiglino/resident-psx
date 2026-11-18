@@ -1,0 +1,22 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ERROR: A card created after gameplay startup also appears in the native renderer
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_pickup_visibility.gd:7)
+       [1] run (res://tests/world_pickup_visibility.gd:31)
+       [2] settle (res://tests/world_pickup_visibility.gd:9)
+ERROR: Changing a card's visual settings refreshes its rendered faces rather than losing them
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_pickup_visibility.gd:7)
+       [1] run (res://tests/world_pickup_visibility.gd:33)
+       [2] settle (res://tests/world_pickup_visibility.gd:9)
+ERROR: Wheel installation has a visible mechanism rather than an empty marker
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/world_pickup_visibility.gd:7)
+       [1] run (res://tests/world_pickup_visibility.gd:35)
+       [2] settle (res://tests/world_pickup_visibility.gd:9)
+WORLD_PICKUP_VISIBILITY_FAILED {"errors":["A card created after gameplay startup also appears in the native renderer","Changing a card's visual settings refreshes its rendered faces rather than losing them","Wheel installation has a visible mechanism rather than an empty marker"],"ok":false}

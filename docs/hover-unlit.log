@@ -1,0 +1,16 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ERROR: Unlit override survives geometry refresh and follows the authored skeleton
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/hover_unlit.gd:9)
+       [1] run (res://tests/hover_unlit.gd:58)
+       [2] pixels (res://tests/hover_unlit.gd:18)
+ERROR: GDScript fallback uses the same textured unlit selection
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/hover_unlit.gd:9)
+       [1] run (res://tests/hover_unlit.gd:61)
+       [2] pixels (res://tests/hover_unlit.gd:18)
+HOVER_UNLIT_FAILED 15 ["Unlit override survives geometry refresh and follows the authored skeleton", "GDScript fallback uses the same textured unlit selection"]

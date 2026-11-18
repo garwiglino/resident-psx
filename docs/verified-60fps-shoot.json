@@ -1,0 +1,48 @@
+{
+	"actual_camera_distance": 0.850000023841858,
+	"actual_camera_fov": 40.0,
+	"affine_texture_strength": 0.14,
+	"aiming": true,
+	"average_fps": 60.0159222241661,
+	"batches": 1,
+	"camera_fov": 51.61,
+	"camera_offset": "(0.5, 1.4, 1.3)",
+	"casing_pool": 8,
+	"cpu_geometry_and_submission_ms": {
+		"max": 3.088,
+		"mean": 1.16009333333333,
+		"p95": 1.568,
+		"p99": 2.123
+	},
+	"direction_change_interval_frames": 60,
+	"elapsed_seconds": 9.997347,
+	"frame_ms": {
+		"max": 19.807,
+		"mean": 16.6622166666667,
+		"p95": 17.539,
+		"p99": 18.34
+	},
+	"frames": 600,
+	"locomotion_clips": [
+		"walk",
+		"forward_right",
+		"strafe_right",
+		"backward_right",
+		"backward",
+		"backward_left",
+		"strafe_left",
+		"forward_left"
+	],
+	"monitor_hz": 119.982002258301,
+	"native_geometry_ms": {
+		"max": 3.066,
+		"mean": 1.13923,
+		"p95": 1.539,
+		"p99": 2.091
+	},
+	"native_version": 6,
+	"shots": 35,
+	"texture_pages": 13,
+	"viewport_size": "(320.0, 240.0)",
+	"vsync": 1
+}

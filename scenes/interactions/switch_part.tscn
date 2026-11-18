@@ -1,0 +1,6 @@
+[gd_scene format=3]
+[ext_resource type="PackedScene" path="res://scenes/interactions/action_part.tscn" id="Part"]
+[node name="Interrupteur" instance=ExtResource("Part")]
+behaviour = 1
+selection_label = "ACTIVER"
+off_selection_label = "DESACTIVER"

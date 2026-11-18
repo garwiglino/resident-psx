@@ -1,0 +1,90 @@
+13:19:03 - tripo_addon - [task.py:25] - INFO - TaskManager timer started
+13:19:03 - tripo_addon - [task.py:32] - INFO - WebSocket server started on port 60600
+13:19:03 - tripo_addon - [task.py:78] - INFO - TaskManager registered
+13:19:03 - tripo_addon - [ws_server.py:66] - ERROR - Error in event loop: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 60600): [winerror 10048] une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée
+13:19:03 - tripo_addon - [ws_server.py:77] - INFO - Event loop closed
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\__init__.py", line 48, in <module>
+    from .registration import register_all, unregister_all
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\registration.py", line 11, in <module>
+    from . operators.booleans.dice.shader import remove_dice_draw_shader
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 12, in <module>
+    class SD:
+    ...<54 lines>...
+            SD.pause_drawing = False
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 24, in SD
+    shader = gpu.shader.from_builtin(built_in_shader)
+SystemError: GPU functions for drawing are not available in background mode
+Traceback (most recent call last):
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 63, in <module>
+    shaderEx = gpu.types.GPUShader(dot_line_vertex_shader, dot_line_fragment_shader)
+TypeError: cannot create 'GPUShader' instances
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\__init__.py", line 16, in <module>
+    from .pq_operator import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\pq_operator.py", line 26, in <module>
+    from .utils.pqutil import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\__init__.py", line 24, in <module>
+    from . import mouse_event_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\mouse_event_util.py", line 21, in <module>
+    from . import draw_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 65, in <module>
+    shaderEx = gpu.shader.from_builtin('UNIFORM_COLOR')
+SystemError: GPU functions for drawing are not available in background mode
+00:14.312  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_shoot.blend"
+[Tripo3D] Log file: C:\Users\sheensaw\AppData\Local\Temp\tripo3d_blender_bridge.log
+Cannot read ARP prefs
+Update armature presets...
+Reloading external rigs...
+Reloading external metarigs...
+Error adding tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+[Pixel Art Studio 1.4.2] chargé — Vue 3D › barre latérale (N) › onglet « Pixel Art »
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+BLEND_CURVES {"source": "C:\\Users\\sheensaw\\Downloads\\cop_shoot.blend", "sha256": "2517f09f2785f37c0cf02eba980bca4d67705ef408366eedd05ad9173dc7bd24", "blender_version": "5.1.2", "file_version": [5, 1, 30], "saved_frame": 1, "scene_range": [1, 35], "fps": 24.0, "objects": [{"name": "metarig", "type": "ARMATURE", "action": null, "tracks": []}, {"name": "rig", "type": "ARMATURE", "action": "Action", "tracks": [{"name": "rigAction", "mute": false, "solo": false, "strips": [{"name": "player_gun_shoot", "action": "rigAction", "start": 1.0, "end": 8.0, "action_start": 1.0, "action_end": 8.0, "scale": 1.0, "repeat": 1.0, "blend_type": "REPLACE", "influence": 1.0, "mute": false}]}]}, {"name": "gun_amature", "type": "ARMATURE", "action": "Action.001", "tracks": [{"name": "gun_amatureAction", "mute": false, "solo": false, "strips": [{"name": "gun_amatureAction", "action": "gun_amatureAction", "start": 1.0, "end": 9.0, "action_start": 1.0, "action_end": 9.0, "scale": 1.0, "repeat": 1.0, "blend_type": "REPLACE", "influence": 1.0, "mute": false}]}]}, {"name": "Camera", "type": "CAMERA", "action": "CameraAction", "tracks": []}], "markers": [], "actions": [{"name": "Action", "range": [1.0, 32.0], "curves": 927, "keys": 1160, "interpolation": {"CONSTANT": 1142, "BEZIER": 18}, "handles": {"AUTO_CLAMPED/AUTO_CLAMPED": 1160}}, {"name": "Action.001", "range": [1.0, 30.0], "curves": 50, "keys": 72, "interpolation": {"BEZIER": 40, "CONSTANT": 32}, "handles": {"AUTO_CLAMPED/AUTO_CLAMPED": 72}}, {"name": "CameraAction", "range": [1.0, 1.0], "curves": 6, "keys": 6, "interpolation": {"BEZIER": 6}, "handles": {"AUTO_CLAMPED/AUTO_CLAMPED": 6}}, {"name": "gun_amatureAction", "range": [1.0, 4.0], "curves": 50, "keys": 61, "interpolation": {"BEZIER": 61}, "handles": {"AUTO_CLAMPED/AUTO_CLAMPED": 61}}, {"name": "rigAction", "range": [1.0, 8.0], "curves": 927, "keys": 1081, "interpolation": {"BEZIER": 1068, "CONSTANT": 13}, "handles": {"AUTO_CLAMPED/AUTO_CLAMPED": 1081}}]}
+13:19:11 - tripo_addon - [task.py:61] - INFO - WebSocket server stop requested
+13:19:11 - tripo_addon - [task.py:68] - INFO - WebSocket thread will exit automatically (daemon)
+13:19:11 - tripo_addon - [task.py:86] - INFO - TaskManager unregistered
+Traceback (most recent call last):
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\BoxCutter\addon\property\scene.py", line 21, in cleanup
+    option.operator = toolbar.option()
+                      ~~~~~~~~~~~~~~^^
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\BoxCutter\addon\toolbar.py", line 28, in option
+    return tool.option(addon.name, operator_id)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\BoxCutter\utility\tool.py", line 24, in option
+    for tooldef in bpy.context.workspace.tools:
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'tools'
+File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\BoxCutter\addon\property\scene.py", line 17, in cleanup
+Error removing tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+
+Blender quit

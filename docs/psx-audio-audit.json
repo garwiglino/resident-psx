@@ -1,0 +1,552 @@
+{
+	"buses": [
+		{
+			"effects": [
+				{
+					"class": "AudioEffectPSXReverb",
+					"enabled": true,
+					"wet": 0.0
+				}
+			],
+			"name": "Master",
+			"send": ""
+		},
+		{
+			"effects": [
+				{
+					"class": "AudioEffectPSXReverb",
+					"enabled": true,
+					"wet": 0.220001220703125
+				}
+			],
+			"name": "PSX Reverb",
+			"send": "Master"
+		},
+		{
+			"effects": [],
+			"name": "PSX Dry",
+			"send": "Master"
+		}
+	],
+	"classes": {
+		"AudioStreamPSX": 51
+	},
+	"file_count": 51,
+	"files": [
+		{
+			"adpcm_bytes": 50400,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/hum.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 4.0
+		},
+		{
+			"adpcm_bytes": 3792,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/hurt.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.3
+		},
+		{
+			"adpcm_bytes": 3792,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/pickup.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.3
+		},
+		{
+			"adpcm_bytes": 6944,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/reload.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.549977324263039
+		},
+		{
+			"adpcm_bytes": 8192,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/shot.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.649977324263039
+		},
+		{
+			"adpcm_bytes": 1776,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/step.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.140045351473923
+		},
+		{
+			"adpcm_bytes": 6915584,
+			"channels": 2,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/ambiance/outdoor_city.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 137.213605442177
+		},
+		{
+			"adpcm_bytes": 10872448,
+			"channels": 2,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/ambiance/room_tone.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 215.722947845805
+		},
+		{
+			"adpcm_bytes": 8736,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/talkie_end.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.346167800453515
+		},
+		{
+			"adpcm_bytes": 20368,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/talkie_loop.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.807709750566893
+		},
+		{
+			"adpcm_bytes": 10432,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/talkie_start.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.413469387755102
+		},
+		{
+			"adpcm_bytes": 209872,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/10_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 8.32775510204082
+		},
+		{
+			"adpcm_bytes": 112112,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/1_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 4.44857142857143
+		},
+		{
+			"adpcm_bytes": 39872,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/1_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.58165532879819
+		},
+		{
+			"adpcm_bytes": 87872,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/2_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 3.4869387755102
+		},
+		{
+			"adpcm_bytes": 90176,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/2_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 3.57802721088435
+		},
+		{
+			"adpcm_bytes": 159216,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/3_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 6.31755102040816
+		},
+		{
+			"adpcm_bytes": 161632,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/3_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 6.41342403628118
+		},
+		{
+			"adpcm_bytes": 129072,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/4_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 5.12163265306122
+		},
+		{
+			"adpcm_bytes": 355088,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/4_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 14.0902947845805
+		},
+		{
+			"adpcm_bytes": 272432,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/5_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 10.8102040816327
+		},
+		{
+			"adpcm_bytes": 77536,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/5_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 3.0765306122449
+		},
+		{
+			"adpcm_bytes": 141536,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/6_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 5.61632653061224
+		},
+		{
+			"adpcm_bytes": 8032,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/6_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.318253968253968
+		},
+		{
+			"adpcm_bytes": 245936,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/7_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 9.75918367346939
+		},
+		{
+			"adpcm_bytes": 64176,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/7_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 2.54609977324263
+		},
+		{
+			"adpcm_bytes": 258352,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/8_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 10.2518367346939
+		},
+		{
+			"adpcm_bytes": 152384,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/1/9_Chapter_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 6.0469387755102
+		},
+		{
+			"adpcm_bytes": 39872,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.58165532879819
+		},
+		{
+			"adpcm_bytes": 90176,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 3.57802721088435
+		},
+		{
+			"adpcm_bytes": 161632,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 6.41342403628118
+		},
+		{
+			"adpcm_bytes": 355088,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 14.0902947845805
+		},
+		{
+			"adpcm_bytes": 77536,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 3.0765306122449
+		},
+		{
+			"adpcm_bytes": 8032,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.318253968253968
+		},
+		{
+			"adpcm_bytes": 64176,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 2.54609977324263
+		},
+		{
+			"adpcm_bytes": 28432,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/interactables/locked_door_1.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.12818594104308
+		},
+		{
+			"adpcm_bytes": 35552,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/interactables/locked_door_2.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.41022675736961
+		},
+		{
+			"adpcm_bytes": 1163088,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/music/dark_music_01.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 46.1538548752835
+		},
+		{
+			"adpcm_bytes": 912,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/ui/dialogue_close.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.071156462585034
+		},
+		{
+			"adpcm_bytes": 912,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/ui/dialogue_open.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.071156462585034
+		},
+		{
+			"adpcm_bytes": 208,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/ui/dialogue_tick.wav",
+			"rate": 22050,
+			"sample_rate_option": 0,
+			"seconds": 0.0160090702947846
+		},
+		{
+			"adpcm_bytes": 26416,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/bullet_floor_01.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.04809523809524
+		},
+		{
+			"adpcm_bytes": 19264,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/bullet_floor_02.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.764421768707483
+		},
+		{
+			"adpcm_bytes": 27632,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/bullet_floor_03.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.09616780045351
+		},
+		{
+			"adpcm_bytes": 8720,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/hit_marker.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.345873015873016
+		},
+		{
+			"adpcm_bytes": 53680,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/mag_floor.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 2.12981859410431
+		},
+		{
+			"adpcm_bytes": 24352,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/d_eagle/deagle_aim.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.966349206349206
+		},
+		{
+			"adpcm_bytes": 7632,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/d_eagle/deagle_dry_01.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.302312925170068
+		},
+		{
+			"adpcm_bytes": 8512,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/d_eagle/deagle_dry_02.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 0.337709750566893
+		},
+		{
+			"adpcm_bytes": 41072,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/d_eagle/deagle_reload.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.62981859410431
+		},
+		{
+			"adpcm_bytes": 45200,
+			"channels": 1,
+			"class": "AudioStreamPSX",
+			"importer": "psx.spu_audio",
+			"path": "res://assets/audio/weapons/d_eagle/eagle_shoot.wav",
+			"rate": 44100,
+			"sample_rate_option": 0,
+			"seconds": 1.79328798185941
+		}
+	],
+	"mixer_hz": 44100.0,
+	"rates": {
+		"22050": 9,
+		"44100": 42
+	}
+}

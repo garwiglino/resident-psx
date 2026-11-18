@@ -1,0 +1,29 @@
+MATERIAU PSX UNLIT AUTONOME
+
+Fichier a utiliser : assets/materials/psx_unlit.tres
+Glisser ce fichier .tres sur le mesh dans la vue 3D, ou l'assigner a :
+MeshInstance3D > Geometry > Material Override pour tout le mesh,
+ou Surface Override Materials > la surface voulue pour une partie seulement.
+Un Material Override global a priorite sur les materiaux par surface.
+
+Cliquer ensuite le materiau dans l'inspecteur :
+Color : couleur du mesh, ou teinte multipliee par la texture.
+Texture : deposer une texture 2D. Vide = couleur seule.
+La transparence de la texture utilise une decoupe franche a 50 %.
+
+Dupliquer le .tres dans Fichiers (Ctrl+D), ou choisir Rendre unique dans le menu
+de sa ressource, pour regler un objet sans modifier tous ceux qui partagent
+le meme materiau. Il est aussi possible de creer un nouveau PSXUnlitMaterial
+depuis le menu de creation d'une ressource Material.
+
+Ce materiau ne recoit ni lumiere du niveau, ni torche, ni flash de tir.
+Il ne cree aucune lumiere et ne demande aucun noeud de lampe.
+Le fog, la palette, la teinte/saturation du niveau et la geometrie PSX restent actifs.
+Une surface opaque continue de bloquer la propagation des lumieres derriere elle.
+Les pixels sont filtres au plus proche et suivent les UV du modele.
+Les meshes mobiles et skinnes utilisent le meme materiau.
+
+Le rendu est disponible dans l'apercu PSX de l'editeur et en jeu.
+La vue Godot ordinaire utilise aussi une surface unshaded sans speculaire.
+Apres cette mise a jour, enregistrer les scenes puis rouvrir Godot une fois
+pour charger le moteur natif actuel. La version precedente reste intacte sur disque.

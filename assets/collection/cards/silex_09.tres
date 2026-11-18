@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/silex_09.res" id="1_dnkon"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_w46ib"]
+
+[resource]
+script = ExtResource("2_w46ib")
+id = &"silex_09"
+display_name = "SILEX-09"
+description = "Châssis rampant rouge rouille avec stabilisateurs et tourelle dorsale."
+lore = "Chaque tir efface un morceau du passé."
+rarity = "SR"
+image = ExtResource("1_dnkon")
+source_index = 5

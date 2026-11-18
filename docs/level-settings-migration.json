@@ -1,0 +1,16 @@
+{
+  "scenes/couloir_pieces.tscn": {
+    "lamps_before": 0,
+    "lamps_after": 0,
+    "fog_overrides": {
+      "fog_start": "1.0"
+    }
+  },
+  "scenes/maps/modular_example.tscn": {
+    "lamps_before": 2,
+    "lamps_after": 2,
+    "fog_overrides": {
+      "fog_start": "1.0"
+    }
+  }
+}

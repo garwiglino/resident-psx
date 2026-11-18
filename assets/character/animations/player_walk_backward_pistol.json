@@ -1,0 +1,19 @@
+{
+  "clip": "player_walk_backward_pistol",
+  "loop": true,
+  "fps": 30.0,
+  "start_frame": 1,
+  "end_frame": 121,
+  "duration": 4.0,
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+  "source_sha256": "b836f7f5af4c451d8087f4f91da63e74071ce2afc0b4f2a2d5f7f9eb0eb05c02",
+  "root_motion": true,
+  "root_motion_track": "rig/Skeleton3D:RootMotion",
+  "root_motion_distance": 5.895610935433405,
+  "average_speed": 1.4739027338583512,
+  "root_motion_vector": [
+    0.0,
+    -2.577053237473592e-07,
+    -5.895610809326172
+  ]
+}

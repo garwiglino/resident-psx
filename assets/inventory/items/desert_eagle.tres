@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_definition.gd" id="1_y2ju4"]
+[ext_resource type="Script" path="res://scripts/world_events/world_action.gd" id="2_v0lk8"]
+[ext_resource type="Resource" path="res://assets/weapons/desert_eagle.tres" id="3_uk8gy"]
+
+[resource]
+script = ExtResource("1_y2ju4")
+id = &"desert_eagle"
+display_name = "Desert Eagle"
+description = "Pistolet Magnum. Les cartouches du chargeur restent avec l'arme."
+kind = 6
+weapon = ExtResource("3_uk8gy")

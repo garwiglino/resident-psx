@@ -1,0 +1,25 @@
+{
+	"errors": [],
+	"ok": true,
+	"stats": {
+		"anime_source_triangles": 797,
+		"anime_triangles": 1178,
+		"batches": 1,
+		"depth_pixels": 12509,
+		"frame_us": 2291,
+		"general_depth": true,
+		"light_occluders": 0,
+		"light_revision": 4,
+		"outline_triangles": 827,
+		"player_depth_pixels": 12509,
+		"player_depth_triangles": 1624,
+		"shadow_rays": 0,
+		"shadow_triangle_tests": 0,
+		"shot_light_energy": 0.0,
+		"source_triangles": 1624,
+		"triangles": 2005,
+		"version": 23,
+		"vertices": 1563,
+		"world_lights": 1
+	}
+}

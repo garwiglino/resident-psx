@@ -1,0 +1,821 @@
+{
+  "collection_jp": "フェロ・エクリプス",
+  "back_index": 0,
+  "layout": {
+    "columns": 4,
+    "rows": 5,
+    "atlas_width": 256,
+    "atlas_height": 512,
+    "card_width": 64,
+    "card_height": 96,
+    "occupied_cells": 17,
+    "empty_cells": [
+      17,
+      18,
+      19
+    ],
+    "bottom_padding": 32
+  },
+  "types": {
+    "偵察型": "#547668",
+    "防衛型": "#596d8a",
+    "攻撃型": "#9a4d43",
+    "支援型": "#897546",
+    "特殊型": "#79638b"
+  },
+  "cards": [
+    {
+      "index": 1,
+      "name": "CENDRE-01",
+      "pilot": "Mira Sol",
+      "role": "Éclaireur urbain",
+      "description": "Châssis fin ivoire et orange, capteurs déployables et jambes légères.",
+      "ATQ": 4,
+      "DEF": 2,
+      "MOB": 8,
+      "lore": "Repère les convois dans les villes mortes.",
+      "rect_px": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.25,
+        "v": 0.0,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/01_cendre_01.png",
+      "rarity": "C",
+      "name_jp": "サンドル01",
+      "pilot_jp": "ミラ・ソル",
+      "type_jp": "偵察型",
+      "description_jp": "軽量索敵機",
+      "lore_jp": "廃都を走り、補給隊の動きを探る。",
+      "rect_64": {
+        "x": 64,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "id": "cendre_01",
+      "uv_bottom_left": {
+        "u": 0.25,
+        "v": 0.8125,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 2,
+      "name": "BASTION-07",
+      "pilot": "Ivo Kern",
+      "role": "Défenseur",
+      "description": "Unité lourde bleu marine à blindage épais et grand bouclier asymétrique.",
+      "ATQ": 5,
+      "DEF": 9,
+      "MOB": 2,
+      "lore": "Dernier rempart de la cité d’Orne.",
+      "rect_px": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.5,
+        "v": 0.0,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/02_bastion_07.png",
+      "rarity": "C",
+      "name_jp": "バスティオン07",
+      "pilot_jp": "イヴォ・ケルン",
+      "type_jp": "防衛型",
+      "description_jp": "重装甲防衛機",
+      "lore_jp": "オルヌ市に残された最後の防壁。",
+      "rect_64": {
+        "x": 128,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "id": "bastion_07",
+      "uv_bottom_left": {
+        "u": 0.5,
+        "v": 0.8125,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 3,
+      "name": "VEUVE-12",
+      "pilot": "Naya Voss",
+      "role": "Reconnaissance électronique",
+      "description": "Machine violette insectoïde équipée de capteurs articulés.",
+      "ATQ": 3,
+      "DEF": 3,
+      "MOB": 9,
+      "lore": "Ses capteurs entendent les réseaux éteints.",
+      "rect_px": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.75,
+        "v": 0.0,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/03_veuve_12.png",
+      "rarity": "R",
+      "name_jp": "ヴーヴ12",
+      "pilot_jp": "ナヤ・ヴォス",
+      "type_jp": "偵察型",
+      "description_jp": "電子偵察機",
+      "lore_jp": "停止した通信網の声を聞き取る。",
+      "rect_64": {
+        "x": 192,
+        "y": 0,
+        "w": 64,
+        "h": 96
+      },
+      "id": "veuve_12",
+      "uv_bottom_left": {
+        "u": 0.75,
+        "v": 0.8125,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 4,
+      "name": "MARÉE-04",
+      "pilot": "Tao Rinn",
+      "role": "Plongeur",
+      "description": "Armure étanche turquoise, propulseurs marins et optique protégée.",
+      "ATQ": 6,
+      "DEF": 6,
+      "MOB": 4,
+      "lore": "Garde les vestiges engloutis du vieux port.",
+      "rect_px": {
+        "x": 0,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.0,
+        "v": 0.1875,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/04_maree_04.png",
+      "rarity": "R",
+      "name_jp": "マレ04",
+      "pilot_jp": "タオ・リン",
+      "type_jp": "特殊型",
+      "description_jp": "水中作業機",
+      "lore_jp": "旧港の水底に沈む遺跡を守る。",
+      "rect_64": {
+        "x": 0,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "id": "maree_04",
+      "uv_bottom_left": {
+        "u": 0.0,
+        "v": 0.625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 5,
+      "name": "SILEX-09",
+      "pilot": "Dara Kest",
+      "role": "Artillerie",
+      "description": "Châssis rampant rouge rouille avec stabilisateurs et tourelle dorsale.",
+      "ATQ": 9,
+      "DEF": 5,
+      "MOB": 1,
+      "lore": "Chaque tir efface un morceau du passé.",
+      "rect_px": {
+        "x": 64,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.25,
+        "v": 0.1875,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/05_silex_09.png",
+      "rarity": "SR",
+      "name_jp": "シレックス09",
+      "pilot_jp": "ダラ・ケスト",
+      "type_jp": "攻撃型",
+      "description_jp": "重砲撃機",
+      "lore_jp": "一発の砲弾が、過去の痕跡を消す。",
+      "rect_64": {
+        "x": 64,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "id": "silex_09",
+      "uv_bottom_left": {
+        "u": 0.25,
+        "v": 0.625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 6,
+      "name": "ALOUETTE-03",
+      "pilot": "Elio Sen",
+      "role": "Intercepteur aérien",
+      "description": "Unité blanche fuselée, ailes segmentées et silhouette d’oiseau.",
+      "ATQ": 4,
+      "DEF": 2,
+      "MOB": 10,
+      "lore": "Traverse les zones interdites avant l’aube.",
+      "rect_px": {
+        "x": 128,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.5,
+        "v": 0.1875,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/06_alouette_03.png",
+      "rarity": "C",
+      "name_jp": "アルエット03",
+      "pilot_jp": "エリオ・セン",
+      "type_jp": "特殊型",
+      "description_jp": "高速飛行機",
+      "lore_jp": "夜明け前、立入禁止区域を越える。",
+      "rect_64": {
+        "x": 128,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "id": "alouette_03",
+      "uv_bottom_left": {
+        "u": 0.5,
+        "v": 0.625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 7,
+      "name": "SUTURE-06",
+      "pilot": "Rhea Noll",
+      "role": "Réparation",
+      "description": "Machine jaune à bras-outils, coffres de pièces et manipulateurs de précision.",
+      "ATQ": 1,
+      "DEF": 5,
+      "MOB": 5,
+      "lore": "Répare les machines que chacun abandonne.",
+      "rect_px": {
+        "x": 192,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.75,
+        "v": 0.1875,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/07_suture_06.png",
+      "rarity": "R",
+      "name_jp": "シュチュール06",
+      "pilot_jp": "レア・ノル",
+      "type_jp": "支援型",
+      "description_jp": "整備支援機",
+      "lore_jp": "見捨てられた機体に再び命を宿す。",
+      "rect_64": {
+        "x": 192,
+        "y": 96,
+        "w": 64,
+        "h": 96
+      },
+      "id": "suture_06",
+      "uv_bottom_left": {
+        "u": 0.75,
+        "v": 0.625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 8,
+      "name": "OSSIAN-00",
+      "pilot": "Inconnu",
+      "role": "Relique industrielle",
+      "description": "Géant olive, riveté et massif, dont le châssis porte plusieurs époques de réparations.",
+      "ATQ": 7,
+      "DEF": 8,
+      "MOB": 1,
+      "lore": "Son réacteur tourne depuis la chute.",
+      "rect_px": {
+        "x": 0,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.0,
+        "v": 0.375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/08_ossian_00.png",
+      "rarity": "R",
+      "name_jp": "オシアン00",
+      "pilot_jp": "不明",
+      "type_jp": "防衛型",
+      "description_jp": "旧式重装機",
+      "lore_jp": "都市が崩壊した後も、炉心は動き続ける。",
+      "rect_64": {
+        "x": 0,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "id": "ossian_00",
+      "uv_bottom_left": {
+        "u": 0.0,
+        "v": 0.4375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 9,
+      "name": "RAPIÈRE-11",
+      "pilot": "Lys Arven",
+      "role": "Duelliste",
+      "description": "Armure rouge et blanche, silhouette asymétrique et appendices étroits.",
+      "ATQ": 8,
+      "DEF": 3,
+      "MOB": 7,
+      "lore": "Ne frappe qu’une fois, sans seconde chance.",
+      "rect_px": {
+        "x": 64,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.25,
+        "v": 0.375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/09_rapiere_11.png",
+      "rarity": "SR",
+      "name_jp": "ラピエール11",
+      "pilot_jp": "リス・アルヴェン",
+      "type_jp": "攻撃型",
+      "description_jp": "近接戦闘機",
+      "lore_jp": "一度の攻撃に、すべてを懸ける。",
+      "rect_64": {
+        "x": 64,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "id": "rapiere_11",
+      "uv_bottom_left": {
+        "u": 0.25,
+        "v": 0.4375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 10,
+      "name": "RÉGENT-08",
+      "pilot": "Soren Vale",
+      "role": "Commandement",
+      "description": "Machine cobalt munie d’un réseau d’antennes et de relais dorsaux.",
+      "ATQ": 5,
+      "DEF": 6,
+      "MOB": 5,
+      "lore": "Coordonne les derniers escadrons libres.",
+      "rect_px": {
+        "x": 128,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.5,
+        "v": 0.375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/10_regent_08.png",
+      "rarity": "R",
+      "name_jp": "レジャン08",
+      "pilot_jp": "ソレン・ヴェイル",
+      "type_jp": "支援型",
+      "description_jp": "指揮通信機",
+      "lore_jp": "自由を守る最後の部隊を指揮する。",
+      "rect_64": {
+        "x": 128,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "id": "regent_08",
+      "uv_bottom_left": {
+        "u": 0.5,
+        "v": 0.4375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 11,
+      "name": "SÉLÈNE-15",
+      "pilot": "Ari Nox",
+      "role": "Reconnaissance orbitale",
+      "description": "Châssis argenté et dispositif dorsal annulaire conçu pour les zones de faible gravité.",
+      "ATQ": 6,
+      "DEF": 4,
+      "MOB": 8,
+      "lore": "Rapporte des échos de la face cachée.",
+      "rect_px": {
+        "x": 192,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.75,
+        "v": 0.375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/11_selene_15.png",
+      "rarity": "SR",
+      "name_jp": "セレーネ15",
+      "pilot_jp": "アリ・ノクス",
+      "type_jp": "特殊型",
+      "description_jp": "月面探査機",
+      "lore_jp": "月の裏側から、謎の反響を持ち帰る。",
+      "rect_64": {
+        "x": 192,
+        "y": 192,
+        "w": 64,
+        "h": 96
+      },
+      "id": "selene_15",
+      "uv_bottom_left": {
+        "u": 0.75,
+        "v": 0.4375,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 12,
+      "name": "FRACAS-02",
+      "pilot": "Bram Olt",
+      "role": "Démolition",
+      "description": "Unité orange trapue avec bras industriels renforcés et protections épaisses.",
+      "ATQ": 8,
+      "DEF": 7,
+      "MOB": 2,
+      "lore": "Ouvre un chemin au milieu des décombres.",
+      "rect_px": {
+        "x": 0,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.0,
+        "v": 0.5625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/12_fracas_02.png",
+      "rarity": "R",
+      "name_jp": "フラカ02",
+      "pilot_jp": "ブラム・オルト",
+      "type_jp": "支援型",
+      "description_jp": "重作業機",
+      "lore_jp": "瓦礫の中に、進むべき道を切り開く。",
+      "rect_64": {
+        "x": 0,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "id": "fracas_02",
+      "uv_bottom_left": {
+        "u": 0.0,
+        "v": 0.25,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 13,
+      "name": "ERG-10",
+      "pilot": "Safa Dren",
+      "role": "Patrouille désertique",
+      "description": "Machine sable à longues jambes et articulations protégées contre la poussière.",
+      "ATQ": 5,
+      "DEF": 4,
+      "MOB": 7,
+      "lore": "Suit les anciennes lignes sous le sable.",
+      "rect_px": {
+        "x": 64,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.25,
+        "v": 0.5625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/13_erg_10.png",
+      "rarity": "R",
+      "name_jp": "エルグ10",
+      "pilot_jp": "サファ・ドレン",
+      "type_jp": "偵察型",
+      "description_jp": "砂漠巡回機",
+      "lore_jp": "砂に埋もれた旧鉄道の跡をたどる。",
+      "rect_64": {
+        "x": 64,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "id": "erg_10",
+      "uv_bottom_left": {
+        "u": 0.25,
+        "v": 0.25,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 14,
+      "name": "OBSCUR-13",
+      "pilot": "Ena Vey",
+      "role": "Prototype clandestin",
+      "description": "Châssis noir et cramoisi, optique unique et carénage aux angles inhabituels.",
+      "ATQ": 9,
+      "DEF": 3,
+      "MOB": 8,
+      "lore": "Son dossier officiel n’a jamais existé.",
+      "rect_px": {
+        "x": 128,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.5,
+        "v": 0.5625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/14_obscur_13.png",
+      "rarity": "UR",
+      "name_jp": "オプスキュール13",
+      "pilot_jp": "エナ・ヴェイ",
+      "type_jp": "攻撃型",
+      "description_jp": "秘匿試作機",
+      "lore_jp": "この機体の公式記録は存在しない。",
+      "rect_64": {
+        "x": 128,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "id": "obscur_13",
+      "uv_bottom_left": {
+        "u": 0.5,
+        "v": 0.25,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    },
+    {
+      "index": 15,
+      "name": "VIGILE-14",
+      "pilot": "Kira Senn",
+      "role": "Garde de capitale",
+      "description": "Unité vert sombre anguleuse, renforcée pour les rues étroites et les longues veilles.",
+      "ATQ": 6,
+      "DEF": 7,
+      "MOB": 4,
+      "lore": "Veille encore sur une capitale vide.",
+      "rect_px": {
+        "x": 192,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "uv_top_left": {
+        "u": 0.75,
+        "v": 0.5625,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "file": "cartes_64x96/15_vigile_14.png",
+      "rarity": "R",
+      "name_jp": "ヴィジル14",
+      "pilot_jp": "キラ・セン",
+      "type_jp": "防衛型",
+      "description_jp": "都市警備機",
+      "lore_jp": "誰もいない首都で、今も警戒を続ける。",
+      "rect_64": {
+        "x": 192,
+        "y": 288,
+        "w": 64,
+        "h": 96
+      },
+      "id": "vigile_14",
+      "uv_bottom_left": {
+        "u": 0.75,
+        "v": 0.25,
+        "w": 0.25,
+        "h": 0.1875
+      },
+      "back_index": 0,
+      "mystery_index": 16
+    }
+  ],
+  "back": {
+    "index": 0,
+    "file": "cartes_64x96/00_dos_commun.png",
+    "id": "dos_commun",
+    "rect_px": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 96
+    },
+    "uv_top_left": {
+      "u": 0.0,
+      "v": 0.0,
+      "w": 0.25,
+      "h": 0.1875
+    },
+    "uv_bottom_left": {
+      "u": 0.0,
+      "v": 0.8125,
+      "w": 0.25,
+      "h": 0.1875
+    },
+    "rect_64": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 96
+    }
+  },
+  "mystery": {
+    "index": 16,
+    "file": "cartes_64x96/16_face_mystere.png",
+    "id": "face_mystere",
+    "rect_px": {
+      "x": 0,
+      "y": 384,
+      "w": 64,
+      "h": 96
+    },
+    "uv_top_left": {
+      "u": 0.0,
+      "v": 0.75,
+      "w": 0.25,
+      "h": 0.1875
+    },
+    "uv_bottom_left": {
+      "u": 0.0,
+      "v": 0.0625,
+      "w": 0.25,
+      "h": 0.1875
+    },
+    "rect_64": {
+      "x": 0,
+      "y": 384,
+      "w": 64,
+      "h": 96
+    }
+  },
+  "schema_version": "2.0.0",
+  "collection": "FERRO // ÉCLIPSE",
+  "card_count": 15,
+  "languages": [
+    "fr",
+    "ja"
+  ],
+  "atlas": {
+    "file": "ferro_eclipse_atlas_complet_256x512.png",
+    "width": 256,
+    "height": 512,
+    "filter": "nearest",
+    "wrap": "clamp",
+    "mipmaps": false,
+    "coordinate_origin": "top_left",
+    "rect_format": "x_y_width_height",
+    "uv_format": "u_v_width_height",
+    "native_card_size": [
+      64,
+      96
+    ]
+  },
+  "stats": {
+    "ATQ": {
+      "fr": "Attaque",
+      "ja": "攻撃"
+    },
+    "DEF": {
+      "fr": "Défense",
+      "ja": "防御"
+    },
+    "MOB": {
+      "fr": "Mobilité",
+      "ja": "機動"
+    },
+    "minimum": 0,
+    "maximum": 10
+  },
+  "rarities": {
+    "C": {
+      "fr": "Commune",
+      "ja": "通常"
+    },
+    "R": {
+      "fr": "Rare",
+      "ja": "レア"
+    },
+    "SR": {
+      "fr": "Super rare",
+      "ja": "スーパーレア"
+    },
+    "UR": {
+      "fr": "Ultra rare",
+      "ja": "ウルトラレア"
+    }
+  },
+  "metadata_notes": {
+    "fr": "Textes existants conservés. description est la description détaillée française ; description_jp est le libellé court japonais imprimé sur la carte. Les textes de jeu sont disponibles dans le JSON, indépendamment de leur lisibilité sur la texture 64 × 96.",
+    "ja": "既存の文章を保持。descriptionはフランス語の詳細説明、description_jpはカードに印刷された日本語の短い機体説明。"
+  }
+}

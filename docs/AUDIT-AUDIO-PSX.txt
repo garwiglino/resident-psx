@@ -1,0 +1,61 @@
+AUDIT DU 6 NOVEMBRE 2026
+
+MISE A JOUR DU 7 NOVEMBRE : les ecarts de mixage et d'enveloppes identifies
+ci-dessous ont ete corriges dans le backend v14. Les 51 imports sont passes
+en SPU ADPCM direct. Voir AUDIO-PSX.txt a la racine et spu-mixer-validation.json
+pour le comportement actuel et ses mesures. Le texte suivant conserve l'audit
+initial ; il ne decrit plus la chaine sonore courante.
+
+Conclusion : traitement SPU partiel, pas une emulation materielle complete.
+Un son propre ne suffit pas a prouver une erreur : la PS1 peut produire du
+44 100 Hz et melanger une source CD-DA 16 bits avec ses voix SPU.
+
+Constats mesures (psx-audio-audit.json) :
+- Mixeur Godot : 44 100 Hz.
+- 51 sources audio dans assets/audio ; 32 deja importees en AudioStreamPSX,
+  toutes a 44 100 Hz. L'option sample_rate=0 conserve la frequence source
+  dans la limite de 44 100 Hz de notre convertisseur.
+- 19 sources utilisent encore l'importeur WAV. Le wrapper PSXAudio les encode
+  a l'execution. Verification sur les sources courtes, dont tir, recharge et
+  chutes de douilles : elles deviennent bien AudioStreamPSX a 44 100 Hz pour
+  les WAV 48 000 Hz. La frequence du WAV brut n'est pas celle de la sortie.
+- Les voix intercom preparees sont distinctes des sources inventoriees :
+  mono 22 050 Hz, passe-bande 300-3000 Hz, limitation douce, puis SPU ADPCM.
+  Ce passe-bande est un choix de traitement radio ; il ne vient pas du SPU.
+- Reverb Studio Medium : wet 0,2200012 ; Master wet 0 et saturation 16 bits.
+  Les voix intercom sont dirigees vers le bus sec.
+
+Verification du code et des tests :
+- ADPCM predictif en blocs de 16 octets / 28 echantillons, 5 filtres.
+- Interpolation gaussienne 4 points avec table materielle ; pitch sur 12 bits
+  fractionnaires ; budget de 24 voix mono (stereo = 2 voix).
+- Reverb avec registres Studio Medium, traitement interne a 22 050 Hz et
+  filtres FIR de 39 coefficients.
+- spu_dsp_test : vecteurs ADPCM, coefficient gaussien et validite des blocs OK.
+- tests/psx_audio.gd : conversion, pitch, boucles, budget de voix, stockage,
+  queue de reverb et routage OK. Ces tests ne prouvent pas une identite avec
+  une capture de console pour tout le mixage.
+
+Ecarts a une emulation complete :
+- Gain, panoramique et somme des voix sont encore confies au mixeur Godot,
+  avant la saturation finale ; pas une reproduction de toutes les operations
+  entieres et enveloppes ADSR du SPU.
+- Aucune contrainte de 512 Kio de RAM SPU ni emulation du transfert/streaming.
+- Pas de decodeur CD-XA distinct ni de voie CD-DA distincte : les fichiers
+  ordinaires passent par notre conversion SPU.
+- Pas de comparaison de sortie bit a bit ou de validation par capture console.
+
+Interpretation : conserver 44 100 Hz est possible sur le materiel et peut
+donner un resultat tres propre meme avec l'ADPCM. Pour une direction sonore
+plus sourde, baisser certaines sources a 22 050 ou 11 025 Hz est un choix
+de production, a faire son par son ; ce n'est pas une limite generale PS1.
+Un bitcrusher 4 bits sur le master serait different de l'ADPCM predictif.
+Aucun parametre de production ni import audio n'a ete modifie par cet audit.
+
+Sources :
+Sony Computer Entertainment, PlayStation Hardware, ch. 4, pp. 4-3 a 4-6 :
+https://psx.arthus.net/sdk/Psy-Q/DOCS/Devrefs/Hardware.pdf
+PSX-SPX, mesures et documentation du SPU :
+https://psx-spx.consoledev.net/soundprocessingunitspu/
+PSX-SPX, CD-ROM XA :
+https://psx-spx.consoledev.net/dev/ps1/cdr/cdromformat/

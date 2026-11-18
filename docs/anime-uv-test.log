@@ -1,0 +1,7 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+SCRIPT ERROR: Parse Error: Cannot infer the type of "renderer" variable because the value doesn't have a set type.
+   at: GDScript::reload (res://tests/anime_uvs.gd:18)
+ERROR: Failed to load script "res://tests/anime_uvs.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)

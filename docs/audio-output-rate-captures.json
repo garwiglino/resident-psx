@@ -1,0 +1,30 @@
+{
+	"captures": [
+		{
+			"frequency": 1000,
+			"host_rate": 48000,
+			"path": "res://exports/audio_mix_test/output/22050_1000.f32",
+			"rate": 22050
+		},
+		{
+			"frequency": 14000,
+			"host_rate": 48000,
+			"path": "res://exports/audio_mix_test/output/22050_14000.f32",
+			"rate": 22050
+		},
+		{
+			"frequency": 1000,
+			"host_rate": 48000,
+			"path": "res://exports/audio_mix_test/output/44100_1000.f32",
+			"rate": 44100
+		},
+		{
+			"frequency": 14000,
+			"host_rate": 48000,
+			"path": "res://exports/audio_mix_test/output/44100_14000.f32",
+			"rate": 44100
+		}
+	],
+	"errors": [],
+	"ok": true
+}

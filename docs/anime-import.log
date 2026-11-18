@@ -1,0 +1,139 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started Initialisation du projet (5 steps)
+[   0% ] first_scan_filesystem | Analyse de la structure des fichiers…
+[  16% ] first_scan_filesystem | Chargement des noms des classes globales…
+[  33% ] first_scan_filesystem | Vérification des GDExtensions…
+[  50% ] first_scan_filesystem | Création des scripts de chargement automatique…
+[  66% ] first_scan_filesystem | Initialisation des extensions…
+[  83% ] first_scan_filesystem | Démarrage du scan de fichiers…
+[ DONE ] first_scan_filesystem
+
+[   0% ] update_scripts_classes | Started Enregistrement des classes globales… (15 steps)
+[   0% ] update_scripts_classes | 
+[   6% ] update_scripts_classes | PSXLevelSettings
+[  12% ] update_scripts_classes | 
+[  18% ] update_scripts_classes | 
+[  25% ] update_scripts_classes | PSXAnimeStyle
+[  31% ] update_scripts_classes | 
+[  37% ] update_scripts_classes | 
+[  43% ] update_scripts_classes | 
+[  50% ] update_scripts_classes | 
+[  56% ] update_scripts_classes | 
+[  62% ] update_scripts_classes | 
+[  68% ] update_scripts_classes | 
+[  75% ] update_scripts_classes | 
+[  81% ] update_scripts_classes | 
+[  87% ] update_scripts_classes | 
+[ DONE ] update_scripts_classes
+
+[   0% ] _update_scan_actions | Started Analyse des actions… (63 steps)
+[   0% ] _update_scan_actions | 1_locked_doors.wav
+[   1% ] _update_scan_actions | 2_locked_doors.wav
+[   3% ] _update_scan_actions | 3_locked_doors.wav
+[   4% ] _update_scan_actions | 4_locked_doors.wav
+[   6% ] _update_scan_actions | 1_locked_doors.wav
+[   7% ] _update_scan_actions | 2_locked_doors.wav
+[   9% ] _update_scan_actions | 3_locked_doors.wav
+[  10% ] _update_scan_actions | 4_locked_doors.wav
+[  12% ] _update_scan_actions | talkie_end.wav
+[  14% ] _update_scan_actions | talkie_loop.wav
+[  15% ] _update_scan_actions | talkie_start.wav
+[  17% ] _update_scan_actions | locked_door_1.wav
+[  18% ] _update_scan_actions | locked_door_2.wav
+[  20% ] _update_scan_actions | dialogue_close.wav
+[  21% ] _update_scan_actions | dialogue_open.wav
+[  23% ] _update_scan_actions | dialogue_tick.wav
+[  25% ] _update_scan_actions | deagle_aim.wav
+[  26% ] _update_scan_actions | deagle_dry_01.wav
+[  28% ] _update_scan_actions | deagle_dry_02.wav
+[  29% ] _update_scan_actions | deagle_reload.wav
+[  31% ] _update_scan_actions | eagle_shoot.wav
+[  32% ] _update_scan_actions | bullet_floor_01.wav
+[  34% ] _update_scan_actions | bullet_floor_02.wav
+[  35% ] _update_scan_actions | bullet_floor_03.wav
+[  37% ] _update_scan_actions | mag_floor.wav
+[  39% ] _update_scan_actions | winter_jacket_pink_dragon.png
+[  40% ] _update_scan_actions | anime-cel-preview-gameplay-after.png
+[  42% ] _update_scan_actions | anime-cel-preview-gameplay-before.png
+[  43% ] _update_scan_actions | anime-cel-preview-gameplay-comparison.png
+[  45% ] _update_scan_actions | anime-cel-preview-gameplay-stronger.png
+[  46% ] _update_scan_actions | anime-cel-preview-lit-after.png
+[  48% ] _update_scan_actions | anime-cel-preview-lit-before.png
+[  50% ] _update_scan_actions | anime-cel-preview-lit-comparison.png
+[  51% ] _update_scan_actions | anime-cel-preview-lit-stronger-comparison.png
+[  53% ] _update_scan_actions | anime-cel-preview-lit-stronger.png
+[  54% ] _update_scan_actions | anime-cel-preview-portrait-after.png
+[  56% ] _update_scan_actions | anime-cel-preview-portrait-before.png
+[  57% ] _update_scan_actions | anime-cel-preview-portrait-comparison.png
+[  59% ] _update_scan_actions | anime-cel-preview-portrait-stronger-comparison.png
+[  60% ] _update_scan_actions | anime-cel-preview-portrait-stronger.png
+[  62% ] _update_scan_actions | anime-cel-preview-stronger-comparison.png
+[  64% ] _update_scan_actions | anime-preview-gameplay-after.png
+[  65% ] _update_scan_actions | anime-preview-gameplay-before.png
+[  67% ] _update_scan_actions | anime-preview-gameplay-comparison.png
+[  68% ] _update_scan_actions | anime-preview-gameplay-stronger.png
+[  70% ] _update_scan_actions | anime-preview-lit-after.png
+[  71% ] _update_scan_actions | anime-preview-lit-before.png
+[  73% ] _update_scan_actions | anime-preview-lit-comparison.png
+[  75% ] _update_scan_actions | anime-preview-lit-stronger-comparison.png
+[  76% ] _update_scan_actions | anime-preview-lit-stronger.png
+[  78% ] _update_scan_actions | anime-preview-portrait-after.png
+[  79% ] _update_scan_actions | anime-preview-portrait-before.png
+[  81% ] _update_scan_actions | anime-preview-portrait-comparison.png
+[  82% ] _update_scan_actions | anime-preview-portrait-stronger-comparison.png
+[  84% ] _update_scan_actions | anime-preview-portrait-stronger.png
+[  85% ] _update_scan_actions | anime-preview-stronger-comparison.png
+[  87% ] _update_scan_actions | walk-spine-before-after.png
+[  89% ] _update_scan_actions | winter-jacket-comparison.png
+[  90% ] _update_scan_actions | winter-jacket-equipped.png
+[  92% ] _update_scan_actions | winter-jacket-in-game.png
+[  93% ] _update_scan_actions | winter-jacket-texture-override.png
+[  95% ] _update_scan_actions | winter-jacket-texture-restored.png
+[  96% ] _update_scan_actions | winter-jacket-uniform.png
+[ DONE ] _update_scan_actions
+
+[   0% ] reimport | Started Ré-importation des assets (15 steps)
+[   0% ] reimport | Préparation des fichiers pour la réimportation…
+[   6% ] reimport | Préparation des fichiers pour la réimportation…
+[  12% ] reimport | Préparation des fichiers pour la réimportation…
+[  18% ] reimport | Préparation des fichiers pour la réimportation…
+[  25% ] reimport | Préparation des fichiers pour la réimportation…
+[  31% ] reimport | Préparation des fichiers pour la réimportation…
+[  37% ] reimport | Préparation des fichiers pour la réimportation…
+[  43% ] reimport | Préparation des fichiers pour la réimportation…
+[  50% ] reimport | Préparation des fichiers pour la réimportation…
+[  56% ] reimport | Préparation des fichiers pour la réimportation…
+[  62% ] reimport | Préparation des fichiers pour la réimportation…
+[  68% ] reimport | Préparation des fichiers pour la réimportation…
+[  75% ] reimport | Préparation des fichiers pour la réimportation…
+[  81% ] reimport | Préparation des fichiers pour la réimportation…
+[  87% ] reimport | Préparation des fichiers pour la réimportation…
+[   0% ] reimport | Exécution des opérations de pré-réimportation…
+[   0% ] reimport | talkie_end.wav
+[   6% ] reimport | talkie_loop.wav
+[  12% ] reimport | talkie_start.wav
+[  18% ] reimport | dialogue_close.wav
+[  25% ] reimport | dialogue_open.wav
+[  31% ] reimport | dialogue_tick.wav
+[  37% ] reimport | deagle_aim.wav
+[  43% ] reimport | deagle_dry_01.wav
+[  50% ] reimport | deagle_dry_02.wav
+[  56% ] reimport | deagle_reload.wav
+[  62% ] reimport | eagle_shoot.wav
+[  68% ] reimport | bullet_floor_01.wav
+[  75% ] reimport | bullet_floor_02.wav
+[  81% ] reimport | bullet_floor_03.wav
+[  87% ] reimport | mag_floor.wav
+[  93% ] reimport | Finalisation des importations de ressources…
+[ DONE ] reimport
+
+[   0% ] reimport | Started Ré-importation des assets (15 steps)
+[   0% ] reimport | Exécution des opérations post-réimportation…
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started Chargement de l’éditeur (5 steps)
+[   0% ] loading_editor_layout | Chargement de la disposition de l’éditeur…
+[  16% ] loading_editor_layout | Chargement des docks…
+[ DONE ] loading_editor_layout
+

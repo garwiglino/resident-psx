@@ -1,0 +1,8 @@
+00:03.000  blend            | Read blend: "C:\Users\sheensaw\Downloads\scene.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\review_modular_kit.py:9: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if not material.use_nodes:continue
+00:09.703  render           | Saved: 'C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\docs\modular-kit-source-overview.png'
+MODULAR_REVIEW_OK
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

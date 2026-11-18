@@ -1,0 +1,30 @@
+LUMIERES MANUELLES
+
+Les cinq anciennes sources codees en dur ont ete supprimees, ainsi que leur lumiere ambiante.
+Les sources que vous placez dans la carte sont conservees. La torche et le flash du joueur restent disponibles.
+
+1. Ouvrir scenes/couloir_pieces.tscn et selectionner le dossier Lumieres.
+2. Ajouter un noeud PSXLight3D, ou glisser scenes/psx_light.tscn sur ce dossier.
+3. Placer le repere avec l'outil de deplacement normal de Godot.
+4. Choisir Light Type : Omni, Spot ou Directionnelle.
+   Omni : position, couleur, energie et portee en metres.
+   Spot : memes reglages, plus Spot Angle Degrees et Spot Softness. Le cone suit l'axe local -Z.
+   Directionnelle : couleur, energie et orientation selon -Z ; pas de portee.
+   Enabled active/desactive la source.
+5. Dupliquer la lumiere pour en placer d'autres, puis enregistrer la scene.
+
+PSXRenderer > Eclairage du niveau > ambient_light_color regle la lumiere ambiante commune.
+Noir par defaut : la carte recoit uniquement les sources placees et les effets du joueur.
+Les changements de position, couleur, intensite, portee ou visibilite sont suivis en jeu
+et directement dans la vue 3D grace au bouton PSX. Voir APERCU-PSX.txt.
+
+Les sources modulent les couleurs des sommets (Gouraud), avant les textures RGB555 et le brouillard.
+Elles fonctionnent sur le decor et les personnages avec le meme calcul natif et GDScript.
+Le decor garde son eclairage en cache ; il est recalcule seulement quand une source change.
+La classe est un repere, pas un OmniLight Godot : le rendu 3D standard reste coupe.
+
+Redemarrer Godot apres cette mise a jour pour charger le moteur natif v11 et le plugin d'apercu.
+Validation : tests/manual_lights.gd, tests/light_types_fog.gd et tools/validate_editor_preview.gd.
+Mesure locale v10 : 7 sources, 10 tirs, 5 chargeurs et 600 images apres 3 s de chauffe.
+60,013 FPS moyens ; percentile 99 de 18,366 ms, maximum 18,854 ms ; un seul lot de rendu.
+Rapport : docs/verified-60fps-manual-lights.json. Les sources du test ne sont pas sauvegardees dans la carte.

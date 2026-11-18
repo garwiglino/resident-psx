@@ -1,0 +1,51 @@
+STYLE ANIME PSX
+
+Dans une carte : selectionner ReglagesNiveau (ou le bouton Reglages niveau
+de la vue 3D), puis ouvrir Style anime PSX > Anime Style dans l'inspecteur.
+Le profil commun est assets/rendering/anime_psx.tres. Il est utilise aussi
+par PSXRenderer dans scenes/systemes_jeu.tscn et par l'apercu PSX de l'editeur.
+Il est actif par defaut avec le rendu a deux tons et contour valide.
+
+Enabled : activer ou couper tout le style.
+Strength : intensite de l'eclairage anime des personnages, de 0 a 1.
+Tones : deux tons (rendu valide) ou trois tons.
+Other Characters : meme style sur les autres CharacterBody3D du jeu.
+Un PNJ avec une autre racine peut utiliser le groupe psx_anime_character.
+World Strength : intensite propre au decor ; 0 par defaut pour conserver
+le decor de l'apercu. Monter progressivement si souhaite. Les materiaux
+unlit, les diffuseurs des lampes et les effets transparents restent exclus.
+
+OMBRE ET LUMIERE
+Light Threshold : augmente la surface a l'ombre quand on le monte.
+Shadow Level / Tint : intensite et teinte des aplats d'ombre.
+Light Level / Tint : intensite et teinte des parties eclairees.
+Trois tons affiche en plus les seuils et l'intensite du ton intermediaire.
+
+CONTOUR GEOMETRIQUE
+Outline Enabled : activer uniquement le contour.
+Outline Width : epaisseur dans le monde ; le rendu valide utilise 0.006 m.
+Outline Color : couleur du contour.
+Le contour suit le skinning, les animations et les changements de tenue.
+Le contour est limite aux pixels exterieurs de la silhouette des personnages.
+Il est cache par les murs, comme le personnage, et ne projette pas d'ombre.
+
+ECLAIRAGE SOMBRE
+Darkness Threshold / Multiplier conservent les zones presque noires, pour
+que les aplats n'eclairent pas artificiellement une piece sans lumiere.
+Light Color Retention dose la couleur des lampes dans les aplats.
+
+Le profil est commun a toutes les cartes. Modifier ce profil modifie donc
+leur style ensemble. Pour une exception locale, utiliser Rendre unique sur
+Anime Style puis enregistrer le profil sous un autre nom. Les reglages de
+fog, de palette et les lumieres de chaque niveau restent independants.
+L'inventaire, les dialogues et leurs couleurs ne sont pas affectes.
+
+Le moteur PSX aligne les sommets des modeles sur la grille de pixels. Les
+points de coupe des aplats restent sur les aretes d'origine pour eviter
+les fentes entre triangles. Le contour utilise la silhouette et la
+profondeur des surfaces opaques. Les UV affines et le RGB555 restent geres
+par le moteur PSX.
+
+Apres cette mise a jour, enregistrer puis rouvrir Godot une fois pour charger
+psx_geometry_v24.dll. L'apercu signale si l'editeur utilise encore l'ancienne
+version. Les sessions de jeu deja ouvertes se relancent egalement.

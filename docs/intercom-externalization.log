@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+EXTERNALIZED_AUDIO res://scenes/main.tscn 639053 -> 10946 bytes; 5 SPU samples unchanged
+EXTERNALIZED_AUDIO res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres 371156 -> 4343 bytes; 3 SPU samples unchanged
+INTERCOM_EXTERNALIZATION_OK: text scenes retained; native ADPCM bytes and voice timings preserved

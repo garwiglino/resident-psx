@@ -1,0 +1,4374 @@
+{
+  "file": "C:\\Users\\sheensaw\\Downloads\\cop_anims.blend",
+  "fps": 24,
+  "objects": [
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        2.0,
+        2.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false,
+      "vertices": 4,
+      "polygons": 1,
+      "materials": [
+        "M_surfaces"
+      ],
+      "modifiers": []
+    },
+    {
+      "name": "cop_char",
+      "type": "MESH",
+      "parent": "rig",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        0.4688442349433899,
+        0.46340763568878174,
+        1.5960732698440552
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false,
+      "vertices": 601,
+      "polygons": 678,
+      "materials": [
+        "Material.001"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "rig"
+        }
+      ]
+    },
+    {
+      "name": "metarig",
+      "type": "ARMATURE",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        1.3382549285888672,
+        0.28123995661735535,
+        1.6597844362258911
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false,
+      "bones": [
+        {
+          "name": "spine",
+          "deform": true
+        },
+        {
+          "name": "spine.001",
+          "deform": true
+        },
+        {
+          "name": "spine.002",
+          "deform": true
+        },
+        {
+          "name": "spine.003",
+          "deform": true
+        },
+        {
+          "name": "spine.004",
+          "deform": true
+        },
+        {
+          "name": "spine.005",
+          "deform": true
+        },
+        {
+          "name": "spine.006",
+          "deform": true
+        },
+        {
+          "name": "shoulder.L",
+          "deform": true
+        },
+        {
+          "name": "upper_arm.L",
+          "deform": true
+        },
+        {
+          "name": "forearm.L",
+          "deform": true
+        },
+        {
+          "name": "hand.L",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01.L",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.02.L",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.03.L",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01.L.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.02.L.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.03.L.001",
+          "deform": true
+        },
+        {
+          "name": "shoulder.R",
+          "deform": true
+        },
+        {
+          "name": "upper_arm.R",
+          "deform": true
+        },
+        {
+          "name": "forearm.R",
+          "deform": true
+        },
+        {
+          "name": "hand.R",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01.R",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.02.R",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.03.R",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01.R.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.02.R.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.03.R.001",
+          "deform": true
+        },
+        {
+          "name": "breast.L",
+          "deform": true
+        },
+        {
+          "name": "breast.R",
+          "deform": true
+        },
+        {
+          "name": "pelvis.L",
+          "deform": true
+        },
+        {
+          "name": "pelvis.R",
+          "deform": true
+        },
+        {
+          "name": "thigh.L",
+          "deform": true
+        },
+        {
+          "name": "shin.L",
+          "deform": true
+        },
+        {
+          "name": "foot.L",
+          "deform": true
+        },
+        {
+          "name": "toe.L",
+          "deform": true
+        },
+        {
+          "name": "heel.02.L",
+          "deform": true
+        },
+        {
+          "name": "thigh.R",
+          "deform": true
+        },
+        {
+          "name": "shin.R",
+          "deform": true
+        },
+        {
+          "name": "foot.R",
+          "deform": true
+        },
+        {
+          "name": "toe.R",
+          "deform": true
+        },
+        {
+          "name": "heel.02.R",
+          "deform": true
+        }
+      ],
+      "animation": {
+        "action": null,
+        "tracks": []
+      }
+    },
+    {
+      "name": "rig",
+      "type": "ARMATURE",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        2.5872275829315186,
+        2.5872271060943604,
+        1.7189745903015137
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false,
+      "bones": [
+        {
+          "name": "root",
+          "deform": false
+        },
+        {
+          "name": "DEF-spine",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.002",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.003",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.004",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.005",
+          "deform": true
+        },
+        {
+          "name": "DEF-spine.006",
+          "deform": true
+        },
+        {
+          "name": "VIS_upper_arm_ik_pole.L",
+          "deform": false
+        },
+        {
+          "name": "VIS_upper_arm_ik_pole.R",
+          "deform": false
+        },
+        {
+          "name": "VIS_thigh_ik_pole.L",
+          "deform": false
+        },
+        {
+          "name": "VIS_thigh_ik_pole.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-torso.parent",
+          "deform": false
+        },
+        {
+          "name": "torso",
+          "deform": false
+        },
+        {
+          "name": "hips",
+          "deform": false
+        },
+        {
+          "name": "chest",
+          "deform": false
+        },
+        {
+          "name": "MCH-spine.001",
+          "deform": false
+        },
+        {
+          "name": "spine_fk.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-spine",
+          "deform": false
+        },
+        {
+          "name": "spine_fk",
+          "deform": false
+        },
+        {
+          "name": "tweak_spine",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine",
+          "deform": false
+        },
+        {
+          "name": "ORG-pelvis.L",
+          "deform": false
+        },
+        {
+          "name": "DEF-pelvis.L",
+          "deform": true
+        },
+        {
+          "name": "ORG-pelvis.R",
+          "deform": false
+        },
+        {
+          "name": "DEF-pelvis.R",
+          "deform": true
+        },
+        {
+          "name": "ORG-thigh.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-shin.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-foot.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-toe.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-heel.02.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "foot_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "shin_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "shin_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_parent_widget.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "thigh_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-thigh.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-shin.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-foot.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-toe.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-heel.02.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "foot_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "shin_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "shin_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_parent_widget.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "thigh_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "thigh_parent.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_parent.L",
+          "deform": false
+        },
+        {
+          "name": "thigh_fk.L",
+          "deform": false
+        },
+        {
+          "name": "shin_fk.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_fk.L",
+          "deform": false
+        },
+        {
+          "name": "foot_fk.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-toe_fk.L",
+          "deform": false
+        },
+        {
+          "name": "toe_fk.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_swing.L",
+          "deform": false
+        },
+        {
+          "name": "thigh_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "thigh_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "DEF-thigh.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-thigh.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-shin.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-shin.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-foot.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-toe.L",
+          "deform": true
+        },
+        {
+          "name": "thigh_parent.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_parent.R",
+          "deform": false
+        },
+        {
+          "name": "thigh_fk.R",
+          "deform": false
+        },
+        {
+          "name": "shin_fk.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_fk.R",
+          "deform": false
+        },
+        {
+          "name": "foot_fk.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-toe_fk.R",
+          "deform": false
+        },
+        {
+          "name": "toe_fk.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_swing.R",
+          "deform": false
+        },
+        {
+          "name": "thigh_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-shin_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "thigh_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "DEF-thigh.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-thigh.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-shin.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-shin.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-foot.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-toe.R",
+          "deform": true
+        },
+        {
+          "name": "tweak_spine.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-WGT-hips",
+          "deform": false
+        },
+        {
+          "name": "MCH-spine.002",
+          "deform": false
+        },
+        {
+          "name": "spine_fk.002",
+          "deform": false
+        },
+        {
+          "name": "MCH-pivot",
+          "deform": false
+        },
+        {
+          "name": "tweak_spine.002",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.002",
+          "deform": false
+        },
+        {
+          "name": "MCH-spine.003",
+          "deform": false
+        },
+        {
+          "name": "spine_fk.003",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.004",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.005",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.006",
+          "deform": false
+        },
+        {
+          "name": "MCH-ROT-neck",
+          "deform": false
+        },
+        {
+          "name": "neck",
+          "deform": false
+        },
+        {
+          "name": "MCH-ROT-head",
+          "deform": false
+        },
+        {
+          "name": "head",
+          "deform": false
+        },
+        {
+          "name": "tweak_spine.004",
+          "deform": false
+        },
+        {
+          "name": "MCH-STR-neck",
+          "deform": false
+        },
+        {
+          "name": "MCH-spine.005",
+          "deform": false
+        },
+        {
+          "name": "tweak_spine.005",
+          "deform": false
+        },
+        {
+          "name": "tweak_spine.003",
+          "deform": false
+        },
+        {
+          "name": "ORG-spine.003",
+          "deform": false
+        },
+        {
+          "name": "ORG-shoulder.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-upper_arm.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-forearm.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-hand.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.01.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.02.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.03.L",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.01.L.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.02.L.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.03.L.001",
+          "deform": false
+        },
+        {
+          "name": "DEF-f_pinky.01.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.02.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.03.L",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01_master.L",
+          "deform": false
+        },
+        {
+          "name": "DEF-f_pinky.01.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.02.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.03.L.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01_master.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "hand_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01_drv.L",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02_drv.L",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.02.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03_drv.L",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.03.L",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01_drv.L.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.L.002",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02_drv.L.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.02.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03_drv.L.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.03.L.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.L.003",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "forearm_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "forearm_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_parent_widget.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_tweak.L.001",
+          "deform": false
+        },
+        {
+          "name": "DEF-shoulder.L",
+          "deform": true
+        },
+        {
+          "name": "upper_arm_parent.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_parent.L",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_fk.L",
+          "deform": false
+        },
+        {
+          "name": "forearm_fk.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_fk.L",
+          "deform": false
+        },
+        {
+          "name": "hand_fk.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_swing.L",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_tweak.L",
+          "deform": false
+        },
+        {
+          "name": "DEF-upper_arm.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-upper_arm.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-forearm.L",
+          "deform": true
+        },
+        {
+          "name": "DEF-forearm.L.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-hand.L",
+          "deform": true
+        },
+        {
+          "name": "ORG-shoulder.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-upper_arm.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-forearm.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-hand.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.01.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.02.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.03.R",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.01.R.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.02.R.001",
+          "deform": false
+        },
+        {
+          "name": "ORG-f_pinky.03.R.001",
+          "deform": false
+        },
+        {
+          "name": "DEF-f_pinky.01.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.02.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.03.R",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01_master.R",
+          "deform": false
+        },
+        {
+          "name": "DEF-f_pinky.01.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.02.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-f_pinky.03.R.001",
+          "deform": true
+        },
+        {
+          "name": "f_pinky.01_master.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "hand_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01_drv.R",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02_drv.R",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.02.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03_drv.R",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.03.R",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01_drv.R.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.R.002",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02_drv.R.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.02.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03_drv.R.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.03.R.001",
+          "deform": false
+        },
+        {
+          "name": "f_pinky.01.R.003",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.03.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.02.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-f_pinky.01.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "forearm_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "forearm_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_parent_widget.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_tweak.R.001",
+          "deform": false
+        },
+        {
+          "name": "DEF-shoulder.R",
+          "deform": true
+        },
+        {
+          "name": "upper_arm_parent.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_parent.R",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_fk.R",
+          "deform": false
+        },
+        {
+          "name": "forearm_fk.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_fk.R",
+          "deform": false
+        },
+        {
+          "name": "hand_fk.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_swing.R",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-forearm_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_tweak.R",
+          "deform": false
+        },
+        {
+          "name": "DEF-upper_arm.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-upper_arm.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-forearm.R",
+          "deform": true
+        },
+        {
+          "name": "DEF-forearm.R.001",
+          "deform": true
+        },
+        {
+          "name": "DEF-hand.R",
+          "deform": true
+        },
+        {
+          "name": "ORG-breast.L",
+          "deform": false
+        },
+        {
+          "name": "DEF-breast.L",
+          "deform": true
+        },
+        {
+          "name": "ORG-breast.R",
+          "deform": false
+        },
+        {
+          "name": "DEF-breast.R",
+          "deform": true
+        },
+        {
+          "name": "breast.L",
+          "deform": false
+        },
+        {
+          "name": "breast.R",
+          "deform": false
+        },
+        {
+          "name": "shoulder.L",
+          "deform": false
+        },
+        {
+          "name": "shoulder.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-WGT-chest",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_ik.parent.L",
+          "deform": false
+        },
+        {
+          "name": "hand_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_target.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_target.parent.L",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_ik_target.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-hand_ik.parent.R",
+          "deform": false
+        },
+        {
+          "name": "hand_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_target.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-upper_arm_ik_target.parent.R",
+          "deform": false
+        },
+        {
+          "name": "upper_arm_ik_target.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_ik.parent.L",
+          "deform": false
+        },
+        {
+          "name": "foot_ik.L",
+          "deform": false
+        },
+        {
+          "name": "foot_spin_ik.L",
+          "deform": false
+        },
+        {
+          "name": "foot_heel_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_rock2.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_rock1.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_roll2.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_roll1.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_roll.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_target.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-toe_ik_parent.L",
+          "deform": false
+        },
+        {
+          "name": "toe_ik.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_target.parent.L",
+          "deform": false
+        },
+        {
+          "name": "thigh_ik_target.L",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_ik.parent.R",
+          "deform": false
+        },
+        {
+          "name": "foot_ik.R",
+          "deform": false
+        },
+        {
+          "name": "foot_spin_ik.R",
+          "deform": false
+        },
+        {
+          "name": "foot_heel_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_rock2.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_rock1.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_roll2.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-heel.02_roll1.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-foot_roll.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_target.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-toe_ik_parent.R",
+          "deform": false
+        },
+        {
+          "name": "toe_ik.R",
+          "deform": false
+        },
+        {
+          "name": "MCH-thigh_ik_target.parent.R",
+          "deform": false
+        },
+        {
+          "name": "thigh_ik_target.R",
+          "deform": false
+        }
+      ],
+      "animation": {
+        "action": "rigAction",
+        "tracks": []
+      }
+    },
+    {
+      "name": "bullet",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.011512720957398415,
+        0.037889618426561356,
+        0.011512701399624348
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 24,
+      "polygons": 44,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "mag",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.018151123076677322,
+        0.059374723583459854,
+        0.11747711151838303
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 56,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "base",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.02395959012210369,
+        0.22760604321956635,
+        0.12402304261922836
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 204,
+      "polygons": 406,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "hammer",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.005112809129059315,
+        0.02117527648806572,
+        0.026921648532152176
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 12,
+      "polygons": 20,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "trigger",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.005418984219431877,
+        0.009660535492002964,
+        0.02214280515909195
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 16,
+      "polygons": 28,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "Cube.010",
+      "type": "EMPTY",
+      "parent": null,
+      "location": [
+        120.00000762939453,
+        190.0,
+        0.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        99.99999237060547,
+        100.0,
+        99.99999237060547
+      ],
+      "hidden": false
+    },
+    {
+      "name": "Cylinder.002",
+      "type": "EMPTY",
+      "parent": null,
+      "location": [
+        120.00000762939453,
+        190.0,
+        0.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        99.99999237060547,
+        100.0,
+        99.99999237060547
+      ],
+      "hidden": false
+    },
+    {
+      "name": "Cylinder.003",
+      "type": "EMPTY",
+      "parent": null,
+      "location": [
+        -109.99999237060547,
+        150.0,
+        -120.00000762939453
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "hidden": false
+    },
+    {
+      "name": "slide",
+      "type": "MESH",
+      "parent": "gun_amature",
+      "location": [
+        -0.2344827651977539,
+        -0.09473640471696854,
+        1.346834421157837
+      ],
+      "dimensions": [
+        0.02395900897681713,
+        0.1857219934463501,
+        0.03829753398895264
+      ],
+      "scale": [
+        0.04828634485602379,
+        0.04828634485602379,
+        0.04828634485602379
+      ],
+      "hidden": false,
+      "vertices": 98,
+      "polygons": 188,
+      "materials": [
+        "Material.003"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "object": "gun_amature"
+        }
+      ]
+    },
+    {
+      "name": "gun_amature",
+      "type": "ARMATURE",
+      "parent": null,
+      "location": [
+        -0.02709488943219185,
+        0.05392426624894142,
+        -0.016797512769699097
+      ],
+      "dimensions": [
+        2.1444066078402102e-08,
+        0.28609499335289,
+        0.11271396279335022
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false,
+      "bones": [
+        {
+          "name": "b_base",
+          "deform": true
+        },
+        {
+          "name": "b_slide",
+          "deform": true
+        },
+        {
+          "name": "b_muzzlespot",
+          "deform": false
+        },
+        {
+          "name": "b_mag",
+          "deform": true
+        },
+        {
+          "name": "b_bullet",
+          "deform": true
+        }
+      ],
+      "animation": {
+        "action": null,
+        "tracks": []
+      }
+    },
+    {
+      "name": "Empty",
+      "type": "EMPTY",
+      "parent": null,
+      "location": [
+        4.478002548217773,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "hidden": false
+    },
+    {
+      "name": "WGT-rig_spine_fk",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -5.894815393653922e-20,
+        -0.029720518738031387,
+        1.0671554803848267
+      ],
+      "dimensions": [
+        0.2269708216190338,
+        0.0,
+        0.2269708216190338
+      ],
+      "scale": [
+        0.1134854108095169,
+        0.1134854108095169,
+        0.1134854108095169
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_spine_fk.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -1.0574264976158763e-20,
+        -0.027501124888658524,
+        1.15193772315979
+      ],
+      "dimensions": [
+        0.16962257027626038,
+        0.0,
+        0.16962257027626038
+      ],
+      "scale": [
+        0.08481128513813019,
+        0.08481128513813019,
+        0.08481128513813019
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_spine_fk.002",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -1.057426336057163e-20,
+        -0.027501124888658524,
+        1.15193772315979
+      ],
+      "dimensions": [
+        0.26384446024894714,
+        0.0,
+        0.26384446024894714
+      ],
+      "scale": [
+        0.13192223012447357,
+        0.13192223012447357,
+        0.13192223012447357
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_spine_fk.003",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -3.1152399370055208e-21,
+        -0.005486186593770981,
+        1.2820100784301758
+      ],
+      "dimensions": [
+        0.1974923014640808,
+        0.0,
+        0.1974923014640808
+      ],
+      "scale": [
+        0.0987461507320404,
+        0.098746158182621,
+        0.0987461507320404
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -5.892172939337727e-20,
+        -0.024423377588391304,
+        0.9537937641143799
+      ],
+      "dimensions": [
+        0.05674276500940323,
+        0.05674276500940323,
+        0.05674276500940323
+      ],
+      "scale": [
+        0.05674276500940323,
+        0.05674276500940323,
+        0.05674276500940323
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -5.889525961377557e-20,
+        -0.029720516875386238,
+        1.0671554803848267
+      ],
+      "dimensions": [
+        0.04240570217370987,
+        0.04240570589900017,
+        0.04240570589900017
+      ],
+      "scale": [
+        0.04240570217370987,
+        0.04240570589900017,
+        0.04240570589900017
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine.002",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -1.0574270630713732e-20,
+        -0.027501124888658524,
+        1.15193772315979
+      ],
+      "dimensions": [
+        0.06596111506223679,
+        0.06596110761165619,
+        0.06596111506223679
+      ],
+      "scale": [
+        0.06596111506223679,
+        0.06596110761165619,
+        0.06596111506223679
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine.003",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -3.1152399370055208e-21,
+        -0.005486186593770981,
+        1.2820100784301758
+      ],
+      "dimensions": [
+        0.0493730753660202,
+        0.0493730790913105,
+        0.0493730753660202
+      ],
+      "scale": [
+        0.0493730753660202,
+        0.0493730790913105,
+        0.0493730753660202
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine.004",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -8.569084255586108e-22,
+        0.0038174467626959085,
+        1.380316972732544
+      ],
+      "dimensions": [
+        0.01083429716527462,
+        0.01083429716527462,
+        0.01083429902791977
+      ],
+      "scale": [
+        0.01083429716527462,
+        0.01083429716527462,
+        0.01083429902791977
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_torso",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        4.842113060225655e-18,
+        -0.027071941643953323,
+        1.010474681854248
+      ],
+      "dimensions": [
+        0.25737905502319336,
+        0.25737905502319336,
+        0.25737905502319336
+      ],
+      "scale": [
+        0.25737905502319336,
+        0.25737905502319336,
+        0.25737905502319336
+      ],
+      "hidden": false,
+      "vertices": 8,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hips",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -5.892172939337727e-20,
+        -0.024423377588391304,
+        0.9537937641143799
+      ],
+      "dimensions": [
+        0.23593080043792725,
+        0.10724127292633057,
+        0.23593081533908844
+      ],
+      "scale": [
+        0.10724127292633057,
+        0.10724127292633057,
+        0.10724128037691116
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_chest",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -3.1152399370055208e-21,
+        -0.005486186593770981,
+        1.2820100784301758
+      ],
+      "dimensions": [
+        0.31457439064979553,
+        0.142988383769989,
+        0.3145744502544403
+      ],
+      "scale": [
+        0.14298835396766663,
+        0.14298836886882782,
+        0.14298836886882782
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_breast.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.06487034261226654,
+        -0.012917641550302505,
+        1.257220983505249
+      ],
+      "dimensions": [
+        0.12531402707099915,
+        0.0,
+        0.12531402707099915
+      ],
+      "scale": [
+        0.12531402707099915,
+        0.12531404197216034,
+        0.12531402707099915
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_breast.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.06487034261226654,
+        -0.012917641550302505,
+        1.257220983505249
+      ],
+      "dimensions": [
+        0.12531402707099915,
+        0.0,
+        0.12531402707099915
+      ],
+      "scale": [
+        -0.12531402707099915,
+        -0.12531404197216034,
+        -0.12531402707099915
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shoulder.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.031754277646541595,
+        -0.0495029017329216,
+        1.3302971124649048
+      ],
+      "dimensions": [
+        0.10471595078706741,
+        0.10471595078706741,
+        0.05235797539353371
+      ],
+      "scale": [
+        0.10471595078706741,
+        0.10471595078706741,
+        0.10471595823764801
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_parent.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.12242329120635986,
+        -0.0028345787432044744,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.11546825617551804,
+        5.047279039160912e-09,
+        0.11546828597784042
+      ],
+      "scale": [
+        0.051312513649463654,
+        0.05131250247359276,
+        0.05131250247359276
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.12242329120635986,
+        -0.0028345882892608643,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.10262506455183029,
+        0.20525014400482178,
+        0.1026250496506691
+      ],
+      "scale": [
+        0.20525012910366058,
+        0.2052500993013382,
+        0.2052500993013382
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.32758796215057373,
+        0.0012274491600692272,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.09291103482246399,
+        0.18582209944725037,
+        0.09291102737188339
+      ],
+      "scale": [
+        0.18582206964492798,
+        0.18582205474376678,
+        0.18582205474376678
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5132588744163513,
+        -0.005219521000981331,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        0.04826947674155235,
+        0.0,
+        0.04826947674155235
+      ],
+      "scale": [
+        0.060336846858263016,
+        0.06033684313297272,
+        0.06033684313297272
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.12242330610752106,
+        -0.0028345887549221516,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.08210005611181259,
+        0.2052501142024994,
+        0.1231500655412674
+      ],
+      "scale": [
+        0.20525014400482178,
+        0.20525012910366058,
+        0.2052500993013382
+      ],
+      "hidden": false,
+      "vertices": 14,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_ik_target.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.3299107849597931,
+        0.3921361565589905,
+        1.318643569946289
+      ],
+      "dimensions": [
+        0.0488659106194973,
+        0.048865918070077896,
+        0.0488659106194973
+      ],
+      "scale": [
+        0.0488659143447876,
+        0.048865918070077896,
+        0.0488659106194973
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5132588148117065,
+        -0.005219511222094297,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        1.4385421742701965e-08,
+        0.10558944195508957,
+        0.08447156101465225
+      ],
+      "scale": [
+        0.06033682823181152,
+        0.060336824506521225,
+        0.060336824506521225
+      ],
+      "hidden": false,
+      "vertices": 8,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "subsurf",
+          "object": null
+        }
+      ]
+    },
+    {
+      "name": "WGT-rig_VIS_upper_arm_ik_pole.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.32758793234825134,
+        0.0012274384498596191,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.0,
+        0.39092734456062317,
+        0.0
+      ],
+      "scale": [
+        0.39092737436294556,
+        0.39092734456062317,
+        0.39092737436294556
+      ],
+      "hidden": false,
+      "vertices": 2,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.12242329865694046,
+        -0.002834584563970566,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.05131250247359276,
+        0.05131250619888306,
+        0.051312509924173355
+      ],
+      "scale": [
+        0.05131250619888306,
+        0.051312509924173355,
+        0.05131250619888306
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_tweak.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.2250056266784668,
+        -0.0008035562932491302,
+        1.3238263130187988
+      ],
+      "dimensions": [
+        0.05131252110004425,
+        0.051312509924173355,
+        0.051312513649463654
+      ],
+      "scale": [
+        0.05131252482533455,
+        0.051312513649463654,
+        0.051312513649463654
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.32758793234825134,
+        0.0012274656910449266,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.046455513685941696,
+        0.0464554987847805,
+        0.0464555062353611
+      ],
+      "scale": [
+        0.046455513685941696,
+        0.0464555025100708,
+        0.0464555062353611
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_tweak.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.42042338848114014,
+        -0.001996019622310996,
+        1.319762945175171
+      ],
+      "dimensions": [
+        0.0464555099606514,
+        0.0464554987847805,
+        0.0464554987847805
+      ],
+      "scale": [
+        0.0464555099606514,
+        0.0464555025100708,
+        0.0464555025100708
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5132588148117065,
+        -0.0052194916643202305,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        0.015084193088114262,
+        0.015084191225469112,
+        0.015084192156791687
+      ],
+      "scale": [
+        0.015084193088114262,
+        0.015084190294146538,
+        0.015084191225469112
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5504052639007568,
+        -0.002968740649521351,
+        1.327193021774292
+      ],
+      "dimensions": [
+        0.028622398152947426,
+        0.0,
+        0.028622398152947426
+      ],
+      "scale": [
+        0.04770399630069733,
+        0.04770398512482643,
+        0.04770399630069733
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.02.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5980944633483887,
+        -0.0029776706360280514,
+        1.3260051012039185
+      ],
+      "dimensions": [
+        0.01768915355205536,
+        0.0,
+        0.017689155414700508
+      ],
+      "scale": [
+        0.0294819213449955,
+        0.02948191575706005,
+        0.029481923207640648
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.03.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.6274135112762451,
+        -0.0029687408823519945,
+        1.3229104280471802
+      ],
+      "dimensions": [
+        0.025837548077106476,
+        0.0,
+        0.025837548077106476
+      ],
+      "scale": [
+        0.04306257888674736,
+        0.04306257143616676,
+        0.04306257888674736
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.6691274642944336,
+        -0.002968740649521351,
+        1.3122178316116333
+      ],
+      "dimensions": [
+        0.012918774038553238,
+        0.0,
+        0.012918774038553238
+      ],
+      "scale": [
+        0.02153128944337368,
+        0.02153128758072853,
+        0.02153128944337368
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01_master.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5504052639007568,
+        -0.002968740649521351,
+        1.327193021774292
+      ],
+      "dimensions": [
+        0.019728273153305054,
+        0.2170109897851944,
+        0.0
+      ],
+      "scale": [
+        0.19728273153305054,
+        0.19728271663188934,
+        0.19728273153305054
+      ],
+      "hidden": false,
+      "vertices": 6,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.L.002",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.537291407585144,
+        -0.024454660713672638,
+        1.3101223707199097
+      ],
+      "dimensions": [
+        0.019631652161478996,
+        0.0,
+        0.019631652161478996
+      ],
+      "scale": [
+        0.03271942213177681,
+        0.03271942213177681,
+        0.03271941840648651
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.02.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5645968914031982,
+        -0.04241696000099182,
+        1.3085969686508179
+      ],
+      "dimensions": [
+        0.018477439880371094,
+        0.0,
+        0.018477438017725945
+      ],
+      "scale": [
+        0.030795730650424957,
+        0.030795730650424957,
+        0.030795728787779808
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.03.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.5939919352531433,
+        -0.05148389935493469,
+        1.3071482181549072
+      ],
+      "dimensions": [
+        0.01743181422352791,
+        0.0,
+        0.017431816086173058
+      ],
+      "scale": [
+        0.02905302308499813,
+        0.02905302122235298,
+        0.02905302308499813
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.L.003",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.6230018138885498,
+        -0.052416153252124786,
+        1.305869221687317
+      ],
+      "dimensions": [
+        0.008715895935893059,
+        0.0,
+        0.008715895935893059
+      ],
+      "scale": [
+        0.014526491984724998,
+        0.014526492916047573,
+        0.014526491984724998
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01_master.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.537291407585144,
+        -0.024454660713672638,
+        1.3101223707199097
+      ],
+      "dimensions": [
+        0.014553986489772797,
+        0.16009385883808136,
+        0.0
+      ],
+      "scale": [
+        0.14553986489772797,
+        0.14553986489772797,
+        0.14553984999656677
+      ],
+      "hidden": false,
+      "vertices": 6,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shoulder.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.031754277646541595,
+        -0.0495029017329216,
+        1.3302971124649048
+      ],
+      "dimensions": [
+        0.10471595078706741,
+        0.10471595078706741,
+        0.052357979118824005
+      ],
+      "scale": [
+        -0.10471595078706741,
+        -0.10471595078706741,
+        -0.10471595823764801
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_parent.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.12242329120635986,
+        -0.002834578510373831,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.11546824872493744,
+        5.047279483250122e-09,
+        0.11546827852725983
+      ],
+      "scale": [
+        -0.051312509924173355,
+        -0.05131250619888306,
+        -0.05131250247359276
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.12242329120635986,
+        -0.0028345882892608643,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.10262506455183029,
+        0.20525014400482178,
+        0.1026250496506691
+      ],
+      "scale": [
+        -0.20525012910366058,
+        -0.2052500993013382,
+        -0.2052500993013382
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.32758796215057373,
+        0.0012274491600692272,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.09291103482246399,
+        0.18582209944725037,
+        0.09291102737188339
+      ],
+      "scale": [
+        -0.18582206964492798,
+        -0.18582205474376678,
+        -0.18582205474376678
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5132588744163513,
+        -0.005219521000981331,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        0.04826947674155235,
+        0.0,
+        0.04826947674155235
+      ],
+      "scale": [
+        -0.060336846858263016,
+        -0.06033684313297272,
+        -0.06033684313297272
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.12242331355810165,
+        -0.0028345887549221516,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.08210005611181259,
+        0.2052501142024994,
+        0.1231500655412674
+      ],
+      "scale": [
+        -0.20525012910366058,
+        -0.2052501142024994,
+        -0.205250084400177
+      ],
+      "hidden": false,
+      "vertices": 14,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_ik_target.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.3299107849597931,
+        0.3921361565589905,
+        1.318643569946289
+      ],
+      "dimensions": [
+        0.0488659106194973,
+        0.048865918070077896,
+        0.0488659106194973
+      ],
+      "scale": [
+        -0.0488659143447876,
+        -0.048865918070077896,
+        -0.0488659106194973
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5132588148117065,
+        -0.005219511222094297,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        1.4385421742701965e-08,
+        0.10558944195508957,
+        0.08447156101465225
+      ],
+      "scale": [
+        -0.06033682823181152,
+        -0.060336824506521225,
+        -0.060336824506521225
+      ],
+      "hidden": false,
+      "vertices": 8,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "subsurf",
+          "object": null
+        }
+      ]
+    },
+    {
+      "name": "WGT-rig_VIS_upper_arm_ik_pole.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.32758793234825134,
+        0.0012274384498596191,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.0,
+        0.39092734456062317,
+        0.0
+      ],
+      "scale": [
+        -0.39092737436294556,
+        -0.39092734456062317,
+        -0.39092737436294556
+      ],
+      "hidden": false,
+      "vertices": 2,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.12242329865694046,
+        -0.002834583632647991,
+        1.325979471206665
+      ],
+      "dimensions": [
+        0.05131249129772186,
+        0.05131250619888306,
+        0.05131249502301216
+      ],
+      "scale": [
+        -0.05131249502301216,
+        -0.05131250619888306,
+        -0.05131249502301216
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_upper_arm_tweak.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.2250056266784668,
+        -0.0008035556529648602,
+        1.3238263130187988
+      ],
+      "dimensions": [
+        0.051312532275915146,
+        0.051312532275915146,
+        0.05131252482533455
+      ],
+      "scale": [
+        -0.051312536001205444,
+        -0.051312532275915146,
+        -0.05131252482533455
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.32758796215057373,
+        0.0012274658074602485,
+        1.321673035621643
+      ],
+      "dimensions": [
+        0.046455513685941696,
+        0.0464555025100708,
+        0.0464555062353611
+      ],
+      "scale": [
+        -0.046455513685941696,
+        -0.0464555062353611,
+        -0.0464555062353611
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_forearm_tweak.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.4204234182834625,
+        -0.001996019622310996,
+        1.319762945175171
+      ],
+      "dimensions": [
+        0.0464555099606514,
+        0.0464554987847805,
+        0.0464555025100708
+      ],
+      "scale": [
+        -0.0464555099606514,
+        -0.0464555025100708,
+        -0.0464555025100708
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_hand_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5132588744163513,
+        -0.005219504237174988,
+        1.3178529739379883
+      ],
+      "dimensions": [
+        0.015084193088114262,
+        0.015084191225469112,
+        0.015084191225469112
+      ],
+      "scale": [
+        -0.015084193088114262,
+        -0.015084191225469112,
+        -0.015084191225469112
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5504053235054016,
+        -0.0029687415808439255,
+        1.327193021774292
+      ],
+      "dimensions": [
+        0.028622398152947426,
+        0.0,
+        0.028622398152947426
+      ],
+      "scale": [
+        -0.04770399630069733,
+        -0.04770398885011673,
+        -0.04770399630069733
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.02.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5980945229530334,
+        -0.002977671567350626,
+        1.3260051012039185
+      ],
+      "dimensions": [
+        0.01768915355205536,
+        0.0,
+        0.017689155414700508
+      ],
+      "scale": [
+        -0.0294819213449955,
+        -0.0294819176197052,
+        -0.029481923207640648
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.03.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.6274135708808899,
+        -0.002968741813674569,
+        1.3229104280471802
+      ],
+      "dimensions": [
+        0.025837548077106476,
+        0.0,
+        0.025837546214461327
+      ],
+      "scale": [
+        -0.04306257888674736,
+        -0.04306257516145706,
+        -0.04306257516145706
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.6691275238990784,
+        -0.0029687415808439255,
+        1.3122178316116333
+      ],
+      "dimensions": [
+        0.012918773107230663,
+        0.0,
+        0.012918773107230663
+      ],
+      "scale": [
+        -0.02153128758072853,
+        -0.02153128571808338,
+        -0.02153128944337368
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01_master.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5504053235054016,
+        -0.0029687415808439255,
+        1.327193021774292
+      ],
+      "dimensions": [
+        0.019728273153305054,
+        0.2170110046863556,
+        0.0
+      ],
+      "scale": [
+        -0.19728273153305054,
+        -0.19728273153305054,
+        -0.19728273153305054
+      ],
+      "hidden": false,
+      "vertices": 6,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.R.002",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5372914671897888,
+        -0.02445465885102749,
+        1.3101223707199097
+      ],
+      "dimensions": [
+        0.019631655886769295,
+        0.0,
+        0.019631654024124146
+      ],
+      "scale": [
+        -0.03271942585706711,
+        -0.0327194407582283,
+        -0.03271942213177681
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.02.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.564596951007843,
+        -0.04241696372628212,
+        1.3085969686508179
+      ],
+      "dimensions": [
+        0.018477439880371094,
+        0.0,
+        0.018477438017725945
+      ],
+      "scale": [
+        -0.030795730650424957,
+        -0.030795739963650703,
+        -0.030795728787779808
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.03.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5939919948577881,
+        -0.05148390308022499,
+        1.3071482181549072
+      ],
+      "dimensions": [
+        0.01743181422352791,
+        0.0,
+        0.017431816086173058
+      ],
+      "scale": [
+        -0.02905302308499813,
+        -0.029053030535578728,
+        -0.02905302494764328
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01.R.003",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.6230018734931946,
+        -0.052416156977415085,
+        1.305869221687317
+      ],
+      "dimensions": [
+        0.008715895935893059,
+        0.0,
+        0.008715895935893059
+      ],
+      "scale": [
+        -0.014526491984724998,
+        -0.014526492916047573,
+        -0.014526492916047573
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_f_pinky.01_master.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.5372914671897888,
+        -0.02445465885102749,
+        1.3101223707199097
+      ],
+      "dimensions": [
+        0.014553986489772797,
+        0.16009384393692017,
+        0.0
+      ],
+      "scale": [
+        -0.14553986489772797,
+        -0.14553984999656677,
+        -0.14553984999656677
+      ],
+      "hidden": false,
+      "vertices": 6,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_neck",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -8.569084255586108e-22,
+        0.0038174474611878395,
+        1.380316972732544
+      ],
+      "dimensions": [
+        0.09471714496612549,
+        0.0,
+        0.09471716731786728
+      ],
+      "scale": [
+        0.047358572483062744,
+        0.047358572483062744,
+        0.04735857993364334
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_head",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -5.932432926427869e-22,
+        -0.005946231074631214,
+        1.4266581535339355
+      ],
+      "dimensions": [
+        0.23347583413124084,
+        0.0,
+        0.23347586393356323
+      ],
+      "scale": [
+        0.23347583413124084,
+        0.23347584903240204,
+        0.23347586393356323
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_tweak_spine.005",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -7.015487200020936e-22,
+        0.0007610077736899257,
+        1.4017690420150757
+      ],
+      "dimensions": [
+        0.012888570316135883,
+        0.012888571247458458,
+        0.012888573110103607
+      ],
+      "scale": [
+        0.012888570316135883,
+        0.012888570316135883,
+        0.012888572178781033
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_parent.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.06932433694601059,
+        -0.018804822117090225,
+        0.9271325469017029
+      ],
+      "dimensions": [
+        0.18528835475444794,
+        8.099207526868213e-09,
+        0.1852884590625763
+      ],
+      "scale": [
+        0.08233960717916489,
+        0.08233954012393951,
+        0.08233962208032608
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.06932432949542999,
+        -0.018804829567670822,
+        0.9271324872970581
+      ],
+      "dimensions": [
+        0.1646791249513626,
+        0.32935836911201477,
+        0.164679154753685
+      ],
+      "scale": [
+        0.3293582499027252,
+        0.3293582797050476,
+        0.3293582797050476
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.07972396165132523,
+        -0.015495669096708298,
+        0.5979551076889038
+      ],
+      "dimensions": [
+        0.2408200204372406,
+        0.481640100479126,
+        0.240820050239563
+      ],
+      "scale": [
+        0.4816400408744812,
+        0.4816400110721588,
+        0.481640100479126
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.09699264168739319,
+        -0.004760356154292822,
+        0.11674445867538452
+      ],
+      "dimensions": [
+        0.09613596647977829,
+        0.0,
+        0.0961359366774559
+      ],
+      "scale": [
+        0.12016994506120682,
+        0.12016996741294861,
+        0.12016992270946503
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_toe_fk.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.09976048767566681,
+        -0.0830535814166069,
+        0.025621840730309486
+      ],
+      "dimensions": [
+        0.10290791839361191,
+        0.0,
+        0.10290791839361191
+      ],
+      "scale": [
+        0.12863489985466003,
+        0.12863491475582123,
+        0.12863489985466003
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.06932432949542999,
+        -0.018804825842380524,
+        0.9271324872970581
+      ],
+      "dimensions": [
+        0.13174332678318024,
+        0.32935836911201477,
+        0.19761502742767334
+      ],
+      "scale": [
+        0.32935830950737,
+        0.32935836911201477,
+        0.32935836911201477
+      ],
+      "hidden": false,
+      "vertices": 14,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_ik_target.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.18771541118621826,
+        -0.7807844281196594,
+        0.5755711793899536
+      ],
+      "dimensions": [
+        0.10137275606393814,
+        0.10137275606393814,
+        0.10137275606393814
+      ],
+      "scale": [
+        0.10137275606393814,
+        0.10137275606393814,
+        0.10137275606393814
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.09699264913797379,
+        -0.004760347306728363,
+        0.11674437671899796
+      ],
+      "dimensions": [
+        0.16823799908161163,
+        0.21029746532440186,
+        0.0
+      ],
+      "scale": [
+        0.1201699823141098,
+        0.1201699823141098,
+        0.1201699823141098
+      ],
+      "hidden": false,
+      "vertices": 8,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "subsurf",
+          "object": null
+        }
+      ]
+    },
+    {
+      "name": "WGT-rig_VIS_thigh_ik_pole.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.07972396165132523,
+        -0.015495657920837402,
+        0.5979551076889038
+      ],
+      "dimensions": [
+        0.0,
+        0.8109818696975708,
+        0.0
+      ],
+      "scale": [
+        0.8109819293022156,
+        0.8109818696975708,
+        0.8109819293022156
+      ],
+      "hidden": false,
+      "vertices": 2,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.06932432949542999,
+        -0.018804827705025673,
+        0.9271325469017029
+      ],
+      "dimensions": [
+        0.08233966678380966,
+        0.08233959972858429,
+        0.08233967423439026
+      ],
+      "scale": [
+        0.08233966678380966,
+        0.08233960717916489,
+        0.08233968168497086
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_tweak.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0745241567492485,
+        -0.01715024746954441,
+        0.7625439167022705
+      ],
+      "dimensions": [
+        0.08233877271413803,
+        0.08233870565891266,
+        0.08233878761529922
+      ],
+      "scale": [
+        0.08233877271413803,
+        0.08233870565891266,
+        0.08233878761529922
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.07972397655248642,
+        -0.015495668165385723,
+        0.5979552268981934
+      ],
+      "dimensions": [
+        0.12041015923023224,
+        0.12041004747152328,
+        0.12041016668081284
+      ],
+      "scale": [
+        0.12041015923023224,
+        0.12041005492210388,
+        0.12041016668081284
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_tweak.L.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0883583202958107,
+        -0.010128011927008629,
+        0.35734987258911133
+      ],
+      "dimensions": [
+        0.12041010707616806,
+        0.12040998786687851,
+        0.12041011452674866
+      ],
+      "scale": [
+        0.12041009962558746,
+        0.1204099953174591,
+        0.12041011452674866
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_tweak.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.09699265658855438,
+        -0.00476036686450243,
+        0.11674464493989944
+      ],
+      "dimensions": [
+        0.03004252351820469,
+        0.0300424937158823,
+        0.030042489990592003
+      ],
+      "scale": [
+        0.03004252351820469,
+        0.0300424937158823,
+        0.030042489990592003
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_spin_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0997604951262474,
+        -0.0830535814166069,
+        0.025621749460697174
+      ],
+      "dimensions": [
+        0.044045720249414444,
+        0.044045720249414444,
+        0.010606547817587852
+      ],
+      "scale": [
+        0.060084983706474304,
+        0.060084983706474304,
+        0.060084983706474304
+      ],
+      "hidden": false,
+      "vertices": 52,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_heel_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.09699264913797379,
+        -0.00476035475730896,
+        0.11674437671899796
+      ],
+      "dimensions": [
+        0.05872763320803642,
+        0.014142070896923542,
+        0.05872763693332672
+      ],
+      "scale": [
+        0.0600849911570549,
+        0.0600849911570549,
+        0.0600849911570549
+      ],
+      "hidden": false,
+      "vertices": 52,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_toe_ik.L",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0997604951262474,
+        -0.08305356651544571,
+        0.025621769949793816
+      ],
+      "dimensions": [
+        0.10290808975696564,
+        0.0,
+        0.10290906578302383
+      ],
+      "scale": [
+        0.12863509356975555,
+        0.12863491475582123,
+        0.12863633036613464
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_parent.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.0693243220448494,
+        -0.018804822117090225,
+        0.9271326065063477
+      ],
+      "dimensions": [
+        0.18528835475444794,
+        8.099206638689793e-09,
+        0.1852884590625763
+      ],
+      "scale": [
+        -0.08233960717916489,
+        -0.08233953267335892,
+        -0.08233962208032608
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.06932432949542999,
+        -0.018804829567670822,
+        0.9271324872970581
+      ],
+      "dimensions": [
+        0.1646791249513626,
+        0.3293582797050476,
+        0.16467909514904022
+      ],
+      "scale": [
+        -0.3293582499027252,
+        -0.32935819029808044,
+        -0.32935819029808044
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.07972396165132523,
+        -0.01549567375332117,
+        0.5979551076889038
+      ],
+      "dimensions": [
+        0.24082012474536896,
+        0.4816402196884155,
+        0.24082009494304657
+      ],
+      "scale": [
+        -0.4816402494907379,
+        -0.48164013028144836,
+        -0.48164018988609314
+      ],
+      "hidden": false,
+      "vertices": 34,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.09699264913797379,
+        -0.004760358016937971,
+        0.11674433946609497
+      ],
+      "dimensions": [
+        0.09613600373268127,
+        0.0,
+        0.09613598138093948
+      ],
+      "scale": [
+        -0.12017000466585159,
+        -0.1201699823141098,
+        -0.1201699748635292
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_toe_fk.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.0997604951262474,
+        -0.0830535963177681,
+        0.02562171407043934
+      ],
+      "dimensions": [
+        0.10290797054767609,
+        0.0,
+        0.10290791094303131
+      ],
+      "scale": [
+        -0.12863494455814362,
+        -0.12863494455814362,
+        -0.12863488495349884
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.06932432949542999,
+        -0.018804829567670822,
+        0.9271324872970581
+      ],
+      "dimensions": [
+        0.13174329698085785,
+        0.32935819029808044,
+        0.19761495292186737
+      ],
+      "scale": [
+        -0.3293582499027252,
+        -0.32935819029808044,
+        -0.3293582499027252
+      ],
+      "hidden": false,
+      "vertices": 14,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_ik_target.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.18771541118621826,
+        -0.7807844281196594,
+        0.5755711793899536
+      ],
+      "dimensions": [
+        0.10137275606393814,
+        0.10137275606393814,
+        0.10137275606393814
+      ],
+      "scale": [
+        -0.10137275606393814,
+        -0.10137275606393814,
+        -0.10137275606393814
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.09699264913797379,
+        -0.004760347306728363,
+        0.11674437671899796
+      ],
+      "dimensions": [
+        0.16823799908161163,
+        0.21029746532440186,
+        0.0
+      ],
+      "scale": [
+        -0.1201699823141098,
+        -0.1201699823141098,
+        -0.1201699823141098
+      ],
+      "hidden": false,
+      "vertices": 8,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "subsurf",
+          "object": null
+        }
+      ]
+    },
+    {
+      "name": "WGT-rig_VIS_thigh_ik_pole.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.07972396165132523,
+        -0.015495657920837402,
+        0.5979551076889038
+      ],
+      "dimensions": [
+        0.0,
+        0.810981810092926,
+        0.0
+      ],
+      "scale": [
+        -0.8109819293022156,
+        -0.810981810092926,
+        -0.810981810092926
+      ],
+      "hidden": false,
+      "vertices": 2,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.06932432949542999,
+        -0.018804825842380524,
+        0.9271325469017029
+      ],
+      "dimensions": [
+        0.08233960717916489,
+        0.08233954012393951,
+        0.08233962953090668
+      ],
+      "scale": [
+        -0.08233960717916489,
+        -0.08233954757452011,
+        -0.08233962953090668
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_thigh_tweak.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.07452413439750671,
+        -0.01715024560689926,
+        0.7625439763069153
+      ],
+      "dimensions": [
+        0.0823388323187828,
+        0.08233875036239624,
+        0.082338847219944
+      ],
+      "scale": [
+        -0.0823388323187828,
+        -0.08233875781297684,
+        -0.082338847219944
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.07972394675016403,
+        -0.015495668165385723,
+        0.5979552268981934
+      ],
+      "dimensions": [
+        0.12041012197732925,
+        0.1204100027680397,
+        0.12041013687849045
+      ],
+      "scale": [
+        -0.12041011452674866,
+        -0.1204100102186203,
+        -0.12041013687849045
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_shin_tweak.R.001",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.08835829049348831,
+        -0.010128010995686054,
+        0.3573499321937561
+      ],
+      "dimensions": [
+        0.12041015177965164,
+        0.12041003257036209,
+        0.12041017413139343
+      ],
+      "scale": [
+        -0.12041015177965164,
+        -0.12041004002094269,
+        -0.12041017413139343
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_tweak.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.096992626786232,
+        -0.004760362673550844,
+        0.11674463748931885
+      ],
+      "dimensions": [
+        0.03004251979291439,
+        0.0300424974411726,
+        0.03004249557852745
+      ],
+      "scale": [
+        -0.03004251979291439,
+        -0.0300424974411726,
+        -0.0300424937158823
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_spin_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.0997604951262474,
+        -0.0830535814166069,
+        0.025621749460697174
+      ],
+      "dimensions": [
+        0.044045720249414444,
+        0.044045720249414444,
+        0.010606547817587852
+      ],
+      "scale": [
+        -0.060084983706474304,
+        -0.060084983706474304,
+        -0.060084983706474304
+      ],
+      "hidden": false,
+      "vertices": 52,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_foot_heel_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.09699264913797379,
+        -0.00476035475730896,
+        0.11674437671899796
+      ],
+      "dimensions": [
+        0.05872763320803642,
+        0.014142070896923542,
+        0.05872763693332672
+      ],
+      "scale": [
+        -0.0600849911570549,
+        -0.0600849911570549,
+        -0.0600849911570549
+      ],
+      "hidden": false,
+      "vertices": 52,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_toe_ik.R",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        -0.0997604951262474,
+        -0.08305356651544571,
+        0.025621769949793816
+      ],
+      "dimensions": [
+        0.10290808975696564,
+        0.0,
+        0.10290906578302383
+      ],
+      "scale": [
+        -0.12863509356975555,
+        -0.12863491475582123,
+        -0.12863633036613464
+      ],
+      "hidden": false,
+      "vertices": 32,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    },
+    {
+      "name": "WGT-rig_root",
+      "type": "MESH",
+      "parent": null,
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "dimensions": [
+        2.5872275829315186,
+        2.5872271060943604,
+        0.0
+      ],
+      "scale": [
+        0.8183361887931824,
+        0.8183361887931824,
+        0.8183361887931824
+      ],
+      "hidden": false,
+      "vertices": 48,
+      "polygons": 0,
+      "materials": [],
+      "modifiers": []
+    }
+  ],
+  "actions": [
+    {
+      "name": "rigAction",
+      "frames": [
+        1.0,
+        72.0
+      ],
+      "slots": [
+        "OBrig"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "BEA643A1-2937-412C-B7AD-8E3BAF349A39.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "path": "//..\\BEA643A1-2937-412C-B7AD-8E3BAF349A39.png",
+      "packed": true
+    },
+    {
+      "name": "BF39E296-D78C-4E6B-8FC2-0125D62F1D2F.png",
+      "size": [
+        256,
+        256
+      ],
+      "path": "//..\\BF39E296-D78C-4E6B-8FC2-0125D62F1D2F.png",
+      "packed": true
+    },
+    {
+      "name": "DC7D8FD9-8AA4-4C7A-B77D-08C64A3A331F.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "path": "//..\\DC7D8FD9-8AA4-4C7A-B77D-08C64A3A331F.png",
+      "packed": true
+    },
+    {
+      "name": "Image_0",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": true
+    },
+    {
+      "name": "Image_0.001",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": true
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "path": "",
+      "packed": false
+    },
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": false
+    }
+  ]
+}

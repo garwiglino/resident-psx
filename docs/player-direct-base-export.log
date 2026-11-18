@@ -1,0 +1,18 @@
+00:03.000  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\player_modular_export.py:112: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(name);mat.use_nodes=True
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+13:03:45 | INFO: Starting glTF 2.0 export
+13:03:45 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+13:03:45 | INFO: Extracting primitive: Mesh_0.002
+13:03:45 | INFO: Primitives created: 3
+13:03:45 | INFO: Extracting primitive: Mesh_0.003
+13:03:45 | INFO: Primitives created: 1
+13:03:46 | INFO: Finished glTF 2.0 export in 0.52120041847229 s
+
+MODULAR_CHARACTER_EXPORTED {"asset": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\cop_player.glb", "source_sha256": "82e2a6722d5c2dd4115584d66cb55fe29d848c0ecd5d2897017045a4488b5dad", "joints": 270, "mask_faces": 150, "alignment": "source"}
+ARTIST_SOURCE_UNCHANGED 82e2a6722d5c2dd4115584d66cb55fe29d848c0ecd5d2897017045a4488b5dad PRESERVED_ANIMATION_WEAPON_ASSETS 44
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

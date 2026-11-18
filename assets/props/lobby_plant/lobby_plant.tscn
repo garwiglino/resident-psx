@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dwhrjuki2hvju"]
+
+[ext_resource type="ArrayMesh" path="res://assets/props/lobby_plant/lobby_plant.mesh.res" id="1_dc1qv"]
+[ext_resource type="Shape3D" path="res://assets/props/lobby_plant/lobby_plant.collision.res" id="2_vi3sp"]
+
+[node name="lobby_plant" type="Node3D" unique_id=444446440]
+metadata/psx_asset_type = "prop"
+
+[node name="Modele" type="MeshInstance3D" parent="." unique_id=191268444]
+mesh = ExtResource("1_dc1qv")
+
+[node name="Collision" type="StaticBody3D" parent="." unique_id=975692358]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collision" unique_id=1673487010]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018471181, 0.4068003, -0.011160761)
+shape = ExtResource("2_vi3sp")

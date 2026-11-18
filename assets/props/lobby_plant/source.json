@@ -1,0 +1,16 @@
+{
+	"asset_name": "lobby_plant",
+	"asset_type": "prop",
+	"backup": "res://exports/backups/blender_addon/1794496984_300557/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "e54818aef7d697ad01c6e1a634b1faf643e804c3a5cac8001626ba98d980d459",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/props/lobby_plant/lobby_plant.tscn",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene(1).blend1",
+	"source_objects": [
+		"Cube"
+	],
+	"triangles": 860
+}

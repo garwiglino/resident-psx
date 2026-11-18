@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cmhjgsdxq5jwe"]
+
+[ext_resource type="PackedScene" uid="uid://cuauydox6q5q2" path="res://scenes/couloir_pieces.tscn" id="2"]
+[ext_resource type="Script" uid="uid://bkx8ndylof05d" path="res://scripts/world_events/world_action.gd" id="3_jscy8"]
+[ext_resource type="Resource" uid="uid://bdebg0ugna24b" path="res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres" id="4_pm3ni"]
+
+[ext_resource type="PackedScene" path="res://scenes/systemes_jeu.tscn" id="100_session"]
+
+[sub_resource type="Resource" id="Resource_j3pel"]
+script = ExtResource("3_jscy8")
+kind = 4
+dialogue = ExtResource("4_pm3ni")
+metadata/_custom_type_script = "uid://bkx8ndylof05d"
+
+[node name="SousScelles" unique_id=386892032 instance=ExtResource("100_session")]
+legacy_couloir_content = true
+
+[node name="Map" parent="." unique_id=2070663527 instance=ExtResource("2")]
+
+[node name="Archives" parent="Map/Gameplay/Ennemis" index="0"]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.9, 0, -7)
+death_actions = Array[ExtResource("3_jscy8")]([SubResource("Resource_j3pel")])
+
+[node name="FondCouloir" parent="Map/Gameplay/Ennemis" index="1"]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -18)
+
+[node name="Atelier" parent="Map/Gameplay/Ennemis" index="2"]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.5, 0, -13)
+
+[node name="Reserve" parent="Map/Gameplay/Ennemis" index="3"]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, -5)
+
+[editable path="Map"]

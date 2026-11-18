@@ -1,0 +1,90 @@
+AUDIO DES NIVEAUX
+
+MISE A JOUR : le gestionnaire est maintenant integre au noeud ReglagesNiveau,
+avec le fog et les couleurs du niveau. Ce noeud remplace AudioNiveau ; ne pas
+ajouter de deuxieme gestionnaire. Voir NIVEAUX.txt pour creer une carte et la
+lancer directement avec F6. Les options Profile et les zones ci-dessous restent
+les memes.
+
+Fichiers
+- assets/audio/ambiance : boucles d'ambiance.
+- assets/audio/music : musique d'exploration et musique de combat.
+- assets/audio/stinger : effets ponctuels de peur ou autres evenements.
+Tous ces sons gardent le traitement PS1 existant. Aucun son ne joue dans l'editeur.
+
+AMBIANCE PRINCIPALE ET MUSIQUE
+Ouvrir scenes/couloir_pieces.tscn, puis selectionner ReglagesNiveau.
+Ouvrir sa ressource Profile dans l'inspecteur :
+- Ambience Layers : chaque element est une LevelAmbienceLayer, avec Stream et Volume Db.
+  Glisser un fichier depuis audio/ambiance dans Stream. Jusqu'a trois couches simultanees.
+  room_tone.wav est deja assigne comme ambiance principale a -12 dB.
+- Exploration Music : assigner la musique normale du niveau.
+- Combat Music : assigner la musique de combat.
+- Exploration Volume Db et Combat Volume Db : volumes propres aux deux morceaux.
+- Crossfade Seconds : duree des fondus au demarrage et entre les deux musiques.
+- Combat Release Delay : attente apres la derniere menace avant le retour a l'exploration.
+Sans musique de combat, la musique d'exploration continue.
+
+Le gestionnaire propose les volumes propres au niveau Ambience, Music et Effects.
+Le mixage commun se regle avec le bouton Mixage audio : AUDIO-PSX.txt.
+Les boucles sont activees uniquement sur les copies lues par ce gestionnaire :
+le son importe conserve ses reglages et peut servir ailleurs comme effet ponctuel.
+
+ZONES QUI REMPLACENT L'AMBIANCE PRINCIPALE
+1. Glisser scenes/audio/ambience_zone.tscn dans la carte.
+2. Placer ZoneAmbiance, puis regler la taille de Volume > Shape > Size.
+   Activer les enfants editables de l'instance si necessaire pour acceder a Volume.
+3. Sur ZoneAmbiance, ouvrir Ambience Layers, ajouter un element et choisir
+   Nouvelle LevelAmbienceLayer. Assigner son Stream et son Volume Db.
+4. Regler Transition Seconds pour le fondu d'entree et de sortie.
+5. Regler Audio Priority si plusieurs zones se chevauchent.
+
+Le modele est generique : aucun son exterieur n'est preassigne et aucune zone
+n'est imposee dans la carte. Choisir manuellement chaque ambiance.
+La priorite la plus haute gagne ; a egalite, la derniere zone entree gagne.
+En quittant une zone, on revient a la zone encore occupee de priorite suivante,
+ou a l'ambiance principale si aucune zone ne reste. La musique continue independamment.
+Un changement pendant un fondu repart des volumes actuels, sans retour brutal au debut.
+Une zone dont Ambience Layers est vide cree volontairement une zone silencieuse.
+Enabled permet de couper/reactiver une zone, meme si le joueur est encore dedans.
+Les zones detectent uniquement le joueur, pas les ennemis ni les chargeurs ejectes.
+Leur masque physique doit continuer a inclure la couche 2 du joueur.
+
+COMBAT
+La detection utilise les ennemis vivants engages avec le joueur.
+Viser ou tirer dans le vide ne suffit pas a declencher la musique de combat.
+Combat Enter Distance et Combat Exit Distance evitent les basculements a la limite.
+La mort, la suppression ou l'eloignement de la derniere menace lance le delai de retour.
+Combat Mode : Automatique, Calme force ou Combat force pour une sequence scenarisee.
+La pause suspend aussi les sons et les fondus. La fin/recharge du niveau libere ses lecteurs.
+
+EFFETS DE PEUR ET AUTRES EVENEMENTS
+Glisser scenes/audio/scare_trigger.tscn dans la carte, puis placer son volume.
+Sur EffetPeur > Cue > Variants, ajouter un ou plusieurs fichiers de audio/stinger.
+- Once : une seule activation par chargement de niveau.
+- Cooldown Seconds : delai minimum entre deux activations du meme effet.
+- Plusieurs variantes : choix aleatoire sans repetition immediate.
+- Spatial desactive : son global. Active : son 3D au centre du declencheur,
+  avec Max Distance reglable.
+- Audio Category : categorie de mixage (Stingers par defaut).
+- Music Duck Db / Duck Seconds : baisse temporairement la musique sous l'effet,
+  puis la fait remonter progressivement ; le morceau continue sa lecture.
+Le modele reste muet et arme tant qu'aucun fichier n'est assigne.
+On peut brancher un signal de porte ou d'evenement sur trigger(), et re-armer via reset().
+Les sons sont independants des zones d'ambiance : une zone ne joue pas un effet de peur
+si aucun declencheur n'a ete place.
+
+Pour les evenements par code, ajouter des LevelAudioCue dans Profile > Cues,
+donner un Id a chaque effet, puis appeler AudioNiveau.play_cue(&"scare", position).
+AudioNiveau.play_effect(ressource_cue, position) accepte aussi une ressource directe.
+Les effets et ambiances reutilisent des lecteurs en nombre limite ; pas d'accumulation
+de noeuds audio en traversant les zones ou en repetant des evenements.
+
+AUTRE NIVEAU
+Les nouvelles cartes contiennent deja PSXLevelSettings appele ReglagesNiveau.
+Pour une ancienne carte, le bouton Reglages niveau de la vue 3D l'ajoute.
+Creer un nouveau LevelAudioProfile dans Profile et l'enregistrer dans assets/audio/levels.
+Dupliquer le profil avant de changer les sons d'un autre niveau, pour ne pas partager
+involontairement les reglages. Les zones trouvent le gestionnaire de leur propre carte.
+
+Validation : tests/level_audio.gd ; rapport docs/level-audio-validation.json.

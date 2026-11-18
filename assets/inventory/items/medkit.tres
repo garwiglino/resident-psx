@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/item_definition.gd" id="1_hj1xg"]
+[ext_resource type="Script" path="res://scripts/world_events/world_action.gd" id="2_ap7m0"]
+
+[resource]
+script = ExtResource("1_hj1xg")
+id = &"medkit"
+display_name = "Trousse de soin"
+description = "Restaure 50 points de sante."
+kind = 0
+stack_limit = 5
+healing = 50

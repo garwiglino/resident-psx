@@ -1,0 +1,106 @@
+AUDIO DU JEU - MIXAGE ET SORTIE 22050 HZ
+
+REGLAGES COMMUNS
+Menu Projet > Outils > Mixage audio, accessible depuis tous les ecrans.
+Un bouton Mixage audio est aussi present dans la barre de la vue 3D.
+Acces direct : double-cliquer assets/audio/mixage.tres dans les fichiers.
+Le bouton ouvre assets/audio/mixage.tres. Enregistrer la ressource pour garder
+les modifications. Les reglages sont communs a toutes les cartes :
+- Volume General : volume final, avec une marge par defaut de -3 dB.
+- Bruitages : parent des pas, mouvements du joueur, interactions et armes.
+- Pas : tous les pas ; Joueur : douleur et bruitages du personnage.
+- Armes : parent des tirs et des mecanismes d'arme.
+- Tirs : coups de feu ; Mecanismes Arme : recharge, visee, clic a vide et impacts.
+- Voix : repliques normales et intercom, avec le meme reglage dans les deux modes.
+- Intercom Effets : ouvertures, fermetures, fond radio et raccroche du talkie.
+- Ambiances, Musique, Stingers et Interface : leurs categories respectives.
+
+Les bus correspondants sont visibles dans le panneau Audio de Godot.
+Chaque chemin sec conserve les volumes et mutes de sa categorie et de ses parents.
+Le Volume General pilote MVOLL/MVOLR dans le SPU ; le bus Master Godot reste a
+0 dB. Les voix du jeu utilisent les registres VOLL/VOLR, EON et ADSR natifs.
+
+REGLAGES PROPRES AUX SONS
+Joueur > Audio - pas : huit variantes beton, Footstep Volume Db (-16 dB),
+Running Footstep Gain Db (+1,5 dB), variation de pitch (+/-3 %).
+Les variantes ne se repetent pas immediatement ; quatre lecteurs laissent finir
+les impacts. Les contacts suivent toujours les semelles animees et le root motion.
+
+Joueur > Audio - armes : Shot Volume Db (-8), Reload Volume Db (-14),
+Weapon Handling Volume Db (-18). Joueur > Audio - joueur : douleur et effets.
+WeaponDefinition > Audio : fichiers de l'arme et gains propres au tir, recharge,
+mise en joue/clic a vide. La scene Pistol garde les volumes et portees de ses
+impacts de douilles et de chargeur.
+
+DialogueLine > Audio Volume Db reste un ajustement volontaire de la replique.
+Le niveau commun est prepare avant cet ajustement ; sa valeur par defaut est -8 dB.
+DialogueStyle garde les volumes des lettres, fenetres et sons de talkie.
+DialogueStyle > Intercom : Intercom Loop Sound choisit le fond radio et
+Intercom Loop Volume Db son volume (-14 dB). Le fond demarre avec la voix,
+boucle pendant ses pages, se suspend avec elle et s'arrete a sa fin ou si la
+replique est passee/annulee. Les repliques normales ne lancent pas ce fond.
+Le fichier talkie_loop est prepare a -24 LUFS puis joue discretement sous la
+voix ; ses variations suivent Intercom Effets, toujours sans reverb.
+Reglages dialogues > Volume Raccroche Db ajuste intercom_end seul (-4 dB).
+Ce niveau est augmente de 6 dB ; le volume des autres effets radio reste intact.
+Les sons de lettres/fenetres et l'inventaire suivent Interface.
+
+ReglagesNiveau > Profile conserve les sons et niveaux propres a la carte.
+Ces volumes s'ajoutent au mixage commun. Voir AUDIO-NIVEAUX.txt.
+Les LevelAudioCue proposent Audio Category pour classer un effet d'evenement.
+
+PREPARATION DES FICHIERS
+- WAV, OGG et MP3 sont reconnus a l'import dans assets/audio.
+- Les pas sont prepares a une crete commune de -6 dBTP, puis joues plus bas.
+- Les tirs visent -3 dBTP ; les mecanismes -6 dBTP.
+- Les voix sont mesurees en sonie LUFS et par bandes de frequences.
+- Leur preparation vise -18 LUFS mono, avec une correction spectrale large
+  limitee a +/-2 dB par bande et une limitation des cretes vers -3 dBTP.
+- La version intercom est preparee separement : mono, bande 300-3000 Hz,
+  puis remise au meme niveau percu. Les voix normales gardent leur timbre.
+- Les 32 repliques actuelles ont moins de 1 dB d'ecart apres decodage ADPCM,
+  interpolation gaussienne et adaptation de frequence.
+- Le traitement garde la duree et la synchronisation des repliques.
+- Les WAV originaux sont conserves. Le jeu lit les donnees SPU preparees.
+
+Sur ce poste, l'import utilise FFmpeg et Python/NumPy du Python fourni avec
+Blender. Le jeu exporte ne depend pas de ces outils. Pour un autre poste, le
+chemin de Python peut se definir dans psx_audio/tools/python des reglages projet.
+Les PCM de preparation sont ranges dans assets/audio/generated/mix/pcm, ignores
+par l'importeur Godot. Le manifeste conserve les mesures, gains et empreintes.
+Les nouvelles voix recoivent automatiquement leurs versions normale et intercom
+lors de l'import ; le lancement d'une replique charge le resultat deja encode.
+
+CHAINE SPU ET SORTIE
+SPU ADPCM : blocs de 16 octets pour 28 echantillons, predicteurs et historique.
+Interpolation gaussienne PS1, compteur de pitch et arrondis entiers.
+ADSR1/ADSR2, ENVX, volumes signes et sweeps restent cadences a 44100 Hz.
+24 voix mono maximum ; une source stereo consomme deux voix.
+Somme entiere large, envoi EON par voix, reverb SPU Studio Medium a 22050 Hz,
+puis saturation et multiplication par les registres du master.
+
+La sortie terminee est maintenant filtree et echantillonnee a 22050 Hz,
+en PCM 16 bits. Si Windows impose 48000/96000 Hz, cette sortie est seulement
+adaptee au peripherique. Les enveloppes, la vitesse, la hauteur et les animations
+restent synchronisees. Le taux du peripherique ne rehausse pas celui du mixage.
+
+Les repliques normales alimentent la reverb du niveau. Les voix intercom et les
+sons de talkie restent secs. Leurs chemins gardent leurs volumes de categorie.
+L'import permet aussi 11025 Hz ; le choix par defaut est 22050 Hz.
+Les boucles WAV et les options Loop/ADSR de l'import restent prises en charge.
+La RAM/les IRQ d'une console et le lecteur CD ne sont pas emules.
+
+VALIDATION
+- docs/audio-mix-loudness.json et docs/audio-mix-voices.csv : sonie et spectres.
+- docs/audio-mix-validation.json : 72 sources, categories, volumes/mutes,
+  durees, empreintes des originaux et 64 voix decodees (normales/intercom).
+- docs/audio-output-rate-validation.json : sortie 22050 Hz mesuree sur un
+  peripherique Windows a 48000 Hz, frequence utile et rejet des hautes frequences.
+- docs/audio-new-import-validation.json : import automatique sur projet vierge.
+- tests/spu_mixer.gd : registres, ADSR, saturation, pause, release et 24 voix.
+- tests/footsteps.gd : contacts reels, marche, jog, visee, transitions et silence.
+
+References :
+https://tech.ebu.ch/loudness
+https://psx.arthus.net/sdk/Psy-Q/DOCS/Devrefs/Hardware.pdf
+https://docs.godotengine.org/en/stable/classes/class_projectsettings.html#class-projectsettings-property-audio-driver-mix-rate

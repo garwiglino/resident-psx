@@ -1,0 +1,40 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/inventory/item_target.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/inventory/valve_mechanism.tscn" id="2"]
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.28, 0.28, 0.25)
+[node name="MecanismeObjet" type="Marker3D"]
+script = ExtResource("1")
+interaction_label = "UTILISER L'OBJET"
+once = true
+required_item_id = &"valve_wheel"
+interaction_offset = Vector3(0, 0.73, 0.2)
+visual_path = NodePath("Mecanisme")
+installed_visual_path = NodePath("Mecanisme/RoueInstallee")
+camera_path = NodePath("CameraFixe")
+placement_start_path = NodePath("DepartPiece")
+selection_label = "FIXATION DE LA VANNE"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("Mecanisme/Axe"), NodePath("Mecanisme/Flasque")])
+
+[node name="Mecanisme" parent="." instance=ExtResource("2")]
+
+[node name="CameraFixe" type="Camera3D" parent="."]
+position = Vector3(0, 1.05, 1.6)
+rotation = Vector3(-0.378, 0, 0)
+fov = 45.0
+near = 0.05
+far = 55.0
+
+[node name="DepartPiece" type="Marker3D" parent="."]
+position = Vector3(0, 0.95, 0.95)
+
+[node name="ZoneSelection" type="Area3D" parent="."]
+position = Vector3(0, 0.73, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="ZoneSelection"]
+shape = SubResource("Selection")

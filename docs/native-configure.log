@@ -1,0 +1,14 @@
+-- Selecting Windows SDK version 10.0.26100.0 to target Windows 10.0.26200.
+-- Auto-detected 16 CPU cores available for build parallelism.
+-- If not already cached, setting CMAKE_MSVC_RUNTIME_LIBRARY.
+	For more information please read godot-cpp/cmake/windows.cmake
+-- Using 15 cores for multi-threaded compilation.
+-- Using build profile to trim api file
+-- 	BUILD_PROFILE = 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/profile.json'
+-- 	API_SOURCE = 'gdextension/extension_api.json'
+-- GODOTCPP_GDEXTENSION_API_FILE = 'C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/godot-cpp/extension_api.json'
+-- There are 98 Files to generate
+=> Default build type is Debug. For other build types add --config <type> to build command
+-- Configuring done (1.1s)
+-- Generating done (0.3s)
+-- Build files have been written to: C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build

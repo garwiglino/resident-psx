@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/lighting/psx_lamp_3d.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/lighting/models/applique.tscn" id="2"]
+
+[node name="Applique" type="Marker3D"]
+script = ExtResource("1")
+light_type = 1
+light_color = Color(1, 0.8, 0.53, 1)
+light_energy = 1.6
+light_range = 4.5
+spot_angle_degrees = 120.0
+spot_softness = 0.5
+model_scene = ExtResource("2")

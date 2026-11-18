@@ -1,0 +1,50 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/inventory/placement_scene.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/inventory/item_target.gd" id="2"]
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.4, 0.4, 0.3)
+
+[node name="SocleInteractif" type="Marker3D"]
+script = ExtResource("1")
+interaction_label = "EXAMINER"
+once = true
+interaction_offset = Vector3(0, 0.8, 0)
+camera_path = NodePath("CameraFixe")
+
+[node name="Modele" type="Node3D" parent="."]
+
+[node name="Emplacements" type="Node3D" parent="."]
+[node name="Emplacement" type="Marker3D" parent="Emplacements"]
+script = ExtResource("2")
+visual_path = NodePath("../../Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+animation_player_path = NodePath("AnimationMecanisme")
+selection_area_path = NodePath("ZoneSelection")
+[node name="PointInsertion" type="Marker3D" parent="Emplacements/Emplacement"]
+position = Vector3(0, 0.8, 0)
+
+[node name="PieceInstallee" type="Node3D" parent="Emplacements/Emplacement/PointInsertion"]
+
+[node name="DepartPiece" type="Marker3D" parent="Emplacements/Emplacement"]
+position = Vector3(0, 0.95, 0.95)
+[node name="ZoneSelection" type="Area3D" parent="Emplacements/Emplacement"]
+position = Vector3(0, 0.8, 0.1)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="Emplacements/Emplacement/ZoneSelection"]
+shape = SubResource("Selection")
+
+[node name="CameraFixe" type="Camera3D" parent="."]
+position = Vector3(0, 1.05, 1.6)
+rotation = Vector3(-0.378, 0, 0)
+fov = 45.0
+near = 0.05
+far = 55.0
+
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="Emplacements/Emplacement"]

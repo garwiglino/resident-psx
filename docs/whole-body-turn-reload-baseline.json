@@ -1,0 +1,35 @@
+{
+	"failures": [
+		"Dropped magazine collides with the real floor instead of passing through it"
+	],
+	"floor_minimum_y": -0.0330733396112919,
+	"floor_surface_y": 0.00000000372529029846191,
+	"frames": [
+		{
+			"phase": 2,
+			"player_frame": 6,
+			"source_position_error_m": 0.000000359176709707754,
+			"time": 0.208333333333333
+		},
+		{
+			"phase": 3,
+			"player_frame": 17,
+			"source_position_error_m": 0.000000370586803910555,
+			"time": 0.666666666666667
+		},
+		{
+			"phase": 3,
+			"player_frame": 24,
+			"source_position_error_m": 0.000000259411365277629,
+			"time": 0.958333333333333
+		},
+		{
+			"phase": 3,
+			"player_frame": 35,
+			"source_position_error_m": 0.000000442290968294401,
+			"time": 1.41666666666667
+		}
+	],
+	"gravity_drop_m": 0.469778776168823,
+	"pool_size": 4
+}

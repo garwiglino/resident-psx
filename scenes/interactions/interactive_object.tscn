@@ -1,0 +1,32 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/interactions/interactive_object.gd" id="Root"]
+[ext_resource type="Script" path="res://scripts/interactions/mechanism_action.gd" id="Part"]
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.25, 0.25, 0.2)
+[node name="ObjetInteractif" type="Marker3D"]
+script = ExtResource("Root")
+interaction_label = "EXAMINER"
+interaction_offset = Vector3(0, 0.8, 0)
+camera_path = NodePath("CameraFixe")
+[node name="Modele" type="Node3D" parent="."]
+[node name="Parties" type="Node3D" parent="."]
+[node name="Action" type="Marker3D" parent="Parties"]
+script = ExtResource("Part")
+position = Vector3(0, 0.8, 0)
+visual_path = NodePath("../../Modele")
+selection_label = "UTILISER"
+selection_area_path = NodePath("ZoneSelection")
+[node name="ZoneSelection" type="Area3D" parent="Parties/Action"]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="Parties/Action/ZoneSelection"]
+shape = SubResource("Selection")
+[node name="CameraFixe" type="Camera3D" parent="."]
+position = Vector3(0, 1.05, 1.6)
+rotation = Vector3(-0.378, 0, 0)
+fov = 45.0
+near = 0.05
+far = 55.0

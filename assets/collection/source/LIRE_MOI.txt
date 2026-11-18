@@ -1,0 +1,32 @@
+FERRO // ÉCLIPSE — PACK COMPLET À JOUR
+
+15 cartes de mécha + 1 dos commun sombre + 1 face mystère claire « ? » sans texte.
+Les visuels approuvés et leur usure sont conservés sans modification.
+
+TEXTURES
+ferro_eclipse_atlas_complet_256x512.png : texture native pour le jeu.
+cartes_64x96/ : les 17 images séparées, à leur résolution native.
+ferro_eclipse_atlas_complet_apercu_x3.png : aperçu agrandi en Nearest uniquement.
+Filtrage Point / Nearest / Closest, Clamp. Désactiver les mipmaps pour garder le rendu fourni.
+L'atlas n'a pas de gouttières : si le moteur impose un filtrage linéaire ou des mipmaps,
+utiliser les cartes séparées ou ajouter une extrusion technique avant l'import.
+
+JSON UTF-8
+catalogue_jp_fr.json contient les 15 fiches : identifiant stable, nom FR/JP,
+pilote FR/JP, rôle, type japonais, description, description courte japonaise,
+lore FR/JP, rareté et ATQ/DEF/MOB (0–10).
+Les textes existants sont conservés. Les champs description et description_jp
+ont des longueurs différentes : description_jp est la mention courte imprimée.
+Afficher les textes du JSON dans l'interface pour les lire à toute résolution.
+
+DÉCOUPAGE
+Ordre des cases : gauche vers droite, haut vers bas, 4 colonnes.
+Index 0 : dos commun ; index 1–15 : méchas ; index 16 : face mystère.
+Chaque case mesure 64 × 96. Trois cases libres en fin de ligne 5.
+Les 32 dernières lignes sont du padding transparent, hors cases.
+rect_px / rect_64 : x, y, w, h en pixels, origine en haut à gauche.
+uv_top_left : u, v, w, h normalisés, origine en haut à gauche.
+uv_bottom_left : mêmes rectangles pour une origine UV en bas à gauche.
+Les coordonnées et chemins obsolètes de l'ancien pack ont été corrigés.
+
+validation.json : résultats de contrôle du nombre, du découpage exact et des fichiers.

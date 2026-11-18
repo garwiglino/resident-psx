@@ -1,0 +1,7 @@
+00:03.719  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_idle.blend"
+GRIP_VARIATION 3.5390257835388184e-07
+GUN_BONES [('b_base', True), ('b_slide', True), ('b_muzzlespot', False), ('b_mag', True), ('b_bullet', True)]
+EXPORT_PROPS [('export_animations', True), ('export_pointer_animation', False), ('export_animation_mode', 'ACTIONS'), ('export_nla_strips_merged_animation_name', 'Animation'), ('export_optimize_animation_size', True), ('export_optimize_animation_keep_anim_armature', True), ('export_optimize_animation_keep_anim_object', False), ('export_anim_slide_to_zero', False), ('export_bake_animation', False), ('export_merge_animation', 'ACTION'), ('export_anim_single_armature', True), ('export_rest_position_armature', True), ('export_anim_scene_split_object', True), ('export_morph_animation', True), ('export_convert_animation_pointer', False), ('export_extra_animations', False)]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

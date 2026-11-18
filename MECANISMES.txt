@@ -1,0 +1,249 @@
+MECANISMES AVEC PLUSIEURS PIECES - CREATION DANS L'EDITEUR
+
+POUR LES BOUTONS, INTERPHONES ET INTERRUPTEURS
+Le systeme de survol est maintenant commun aux actions et aux emplacements.
+Le nouveau point de depart general est scenes/interactions/interactive_object.tscn.
+L'exemple scenes/interactions/interphone_example.tscn ne demande aucun objet.
+Voir INTERACTIONS.txt pour les boutons, dialogues, interrupteurs et objets mixtes.
+Le reste de ce guide detaille la specialisation installation d'objets.
+
+EN JEU
+
+E ouvre la camera fixe et un petit curseur. L'inventaire reste ferme.
+Survoler une fixation : les meshes choisis passent en unlit en gardant leurs textures.
+Cliquer : la rangee d'objets s'ouvre EN BAS, sur une seule ligne horizontale.
+Tous les objets placables possedes sont proposes, meme les mauvais.
+Si la liste est longue, elle defile horizontalement ; l'encart reste dans l'ecran.
+Bon choix : apparition au DepartPiece, insertion douce, puis animation facultative.
+Mauvais choix : une ligne aleatoire de wrong_item, puis retour au choix des objets.
+
+X ou Echap ferme la rangee et revient au choix d'une partie du modele.
+Echap ou clic droit dans la vue de selection rend la camera et les commandes.
+Pendant l'insertion, Echap ouvre la pause normale.
+Apres une piece installee, les autres fixations restent disponibles.
+Quand toutes les pieces sont posees, la scene se ferme par defaut.
+Le monde continue de vivre ; seuls les controles du joueur sont bloques.
+
+LES SCENES A OUVRIR
+
+scenes/inventory/placement_assembly.tscn : exemple COMPLET avec deux emplacements,
+une roue a gauche et un levier a droite, leurs modeles, zones et camera.
+scenes/inventory/placement_target.tscn : modele vierge avec un premier emplacement.
+scenes/inventory/placement_valve.tscn : vanne simple avec son cadrage et son animation.
+
+Tu construis UNE scene .tscn dans son propre onglet 3D, puis tu la glisses dans
+la carte. Les vrais modeles sont visibles pour travailler sans lancer le jeu.
+L'apercu PSX de cette scene ouverte seule a un eclairage d'inspection et sans fog.
+Dans une carte, elle utilise les lumieres, les couleurs et le fog de cette carte.
+Aucune lampe ni ambiance supplementaire n'est enregistree dans le prefab.
+
+CREER TA SCENE DE PLACEMENT
+
+1. Dans le panneau Fichiers, dupliquer placement_assembly.tscn avec Ctrl+D.
+   Donner un nom a ta copie puis l'ouvrir, comme une scene ordinaire.
+   Tu peux aussi dupliquer le modele vierge placement_target.tscn.
+2. Sous Modele, deposer le GLB du mecanisme fixe et supprimer les modeles
+   d'exemple que tu remplaces. Ajouter les collisions fixes si besoin.
+3. Sous Emplacements, garder un noeud par piece manquante : Roue, Levier, etc.
+   Selectionner ce noeud et assigner Required Item (la definition .tres attendue).
+   Visual Path vise le mecanisme visible, generalement ../../Modele.
+4. Sous PointInsertion/PieceInstallee DE CET EMPLACEMENT, deposer le GLB de la
+   piece. Deplacer/rotater PointInsertion pour aligner exactement la pose finale.
+   Conserver PieceInstallee comme racine mobile, meme si le modele a son propre rig.
+5. Deplacer DepartPiece pour choisir d'ou apparait la piece avant de s'inserer.
+   Placement Duration regle la duree (0.6 seconde par defaut).
+6. Deplacer ZoneSelection sur la fixation qui doit etre cliquable.
+   Selectionner ZoneSelection/Volume, puis regler sa Shape et ses dimensions.
+   C'est cette forme 3D que la souris detecte. Elle se voit dans l'editeur.
+   Garder la couche physique 20 et Collision Mask a 0 ; ne pas activer Monitoring.
+7. Sur le noeud d'emplacement, remplir Highlight Paths : ajouter un element
+   pour chaque mesh ou branche du SOCLE a passer en unlit au survol. Les chemins sont
+   relatifs a ce noeud. Exemple : ../../Modele/FixationRoue.
+   Selection Label est le nom affiche sous le curseur ; le materiau normal revient en quittant le survol.
+   Viser les meshes visibles du support, pas la piece manquante qui est cachee en jeu.
+   Un seul mesh suffit ; un groupe de meshes est possible. Une partie specifique
+   du GLB doit etre un mesh/noeud distinct pour lui attribuer son propre survol unlit.
+8. Regler CameraFixe sur la RACINE de la scene : position, rotation et Fov.
+   Utiliser l'apercu Camera de la vue 3D pour cadrer les fixations.
+   Garder le bas de l'image libre pour la rangee d'objets. Ne pas cocher Current.
+9. Enregistrer la scene. Ouvrir ta carte et GLISSER cette scene .tscn dedans.
+   Positionner et rotater l'ensemble : la camera et tous les reperes suivent.
+10. Sur l'instance dans la carte, donner un Interaction Id unique et stable,
+    puis les Conditions / Actions propres a ce mecanisme. Tester la carte avec F6.
+
+AJOUTER UNE AUTRE PIECE
+
+Dans ta scene de placement, dupliquer un noeud SOUS Emplacements avec Ctrl+D.
+Le renommer et assigner sa Required Item. Remplacer son modele de piece.
+Deplacer PointInsertion, DepartPiece et ZoneSelection, puis choisir ses Highlight Paths.
+Apres duplication, rendre la ressource Shape de Volume UNIQUE avant de changer
+ses dimensions, pour ne pas modifier aussi le volume de l'ancien emplacement.
+Ne pas reutiliser le meme Installed Visual Path vers une autre piece.
+
+Laisser Interaction Id des emplacements vide : leur identifiant est derive
+DE L'ID DE L'INSTANCE dans la carte et du nom de l'emplacement. Deux instances
+peuvent donc utiliser la meme scene sans partager leur etat d'installation.
+Ne pas renommer un emplacement en cours de partie si son etat doit etre conserve.
+
+STRUCTURE
+
+ScenePlacement (ItemPlacementScene3D)
+  Modele
+    TonModeleGLB
+  Emplacements
+    Roue (InventoryUseTarget3D)
+      PointInsertion
+        PieceInstallee
+          TonModeleDePieceGLB
+      DepartPiece
+      ZoneSelection (Area3D)
+        Volume (CollisionShape3D)
+      AnimationMecanisme (AnimationPlayer facultatif)
+    AutrePiece (... meme structure ...)
+  CameraFixe
+
+La vanne simple placement_valve conserve une racine InventoryUseTarget3D pour
+un seul emplacement. Son fonctionnement curseur puis objets est identique.
+Pour plusieurs pieces, utiliser la racine ItemPlacementScene3D de l'exemple
+placement_assembly ou du modele placement_target.
+
+ANIMATION ET RIGS
+
+Selectionner AnimationMecanisme de l'emplacement, puis le panneau Animation.
+Creer/modifier un clip de pose, ou utiliser l'AnimationPlayer importe du GLB.
+Sur l'emplacement, Animation Player Path vise ce lecteur ; Installation Animation
+contient le nom exact du clip. Installation Animation Speed regle sa vitesse.
+Le clip joue APRES l'insertion, une seule fois ; sa pose finale est conservee.
+Animer les noeuds/os concernes par cette piece. Eviter qu'un clip d'une fixation
+ne remette a zero la pose d'une autre fixation deja installee.
+Pour une AnimationPlayer placee sous l'emplacement, sa racine par defaut est ce
+noeud ; les pistes vers le modele commun peuvent remonter vers ../../Modele.
+
+Le rig et le skin restent ceux de l'export. Pour attacher une piece a un os :
+- Ajouter un BoneAttachment3D sous le Skeleton3D du socle (Enfants editables
+  sur l'instance GLB si necessaire), choisir Bone Name et laisser Override Pose desactive.
+- Mettre un Marker3D PointInsertion sous cette attache, puis la piece sous ce repere.
+- Mettre a jour Placement Socket Path et Installed Visual Path de l'emplacement
+  vers ces noeuds, et aligner la piece dans l'editeur.
+- ZoneSelection peut aussi suivre l'os en la placant sous l'attache ; mettre
+  a jour Selection Area Path. Un mesh skinned peut etre choisi pour le survol unlit.
+
+Ne pas deplacer un morceau de mesh dont le squelette est hors de la branche
+PieceInstallee : la piece mobile doit etre independante, avec son rig a elle
+si elle en a un. Le BoneAttachment3D sert a la fixer au rig du socle.
+Les pistes de methodes/audio/lecture d'autres animations sont exclues pendant
+la lecture de pose : utiliser les Actions et les sons du mecanisme.
+Insertion Sound et Installed Sound passent par le mixage Interactions en 3D.
+
+ETAT DU MONDE ET ACTIONS
+
+La piece n'est retiree du sac qu'a la fin de son insertion ET de son animation.
+Consume Item sur l'emplacement decide de cette consommation ; le desactiver
+pour un outil reutilisable. Required Quantity vaut normalement 1.
+Chaque emplacement est enregistre separement : une fermeture partielle conserve
+les pieces deja installees. Une installation interrompue avant sa fin est annulee
+sans consommer l'objet. Les sauvegardes restaurent les pieces et les poses.
+Les Actions des pieces installees partent a la fermeture de la vue, une fois
+la camera rendue. Les Actions de la racine partent quand tout est installe.
+Close When Complete sur la racine controle le retour automatique a la derniere piece.
+Un montage cinematographique complet peut etre lance dans ces Actions de fin.
+
+OUVERTURE ET FERMETURE DU COUVERCLE - POUR TOUS LES MECANISMES
+
+Sur la RACINE de la scene, ouvrir Access Settings, puis cocher Enabled.
+Ces reglages sont independants des animations d'installation de chaque piece.
+Les anciens mecanismes restent identiques tant que Enabled est decoche.
+
+- Initially Open : etat initial d'une nouvelle partie (ou d'une ancienne sauvegarde).
+- Open On Interaction : ouvrir avant de permettre le choix des fixations si ferme.
+  Si decoche, l'ouverture se commande par evenement/action. La vue affiche FERME
+  et les fixations ne sont pas selectionnables tant que le couvercle est ferme.
+- Close Policy :
+  Laisser ouvert : quitter rend la camera sans fermer le couvercle.
+  Fermer a chaque sortie : fermer a toute sortie de la vue, meme incomplet.
+  Fermer quand tout est installe : rester ouvert si une piece manque ; fermer
+  a la derniere piece. C'est le choix pour une boite a fusibles a plusieurs pieces.
+  Uniquement par evenement ou action : aucune fermeture automatique.
+
+Animation Player Path vise le lecteur du modele, depuis la RACINE du mecanisme.
+Opening Animation et Closing Animation sont les noms exacts des clips importes
+ou crees dans Godot. Playback Speed regle leur vitesse sans modifier les clips.
+Closing Animation vide : le clip d'ouverture est lu a l'envers pour fermer.
+L'inverse fonctionne aussi si seul un clip de fermeture est disponible.
+Sans aucun clip, le changement d'etat est immediat : aucune animation inventee.
+La selection attend la fin de l'ouverture. La pose finale reste appliquee.
+
+Par defaut, seules les pistes qui changent dans les clips sont retenues pour
+eviter qu'un export de tout le rig ne remette les autres pieces a leur pose de base.
+Pour un controle explicite, Animated Root Path vise le noeud du couvercle,
+ou le Skeleton3D du modele. Avec un Skeleton3D, Bone Names limite l'animation
+aux os choisis et a leurs descendants. Ne pas inclure les os des pieces independantes.
+Un os parent du couvercle ne doit pas aussi servir a remettre les pieces a zero.
+Les pistes de methodes/audio sont exclues comme pour l'installation : utiliser
+les evenements du monde pour les effets et les actions de gameplay.
+
+Close When Complete reste le reglage de la CAMERA : decoche, la vue reste sur le
+mecanisme meme apres sa fermeture physique. Inspect When Complete autorise a
+revenir l'examiner une fois toutes les pieces installees, meme avec Once coche.
+Le retour au jeu se fait par coupe, apres la fin de la fermeture si elle est requise.
+Pendant une insertion, une commande de fermeture attend le commit de la piece.
+Une sortie pendant l'ouverture finit le mouvement puis applique la regle choisie.
+La pause suspend les mouvements. Retirer la scene ou mourir rend les commandes.
+
+Evenements : Open Event et Close Event demandent les mouvements depuis une
+reaction du monde, une replique ou une cinematique. Utiliser des identifiants
+de commande distincts des evenements automatiques ci-dessous, pour eviter les boucles.
+Dans une liste Actions, choisir Kind = Etat d'un mecanisme, Mechanism Path vers
+la racine concernee, puis Ouvrir / Fermer / Inverser. Wait For Completion attend
+la pose finale, y compris une fermeture retardee par une insertion.
+La condition Mecanisme ouvert permet de tester son etat ; Id est l'Interaction Id
+de la RACINE. Expected decoche teste l'etat ferme.
+
+Chaque racine doit avoir son Interaction Id unique et stable dans la carte.
+Les sauvegardes du monde incluent separement les pieces et l'etat du couvercle :
+mechanism.<id>.state_version = 1
+mechanism.<id>.target_state = open ou closed
+mechanism.<id>.open = etat physique termine
+Un chargement pendant un mouvement restaure directement la destination sauvegardee,
+sans rejouer les sons, les actions ni les evenements de fin. Une scene supprimee
+puis rechargee retrouve son etat par cet Id. Les ressources de reglages restent
+des presets : elles ne stockent aucun etat de partie.
+Evenements emis : mechanism.<id>.opening, .opened, .closing et .closed.
+
+Exemple pret a ouvrir et a dupliquer :
+scenes/inventory/placement_access_example.tscn
+Il contient deux fixations, une charniere et un clip d'ouverture reversible.
+Tu peux remplacer son modele et ses clips comme pour les autres scenes.
+
+Pour un futur type de mecanisme sans placement d'objets, le composant reutilisable
+scripts/inventory/mechanism_access.gd se place sous sa racine Node3D.
+Renseigner Settings et State Id sur ce composant ; ses chemins sont relatifs
+a son parent. Il fournit les memes commandes, etats, evenements et sauvegardes.
+
+OBJETS ET MAUVAIS CHOIX
+
+Kind = MECHANISM rend un objet placable automatiquement. Pour les autres types,
+cocher Placeable sur leur InventoryItemDefinition. World Model est le modele
+utilise pour les pickups et, en option, la creation automatique d'une piece.
+Les nouvelles scenes utilisent la piece visible preplacee dans l'editeur.
+Installed Visual Path vide reste l'option avancee de generation depuis World Model.
+
+assets/audio/dialogs/wrong_item/wrong_item.tres contient les repliques aleatoires.
+Ajouter/modifier leurs textes et WAV comme pour les dialogues existants.
+Une seule ligne joue par mauvais essai, sans repetition consecutive.
+Les voix, l'intercom, le typewriter et le temps de lecture restent ceux du
+systeme de dialogue. Aucun objet n'est perdu sur un mauvais choix.
+
+EXPORT BLENDER
+
+Socle fixe et piece : exporter separement, avec des origines pratiques pour
+leurs fixations et des dimensions en metres. Pour le modele rigge du socle,
+l'addon propose Type > Objet anime / rigge (version 1.2.0). Rendre actif son
+Empty racine ou son armature : modele, skin, clips, cameras et reperes sont
+conserves. Aucun nombre d'emplacements n'est impose. Deposer le .tscn exporte
+sous Modele et garder les pieces d'inventaire independantes du skin du socle.
+Le reexport conserve la scene Godot editable. Voir MODELES-RIGGES.txt pour les etapes.
+
+References :
+https://docs.godotengine.org/en/stable/classes/class_boneattachment3d.html
+https://docs.blender.org/manual/en/latest/addons/scene_gltf2.html

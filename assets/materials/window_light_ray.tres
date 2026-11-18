@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" script_class="PSXLightShaftMaterial" format=3]
+[ext_resource type="Script" path="res://scripts/materials/psx_light_shaft_material.gd" id="Material"]
+[ext_resource type="Texture2D" path="res://assets/effects/light_shafts/narrow_ray.png" id="Texture"]
+[resource]
+resource_name = "PSX Narrow Window Ray"
+script = ExtResource("Material")
+color = Color(1, 0.88, 0.65, 1)
+strength = 0.9
+texture = ExtResource("Texture")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/ossian_00.res" id="1_l4cqa"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_1n045"]
+
+[resource]
+script = ExtResource("2_1n045")
+id = &"ossian_00"
+display_name = "OSSIAN-00"
+description = "Géant olive, riveté et massif, dont le châssis porte plusieurs époques de réparations."
+lore = "Son réacteur tourne depuis la chute."
+rarity = "R"
+image = ExtResource("1_l4cqa")
+source_index = 8

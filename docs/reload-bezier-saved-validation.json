@@ -1,0 +1,147 @@
+{
+  "output": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_shoot_reload_bezier.blend",
+  "original_transform_keys_preserved": 1189,
+  "unchanged_timing": {
+    "fps": 24,
+    "fps_base": 1.0,
+    "range": [
+      1,
+      35
+    ],
+    "actions": {
+      "Action": [
+        1.0,
+        32.0
+      ],
+      "Action.001": [
+        1.0,
+        30.0
+      ],
+      "CameraAction": [
+        1.0,
+        1.0
+      ],
+      "gun_amatureAction": [
+        1.0,
+        4.0
+      ],
+      "rigAction": [
+        1.0,
+        8.0
+      ]
+    },
+    "nla": {
+      "rig": [
+        [
+          "rigAction",
+          false,
+          [
+            [
+              "player_gun_shoot",
+              1.0,
+              8.0,
+              1.0,
+              1.0,
+              1.0,
+              8.0
+            ]
+          ]
+        ]
+      ],
+      "gun_amature": [
+        [
+          "gun_amatureAction",
+          false,
+          [
+            [
+              "gun_amatureAction",
+              1.0,
+              9.0,
+              1.0,
+              1.0,
+              1.0,
+              9.0
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "pose_validation": [
+    {
+      "frame": 1.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 2.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 3.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 5.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 7.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 9.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 12.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 16.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 18.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 24.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 28.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 30.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 32.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 35.0,
+      "mesh_vertex_error_m": 0.0,
+      "reference_pose": true
+    },
+    {
+      "frame": 4.0,
+      "mesh_vertex_error_m": 0.18596827897900253,
+      "reference_pose": false
+    }
+  ]
+}

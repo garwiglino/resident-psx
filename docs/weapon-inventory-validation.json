@@ -1,0 +1,8 @@
+{
+	"failures": [],
+	"measurements": {
+		"cached_weapon_entries": 20,
+		"shot_events": 2,
+		"unit_checks": "passed"
+	}
+}

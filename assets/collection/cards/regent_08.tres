@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/regent_08.res" id="1_4ckhp"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_hwqcu"]
+
+[resource]
+script = ExtResource("2_hwqcu")
+id = &"regent_08"
+display_name = "RÉGENT-08"
+description = "Machine cobalt munie d’un réseau d’antennes et de relais dorsaux."
+lore = "Coordonne les derniers escadrons libres."
+rarity = "R"
+image = ExtResource("1_4ckhp")
+source_index = 10

@@ -1,0 +1,74 @@
+JOUEUR ET EXPRESSIONS DU VISAGE
+
+Le modele assets/character/cop_player.glb est reexporte depuis Downloads/cop_base.blend.
+Le fichier Blender original reste intact. Le corps, les cheveux et les deux parties
+du visage utilisent les materiaux et la geometrie de ce nouveau fichier.
+Les fichiers d'animations de deplacement, visee, tir et recharge restent en place.
+La sauvegarde precedente est dans exports/base_before_cop_base_20261106.
+
+CONTROLES DANS GODOT
+Redemarrer Godot une fois pour charger le moteur natif v11.
+Ouvrir scenes/player.tscn, puis selectionner le noeud Visage.
+- Top Frame : yeux et sourcils, indices 0 a 7.
+- Bottom Frame : bouche, indices 0 a 7.
+- Enabled : desactive les expressions et remet le visage neutre.
+Les controles fonctionnent dans l'apercu PSX de la vue 3D et pendant le jeu.
+La vue standard de Godot selectionne les memes poses via les transformations UV
+du materiau 3D ; elle ne depend pas d'un decoupage AtlasTexture reserve au dessin 2D.
+La scene player seule n'a pas de lumiere de niveau : le rendu PSX y est sombre.
+Pour juger le resultat sous vos lumieres, ouvrir main.tscn, activer les enfants
+editables de Player et selectionner son noeud Visage.
+L'inspecteur Distant permet les essais en jeu ; l'inspecteur normal sauvegarde
+les valeurs de depart. Pour des personnages differents, chaque Visage garde ses indices.
+
+YEUX / SOURCILS
+0 Neutre ; 1 Mi-clignement ; 2 Ferme ; 3 Alerte ; 4 Colere ; 5 Inquietude ;
+6 Regard haut ; 7 Regard bas.
+
+BOUCHE
+0 Repos ; 1 A-AA ; 2 E-I ; 3 O-OU ; 4 M-B-P ; 5 F-V ; 6 Sourire ; 7 Dents serrees.
+
+UTILISATION PAR UN EVENEMENT OU UNE ANIMATION
+Player.get_node("Visage").set_expression(4, 7) : colere et dents serrees.
+Player.get_node("Visage").set_preset(&"inquietude") : preset du pack.
+Autres presets : neutre, clignement, alerte, colere, sourire, parole_a, parole_e, parole_o.
+Dans AnimationPlayer, animer Visage:top_frame et Visage:bottom_frame avec des
+pistes de valeurs en mise a jour discrete. Les changements de cases sont instantanes.
+Exemple de clignement a programmer : 0 -> 1 -> 2 -> 1 -> 0 pour les yeux ;
+garder la bouche sur sa pose courante.
+Les controles manuels sont branches. Les declenchements de clignement, de dialogue
+ou d'emotion peuvent ensuite etre relies a votre mise en scene ; aucun dialogue
+ni synchronisation labiale automatique n'est ajoute.
+
+FONCTIONNEMENT DU PACK
+Le haut et le bas sont deux materiaux independants, M_face_top et M_face_bottom.
+Les huit images de chaque atlas font 128 x 128. Les deux atlas d'origine mesurent
+512 x 256, avec quatre colonnes et deux lignes.
+L'export remet les UV du visage de la tuile UDIM 1002 en coordonnees locales 0..1.
+Le moteur range chaque atlas dans deux pages PSX de 256 x 256 : quatre pages
+au total pour les seize poses, sans reduction de resolution.
+Changer d'expression selectionne simplement une page et un bloc d'UV.
+Le jeu ne recharge pas les images, ne reconstruit pas l'atlas et ne change pas
+les poses du squelette. Le visage garde l'eclairage par sommets et le fog du decor.
+Point/Nearest, sans mipmaps ; textures RGB555 dans le meme lot de rendu que le corps.
+Les UV en miroir donnent des expressions symetriques : pas de clin d'oeil unilateral
+ou de regard gauche/droite distinct avec les UV actuels.
+
+EXPORT SUIVANT
+Depuis le dossier du projet, lancer .\Reexporter-Joueur.ps1
+ou .\Reexporter-Joueur.ps1 -BlendFile "C:\chemin\cop_base.blend".
+Ce script exporte uniquement le nouveau modele
+et sa pose de reference ; il ne remplace pas les animations existantes.
+Il conserve aussi les imports de textures sans perte, sans mipmaps et sans
+compression 3D automatique de Godot, pour garder les pixels du pack.
+Conserver les deux materiaux du visage et leurs UV dans la tuile 1002 du fichier source.
+Les atlas et leur description sont copies dans assets/character/face.
+Les rares sommets qui depassent huit influences conservent leurs poids complets
+dans cop_player.json ; le rendu PSX les utilise directement, sans os techniques
+supplementaires propres a une ancienne version du maillage ni correction des pieds.
+
+Validation : tests/face_expressions.gd, tests/aim_layer.gd, tests/root_motion.gd,
+tests/reload_magazine.gd, tests/shot_frame.gd, tests/footsteps.gd.
+Rapport : docs/face-expressions-validation.json.
+Apercu des huit combinaisons : docs/face-expressions-psx.png, ordre des presets
+neutre / clignement / parole_a / parole_e / parole_o / colere / inquietude / sourire.

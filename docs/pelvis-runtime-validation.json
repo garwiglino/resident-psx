@@ -1,0 +1,250 @@
+{
+	"clips": {
+		"backward": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.00000050663948059082,
+					"blender_knee_mean_degrees": 17.1812838032982,
+					"blender_mean": 0.970574967624727,
+					"knee_mean_degrees": 17.2700917089906,
+					"maximum": 0.998527765274048,
+					"mean": 0.970659633477529,
+					"minimum": 0.933298826217651,
+					"position_error_m": 0.0000000298023223876953
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.00000050663948059082,
+					"blender_knee_mean_degrees": 17.1812838032982,
+					"blender_mean": 0.970574967624727,
+					"knee_mean_degrees": 17.2700917089906,
+					"maximum": 0.998527765274048,
+					"mean": 0.970659633477529,
+					"minimum": 0.933298826217651,
+					"position_error_m": 0.0000000298023223876953
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"backward_left": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000457103908502177,
+					"blender_knee_mean_degrees": 20.8689445382494,
+					"blender_mean": 0.950307581542937,
+					"knee_mean_degrees": 20.9379927687656,
+					"maximum": 0.980528175830841,
+					"mean": 0.95039484500885,
+					"minimum": 0.918349027633667,
+					"position_error_m": 0.0000000333200098623365
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000457103908502177,
+					"blender_knee_mean_degrees": 20.8689445382494,
+					"blender_mean": 0.950307581542937,
+					"knee_mean_degrees": 20.9379927687656,
+					"maximum": 0.980528175830841,
+					"mean": 0.95039484500885,
+					"minimum": 0.918349027633667,
+					"position_error_m": 0.0000000333200098623365
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"backward_right": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000443293885155072,
+					"blender_knee_mean_degrees": 15.5437996316877,
+					"blender_mean": 0.967941602399526,
+					"knee_mean_degrees": 15.5951703518506,
+					"maximum": 0.998547792434692,
+					"mean": 0.968169279893239,
+					"minimum": 0.933926105499268,
+					"position_error_m": 0.0000000298023223876953
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000443293885155072,
+					"blender_knee_mean_degrees": 15.5437996316877,
+					"blender_mean": 0.967941602399526,
+					"knee_mean_degrees": 15.5951703518506,
+					"maximum": 0.998547792434692,
+					"mean": 0.968169279893239,
+					"minimum": 0.933926105499268,
+					"position_error_m": 0.0000000298023223876953
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"forward_left": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.00000055275074828387,
+					"blender_knee_mean_degrees": 17.1030630092793,
+					"blender_mean": 0.967758654070295,
+					"knee_mean_degrees": 17.0102312425202,
+					"maximum": 0.993538379669189,
+					"mean": 0.967851939300696,
+					"minimum": 0.942448258399963,
+					"position_error_m": 0.0000000210734238947907
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.00000055275074828387,
+					"blender_knee_mean_degrees": 17.1030630092793,
+					"blender_mean": 0.967758654070295,
+					"knee_mean_degrees": 17.0102312425202,
+					"maximum": 0.993538379669189,
+					"mean": 0.967851939300696,
+					"minimum": 0.942448258399963,
+					"position_error_m": 0.0000000210734238947907
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"forward_right": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000495113340548414,
+					"blender_knee_mean_degrees": 17.1954021147758,
+					"blender_mean": 0.966705964123907,
+					"knee_mean_degrees": 17.2421481244356,
+					"maximum": 0.991314828395844,
+					"mean": 0.966901900867621,
+					"minimum": 0.934881746768951,
+					"position_error_m": 0.0000000333200098623365
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000495113340548414,
+					"blender_knee_mean_degrees": 17.1954021147758,
+					"blender_mean": 0.966705964123907,
+					"knee_mean_degrees": 17.2421481244356,
+					"maximum": 0.991314828395844,
+					"mean": 0.966901900867621,
+					"minimum": 0.934881746768951,
+					"position_error_m": 0.0000000333200098623365
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"idle": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000376991266648474,
+					"blender_knee_mean_degrees": 15.8300470456749,
+					"blender_mean": 0.933747096987795,
+					"knee_mean_degrees": 15.8286461390667,
+					"maximum": 0.934408843517303,
+					"mean": 0.933743583659331,
+					"minimum": 0.93304443359375,
+					"position_error_m": 0.00000000372529029846191
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000376991266648474,
+					"blender_knee_mean_degrees": 15.8300470456749,
+					"blender_mean": 0.933747096987795,
+					"knee_mean_degrees": 15.8286461390667,
+					"maximum": 0.934408843517303,
+					"mean": 0.933743583659331,
+					"minimum": 0.93304443359375,
+					"position_error_m": 0.00000000372529029846191
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend"
+		},
+		"strafe_left": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000538094923285826,
+					"blender_knee_mean_degrees": 25.9438595375441,
+					"blender_mean": 0.937030004075736,
+					"knee_mean_degrees": 25.9071898931114,
+					"maximum": 0.968699514865875,
+					"mean": 0.937208367387454,
+					"minimum": 0.899395108222961,
+					"position_error_m": 0.0000000333200098623365
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000538094923285826,
+					"blender_knee_mean_degrees": 25.9438595375441,
+					"blender_mean": 0.937030004075736,
+					"knee_mean_degrees": 25.9071898931114,
+					"maximum": 0.968699514865875,
+					"mean": 0.937208367387454,
+					"minimum": 0.899395108222961,
+					"position_error_m": 0.0000000333200098623365
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"strafe_right": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000495113340548414,
+					"blender_knee_mean_degrees": 27.5758150943803,
+					"blender_mean": 0.919146328425604,
+					"knee_mean_degrees": 27.4221774758667,
+					"maximum": 0.944049060344696,
+					"mean": 0.919092640777429,
+					"minimum": 0.888909935951233,
+					"position_error_m": 0.0000000333200098623365
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000495113340548414,
+					"blender_knee_mean_degrees": 27.5758150943803,
+					"blender_mean": 0.919146328425604,
+					"knee_mean_degrees": 27.4221774758667,
+					"maximum": 0.944049060344696,
+					"mean": 0.919092640777429,
+					"minimum": 0.888909935951233,
+					"position_error_m": 0.0000000333200098623365
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		},
+		"walk": {
+			"samples": [
+				{
+					"aiming": false,
+					"basis_error": 0.000000492415153985348,
+					"blender_knee_mean_degrees": 23.8453831503681,
+					"blender_mean": 0.939246546631017,
+					"knee_mean_degrees": 23.867475417936,
+					"maximum": 0.960606634616852,
+					"mean": 0.939094166954358,
+					"minimum": 0.914805829524994,
+					"position_error_m": 0.0000000153597650154325
+				},
+				{
+					"aiming": true,
+					"basis_error": 0.000000492415153985348,
+					"blender_knee_mean_degrees": 23.8453831503681,
+					"blender_mean": 0.939246546631017,
+					"knee_mean_degrees": 23.867475417936,
+					"maximum": 0.960606634616852,
+					"mean": 0.939094166954358,
+					"minimum": 0.914805829524994,
+					"position_error_m": 0.0000000153597650154325
+				}
+			],
+			"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend"
+		}
+	},
+	"failures": [],
+	"maximum_basis_error": 0.00000055275074828387,
+	"maximum_position_error_m": 0.0000000333200098623365
+}

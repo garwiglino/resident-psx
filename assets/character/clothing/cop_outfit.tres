@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://c7tcichkjo8d2"]
+
+[ext_resource type="Script" uid="uid://d2bgj3l7chs57" path="res://scripts/clothing/clothing_item.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bibeg0xjl1aqv" path="res://assets/character/clothing/cop_outfit.glb" id="2"]
+[ext_resource type="Script" uid="uid://cowdnl8xhrkki" path="res://scripts/clothing/clothing_texture_set.gd" id="3"]
+
+[sub_resource type="Resource" id="Resource_so66j"]
+script = ExtResource("3")
+original_label = "Police"
+metadata/_custom_type_script = "uid://cowdnl8xhrkki"
+
+[resource]
+script = ExtResource("1")
+id = &"cop_outfit"
+display_name = "Tenue de police"
+scene = ExtResource("2")
+skin_metadata = "res://assets/character/clothing/cop_outfit.json"
+slot = 4
+includes_shoes = true
+mask_allow_one_corner = true
+texture_set = SubResource("Resource_so66j")

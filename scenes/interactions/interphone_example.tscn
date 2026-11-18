@@ -1,0 +1,87 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/interactions/interactive_object.gd" id="Root"]
+[ext_resource type="Script" path="res://scripts/interactions/mechanism_action.gd" id="Action"]
+[sub_resource type="StandardMaterial3D" id="BodyMat"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.42, 0.44, 0.4, 1)
+texture_filter = 0
+[sub_resource type="StandardMaterial3D" id="DarkMat"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.09, 0.11, 0.1, 1)
+texture_filter = 0
+[sub_resource type="StandardMaterial3D" id="ButtonMat"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.65, 0.62, 0.48, 1)
+texture_filter = 0
+[sub_resource type="BoxMesh" id="Body"]
+size = Vector3(0.34, 0.66, 0.1)
+[sub_resource type="BoxMesh" id="Speaker"]
+size = Vector3(0.22, 0.018, 0.016)
+[sub_resource type="BoxMesh" id="Button"]
+size = Vector3(0.1, 0.07, 0.03)
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.18, 0.15, 0.15)
+[sub_resource type="Animation" id="Press"]
+resource_name = "appuyer"
+length = 0.18
+tracks/0/type = "value"
+tracks/0/path = NodePath("Modele/BoutonAppel:position:z")
+tracks/0/interp = 1
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.06, 0.18), "transitions": PackedFloat32Array(1, 1, 1), "update": 0, "values": [0.075, 0.058, 0.075]}
+[sub_resource type="AnimationLibrary" id="Clips"]
+_data = {&"appuyer": SubResource("Press")}
+[node name="Interphone" type="Marker3D"]
+script = ExtResource("Root")
+interaction_label = "EXAMINER L'INTERPHONE"
+interaction_offset = Vector3(0, 1.05, 0.05)
+[node name="Modele" type="Node3D" parent="."]
+[node name="Boitier" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 1.05, 0)
+mesh = SubResource("Body")
+material_override = SubResource("BodyMat")
+[node name="Grille1" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 1.16, 0.058)
+mesh = SubResource("Speaker")
+material_override = SubResource("DarkMat")
+[node name="Grille2" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 1.205, 0.058)
+mesh = SubResource("Speaker")
+material_override = SubResource("DarkMat")
+[node name="Grille3" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 1.25, 0.058)
+mesh = SubResource("Speaker")
+material_override = SubResource("DarkMat")
+[node name="BoutonAppel" type="MeshInstance3D" parent="Modele"]
+position = Vector3(0, 0.87, 0.075)
+mesh = SubResource("Button")
+material_override = SubResource("ButtonMat")
+[node name="Parties" type="Node3D" parent="."]
+[node name="Appeler" type="Marker3D" parent="Parties"]
+script = ExtResource("Action")
+visual_path = NodePath("../../Modele")
+selection_label = "APPELER"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/BoutonAppel")])
+interaction_event = &"interphone.call"
+animation_player_path = NodePath("../../AnimationBouton")
+activation_animation = &"appuyer"
+animated_root_path = NodePath("../../Modele/BoutonAppel")
+[node name="ZoneSelection" type="Area3D" parent="Parties/Appeler"]
+position = Vector3(0, 0.87, 0.085)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="Parties/Appeler/ZoneSelection"]
+shape = SubResource("Selection")
+[node name="CameraFixe" type="Camera3D" parent="."]
+position = Vector3(0, 1.05, 1.2)
+fov = 45.0
+near = 0.05
+far = 55.0
+[node name="AnimationBouton" type="AnimationPlayer" parent="."]
+libraries = {&"": SubResource("Clips")}

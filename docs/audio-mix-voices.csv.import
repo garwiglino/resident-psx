@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bimc0uot70qi2"
+
+[deps]
+
+files=["res://docs/audio-mix-voices.Intercom.translation", "res://docs/audio-mix-voices.LUFS original.translation", "res://docs/audio-mix-voices.LUFS apres SPU.translation", "res://docs/audio-mix-voices.Crete reelle dBTP.translation"]
+
+source_file="res://docs/audio-mix-voices.csv"
+dest_files=["res://docs/audio-mix-voices.Intercom.translation", "res://docs/audio-mix-voices.LUFS original.translation", "res://docs/audio-mix-voices.LUFS apres SPU.translation", "res://docs/audio-mix-voices.Crete reelle dBTP.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

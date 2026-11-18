@@ -1,0 +1,38 @@
+{
+	"failures": [],
+	"measurements": {
+		"diagnostics": {
+			"active_voices": 0,
+			"blocks": 172,
+			"host_frames": 88064,
+			"host_rate": 48000.0,
+			"max_callback_frames": 512,
+			"output_rate": 22050,
+			"output_samples": 40454,
+			"overflow": 0,
+			"spu_rate": 44100,
+			"spu_ticks": 80908,
+			"voice_frames": 182514
+		},
+		"host_rate": 48000.0,
+		"key_off_release": {
+			"frames": 7680,
+			"middle_peak": 0.276897579431534,
+			"tail_peak": 0.0
+		},
+		"pre_master_clipping": {
+			"frames": 6656,
+			"mode": 16383,
+			"mode_frames": 6656,
+			"off_grid": 0,
+			"peak": 0.499969482421875
+		},
+		"wide_cancellation": {
+			"frames": 5632,
+			"mode": 28549,
+			"mode_frames": 5546,
+			"off_grid": 94,
+			"peak": 0.934914529323578
+		}
+	}
+}

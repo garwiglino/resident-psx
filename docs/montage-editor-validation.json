@@ -1,0 +1,10 @@
+{
+	"audio_button_drop": true,
+	"audio_file_dialog": true,
+	"audio_inspector_drop": true,
+	"dedicated_dock": true,
+	"failures": [],
+	"instanced_key_editing": true,
+	"source_preserved": true,
+	"undo_redo": true
+}

@@ -1,0 +1,308 @@
+SYSTEME DE DIALOGUE
+
+LOCUTEURS
+Speaker / Locuteur propose la meme liste dans l'inspecteur et dans Cinematiques.
+HITOMI utilise une voix normale ; choisir LE CONCIERGE coche Is Intercom.
+La case reste modifiable pour chaque replique. Changer de locuteur applique son defaut.
+Le bouton "..." a cote de la liste ouvre assets/dialogue/speakers.tres.
+Pour ajouter un nom : agrandir Entries, creer un DialogueSpeaker dans le nouvel
+element, puis renseigner Speaker Name et Intercom By Default. Sauvegarder la ressource.
+Dans ce meme element, Fenetre de dialogue > Use Top Color active sa couleur.
+Top Color regle uniquement le haut du degrade et l'encart du nom de ce locuteur.
+Le bas reste Bottom Color du style commun, avec les memes bordures et texte.
+Decocher Use Top Color pour reprendre le haut du style commun. Le reglage suit
+automatiquement toutes les repliques du personnage, conversations et appels inclus.
+Les listes se mettent a jour ensemble. Les anciens noms sont conserves avec "(actuel)".
+
+Declenchements par objectifs, morts d'ennemis, portes et interactions :
+voir EVENEMENTS-MONDE.txt. Utiliser ReactionMonde > Conditions / Actions > Jouer un dialogue.
+
+CHOISIR LE MODE
+Ouvrir la ressource DialogueSequence, puis regler Mode dans l'inspecteur :
+- Conversation - validation manuelle : commandes bloquees, validation comme auparavant.
+- Appel en exploration - automatique : commandes libres, repliques enchainees avec les WAV.
+Les ressources existantes restent en Conversation par defaut.
+Pour une zone : selectionner DialogueTrigger3D > Sequence > Mode.
+Pour un montage : Cinematiques > Dialogue et voix > Mode du dialogue.
+Is Intercom reste independant du mode : il choisit le filtre radio et la reverb.
+Les voix radio preparees sont sauvegardees dans assets/audio/generated/intercom,
+en ressources binaires .res compressees partagees. Les scenes gardent seulement leurs references.
+La preparation automatique lors de l'edition et de la sauvegarde evite d'integrer
+de gros tableaux audio dans les fichiers .tscn et .tres. Les WAV originaux restent les sources.
+
+DELAI DE REPONSE PAR REPLIQUE
+Reglages communs : Projet > Outils > Reglages dialogues, ou ouvrir
+assets/dialogue/settings.tres dans le panneau Fichiers.
+Delai Disparition Apres Voix (0,35 s) masque le texte apres la voix, sans attendre
+le Reply Gap. La pause de reponse continue avec la fenetre fermee, puis la
+replique suivante ouvre une nouvelle fenetre. Le reglage concerne toutes les
+sequences, sans surcharge par ligne. Les pages longues restent lisibles.
+La toute derniere replique se ferme avec ce delai, sans attendre un Reply Gap
+qui ne precederait aucune reponse. Pauser ne fait pas reapparaitre un texte ferme.
+Par defaut, les conversations manuelles attendent la validation avec leur texte.
+Masquer Conversations Manuelles etend ce retrait aux lignes manuelles avec WAV ;
+la validation reste necessaire pour continuer. Les textes sans voix restent lisibles.
+
+Delai par replique : ouvrir une Line > Delai de reponse, cocher Override Reply Gap,
+puis regler Reply Gap en secondes. Decoche : reprend Reply Gap de la sequence.
+0 enchaine des que voix, fermeture radio et lecture des pages sont terminees.
+Ce delai ne change ni la cadence des lettres, ni la duree de lecture des pages.
+Dans Cinematiques > Dialogue et voix, les memes reglages sont sous
+Delai de reponse > Personnaliser pour cette replique.
+
+EVENEMENTS EN FIN DE REPLIQUE
+Line > Evenements > End Event Id : identifiant emis dans WorldEvents, une seule
+fois apres toutes les pages. Une ReactionMonde peut ecouter cet identifiant
+pour lancer une action, une porte, un dialogue, une animation, etc.
+Event Id reste l'evenement de debut de replique.
+En conversation, la validation de la derniere page termine la replique.
+En appel automatique, texte et voix doivent finir ; l'evenement part avant
+la pause Reply Gap. Une annulation du dialogue ne termine pas la replique.
+Le payload contient sequence_id, line_index (commence a 0), speaker et phase.
+
+Raccrocher : cocher End Intercom sur la replique voulue, ou mettre end_intercom
+dans End Event Id. Dans Montage, cocher Raccrocher intercom.
+Cet evenement arrete le fond radio et joue assets/audio/ui/intercom_end.wav.
+Le WAV doit etre ajoute a cet emplacement ; aucun son de remplacement n'est impose.
+Son mixage suit Intercom Effets, toujours sans reverb, via le SPU a 22050 Hz.
+Reglages dialogues > Volume Raccroche Db (-4 dB) regle ce son seul : +6 dB par
+rapport au reglage precedent. Les autres bruitages intercom gardent leurs niveaux.
+WorldEvents.raise_event("end_intercom") permet aussi de jouer ce son ailleurs.
+Le preset et la case ne doublent jamais le son s'ils sont utilises ensemble.
+
+APPELS PENDANT L'EXPLORATION
+La marche, la course, la visee, le tir, la recharge et les interactions continuent.
+L'appel ne change pas la camera, l'animation du joueur ou ses commandes, a son debut
+comme a sa fin. E garde son role d'interaction ; il ne fait pas passer l'appel.
+Le reticule et les informations utiles au jeu restent disponibles.
+Texte et voix commencent ensemble. Chaque WAV n'est joue qu'une fois par replique.
+La replique suivante attend la fin reelle du WAV, la fin de lecture du texte et
+la fermeture radio eventuelle, puis une petite pause. La derniere replique ferme l'encart.
+Le symbole de validation manuelle est masque pendant un appel automatique.
+
+DECLENCHER UN APPEL AVEC UNE ZONE DANS LA MAP
+1. Glisser scenes/dialogue/dialogue_trigger.tscn dans la map, a l'endroit voulu.
+2. Selectionner DialogueTrigger > Sequence. Creer une nouvelle DialogueSequence,
+   ou rendre la ressource unique pour ne pas modifier les autres zones qui l'utilisent.
+3. Regler Mode sur Appel en exploration - automatique. Ajouter les Lines avec
+   Speaker, Text et Audio ; cocher Is Intercom sur les repliques radio.
+4. Garder Automatic On Enter coche. Once coche limite l'appel a une seule entree.
+5. Deplier le noeud et regler Volume > Shape > Size pour couvrir le passage.
+   Si l'enfant est verrouille : clic droit sur DialogueTrigger > Enfants modifiables.
+L'entree du joueur dans ce cube appelle directement le dialogue ; aucun montage
+ou declencheur de cinematique n'est necessaire. Les commandes et la camera restent libres.
+
+REPLIQUES LONGUES EN AUTOMATIQUE
+Le texte est decoupe entre les mots dans les memes pages que les conversations.
+Les pages se repartissent sur la duree du WAV selon leur longueur. Elles defilent
+sans clic et sans relancer ni couper le WAV. Le typewriter adapte sa cadence pour
+laisser le temps de lire chaque page complete.
+Si le texte est trop long pour un WAV court, les pages restantes continuent apres
+la voix ; elles ne sont jamais sautees ou effacees trop vite. La voix suivante attend.
+Sans WAV, la duree de lecture du texte sert de reference et la sequence finit normalement.
+Un ralentissement d'affichage ne fait pas passer plusieurs pages invisibles.
+Dans DialogueSequence > Lecture automatique :
+- Minimum Page Seconds : temps minimum de chaque page, 1,2 s.
+- Reading Characters Per Second : estimation de lecture, 32 caracteres/s.
+- Reply Gap : pause entre repliques, 0,2 s.
+Ces reglages ne changent pas les conversations manuelles.
+
+PRIORITES ET PAUSE
+Une conversation manuelle ou une cinematique met un appel en pause : voix et texte
+reprennent ensuite au meme point, sans redemarrer le WAV. Les fenetres ne se superposent
+pas et deux voix de dialogue ne parlent pas en meme temps.
+Un appel declenche pendant une scene prioritaire attend son tour. Les appels suivants
+peuvent rejoindre la file, dans la limite du gestionnaire et du choix Enqueue When Busy.
+Echap suspend toujours le jeu, le texte et l'audio. Mort et fin de niveau annulent
+egalement l'appel et sa file d'attente.
+Un texte automatique place directement dans un plan de cinematique garde le controle
+camera/acteurs de cette cinematique ; seule sa progression devient automatique.
+
+ESSAYER LE RESULTAT
+Ouvrir scenes/dialogue/dialogue_preview.tscn, puis F6 (scene courante).
+Cette scene montre l'exemple de la reference avec le jeu en arriere-plan.
+Elle utilise la camera normale et ne simule aucune commande de visee.
+Le jeu principal ne lance aucun dialogue automatiquement au demarrage.
+
+E, Entree, Espace ou bouton A de la manette :
+- Pendant l'ecriture : revele la page courante sans rafale de sons.
+- Quand le texte est complet : page suivante, replique suivante ou fermeture.
+Maintenir la touche ne saute pas plusieurs pages.
+Ces validations concernent le mode Conversation. Appel n'intercepte pas ces touches.
+Echap ouvre la pause, puis permet de revenir au meme point de la conversation.
+
+AFFICHAGE
+Dans Dialogue > Style > Fenetre : Inner Border Color regle le filet interieur
+du cadre et de l'encart du locuteur. Shadow Color regle l'ombre exterieure.
+Leur alpha a 0 permet de les masquer. Border Color reste la bordure principale.
+Cadre bleu profond en degrade/dither de texture, bord creme, angles coupes et ombre.
+Le locuteur est en majuscules dans son propre encart a largeur automatique.
+Police du locuteur : Pixel Operator Bold, vraie graisse dessinee, 16 px natifs.
+Police du texte : m5x7 de Daniel Linssen, 16 px natifs, espacement normal.
+Les deux polices restent distinctes et n'utilisent ni lissage ni position sous-pixel.
+Les noms longs restent dans l'encart avec une ellipse plutot que de deborder.
+Le nom et le cadre apparaissent d'abord ; les lettres arrivent apres 0,12 s.
+Deux lignes par page par defaut ; retours a la ligne uniquement entre les mots.
+Les apostrophes et mots avec tirets restent entiers, meme au changement de page.
+Un mot seul plus large que le cadre rend la sequence invalide : play() retourne
+false avant de prendre les controles. Agrandir Box ou reformuler ce mot.
+Les textes affiches sont normalises sans accents, comme le HUD existant.
+
+Une fois la page complete :
+- Triangle vers le bas seul : il reste une suite.
+- Le meme triangle avec une barre immobile dessous : fin de conversation.
+Le triangle descend en 28 % du cycle, puis remonte en 72 %, avec un amorti
+aux extremites. Deplacement leger de 3 pixels natifs sur un cycle de 0,8 s.
+Il ne clignote plus ; la barre finale ne bouge jamais.
+Le symbole reste cache pendant l'ecriture et clignote doucement ensuite.
+
+CREER UN DIALOGUE
+Dans le systeme de fichiers de Godot, creer une ressource DialogueSequence.
+Ou dupliquer assets/dialogue/couloir_example.tres et changer son Id.
+Dans Lines, ajouter des ressources DialogueLine :
+- Speaker : nom affiche dans l'encart.
+- Text : texte de la replique ; les sauts de ligne volontaires sont conserves.
+- Characters Per Second : 0 utilise la vitesse du style ; sinon cadence propre a la replique.
+- Event Id : identifiant facultatif a utiliser avec le signal line_started.
+- Audio : voix facultative WAV/OGG/MP3 pour toute la replique.
+- Audio Volume Db : volume de cette voix, -8 dB par defaut.
+- Is Intercom : voix radio avec ouverture et fermeture du talkie.
+Enregistrer la ressource dans assets/dialogue.
+Les ressources sont copiees a l'ouverture : la lecture ne modifie pas les fichiers.
+
+PLACER UN DECLENCHEUR
+Glisser scenes/dialogue/dialogue_trigger.tscn dans la carte.
+On peut aussi ajouter directement DialogueTrigger3D depuis Ajouter un noeud :
+son enfant Volume et sa BoxShape3D sont crees automatiquement dans l'editeur.
+Selectionner Volume pour voir et regler le cube natif dans la vue 3D.
+Assigner sa ressource Sequence et regler Volume > Shape > Size.
+Automatic On Enter lance le dialogue lorsque le joueur entre dans la zone.
+Once limite le declencheur a une activation par chargement du niveau.
+Enqueue When Busy autorise explicitement la mise en attente derriere un autre dialogue.
+Le modele de declencheur n'est pas place automatiquement dans votre carte.
+Pour une porte ou une interaction specifique, desactiver Automatic On Enter,
+puis connecter son signal a trigger(). reset() permet de re-armer le declencheur.
+Le masque physique doit continuer a inclure la couche 2 du joueur.
+
+APPEL PAR CODE
+Game.play_dialogue(ressource_sequence) : lance ou met en file.
+Game.play_dialogue(ressource_sequence, false) : refuse si une conversation est deja ouverte.
+Game.dialogue.advance() : equivalent d'une validation.
+Game.dialogue.cancel() : ferme et vide la file d'attente.
+is_active() indique si la session est ouverte, file comprise.
+Game.play_dialogue choisit automatiquement le canal selon le Mode de la ressource.
+Game.dialogue reste le canal des conversations et du texte possede par une cinematique.
+Game.exploration_dialogue expose le meme controleur pour les appels : is_active(),
+cancel(), sequence_started, line_started et les autres signaux y sont disponibles.
+DialogueController.find_for(noeud, ressource_sequence) choisit le canal approprie,
+comme les zones de dialogue le font deja automatiquement.
+
+SIGNAUX DU CONTROLEUR
+session_started / session_finished : une seule ouverture/fermeture pour toute la file.
+sequence_started(sequence), sequence_finished(id, cancelled).
+line_started(line, index), line_finished(line, index), page_revealed(line, page).
+letter_revealed(character) : uniquement les lettres et chiffres reveles normalement.
+Exemple : dans line_started, lire line.event_id pour changer une expression
+via Player/Visage.set_preset(), jouer un stinger ou ouvrir une porte.
+La presentation n'impose aucune expression automatique ni dialogue sur un PNJ particulier.
+
+REGLAGES
+Dans main.tscn, selectionner Dialogue et ouvrir sa ressource Style.
+assets/dialogue/default_style.tres contient le style commun :
+- Box : position/taille en pixels natifs 320 x 240.
+- Top/Bottom Color, Border Color, Text Color.
+- Font et Name Font independantes, tailles et hauteur de l'encart.
+- Cadence, delai d'ouverture, pause de ponctuation, periode du symbole.
+- Indicator Travel et Indicator Descent Ratio : trajet et vitesse asymetrique.
+- Opening Sound, Closing Sound et Window Volume Db : sons de fenetre, -25 dB.
+- Letter Sound et Letter Volume Db, -32 dB par defaut.
+Dupliquer le style avant de personnaliser une autre instance.
+
+SON
+
+VOIX ET INTERCOM
+Audio est propre a chaque DialogueLine, dans les zones comme dans les cinematiques.
+Dans le panneau Cinematiques > Dialogue et voix, le champ Audio accepte un glisser-deposer.
+La case affiche le nom du fichier ; cliquer dessus ouvre aussi un choix de fichier.
+X retire le son. Ce meme champ est disponible dans l'inspecteur de DialogueLine.
+Ecouter / Couper permettent de verifier la voix et l'intercom dans l'editeur.
+La voix demarre avec la lecture du texte, apres l'apparition de la fenetre et du nom.
+Son depart est declenche dans le meme tick que la premiere lettre. Le son d'ouverture
+intercom demarre en meme temps, sans attendre sa fin avant de lancer la voix.
+Un premier appui revele le texte sans couper la voix. Les changements de pages
+gardent la meme voix ; passer a la replique suivante ou annuler l'arrete immediatement.
+L'audio ne se relance pas lorsqu'une camera change. Sa fin ne ferme jamais le texte.
+La pause suspend la voix, les sons radio et leur enchainement.
+
+Is Intercom utilise les sons fournis dans assets/audio/dialogs/talkie_start.wav et
+talkie_end.wav. Le son d'ouverture accompagne le debut de la voix ; la fermeture suit sa fin naturelle
+ou sa coupure. Sans Audio, cocher Is Intercom n'ajoute aucun son automatique.
+Dans Dialogue > Style > Intercom : Intercom Open Sound, Intercom Close Sound,
+Intercom Volume Db (-20 dB). Ces champs permettent de remplacer les sons radio.
+Les voix Is Intercom ainsi que talkie_start/talkie_end ne passent pas par la reverb.
+Une voix normale conserve la reverberation SPU. Le decor garde ses propres sons reverberes
+pendant une communication radio ; ils ne sont pas coupes ou rendus secs globalement.
+Le bouton Ecouter utilise exactement ce meme choix dans l'editeur.
+Redemarrer Godot une fois apres la mise a jour native pour activer ce routage.
+
+Le filtre prepare une voix mono, passe-haut 300 Hz et passe-bas 3000 Hz a deux poles,
+avec une limitation douce et des extremites de 3 ms pour adoucir le debut et la fin.
+C'est une coloration de communication radio, pas une fonction materielle de la PS1.
+L'echantillon prepare a 22050 Hz est ensuite encode en ADPCM SPU et lu par le meme
+interpolateur gaussien que les autres sons du jeu. Aucun faux filtre 8 bits sur le mixage.
+Le traitement est prepare et conserve dans la ressource de la replique depuis l'editeur,
+sans filtre couteux a executer pour chaque image. Les sources audio restent intactes.
+Une voix construite par code est preparee a l'ouverture de la sequence, puis mise en cache.
+Les voix ne bouclent jamais, meme si l'import de leur fichier etait regle sur Loop.
+Validation : tests/dialogue_voice.gd et docs/dialogue-voice-validation.json.
+Reference de bande voix radio : specifications Motorola MTR3000, reponse 300-3000 Hz.
+https://www.motorolasolutions.com/content/dam/msi/docs/business/solutions/business_solutions/location_solution/mototrbo/_documents/static_files/mototrbo_system_brochure_1_08.pdf
+
+SONS DE FENETRE ET LETTRES
+dialogue_open.wav et dialogue_close.wav : deux sons originaux de 71 ms,
+mono 22050 Hz, deux notes douces montantes/descendantes, attaques et fins courtes.
+Une ouverture et une fermeture par session, meme avec plusieurs sequences en file.
+Ces fichiers utilisent le meme importeur AudioStreamPSX que les sons des lettres.
+assets/audio/ui/dialogue_tick.wav est un court echantillon mono original a 22050 Hz.
+Chaque lettre ou chiffre joue ce petit bip arcade. Espaces et ponctuation restent muets.
+Le son passe par AudioStreamPSX : ADPCM SPU, interpolation gaussienne et mixage
+44100 Hz du projet. Une seule voix de texte evite toute accumulation de volume.
+La ponctuation ajoute un court temps de lecture, pas un bip supplementaire.
+Le volume du style peut se regler pendant le dialogue dans l'inspecteur Distant.
+Le fichier peut etre remplace par un autre echantillon court dans Letter Sound.
+La PS1 lit des echantillons ADPCM, avec interpolation gaussienne et sortie
+44100 Hz ; elle n'impose pas une forme d'onde unique aux interfaces.
+Reference : https://psx-spx.consoledev.net/soundprocessingunitspu/
+
+INTEGRATION AU JEU
+Les dialogues peuvent aussi etre places dans une timeline de cinematique :
+voir CINEMATIQUES.txt pour show_dialogue(index, attendre_la_fin).
+Dans ce cas, le montage garde les controles jusqu'au retour de camera.
+En mode Conversation, seul Player.controls_blocked change : aucun script d'acteur
+n'est desactive et le monde n'est pas mis en pause. Le joueur revient en idle,
+les animations et actions deja lancees se terminent, la physique, les ennemis,
+les effets, la musique et les ambiances continuent. Les ennemis peuvent attaquer.
+La souris, les deplacements, la visee et les nouvelles actions restent bloques.
+Le HUD contextuel est masque. Les boutons d'action, dont la visee, doivent etre
+relaches apres la fermeture pour eviter un tir ou une interaction involontaire.
+Echap reste une vraie pause du jeu. L'annulation et les files d'attente restaurent
+la valeur de controles precedente ; une mort peut interrompre la conversation.
+
+VERIFICATIONS
+tests/dialogue.gd : pagination, son SPU, etats, entrees, file bornee, annulation,
+pause/reprise, declencheur physique et maintien des colliders.
+tests/dialogue_visual.gd : capture du jeu, cadre/couleurs, texte, police grasse
+distincte et nom entierement dans son encart, symboles suite/fin.
+Captures : docs/dialogue-preview.png, dialogue-opening.png, dialogue-typing.png,
+dialogue-window.png et dialogue-end.png.
+Licences des polices : assets/fonts/M5X7-NOTICE.txt et PIXEL-OPERATOR-NOTICE.txt.
+
+PORTES A CLE - UNE SEULE REPLIQUE ALEATOIRE
+Le fichier assets/audio/dialogs/locked_doors_key/locked_doors_key.tres est utilise
+directement par les portes a cle. Ajouter toutes les possibilites dans ses Lines,
+chacune avec son texte et son propre WAV. Aucun fichier par replique a creer.
+Sans la bonne cle : un effet de serrure aleatoire, puis UNE ligne de ce dialogue
+immediatement a la fin de l'effet. Cette lecture est automatique et laisse jouer.
+Le mode et les autres lignes de la ressource d'origine ne sont pas modifies.
+Les cartes d'acces et portes condamnees sont exclues. Voir CARTES-2M.txt pour
+associer la cle a une porte et regler les listes ou le delai entre tentatives.

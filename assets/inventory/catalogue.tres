@@ -1,0 +1,39 @@
+[gd_resource type="Resource" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/back.res" id="1_earv3"]
+[ext_resource type="Texture2D" path="res://assets/collection/images/mystery.res" id="2_vxurp"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="3_t4uui"]
+[ext_resource type="Resource" path="res://assets/collection/cards/cendre_01.tres" id="4_7ad58"]
+[ext_resource type="Resource" path="res://assets/collection/cards/bastion_07.tres" id="5_a7qmn"]
+[ext_resource type="Resource" path="res://assets/collection/cards/veuve_12.tres" id="6_6g450"]
+[ext_resource type="Resource" path="res://assets/collection/cards/maree_04.tres" id="7_km8eb"]
+[ext_resource type="Resource" path="res://assets/collection/cards/silex_09.tres" id="8_7a10i"]
+[ext_resource type="Resource" path="res://assets/collection/cards/alouette_03.tres" id="9_gbkdg"]
+[ext_resource type="Resource" path="res://assets/collection/cards/suture_06.tres" id="10_puc10"]
+[ext_resource type="Resource" path="res://assets/collection/cards/ossian_00.tres" id="11_ml4o2"]
+[ext_resource type="Resource" path="res://assets/collection/cards/rapiere_11.tres" id="12_u8ajo"]
+[ext_resource type="Resource" path="res://assets/collection/cards/regent_08.tres" id="13_yrf4n"]
+[ext_resource type="Resource" path="res://assets/collection/cards/selene_15.tres" id="14_w16jf"]
+[ext_resource type="Resource" path="res://assets/collection/cards/fracas_02.tres" id="15_kig4n"]
+[ext_resource type="Resource" path="res://assets/collection/cards/erg_10.tres" id="16_l2jdb"]
+[ext_resource type="Resource" path="res://assets/collection/cards/obscur_13.tres" id="17_ollv8"]
+[ext_resource type="Resource" path="res://assets/collection/cards/vigile_14.tres" id="18_438lo"]
+[ext_resource type="Script" path="res://scripts/inventory/item_definition.gd" id="19_wla3q"]
+[ext_resource type="Resource" path="res://assets/inventory/items/medkit.tres" id="20_oub7k"]
+[ext_resource type="Resource" path="res://assets/inventory/items/ammo_magnum.tres" id="21_oths0"]
+[ext_resource type="Resource" path="res://assets/inventory/items/desert_eagle.tres" id="22_i0e4n"]
+[ext_resource type="Resource" path="res://assets/inventory/items/fuse_16a.tres" id="23_an1n6"]
+[ext_resource type="Resource" path="res://assets/inventory/items/key_archives.tres" id="24_ay802"]
+[ext_resource type="Resource" path="res://assets/inventory/items/access_maintenance.tres" id="25_15j57"]
+[ext_resource type="Resource" path="res://assets/inventory/items/valve_wheel.tres" id="26_t5gl7"]
+[ext_resource type="Resource" path="res://assets/inventory/items/lever_handle.tres" id="27_dvq47"]
+[ext_resource type="Resource" path="res://assets/inventory/items/maintenance_note.tres" id="28_rbj0o"]
+[ext_resource type="Resource" path="res://assets/inventory/items/metal_parts.tres" id="29_jjj5u"]
+[ext_resource type="Script" path="res://scripts/inventory/catalogue.gd" id="30_pg4or"]
+
+[resource]
+script = ExtResource("30_pg4or")
+items = Array[ExtResource("19_wla3q")]([ExtResource("20_oub7k"), ExtResource("21_oths0"), ExtResource("22_i0e4n"), ExtResource("23_an1n6"), ExtResource("24_ay802"), ExtResource("25_15j57"), ExtResource("26_t5gl7"), ExtResource("27_dvq47"), ExtResource("28_rbj0o"), ExtResource("29_jjj5u")])
+cards = Array[ExtResource("3_t4uui")]([ExtResource("4_7ad58"), ExtResource("5_a7qmn"), ExtResource("6_6g450"), ExtResource("7_km8eb"), ExtResource("8_7a10i"), ExtResource("9_gbkdg"), ExtResource("10_puc10"), ExtResource("11_ml4o2"), ExtResource("12_u8ajo"), ExtResource("13_yrf4n"), ExtResource("14_w16jf"), ExtResource("15_kig4n"), ExtResource("16_l2jdb"), ExtResource("17_ollv8"), ExtResource("18_438lo")])
+card_back = ExtResource("1_earv3")
+card_mystery = ExtResource("2_vxurp")

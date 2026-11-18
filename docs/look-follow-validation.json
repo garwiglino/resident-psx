@@ -1,0 +1,13 @@
+{
+	"failures": [],
+	"measurements": {
+		"camera_relative_movement": "(-0.208441, -0.019939, -0.208442)",
+		"initial_root_motion": {
+			"enabled": true,
+			"playback_speed": 1.0,
+			"scale": 1.0
+		},
+		"recenter_error_degrees": 8.82910782957614,
+		"upper_body_error_degrees": 0.0
+	}
+}

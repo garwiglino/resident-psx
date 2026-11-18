@@ -1,0 +1,21 @@
+{
+	"aim_direction_error_degrees": 0.000017032731155445,
+	"aimed_torso_motion_m": 0.0258510764688253,
+	"aimed_torso_roll_degrees": 2.9425101677952,
+	"body_bones": 269,
+	"failures": [],
+	"final_lower_position_error_m": 0.00000000372529029846191,
+	"final_lower_rotation_error_degrees": 0.0559529096807445,
+	"foot_lift_m": [
+		0.00688501819968224,
+		0.0104051195085049
+	],
+	"protected_lower_bones": 105,
+	"root_angles": [
+		0.752325740823589,
+		0.752325740823589
+	],
+	"source_angle_degrees": 43.1050897682447,
+	"source_position_error_m": 0.000000536441802978516,
+	"source_rotation_error_degrees": 0.0559529096807445
+}

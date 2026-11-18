@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3 uid="uid://jsp4vrdhmbax"]
+
+[ext_resource type="Script" uid="uid://d2bgj3l7chs57" path="res://scripts/clothing/clothing_item.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://bm5iwqgd7bxkd" path="res://assets/character/clothing/large_jeans_01.glb" id="2"]
+[ext_resource type="Resource" uid="uid://b2s605k7hkwo4" path="res://assets/character/clothing/textures/jean_large.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = &"large_jeans_01"
+display_name = "Jean large"
+scene = ExtResource("2")
+skin_metadata = "res://assets/character/clothing/large_jeans_01.json"
+slot = 2
+texture_set = ExtResource("3")

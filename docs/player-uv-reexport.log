@@ -1,0 +1,70 @@
+00:03.328  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\export_player_base.py:39: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  material=bpy.data.materials.new(name);material.use_nodes=True
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+10:02:21 | INFO: Starting glTF 2.0 export
+10:02:21 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+10:02:22 | INFO: Extracting primitive: Mesh_0.002
+10:02:22 | INFO: Primitives created: 3
+10:02:24 | INFO: Finished glTF 2.0 export in 2.9500904083251953 s
+
+PLAYER_BASE_EXPORTED {"source": "C:\\Users\\sheensaw\\Downloads\\cop_base.blend", "source_sha256": "cb91ae52534e1895a96459778aec5af37f91a16dddc73a729d76e55f4c70b25d", "base_mesh_only": true, "animations_preserved": true, "vertices": 618, "polygons": 683, "joint_count": 270, "face_uv_origin_exported": [0, 0], "face_top_polygons": 22, "face_bottom_polygons": 16, "face_expressions": "res://assets/character/face/expressions.json"}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Initialisation du projet (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Analyse de la structure des fichiers…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Chargement des noms des classes globales…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Vérification des GDExtensions…[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Création des scripts de chargement automatique…[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initialisation des extensions…[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Démarrage du scan de fichiers…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Chargement de l’éditeur (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur…[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Chargement des docks…[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Réouverture des scènes…[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur central…[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de la fenêtre des plugins…[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Disposition de l’éditeur prête.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+FACE_IMPORTS_OK: lossless, no mipmaps, no automatic 3D compression
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Initialisation du projet (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Analyse de la structure des fichiers…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Chargement des noms des classes globales…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Vérification des GDExtensions…[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Création des scripts de chargement automatique…[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initialisation des extensions…[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Démarrage du scan de fichiers…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Analyse des actions… (8 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | face_bottom_atlas_512x256.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | face_bottom_neutral.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | face_top_atlas_512x256.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | face_top_neutral.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | cop_player_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | cop_player_Cop_Body_Reference_256.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | cop_player_face_bottom_neutral.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | cop_player_face_top_neutral.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Chargement de l’éditeur (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur…[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Chargement des docks…[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Réouverture des scènes…[39m[0m
+[  50% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur central…[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de la fenêtre des plugins…[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Disposition de l’éditeur prête.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Joueur reexporte. Les animations existantes sont conservees.

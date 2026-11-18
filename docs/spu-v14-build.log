@@ -1,0 +1,7 @@
+Version MSBuild 18.11.1-1.26513.3+940033be3 pour .NET Framework
+
+  Checking File Globs
+  godot-cpp.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\native\build\bin\libgodot-cpp.windows.template_release.x86_64.lib
+  spu_audio.cpp
+     Création de la bibliothèque C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry_v14.lib et de l'objet C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry_v14.exp
+  psx_geometry.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\bin\psx_geometry_v14.dll

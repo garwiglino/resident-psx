@@ -1,0 +1,242 @@
+Ouvrir project.godot avec Godot 4.7.1.
+Le moteur optimise utilise maintenant bin/psx_geometry_v19.dll (rendu, visage, apercu editeur et mixage audio SPU PS1).
+Redemarrer Godot pour charger la DLL v19 si une ancienne bibliotheque etait deja ouverte.
+Lampes avec modele, partie unlit synchronisee et son localise : voir LUMIERES.txt.
+Expressions du joueur : ouvrir scenes/player.tscn > Visage ; voir EXPRESSIONS-VISAGE.txt.
+Evenements, objectifs silencieux et ennemis places dans la map : EVENEMENTS-MONDE.txt.
+Les ennemis se reglent dans Map > Gameplay > Ennemis, avec Enemy Id et Evenement de mort.
+
+Dans scenes/player.tscn, selectionner Player :
+- Camera - exploration. Free Orbit Enabled est active sur le joueur du jeu.
+  A l'arret, la souris fait tourner la camera autour de Hitomi. Le personnage garde son orientation.
+  Au premier appui, la tete tourne vers la direction demandee, suivie des epaules puis du bassin.
+  Exploration Head Turn Degrees regle l'amplitude du regard. Exploration Turn Speed Degrees
+  et Exploration Turn Response reglent le virage du corps.
+  Le premier pas commence tout de suite et raccourcit pendant un grand virage. La cadence
+  et la distance du root motion progressent ensemble vers la vitesse de marche ou de course.
+  Maintenir Maj lance le jog dans toutes les directions, y compris vers la camera.
+  Exploration Torso Pitch Degrees limite le mouvement vertical du buste en marche (12 degres).
+  Au repos et en course, le buste revient progressivement a sa pose animee.
+  En visee, le corps s'aligne sur la camera, le buste suit son pitch et les huit clips directionnels
+  reprennent. Relacher la visee libere l'orbite et ramene le buste vers sa pose d'exploration.
+  Les reglages de recentrage et du turn ci-dessous concernent Free Orbit Enabled desactive.
+- Buste et orientation. Torso Follow Enabled active le suivi additif du buste, arme comprise.
+  Torso Pivot Bone : DEF-spine abaisse le depart d'un os, au niveau du bassin.
+  DEF-spine.001 reprend l'ancien depart au bas du ventre. Le choix agit en jeu.
+  Seul le buste tourne autour de ce point ; l'animation du bassin et des jambes reste intacte.
+  En mode classique, au repos, au-dela du seuil vers la gauche, le corps joue le turn de Blender.
+  Le seuil est limite par l'angle maximal du buste pour eviter de le depasser.
+  La rotation racine de ce pas recentre le corps de 43,1 degres en 1 s ; le buste garde le regard.
+  Vers la droite, le recentrage habituel reste actif, avec un seuil de retour de 10 degres.
+  En mouvement, il se recentre sur le regard ; les directions de marche/strafe sont relatives a la camera.
+  Limites du buste : 55 degres de yaw, 50 degres de pitch. Recentrage sans clip : 240 degres/s ; reponse : 0,10 s.
+- Rotation sur place en mode classique. Turn In Place Enabled, Speed (1,0), Blend Time (0,12 s).
+  Clip player_turn_in_place_left : corps entier, y compris ventre, poitrine, epaules et bras.
+  Le pas se joue a l'arret et au sol. Reprendre la marche ou inverser le regard l'interrompt avec un fondu.
+  Viser interrompt aussi ce pas et aligne immediatement le joueur sur la direction
+  de visee. La pose du turn s'efface avec son fondu habituel, sans rotation racine
+  residuelle. Tant que la visee est tenue, aucun nouveau turn ne demarre.
+  Speed accelere ensemble les poses et la rotation racine, sans modifier l'angle du pas.
+  Le seuil de declenchement reste dans Buste et orientation > Body Turn Threshold Degrees.
+  Aucun verrouillage des pieds ni correction de leur position. Export : voir Exporter-Animations.txt.
+  Bassin, bas du ventre et jambes conservent toutes les translations, rotations et echelles
+  du clip Blender. Cette pose passe apres la visee et le regard, sans attenuation de torsion
+  ni compensation du bassin. Les fondus d'entree/sortie restent regles par Blend Time.
+  Le mouvement anime du torse accompagne aussi la pose de visee, le tir et la recharge.
+  Le yaw/pitch souris se superpose ensuite en tenant compte de l'orientation deja
+  apportee par le turn : pas de double rotation et pas de torse fige sur le bassin.
+- Root motion : activation, echelle de distance, vitesse de lecture, rotation et direction d'entree.
+  Huit directions de marche, diagonales comprises : vitesse animee 1,47390 m/s, identique dans chaque direction.
+  Course : Maj + avant joue player_run_pistol depuis Downloads/cop_anims_walk.blend.
+  Images 1 a 121 a 30 images/s, boucle de 4 s, vitesse source 2,94684 m/s.
+  run_animation_speed : cadence du jog uniquement (1,10 = +10 %, environ 3,24 m/s).
+  Animation et root motion sont acceleres ensemble ; la longueur des pas reste celle de Blender.
+  Le root motion regle la vitesse reelle ; run_speed sert si le root motion est desactive.
+  Relacher Maj revient a la marche avec le fondu habituel. En visee, les marches restent actives.
+  En mode classique, Run Direction Enabled reutilise cette course en diagonale.
+  Run Direction Max Yaw Degrees : limite gauche/droite (45 degres par defaut).
+  Run Direction Response : reponse progressive, 0,10 s par defaut ; 0 = immediat.
+  Le bassin et les jambes tournent ensemble ; le buste et l'arme gardent le regard.
+  Les poses du bassin/jambes, la cadence et la distance racine restent celles du clip.
+  Le retour accompagne les fondus vers marche, idle ou visee. Un strafe pur garde
+  son animation dediee. Les mains et les paumes restent solidaires de l'arme.
+- Visee. Les huit animations directionnelles gardent leur root motion.
+  Le haut du corps reprend la pose sauvegardee a l'image 1 de Downloads/cop_anims.blend.
+  Bassin et jambes restent animes par les clips de deplacement ; le buste suit toujours la souris.
+  En locomotion, le haut du corps reprend seulement les translations du bassin,
+  sans ses rotations animees. Pendant un turn, il accompagne aussi le mouvement
+  du torse tout en conservant la direction de visee souris.
+  aim_pose_blend_time : duree pour lever/baisser l'arme (0,18 s).
+  reload_pose_return_time : retour de la derniere pose de recharge vers l'idle,
+  la marche, le strafe ou la visee en cours (0,24 s). Le fondu commence et finit
+  progressivement ; l'animation de deplacement continue d'avancer en dessous.
+  Le retour mecanique du pistolet utilise ce meme reglage. Les images 6 et 17
+  du chargeur et le moment du remplissage des munitions restent inchanges.
+  aim_camera_offset : cadrage de visee (0,32 / 1,45 / 0,85 m), aim_camera_fov : 40 degres verticaux.
+  aim_camera_transition_time : rapprochement et retour progressifs (0,18 s).
+  Pendant un strafe en visee, la camera suit le deplacement sur le meme tick et garde
+  le reticule a cote de la silhouette. Si un mur comprime le recul ou le decalage d'epaule,
+  la vue locale masque temporairement le personnage et l'arme tenue pour degager le reticule.
+  Le cadrage normal personnalise reste celui de votre scene.
+- Transitions : animation_blend_time regle le melange des poses (0,22 s par defaut).
+  Les animations entrante et sortante continuent de jouer avec des poids de melange lineaires.
+  Une transition interrompue conserve le melange des clips encore actifs, sans pose figee.
+  La reference de rotation des mains et doigts est centree sur la prise idle pour eviter
+  leur retournement pendant strafe gauche -> idle. Les poses source et binds de skin restent conserves.
+  Les deux os de deformation de l'avant-bras droit (dont .001) et leurs segments
+  utilisent aussi cette reference pour eviter le twist course -> marche/idle.
+  Le deplacement utilise immediatement le root motion du nouveau clip, independamment de la duree du blend.
+  Le test docs/animation-response-validation.json mesure le depart des le premier tick
+  et les melanges 20/50/80 % entre les deux animations qui continuent d'avancer.
+  Les clips sont lus tels qu'exportes. Le root motion reste applique pendant le fondu de retour vers idle.
+  Idle et huit marches reexportes depuis les fichiers Blender originaux de Downloads.
+  L'ancienne harmonisation a 0,905 m et la flexion minimale des genoux ont ete retirees.
+  Bassin et jambes conservent les translations, rotations et echelles source.
+  Pas de verrouillage des pieds, de correction de hauteur ou de changement de phase.
+  Voir HARMONISATION.txt et Exporter-Animations.txt pour les sources a utiliser.
+- Déplacements : marche, course, visée, strafe/recul, accélération, freinage, gravité.
+- Caméra : décalage XYZ, FOV vertical, pitch, sensibilité, inversion Y, épaule, collisions.
+- Caméra — suivi amorti : retard de translation (0,065 s) et de rotation (0,05 s), limites hors visee.
+  En visee, aucun retard de translation ni de rotation, quels que soient les reglages hors visee.
+  Mettre un retard à 0 désactive cet amortissement. Le cadrage au repos reste identique.
+  Les téléportations recalent immédiatement la caméra ; le suivi de position est protégé contre les murs.
+  Collision : volume protegeant le centre et les coins du plan proche, recalcule apres
+  le lag, la visee et le changement d'epaule. La secousse de tir reste aussi du bon cote du mur.
+- Personnage : capsule, échelle, animations, inclinaison en strafe.
+- Santé et arme : sante et liste Starting Weapons (armes possedees au depart).
+  Les parametres d'arme se reglent dans assets/weapons/desert_eagle.tres :
+  chargeur, reserve initiale, cadence, mode de tir, recharge, degats, portee, recul et sons.
+  Son du Desert Eagle : assets/audio/weapons/d_eagle/eagle_shoot.wav (traitement PS1 automatique).
+  Molette ou touches 1-4 pour changer d'arme lorsque plusieurs armes sont possedees.
+  Les chargeurs sont individuels ; les reserves sont partagees par type de munition.
+  Une recharge interrompue par un changement ne consomme ni ne cree de cartouches.
+  Voir ARMES.txt pour ajouter une arme.
+  shot_shake_strength (0,55) et shot_shake_duration (0,12 s) : secousse visuelle seche au tir.
+  Le mouvement reste borne et revient exactement a zero, sans changer le rayon de visee ni le buste.
+- Lampe torche : placee a hauteur de poitrine, a 3 cm du buste par defaut.
+  Sa position est retenue du cote du joueur par les obstacles de flashlight_collision_mask.
+  Le joueur, ses vetements et son arme ne recoivent pas sa propre torche et n'en projettent
+  pas l'ombre. Toutes les autres lumieres du niveau continuent de les eclairer.
+  Orientation attachee a la camera. Les petites rotations et oscillations du buste ne secouent pas le faisceau.
+  Lumiere blanche, cone de 44 degres avec bord progressif, portee de 16 m.
+  Reglages : flashlight_offset (X cote, Y hauteur, Z devant), flashlight_color,
+  flashlight_energy, flashlight_range et flashlight_cone_degrees. F allume/eteint la lampe.
+  Le rendu natif et le rendu GDScript utilisent le meme faisceau par sommets.
+- Audio : Projet > Outils > Mixage audio, ou bouton Mixage audio de la vue 3D.
+  Voir AUDIO-PSX.txt. Les groupes Audio - pas/armes/joueur gardent leurs niveaux locaux.
+  Contacts des pas :
+  Les sons observent les semelles du squelette affiche, apres les fondus d'animation.
+  Un pas part quand le talon ou l'avant du pied redescend au sol apres avoir ete leve.
+  Marche, recul, strafes, diagonales et jog gardent leur cadence propre, y compris en visee.
+  Le jog a 1,10 et root_motion_playback_speed sont suivis automatiquement ; aucun compteur de distance.
+  footstep_contact_height (0,008 m), footstep_lift_height (0,04 m), footstep_min_interval (0,10 s).
+  Pas de son immobile, en l'air, bloque contre un mur ou avec les animations desactivees.
+  La detection ne modifie aucune pose, aucun pied ni le root motion.
+  Validation : docs/footsteps-validation.json (huit marches, jog 1/1,10/2, visee et fondus).
+  Tous les sons importes WAV/OGG/MP3 passent automatiquement par le chemin SPU PS1.
+  Voir AUDIO-PS1.txt pour l'import, la lecture ADPCM/gaussienne et la reverberation commune.
+
+Tir : les clips de cop_shoot.blend sont synchronises sur la meme horloge, a 24 images/s.
+Le personnage suit le strip player_gun_shoot, images 1 a 8 (0,292 s).
+Le pistolet suit son strip images 1 a 9 (0,333 s), avec la culasse animee sur les 4 premieres images.
+Les deux animations commencent ensemble a l'image 1. Flash, lumiere, son du tir, recul camera,
+shake et impact partent ensemble a l'image 2 : 1/24 s (41,7 ms) apres le debut.
+Le declenchement suit l'horloge d'animation, une seule fois par tir ; test dans docs/shot-frame-validation.json.
+Les animations du bassin/jambes et le root motion continuent pendant le recul.
+Dans scenes/pistol.tscn, selectionner Pistol pour regler :
+- Flash et lumiere : flash_duration, flash_size, flash_opacity (0,50), flash_light_color, flash_light_energy, flash_light_range.
+- Ejection : b_bullet ejecte a 1/24 s, revient a 3/24 s ; vitesse et duree des douilles reglables.
+Le bone ejecte se deplace dans le monde ; une copie continue sa chute apres son retour dans l'arme.
+Huit meshes de douilles sont reutilises, sans reconstruction du moteur a chaque tir.
+assets/effects/muzzle_flash_atlas.png : 16 formes de 64x64 sur une page 256x256, choix aleatoire sans repetition immediate.
+Le flash reste au point du tir dans le monde, independamment des mouvements du canon.
+Son orientation fait face a la camera. Il utilise 50 % d'opacite par defaut, reglable sur Pistol.
+Le flash est un quad dans l'ordering table, avec texels RGB555, decoupe alpha et melange transparent.
+Sa lumiere ponctuelle modifie les couleurs des sommets avant la modulation de texture et le brouillard.
+La lumiere reste au meme point que le flash et s'eteint avec lui.
+L'atlas interne peut passer a 1024x1024 pour contenir la page d'effets ; les pages logiques gardent leur definition.
+Validation du tir : docs/shooting-validation.json et docs/shot-lighting-validation.json.
+Mesures de fluidite avec tirs et rechargements : docs/verified-60fps-shoot.json et docs/verified-60fps-reload.json.
+
+Recharge : source exports/blender/cop_shoot_reload_bezier.blend, strips player_gun_reload et gun_reload.
+Le personnage joue les images 1 a 35 (1,4167 s) ; le pistolet 1 a 28 (1,125 s), a 24 images/s.
+Les deux clips commencent ensemble sans modifier leur vitesse. Le haut du corps est superpose
+a la locomotion ; bassin, jambes et root motion continuent, sans correction des pieds.
+Image 6 du personnage (5/24 s) : b_mag suit un vrai corps rigide avec gravite et collision du decor.
+Un nouveau chargeur apparait dans la main gauche. Son montage est calibre sur l'insertion source.
+Image 17 (16/24 s) : la copie tenue disparait, b_mag revient a sa pose initiale dans le pistolet.
+L'ancien chargeur poursuit sa chute. Quatre corps rigides reutilisables, sans reconstruction du rendu.
+Les munitions sont transferees a la fin du clip personnage ; reload_duration sert de secours sans clip.
+Dans Pistol > Chargeur : magazine_drop_frame, magazine_insert_frame et magazine_hand_mount_file.
+Apres modification de la prise ou de l'insertion dans Blender, recalibrer avec tools/build_reload_mount.gd.
+Validation : docs/reload-magazine-validation.json ; vues epaule et gros plans dans docs/reload-*.png.
+Mesure de recharge : 600 images apres 3 s de chauffe, 10 tirs et 5 chargeurs ejectes/inseres.
+60,014 FPS moyens ; percentile 99 : 18,835 ms ; maximum : 20,445 ms ; un seul lot de rendu.
+Le premier passage avec 1 s de chauffe a presente une pointe a 83,880 ms et 59,682 FPS moyens.
+Les deux mesures sont conservees dans docs/verified-60fps-reload*.json ; elles ne garantissent
+pas un intervalle strict de 16,67 ms pour chaque image ni l'absence de pointes au chargement.
+Le bouton « Reprendre la caméra Blender » recharge assets/character/camera.json.
+Les paramètres de base proviennent de Camera dans cop_anims.blend (50 mm, 320 x 240).
+Vos surcharges de scène et vos derniers réglages de cadrage sont conservés.
+Pour régler le personnage dans toutes les cartes, ouvrir scenes/player.tscn.
+Les réglages de caméra, capsule et échelle sont prévisualisés dans l'éditeur.
+
+Sélectionner PSXRenderer dans scenes/main.tscn :
+- Apercu sans lancer le jeu : bouton PSX dans la barre de la vue 3D.
+  Les lumieres et le fog utilisent le moteur natif. Reglages PSX ouvre son inspecteur.
+  Voir APERCU-PSX.txt pour les cartes ouvertes seules et les outils de selection.
+- Eclairage manuel : ajouter des PSXLight3D dans Map > Lumieres ; voir LUMIERES-PSX.txt.
+  Couleur, intensite et portee par source ; ambient_light_color est noir par defaut.
+- affine_texture_strength : 1 = deformation affine PSX d'origine ; 0 = perspective corrigee ; valeurs intermediaires = effet attenue.
+  Ce reglage agit uniquement sur l'interpolation des textures. Les autres reglages PSX restent independants.
+- Limite de FPS (60 par défaut, 0 = illimité), distance, brouillard, grille et dithering.
+- A 1, les textures restent affines et le decor garde son ordre de polygones PSX.
+  Le joueur, ses vetements modulaires et son arme beneficient d'une correction locale
+  de visibilite : leurs surfaces ne traversent plus celles qui sont devant.
+  Les decoupes transparentes restent respectees. Eclairage par sommets, RGB555,
+  dithering et jitter sont conserves, dans la vue PSX de l'editeur comme en jeu.
+L'inspecteur normal sauvegarde les réglages ; l'inspecteur Distant sert aux essais en jeu.
+
+FLUIDITE — VERSION 5
+Le problème venait surtout des échanges CPU, des allocations et des appels par petit lot.
+L'atlas conserve les coordonnées locales de chaque texture et l'ordre exact des polygones.
+Décor et personnages sont maintenant envoyés dans un seul lot, au lieu de centaines.
+Le cache natif évite les accès à l'interface Godot pour chaque sommet et chaque indice.
+Le tri par comparaison a été remplacé par une table de profondeur avec insertion LIFO.
+Le rendu 3D standard inutilisé est coupé ; physique, squelettes et caméra restent actifs.
+
+Mesures locales : RTX 2070, framebuffer 320 x 240, FOV 51,61 degres,
+camera (0,5 ; 1,4 ; 1,3), affine_texture_strength 0,14, 12 pages de textures.
+Decor a sa resolution d'origine, huit directions de marche, course et fondus progressifs actifs.
+600 images en 9,9982 s, soit 60,011 FPS. Intervalle moyen : 16,664 ms ;
+percentile 99 : 17,064 ms ; maximum : 17,398 ms.
+Test de changements rapides (10 directions par seconde) : 60,009 FPS,
+percentile 99 : 17,389 ms ; maximum : 17,588 ms.
+Les rapports sont dans docs/direction-textures-60fps.log,
+docs/direction-rapid-fades-60fps.log et docs/verified-60fps.json.
+Les anciens tests sans limite et la comparaison initiale restent dans
+docs/stress-optimized.json et docs/stress-baseline.json.
+Ces mesures excluent le chargement initial et decrivent les parcours testes sur cette machine.
+
+MATÉRIAUX / RASTÉRISATION
+Les sources restent intactes. Les copies en mémoire passent en pages de 256 x 256 maximum.
+L'atlas du decor est decoupe en regions sans redimensionnement. Une tuile de 128 x 128
+garde cette definition : l'atlas 1024 n'est plus reduit entierement a 256.
+Les texels sont quantifiés en RGB555 une fois au chargement ; aucun mipmap ni filtrage bilinéaire.
+La modulation utilise des couleurs de sommets 8 bits ; 128 correspond à l'éclairage neutre.
+Les polygones sans texture utilisent leur couleur Gouraud directement.
+Le shader applique la matrice matérielle 4 x 4, la saturation puis la troncature à 5 bits.
+Les UV restent affines et bouclent dans leur page, sans fuite vers la texture voisine de l'atlas.
+La transparence binaire des textures est conservee pour les materiaux opaques et detoures.
+L'implémentation reproduit ces opérations visuelles ; elle ne simule pas les cycles/DMA du GPU ou tous les détails arithmétiques du GTE.
+Les effets marques transparents utilisent un melange alpha reglable apres RGB555.
+Les quatre modes de semi-transparence materiels PSX ne sont pas encore reproduits.
+
+Validation : tests/smoke.gd, tests/settings.gd, tests/raster_accuracy.gd.
+Le test graphique compare les pixels GPU aux opérations attendues, et vérifie aussi l'ordre des triangles.
+Aucune surcouche CRT, VHS, grain ou filtre d'écran n'est utilisée.
+
+Références techniques consultées :
+https://psx-spx.consoledev.net/graphicsprocessingunitgpu/
+https://psx-spx.consoledev.net/geometrytransformationenginegte/
+https://docs.godotengine.org/en/stable/classes/class_renderingserver.html

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/selene_15.res" id="1_jj0hx"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_oriis"]
+
+[resource]
+script = ExtResource("2_oriis")
+id = &"selene_15"
+display_name = "SÉLÈNE-15"
+description = "Châssis argenté et dispositif dorsal annulaire conçu pour les zones de faible gravité."
+lore = "Rapporte des échos de la face cachée."
+rarity = "SR"
+image = ExtResource("1_jj0hx")
+source_index = 11

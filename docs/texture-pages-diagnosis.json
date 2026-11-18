@@ -1,0 +1,415 @@
+{
+	"groups": [
+		[
+			{
+				"node": "/root/Map/Carte_1/CarteAnimee/@MeshInstance3D@2",
+				"path": "res://assets/collection/images/mystery.res",
+				"size": "(64, 96)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Carte_1/CarteAnimee/@MeshInstance3D@3",
+				"path": "res://assets/collection/images/back.res",
+				"size": "(64, 96)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/stairs_01/Modele",
+				"path": "res://assets/props/stairs_01/stairs_01.mesh.res::ImageTexture_0fltf",
+				"size": "(32, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/stairs_01/Modele",
+				"path": "res://assets/props/stairs_01/stairs_01.mesh.res::ImageTexture_vyvkt",
+				"size": "(256, 128)"
+			},
+			{
+				"node": "/root/Map/Construction/Bord_h_0_0/wall_loop",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_vyvkt",
+				"size": "(256, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/stairs_01/Modele",
+				"path": "res://assets/props/stairs_01/stairs_01.mesh.res::ImageTexture_g3p0j",
+				"size": "(256, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_efx4o",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_vhc03",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_41838",
+				"size": "(128, 32)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_rtrbk",
+				"size": "(128, 32)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_o4oe0",
+				"size": "(64, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_8xphk",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_h6hx8",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_3j563",
+				"size": "(128, 128)"
+			},
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/wall_loop_window",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_wme2x",
+				"size": "(128, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_7210d",
+				"size": "(16, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_4n6td",
+				"size": "(64, 32)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_ddv5t",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_tglnh",
+				"size": "(64, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_0nxvu",
+				"size": "(32, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_mlhox",
+				"size": "(16, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_et328",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/pillar_01/Modele",
+				"path": "res://assets/props/pillar_01/pillar_01.mesh.res::ImageTexture_hlvn7",
+				"size": "(64, 32)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/woodboard_01/Modele",
+				"path": "res://assets/props/woodboard_01/woodboard_01.mesh.res::ImageTexture_nm4uf",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/woodboard_01/Modele",
+				"path": "res://assets/props/woodboard_01/woodboard_01.mesh.res::ImageTexture_cnhls",
+				"size": "(128, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/woodboard_01/Modele",
+				"path": "res://assets/props/woodboard_01/woodboard_01.mesh.res::ImageTexture_475e5",
+				"size": "(128, 16)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/woodboard_01/Modele",
+				"path": "res://assets/props/woodboard_01/woodboard_01.mesh.res::ImageTexture_4x7ge",
+				"size": "(8, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/woodboard_01/Modele",
+				"path": "res://assets/props/woodboard_01/woodboard_01.mesh.res::ImageTexture_afmxx",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Neon/Modele/Modele",
+				"path": "res://assets/props/neon_light_01/neon_light_01.mesh.res::ImageTexture_6wvi5",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Neon/Modele/Modele",
+				"path": "res://assets/props/neon_light_01/neon_light_01.mesh.res::ImageTexture_syh44",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Neon/Modele/Modele",
+				"path": "res://assets/props/neon_light_01/neon_light_01.mesh.res::ImageTexture_mk3sf",
+				"size": "(16, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Neon/Modele/Modele",
+				"path": "res://assets/props/neon_light_01/neon_light_01.mesh.res::ImageTexture_6nkdu",
+				"size": "(32, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/floor",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_57q81",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/ceiling",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_jmkn3",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_0_0/wall_loop",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_x5ijp",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_0_0/wall_loop",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_k5ubj",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_v_0_3/wall_door",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_0l0v1",
+				"size": "(128, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_v_0_3/wall_door",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_nr1o3",
+				"size": "(256, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_v_0_3/Porte/Pivot/door_01",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_n3wwd",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_v_0_3/Porte/Pivot/door_01",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_rspct",
+				"size": "(128, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_v_0_3/Porte/Pivot/door_01",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_ucemw",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/wall_loop_window",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_fhoig",
+				"size": "(256, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/wall_loop_window",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_ggt1h",
+				"size": "(64, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/window_glass",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_jo2tn",
+				"size": "(128, 64)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/window_glass",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_o2cfm",
+				"size": "(64, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Map/Construction/Bord_h_4_0/window_glass",
+				"path": "res://assets/environment/modular_2m/kit_data.res::ImageTexture_vxfus",
+				"size": "(64, 128)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_char",
+				"path": "res://assets/character/cop_player.glb::ImageTexture_hh874",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_char",
+				"path": "",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_char",
+				"path": "",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_char",
+				"path": "",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_char",
+				"path": "",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/cop_hair",
+				"path": "res://assets/character/cop_player.glb::ImageTexture_nbpf6",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/Clothing_winter_jacket/winter_jacket",
+				"path": "res://assets/character/clothing/textures/winter_jacket/police_marine_psx_256.png",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/Clothing_large_jeans_01/large_jeans_01",
+				"path": "res://assets/character/clothing/textures/jean_large/jean_large_indigo_tres_fonce_psx_256.png",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/Clothing_sneakers/sneakers",
+				"path": "res://assets/character/clothing/sneakers.glb::ImageTexture_d5k5d",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/Clothing_cop_outfit/cop_outfit",
+				"path": "res://assets/character/clothing/cop_outfit.glb::ImageTexture_fptov",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/Clothing_cop_outfit/cop_outfit",
+				"path": "res://assets/character/clothing/cop_outfit.glb::ImageTexture_3p0qk",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/Model/gun_amature/Skeleton3D/base",
+				"path": "res://assets/weapons/pistol_Image_0.png",
+				"size": "(256, 256)"
+			}
+		],
+		[
+			{
+				"node": "/root/Player/Visual/CharacterMotion/cop/rig/Skeleton3D/WeaponAttachment_desert_eagle/WeaponSocket/Pistol/MuzzleFlash",
+				"path": "res://assets/effects/muzzle_flash_atlas.png",
+				"size": "(256, 256)"
+			}
+		]
+	],
+	"resources": 59,
+	"unique_images": 57
+}

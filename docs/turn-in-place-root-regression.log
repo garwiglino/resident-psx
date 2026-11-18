@@ -1,0 +1,14 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ERROR: Settled strafe preserves forward/backward position: (1.758554, 0.000795, 1.707727)
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:75)
+ERROR: Diagonal follows camera-relative input: forward_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/root_motion.gd:5)
+       [1] run (res://tests/root_motion.gd:96)
+ROOT_MOTION_FAILED ["Settled strafe preserves forward/backward position: (1.758554, 0.000795, 1.707727)", "Diagonal follows camera-relative input: forward_right"]

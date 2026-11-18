@@ -1,0 +1,8 @@
+m5x7, by Daniel Linssen.
+Creator: https://managore.itch.io/m5x7
+License: CC0 1.0 Universal. See M5X7-LICENSE.txt.
+Unmodified TTF supplied by https://github.com/boringcactus/m5x7/tree/master/src
+
+Dialogue font only. Render at the creator's native 16 px (or integer multiples),
+without anti-aliasing or subpixel positioning, with normal glyph spacing.
+The existing HUD fonts and their separate licenses remain in assets/fonts.

@@ -1,0 +1,28 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+WARNING: 'res://assets/environment/modular_2m/kit_data.res': In external resource #0, invalid UID: 'uid://c4pam3i0tp21k' - using text path instead: 'res://scripts/modular_map/kit_data.gd'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/neon_performance_editor.gd:25)
+       [1] settle (res://tests/neon_performance_editor.gd:10)
+WARNING: 'res://assets/environment/custom_modules/door_01/door_01.res': In external resource #0, invalid UID: 'uid://c4pam3i0tp21k' - using text path instead: 'res://scripts/modular_map/kit_data.gd'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/neon_performance_editor.gd:25)
+       [1] settle (res://tests/neon_performance_editor.gd:10)
+ERROR: Invalid custom type script UID: uid://b3t0j456atfjw. Removing.
+   at: get_custom_type_script (scene/property_utils.cpp:314)
+   GDScript backtrace (most recent call first):
+       [0] run (res://tests/neon_performance_editor.gd:25)
+       [1] settle (res://tests/neon_performance_editor.gd:10)
+NEON_PERFORMANCE_SAMPLE {"cpu_ms_mean":10.1716285714286,"cpu_ms_p95":11.348,"native":true,"samples":35,"scenario":"native_v17_constant_neon","triangles":269}
+NEON_PERFORMANCE_SAMPLE {"cpu_ms_mean":10.1993142857143,"cpu_ms_p95":10.944,"native":true,"samples":35,"scenario":"native_v17_flickering_neon","triangles":268}
+NEON_PERFORMANCE_SAMPLE {"cpu_ms_mean":50.364,"cpu_ms_p95":51.652,"native":false,"samples":3,"scenario":"old_whole_level_script_fallback","triangles":272}
+WARNING: Moteur PSX v16 encore charge ; v17 requise. Enregistrer les scenes puis rouvrir Godot. L'apercu PSX est suspendu pour eviter un rendu de secours lent.
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] _check_native_compatibility (res://scripts/psx_renderer.gd:209)
+       [1] run (res://tests/neon_performance_editor.gd:47)
+       [2] sample (res://tests/neon_performance_editor.gd:20)
+NEON_PERFORMANCE_EDITOR_OK {"blocked_preview_100_calls_ms":0.024,"errors":[],"measurements":[{"cpu_ms_mean":10.1716285714286,"cpu_ms_p95":11.348,"native":true,"samples":35,"scenario":"native_v17_constant_neon","triangles":269},{"cpu_ms_mean":10.1993142857143,"cpu_ms_p95":10.944,"native":true,"samples":35,"scenario":"native_v17_flickering_neon","triangles":268},{"cpu_ms_mean":50.364,"cpu_ms_p95":51.652,"native":false,"samples":3,"scenario":"old_whole_level_script_fallback","triangles":272}],"native":{"batches":1,"depth_pixels":76800,"general_depth":true,"light_occluders":17217,"light_revision":48,"player_depth_pixels":76800,"player_depth_triangles":272,"shadow_rays":508,"shadow_triangle_tests":5560,"shot_light_energy":0.0,"triangles":272,"version":17,"vertices":51855,"world_lights":4},"ok":true}

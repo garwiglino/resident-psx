@@ -1,0 +1,100 @@
+{
+  "tested_device_rate": 48000,
+  "sha256": "BCFD97C90017C9FFB9C726B2A6A492A407582FA68D131D495A8A0DD41D7DB678",
+  "capture": {
+    "diagnostics": {
+      "active_voices": 0,
+      "blocks": 119,
+      "host_frames": 60928,
+      "host_rate": 48000.0,
+      "max_callback_frames": 512,
+      "overflow": 0,
+      "spu_rate": 44100,
+      "spu_ticks": 55977,
+      "voice_frames": 181103
+    },
+    "host_rate": 48000.0,
+    "key_off_release": {
+      "frames": 7680,
+      "middle_peak": 0.274169564247131,
+      "tail_peak": 0.0
+    },
+    "pre_master_clipping": {
+      "frames": 5632,
+      "mode": 16383,
+      "mode_frames": 5632,
+      "off_grid": 0,
+      "peak": 0.499969482421875
+    },
+    "wide_cancellation": {
+      "frames": 5120,
+      "mode": 28549,
+      "mode_frames": 5085,
+      "off_grid": 35,
+      "peak": 0.88047868013382
+    }
+  },
+  "cleanup_notes": "Headless smoke/casing fixtures report ObjectDB cleanup warnings after their OK marker.",
+  "library": "res://bin/psx_geometry_v14.dll",
+  "audio_sources": 51,
+  "native_rate": 44100,
+  "checks": {
+    "dialogue_voice": {
+      "passed": true,
+      "log": "docs/spu-v14-dialogue-voice.log"
+    },
+    "gameplay_audio": {
+      "passed": true,
+      "log": "docs/spu-v14-magazine-audio.log"
+    },
+    "casings": {
+      "passed": true,
+      "log": "docs/spu-v14-casing-audio.log"
+    },
+    "gameplay_smoke": {
+      "passed": true,
+      "log": "docs/spu-v14-smoke.log"
+    },
+    "exploration_dialogue": {
+      "passed": true,
+      "log": "docs/spu-v14-exploration-dialogue.log"
+    },
+    "dialogue_output_capture": {
+      "passed": true,
+      "log": "docs/spu-v14-voice-output.log"
+    },
+    "native_mixer_capture": {
+      "passed": true,
+      "log": "docs/spu-mixer-validation.log"
+    },
+    "level_audio": {
+      "passed": true,
+      "log": "docs/spu-v14-level-audio.log"
+    },
+    "spu_api": {
+      "passed": true,
+      "log": "docs/spu-v14-psx-audio.log"
+    },
+    "imports": {
+      "passed": true,
+      "log": "docs/spu-import-editor-console.log"
+    },
+    "cinematics": {
+      "passed": true,
+      "log": "docs/spu-v14-cinematics.log"
+    },
+    "bus_reload": {
+      "passed": true,
+      "log": "docs/spu-v14-bus-persistence.log"
+    },
+    "native_dsp": {
+      "passed": true,
+      "log": "docs/spu-v14-unit-test.log"
+    },
+    "radio_reverb_capture": {
+      "passed": true,
+      "log": "docs/spu-v14-reverb-routing.log"
+    }
+  },
+  "date": "2026-11-07"
+}

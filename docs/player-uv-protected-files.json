@@ -1,0 +1,122 @@
+[
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_aim_pose.glb",
+    "sha256": "D5F84E56EC1B90532371821ACDADE46E07ED531C8B620FD88C19E12101C0EBF8"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_aim_pose.json",
+    "sha256": "BA07C87AD764A43C399CA7DA2726F21F86A28E148787D813BF3D476045475650"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_fire.glb",
+    "sha256": "13FFA44912A8035CF958B8FEF3925F64DC94272B67AF3D84CD2A73BA0012EE44"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_fire.json",
+    "sha256": "13F9523953CC90FB16E0E552154676DA111DE63DF0B7AF56129E93282B6F9E1D"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_idle.glb",
+    "sha256": "948155E2D59DD0708DCE6E900F6AF1F8710B6E270E386495ECC95F51E3378686"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_idle.json",
+    "sha256": "C518B26FB50B6DE819FB15AA2CF7B9B71D9C518C4576E3543DDEFA6809C235DA"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_reload.glb",
+    "sha256": "8293F801679D0F04B7CABCDBF7445C7362EDB87280F1D8F93CA4805C1C6EA68F"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_pistol_reload.json",
+    "sha256": "778CFDC2903BC98D11886F6D900ABC7846CD8C6EA72900B73E46D0298BCC822F"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_run_pistol.glb",
+    "sha256": "5349052B0AF5DD87CD5FE3249F44B7DA474F6B2FDC242B16C2D437CE13D00472"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_run_pistol.json",
+    "sha256": "A97F273CEBAFC96E47C751F2F57CD76137E91EE18336200514DA4D42CBBC7D79"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_left_pistol.glb",
+    "sha256": "983854A2046F29A7EE93DFE89D408FC21F03205CC5E975DC69B0F89B7085F30B"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_left_pistol.json",
+    "sha256": "09127C19E05F4EAE97093A708F8729165CE7E6B4A48385C5FB45CAB01001A6DC"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_pistol.glb",
+    "sha256": "507FFE05184B7D7B2EA38B517241A8BFA8CC6CBEB8C3A285D4F0A33086A399AD"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_pistol.json",
+    "sha256": "1136B567020C7CA88DBEE18DF92AB33D704ADBD57BFAFB35F3249C1DF848B2D7"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_right_pistol.glb",
+    "sha256": "ABDBD999A74FFD61B4F32577B67C1669E6E38066FBA217DFBD8B4F2DD25A5446"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_right_pistol.json",
+    "sha256": "3F0F240E849381C70B0A9BC02DED618871C15E5FB1F85FD330EFDBAA44764DD9"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_left_pistol.glb",
+    "sha256": "41A43EC93913F481AB6BA8AADCFF61149A65E5E517A50EACF1B155B7AA84BF73"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_left_pistol.json",
+    "sha256": "A6F759380B46B44B8505C5E6AD6AF089F6C315099EC6FA54FA1C59734722CD9D"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_pistol.glb",
+    "sha256": "07AEF31B58F55CF137CC3209C1F671059B4016606AABD14E06DD6EBC2A9ABBFA"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_pistol.json",
+    "sha256": "120EFB058AF2B1B17D0F7B84D3DA36CCE4879290FAE7B506D49ABD5F3C626FDB"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_right_pistol.glb",
+    "sha256": "399062A1383A322A4F3B3A5E6A21E7AD6D2FD6B36915DB5984AD1BC447CA81A4"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_forward_right_pistol.json",
+    "sha256": "D3ED5EB687D866DEED8BEFA7425073B090104AEDCC1576C67D690CD38138B8E4"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_left_pistol.glb",
+    "sha256": "A3D1E566A236815BA6F1FA1468F2B651958297A9873B1CDBAF96B8E2859513BE"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_left_pistol.json",
+    "sha256": "FE9EB3453226C844F7DE72C3FAC137215DFB7A67473BC088A5B1054B9982DA01"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_right_pistol.glb",
+    "sha256": "484AE026F8927DDB78EB5B417E3EE6B4FB3CA10A7B74D893EEFBF27096367C6A"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_strafe_right_pistol.json",
+    "sha256": "C66D947E69CB5317F458C796942CC98CB5EFF8039EA584246186D3D4B451887C"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\pistol_mount.json",
+    "sha256": "D2D477BAB04F7BD56BAC2E52F9AB915203366E841AC201DB69320B6A4BFA50D9"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\pistol.glb",
+    "sha256": "0D45152EEDDC5DED8055A73185BC2F3116F4E9395F900BA7A520F35CFC913958"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\pistol.json",
+    "sha256": "9F238E1514AB487787E52E475ED91963FC38D870AEAC7F26E404DFE57DC78313"
+  },
+  {
+    "path": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\weapons\\reload_magazine_mount.json",
+    "sha256": "69FFB81E3E17A7F0211BD7D8D7E54D89F3A92497E36EB925D20D2D1B63E953EA"
+  }
+]

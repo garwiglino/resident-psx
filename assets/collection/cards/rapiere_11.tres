@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/rapiere_11.res" id="1_uodt3"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_15qp0"]
+
+[resource]
+script = ExtResource("2_15qp0")
+id = &"rapiere_11"
+display_name = "RAPIÈRE-11"
+description = "Armure rouge et blanche, silhouette asymétrique et appendices étroits."
+lore = "Ne frappe qu’une fois, sans seconde chance."
+rarity = "SR"
+image = ExtResource("1_uodt3")
+source_index = 9

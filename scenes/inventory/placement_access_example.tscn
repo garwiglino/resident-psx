@@ -1,0 +1,36 @@
+[gd_scene format=3]
+[ext_resource type="PackedScene" path="res://scenes/inventory/placement_assembly.tscn" id="Base"]
+[ext_resource type="Script" path="res://scripts/inventory/mechanism_access_settings.gd" id="Settings"]
+[sub_resource type="Resource" id="Access"]
+script = ExtResource("Settings")
+enabled = true
+close_policy = 2
+animation_player_path = NodePath("AnimationCouvercle")
+opening_animation = &"ouvrir"
+animated_root_path = NodePath("Modele/Charniere")
+[sub_resource type="Animation" id="Open"]
+resource_name = "ouvrir"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/path = NodePath("Modele/Charniere:rotation:y")
+tracks/0/interp = 1
+tracks/0/keys = {"times": PackedFloat32Array(0, 0.65), "transitions": PackedFloat32Array(1, 1), "update": 0, "values": [0.0, -1.9]}
+[sub_resource type="AnimationLibrary" id="Clips"]
+_data = {&"ouvrir": SubResource("Open")}
+[sub_resource type="StandardMaterial3D" id="Paint"]
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.18, 0.23, 0.2, 1)
+texture_filter = 0
+[sub_resource type="BoxMesh" id="Lid"]
+size = Vector3(1.4, 1.2, 0.06)
+[node name="MecanismeAvecCouvercle" instance=ExtResource("Base")]
+access_settings = SubResource("Access")
+[node name="Charniere" type="Node3D" parent="Modele" index="4"]
+position = Vector3(-0.7, 0.65, 0.29)
+[node name="Couvercle" type="MeshInstance3D" parent="Modele/Charniere"]
+position = Vector3(0.7, 0, 0)
+mesh = SubResource("Lid")
+material_override = SubResource("Paint")
+[node name="AnimationCouvercle" type="AnimationPlayer" parent="." index="3"]
+libraries = {&"": SubResource("Clips")}

@@ -1,0 +1,266 @@
+WorkerThreadPool: 16 threads, 12 max low-priority.
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 3769296884
+EDITOR API HASH: 3146738256
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: C:/Users/sheensaw/AppData/Roaming/Godot/editor_settings-4.7.tres remapped: C:/Users/sheensaw/AppData/Roaming/Godot/editor_settings-4.7.tres
+Completed load for: 'C:/Users/sheensaw/AppData/Roaming/Godot/editor_settings-4.7.tres' remapped 'C:/Users/sheensaw/AppData/Roaming/Godot/editor_settings-4.7.tres' at thread -1
+EditorSettings: Load OK!
+EditorTheme: Generating new theme for the config '3810048042'.
+EditorTheme: Generating new icons.
+EditorTheme: Generating new fonts.
+EditorTheme: Generating new styles.
+Loading resource: C:/Users/sheensaw/AppData/Local/Godot/editor_doc_cache-4.7.res remapped: C:/Users/sheensaw/AppData/Local/Godot/editor_doc_cache-4.7.res
+Loaded system CA certificates
+Completed load for: 'C:/Users/sheensaw/AppData/Local/Godot/editor_doc_cache-4.7.res' remapped 'C:/Users/sheensaw/AppData/Local/Godot/editor_doc_cache-4.7.res' at thread -1
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started Initialisation du projet (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Analyse de la structure des fichiers…[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | Chargement des noms des classes globales…[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | Vérification des GDExtensions…[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | Création des scripts de chargement automatique…[39m[0m
+Loading resource: res://scripts/psx_audio.gd remapped: res://scripts/psx_audio.gd
+Completed load for: 'res://scripts/psx_audio.gd' remapped 'res://scripts/psx_audio.gd' at thread -1
+[  66% ] [90m[1mfirst_scan_filesystem[22m | Initialisation des extensions…[39m[0m
+Loading resource: res://addons/psx_audio/plugin.gd remapped: res://addons/psx_audio/plugin.gd
+Completed load for: 'res://addons/psx_audio/plugin.gd' remapped 'res://addons/psx_audio/plugin.gd' at thread -1
+Loading resource: res://addons/psx_viewport/plugin.gd remapped: res://addons/psx_viewport/plugin.gd
+Loading resource: res://assets/character/face/face_top_atlas_512x256.png remapped: res://assets/character/face/face_top_atlas_512x256.png
+Loading resource: res://.godot/imported/face_top_atlas_512x256.png-d2bac8a3b15455c432142d1f51efa0a8.ctex remapped: res://.godot/imported/face_top_atlas_512x256.png-d2bac8a3b15455c432142d1f51efa0a8.ctex
+Completed load for: 'res://assets/character/face/face_top_atlas_512x256.png' remapped 'res://assets/character/face/face_top_atlas_512x256.png' at thread -1
+Loading resource: res://assets/character/face/face_bottom_atlas_512x256.png remapped: res://assets/character/face/face_bottom_atlas_512x256.png
+Loading resource: res://.godot/imported/face_bottom_atlas_512x256.png-287f7a51c83c965428cbf18b1d93c173.ctex remapped: res://.godot/imported/face_bottom_atlas_512x256.png-287f7a51c83c965428cbf18b1d93c173.ctex
+Completed load for: 'res://assets/character/face/face_bottom_atlas_512x256.png' remapped 'res://assets/character/face/face_bottom_atlas_512x256.png' at thread -1
+Completed load for: 'res://addons/psx_viewport/plugin.gd' remapped 'res://addons/psx_viewport/plugin.gd' at thread -1
+Loading resource: res://addons/cinematic_montage/plugin.gd remapped: res://addons/cinematic_montage/plugin.gd
+Completed load for: 'res://addons/cinematic_montage/plugin.gd' remapped 'res://addons/cinematic_montage/plugin.gd' at thread -1
+[  83% ] [90m[1mfirst_scan_filesystem[22m | Démarrage du scan de fichiers…[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started Analyse des actions… (8 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | dialogue-end-down.png[39m[0m
+[  11% ] [90m[1m_update_scan_actions[22m | dialogue-end.png[39m[0m
+[  22% ] [90m[1m_update_scan_actions[22m | dialogue-next-down.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | dialogue-opening.png[39m[0m
+[  44% ] [90m[1m_update_scan_actions[22m | dialogue-preview.png[39m[0m
+[  55% ] [90m[1m_update_scan_actions[22m | dialogue-typing.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | dialogue-window.png[39m[0m
+[  77% ] [90m[1m_update_scan_actions[22m | montage-editor.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Ré-importation des assets (5 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Préparation des fichiers pour la réimportation…[39m[0m
+[  16% ] [90m[1mreimport[22m | Préparation des fichiers pour la réimportation…[39m[0m
+[  33% ] [90m[1mreimport[22m | Préparation des fichiers pour la réimportation…[39m[0m
+[  50% ] [90m[1mreimport[22m | Préparation des fichiers pour la réimportation…[39m[0m
+[  66% ] [90m[1mreimport[22m | Préparation des fichiers pour la réimportation…[39m[0m
+[   0% ] [90m[1mreimport[22m | Exécution des opérations de pré-réimportation…[39m[0m
+[   0% ] [90m[1mreimport[22m | dialogue-end-down.png[39m[0m
+EditorFileSystem: Importing file: res://docs/dialogue-end-down.png
+EditorFileSystem: Importing file: res://docs/dialogue-opening.png
+EditorFileSystem: Importing file: res://docs/montage-editor.png
+EditorFileSystem: Importing file: res://docs/dialogue-next-down.png
+EditorFileSystem: Importing file: res://docs/dialogue-end.png
+EditorFileSystem: "res://docs/dialogue-opening.png" import took 75 ms.
+[  16% ] [90m[1mreimport[22m | dialogue-end.png[39m[0m
+EditorFileSystem: "res://docs/dialogue-end-down.png" import took 76 ms.
+[  33% ] [90m[1mreimport[22m | dialogue-next-down.png[39m[0m
+EditorFileSystem: "res://docs/dialogue-end.png" import took 77 ms.
+[  50% ] [90m[1mreimport[22m | dialogue-opening.png[39m[0m
+EditorFileSystem: "res://docs/dialogue-next-down.png" import took 77 ms.
+[  66% ] [90m[1mreimport[22m | montage-editor.png[39m[0m
+EditorFileSystem: "res://docs/montage-editor.png" import took 888 ms.
+[  83% ] [90m[1mreimport[22m | Finalisation des importations de ressources…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started Ré-importation des assets (5 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | Exécution des opérations post-réimportation…[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started Chargement de l’éditeur (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur…[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | Chargement des docks…[39m[0m
+[  33% ] [90m[1mloading_editor_layout[22m | Réouverture des scènes…[39m[0m
+Loading resource: res://scenes/main.tscn remapped: res://scenes/main.tscn
+Loading resource: res://scripts/game.gd remapped: res://scripts/game.gd
+Loading resource: res://scenes/dialogue/dialogue_system.tscn remapped: res://scenes/dialogue/dialogue_system.tscn
+Loading resource: res://scripts/dialogue/dialogue_controller.gd remapped: res://scripts/dialogue/dialogue_controller.gd
+Loading resource: res://assets/dialogue/default_style.tres remapped: res://assets/dialogue/default_style.tres
+Loading resource: res://scripts/dialogue/dialogue_style.gd remapped: res://scripts/dialogue/dialogue_style.gd
+Loading resource: res://assets/fonts/m5x7.ttf remapped: res://assets/fonts/m5x7.ttf
+Loading resource: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata remapped: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata
+Completed load for: 'res://assets/fonts/m5x7.ttf' remapped 'res://assets/fonts/m5x7.ttf' at thread -1
+Loading resource: res://assets/fonts/pixel-operator-bold.ttf remapped: res://assets/fonts/pixel-operator-bold.ttf
+Loading resource: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata remapped: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata
+Completed load for: 'res://assets/fonts/pixel-operator-bold.ttf' remapped 'res://assets/fonts/pixel-operator-bold.ttf' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_open.wav remapped: res://assets/audio/ui/dialogue_open.wav
+Loading resource: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res remapped: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res
+Completed load for: 'res://assets/audio/ui/dialogue_open.wav' remapped 'res://assets/audio/ui/dialogue_open.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_close.wav remapped: res://assets/audio/ui/dialogue_close.wav
+Loading resource: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res remapped: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res
+Completed load for: 'res://assets/audio/ui/dialogue_close.wav' remapped 'res://assets/audio/ui/dialogue_close.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_tick.wav remapped: res://assets/audio/ui/dialogue_tick.wav
+Loading resource: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res remapped: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res
+Completed load for: 'res://assets/audio/ui/dialogue_tick.wav' remapped 'res://assets/audio/ui/dialogue_tick.wav' at thread -1
+Completed load for: 'res://scripts/dialogue/dialogue_style.gd' remapped 'res://scripts/dialogue/dialogue_style.gd' at thread -1
+Completed load for: 'res://assets/dialogue/default_style.tres' remapped 'res://assets/dialogue/default_style.tres' at thread -1
+Completed load for: 'res://scripts/dialogue/dialogue_controller.gd' remapped 'res://scripts/dialogue/dialogue_controller.gd' at thread -1
+Completed load for: 'res://scenes/dialogue/dialogue_system.tscn' remapped 'res://scenes/dialogue/dialogue_system.tscn' at thread -1
+Loading resource: res://scenes/cinematics/cinematic_system.tscn remapped: res://scenes/cinematics/cinematic_system.tscn
+Loading resource: res://scripts/cinematics/cinematic_manager.gd remapped: res://scripts/cinematics/cinematic_manager.gd
+Completed load for: 'res://scripts/cinematics/cinematic_manager.gd' remapped 'res://scripts/cinematics/cinematic_manager.gd' at thread -1
+Completed load for: 'res://scenes/cinematics/cinematic_system.tscn' remapped 'res://scenes/cinematics/cinematic_system.tscn' at thread -1
+Loading resource: res://assets/audio/weapons/hit_marker.wav remapped: res://assets/audio/weapons/hit_marker.wav
+Loading resource: res://.godot/imported/hit_marker.wav-ec8e49620564e4af14f182b182edf0ff.res remapped: res://.godot/imported/hit_marker.wav-ec8e49620564e4af14f182b182edf0ff.res
+Completed load for: 'res://assets/audio/weapons/hit_marker.wav' remapped 'res://assets/audio/weapons/hit_marker.wav' at thread -1
+Loading resource: res://assets/weapons/desert_eagle.tres remapped: res://assets/weapons/desert_eagle.tres
+Loading resource: res://scripts/weapon_definition.gd remapped: res://scripts/weapon_definition.gd
+Completed load for: 'res://scripts/weapon_definition.gd' remapped 'res://scripts/weapon_definition.gd' at thread -1
+Loading resource: res://scenes/pistol.tscn remapped: res://scenes/pistol.tscn
+Loading resource: res://scripts/weapon.gd remapped: res://scripts/weapon.gd
+Loading resource: res://assets/audio/weapons/bullet_floor_01.wav remapped: res://assets/audio/weapons/bullet_floor_01.wav
+Loading resource: res://.godot/imported/bullet_floor_01.wav-50c1a5763ca9694e66f8624d3c5a877e.sample remapped: res://.godot/imported/bullet_floor_01.wav-50c1a5763ca9694e66f8624d3c5a877e.sample
+Completed load for: 'res://assets/audio/weapons/bullet_floor_01.wav' remapped 'res://assets/audio/weapons/bullet_floor_01.wav' at thread -1
+Loading resource: res://assets/audio/weapons/bullet_floor_02.wav remapped: res://assets/audio/weapons/bullet_floor_02.wav
+Loading resource: res://.godot/imported/bullet_floor_02.wav-ff10918d6cb0f27ada4040598b0574b4.sample remapped: res://.godot/imported/bullet_floor_02.wav-ff10918d6cb0f27ada4040598b0574b4.sample
+Completed load for: 'res://assets/audio/weapons/bullet_floor_02.wav' remapped 'res://assets/audio/weapons/bullet_floor_02.wav' at thread -1
+Loading resource: res://assets/audio/weapons/bullet_floor_03.wav remapped: res://assets/audio/weapons/bullet_floor_03.wav
+Loading resource: res://.godot/imported/bullet_floor_03.wav-ddf0c091e4c13c2c96f27cedbb3d34ac.sample remapped: res://.godot/imported/bullet_floor_03.wav-ddf0c091e4c13c2c96f27cedbb3d34ac.sample
+Completed load for: 'res://assets/audio/weapons/bullet_floor_03.wav' remapped 'res://assets/audio/weapons/bullet_floor_03.wav' at thread -1
+Loading resource: res://assets/audio/weapons/mag_floor.wav remapped: res://assets/audio/weapons/mag_floor.wav
+Loading resource: res://.godot/imported/mag_floor.wav-935e2ad317eb23b45a004c362fbcb626.sample remapped: res://.godot/imported/mag_floor.wav-935e2ad317eb23b45a004c362fbcb626.sample
+Completed load for: 'res://assets/audio/weapons/mag_floor.wav' remapped 'res://assets/audio/weapons/mag_floor.wav' at thread -1
+Completed load for: 'res://scripts/weapon.gd' remapped 'res://scripts/weapon.gd' at thread -1
+Loading resource: res://assets/weapons/pistol.glb remapped: res://assets/weapons/pistol.glb
+Loading resource: res://.godot/imported/pistol.glb-cdade8e03d4fb9502a959a6883e8c7c8.scn remapped: res://.godot/imported/pistol.glb-cdade8e03d4fb9502a959a6883e8c7c8.scn
+Loading resource: res://assets/weapons/pistol_Image_0.png remapped: res://assets/weapons/pistol_Image_0.png
+Loading resource: res://.godot/imported/pistol_Image_0.png-b246cab3511461baf1c657387c3caf5a.s3tc.ctex remapped: res://.godot/imported/pistol_Image_0.png-b246cab3511461baf1c657387c3caf5a.s3tc.ctex
+Completed load for: 'res://assets/weapons/pistol_Image_0.png' remapped 'res://assets/weapons/pistol_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/pistol.glb' remapped 'res://assets/weapons/pistol.glb' at thread -1
+Completed load for: 'res://scenes/pistol.tscn' remapped 'res://scenes/pistol.tscn' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/eagle_shoot.wav remapped: res://assets/audio/weapons/d_eagle/eagle_shoot.wav
+Loading resource: res://.godot/imported/eagle_shoot.wav-3467dd8a1d207a5d4779d5cf58e59853.sample remapped: res://.godot/imported/eagle_shoot.wav-3467dd8a1d207a5d4779d5cf58e59853.sample
+Completed load for: 'res://assets/audio/weapons/d_eagle/eagle_shoot.wav' remapped 'res://assets/audio/weapons/d_eagle/eagle_shoot.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_reload.wav remapped: res://assets/audio/weapons/d_eagle/deagle_reload.wav
+Loading resource: res://.godot/imported/deagle_reload.wav-c1185748367462ebebb9e5171e94659f.sample remapped: res://.godot/imported/deagle_reload.wav-c1185748367462ebebb9e5171e94659f.sample
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_reload.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_reload.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_aim.wav remapped: res://assets/audio/weapons/d_eagle/deagle_aim.wav
+Loading resource: res://.godot/imported/deagle_aim.wav-2f046443e057531eeef071751446078d.res remapped: res://.godot/imported/deagle_aim.wav-2f046443e057531eeef071751446078d.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_aim.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_aim.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_dry_01.wav remapped: res://assets/audio/weapons/d_eagle/deagle_dry_01.wav
+Loading resource: res://.godot/imported/deagle_dry_01.wav-6f35bddf31af638109debd68f618bed3.res remapped: res://.godot/imported/deagle_dry_01.wav-6f35bddf31af638109debd68f618bed3.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_dry_01.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_dry_01.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_dry_02.wav remapped: res://assets/audio/weapons/d_eagle/deagle_dry_02.wav
+Loading resource: res://.godot/imported/deagle_dry_02.wav-6763d156d4178692f7f1e77087d111b4.res remapped: res://.godot/imported/deagle_dry_02.wav-6763d156d4178692f7f1e77087d111b4.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_dry_02.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_dry_02.wav' at thread -1
+Completed load for: 'res://assets/weapons/desert_eagle.tres' remapped 'res://assets/weapons/desert_eagle.tres' at thread -1
+Completed load for: 'res://scripts/game.gd' remapped 'res://scripts/game.gd' at thread -1
+Loading resource: res://scenes/couloir_pieces.tscn remapped: res://scenes/couloir_pieces.tscn
+Loading resource: res://assets/environment/scene_kit_surfaces_page_02.png remapped: res://assets/environment/scene_kit_surfaces_page_02.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_02.png-244b61fc76fc2e1c2ee7eb98cfa3e5c7.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_02.png-244b61fc76fc2e1c2ee7eb98cfa3e5c7.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_02.png' remapped 'res://assets/environment/scene_kit_surfaces_page_02.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_03.png remapped: res://assets/environment/scene_kit_surfaces_page_03.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_03.png-5f1f12372a34ec9c9bb068a135990bef.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_03.png-5f1f12372a34ec9c9bb068a135990bef.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_03.png' remapped 'res://assets/environment/scene_kit_surfaces_page_03.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_04.png remapped: res://assets/environment/scene_kit_surfaces_page_04.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_04.png-ad274e68868660f92e81e0593dffc25a.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_04.png-ad274e68868660f92e81e0593dffc25a.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_04.png' remapped 'res://assets/environment/scene_kit_surfaces_page_04.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_05.png remapped: res://assets/environment/scene_kit_surfaces_page_05.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_05.png-34c2b0497294e009e0daced7d99044fc.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_05.png-34c2b0497294e009e0daced7d99044fc.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_05.png' remapped 'res://assets/environment/scene_kit_surfaces_page_05.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_08.png remapped: res://assets/environment/scene_kit_surfaces_page_08.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_08.png-f65ceefa67b5e09891c15e30569bff4f.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_08.png-f65ceefa67b5e09891c15e30569bff4f.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_08.png' remapped 'res://assets/environment/scene_kit_surfaces_page_08.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_00.png remapped: res://assets/environment/scene_kit_surfaces_page_00.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_00.png-3d75885fcec7328f6148d7c591d21328.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_00.png-3d75885fcec7328f6148d7c591d21328.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_00.png' remapped 'res://assets/environment/scene_kit_surfaces_page_00.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_01.png remapped: res://assets/environment/scene_kit_surfaces_page_01.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_01.png-0915fb47a20eb33c1bdf81b4b0379428.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_01.png-0915fb47a20eb33c1bdf81b4b0379428.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_01.png' remapped 'res://assets/environment/scene_kit_surfaces_page_01.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_07.png remapped: res://assets/environment/scene_kit_surfaces_page_07.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_07.png-3066f4bff8116e5870d89b8af0fdfd9f.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_07.png-3066f4bff8116e5870d89b8af0fdfd9f.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_07.png' remapped 'res://assets/environment/scene_kit_surfaces_page_07.png' at thread -1
+Loading resource: res://assets/environment/surfaces_panel.png remapped: res://assets/environment/surfaces_panel.png
+Loading resource: res://.godot/imported/surfaces_panel.png-0bca4df2e1793106504c6f78f284b0b2.s3tc.ctex remapped: res://.godot/imported/surfaces_panel.png-0bca4df2e1793106504c6f78f284b0b2.s3tc.ctex
+Completed load for: 'res://assets/environment/surfaces_panel.png' remapped 'res://assets/environment/surfaces_panel.png' at thread -1
+Loading resource: res://scripts/psx_light_3d.gd remapped: res://scripts/psx_light_3d.gd
+Completed load for: 'res://scripts/psx_light_3d.gd' remapped 'res://scripts/psx_light_3d.gd' at thread -1
+Loading resource: res://scripts/audio/level_audio_manager.gd remapped: res://scripts/audio/level_audio_manager.gd
+Completed load for: 'res://scripts/audio/level_audio_manager.gd' remapped 'res://scripts/audio/level_audio_manager.gd' at thread -1
+Loading resource: res://assets/audio/levels/couloir_pieces.tres remapped: res://assets/audio/levels/couloir_pieces.tres
+Loading resource: res://assets/audio/ambiance/room_tone.wav remapped: res://assets/audio/ambiance/room_tone.wav
+Loading resource: res://.godot/imported/room_tone.wav-95582501b5783ee3a19b8532c4aedd17.res remapped: res://.godot/imported/room_tone.wav-95582501b5783ee3a19b8532c4aedd17.res
+Completed load for: 'res://assets/audio/ambiance/room_tone.wav' remapped 'res://assets/audio/ambiance/room_tone.wav' at thread -1
+Loading resource: res://assets/audio/music/dark_music_01.wav remapped: res://assets/audio/music/dark_music_01.wav
+Loading resource: res://.godot/imported/dark_music_01.wav-f32919c44ff352f1d8eeb7ece316091d.res remapped: res://.godot/imported/dark_music_01.wav-f32919c44ff352f1d8eeb7ece316091d.res
+Completed load for: 'res://assets/audio/music/dark_music_01.wav' remapped 'res://assets/audio/music/dark_music_01.wav' at thread -1
+Completed load for: 'res://assets/audio/levels/couloir_pieces.tres' remapped 'res://assets/audio/levels/couloir_pieces.tres' at thread -1
+Completed load for: 'res://scenes/couloir_pieces.tscn' remapped 'res://scenes/couloir_pieces.tscn' at thread -1
+Loading resource: res://scenes/player.tscn remapped: res://scenes/player.tscn
+Loading resource: res://assets/character/cop_player.glb remapped: res://assets/character/cop_player.glb
+Loading resource: res://.godot/imported/cop_player.glb-54303c2e3b29f689153f46ec0a56b886.scn remapped: res://.godot/imported/cop_player.glb-54303c2e3b29f689153f46ec0a56b886.scn
+Loading resource: res://assets/character/cop_player_Cop_Body_Reference_256.png remapped: res://assets/character/cop_player_Cop_Body_Reference_256.png
+Loading resource: res://.godot/imported/cop_player_Cop_Body_Reference_256.png-aa5525d40a7dae2a5a9055469e350842.ctex remapped: res://.godot/imported/cop_player_Cop_Body_Reference_256.png-aa5525d40a7dae2a5a9055469e350842.ctex
+Completed load for: 'res://assets/character/cop_player_Cop_Body_Reference_256.png' remapped 'res://assets/character/cop_player_Cop_Body_Reference_256.png' at thread -1
+Loading resource: res://assets/character/cop_player_face_bottom_neutral.png remapped: res://assets/character/cop_player_face_bottom_neutral.png
+Loading resource: res://.godot/imported/cop_player_face_bottom_neutral.png-ae018fda1251918dfd616730411f4982.ctex remapped: res://.godot/imported/cop_player_face_bottom_neutral.png-ae018fda1251918dfd616730411f4982.ctex
+Completed load for: 'res://assets/character/cop_player_face_bottom_neutral.png' remapped 'res://assets/character/cop_player_face_bottom_neutral.png' at thread -1
+Loading resource: res://assets/character/cop_player_face_top_neutral.png remapped: res://assets/character/cop_player_face_top_neutral.png
+Loading resource: res://.godot/imported/cop_player_face_top_neutral.png-ba4cb475c9d02d068f7e2df62f414b16.ctex remapped: res://.godot/imported/cop_player_face_top_neutral.png-ba4cb475c9d02d068f7e2df62f414b16.ctex
+Completed load for: 'res://assets/character/cop_player_face_top_neutral.png' remapped 'res://assets/character/cop_player_face_top_neutral.png' at thread -1
+Completed load for: 'res://assets/character/cop_player.glb' remapped 'res://assets/character/cop_player.glb' at thread -1
+Loading resource: res://scripts/face_expressions.gd remapped: res://scripts/face_expressions.gd
+Completed load for: 'res://scripts/face_expressions.gd' remapped 'res://scripts/face_expressions.gd' at thread -1
+Loading resource: res://scripts/clothing/character_clothing.gd remapped: res://scripts/clothing/character_clothing.gd
+Loading resource: res://assets/character/clothing/winter_jacket.tres remapped: res://assets/character/clothing/winter_jacket.tres
+Loading resource: res://scripts/clothing/clothing_item.gd remapped: res://scripts/clothing/clothing_item.gd
+Completed load for: 'res://scripts/clothing/clothing_item.gd' remapped 'res://scripts/clothing/clothing_item.gd' at thread -1
+Loading resource: res://assets/character/clothing/winter_jacket.glb remapped: res://assets/character/clothing/winter_jacket.glb
+Loading resource: res://.godot/imported/winter_jacket.glb-9a5273f5d6f31e3c0ba9c1b58bcc24e1.scn remapped: res://.godot/imported/winter_jacket.glb-9a5273f5d6f31e3c0ba9c1b58bcc24e1.scn
+Loading resource: res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png remapped: res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png
+Loading resource: res://.godot/imported/winter_jacket_winter_jacket_gray_psx_256.png-c1cb9288ed053f3a3a407f6264c873b7.s3tc.ctex remapped: res://.godot/imported/winter_jacket_winter_jacket_gray_psx_256.png-c1cb9288ed053f3a3a407f6264c873b7.s3tc.ctex
+Completed load for: 'res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png' remapped 'res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png' at thread -1
+Completed load for: 'res://assets/character/clothing/winter_jacket.glb' remapped 'res://assets/character/clothing/winter_jacket.glb' at thread -1
+Loading resource: res://assets/character/clothing/winter_jacket_gray_psx_256.png remapped: res://assets/character/clothing/winter_jacket_gray_psx_256.png
+Loading resource: res://.godot/imported/winter_jacket_gray_psx_256.png-7c76d0df1d903589e2d3dcd516309efa.s3tc.ctex remapped: res://.godot/imported/winter_jacket_gray_psx_256.png-7c76d0df1d903589e2d3dcd516309efa.s3tc.ctex
+Completed load for: 'res://assets/character/clothing/winter_jacket_gray_psx_256.png' remapped 'res://assets/character/clothing/winter_jacket_gray_psx_256.png' at thread -1
+Completed load for: 'res://assets/character/clothing/winter_jacket.tres' remapped 'res://assets/character/clothing/winter_jacket.tres' at thread -1
+Completed load for: 'res://scripts/clothing/character_clothing.gd' remapped 'res://scripts/clothing/character_clothing.gd' at thread -1
+Loading resource: res://assets/character/download (57).png remapped: res://assets/character/download (57).png
+Loading resource: res://.godot/imported/download (57).png-151d4bb13af891019d5b30bc2e7b89f1.s3tc.ctex remapped: res://.godot/imported/download (57).png-151d4bb13af891019d5b30bc2e7b89f1.s3tc.ctex
+Completed load for: 'res://assets/character/download (57).png' remapped 'res://assets/character/download (57).png' at thread -1
+Completed load for: 'res://scenes/player.tscn' remapped 'res://scenes/player.tscn' at thread -1
+Loading resource: res://scenes/cinematics/cinematic_trigger.tscn remapped: res://scenes/cinematics/cinematic_trigger.tscn
+Completed load for: 'res://scenes/cinematics/cinematic_trigger.tscn' remapped 'res://scenes/cinematics/cinematic_trigger.tscn' at thread -1
+Loading resource: res://scenes/cinematics/ma_cine.tscn remapped: res://scenes/cinematics/ma_cine.tscn
+Completed load for: 'res://scenes/cinematics/ma_cine.tscn' remapped 'res://scenes/cinematics/ma_cine.tscn' at thread -1
+Completed load for: 'res://scenes/main.tscn' remapped 'res://scenes/main.tscn' at thread -1
+Loading resource: res://scenes/player.tscn remapped: res://scenes/player.tscn
+Completed load for: 'res://scenes/player.tscn' remapped 'res://scenes/player.tscn' at thread -1
+Loading resource: res://scenes/cinematics/cinematic_sequence.tscn remapped: res://scenes/cinematics/cinematic_sequence.tscn
+Completed load for: 'res://scenes/cinematics/cinematic_sequence.tscn' remapped 'res://scenes/cinematics/cinematic_sequence.tscn' at thread -1
+Loading resource: res://scenes/cinematics/ma_cine.tscn remapped: res://scenes/cinematics/ma_cine.tscn
+Completed load for: 'res://scenes/cinematics/ma_cine.tscn' remapped 'res://scenes/cinematics/ma_cine.tscn' at thread -1
+Loading resource: res://exports/editor_tests/montage_fixture_10774824.tscn remapped: res://exports/editor_tests/montage_fixture_10774824.tscn
+Loading resource: res://scenes/cinematics/cinematic_sequence.tscn remapped: res://scenes/cinematics/cinematic_sequence.tscn
+Completed load for: 'res://scenes/cinematics/cinematic_sequence.tscn' remapped 'res://scenes/cinematics/cinematic_sequence.tscn' at thread -1
+Completed load for: 'res://exports/editor_tests/montage_fixture_10774824.tscn' remapped 'res://exports/editor_tests/montage_fixture_10774824.tscn' at thread -1
+[  50% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de l’éditeur central…[39m[0m
+[  66% ] [90m[1mloading_editor_layout[22m | Chargement de la disposition de la fenêtre des plugins…[39m[0m
+[  83% ] [90m[1mloading_editor_layout[22m | Disposition de l’éditeur prête.[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Unloading addon: res://addons/psx_audio/plugin.cfg
+Unloading addon: res://addons/psx_viewport/plugin.cfg
+Unloading addon: res://addons/cinematic_montage/plugin.cfg
+Script docs haven't been properly loaded or regenerated, so don't save them to disk.
+EditorSettings: Save OK!
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+Orphan StringName: Node (static: 4, total: 5)
+StringName: 1 unclaimed string names at exit.

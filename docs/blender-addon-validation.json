@@ -1,0 +1,82 @@
+{
+  "ok": true,
+  "exports": [
+    {
+      "type": "door_01",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\door_01\\door_01.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "door_glass",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\door_glass\\door_glass.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "wall_door",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\wall_door\\wall_door.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "wall_door_double",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\wall_door_double\\wall_door_double.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "wall_loop",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\wall_loop\\wall_loop.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "wall_loop_simple",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\wall_loop_simple\\wall_loop_simple.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "wall_loop_window",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\wall_loop_window\\wall_loop_window.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "window_glass",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\window_glass\\window_glass.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "window_condemned",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\window_condemned\\window_condemned.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "floor",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\floor\\floor.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "ceiling",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\ceiling\\ceiling.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "door_glass",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\environment\\custom_modules\\door_glass\\door_glass.res",
+      "collision": "BOX"
+    },
+    {
+      "type": "prop",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\props\\validation_decor_box\\validation_decor_box.tscn",
+      "collision": "BOX"
+    },
+    {
+      "type": "prop",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\props\\validation_decor_trimesh\\validation_decor_trimesh.tscn",
+      "collision": "TRIMESH"
+    },
+    {
+      "type": "prop",
+      "path": "C:\\Users\\sheensaw\\AppData\\Local\\Temp\\psx-blender-export-validation-20261107_173806\\assets\\props\\validation_decor_none\\validation_decor_none.tscn",
+      "collision": "NONE"
+    }
+  ],
+  "original_kit_unchanged": true,
+  "source_blend_unchanged": true
+}

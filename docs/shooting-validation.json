@@ -1,0 +1,87 @@
+{
+	"failures": [],
+	"flash_variants": [
+		5,
+		11,
+		8,
+		14,
+		15,
+		6,
+		9,
+		7,
+		13,
+		4,
+		0,
+		10,
+		2,
+		12,
+		1
+	],
+	"frames": [
+		{
+			"attached_case": -1,
+			"body_time": 0.0,
+			"frame": 1,
+			"gun_time": 0.0,
+			"max_source_position_error_m": 0.00000048537543761995,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": 0,
+			"body_time": 0.0416666666666667,
+			"frame": 2,
+			"gun_time": 0.0416666666666667,
+			"max_source_position_error_m": 0.0000003698370960592,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": 0,
+			"body_time": 0.0833333333333333,
+			"frame": 3,
+			"gun_time": 0.0833333333333333,
+			"max_source_position_error_m": 0.000000481471261082334,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": -1,
+			"body_time": 0.125,
+			"frame": 4,
+			"gun_time": 0.125,
+			"max_source_position_error_m": 0.000000372305436258102,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": -1,
+			"body_time": 0.166666666666667,
+			"frame": 5,
+			"gun_time": 0.166666666666667,
+			"max_source_position_error_m": 0.000000360795866072294,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": -1,
+			"body_time": 0.208333333333333,
+			"frame": 6,
+			"gun_time": 0.208333333333333,
+			"max_source_position_error_m": 0.000000480605763186759,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		},
+		{
+			"attached_case": -1,
+			"body_time": 0.25,
+			"frame": 7,
+			"gun_time": 0.25,
+			"max_source_position_error_m": 0.000000358926683929894,
+			"max_source_rotation_error_degrees": 0.0395646811852521
+		},
+		{
+			"attached_case": -1,
+			"body_time": 0.291666666666667,
+			"frame": 8,
+			"gun_time": 0.291666666666667,
+			"max_source_position_error_m": 0.000000523784308370523,
+			"max_source_rotation_error_degrees": 0.0559529096807445
+		}
+	],
+	"pool_size": 8
+}

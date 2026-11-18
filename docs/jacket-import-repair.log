@@ -1,0 +1,8 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+WARNING: 'res://assets/character/clothing/winter_jacket.glb': In external resource #0, invalid UID: 'uid://cujeliykijreo' - using text path instead: 'res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+ERROR: Failed loading resource: res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png.
+   at: _load (core/io/resource_loader.cpp:317)
+JACKET_IMPORT_OK {"definition_unchanged":true,"dependencies":[],"error":0,"glb_sha256":"e6d5e8b3477805d9fa0b681e8c373bb0ae38dd83ef4ed4530a399711f1ace76a","meshes":1,"ok":true,"override_texture":"res://assets/character/clothing/winter_jacket_jgsdf90.png"}

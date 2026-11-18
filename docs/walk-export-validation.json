@@ -1,0 +1,227 @@
+[
+	{
+		"clip": "player_run_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000112240013206113
+	},
+	{
+		"clip": "player_run_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.00026651151664449
+	},
+	{
+		"clip": "player_run_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000481773957223488
+	},
+	{
+		"clip": "player_run_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000706034063231684
+	},
+	{
+		"clip": "player_run_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000926834432854307
+	},
+	{
+		"clip": "player_walk_forward_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000107096630713708
+	},
+	{
+		"clip": "player_walk_forward_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000161225969756802
+	},
+	{
+		"clip": "player_walk_forward_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000255846312367122
+	},
+	{
+		"clip": "player_walk_forward_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.00036223154497933
+	},
+	{
+		"clip": "player_walk_forward_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000471366117938384
+	},
+	{
+		"clip": "player_walk_backward_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000105694128573396
+	},
+	{
+		"clip": "player_walk_backward_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000150442849577271
+	},
+	{
+		"clip": "player_walk_backward_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000244592974229014
+	},
+	{
+		"clip": "player_walk_backward_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000353678332357277
+	},
+	{
+		"clip": "player_walk_backward_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000464879227046076
+	},
+	{
+		"clip": "player_walk_strafe_left_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000106644807160487
+	},
+	{
+		"clip": "player_walk_strafe_left_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000147560396267422
+	},
+	{
+		"clip": "player_walk_strafe_left_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000246698375601361
+	},
+	{
+		"clip": "player_walk_strafe_left_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000357927852223449
+	},
+	{
+		"clip": "player_walk_strafe_left_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000467281058333876
+	},
+	{
+		"clip": "player_walk_strafe_right_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000108698425983316
+	},
+	{
+		"clip": "player_walk_strafe_right_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000170722124520125
+	},
+	{
+		"clip": "player_walk_strafe_right_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000267943185507682
+	},
+	{
+		"clip": "player_walk_strafe_right_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000375170725399411
+	},
+	{
+		"clip": "player_walk_strafe_right_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.00048275454352533
+	},
+	{
+		"clip": "player_walk_forward_left_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000106740303408697
+	},
+	{
+		"clip": "player_walk_forward_left_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000151237234391831
+	},
+	{
+		"clip": "player_walk_forward_left_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000244925632032208
+	},
+	{
+		"clip": "player_walk_forward_left_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000352835251645349
+	},
+	{
+		"clip": "player_walk_forward_left_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.00046395803708585
+	},
+	{
+		"clip": "player_walk_forward_right_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000106894158823382
+	},
+	{
+		"clip": "player_walk_forward_right_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000167710820939473
+	},
+	{
+		"clip": "player_walk_forward_right_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000264999247631333
+	},
+	{
+		"clip": "player_walk_forward_right_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000370475008276827
+	},
+	{
+		"clip": "player_walk_forward_right_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000479221951901824
+	},
+	{
+		"clip": "player_walk_backward_left_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000106581101014892
+	},
+	{
+		"clip": "player_walk_backward_left_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000146749589008695
+	},
+	{
+		"clip": "player_walk_backward_left_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000246408369771303
+	},
+	{
+		"clip": "player_walk_backward_left_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000355520676464962
+	},
+	{
+		"clip": "player_walk_backward_left_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000467056550164085
+	},
+	{
+		"clip": "player_walk_backward_right_pistol",
+		"frame": 1.0,
+		"max_error_m": 0.000106780989154923
+	},
+	{
+		"clip": "player_walk_backward_right_pistol",
+		"frame": 31.0,
+		"max_error_m": 0.000162947903484359
+	},
+	{
+		"clip": "player_walk_backward_right_pistol",
+		"frame": 61.0,
+		"max_error_m": 0.000257638937953389
+	},
+	{
+		"clip": "player_walk_backward_right_pistol",
+		"frame": 91.0,
+		"max_error_m": 0.000364424182494894
+	},
+	{
+		"clip": "player_walk_backward_right_pistol",
+		"frame": 121.0,
+		"max_error_m": 0.000471312963609719
+	}
+]

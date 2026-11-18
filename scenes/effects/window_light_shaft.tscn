@@ -1,0 +1,6 @@
+[gd_scene format=3]
+[ext_resource type="Script" path="res://scripts/lighting/psx_light_shaft_3d.gd" id="Shaft"]
+[ext_resource type="Material" path="res://assets/materials/window_light_shaft.tres" id="Material"]
+[node name="FaisceauFenetre" type="MeshInstance3D"]
+script = ExtResource("Shaft")
+shaft_material = ExtResource("Material")

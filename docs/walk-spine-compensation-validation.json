@@ -1,0 +1,9 @@
+{
+	"checks": 29204,
+	"errors": [],
+	"largest_waist_step_after_degrees": 16.116017139742,
+	"largest_waist_step_before_degrees": 34.1552942163879,
+	"maximum_leg_error_m": 0.0,
+	"maximum_root_error_m": 0.0,
+	"ok": true
+}

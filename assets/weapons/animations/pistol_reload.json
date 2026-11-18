@@ -1,0 +1,10 @@
+{
+  "clip": "pistol_reload",
+  "loop": false,
+  "fps": 24.0,
+  "start_frame": 1,
+  "end_frame": 28,
+  "duration": 1.125,
+  "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_shoot_reload_bezier.blend",
+  "source_sha256": "862020db872f827725fb8ab660ecb455dadf69ee838a0cab32aa70c21f2348dd"
+}

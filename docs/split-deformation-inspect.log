@@ -1,0 +1,7 @@
+00:04.672  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_idle.blend"
+MODIFIERS [('Armature', 'ARMATURE', False)]
+WEIGHTS 9 63
+BBONES [('DEF-spine', 8, 'FULL'), ('DEF-spine.001', 8, 'FULL'), ('DEF-spine.002', 8, 'FULL'), ('DEF-spine.003', 8, 'FULL'), ('DEF-spine.004', 8, 'FULL'), ('DEF-spine.005', 8, 'FULL'), ('DEF-thigh.L', 10, 'FULL'), ('DEF-thigh.L.001', 10, 'FULL'), ('DEF-shin.L', 10, 'FULL'), ('DEF-shin.L.001', 10, 'FULL'), ('DEF-thigh.R', 10, 'FULL'), ('DEF-thigh.R.001', 10, 'FULL'), ('DEF-shin.R', 10, 'FULL'), ('DEF-shin.R.001', 10, 'FULL'), ('DEF-f_pinky.01.L', 10, 'FULL'), ('DEF-f_pinky.02.L', 10, 'FULL'), ('DEF-f_pinky.03.L', 10, 'FULL'), ('DEF-f_pinky.01.L.001', 10, 'FULL'), ('DEF-f_pinky.02.L.001', 10, 'FULL'), ('DEF-f_pinky.03.L.001', 10, 'FULL'), ('DEF-upper_arm.L', 10, 'FULL'), ('DEF-upper_arm.L.001', 10, 'FULL'), ('DEF-forearm.L', 10, 'FULL'), ('DEF-forearm.L.001', 10, 'FULL'), ('DEF-f_pinky.01.R', 10, 'FULL'), ('DEF-f_pinky.02.R', 10, 'FULL'), ('DEF-f_pinky.03.R', 10, 'FULL'), ('DEF-f_pinky.01.R.001', 10, 'FULL'), ('DEF-f_pinky.02.R.001', 10, 'FULL'), ('DEF-f_pinky.03.R.001', 10, 'FULL'), ('DEF-upper_arm.R', 10, 'FULL'), ('DEF-upper_arm.R.001', 10, 'FULL'), ('DEF-forearm.R', 10, 'FULL'), ('DEF-forearm.R.001', 10, 'FULL')]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

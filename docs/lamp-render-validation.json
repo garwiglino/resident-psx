@@ -1,0 +1,34 @@
+{
+	"errors": [],
+	"levels": [
+		{
+			"gain": 1.0,
+			"pixel": "ffffffff"
+		},
+		{
+			"gain": 0.25,
+			"pixel": "393939ff"
+		},
+		{
+			"gain": 0.0,
+			"pixel": "000000ff"
+		}
+	],
+	"native": {
+		"batches": 1,
+		"depth_pixels": 6553,
+		"general_depth": true,
+		"light_occluders": 50,
+		"light_revision": 6,
+		"player_depth_pixels": 6553,
+		"player_depth_triangles": 50,
+		"shadow_rays": 0,
+		"shadow_triangle_tests": 0,
+		"shot_light_energy": 0.0,
+		"triangles": 50,
+		"version": 17,
+		"vertices": 194,
+		"world_lights": 1
+	},
+	"ok": true
+}

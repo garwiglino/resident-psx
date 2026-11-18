@@ -1,0 +1,16 @@
+{
+	"asset_name": "door_01",
+	"asset_type": "door_01",
+	"backup": "res://exports/backups/blender_addon/1794083292_277425/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "43caa2008268c7872a5d1a8d0efd2b1226c29b577ef296f2394ec6d1222bf6f9",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/environment/custom_modules/door_01/door_01.res",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"door_01"
+	],
+	"triangles": 360
+}

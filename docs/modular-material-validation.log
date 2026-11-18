@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+MODULAR_MATERIALS_OK {"errors":[],"ok":true,"parts":{"door_glass":{"glass_triangles":8,"opaque_triangles":132},"window_glass":{"glass_triangles":16,"opaque_triangles":176}},"source_uvs_checked":924}

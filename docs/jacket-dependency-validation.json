@@ -1,0 +1,9 @@
+{
+	"definition_unchanged": true,
+	"dependencies": [],
+	"error": 0,
+	"glb_sha256": "8f0a87386b4b0e22f2e7b24b3a242c09a90dd1e47b2c1097fb056367a43dc2b4",
+	"meshes": 1,
+	"ok": true,
+	"override_texture": "res://assets/character/clothing/winter_jacket_pink_dragon.png"
+}

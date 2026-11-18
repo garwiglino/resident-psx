@@ -1,0 +1,95 @@
+12:54:08 - tripo_addon - [task.py:25] - INFO - TaskManager timer started
+12:54:08 - tripo_addon - [task.py:32] - INFO - WebSocket server started on port 60600
+12:54:08 - tripo_addon - [task.py:78] - INFO - TaskManager registered
+12:54:08 - tripo_addon - [ws_server.py:66] - ERROR - Error in event loop: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 60600): [winerror 10048] une seule utilisation de chaque adresse de socket (protocole/adresse réseau/port) est habituellement autorisée
+12:54:08 - tripo_addon - [ws_server.py:77] - INFO - Event loop closed
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\__init__.py", line 48, in <module>
+    from .registration import register_all, unregister_all
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\registration.py", line 11, in <module>
+    from . operators.booleans.dice.shader import remove_dice_draw_shader
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 12, in <module>
+    class SD:
+    ...<54 lines>...
+            SD.pause_drawing = False
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\user_default\hardops\operators\booleans\dice\shader.py", line 24, in SD
+    shader = gpu.shader.from_builtin(built_in_shader)
+SystemError: GPU functions for drawing are not available in background mode
+Traceback (most recent call last):
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 63, in <module>
+    shaderEx = gpu.types.GPUShader(dot_line_vertex_shader, dot_line_fragment_shader)
+TypeError: cannot create 'GPUShader' instances
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\scripts\modules\addon_utils.py", line 432, in enable
+    mod = importlib.import_module(module_name)
+  File "C:\Program Files\Blender Foundation\Blender 5.1\5.1\python\Lib\importlib\__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 1027, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\__init__.py", line 16, in <module>
+    from .pq_operator import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\pq_operator.py", line 26, in <module>
+    from .utils.pqutil import *
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\__init__.py", line 24, in <module>
+    from . import mouse_event_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\mouse_event_util.py", line 21, in <module>
+    from . import draw_util
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\PolyQuilt_Fork\utils\draw_util.py", line 65, in <module>
+    shaderEx = gpu.shader.from_builtin('UNIFORM_COLOR')
+SystemError: GPU functions for drawing are not available in background mode
+00:14.531  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+[Tripo3D] Log file: C:\Users\sheensaw\AppData\Local\Temp\tripo3d_blender_bridge.log
+Cannot read ARP prefs
+Update armature presets...
+Reloading external rigs...
+Reloading external metarigs...
+Error adding tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+[Pixel Art Studio 1.4.2] chargé — Vue 3D › barre latérale (N) › onglet « Pixel Art »
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+Error in bpy.app.handlers.load_post[5]:
+Traceback (most recent call last):
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\auto_reload\reload.py", line 179, in startup_refresh_file_moddate
+    reload_modified_objects()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\auto_reload\reload.py", line 268, in reload_modified_objects
+    obj_to_reload[obj_type] = get_files_moddate(obj_type)
+                              ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\auto_reload\reload.py", line 148, in get_files_moddate
+    new_moddate = get_image_moddate(obj, path)
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\auto_reload\reload.py", line 65, in get_image_moddate
+    new_moddate = get_file_list_moddate(tile_list)
+  File "C:\Users\sheensaw\AppData\Roaming\Blender Foundation\Blender\5.1\extensions\blender_org\auto_reload\reload.py", line 125, in get_file_list_moddate
+    moddate += os.path.getmtime(filepath)
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "<frozen genericpath>", line 91, in getmtime
+FileNotFoundError: [WinError 2] Le fichier spécifié est introuvable: 'C:\\Users\\sheensaw\\Downloads\\..\\BEA643A1-1001-412C-B7AD-8E3BAF349A39.png'
+AUTORELOAD --- Setting autoreload categories
+AUTORELOAD --- Reloading external files
+GARMENT_EVALUATED_STATE {"source_sha256": "f668245e1a5bb5b8f2954950923583f6c6fd394f50aa9862bad4b05ca5712cac", "saved_frame": 122, "frames": [{"frame": 122, "objects": {"rig": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "modifiers": [], "bones": {"root": [0.0, 0.0, 0.0], "DEF-spine": [-5.892172939337727e-20, -0.024423353374004364, 0.9537937641143799], "DEF-spine.003": [-8.785809695822193e-20, -0.005486203357577324, 1.2820100784301758], "DEF-upper_arm.L": [0.12242329865694046, -0.0028345882892608643, 1.325979471206665], "DEF-upper_arm.R": [-0.12242329865694046, -0.0028345873579382896, 1.325979471206665]}, "action": "rigAction.001", "nla": []}, "cop_char": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "modifiers": [{"type": "ARMATURE", "rig": "rig", "volume": false, "vertex_group": "", "show_viewport": true, "show_render": true}], "bounds": [[-0.6682159900665283, -0.20009955763816833, 8.072964874372701e-07], [0.6682161092758179, 0.1223316416144371, 1.6459262371063232]], "materials": [["M_Coat_Mask", 495], ["M_face_bottom_Preview", 16], ["M_face_top_Preview", 22], ["M_Coat_Mask", 150]]}, "winter_jacket": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, -0.018019381910562515], [0.0, 0.0, 1.0, 1.0297929048538208], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, -0.018019381910562515], [0.0, 0.0, 1.0, 1.0297929048538208], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, -0.0, 0.0, -0.0], [-0.0, 1.0, -0.0, 0.0], [0.0, -0.0, 1.0, -0.0], [-0.0, 0.0, -0.0, 1.0]], "modifiers": [{"type": "ARMATURE", "rig": "rig", "volume": false, "vertex_group": "", "show_viewport": true, "show_render": true}], "bounds": [[-0.5263283252716064, -0.16784845292568207, 2.0629258155822754], [0.5263276696205139, 0.08969888091087341, 2.4658610820770264]], "materials": [["M_Winter_Coat", 534]]}}}, {"frame": 1, "objects": {"rig": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "modifiers": [], "bones": {"root": [0.0, 0.0, 0.0], "DEF-spine": [-5.892172939337727e-20, -0.024423353374004364, 0.9537937641143799], "DEF-spine.003": [-8.785809695822193e-20, -0.005486203357577324, 1.2820100784301758], "DEF-upper_arm.L": [0.12242329865694046, -0.0028345882892608643, 1.325979471206665], "DEF-upper_arm.R": [-0.12242329865694046, -0.0028345873579382896, 1.325979471206665]}, "action": "rigAction.001", "nla": []}, "cop_char": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "modifiers": [{"type": "ARMATURE", "rig": "rig", "volume": false, "vertex_group": "", "show_viewport": true, "show_render": true}], "bounds": [[-0.6682159900665283, -0.20009955763816833, 8.072964874372701e-07], [0.6682161092758179, 0.1223316416144371, 1.6459262371063232]], "materials": [["M_Coat_Mask", 495], ["M_face_bottom_Preview", 16], ["M_face_top_Preview", 22], ["M_Coat_Mask", 150]]}, "winter_jacket": {"world": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, -0.018019381910562515], [0.0, 0.0, 1.0, 1.0297929048538208], [0.0, 0.0, 0.0, 1.0]], "basis": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, -0.018019381910562515], [0.0, 0.0, 1.0, 1.0297929048538208], [0.0, 0.0, 0.0, 1.0]], "parent_inverse": [[1.0, -0.0, 0.0, -0.0], [-0.0, 1.0, -0.0, 0.0], [0.0, -0.0, 1.0, -0.0], [-0.0, 0.0, -0.0, 1.0]], "modifiers": [{"type": "ARMATURE", "rig": "rig", "volume": false, "vertex_group": "", "show_viewport": true, "show_render": true}], "bounds": [[-0.5263283252716064, -0.16784845292568207, 2.0629258155822754], [0.5263276696205139, 0.08969888091087341, 2.4658610820770264]], "materials": [["M_Winter_Coat", 534]]}}}]}
+12:54:16 - tripo_addon - [task.py:61] - INFO - WebSocket server stop requested
+12:54:16 - tripo_addon - [task.py:68] - INFO - WebSocket thread will exit automatically (daemon)
+12:54:16 - tripo_addon - [task.py:86] - INFO - TaskManager unregistered
+Error removing tablet navigation keymap: 'bpy_prop_collection[key]: key "View2D Buttons List" not found'
+Blender 5.1.2 (hash ec6e62d40fa9 built 2026-05-19 01:37:34)
+
+Blender quit

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/vigile_14.res" id="1_0f5nf"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_hmmh3"]
+
+[resource]
+script = ExtResource("2_hmmh3")
+id = &"vigile_14"
+display_name = "VIGILE-14"
+description = "Unité vert sombre anguleuse, renforcée pour les rues étroites et les longues veilles."
+lore = "Veille encore sur une capitale vide."
+rarity = "R"
+image = ExtResource("1_0f5nf")
+source_index = 15

@@ -1,0 +1,134 @@
+00:03.391  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+08:26:40 | INFO: Starting glTF 2.0 export
+08:26:40 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | WARNING: Mesh Mesh_0 is not valid, and may be exported wrongly
+08:26:40 | INFO: Extracting primitive: Mesh_0
+08:26:40 | INFO: Primitives created: 1
+08:26:40 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:40 | INFO: Finished glTF 2.0 export in 0.44376182556152344 s
+
+08:26:41 | INFO: Starting glTF 2.0 export
+08:26:41 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Mesh_0
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:41 | INFO: Finished glTF 2.0 export in 0.26408958435058594 s
+
+08:26:41 | INFO: Starting glTF 2.0 export
+08:26:41 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | INFO: Extracting primitive: Mesh_0
+08:26:41 | INFO: Primitives created: 1
+08:26:41 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:42 | INFO: Finished glTF 2.0 export in 0.3838050365447998 s
+
+08:26:42 | INFO: Starting glTF 2.0 export
+08:26:42 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | INFO: Extracting primitive: Mesh_0
+08:26:42 | INFO: Primitives created: 1
+08:26:42 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:42 | INFO: Finished glTF 2.0 export in 0.29951000213623047 s
+
+08:26:43 | INFO: Starting glTF 2.0 export
+08:26:43 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Mesh_0
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:43 | INFO: Finished glTF 2.0 export in 0.24318170547485352 s
+
+08:26:43 | INFO: Starting glTF 2.0 export
+08:26:43 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | INFO: Extracting primitive: Mesh_0
+08:26:43 | INFO: Primitives created: 1
+08:26:43 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:44 | INFO: Finished glTF 2.0 export in 0.31836390495300293 s
+
+08:26:44 | INFO: Starting glTF 2.0 export
+08:26:44 | INFO: Extracting primitive: Cube.002_Material_0.001
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Cylinder_Material_0.001
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Cube.003_Material_0.001
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Cube.001_Material_0.005
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Cube.005_Material_0.001
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Cube.004_Material_0.001
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | INFO: Extracting primitive: Mesh_0
+08:26:44 | INFO: Primitives created: 1
+08:26:44 | WARNING: There are more than 4 joint vertex influences.The 4 with highest weight will be used (and normalized).
+08:26:44 | INFO: Finished glTF 2.0 export in 0.29169201850891113 s
+
+MOTION_DONE
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

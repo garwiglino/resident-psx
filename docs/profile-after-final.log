@@ -1,0 +1,5 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+{"draw_calls":{"max":388.0,"mean":388.0,"p50":388.0,"p95":388.0},"frame_ms":{"max":16.47,"mean":13.1684222222222,"p50":13.084,"p95":14.979},"geometry_ms":{"max":6.034,"mean":4.7824,"p50":4.721,"p95":5.488},"native":true,"physics_ms":{"max":0.63,"mean":0.594411111111112,"p50":0.63,"p95":0.63},"scenario":"spawn","submission_ms":{"max":5.087,"mean":3.25615555555556,"p50":3.181,"p95":4.02},"triangles":1933}
+{"draw_calls":{"max":206.0,"mean":206.0,"p50":206.0,"p95":206.0},"frame_ms":{"max":9.827,"mean":7.97543333333333,"p50":7.832,"p95":9.188},"geometry_ms":{"max":4.484,"mean":3.19405555555555,"p50":3.122,"p95":3.619},"native":true,"physics_ms":{"max":0.469,"mean":0.469000000000001,"p50":0.469,"p95":0.469},"scenario":"corridor","submission_ms":{"max":2.414,"mean":1.63726666666667,"p50":1.614,"p95":1.955},"triangles":1289}

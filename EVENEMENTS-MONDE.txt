@@ -1,0 +1,115 @@
+EVENEMENTS DU MONDE ET OBJECTIFS SILENCIEUX
+
+Le gestionnaire global WorldEvents memorise les portes ouvertes, ennemis morts,
+zones visitees, interactions effectuees, objectifs accomplis, drapeaux et compteurs.
+Aucun objectif, journal de mission ou message de validation n'est affiche a l'ecran.
+Les conditions sont verifiees lors des changements du monde, sans scruter chaque image.
+
+ENNEMIS DANS LA MAP
+Ouvrir scenes/main.tscn ou scenes/couloir_pieces.tscn.
+Les quatre ennemis sont dans Map > Gameplay > Ennemis (Gameplay > Ennemis dans la map seule).
+Ils gardent leurs emplacements precedents et sont visibles/manipulables dans la vue 3D.
+Pour en ajouter : glisser scenes/enemies/enemy.tscn dans la map.
+Dans l'inspecteur, donner un Enemy Id unique, par exemple archives.garde.
+Regler la vie, la vitesse et la detection dans Ennemi.
+Dans Evenement de mort :
+- Death Event : identifiant libre, par exemple garde_archives_mort.
+- Death Actions : ajouter une WorldAction pour jouer directement un dialogue, une cine, etc.
+Le signal died peut aussi etre connecte dans l'editeur.
+La mort est enregistree automatiquement sous Enemy Id, meme sans Death Event.
+Un cadavre ne declenche pas sa mort une seconde fois. Recharger cette map dans la meme
+partie restaure un ennemi deja mort avec ses collisions desactivees.
+
+OBJECTIF : ATTEINDRE UNE PIECE
+1. Glisser scenes/world_events/event_zone.tscn dans la piece.
+2. Regler Zone Id sur archives. Regler Volume > Shape > Size et deplacer le cube.
+3. Dans l'arbre de scene, ajouter scenes/world_events/objective.tscn sous Map > Gameplay > Objectifs.
+4. Regler Objective Id sur atteindre_archives.
+5. Dans Conditions, ajouter une nouvelle WorldCondition :
+   Kind = Zone atteinte ; Id = archives ; Expected = coche.
+L'objectif est accompli a l'entree du joueur dans la zone, sans aucun affichage.
+Once sur la zone evite de rejouer ses actions a chaque entree.
+Dans une scene instanciee, clic droit > Enfants modifiables donne acces a Volume.
+
+OBJECTIF : EXAMINER UN ELEMENT
+1. Glisser scenes/world_events/interaction.tscn sur l'element a examiner.
+2. Placer le marqueur au point d'interaction. Regler Interaction Id, par exemple console_archives.
+3. Regler Interaction Label, par exemple EXAMINER LA CONSOLE. Once si une seule utilisation.
+4. Le joueur peut utiliser E a portee, avec le controle de visibilite habituel.
+5. Ajouter une condition d'objectif : Interaction effectuee ; Id = console_archives.
+On peut combiner Zone atteinte et Interaction effectuee dans le meme objectif.
+Require All coche exige toutes les conditions ; decoche, une seule suffit.
+Requirements sur une interaction permet d'exiger un objectif ou un drapeau avant son utilisation.
+
+LANCER UN DIALOGUE APRES UN OBJECTIF
+1. Dans l'arbre de scene, glisser scenes/world_events/response.tscn sous Map.
+2. Dans Conditions, ajouter WorldCondition : Objectif accompli ; Id = atteindre_archives.
+3. Dans Actions, ajouter WorldAction : Jouer un dialogue ; assigner sa ressource Dialogue.
+4. Dans la ressource DialogueSequence, choisir le Mode habituel :
+   Appel en exploration - automatique laisse jouer ; Conversation demande la validation.
+5. Garder Once coche pour une reaction unique dans cette partie.
+Un objectif peut aussi porter directement ses propres Actions.
+Check On Ready permet de reagir a une condition deja remplie lors du chargement de la scene.
+
+LANCER UNE CINEMATIQUE
+La cinematique doit deja etre placee et montee dans la map, comme auparavant.
+Dans Actions, ajouter WorldAction : Jouer une cinematique.
+Assigner Cinematic Path vers cette instance. Le chemin est relatif au noeud qui
+porte les actions (ReactionMonde, Objectif, Ennemi...), pas a la racine de la map.
+Exemple : ReactionMonde et CinematicSequence sont freres : ../CinematicSequence.
+Wait For Completion coche fait attendre les actions suivantes jusqu'a la fin de la scene.
+Le gestionnaire existant garde les cuts, les dialogues, les acteurs et le retour de camera.
+
+REAGIR A LA MORT D'UN ENNEMI
+Dans une ReactionMonde, deux possibilites :
+- Conditions : Ennemi mort ; Id = l'Enemy Id de l'ennemi, par exemple archives.garde.
+- Ou Listen Event = le Death Event personnalise, par exemple garde_archives_mort.
+Ajouter ensuite les Actions de dialogue, cinematique ou effet audio souhaitees.
+Une condition peut aussi exiger plusieurs ennemis morts et une porte ouverte ensemble.
+Listen Event attend une occurrence precise ; les Conditions servent alors de prerequis.
+Sans Listen Event, une reaction repetable se joue quand ses conditions passent de faux a vrai.
+
+PORTES
+Glisser scenes/world_events/door.tscn dans la map pour une porte interactive.
+Donner un Door Id unique. Le visuel et la collision sont sous Pivot.
+On peut remplacer le mesh et le materiau par ceux du decor dans l'editeur.
+Open Rotation Degrees et Duration reglent l'ouverture. Initially Open/Locked reglent l'etat initial.
+Le joueur utilise E pour ouvrir/fermer ; le gestionnaire enregistre les deux etats.
+Une WorldCondition Porte ouverte utilise Door Id ; Expected decoche teste une porte fermee.
+Opened Event et Closed Event permettent des evenements personnalises.
+Pour une porte animee par un autre systeme, appeler WorldEvents.set_door_open(id, true/false)
+au changement logique d'etat. Le gestionnaire ne devine pas l'etat d'un mesh de decor statique.
+
+AUTRES ACTIONS
+Emettre un evenement ; Modifier un drapeau ; Accomplir un objectif ; Ajouter au compteur ;
+Declencher un noeud possedant trigger() ; Jouer un effet audio par son identifiant de cue du niveau.
+Les actions sont lues dans l'ordre. Conversations/cinematiques occupees font patienter
+les nouvelles presentations ; elles ne sont pas remplacees brutalement.
+Une action de dialogue n'annule pas les reglages Is Intercom ou Mode du dialogue.
+Les chaines en attente disparaissent si leur noeud source est retire avant leur depart.
+La pause du jeu suspend les actions. La mort/fin de niveau annule les presentations en attente.
+
+EVENEMENTS AUTOMATIQUES (exemples avec les identifiants ci-dessus)
+enemy.archives.garde.killed
+door.archives.porte.opened / door.archives.porte.closed
+zone.archives.entered
+interaction.console_archives.used
+objective.atteindre_archives.completed
+dialogue.identifiant_du_dialogue.completed / dialogue.identifiant_du_dialogue.cancelled
+cinematic.identifiant_de_cinematique.started / cinematic.identifiant_de_cinematique.completed
+Les reperes d'evenement des plans de cinematique alimentent aussi WorldEvents.
+Donner des identifiants stables et distincts aux dialogues/cinematiques qui doivent etre references.
+
+OBJECTIFS DEJA BRANCHES DANS LE PROTOTYPE
+Gameplay > Objectifs : TrouverFusible, RetablirCourant, OuvrirSortie.
+Le ramassage du fusible, l'utilisation du panneau et l'ouverture de sortie alimentent leurs etats.
+Ils restent silencieux et ne lancent aucun dialogue/cinematique supplementaire par defaut.
+
+DUREE DE VIE DES ETATS
+Les etats et les reactions Once persistent pendant la partie, y compris entre scenes.
+Recommencer efface les etats. Relancer le jeu demarre aussi une nouvelle partie.
+WorldEvents.snapshot() / restore(dictionnaire) permettent d'integrer ces etats a une sauvegarde.
+Ce sont les etats du monde, pas une sauvegarde automatique des positions/animations du jeu.
+WorldEvents.reset_run() commence explicitement une nouvelle partie.
+
+Apres ajout de ce gestionnaire global, redemarrer Godot si l'editeur etait deja ouvert.

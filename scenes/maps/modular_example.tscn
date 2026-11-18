@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://76wsuil1dhw5"]
+
+[ext_resource type="Script" uid="uid://b8nptyw3i2xpj" path="res://scripts/modular_map/map_3d.gd" id="1_iguxg"]
+[ext_resource type="Script" uid="uid://c8c82w820060c" path="res://scripts/modular_map/layout.gd" id="2_0bewc"]
+[ext_resource type="Resource" path="res://assets/environment/modular_2m/default_kit.tres" id="3_m6dew"]
+[ext_resource type="Script" uid="uid://buonlwusvrqfj" path="res://scripts/psx_light_3d.gd" id="4_0bewc"]
+[ext_resource type="Script" uid="uid://7sydkht8cjad" path="res://scripts/levels/psx_level_settings.gd" id="5_qdp4q"]
+[ext_resource type="Resource" uid="uid://b0swegy5vkvjw" path="res://assets/audio/levels/modular_example.tres" id="6_3gjaf"]
+[ext_resource type="Script" uid="uid://b3t0j456atfjw" path="res://scripts/enemy.gd" id="7_qdp4q"]
+[ext_resource type="Script" uid="uid://bkx8ndylof05d" path="res://scripts/world_events/world_action.gd" id="8_2atn6"]
+[ext_resource type="Resource" uid="uid://bdebg0ugna24b" path="res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres" id="9_jke53"]
+
+[sub_resource type="Resource" id="Resource_jke53"]
+resource_local_to_scene = true
+script = ExtResource("2_0bewc")
+cells = {
+Vector2i(0, 0): 1,
+Vector2i(0, 1): 1,
+Vector2i(0, 2): 1,
+Vector2i(0, 3): 3,
+Vector2i(0, 4): 3,
+Vector2i(1, 0): 1,
+Vector2i(1, 1): 1,
+Vector2i(1, 2): 1,
+Vector2i(1, 3): 3,
+Vector2i(1, 4): 3,
+Vector2i(2, 0): 1,
+Vector2i(2, 1): 1,
+Vector2i(2, 2): 1,
+Vector2i(2, 3): 3,
+Vector2i(2, 4): 3,
+Vector2i(3, 0): 2,
+Vector2i(3, 1): 2,
+Vector2i(3, 2): 2,
+Vector2i(3, 3): 3,
+Vector2i(3, 4): 3,
+Vector2i(4, 0): 2,
+Vector2i(4, 1): 2,
+Vector2i(4, 2): 2,
+Vector2i(4, 3): 3,
+Vector2i(4, 4): 3,
+Vector2i(5, 0): 2,
+Vector2i(5, 1): 2,
+Vector2i(5, 2): 2,
+Vector2i(5, 3): 3,
+Vector2i(5, 4): 3
+}
+edges = {
+"h:1:0": {
+"kind": 3,
+"variant": "boarded"
+},
+"h:1:3": {
+"kind": 2,
+"variant": "glass"
+},
+"h:4:0": {
+"kind": 3,
+"variant": "glass"
+},
+"h:4:3": {
+"kind": 2,
+"variant": "double"
+},
+"v:3:1": {
+"kind": 2,
+"variant": "solid"
+}
+}
+rooms = {
+1: "Entree",
+2: "Bureau",
+3: "Couloir"
+}
+next_room = 4
+
+[sub_resource type="Resource" id="Resource_qdp4q"]
+script = ExtResource("8_2atn6")
+kind = 4
+dialogue = ExtResource("9_jke53")
+metadata/_custom_type_script = "uid://bkx8ndylof05d"
+
+[node name="Map" type="Node3D" unique_id=1186725805]
+script = ExtResource("1_iguxg")
+layout = SubResource("Resource_jke53")
+kit = ExtResource("3_m6dew")
+event_namespace = "exemple_modulaire"
+
+[node name="Gameplay" type="Node3D" parent="." unique_id=2115822891]
+
+[node name="PlayerSpawn" type="Marker3D" parent="Gameplay" unique_id=1789825612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0.05, 3)
+
+[node name="PSXLight3D" type="Marker3D" parent="." unique_id=521066001]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0175414, 2.5650585, 2.794842)
+script = ExtResource("4_0bewc")
+light_energy = 5.0
+light_range = 5.0
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="PSXLight3D2" type="Marker3D" parent="." unique_id=1544622940]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.599745, 2.5650585, 7.794842)
+script = ExtResource("4_0bewc")
+light_color = Color(1, 0, 0, 1)
+light_energy = 5.0
+light_range = 5.0
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="ReglagesNiveau" type="Node" parent="." unique_id=720243975]
+script = ExtResource("5_qdp4q")
+fog_start = 1.0
+color_tint = Color(0.71273077, 0.88912475, 1, 1)
+saturation = 0.7
+profile = ExtResource("6_3gjaf")
+
+[node name="WorldEnemy3D" type="CharacterBody3D" parent="ReglagesNiveau" unique_id=1976019597]
+process_mode = 1
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.599576, 0, 8.346782)
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("7_qdp4q")
+death_actions = Array[ExtResource("8_2atn6")]([SubResource("Resource_qdp4q")])
+metadata/_custom_type_script = "uid://b3t0j456atfjw"

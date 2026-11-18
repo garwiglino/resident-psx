@@ -1,0 +1,80 @@
+SYSTEME D'ARMES
+
+Arme actuelle
+assets/weapons/desert_eagle.tres regroupe les reglages du Desert Eagle :
+mode semi-automatique, cadence, capacite du chargeur, munitions de depart, type de
+munition, duree de recharge/equipement, degats, portee, recul, sons et animations.
+Le chargeur de 12 et les 24 cartouches de reserve conservent les reglages du prototype.
+Ces nombres sont des reglages de jeu modifiables, pas des specifications de l'arme reelle.
+Le son de tir utilise exactement res://assets/audio/weapons/d_eagle/eagle_shoot.wav,
+prepare automatiquement par le chemin audio PS1.
+La mise en visee joue deagle_aim.wav une seule fois quand le joueur leve l'arme,
+avec le meme traitement PS1 et le volume des effets. Maintenir le clic droit ne le repete pas.
+Le fichier se regle dans Aim Sound sur desert_eagle.tres, independamment des tirs et recharges.
+Le clic a vide choisit deagle_dry_01.wav ou deagle_dry_02.wav, sans repetition immediate.
+Empty Sound Variants permet de changer cette liste dans la ressource de l'arme.
+Un chargeur vide ne lance aucune recharge automatique, meme avec des cartouches en reserve.
+R reste la commande de rechargement ; le clic a vide ne depense aucune munition.
+Un impact qui blesse un ennemi affiche un petit X clair pendant 0,12 s dans la visee.
+hit_marker.wav joue en meme temps, a -22 dB, avec le traitement PS1.
+Les tirs rates, murs et ennemis deja morts ne donnent aucune confirmation.
+Son, volume et duree se reglent dans main.tscn > SousScelles > Confirmation des impacts.
+Les douilles jouent au premier contact avec le sol un des trois bullet_floor_01/02/03.wav
+de assets/audio/weapons, choisi au hasard sans repetition immediate. Son 3D au point
+d'impact, traite en PS1 ; les rebonds suivants ne rejouent pas l'enregistrement.
+Les sons, le volume et la distance d'audition se reglent dans Son des douilles sur la scene d'arme.
+La recharge utilise assets/audio/weapons/d_eagle/deagle_reload.wav depuis le debut de l'animation.
+Le chargeur ejecte joue assets/audio/weapons/mag_floor.wav au premier vrai contact avec le sol.
+Les murs et rebonds suivants ne rejouent pas ce son. Sa position 3D reste celle du choc.
+Dans Pistol > Son du chargeur : fichier, volume, distance et decalage de debut (0,02 s pour ce fichier).
+Les quatre lecteurs sont prepares et reutilises, avec le meme traitement SPU que les autres sons.
+
+Regles de jeu
+- Un chargeur et un delai entre tirs propres a chaque arme possedee.
+- Une reserve commune par type de munition : deux armes compatibles peuvent partager la meme reserve.
+- Changer d'arme conserve le contenu des deux chargeurs et leurs delais entre tirs.
+- Le tir est refuse pendant une recharge, un equipement ou le delai entre deux coups.
+- La recharge transfere uniquement les cartouches necessaires et disponibles, a son terme.
+- La duree vient du clip personnage exporte ; reload_duration est utilise si aucun clip n'existe.
+- La recharge Desert Eagle libere le chargeur a l'image 6 et insere celui de la main gauche a l'image 17.
+- Une recharge annulee ne depense aucune cartouche et ne remplit pas l'arme rangee.
+- Le changement coupe l'ancienne recharge et masque ses flashs/douilles temporaires.
+- Les ramassages indiquent leur propre type de munition, independamment de l'arme equipee.
+- Recuperer deux fois la meme arme ne reinitialise pas ses munitions.
+- Aucun tir, rechargement ou changement d'arme apres la mort du personnage.
+- Les sons de tirs peuvent se chevaucher ; les tirs refuses ne declenchent ni son de tir ni recul.
+
+Commandes
+Clic droit : visee. Clic gauche : un coup par pression pour le Desert Eagle.
+R : recharger. Molette : arme suivante/precedente. Touches 1-4 : emplacement direct.
+Les touches [ et ] sont egalement disponibles pour parcourir l'inventaire.
+Avec une seule arme, la molette ne reinitialise rien.
+
+Ajouter une arme
+1. Dupliquer desert_eagle.tres et donner un ID unique a la copie.
+2. Renseigner sa scene, son montage dans la main, ses sons et ses reglages.
+3. Choisir Ammo Type : identique pour partager les cartouches, different pour une reserve distincte.
+4. Ajouter la ressource dans Starting Weapons sur Player, puis choisir Starting Weapon Slot.
+Les valeurs de depart sont attribuees une seule fois lors de l'acquisition.
+Une nouvelle arme necessite son propre modele et ses animations compatibles avec le personnage.
+La scene d'arme garde les reglages de mecanique, de flash et d'ejection ; le dossier
+d'animations se choisit sur cette scene. Les animations du personnage se choisissent dans la ressource.
+Les armes possedees sont preparees a l'avance : un simple changement ne reconstruit pas le rendu.
+
+Points d'integration pour de futurs ramassages
+Player.give_weapon(definition, equip=false) renvoie l'emplacement de l'arme.
+Player.equip_weapon(slot), cycle_weapon(direction), add_ammo(ammo_type, count),
+shoot() et reload_weapon() passent par la meme gestion centrale.
+Game.add_item accepte ammo_type et amount pour les boites de munitions.
+Les nouvelles acquisitions enregistrent leur geometrie dans le rendu PSX une seule fois.
+
+Organisation
+weapon_definition.gd : donnees d'une arme configurees dans une ressource.
+weapon_inventory.gd : etats et comptage des munitions, sans dependance au personnage ou au rendu.
+character_motion.gd / weapon.gd : modeles, montages et animations.
+player.gd : commandes et presentation des actions acceptees.
+Chaque inventaire duplique les donnees pour ses reglages en jeu ; les ressources source restent intactes.
+La conservation entre changements d'arme est geree en memoire. Une sauvegarde sur disque
+du jeu n'est pas ajoutee par cette modification.
+
+Validation : tests/weapon_inventory.gd et tests/weapon_trigger.gd ; rapports dans docs/weapon-*-validation.json.

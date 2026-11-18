@@ -1,0 +1,7 @@
+00:10.156  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_face_expressions_psx_pack\cop_face_expressions\cop_base_expressions_psx.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\inspect_face_source.py:21: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  if mat.use_nodes:
+FACE_SOURCE_INSPECTED docs\face-pack-inspection.json
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

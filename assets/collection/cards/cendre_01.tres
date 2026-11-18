@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/cendre_01.res" id="1_p7vqn"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_6fxuf"]
+
+[resource]
+script = ExtResource("2_6fxuf")
+id = &"cendre_01"
+display_name = "CENDRE-01"
+description = "Châssis fin ivoire et orange, capteurs déployables et jambes légères."
+lore = "Repère les convois dans les villes mortes."
+rarity = "C"
+image = ExtResource("1_p7vqn")

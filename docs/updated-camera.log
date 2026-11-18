@@ -1,0 +1,5 @@
+00:04.000  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims.blend"
+CAMERA_REPORT {"render": [320, 240, 1.0, 1.0], "active": "Camera", "cameras": [{"name": "Camera", "parent": null, "matrix": [[-1.0, 6.6002361555513294e-15, -8.742277657347586e-08, -0.3564058244228363], [-8.742277657347586e-08, -7.549790126404332e-08, 1.0, 1.7886837720870972], [0.0, 1.0, 7.549790126404332e-08, 1.354037880897522], [0.0, 0.0, 0.0, 1.0]], "lens": 50.0, "sensor_width": 36.0, "sensor_height": 24.0, "sensor_fit": "AUTO", "angle_x": 0.6911112070083618, "angle_y": 0.4710899591445923, "clip": [0.10000000149011612, 1000.0], "constraints": []}], "rig_matrix": [[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]], "actions": [["CameraAction", [0.0, 0.0]], ["rigAction", [1.0, 72.0]]]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

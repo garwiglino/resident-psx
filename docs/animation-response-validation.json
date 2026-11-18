@@ -1,0 +1,140 @@
+{
+	"controller": [
+		{
+			"actions": [
+				"forward"
+			],
+			"expected_distance_m": 0.0245650455643059,
+			"first_tick_distance_m": 0.0245652198791504
+		},
+		{
+			"actions": [
+				"forward",
+				"left"
+			],
+			"expected_distance_m": 0.0245650401723036,
+			"first_tick_distance_m": 0.0245651286095381
+		},
+		{
+			"actions": [
+				"back",
+				"right"
+			],
+			"expected_distance_m": 0.0245650401723036,
+			"first_tick_distance_m": 0.0245651286095381
+		}
+	],
+	"failures": [],
+	"pose_weights": [
+		{
+			"actual_weight": 0.200000016060294,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 0.499999936752177,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 0.799999977004675,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "idle",
+			"to": "walk"
+		},
+		{
+			"actual_weight": 0.199999947489411,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.499999992726254,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.800000012725164,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "walk",
+			"to": "strafe_left"
+		},
+		{
+			"actual_weight": 0.200000006955997,
+			"elapsed": 0.1,
+			"expected_weight": 0.2,
+			"from": "strafe_right",
+			"to": "backward_left"
+		},
+		{
+			"actual_weight": 0.49999995833139,
+			"elapsed": 0.25,
+			"expected_weight": 0.5,
+			"from": "strafe_right",
+			"to": "backward_left"
+		},
+		{
+			"actual_weight": 0.80000003772557,
+			"elapsed": 0.4,
+			"expected_weight": 0.8,
+			"from": "strafe_right",
+			"to": "backward_left"
+		}
+	],
+	"startup": [
+		{
+			"clip": "walk",
+			"first_tick_root_ratio": 1.0,
+			"speed": 0.5
+		},
+		{
+			"clip": "walk",
+			"first_tick_root_ratio": 1.0,
+			"speed": 1.0
+		},
+		{
+			"clip": "walk",
+			"first_tick_root_ratio": 1.0,
+			"speed": 2.0
+		},
+		{
+			"clip": "strafe_right",
+			"first_tick_root_ratio": 1.0,
+			"speed": 0.5
+		},
+		{
+			"clip": "strafe_right",
+			"first_tick_root_ratio": 1.0,
+			"speed": 1.0
+		},
+		{
+			"clip": "strafe_right",
+			"first_tick_root_ratio": 1.0,
+			"speed": 2.0
+		},
+		{
+			"clip": "backward_left",
+			"first_tick_root_ratio": 1.0,
+			"speed": 0.5
+		},
+		{
+			"clip": "backward_left",
+			"first_tick_root_ratio": 1.0,
+			"speed": 1.0
+		},
+		{
+			"clip": "backward_left",
+			"first_tick_root_ratio": 1.0,
+			"speed": 2.0
+		}
+	]
+}

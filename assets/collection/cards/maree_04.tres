@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/maree_04.res" id="1_eyhqu"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_rc8bp"]
+
+[resource]
+script = ExtResource("2_rc8bp")
+id = &"maree_04"
+display_name = "MARÉE-04"
+description = "Armure étanche turquoise, propulseurs marins et optique protégée."
+lore = "Garde les vestiges engloutis du vieux port."
+rarity = "R"
+image = ExtResource("1_eyhqu")
+source_index = 4

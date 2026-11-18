@@ -1,0 +1,16 @@
+{
+	"asset_name": "neon_light_01",
+	"asset_type": "prop",
+	"backup": "res://exports/backups/blender_addon/1794083369_238830/",
+	"collision_source": "",
+	"collision_triangles": 0,
+	"geometry_sha256": "5a00a53b52240576d12ef9058a27816750bfca251e27e41d57c92413536e8fce",
+	"notes": [],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/props/neon_light_01/neon_light_01.tscn",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"neon_light"
+	],
+	"triangles": 18
+}

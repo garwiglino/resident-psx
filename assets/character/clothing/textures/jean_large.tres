@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ClothingTextureSet" format=3 uid="uid://b2s605k7hkwo4"]
+
+[ext_resource type="Script" uid="uid://cowdnl8xhrkki" path="res://scripts/clothing/clothing_texture_set.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://c2sj0kkkht6d1" path="res://assets/character/clothing/textures/jean_large/jean_large_bleu_clair_90_psx_256.png" id="2_yra63"]
+[ext_resource type="Texture2D" uid="uid://c8cxbxpkrfjq5" path="res://assets/character/clothing/textures/jean_large/jean_large_indigo_tres_fonce_psx_256.png" id="3_41jyg"]
+
+[resource]
+script = ExtResource("1")
+original_label = "Indigo delave"
+variants = Dictionary[StringName, Texture2D]({
+&"": null,
+&"Dark Indigo": ExtResource("3_41jyg"),
+&"Vintage Light Wash": ExtResource("2_yra63")
+})

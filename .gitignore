@@ -1,0 +1,28 @@
+# Godot 4
+.godot/
+/android/
+*.translation
+export.cfg
+export_credentials.cfg
+
+# Builds, tests audio et sorties générées
+/exports/
+
+# Extension native : dépendance clonée et dossier de compilation
+/native/godot-cpp/
+/native/build/
+
+# Fichiers temporaires (Windows, Office, DLL verrouillées)
+*.TMP
+*.tmp
+~*
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+
+# Blender
+*.blend1
+*.blend2

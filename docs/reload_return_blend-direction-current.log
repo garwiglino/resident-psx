@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+RELOAD_RETURN_BLEND_OK {"errors":[],"ok":true,"samples":[{"clip":"idle","middle_hand_gap_m":0.207959413528442,"minimum_stride_m_s":0},{"clip":"walk","middle_hand_gap_m":0.20435144007206,"minimum_stride_m_s":1.47388458251953},{"clip":"strafe_left","middle_hand_gap_m":0.144837513566017,"minimum_stride_m_s":1.47388458251953}]}

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/erg_10.res" id="1_jo8n5"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_vm6qi"]
+
+[resource]
+script = ExtResource("2_vm6qi")
+id = &"erg_10"
+display_name = "ERG-10"
+description = "Machine sable à longues jambes et articulations protégées contre la poussière."
+lore = "Suit les anciennes lignes sous le sable."
+rarity = "R"
+image = ExtResource("1_jo8n5")
+source_index = 13

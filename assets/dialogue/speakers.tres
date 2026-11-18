@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueSpeakerList" format=3 uid="uid://bpsad1vi32wga"]
+
+[ext_resource type="Script" uid="uid://d0c1kdg6370by" path="res://scripts/dialogue/dialogue_speaker_list.gd" id="1"]
+[ext_resource type="Script" uid="uid://c3kumq21n56c4" path="res://scripts/dialogue/dialogue_speaker.gd" id="2"]
+
+[sub_resource type="Resource" id="Hitomi"]
+resource_name = "HITOMI"
+script = ExtResource("2")
+speaker_name = "HITOMI"
+top_color = Color(0.1392, 0.17187333, 0.29, 1)
+
+[sub_resource type="Resource" id="Concierge"]
+resource_name = "LE CONCIERGE"
+script = ExtResource("2")
+speaker_name = "LE CONCIERGE"
+intercom_by_default = true
+use_top_color = true
+top_color = Color(0, 0.29, 0.24649997, 1)
+
+[resource]
+script = ExtResource("1")
+entries = Array[ExtResource("2")]([SubResource("Hitomi"), SubResource("Concierge")])

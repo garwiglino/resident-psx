@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://dgig3omdi0kec"]
+
+[ext_resource type="Script" uid="uid://dtp6gvwo6onsk" path="res://scripts/dialogue/dialogue_line.gd" id="1_u8yi0"]
+[ext_resource type="Script" uid="uid://ku1e04cwc7wa" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_g881n"]
+[ext_resource type="AudioStream" uid="uid://c3y7ncj3nkcut" path="res://assets/audio/dialogs/locked_doors_key/4_locked_doors.wav" id="2_t8iio"]
+[ext_resource type="AudioStream" uid="uid://c5kqg5goopdpe" path="res://assets/audio/dialogs/locked_doors_key/1_locked_doors.wav" id="3_qro65"]
+[ext_resource type="AudioStream" uid="uid://b1vyv0ly45xd2" path="res://assets/audio/dialogs/locked_doors_key/2_locked_doors.wav" id="4_edoel"]
+[ext_resource type="AudioStream" uid="uid://c07k4f12mqncl" path="res://assets/audio/dialogs/locked_doors_key/3_locked_doors.wav" id="5_tfowd"]
+
+[sub_resource type="Resource" id="Resource_1voo6"]
+script = ExtResource("1_u8yi0")
+speaker = "HITOMI"
+text = "Non, ça ne s’ouvre pas."
+audio = ExtResource("2_t8iio")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_qpckd"]
+script = ExtResource("1_u8yi0")
+speaker = "HITOMI"
+text = "C’est verrouillé. "
+audio = ExtResource("3_qro65")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_edoel"]
+script = ExtResource("1_u8yi0")
+speaker = "HITOMI"
+text = "Il va me falloir une clé."
+audio = ExtResource("4_edoel")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_tfowd"]
+script = ExtResource("1_u8yi0")
+speaker = "HITOMI"
+text = "Il faut la clé pour l’ouvrir."
+audio = ExtResource("5_tfowd")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[resource]
+script = ExtResource("2_g881n")
+mode = 1
+lines = Array[ExtResource("1_u8yi0")]([SubResource("Resource_1voo6"), SubResource("Resource_qpckd"), SubResource("Resource_edoel"), SubResource("Resource_tfowd")])
+minimum_page_seconds = 1.0
+reading_characters_per_second = 65.0
+reply_gap = 0.0
+metadata/_custom_type_script = "uid://ku1e04cwc7wa"

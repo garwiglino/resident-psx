@@ -1,0 +1,44 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/pointer.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:5)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/hand_point.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:6)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/hand_open.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:7)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/hand_grab.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:8)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/blocked.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:9)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/aim.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:10)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+SCRIPT ERROR: Parse Error: Preload file "res://assets/ui/cursors/hit.png" has no resource loaders (unrecognized file extension).
+   at: GDScript::reload (res://scripts/ui/cursor_style.gd:11)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+ERROR: Failed to load script "res://scripts/ui/cursor_style.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript_resource_format.cpp:46)
+   GDScript backtrace (most recent call first):
+       [0] _settings (res://addons/psx_viewport/plugin.gd:193)
+       [1] _process (res://addons/psx_viewport/plugin.gd:221)
+INTERACTIVE_PARTS_EDITOR_OK []

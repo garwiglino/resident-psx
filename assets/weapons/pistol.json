@@ -1,0 +1,10 @@
+{
+  "clip": "pistol_idle",
+  "loop": true,
+  "fps": 30.0,
+  "start_frame": 1,
+  "end_frame": 121,
+  "duration": 4.0,
+  "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend",
+  "source_sha256": "747e447f913e1e95eff1a3dcd5179a1bff15a3d3c66748a956c25533548afd5d"
+}

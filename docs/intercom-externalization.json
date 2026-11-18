@@ -1,0 +1,83 @@
+{
+	"backup": "res://exports/backups/intercom_external_20261106T221201",
+	"files": [
+		{
+			"bytes_after": 10946,
+			"bytes_before": 639053,
+			"path": "res://scenes/main.tscn",
+			"samples": [
+				{
+					"adpcm_bytes": 56064,
+					"binary_resource": "res://assets/audio/generated/intercom/1_Chapter_1_4305dc01b6772679901dfa9a.res",
+					"frames": 98091,
+					"old_id": "AudioStreamPSX_y6deb",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/1/1_Chapter_1.wav"
+				},
+				{
+					"adpcm_bytes": 79616,
+					"binary_resource": "res://assets/audio/generated/intercom/3_Chapter_1_ffb2eeac1b5e845914f84472.res",
+					"frames": 139302,
+					"old_id": "AudioStreamPSX_og1vs",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/1/3_Chapter_1.wav"
+				},
+				{
+					"adpcm_bytes": 136224,
+					"binary_resource": "res://assets/audio/generated/intercom/5_Chapter_1_c905c807f8fc6e493ff30066.res",
+					"frames": 238365,
+					"old_id": "AudioStreamPSX_2wyq8",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/1/5_Chapter_1.wav"
+				},
+				{
+					"adpcm_bytes": 122976,
+					"binary_resource": "res://assets/audio/generated/intercom/7_Chapter_1_3cdf4e1d9944310e7d5e4700.res",
+					"frames": 215190,
+					"old_id": "AudioStreamPSX_gqmmt",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/1/7_Chapter_1.wav"
+				},
+				{
+					"adpcm_bytes": 76192,
+					"binary_resource": "res://assets/audio/generated/intercom/9_Chapter_1_a68685d893e1ae226fefc62b.res",
+					"frames": 133335,
+					"old_id": "AudioStreamPSX_c6pm6",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/1/9_Chapter_1.wav"
+				}
+			]
+		},
+		{
+			"bytes_after": 4343,
+			"bytes_before": 371156,
+			"path": "res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres",
+			"samples": [
+				{
+					"adpcm_bytes": 72192,
+					"binary_resource": "res://assets/audio/generated/intercom/1_Chapter_2_724248313d8aa9ad1a659da4.res",
+					"frames": 126318,
+					"old_id": "AudioStreamPSX_2rbws",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav"
+				},
+				{
+					"adpcm_bytes": 119632,
+					"binary_resource": "res://assets/audio/generated/intercom/3_Chapter_2_daad72f4db14ab499c07cecf.res",
+					"frames": 209331,
+					"old_id": "AudioStreamPSX_voab7",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav"
+				},
+				{
+					"adpcm_bytes": 83280,
+					"binary_resource": "res://assets/audio/generated/intercom/5_Chapter_2_92302f0d05420a910e5f3fa6.res",
+					"frames": 145728,
+					"old_id": "AudioStreamPSX_ty83y",
+					"rate": 22050,
+					"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav"
+				}
+			]
+		}
+	]
+}

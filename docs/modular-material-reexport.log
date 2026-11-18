@@ -1,0 +1,52 @@
+00:03.359  blend            | Read blend: "C:\Users\sheensaw\Downloads\scene.blend"
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\export_modular_kit.py:130: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new(page.name);mat.use_nodes=True
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\export_modular_kit.py:138: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  glass.use_nodes=True
+C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\tools\export_modular_kit.py:143: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  plain.use_nodes=True;plain.node_tree.nodes.get('Principled BSDF').inputs['Base Color'].default_value=(.8,.8,.8,1)
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+15:00:47 | INFO: Starting glTF 2.0 export
+15:00:47 | INFO: Extracting primitive: celing.015
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: Cube.009
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: Cube.010
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: wall_loop_01.007
+15:00:47 | INFO: Primitives created: 2
+15:00:47 | INFO: Extracting primitive: wall_loop_01.032
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Extracting primitive: floor.017
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: Cube.002
+15:00:47 | INFO: Primitives created: 4
+15:00:47 | INFO: Extracting primitive: Cube.008
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: wall_corner_in.002
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Extracting primitive: wall_corner_out.001
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Extracting primitive: wall_loop_01.002
+15:00:47 | INFO: Primitives created: 4
+15:00:47 | INFO: Extracting primitive: wall_loop_01.006
+15:00:47 | INFO: Primitives created: 5
+15:00:47 | INFO: Extracting primitive: wall_loop_01.015
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Extracting primitive: wall_loop_01.029
+15:00:47 | INFO: Primitives created: 1
+15:00:47 | INFO: Extracting primitive: wall_loop_01.034
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Extracting primitive: wall_loop_01.037
+15:00:47 | INFO: Primitives created: 2
+15:00:47 | INFO: Extracting primitive: wall_loop_01.036
+15:00:47 | INFO: Primitives created: 3
+15:00:47 | INFO: Finished glTF 2.0 export in 0.1886157989501953 s
+
+Info: Packed 15 file(s)
+Info: Saved copy as "scene_modular_2m.blend"
+MODULAR_EXPORT_OK {"modules": 17, "pages": 15, "repairs": ["wall_door: shorten outer returns by 0.10m at both ends; opening unchanged", "wall_door: restore 8 missing reverse upper skin faces only", "wall_corner_in: restore 8 missing reverse upper skin faces only", "wall_door_double: shorten outer returns by 0.10m at both ends; opening unchanged", "wall_door_double: restore 10 missing reverse upper skin faces only", "stairs: preserve outward winding after mirrored object transform", "door_01: preserve outward winding after mirrored object transform", "wall_loop: restore 4 missing reverse upper skin faces only", "wall_loop_simple: orient the positive-depth skin outward", "door_glass: preserve outward winding after mirrored object transform", "door_glass: preserve two-sided Blender glass with 2 reverse faces", "wall_corner_out: restore 8 missing reverse upper skin faces only", "wall_loop_window: restore 8 missing reverse upper skin faces only", "window_glass: preserve two-sided Blender glass with 4 reverse faces"]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

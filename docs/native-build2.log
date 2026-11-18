@@ -1,0 +1,81 @@
+Version MSBuild 18.11.1-1.26513.3+940033be3 pour .NET Framework
+
+  Checking File Globs
+  1>Checking Build System
+  Generating bindings
+  Built-in type config: float_64
+  editor_plugin_registration.cpp
+  low_level.cpp
+  wrapped.cpp
+  class_db.cpp
+  error_macros.cpp
+  method_bind.cpp
+  print_string.cpp
+  godot.cpp
+  aabb.cpp
+  basis.cpp
+  callable_custom.cpp
+  callable_method_pointer.cpp
+  char_string.cpp
+  color.cpp
+  packed_arrays.cpp
+  plane.cpp
+  projection.cpp
+  quaternion.cpp
+  rect2.cpp
+  rect2i.cpp
+  transform2d.cpp
+  transform3d.cpp
+  variant.cpp
+  variant_internal.cpp
+  vector2.cpp
+  vector2i.cpp
+  vector3.cpp
+  vector3i.cpp
+  vector4.cpp
+  vector4i.cpp
+  string.cpp
+  string_name.cpp
+  node_path.cpp
+  rid.cpp
+  callable.cpp
+  signal.cpp
+  dictionary.cpp
+  array.cpp
+  packed_byte_array.cpp
+  packed_int32_array.cpp
+  packed_int64_array.cpp
+  packed_float32_array.cpp
+  packed_float64_array.cpp
+  packed_string_array.cpp
+  packed_vector2_array.cpp
+  packed_vector3_array.cpp
+  packed_color_array.cpp
+  packed_vector4_array.cpp
+  class_db_singleton.cpp
+  engine.cpp
+  file_access.cpp
+  geometry_instance3d.cpp
+  image.cpp
+  mesh_instance3d.cpp
+  node.cpp
+  node3d.cpp
+  os.cpp
+  ref_counted.cpp
+  resource.cpp
+  semaphore.cpp
+  skeleton3d.cpp
+  texture.cpp
+  texture2d.cpp
+  visual_instance3d.cpp
+  worker_thread_pool.cpp
+  xml_parser.cpp
+  utility_functions.cpp
+  object.cpp
+  object.cpp
+  godot-cpp.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\native\build\bin\libgodot-cpp.windows.template_release.x86_64.lib
+  Building Custom Rule C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/CMakeLists.txt
+  geometry.cpp
+     Création de la bibliothèque C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry.lib et de l'objet C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/build/Release/psx_geometry.exp
+  psx_geometry.vcxproj -> C:\Users\sheensaw\MyApps\mgba-0.10.5\resident-psx\bin\psx_geometry.dll
+  Building Custom Rule C:/Users/sheensaw/MyApps/mgba-0.10.5/resident-psx/native/CMakeLists.txt

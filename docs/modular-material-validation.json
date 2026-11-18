@@ -1,0 +1,15 @@
+{
+	"errors": [],
+	"ok": true,
+	"parts": {
+		"door_02": {
+			"glass_triangles": 8,
+			"opaque_triangles": 240
+		},
+		"window_glass": {
+			"glass_triangles": 16,
+			"opaque_triangles": 176
+		}
+	},
+	"source_uvs_checked": 1320
+}

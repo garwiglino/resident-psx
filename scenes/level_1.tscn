@@ -1,0 +1,351 @@
+[gd_scene format=3 uid="uid://ctufhwvob6kts"]
+
+[ext_resource type="Script" uid="uid://b8nptyw3i2xpj" path="res://scripts/modular_map/map_3d.gd" id="1_e3sih"]
+[ext_resource type="Script" uid="uid://c8c82w820060c" path="res://scripts/modular_map/layout.gd" id="2_2y5yt"]
+[ext_resource type="Resource" uid="uid://b7msvluqyptqh" path="res://assets/environment/modular_2m/default_kit.tres" id="3_2os1m"]
+[ext_resource type="Script" uid="uid://7sydkht8cjad" path="res://scripts/levels/psx_level_settings.gd" id="4_go7sj"]
+[ext_resource type="AudioStream" uid="uid://cnmmgse06143k" path="res://assets/audio/fx/glass_shatter.wav" id="4_x2xxo"]
+[ext_resource type="Script" uid="uid://dleg5cu1x4g4g" path="res://scripts/audio/ambience_layer.gd" id="5_7gny6"]
+[ext_resource type="AudioStream" uid="uid://bkl6iehcdc4vk" path="res://assets/audio/ambiance/outdoor_city.wav" id="6_2aecg"]
+[ext_resource type="Script" uid="uid://dx4vmxthc0f13" path="res://scripts/audio/audio_cue.gd" id="7_6dial"]
+[ext_resource type="AudioStream" uid="uid://co7u2mme5uow7" path="res://assets/audio/ambiance/room_tone.wav" id="7_isj1j"]
+[ext_resource type="Script" uid="uid://b526sbqeqrb4k" path="res://scripts/audio/level_audio_profile.gd" id="9_1s4pk"]
+[ext_resource type="Script" uid="uid://buonlwusvrqfj" path="res://scripts/psx_light_3d.gd" id="10_2y5yt"]
+[ext_resource type="PackedScene" uid="uid://c71tphv68c7gl" path="res://assets/props/pillar_01/pillar_01.tscn" id="11_2os1m"]
+[ext_resource type="Material" uid="uid://dd5skhwl5rlpg" path="res://assets/materials/psx_unlit.tres" id="11_go7sj"]
+[ext_resource type="PackedScene" path="res://scenes/effects/window_light_rays.tscn" id="13_6dial"]
+[ext_resource type="Texture2D" uid="uid://b71odvj38dken" path="res://assets/effects/light_shafts/narrow_ray.png" id="14_7nomh"]
+[ext_resource type="Script" uid="uid://c30xff7rg5sdl" path="res://scripts/materials/psx_light_shaft_material.gd" id="15_1s4pk"]
+[ext_resource type="PackedScene" uid="uid://c32ula5evfl4n" path="res://scenes/interactions/interphone_interact.tscn" id="15_7nomh"]
+[ext_resource type="Script" uid="uid://bfy5jhur1iou8" path="res://scripts/inventory/mechanism_access_settings.gd" id="16_1s4pk"]
+[ext_resource type="PackedScene" uid="uid://dwhrjuki2hvju" path="res://assets/props/lobby_plant/lobby_plant.tscn" id="17_1s4pk"]
+[ext_resource type="Script" uid="uid://d1em84wvmrd8a" path="res://scripts/audio/ambience_zone_3d.gd" id="19_so66j"]
+
+[sub_resource type="Resource" id="Resource_1s4pk"]
+resource_local_to_scene = true
+script = ExtResource("2_2y5yt")
+cells = {
+Vector2i(-1, -4): 2,
+Vector2i(-1, -3): 2,
+Vector2i(-1, -2): 1,
+Vector2i(-1, -1): 1,
+Vector2i(-1, 0): 1,
+Vector2i(0, -4): 2,
+Vector2i(0, -3): 2,
+Vector2i(0, -1): 1,
+Vector2i(0, 0): 1,
+Vector2i(1, -1): 1,
+Vector2i(1, 0): 1,
+Vector2i(2, -2): 3,
+Vector2i(2, -1): 2,
+Vector2i(2, 0): 2,
+Vector2i(2, 1): 3,
+Vector2i(2, 2): 3,
+Vector2i(3, -2): 3,
+Vector2i(3, -1): 2,
+Vector2i(3, 0): 2,
+Vector2i(3, 1): 3,
+Vector2i(3, 2): 3,
+Vector2i(4, -1): 2,
+Vector2i(4, 0): 2,
+Vector2i(4, 1): 3,
+Vector2i(4, 2): 3,
+Vector2i(5, -1): 2,
+Vector2i(5, 0): 2,
+Vector2i(6, -1): 2,
+Vector2i(6, 0): 2
+}
+edges = {
+"h:-1:-2": {
+"kind": 2,
+"variant": "glass"
+},
+"h:2:-1": {
+"kind": 0,
+"variant": ""
+},
+"h:2:0": {
+"kind": 0,
+"variant": ""
+},
+"h:2:1": {
+"kind": 0,
+"variant": ""
+},
+"h:3:-1": {
+"kind": 0,
+"variant": ""
+},
+"h:3:1": {
+"kind": 0,
+"variant": ""
+},
+"h:4:-1": {
+"kind": 1,
+"variant": "wall_loop"
+},
+"h:4:1": {
+"kind": 0,
+"variant": ""
+},
+"h:6:-3": {
+"kind": 0,
+"variant": ""
+},
+"v:-1:-1": {
+"kind": 2,
+"lock_mode": 2,
+&"locked": true,
+&"open": false,
+"variant": "double"
+},
+"v:2:-1": {
+"kind": 2,
+"lock_mode": 0,
+&"locked": false,
+"variant": "double"
+},
+"v:2:1": {
+"kind": 3,
+"variant": "glass"
+},
+"v:3:-1": {
+"kind": 0,
+"variant": ""
+},
+"v:3:1": {
+"kind": 0,
+"variant": ""
+}
+}
+rooms = {
+1: "Piece 1",
+2: "Piece 2"
+}
+next_room = 3
+
+[sub_resource type="Resource" id="Resource_1voo6"]
+script = ExtResource("5_7gny6")
+stream = ExtResource("7_isj1j")
+metadata/_custom_type_script = "uid://dleg5cu1x4g4g"
+
+[sub_resource type="Resource" id="Resource_2cbcq"]
+script = ExtResource("9_1s4pk")
+ambience_layers = Array[ExtResource("5_7gny6")]([SubResource("Resource_1voo6")])
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_g4fux"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tr1x6"]
+resource_local_to_scene = true
+resource_name = "PSX Narrow Window Ray"
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 2
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.225, 0.198, 0.14625, 1)
+albedo_texture = ExtResource("14_7nomh")
+texture_filter = 0
+script = ExtResource("15_1s4pk")
+color = Color(1, 0.88, 0.65, 1)
+strength = 0.9
+texture = ExtResource("14_7nomh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5akn"]
+resource_local_to_scene = true
+resource_name = "PSX Narrow Window Ray"
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 2
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.225, 0.198, 0.14625, 1)
+albedo_texture = ExtResource("14_7nomh")
+texture_filter = 0
+script = ExtResource("15_1s4pk")
+color = Color(1, 0.88, 0.65, 1)
+strength = 0.9
+texture = ExtResource("14_7nomh")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wbtxt"]
+resource_local_to_scene = true
+resource_name = "PSX Narrow Window Ray"
+transparency = 1
+blend_mode = 1
+depth_draw_mode = 2
+shading_mode = 0
+specular_mode = 2
+albedo_color = Color(0.225, 0.198, 0.14625, 1)
+albedo_texture = ExtResource("14_7nomh")
+texture_filter = 0
+script = ExtResource("15_1s4pk")
+color = Color(1, 0.88, 0.65, 1)
+strength = 0.9
+texture = ExtResource("14_7nomh")
+
+[sub_resource type="Resource" id="Resource_x2fux"]
+resource_local_to_scene = true
+script = ExtResource("16_1s4pk")
+bone_names = PackedStringArray()
+
+[sub_resource type="Resource" id="Resource_3ugpp"]
+script = ExtResource("5_7gny6")
+stream = ExtResource("6_2aecg")
+metadata/_custom_type_script = "uid://dleg5cu1x4g4g"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4fux"]
+size = Vector3(6.216797, 1, 6.07959)
+
+[node name="Level1" type="Node3D" unique_id=978935060]
+script = ExtResource("1_e3sih")
+layout = SubResource("Resource_1s4pk")
+kit = ExtResource("3_2os1m")
+glass_break_sound = ExtResource("4_x2xxo")
+glass_break_volume_db = -10.0
+metadata/_custom_type_script = "uid://b8nptyw3i2xpj"
+
+[node name="ReglagesNiveau" type="Node" parent="." unique_id=2141551010]
+script = ExtResource("4_go7sj")
+fog_enabled = false
+fog_start = 0.0
+fog_end = 41.4
+fog_color = Color(0.46861, 0.87094146, 0.97957987, 1)
+color_tint = Color(0.78579134, 0.861369, 0.9871475, 1)
+ambient_light_color = Color(0.001099999, 0.017435009, 0.11, 1)
+profile = SubResource("Resource_2cbcq")
+
+[node name="Gameplay" type="Node3D" parent="." unique_id=1859818244]
+
+[node name="PlayerSpawn" type="Marker3D" parent="Gameplay" unique_id=2056109650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0)
+
+[node name="PSXLight3D" type="Marker3D" parent="Gameplay" unique_id=33163780]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.9211106, 1.5299876, -0.15189469)
+script = ExtResource("10_2y5yt")
+light_type = 1
+light_color = Color(0.7489934, 0.43092602, 0.27476597, 1)
+light_energy = 3.1
+light_range = 18.5
+spot_angle_degrees = 179.0
+spot_softness = 0.4
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="PSXLight3D2" type="Marker3D" parent="Gameplay" unique_id=74450816]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.7533596, 1.5277454, 0.46046636)
+script = ExtResource("10_2y5yt")
+light_color = Color(0.7489934, 0.43092602, 0.27476597, 1)
+light_energy = 8.0
+light_range = 1.1
+spot_angle_degrees = 179.0
+spot_softness = 0.4
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="PSXLight3D3" type="Marker3D" parent="Gameplay" unique_id=1530649261]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -1.7533596, 1.5277454, -0.43173018)
+script = ExtResource("10_2y5yt")
+light_color = Color(0.7489934, 0.43092602, 0.27476597, 1)
+light_energy = 5.0
+light_range = 2.0
+spot_angle_degrees = 179.0
+spot_softness = 0.4
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="PSXLight3D4" type="Marker3D" parent="Gameplay" unique_id=944507175]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.1627226, 1.5299876, 2.9327207)
+script = ExtResource("10_2y5yt")
+light_type = 1
+light_color = Color(0.7489934, 0.43092602, 0.27476597, 1)
+light_energy = 3.1
+light_range = 18.5
+spot_angle_degrees = 179.0
+spot_softness = 0.4
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="PSXLight3D5" type="Marker3D" parent="Gameplay" unique_id=1995134252]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.278484, 1.9086577, 2.966814)
+script = ExtResource("10_2y5yt")
+light_color = Color(0.7489934, 0.43092602, 0.27476597, 1)
+light_energy = 5.0
+light_range = 2.0
+spot_angle_degrees = 179.0
+spot_softness = 0.4
+metadata/_custom_type_script = "uid://buonlwusvrqfj"
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1928365991]
+transform = Transform3D(-1.7562433e-08, 1, 0, -0.40178165, -4.371139e-08, 0, 0, 0, 0.36483297, -1.9895234, 1.6143098, -0.49847618)
+material_override = ExtResource("11_go7sj")
+mesh = SubResource("PlaneMesh_g4fux")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1380587150]
+transform = Transform3D(-1.6313251e-08, 1, 0, -0.37320367, -4.371139e-08, 0, 0, 0, 0.35459712, -1.9895234, 1.6145867, 0.5008794)
+material_override = ExtResource("11_go7sj")
+mesh = SubResource("PlaneMesh_g4fux")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=1735015739]
+transform = Transform3D(-2.0753548e-08, 1, 0, -0.47478583, -4.371139e-08, 0, 0, 0, 0.49616295, 4.016489, 1.7494609, 3.0184376)
+material_override = ExtResource("11_go7sj")
+mesh = SubResource("PlaneMesh_g4fux")
+
+[node name="pillar_01" parent="." unique_id=834012733 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.9000001)
+
+[node name="pillar_02" parent="." unique_id=1659249663 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1000004, 0, -3.9)
+
+[node name="pillar_06" parent="." unique_id=219298350 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9000006, 0, -3.9)
+
+[node name="pillar_05" parent="." unique_id=1129738205 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.9, 0, -1.9000001)
+
+[node name="pillar_03" parent="." unique_id=734745284 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1000004, 0, 1.9)
+
+[node name="pillar_07" parent="." unique_id=792206156 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.9, 0, 1.9)
+
+[node name="pillar_04" parent="." unique_id=1617458829 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.1000004, 0, 5.9)
+
+[node name="pillar_08" parent="." unique_id=1267574548 instance=ExtResource("11_2os1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.9, 0, 5.9)
+
+[node name="RayonsFenetre" parent="." unique_id=351974667 instance=ExtResource("13_6dial")]
+transform = Transform3D(-7.209655e-08, 0, -1.8149111, 0, 1.8149111, 0, 1.6493767, 0, -7.933229e-08, -3.2577105, 2.1951225, -0.4505921)
+ray_count = 1
+ray_width = 0.95
+shaft_material = SubResource("StandardMaterial3D_tr1x6")
+
+[node name="RayonsFenetre2" parent="." unique_id=1038432694 instance=ExtResource("13_6dial")]
+transform = Transform3D(-7.209655e-08, 0, -1.8149111, 0, 1.8149111, 0, 1.6493767, 0, -7.933229e-08, -3.2577105, 2.1951225, 0.58709174)
+ray_count = 1
+ray_width = 0.95
+shaft_material = SubResource("StandardMaterial3D_d5akn")
+
+[node name="RayonsFenetre3" parent="." unique_id=115815496 instance=ExtResource("13_6dial")]
+transform = Transform3D(-7.209655e-08, 0, -1.8149111, 0, 1.8149111, 0, 1.6493767, 0, -7.933229e-08, 2.8287683, 2.0098727, 2.9556901)
+ray_count = 1
+ray_width = 0.95
+shaft_material = SubResource("StandardMaterial3D_wbtxt")
+
+[node name="Interphone" parent="." unique_id=109613833 instance=ExtResource("15_7nomh")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.006636, 1.2893809, -1.4363815)
+access_settings = SubResource("Resource_x2fux")
+
+[node name="lobby_plant" parent="." unique_id=444446440 instance=ExtResource("17_1s4pk")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0.02550453, -2.4586916e-08, -1.465614)
+
+[node name="lobby_plant2" parent="." unique_id=1372932828 instance=ExtResource("17_1s4pk")]
+transform = Transform3D(-8.742278e-08, 0, -2, 0, 2, 0, 2, 0, -8.742278e-08, 3.3387475, -2.4586916e-08, 1.534386)
+
+[node name="AmbienceZone3D" type="Area3D" parent="." unique_id=322259856]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2201209, 0.30234635, 0)
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("19_so66j")
+ambience_layers = Array[ExtResource("5_7gny6")]([SubResource("Resource_3ugpp")])
+metadata/_custom_type_script = "uid://d1em84wvmrd8a"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AmbienceZone3D" unique_id=784332623]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1037598, 0, -1.1813965)
+shape = SubResource("BoxShape3D_g4fux")

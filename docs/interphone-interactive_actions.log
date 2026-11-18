@@ -1,0 +1,23 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+WARNING: SansDialogue : Ajouter un Dialogue, une Action, un evenement, une animation ou un son a ce bouton.
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] select_part (res://scripts/inventory/placement_controller.gd:142)
+       [1] run (res://tests/interactive_actions.gd:48)
+       [2] settle (res://tests/interactive_actions.gd:16)
+WARNING: SansDialogue : Mesh de survol introuvable : missing_mesh
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] select_part (res://scripts/inventory/placement_controller.gd:142)
+       [1] run (res://tests/interactive_actions.gd:52)
+       [2] settle (res://tests/interactive_actions.gd:16)
+WARNING: Choisir la CameraFixe de cette scene de placement.
+   at: push_warning (core/variant/variant_utility.cpp:1033)
+   GDScript backtrace (most recent call first):
+       [0] begin (res://scripts/inventory/placement_controller.gd:66)
+       [1] interact (res://scripts/inventory/placement_scene.gd:78)
+       [2] run (res://tests/interactive_actions.gd:54)
+       [3] settle (res://tests/interactive_actions.gd:16)
+INTERACTIVE_ACTIONS_OK 67 []

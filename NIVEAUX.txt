@@ -1,0 +1,109 @@
+CREER ET JOUER UN NIVEAU
+
+1. Cartes 2m > Nouvelle carte. Choisir le fichier du niveau.
+2. Peindre les pieces, portes et fenetres.
+3. Placer ses PSXLight3D dans la carte.
+   Lampes avec modele, diffuseur synchronise et son : scenes/lighting ; voir LUMIERES.txt.
+4. Selectionner ReglagesNiveau pour l'atmosphere et l'audio.
+5. F6 lance directement cette carte avec le joueur et le moteur PSX.
+
+Ne pas copier main.tscn, Player, PSXRenderer ni AudioNiveau dans une carte.
+Les nouvelles cartes contiennent deja ReglagesNiveau et Gameplay.
+Le bouton Reglages niveau de la vue 3D ouvre le meme module dans l'inspecteur.
+Sur une ancienne carte sans module, ce bouton permet de l'ajouter.
+
+DEPART DU JOUEUR
+
+Ajouter un Marker3D nomme PlayerSpawn sous Gameplay pour choisir sa position
+et sa direction. Sans marqueur, le joueur part au centre de la premiere case.
+Le marqueur existant de modular_example est conserve.
+
+REGLAGESNIVEAU : ATMOSPHERE
+
+Style anime PSX > Anime Style : profil commun de cel shading des personnages
+et contour geometrique, actif avec le rendu valide. World Strength dose le
+decor separement (0 par defaut). Details et reglages : ANIME-PSX.txt.
+
+Fog Enabled : activer/couper le depth cue PSX.
+Fog Start / End : debut et fin de la progression, en metres.
+Fog Color : couleur du depth cue.
+Draw Distance : distance de rendu du niveau.
+Ambient Light Color : eclairage minimum des sommets ; noir pour les zones non
+eclairees. Ajouter des PSXLight3D pour les vrais eclairages du decor.
+Color Tint : teinte des palettes et des surfaces non texturees.
+Saturation : 0 = palettes et eclairage gris ; 1 = couleurs d'origine.
+Brightness : intensite des palettes ; 1 = valeur d'origine.
+
+Les couleurs sont preparees dans les palettes et les couleurs de sommets avant
+la conversion RGB555 et l'interpolation Gouraud. Aucun filtre plein ecran n'est
+ajoute. Les dialogues et l'interface gardent leurs couleurs propres.
+Le meme module est lu par le rendu en jeu et l'apercu PSX de l'editeur.
+Les images et materiaux sources ne sont pas modifies par ces reglages.
+
+REGLAGESNIVEAU : AUDIO
+
+Profile : ressource LevelAudioProfile propre au niveau.
+Ouvrir Profile dans l'inspecteur :
+- Ambience Layers : ajouter une LevelAmbienceLayer, puis son Stream et Volume Db.
+- Exploration Music : musique pendant l'exploration.
+- Combat Music : musique de combat, facultative.
+- Exploration / Combat Volume Db : volume de chaque morceau.
+- Crossfade Seconds : duree des transitions.
+- Combat Release Delay : delai avant le retour a la musique d'exploration.
+- Cues : effets ponctuels de peur et autres evenements.
+
+Le module propose aussi les volumes globaux Ambience, Music, Effects et les
+reglages de detection du combat. Autoplay lance les sons au debut du niveau.
+Les sons restent lus par le mixeur SPU commun du projet.
+
+Enregistrer le profil dans assets/audio/levels pour le retrouver facilement.
+Une nouvelle carte commence avec un profil independant, sans son impose.
+L'exemple garde ses sons avec assets/audio/levels/modular_example.tres ; le
+couloir conserve son profil existant. Modifier l'un ne modifie pas l'autre.
+
+Les zones scenes/audio/ambience_zone.tscn trouvent automatiquement le module
+de leur carte et remplacent son ambiance principale avec leur fondu.
+Les effets scenes/audio/scare_trigger.tscn utilisent ce meme gestionnaire.
+Il n'y a pas de deuxieme gestionnaire AudioNiveau a ajouter.
+Les sons de l'editeur restent muets ; les sons se testent avec F6.
+
+Flicker des PSXLight3D : cocher Flicker sur la lampe, puis choisir Neon,
+Bougie, Panne electrique ou Aleatoire. Speed regle la cadence, Amount
+l'amplitude, Minimum/Maximum les limites d'intensite. Dropout Chance et
+Duration reglent les coupures electriques ; ces options sont masquees pour
+une bougie. Seed=0 choisit une graine propre a chaque lampe ; une graine
+fixee reste differenciee par le chemin du noeud. Les lampes ne partagent
+donc pas une animation identique. La couleur de base reste Light Color.
+
+Les lumieres de sommets sont maintenant bloquees par la geometrie opaque
+du niveau, y compris pour la lampe du joueur et la lumiere du tir. Les portes
+mobiles mettent cette occlusion a jour. Les faces transparentes laissent
+passer la lumiere. La visibilite statique est reutilisee pendant le flicker.
+La correction de profondeur s'applique aussi a tout le decor, aux ennemis
+et aux objets. Le jitter, les UV affines et les couleurs PSX sont conserves.
+Les portes simples et doubles choisissent leur ouverture a l'oppose du joueur.
+Le rendu actuel utilise bin/psx_geometry_v23.dll : rouvrir Godot une fois
+pour que l'apercu de l'editeur charge la nouvelle version native.
+
+Les textures identiques partagees entre plusieurs exports ne comptent plus
+plusieurs fois. Il n'y a plus de limite de 31 textures pour un niveau : le
+stockage interne grandit selon les besoins. Chaque page logique garde sa
+resolution (256 x 256 maximum), son adressage, ses palettes RGB555 et son
+wrapping ; le tri des polygones et le rendu PSX restent communs au niveau.
+
+SYSTEMES COMMUNS
+
+scenes/systemes_jeu.tscn contient le joueur, le script de jeu et PSXRenderer.
+Les reglages techniques globaux du rendu (jitter, affine, dithering, limite FPS)
+se reglent sur ce PSXRenderer commun. Ils s'appliquent a tous les niveaux.
+Les cartes n'embarquent pas leur propre moteur de rendu.
+LevelRuntime demarre automatiquement cette session commune pour une carte
+lancee seule. Les dialogues, cinematiques, interactions et WorldEvents restent
+disponibles. Aucun objet de l'ancien couloir n'est impose aux nouvelles cartes.
+main.tscn utilise aussi cette session, avec son contenu original conserve.
+
+F6 : tester le niveau ouvert. F5 : lancer la scene principale du projet.
+Inventaire et cartes a placer : voir INVENTAIRE.txt. I ouvre les deux onglets
+dans tous les niveaux. Exemple : scenes/examples/inventory_demo.tscn, puis F6.
+Si une nouvelle entree LevelRuntime manque dans un editeur deja ouvert,
+rouvrir le projet une fois apres l'installation.

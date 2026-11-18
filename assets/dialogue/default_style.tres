@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="DialogueStyle" format=3 uid="uid://d3dn4lbl3qehb"]
+
+[ext_resource type="Script" uid="uid://s7pmusg0kn28" path="res://scripts/dialogue/dialogue_style.gd" id="1"]
+[ext_resource type="AudioStream" uid="uid://cf4er7xc0ihxq" path="res://assets/audio/ui/dialogue_close.wav" id="1_84bbo"]
+[ext_resource type="FontFile" uid="uid://dqrxa7wx4xhir" path="res://assets/fonts/m5x7.ttf" id="2_s30ih"]
+[ext_resource type="AudioStream" uid="uid://c2r7qq65lp58g" path="res://assets/audio/dialogs/talkie_end.wav" id="3_x24kx"]
+[ext_resource type="AudioStream" uid="uid://brgvg5qcopstx" path="res://assets/audio/dialogs/talkie_start.wav" id="4_kl56d"]
+[ext_resource type="AudioStream" uid="uid://dgmsc4x40cffm" path="res://assets/audio/dialogs/talkie_loop.wav" id="4_s30ih"]
+[ext_resource type="AudioStream" uid="uid://cuhkoesr4fyyk" path="res://assets/audio/ui/dialogue_tick.wav" id="5_qnxct"]
+[ext_resource type="FontFile" uid="uid://rgnsiup5gbnp" path="res://assets/fonts/pixel-operator-bold.ttf" id="6_n3uwo"]
+[ext_resource type="AudioStream" uid="uid://dx7du6cpppowb" path="res://assets/audio/ui/dialogue_open.wav" id="7_opgre"]
+
+[resource]
+script = ExtResource("1")

@@ -1,0 +1,88 @@
+[gd_resource type="Resource" script_class="DialogueSequence" format=3 uid="uid://bdebg0ugna24b"]
+
+[ext_resource type="Script" uid="uid://dtp6gvwo6onsk" path="res://scripts/dialogue/dialogue_line.gd" id="1_li8iu"]
+[ext_resource type="AudioStream" uid="uid://paya4ilnqagb" path="res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav" id="2_qj4pg"]
+[ext_resource type="Script" uid="uid://ku1e04cwc7wa" path="res://scripts/dialogue/dialogue_sequence.gd" id="2_y2s54"]
+[ext_resource type="AudioStream" uid="uid://cswrsfmnf6sgy" path="res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav" id="3_qj4pg"]
+[ext_resource type="AudioStream" uid="uid://cb0f0f4datoqa" path="res://assets/audio/generated/intercom/1_Chapter_2_adc6eec2b54a1e0b86ff43e6.res" id="3_tybip"]
+[ext_resource type="AudioStream" uid="uid://dtip61elcnsbn" path="res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav" id="4_p54lo"]
+[ext_resource type="AudioStream" uid="uid://bhhrdpxk2yadx" path="res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav" id="5_2rbws"]
+[ext_resource type="AudioStream" uid="uid://0kauddqli48i" path="res://assets/audio/generated/intercom/2_Chapter_2_eef303c2a93b59089851f116.res" id="5_bqk7d"]
+[ext_resource type="AudioStream" uid="uid://ba43qkaferai0" path="res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav" id="6_voab7"]
+[ext_resource type="AudioStream" uid="uid://vooqyugqaoqq" path="res://assets/audio/generated/intercom/3_Chapter_2_7e721b0f0ba6a5afb7a40b8d.res" id="7_30v2l"]
+[ext_resource type="AudioStream" uid="uid://l60m3c85l52h" path="res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav" id="7_ty83y"]
+[ext_resource type="AudioStream" uid="uid://bqxcilpa4s37i" path="res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav" id="8_am6oc"]
+[ext_resource type="AudioStream" uid="uid://5twa5qvqm5vw" path="res://assets/audio/generated/intercom/5_Chapter_2_240cb980e3ad4bb2d466754f.res" id="10_3ardw"]
+[ext_resource type="AudioStream" uid="uid://7vmcl4xoa3xx" path="res://assets/audio/generated/intercom/6_Chapter_2_0f604ec34ac3fcbbeb6637df.res" id="12_6ogsi"]
+
+[sub_resource type="Resource" id="Resource_tefeu"]
+script = ExtResource("1_li8iu")
+speaker = "LE CONCIERGE"
+text = "Vous vous débrouillez plutôt bien."
+audio = ExtResource("2_qj4pg")
+is_intercom = true
+intercom_audio = ExtResource("3_tybip")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_p54lo"]
+script = ExtResource("1_li8iu")
+speaker = "HITOMI"
+text = "Je m’en suis sortie. J’espère ne pas avoir à recommencer."
+audio = ExtResource("3_qj4pg")
+intercom_audio = ExtResource("5_bqk7d")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_qj4pg"]
+script = ExtResource("1_li8iu")
+speaker = "LE CONCIERGE"
+text = "De toute façon, il n’était plus vraiment humain. 
+Et vous risquez d’en croiser d’autres comme lui."
+audio = ExtResource("4_p54lo")
+is_intercom = true
+intercom_audio = ExtResource("7_30v2l")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_2rbws"]
+script = ExtResource("1_li8iu")
+speaker = "HITOMI"
+text = "Comment ça, plus humain… ? Qui sont ces gens ? On a reçu un appel à l’aide au commissariat… Ça aurait un rapport ? "
+audio = ExtResource("5_2rbws")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_voab7"]
+script = ExtResource("1_li8iu")
+speaker = "LE CONCIERGE"
+text = "Ça, j’en doute. "
+end_intercom = true
+override_reply_gap = true
+reply_gap = 1.0
+audio = ExtResource("6_voab7")
+is_intercom = true
+intercom_audio = ExtResource("10_3ardw")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_xtl1x"]
+script = ExtResource("1_li8iu")
+speaker = "HITOMI"
+text = "Hein… ?"
+override_reply_gap = true
+reply_gap = 1.2
+audio = ExtResource("7_ty83y")
+intercom_audio = ExtResource("12_6ogsi")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[sub_resource type="Resource" id="Resource_ty83y"]
+script = ExtResource("1_li8iu")
+speaker = "HITOMI"
+text = "Il faut que je trouve un moyen de joindre l’extérieur."
+audio = ExtResource("8_am6oc")
+metadata/_custom_type_script = "uid://dtp6gvwo6onsk"
+
+[resource]
+script = ExtResource("2_y2s54")
+id = &"first_kill_dialogue"
+mode = 1
+lines = Array[ExtResource("1_li8iu")]([SubResource("Resource_tefeu"), SubResource("Resource_p54lo"), SubResource("Resource_qj4pg"), SubResource("Resource_2rbws"), SubResource("Resource_voab7"), SubResource("Resource_xtl1x"), SubResource("Resource_ty83y")])
+minimum_page_seconds = 0.5
+reading_characters_per_second = 60.0
+metadata/_custom_type_script = "uid://ku1e04cwc7wa"

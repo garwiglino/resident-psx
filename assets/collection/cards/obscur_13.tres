@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CollectionCardDefinition" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/collection/images/obscur_13.res" id="1_xby0l"]
+[ext_resource type="Script" path="res://scripts/inventory/card_definition.gd" id="2_l7518"]
+
+[resource]
+script = ExtResource("2_l7518")
+id = &"obscur_13"
+display_name = "OBSCUR-13"
+description = "Châssis noir et cramoisi, optique unique et carénage aux angles inhabituels."
+lore = "Son dossier officiel n’a jamais existé."
+rarity = "UR"
+image = ExtResource("1_xby0l")
+source_index = 14

@@ -1,0 +1,468 @@
+{
+	"captures": [
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/090d0e87e3764bf2a10f2653.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/10_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/090d0e87e3764bf2a10f2653_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/10_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/ce88130b38ca267a973982b6.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/1_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/ce88130b38ca267a973982b6_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/1_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/a287eac6369efb1d71ebf4a7.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/1_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/a287eac6369efb1d71ebf4a7_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/1_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/d65683470642982f25e07396.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/2_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/d65683470642982f25e07396_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/2_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/5657c72fec7dbae604695d42.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/2_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/5657c72fec7dbae604695d42_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/2_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/df1a496f8a0e4a7bac6e35c8.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/3_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/df1a496f8a0e4a7bac6e35c8_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/3_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/42893c780b06ea8dfd6e2abb.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/3_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/42893c780b06ea8dfd6e2abb_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/3_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/509bfbfc297b24916fa579df.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/4_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/509bfbfc297b24916fa579df_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/4_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b03425ba34bcad17f9d0b4ac.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/4_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b03425ba34bcad17f9d0b4ac_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/4_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b2589db19d0fd7b4f20bfc10.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/5_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b2589db19d0fd7b4f20bfc10_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/5_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/093439b9db9c1261f5200a90.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/5_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/093439b9db9c1261f5200a90_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/5_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/23ee5ae4c32dd9486cad5da5.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/6_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/23ee5ae4c32dd9486cad5da5_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/6_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/63e1992fb94368fcfea80a7c.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/6_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/63e1992fb94368fcfea80a7c_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/6_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/664e574fcb977fc912361c57.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/7_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/664e574fcb977fc912361c57_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/7_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c4bcdf5b00ab982801cf3021.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/7_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c4bcdf5b00ab982801cf3021_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/7_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/8e28ba01e51ea54017d3e470.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/8_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/8e28ba01e51ea54017d3e470_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/8_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/28c5a90d491f7b18cab7f899.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/9_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/28c5a90d491f7b18cab7f899_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/1/9_Chapter_1.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c43c5cacda18829b3cf34bd5.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/1_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c43c5cacda18829b3cf34bd5_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/1_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/54dc0a9072985a7e38a420d3.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/2_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/54dc0a9072985a7e38a420d3_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/2_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/6aec5c9d935dd28925a1acde.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/3_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/6aec5c9d935dd28925a1acde_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/3_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/89e01b8684a2dbc8eb27797c.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/4_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/89e01b8684a2dbc8eb27797c_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors/4_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/51c5fcb3c68c99c2c9b600d9.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/1_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/51c5fcb3c68c99c2c9b600d9_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/1_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/be7a07b16940ffbc496bc8a0.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/2_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/be7a07b16940ffbc496bc8a0_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/2_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/bd3bce4e6d2a82297b18bc04.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/3_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/bd3bce4e6d2a82297b18bc04_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/3_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/e8e925e8fad6effd54134fa4.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/4_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/e8e925e8fad6effd54134fa4_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/locked_doors_key/4_locked_doors.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/a287eac6369efb1d71ebf4a7.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/a287eac6369efb1d71ebf4a7_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/5657c72fec7dbae604695d42.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/5657c72fec7dbae604695d42_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/42893c780b06ea8dfd6e2abb.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/42893c780b06ea8dfd6e2abb_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b03425ba34bcad17f9d0b4ac.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/b03425ba34bcad17f9d0b4ac_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/093439b9db9c1261f5200a90.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/093439b9db9c1261f5200a90_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/63e1992fb94368fcfea80a7c.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/63e1992fb94368fcfea80a7c_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c4bcdf5b00ab982801cf3021.f32",
+			"radio": false,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav"
+		},
+		{
+			"channels": 2,
+			"data": "res://exports/audio_mix_test/decoded/c4bcdf5b00ab982801cf3021_radio.f32",
+			"radio": true,
+			"rate": 44100,
+			"source": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav"
+		}
+	],
+	"diagnostics": {
+		"active_voices": 0,
+		"blocks": 376,
+		"host_frames": 192512,
+		"host_rate": 48000.0,
+		"max_callback_frames": 512,
+		"output_rate": 22050,
+		"output_samples": 88435,
+		"overflow": 0,
+		"spu_rate": 44100,
+		"spu_ticks": 176870,
+		"voice_frames": 69620
+	},
+	"errors": [],
+	"ok": true,
+	"sources": 72
+}

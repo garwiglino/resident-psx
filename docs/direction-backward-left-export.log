@@ -1,0 +1,12 @@
+00:04.296  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_anims_walk.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+16:03:29 | INFO: Starting glTF 2.0 export
+16:03:29 | INFO: Extracting primitive: Mesh_0.001
+16:03:30 | INFO: Primitives created: 1
+16:03:34 | INFO: Finished glTF 2.0 export in 4.695158958435059 s
+
+SPLIT_EXPORT_OK {"source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend", "clip": "player_walk_backward_left_pistol", "first": 1, "last": 121, "fps": 30.0, "duration": 4.0, "loop": true, "files": ["C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\assets\\character\\animations\\player_walk_backward_left_pistol.glb"], "bendy_segment_joints": 222, "overflow_vertex_joints": 2, "max_weight_trimmed_to_8": 0, "player_joint_count": 272}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

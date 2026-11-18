@@ -1,0 +1,33 @@
+APERCU PSX DANS LA VUE 3D
+
+Le plugin Vue 3D PSX est active dans le projet. Redemarrer Godot une fois
+pour charger le moteur natif v11 et le plugin, puis ouvrir la carte en 3D.
+Le jeu n'a pas besoin d'etre lance.
+
+- PSX, dans la barre de la vue 3D : active/desactive l'apercu.
+- Reglages PSX : selectionne PSXRenderer dans la scene principale.
+  Regler fog_start, fog_end, fog_color, ambient_light_color, dithering,
+  vertex_snapping et affine_texture_strength dans son inspecteur habituel.
+- Selectionner une PSXLight3D pour modifier son type, sa couleur, son energie,
+  sa portee et son orientation. Le decor reagit directement dans la vue 3D.
+- Les outils normaux de navigation, selection et transformation restent utilisables.
+  Desactiver PSX pour retrouver la vue standard de Godot.
+
+Dans main.tscn, les reglages de PSXRenderer sont lus directement dans l'inspecteur.
+Dans une carte ouverte seule, l'apercu lit les reglages enregistres dans main.tscn.
+Apres les avoir modifies, enregistrer main.tscn puis revenir a la carte.
+
+L'apercu utilise le meme rasteriseur natif et les memes textures que le jeu :
+framebuffer 320 x 240, format 4:3, RGB555, interpolation des textures,
+projection sur grille, eclairage des sommets et fog PSX. Perspective et vues
+orthographiques sont prises en charge. Les poignees de Godot restent par-dessus.
+Le cadrage suit la camera de navigation de l'editeur, pas la camera du joueur.
+Les animations, tirs, sons et scripts de jeu ne sont pas demarres.
+
+Le plugin lit les noeuds edites sans modifier ni enregistrer la scene.
+Il suit les deplacements, la visibilite, les ajouts/suppressions de maillages
+et les modifications de materiaux. Il restaure la vue standard quand on le coupe.
+
+Validation graphique : tools/validate_editor_preview.gd
+Rapport : docs/editor-preview-validation.json
+Captures : docs/editor-preview-*.png

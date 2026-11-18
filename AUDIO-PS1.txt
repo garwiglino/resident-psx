@@ -1,0 +1,20 @@
+AUDIO PS1 - IMPORT AUTOMATIQUE
+
+Guide complet et reglages actuels : AUDIO-PSX.txt.
+
+Glisser un WAV, OGG ou MP3 dans assets/audio, puis choisir le son dans son
+champ Stream habituel. Le plugin prepare les niveaux et l'encode en SPU ADPCM.
+Les originaux sont conserves ; les donnees preparees restent dans le cache.
+Les 72 sources actuelles sont preparees a 22050 Hz.
+
+Voix : assets/audio/dialogs. Preparation du niveau percu et de la version
+intercom a l'import. Aucun filtrage ou calcul de sonie au lancement de la replique.
+Pas : assets/audio/footsteps, puis tableau Footstep Sounds du joueur.
+Armes : assets/audio/weapons ; sons et gains propres dans la WeaponDefinition.
+Ambiances, musique et stingers : AUDIO-NIVEAUX.txt.
+
+Projet > Outils > Mixage audio ouvre assets/audio/mixage.tres depuis tous les
+ecrans. Le bouton de la vue 3D et un double-clic sur la ressource donnent
+le meme acces.
+Pour cette mise a jour, enregistrer les scenes puis rouvrir Godot afin de charger
+bin/psx_geometry_v18.dll. Un nouveau lancement du jeu charge cette version.

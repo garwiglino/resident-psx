@@ -1,0 +1,912 @@
+{
+  "summary": {
+    "normal_lufs_range": [
+      -18.41,
+      -17.85
+    ],
+    "radio_lufs_range": [
+      -18.3,
+      -18.08
+    ],
+    "decoded_true_peak_db": -3.21,
+    "ok": true
+  },
+  "voices": [
+    {
+      "source": "res://assets/audio/dialogs/1/10_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.12,
+      "true_peak_db": -6.55,
+      "spectral_bands_db": [
+        -6.392830487377942,
+        -4.029801355821434,
+        -4.570733235675105,
+        -16.2481088286166,
+        -26.29932590334903
+      ],
+      "before_lufs": -11.63
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/10_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.13,
+      "true_peak_db": -3.3,
+      "spectral_bands_db": [
+        -11.45767406661606,
+        -5.350227156746698,
+        -2.2177112084794413,
+        -14.446852978889416,
+        -31.196553532359736
+      ],
+      "before_lufs": -11.63
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/1_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.13,
+      "true_peak_db": -5.31,
+      "spectral_bands_db": [
+        -0.7977291574714597,
+        -11.314931761538574,
+        -11.09799416531683,
+        -18.634168773858836,
+        -25.903410407037228
+      ],
+      "before_lufs": -11.19
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/1_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.22,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -7.74514199217889,
+        -5.271957160191948,
+        -3.292210435181637,
+        -11.838504730753332,
+        -30.767572272599114
+      ],
+      "before_lufs": -11.19
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/1_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.15,
+      "true_peak_db": -4.53,
+      "spectral_bands_db": [
+        -0.8390773419483228,
+        -10.8947064045982,
+        -11.777281488590738,
+        -16.07916806946906,
+        -24.916581369501785
+      ],
+      "before_lufs": -14.51
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/1_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.2,
+      "true_peak_db": -3.27,
+      "spectral_bands_db": [
+        -9.152189497922707,
+        -4.519431366912504,
+        -4.1121738725286825,
+        -8.662183001695325,
+        -29.277111787484444
+      ],
+      "before_lufs": -14.51
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/2_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.14,
+      "true_peak_db": -3.37,
+      "spectral_bands_db": [
+        -6.734360904537757,
+        -2.526911227527229,
+        -6.73808456878583,
+        -19.298567240334563,
+        -22.725640955524252
+      ],
+      "before_lufs": -19.99
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/2_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.17,
+      "true_peak_db": -3.23,
+      "spectral_bands_db": [
+        -9.938884693411454,
+        -2.9956794434337928,
+        -4.2228363390358234,
+        -17.89269389033263,
+        -26.098036076592837
+      ],
+      "before_lufs": -19.99
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/2_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -3.34,
+      "spectral_bands_db": [
+        -5.769620789776924,
+        -2.41113545720667,
+        -8.306859573631641,
+        -19.28254290205973,
+        -27.729414220966447
+      ],
+      "before_lufs": -16.09
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/2_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.16,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -9.224968318009928,
+        -3.182269693518231,
+        -4.314083400907351,
+        -15.346942041651348,
+        -34.59071915303038
+      ],
+      "before_lufs": -16.09
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/3_Chapter_1.wav",
+      "radio": false,
+      "lufs": -17.99,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -2.9793237813046867,
+        -4.962902614514764,
+        -7.950973314697279,
+        -18.173921112283203,
+        -27.066259474107476
+      ],
+      "before_lufs": -15.01
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/3_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.23,
+      "true_peak_db": -3.21,
+      "spectral_bands_db": [
+        -13.237861961298519,
+        -2.304343469164465,
+        -4.760042647450349,
+        -15.28596908261476,
+        -33.027155840687215
+      ],
+      "before_lufs": -15.01
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/3_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -3.86,
+      "spectral_bands_db": [
+        -1.9949550118467232,
+        -8.815624510063586,
+        -6.635434168697005,
+        -17.8220560292785,
+        -24.625848712777202
+      ],
+      "before_lufs": -13.59
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/3_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.19,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -11.08294329923198,
+        -5.217351407218916,
+        -2.3768404107187484,
+        -13.876809921405702,
+        -27.43308841467172
+      ],
+      "before_lufs": -13.59
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/4_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.08,
+      "true_peak_db": -5.04,
+      "spectral_bands_db": [
+        -5.61652888542647,
+        -3.5989927357091966,
+        -5.586557268310975,
+        -19.845726749146984,
+        -26.25624195093511
+      ],
+      "before_lufs": -15.03
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/4_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.1,
+      "true_peak_db": -3.23,
+      "spectral_bands_db": [
+        -10.116612282064604,
+        -4.946481113674869,
+        -2.4706980856813665,
+        -18.029571998255527,
+        -32.14028218612414
+      ],
+      "before_lufs": -15.03
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/4_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.1,
+      "true_peak_db": -3.81,
+      "spectral_bands_db": [
+        -7.246047104912546,
+        -2.1206176013603537,
+        -7.293818482036915,
+        -20.441529952877314,
+        -26.417638877113113
+      ],
+      "before_lufs": -15.92
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/4_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.15,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -11.135597714956791,
+        -3.160132423219782,
+        -3.749538909313477,
+        -17.573045758690636,
+        -31.322952192600646
+      ],
+      "before_lufs": -15.92
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/5_Chapter_1.wav",
+      "radio": false,
+      "lufs": -17.99,
+      "true_peak_db": -4.79,
+      "spectral_bands_db": [
+        -2.7345290686181793,
+        -5.701447600268098,
+        -7.366014096144023,
+        -18.873714775405233,
+        -27.45491343130167
+      ],
+      "before_lufs": -12.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/5_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.24,
+      "true_peak_db": -3.32,
+      "spectral_bands_db": [
+        -9.842944771096455,
+        -3.531149112604057,
+        -3.6927482554298208,
+        -16.028330790057574,
+        -32.37878164908884
+      ],
+      "before_lufs": -12.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/5_Chapter_2.wav",
+      "radio": false,
+      "lufs": -17.9,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -2.6332720303263013,
+        -6.287880170575166,
+        -6.988939657735555,
+        -18.01739314050107,
+        -24.254407179627336
+      ],
+      "before_lufs": -16.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/5_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.13,
+      "true_peak_db": -3.26,
+      "spectral_bands_db": [
+        -13.36991138129921,
+        -3.558371194305336,
+        -3.1836595737495728,
+        -14.871913036855188,
+        -36.027218562122115
+      ],
+      "before_lufs": -16.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/6_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.09,
+      "true_peak_db": -4.08,
+      "spectral_bands_db": [
+        -14.78600423375028,
+        -2.9895073002836208,
+        -3.4524987117945294,
+        -19.818697905866323,
+        -26.274419327738233
+      ],
+      "before_lufs": -15.24
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/6_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.08,
+      "true_peak_db": -3.58,
+      "spectral_bands_db": [
+        -20.702335930464937,
+        -4.400792548386848,
+        -2.102416907611094,
+        -19.244391626979684,
+        -34.82724936190256
+      ],
+      "before_lufs": -15.24
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/6_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -7.57,
+      "spectral_bands_db": [
+        -5.928676885955295,
+        -2.303039943961626,
+        -8.548283092967253,
+        -18.735048094327748,
+        -25.020744382801723
+      ],
+      "before_lufs": -20.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/6_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.15,
+      "true_peak_db": -6.58,
+      "spectral_bands_db": [
+        -9.678926491682393,
+        -2.8174848772300107,
+        -4.662139697546394,
+        -15.683772465847888,
+        -30.96392840842928
+      ],
+      "before_lufs": -20.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/7_Chapter_1.wav",
+      "radio": false,
+      "lufs": -17.85,
+      "true_peak_db": -3.21,
+      "spectral_bands_db": [
+        -3.236540687021429,
+        -4.508552187526558,
+        -8.163107993578269,
+        -18.132951759665637,
+        -24.88608865222848
+      ],
+      "before_lufs": -15.0
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/7_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.27,
+      "true_peak_db": -3.21,
+      "spectral_bands_db": [
+        -11.539010536412327,
+        -2.703531783567677,
+        -4.503185849169019,
+        -14.34742719201341,
+        -27.12189221364142
+      ],
+      "before_lufs": -15.0
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/7_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.12,
+      "true_peak_db": -3.98,
+      "spectral_bands_db": [
+        -2.8876909332182215,
+        -4.384227697216629,
+        -9.903346237937575,
+        -18.032738558882556,
+        -24.810215847835266
+      ],
+      "before_lufs": -16.62
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/7_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.17,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -5.2451441981588935,
+        -5.256584609144218,
+        -4.545824823668718,
+        -12.939832005869786,
+        -29.45142620653771
+      ],
+      "before_lufs": -16.62
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/8_Chapter_1.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -3.83,
+      "spectral_bands_db": [
+        -4.805055451653153,
+        -3.309237416196166,
+        -7.15724759488814,
+        -22.659210741939155,
+        -23.315490521511677
+      ],
+      "before_lufs": -16.12
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/8_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.12,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -8.805407690618397,
+        -3.9650064486185013,
+        -3.4277840003083746,
+        -19.4753895121137,
+        -28.087674246924234
+      ],
+      "before_lufs": -16.12
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/9_Chapter_1.wav",
+      "radio": false,
+      "lufs": -17.9,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -1.4354138769424125,
+        -7.917513429672415,
+        -10.048545429889852,
+        -17.33346814539097,
+        -25.93006958519334
+      ],
+      "before_lufs": -17.64
+    },
+    {
+      "source": "res://assets/audio/dialogs/1/9_Chapter_1.wav",
+      "radio": true,
+      "lufs": -18.23,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -11.033733388469624,
+        -3.1110578710321706,
+        -4.374238555249439,
+        -11.772500586342389,
+        -30.356239172692785
+      ],
+      "before_lufs": -17.64
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/1_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.07,
+      "true_peak_db": -3.45,
+      "spectral_bands_db": [
+        -4.374218844254053,
+        -3.4170840532962776,
+        -7.806824499664671,
+        -18.924511197661108,
+        -30.184389501300423
+      ],
+      "before_lufs": -15.76
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/1_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.14,
+      "true_peak_db": -3.26,
+      "spectral_bands_db": [
+        -7.63815330011501,
+        -4.353092736999712,
+        -3.6798444897197315,
+        -14.961308075835673,
+        -36.03041708433061
+      ],
+      "before_lufs": -15.76
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/2_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.08,
+      "true_peak_db": -4.73,
+      "spectral_bands_db": [
+        -3.8799218563862397,
+        -3.5670930672643903,
+        -8.627414796783661,
+        -19.349120747351606,
+        -26.758380857694032
+      ],
+      "before_lufs": -16.53
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/2_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.12,
+      "true_peak_db": -3.33,
+      "spectral_bands_db": [
+        -7.282634090387324,
+        -4.462536005200175,
+        -3.6950923313664727,
+        -15.655677023159225,
+        -30.43574905491988
+      ],
+      "before_lufs": -16.53
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/3_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.06,
+      "true_peak_db": -5.5,
+      "spectral_bands_db": [
+        -1.022377490880884,
+        -9.76603831845616,
+        -10.404107432919476,
+        -19.276723890640024,
+        -28.88669587037549
+      ],
+      "before_lufs": -16.77
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/3_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.08,
+      "true_peak_db": -3.84,
+      "spectral_bands_db": [
+        -3.3601657909252634,
+        -8.949822474947487,
+        -4.2988859882141925,
+        -14.081350883530714,
+        -31.924354892355137
+      ],
+      "before_lufs": -16.77
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/4_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.12,
+      "true_peak_db": -5.88,
+      "spectral_bands_db": [
+        -3.279425471478539,
+        -3.5511729782596464,
+        -11.68370434218307,
+        -18.096531159637173,
+        -22.815375388682103
+      ],
+      "before_lufs": -19.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors/4_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.12,
+      "true_peak_db": -4.04,
+      "spectral_bands_db": [
+        -5.884218405957784,
+        -3.6411973982657395,
+        -5.918296898179507,
+        -12.929880206600174,
+        -25.6278147646647
+      ],
+      "before_lufs": -19.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/1_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.41,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -4.591149356335286,
+        -2.8917343239710935,
+        -9.371698891643527,
+        -17.268834647961402,
+        -23.569024194094837
+      ],
+      "before_lufs": -25.2
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/1_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.3,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -7.67265306813014,
+        -3.9090729762995235,
+        -4.396078490087644,
+        -12.389873895178514,
+        -28.272701606976458
+      ],
+      "before_lufs": -25.2
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/2_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -6.83,
+      "spectral_bands_db": [
+        -8.896697690108228,
+        -1.4770076380436707,
+        -8.52497305084979,
+        -17.91083322565621,
+        -25.603840287497324
+      ],
+      "before_lufs": -14.39
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/2_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.14,
+      "true_peak_db": -3.23,
+      "spectral_bands_db": [
+        -12.085384649471674,
+        -2.472103501135265,
+        -4.733741762160671,
+        -14.549909611736707,
+        -30.605473915933356
+      ],
+      "before_lufs": -14.39
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/3_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.08,
+      "true_peak_db": -6.47,
+      "spectral_bands_db": [
+        -4.956335658055938,
+        -2.474301733864489,
+        -10.194298326013314,
+        -17.449714155216203,
+        -28.91602635123451
+      ],
+      "before_lufs": -16.36
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/3_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.1,
+      "true_peak_db": -4.01,
+      "spectral_bands_db": [
+        -7.716684676237847,
+        -3.212994345465969,
+        -5.221671587371488,
+        -12.786250402489552,
+        -33.119734936917325
+      ],
+      "before_lufs": -16.36
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/4_locked_doors.wav",
+      "radio": false,
+      "lufs": -18.1,
+      "true_peak_db": -4.07,
+      "spectral_bands_db": [
+        -4.79933342371335,
+        -2.8587194801845515,
+        -10.025532662918,
+        -13.087802684939636,
+        -25.97027998713148
+      ],
+      "before_lufs": -24.05
+    },
+    {
+      "source": "res://assets/audio/dialogs/locked_doors_key/4_locked_doors.wav",
+      "radio": true,
+      "lufs": -18.26,
+      "true_peak_db": -3.26,
+      "spectral_bands_db": [
+        -7.603768247631258,
+        -4.337900376303069,
+        -5.070395248896386,
+        -8.36948065131195,
+        -28.674152904808867
+      ],
+      "before_lufs": -24.05
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.15,
+      "true_peak_db": -4.53,
+      "spectral_bands_db": [
+        -0.8390773419483228,
+        -10.8947064045982,
+        -11.777281488590738,
+        -16.07916806946906,
+        -24.916581369501785
+      ],
+      "before_lufs": -14.51
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.2,
+      "true_peak_db": -3.27,
+      "spectral_bands_db": [
+        -9.152189497922707,
+        -4.519431366912504,
+        -4.1121738725286825,
+        -8.662183001695325,
+        -29.277111787484444
+      ],
+      "before_lufs": -14.51
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -3.34,
+      "spectral_bands_db": [
+        -5.769620789776924,
+        -2.41113545720667,
+        -8.306859573631641,
+        -19.28254290205973,
+        -27.729414220966447
+      ],
+      "before_lufs": -16.09
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.16,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -9.224968318009928,
+        -3.182269693518231,
+        -4.314083400907351,
+        -15.346942041651348,
+        -34.59071915303038
+      ],
+      "before_lufs": -16.09
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -3.86,
+      "spectral_bands_db": [
+        -1.9949550118467232,
+        -8.815624510063586,
+        -6.635434168697005,
+        -17.8220560292785,
+        -24.625848712777202
+      ],
+      "before_lufs": -13.59
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.19,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -11.08294329923198,
+        -5.217351407218916,
+        -2.3768404107187484,
+        -13.876809921405702,
+        -27.43308841467172
+      ],
+      "before_lufs": -13.59
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.1,
+      "true_peak_db": -3.81,
+      "spectral_bands_db": [
+        -7.246047104912546,
+        -2.1206176013603537,
+        -7.293818482036915,
+        -20.441529952877314,
+        -26.417638877113113
+      ],
+      "before_lufs": -15.92
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.15,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -11.135597714956791,
+        -3.160132423219782,
+        -3.749538909313477,
+        -17.573045758690636,
+        -31.322952192600646
+      ],
+      "before_lufs": -15.92
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav",
+      "radio": false,
+      "lufs": -17.9,
+      "true_peak_db": -3.22,
+      "spectral_bands_db": [
+        -2.6332720303263013,
+        -6.287880170575166,
+        -6.988939657735555,
+        -18.01739314050107,
+        -24.254407179627336
+      ],
+      "before_lufs": -16.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.13,
+      "true_peak_db": -3.26,
+      "spectral_bands_db": [
+        -13.36991138129921,
+        -3.558371194305336,
+        -3.1836595737495728,
+        -14.871913036855188,
+        -36.027218562122115
+      ],
+      "before_lufs": -16.21
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.11,
+      "true_peak_db": -7.57,
+      "spectral_bands_db": [
+        -5.928676885955295,
+        -2.303039943961626,
+        -8.548283092967253,
+        -18.735048094327748,
+        -25.020744382801723
+      ],
+      "before_lufs": -20.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.15,
+      "true_peak_db": -6.58,
+      "spectral_bands_db": [
+        -9.678926491682393,
+        -2.8174848772300107,
+        -4.662139697546394,
+        -15.683772465847888,
+        -30.96392840842928
+      ],
+      "before_lufs": -20.91
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav",
+      "radio": false,
+      "lufs": -18.12,
+      "true_peak_db": -3.98,
+      "spectral_bands_db": [
+        -2.8876909332182215,
+        -4.384227697216629,
+        -9.903346237937575,
+        -18.032738558882556,
+        -24.810215847835266
+      ],
+      "before_lufs": -16.62
+    },
+    {
+      "source": "res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav",
+      "radio": true,
+      "lufs": -18.17,
+      "true_peak_db": -3.24,
+      "spectral_bands_db": [
+        -5.2451441981588935,
+        -5.256584609144218,
+        -4.545824823668718,
+        -12.939832005869786,
+        -29.45142620653771
+      ],
+      "before_lufs": -16.62
+    }
+  ]
+}

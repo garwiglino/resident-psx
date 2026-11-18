@@ -1,0 +1,49 @@
+APPELS DE L'INTERPHONE
+
+La scene scenes/interactions/interphone_interact.tscn utilise maintenant
+Interphone3D et InterphoneButton3D. Les modeles, volumes de survol, noms,
+positions et camera existants sont conserves.
+
+Un clic joue le son/l'animation d'appui du bouton, puis sa sonnerie en boucle.
+Quand sa duree est atteinte, la sonnerie s'arrete :
+- un dialogue assigne se joue automatiquement jusqu'a sa fin ;
+- sans dialogue, le son de raccroche se joue, puis le cycle se termine.
+Tous les boutons restent bloques pendant la sonnerie, le raccroche et les
+repliques. Ils redeviennent disponibles a la fin du cycle.
+
+REGLER CHAQUE BOUTON
+
+Selectionner Parties/button_01, button_02, etc.
+Appel interphone > Ringing Seconds : duree totale, silences de la boucle compris.
+Response : Dialogue automatique si assigne, ou Personne ne repond.
+Comportement au clic > Dialogue : glisser le DialogueSequence .tres a jouer.
+Le mode du fichier source n'est pas modifie : cet appel utilise sa propre
+lecture automatique. Les voix, les pages longues, les pauses entre repliques,
+les interlocuteurs et leurs reglages Intercom restent ceux du dialogue.
+Le mode Personne ne repond ignore les dialogues de ce bouton.
+Ringing Sound Override : facultatif, pour une sonnerie propre a ce bouton.
+
+SONS COMMUNS SUR LA RACINE DE L'INTERPHONE
+
+Interphone - sonnerie > Ringing Sound / Ringing Volume Db.
+Interphone - sans reponse > Hangup Sound / Hangup Volume Db.
+Une sonnerie electronique simple est fournie ; glisser un autre WAV pour
+la remplacer. Le raccroche utilise audio/ui/intercom_end.wav par defaut.
+Le son d'appui reste Activation Sound / Mechanism Volume Db sur chaque bouton.
+Les sons de l'appareil sont localises, mixes dans Interactions et passent
+par le lecteur SPU PSX commun. Aucun reglage de boucle du WAV source n'est modifie.
+
+La pause suspend le cycle. Quitter explicitement la vue annule l'appel en cours.
+La mort, la suppression de l'objet ou le rechargement du monde arretent aussi
+la sonnerie et annulent les actions encore en attente.
+
+POUR UN AUTRE INTERPHONE
+
+Dupliquer ta scene d'interphone et garder sa racine Interphone3D.
+Ajouter/dupliquer des InterphoneButton3D sous Parties, ou glisser
+scenes/interactions/interphone_button.tscn. Regler les volumes et les chemins
+de survol comme pour les boutons ordinaires. Donner un Interaction Id stable
+et unique a chaque interphone place dans la carte.
+
+Cette logique concerne les interphones. Les boutons, interrupteurs et autres
+interactions continuent d'utiliser MechanismAction3D sans cycle de sonnerie.

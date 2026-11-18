@@ -1,0 +1,46 @@
+{
+	"checks": 30,
+	"errors": [],
+	"gameplay_anime": {
+		"cpu_median_ms": 11.398,
+		"cpu_p95_ms": 14.284,
+		"native_p95_ms": 13.021,
+		"samples": 180
+	},
+	"ink_inside_pixels": 0,
+	"native_stats": {
+		"anime_source_triangles": 1035,
+		"anime_triangles": 1035,
+		"batches": 12,
+		"depth_pixels": 76800,
+		"frame_us": 9325,
+		"general_depth": true,
+		"light_occluders": 4734,
+		"light_revision": 4,
+		"outline_triangles": 943,
+		"player_depth_pixels": 76800,
+		"player_depth_triangles": 1084,
+		"shadow_rays": 3553,
+		"shadow_triangle_tests": 27955,
+		"shot_light_energy": 0.0,
+		"source_triangles": 2027,
+		"triangles": 2027,
+		"version": 28,
+		"vertices": 12124,
+		"world_lights": 2
+	},
+	"ok": true,
+	"outline_pixels": 1408,
+	"portrait_anime": {
+		"cpu_median_ms": 10.547,
+		"cpu_p95_ms": 11.814,
+		"native_p95_ms": 10.703,
+		"samples": 120
+	},
+	"portrait_original": {
+		"cpu_median_ms": 9.567,
+		"cpu_p95_ms": 10.172,
+		"native_p95_ms": 9.29,
+		"samples": 120
+	}
+}

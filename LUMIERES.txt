@@ -1,0 +1,73 @@
+LAMPES AVEC MODELE, FLICKER ET SON LOCALISE
+
+PLACER UNE LAMPE
+Glisser une scene depuis scenes/lighting dans la carte :
+- neon.tscn : deux tubes, lumiere froide, bruit de neon deja assigne et discret.
+- applique.tscn : lampe murale chaude, spot oriente vers son axe local -Z.
+- plafonnier.tscn : plafonnier octogonal avec diffuseur chaud.
+Les modeles sont simples et low-poly, sans speculaire moderne.
+
+Selectionner la racine de la lampe. Les reglages PSXLight3D sont directement
+dans son inspecteur : Enabled, Light Type (Omni, Spot, Directionnelle), couleur,
+energie, portee et cone du spot. Aucune lumiere Godot supplementaire a ajouter.
+Pour un plafond a 3 m, placer le neon vers Y=2,88 m ou le plafonnier vers Y=2,90 m.
+L'applique a son dos vers +Z et eclaire vers -Z ; la tourner selon le mur.
+Garder l'echelle de la lampe a 1 ; Model Scale regle seulement son modele.
+On peut aussi cliquer directement son modele dans la vue 3D : la selection
+revient a la lampe entiere. Deplacer, tourner et redimensionner cette racine
+deplace ensemble le modele, la lumiere et son son.
+Si la peinture de carte est active, selectionner d'abord la lampe dans l'arbre.
+La peinture reprend quand on selectionne Map ; elle laisse les lampes se manipuler.
+
+PARTIE LUMINEUSE ET FLICKER
+Le materiau M_light des modeles fournis est reconnu automatiquement.
+Cette partie est unlit : les autres lumieres, la torche et les tirs ne la
+rendent pas plus brillante. Le fog PSX continue de s'appliquer normalement.
+Le boitier conserve le vertex lighting du decor.
+
+Cocher Flicker et choisir Neon, Bougie, Panne electrique ou Aleatoire.
+Le diffuseur et la lumiere utilisent exactement le meme echantillon : leurs
+coupures et variations coincident. Chaque lampe garde son propre motif.
+Les reglages d'amplitude, vitesse, minimum/maximum et coupures restent ceux
+des PSXLight3D. Le scintillement fonctionne aussi dans la vue 3D de l'editeur.
+Il ne reconstruit ni les textures ni les meshes a chaque variation.
+
+Partie lumineuse : Emission Uses Light Color reprend la couleur de la lumiere.
+Decocher cette option pour choisir Emission Color separement. Emission Strength
+regle l'intensite du diffuseur ; la variation relative reste celle de sa lumiere.
+
+UTILISER SON PROPRE MODELE
+Dans Modele de lampe > Model Scene, attribuer le GLB ou TSCN du modele seul.
+Emissive Material Names contient les noms exacts de ses materiaux lumineux.
+Utiliser le nom Blender d'origine : M_light ou mlight fonctionnent tous les deux.
+Les anciens exports decoratifs tels que prop__m_light__384_512_128_64 sont
+reconnus aussi, sans devoir reexporter. L'exporteur conserve maintenant le nom
+d'origine en plus du nom unique de chaque page de texture.
+On peut en ajouter plusieurs. Majuscules, espaces, tirets et underscores sont
+ignores pour cette comparaison. Les autres materiaux restent eclaires normalement.
+Autre choix : Emissive Mesh Paths permet de designer des meshes complets,
+avec des chemins relatifs a la racine du modele, par exemple Tubes/TubeGauche.
+Model Position, Model Rotation Degrees et Model Scale ajustent l'alignement
+du modele par rapport au point d'emission de la lumiere.
+Les materiaux du fichier source ne sont pas modifies.
+Ne pas modifier les enfants temporaires Modele : regler la scene source ou
+les champs de la lampe. Seuls ces reglages se sauvegardent dans la carte.
+
+SON LOCALISE
+Son localise > Local Sound : deposer le WAV du bourdonnement ou autre son.
+Audio Loop choisit la boucle, Audio Volume Db son volume, Audio Max Distance
+sa portee et Audio Offset son placement relatif a la lampe.
+Audio Reverb reprend la reverb PS1 du niveau ; decocher pour un son sec.
+Audio Follows Flicker module aussi le volume avec le meme scintillement,
+sans recommencer la boucle a chaque coupure. Par defaut le bruit reste continu
+pendant le flicker. Enabled coupe ensemble lumiere, partie lumineuse et son.
+Les lampes hors de portee liberent leurs voix SPU et reprennent a proximite.
+Les sons restent muets dans l'editeur : F6 permet de les tester.
+
+REOUVRIR GODOT UNE FOIS
+Cette fonction utilise bin/psx_geometry_v18.dll. Enregistrer la carte puis
+rouvrir Godot pour charger le nouveau moteur dans l'apercu de l'editeur.
+Le jeu lance apres la mise a jour utilise directement la nouvelle version.
+Si une ancienne version est encore chargee, la barre de la vue 3D indique
+les versions chargee et requise. L'apercu PSX se suspend et laisse la vue
+normale utilisable, sans lancer le lent moteur de secours en GDScript.

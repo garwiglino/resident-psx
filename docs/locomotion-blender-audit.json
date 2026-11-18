@@ -1,0 +1,382 @@
+[
+  {
+    "source": "C:\\Users\\sheensaw\\Downloads\\cop_anims_walk.blend",
+    "clips": [
+      {
+        "clip": "player_walk_forward_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.939246546631017,
+        "pelvis_first_m": 0.951351523399353,
+        "pelvis_last_m": 0.9575322866439819,
+        "pelvis_min_m": 0.9148058891296387,
+        "pelvis_max_m": 0.9606066942214966,
+        "knee_mean_degrees": 23.173298237271112,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 75.77554798289083,
+        "deform_knee_mean_degrees": 23.845383150368086,
+        "leg_length_ratio_min": 0.9971239582710576,
+        "leg_length_ratio_max": 1.0531199888172127
+      },
+      {
+        "clip": "player_walk_strafe_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.937030004075736,
+        "pelvis_first_m": 0.9278014898300171,
+        "pelvis_last_m": 0.9156263470649719,
+        "pelvis_min_m": 0.8993950486183167,
+        "pelvis_max_m": 0.9686995148658752,
+        "knee_mean_degrees": 29.732720729946124,
+        "knee_min_degrees": 0.40686935990132156,
+        "knee_max_degrees": 72.80380097690998,
+        "deform_knee_mean_degrees": 25.943859537544082,
+        "leg_length_ratio_min": 1.0006204758194512,
+        "leg_length_ratio_max": 1.0652645025248135
+      },
+      {
+        "clip": "player_walk_forward_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9677586540702946,
+        "pelvis_first_m": 0.9616646766662598,
+        "pelvis_last_m": 0.9565627574920654,
+        "pelvis_min_m": 0.9424483776092529,
+        "pelvis_max_m": 0.9935382604598999,
+        "knee_mean_degrees": 18.037994684908224,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 71.91328091292372,
+        "deform_knee_mean_degrees": 17.103063009279282,
+        "leg_length_ratio_min": 1.0031558185736615,
+        "leg_length_ratio_max": 1.1104636578061577
+      },
+      {
+        "clip": "player_walk_forward_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9667059641239072,
+        "pelvis_first_m": 0.9494461417198181,
+        "pelvis_last_m": 0.9431921243667603,
+        "pelvis_min_m": 0.9348817467689514,
+        "pelvis_max_m": 0.9913147687911987,
+        "knee_mean_degrees": 17.4997518444252,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 70.63095387738885,
+        "deform_knee_mean_degrees": 17.19540211477578,
+        "leg_length_ratio_min": 1.003933243421007,
+        "leg_length_ratio_max": 1.0997788007671094
+      },
+      {
+        "clip": "player_walk_backward_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9503075815429373,
+        "pelvis_first_m": 0.9478236436843872,
+        "pelvis_last_m": 0.939834475517273,
+        "pelvis_min_m": 0.9183491468429565,
+        "pelvis_max_m": 0.9805281758308411,
+        "knee_mean_degrees": 23.71277559211073,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 62.447444685608104,
+        "deform_knee_mean_degrees": 20.868944538249412,
+        "leg_length_ratio_min": 1.008168312004701,
+        "leg_length_ratio_max": 1.057412290138617
+      },
+      {
+        "clip": "player_walk_backward_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9679416023995265,
+        "pelvis_first_m": 0.9458705186843872,
+        "pelvis_last_m": 0.940619945526123,
+        "pelvis_min_m": 0.9339262247085571,
+        "pelvis_max_m": 0.9985477924346924,
+        "knee_mean_degrees": 17.358654558596974,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 53.61428888111078,
+        "deform_knee_mean_degrees": 15.543799631687671,
+        "leg_length_ratio_min": 1.0144650581361552,
+        "leg_length_ratio_max": 1.086311077894424
+      },
+      {
+        "clip": "player_walk_strafe_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9191463284256044,
+        "pelvis_first_m": 0.9335160255432129,
+        "pelvis_last_m": 0.9255884885787964,
+        "pelvis_min_m": 0.8889099359512329,
+        "pelvis_max_m": 0.944049060344696,
+        "knee_mean_degrees": 30.430913730682327,
+        "knee_min_degrees": 0.8844771678036238,
+        "knee_max_degrees": 69.37587929664232,
+        "deform_knee_mean_degrees": 27.575815094380342,
+        "leg_length_ratio_min": 0.9951293245092965,
+        "leg_length_ratio_max": 1.0350023694354502
+      },
+      {
+        "clip": "player_walk_backward_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9705749676247274,
+        "pelvis_first_m": 0.95183926820755,
+        "pelvis_last_m": 0.9604135751724243,
+        "pelvis_min_m": 0.9332988262176514,
+        "pelvis_max_m": 0.9985277652740479,
+        "knee_mean_degrees": 18.40802128392663,
+        "knee_min_degrees": -5.008956321717051e-06,
+        "knee_max_degrees": 62.43617487347758,
+        "deform_knee_mean_degrees": 17.18128380329822,
+        "leg_length_ratio_min": 1.0093463887989738,
+        "leg_length_ratio_max": 1.100090680600587
+      },
+      {
+        "clip": "player_run_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9131828649970125,
+        "pelvis_first_m": 0.9674947261810303,
+        "pelvis_last_m": 0.9460264444351196,
+        "pelvis_min_m": 0.8533828258514404,
+        "pelvis_max_m": 0.974155068397522,
+        "knee_mean_degrees": 48.82660876616904,
+        "knee_min_degrees": 0.7425731576074384,
+        "knee_max_degrees": 112.92297978410922,
+        "deform_knee_mean_degrees": 47.41498608030229,
+        "leg_length_ratio_min": 0.9882309074572075,
+        "leg_length_ratio_max": 1.0311655361557803
+      },
+      {
+        "clip": "player_turn_in_place_left",
+        "frames": [
+          1,
+          31
+        ],
+        "pelvis_mean_m": 0.9318250071617865,
+        "pelvis_first_m": 0.933208167552948,
+        "pelvis_last_m": 0.9328624606132507,
+        "pelvis_min_m": 0.9279614090919495,
+        "pelvis_max_m": 0.9347575902938843,
+        "knee_mean_degrees": 25.856975372370016,
+        "knee_min_degrees": 16.293274652325692,
+        "knee_max_degrees": 39.61077549756217,
+        "deform_knee_mean_degrees": 23.856693883543986,
+        "leg_length_ratio_min": 0.9846016036886306,
+        "leg_length_ratio_max": 1.017575543354591
+      }
+    ]
+  },
+  {
+    "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_anims_walk_harmonized.blend",
+    "clips": [
+      {
+        "clip": "player_walk_forward_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9049999935567872,
+        "pelvis_first_m": 0.9049996137619019,
+        "pelvis_last_m": 0.9049996137619019,
+        "pelvis_min_m": 0.8934498429298401,
+        "pelvis_max_m": 0.9169919490814209,
+        "knee_mean_degrees": 36.801646348736,
+        "knee_min_degrees": 13.08294913863628,
+        "knee_max_degrees": 80.43398971383881,
+        "deform_knee_mean_degrees": 37.26123956092632,
+        "leg_length_ratio_min": 0.9999993726706107,
+        "leg_length_ratio_max": 1.0000007045554125
+      },
+      {
+        "clip": "player_walk_strafe_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.904995142428343,
+        "pelvis_first_m": 0.9044132232666016,
+        "pelvis_last_m": 0.9044132828712463,
+        "pelvis_min_m": 0.8769227862358093,
+        "pelvis_max_m": 0.9173920750617981,
+        "knee_mean_degrees": 35.666406985394595,
+        "knee_min_degrees": 13.075258345630857,
+        "knee_max_degrees": 77.56623916816058,
+        "deform_knee_mean_degrees": 31.678503440159716,
+        "leg_length_ratio_min": 0.9999994529143867,
+        "leg_length_ratio_max": 1.0000007988471664
+      },
+      {
+        "clip": "player_walk_forward_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9049959167961247,
+        "pelvis_first_m": 0.904502272605896,
+        "pelvis_last_m": 0.9045021533966064,
+        "pelvis_min_m": 0.8921132683753967,
+        "pelvis_max_m": 0.9193928241729736,
+        "knee_mean_degrees": 36.49808965485228,
+        "knee_min_degrees": 13.073195628501509,
+        "knee_max_degrees": 81.4828267325968,
+        "deform_knee_mean_degrees": 34.271040065080705,
+        "leg_length_ratio_min": 0.9999991749458642,
+        "leg_length_ratio_max": 1.0000007617110886
+      },
+      {
+        "clip": "player_walk_forward_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.904912387536577,
+        "pelvis_first_m": 0.894403874874115,
+        "pelvis_last_m": 0.8944038152694702,
+        "pelvis_min_m": 0.8876162767410278,
+        "pelvis_max_m": 0.9176653623580933,
+        "knee_mean_degrees": 36.075657215798294,
+        "knee_min_degrees": 13.070818722670339,
+        "knee_max_degrees": 80.62255757644452,
+        "deform_knee_mean_degrees": 34.86091786561252,
+        "leg_length_ratio_min": 0.9999993315197783,
+        "leg_length_ratio_max": 1.0000008149560307
+      },
+      {
+        "clip": "player_walk_backward_left_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9050130366293851,
+        "pelvis_first_m": 0.9065810441970825,
+        "pelvis_last_m": 0.9065810441970825,
+        "pelvis_min_m": 0.8848467469215393,
+        "pelvis_max_m": 0.9189850687980652,
+        "knee_mean_degrees": 34.843734153945896,
+        "knee_min_degrees": 13.076774647626593,
+        "knee_max_degrees": 71.27107237621327,
+        "deform_knee_mean_degrees": 31.741193004932335,
+        "leg_length_ratio_min": 0.9999994116404536,
+        "leg_length_ratio_max": 1.0000008697319056
+      },
+      {
+        "clip": "player_walk_backward_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.904927577854188,
+        "pelvis_first_m": 0.8962326049804688,
+        "pelvis_last_m": 0.8962323665618896,
+        "pelvis_min_m": 0.8920345306396484,
+        "pelvis_max_m": 0.9166792631149292,
+        "knee_mean_degrees": 33.737845891575134,
+        "knee_min_degrees": 13.07613260984462,
+        "knee_max_degrees": 67.85419511183352,
+        "deform_knee_mean_degrees": 30.4905916053898,
+        "leg_length_ratio_min": 0.9999994071842563,
+        "leg_length_ratio_max": 1.0000009268160723
+      },
+      {
+        "clip": "player_walk_strafe_right_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.905098401810512,
+        "pelvis_first_m": 0.916905403137207,
+        "pelvis_last_m": 0.916905403137207,
+        "pelvis_min_m": 0.8801936507225037,
+        "pelvis_max_m": 0.9210931658744812,
+        "knee_mean_degrees": 32.52533467892666,
+        "knee_min_degrees": 13.521474604107794,
+        "knee_max_degrees": 68.78396827297985,
+        "deform_knee_mean_degrees": 29.59924980190897,
+        "leg_length_ratio_min": 0.99999939768909,
+        "leg_length_ratio_max": 1.0000008505679345
+      },
+      {
+        "clip": "player_walk_backward_pistol",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9048421806540371,
+        "pelvis_first_m": 0.885900616645813,
+        "pelvis_last_m": 0.8859008550643921,
+        "pelvis_min_m": 0.8791767954826355,
+        "pelvis_max_m": 0.9186092615127563,
+        "knee_mean_degrees": 36.03058135414687,
+        "knee_min_degrees": 13.070122043374994,
+        "knee_max_degrees": 76.04843453080035,
+        "deform_knee_mean_degrees": 33.05309236053997,
+        "leg_length_ratio_min": 0.9999993352365265,
+        "leg_length_ratio_max": 1.0000012754842107
+      }
+    ]
+  },
+  {
+    "source": "C:\\Users\\sheensaw\\Downloads\\cop_idle.blend",
+    "clips": [
+      {
+        "clip": "player_pistol_idle",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.9337470969877952,
+        "pelvis_first_m": 0.9341099858283997,
+        "pelvis_last_m": 0.9341679811477661,
+        "pelvis_min_m": 0.93304443359375,
+        "pelvis_max_m": 0.9344088435173035,
+        "knee_mean_degrees": 5.876875635674182,
+        "knee_min_degrees": 4.69998476271283,
+        "knee_max_degrees": 7.064077158994337,
+        "deform_knee_mean_degrees": 15.830047045674934,
+        "leg_length_ratio_min": 0.9728741614112059,
+        "leg_length_ratio_max": 0.9870204065030374
+      }
+    ]
+  },
+  {
+    "source": "C:\\Users\\sheensaw\\MyApps\\mgba-0.10.5\\resident-psx\\exports\\blender\\cop_idle_harmonized.blend",
+    "clips": [
+      {
+        "clip": "player_pistol_idle",
+        "frames": [
+          1,
+          121
+        ],
+        "pelvis_mean_m": 0.905003049649483,
+        "pelvis_first_m": 0.9053663611412048,
+        "pelvis_last_m": 0.9053664207458496,
+        "pelvis_min_m": 0.9043009281158447,
+        "pelvis_max_m": 0.9056653380393982,
+        "knee_mean_degrees": 39.06428737689837,
+        "knee_min_degrees": 38.13807742948072,
+        "knee_max_degrees": 39.98206458084405,
+        "deform_knee_mean_degrees": 47.37509464269405,
+        "leg_length_ratio_min": 0.999999397574391,
+        "leg_length_ratio_max": 1.0000007797772887
+      }
+    ]
+  }
+]

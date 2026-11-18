@@ -1,0 +1,6 @@
+00:03.437  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+BODY_ORIGINAL_POSITIONS [[-0.03256472200155258, 1.4497337341308594, -0.021823350340127945], [0.03256474807858467, 1.4497337341308594, -0.021823354065418243], [-0.043821655213832855, 1.4223954677581787, 0.0473264642059803]]
+TOP_LINKS [["Face_top_Atlas", "Color", "Principled BSDF", "Base Color"], ["UV Map", "UV", "Vector Math", "Vector"], ["Vector Math", "Vector", "Vector Math.001", "Vector"], ["Vector Math.001", "Vector", "Vector Math.002", "Vector"], ["Combine XYZ", "Vector", "Vector Math.002", "Vector"], ["Vector Math.002", "Vector", "Face_top_Atlas", "Vector"], ["Face_top_Atlas", "Color", "Emission", "Color"], ["Emission", "Emission", "Material Output", "Surface"]]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

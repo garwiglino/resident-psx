@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+MODULAR_RENDER_OK { "version": 13, "triangles": 206, "vertices": 8952, "batches": 1, "shot_light_energy": 0.0, "world_lights": 0, "light_revision": 2, "player_depth_triangles": 0, "player_depth_pixels": 0 }

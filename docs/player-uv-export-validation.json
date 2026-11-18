@@ -1,0 +1,31 @@
+{
+  "source_sha256": "317a5e4582968e0e7c3ec4fac32a3a8456199524dc3b7402e4f0a507cbe157ee",
+  "source_unchanged": true,
+  "source_mesh": "cop_char.002",
+  "source_polygons": 683,
+  "joints": 270,
+  "mask_faces": 150,
+  "mask_source": "geometry_reference",
+  "surfaces": [
+    {
+      "material": "M_body",
+      "vertices": 720,
+      "uv_sha256": "bde7a83f2a294752f7e0d3468b4938737974d6fbf6f3e2144e902f2f8c917ee1"
+    },
+    {
+      "material": "M_face_bottom.001",
+      "vertices": 22,
+      "uv_sha256": "842bcb28014bcbdb97cd68e1ac0d6776bade5e1b2db6a34173d8b2d9af656aa3"
+    },
+    {
+      "material": "M_face_top.001",
+      "vertices": 26,
+      "uv_sha256": "6c3e3fb11b92605c936b0f849d94d66629fcaebf1e33df35a7a0bccf0873d948"
+    },
+    {
+      "material": "M_coat_mask",
+      "vertices": 215,
+      "uv_sha256": "5a1dd58c7500c5e0e274700002977c1a0cd331dec86dad36f8720be4a878b39f"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ClothingTextureSet" format=3 uid="uid://dw48wtoiscw51"]
+
+[ext_resource type="Script" uid="uid://cowdnl8xhrkki" path="res://scripts/clothing/clothing_texture_set.gd" id="1"]
+[ext_resource type="Texture2D" uid="uid://k5ih4dw5jt2s" path="res://assets/character/clothing/textures/winter_jacket/koi_sapin_psx_256.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://bhhng77j82lyr" path="res://assets/character/clothing/textures/winter_jacket/seikai_psx_256.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://dvnnlh4utlsct" path="res://assets/character/clothing/textures/winter_jacket/winter_jacket_naminokai_uv2_psx_256.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://c7xqigmrghho8" path="res://assets/character/clothing/textures/winter_jacket/dragon_rose_psx_256.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://cr0of4keltf7u" path="res://assets/character/clothing/textures/winter_jacket/jieitai_dot_psx_256.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cw6qocn6mt4ly" path="res://assets/character/clothing/textures/winter_jacket/police_marine_psx_256.png" id="7"]
+[ext_resource type="Texture2D" uid="uid://b6cn22qmiqy42" path="res://assets/character/clothing/textures/winter_jacket/sport_violet_turquoise_psx_256.png" id="8"]
+
+[resource]
+script = ExtResource("1")
+original_label = "Koi sapin"
+variants = Dictionary[StringName, Texture2D]({
+&"Dragon rose": ExtResource("5"),
+&"Jieitai Dot": ExtResource("6"),
+&"Koi sapin": ExtResource("2"),
+&"Naminokai": ExtResource("4"),
+&"Police marine": ExtResource("7"),
+&"Seikai": ExtResource("3"),
+&"Sport violet turquoise": ExtResource("8")
+})

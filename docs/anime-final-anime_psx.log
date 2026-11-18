@@ -1,0 +1,4 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 621.01 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 2070
+
+ANIME_OK {"checks":25,"errors":[],"gameplay_anime":{"cpu_median_ms":7.904,"cpu_p95_ms":8.098,"native_p95_ms":7.51,"samples":180},"native_stats":{"anime_source_triangles":1130,"anime_triangles":1637,"batches":8,"depth_pixels":76800,"frame_us":8162,"general_depth":true,"light_occluders":3070,"light_revision":4,"outline_triangles":1005,"player_depth_pixels":76800,"player_depth_triangles":2197,"shadow_rays":3053,"shadow_triangle_tests":16920,"shot_light_energy":0.0,"source_triangles":2197,"triangles":2704,"version":23,"vertices":9732,"world_lights":2},"ok":true,"portrait_anime":{"cpu_median_ms":8.606,"cpu_p95_ms":8.865,"native_p95_ms":8.285,"samples":120},"portrait_original":{"cpu_median_ms":6.555,"cpu_p95_ms":7.102,"native_p95_ms":6.595,"samples":120}}

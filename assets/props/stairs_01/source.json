@@ -1,0 +1,18 @@
+{
+	"asset_name": "stairs_01",
+	"asset_type": "stairs",
+	"backup": "res://exports/backups/blender_addon/1794076662_209510/",
+	"collision_source": "stairs_collision",
+	"collision_triangles": 20,
+	"geometry_sha256": "0aa5e1cadc03d264d873fd2434f952cab4e347abe59c2718c8b701bc8865473e",
+	"notes": [
+		"Entree de la rampe calee au sol ; alignement relatif modele/collision conserve."
+	],
+	"origin_mode": "AUTO",
+	"resource": "res://assets/props/stairs_01/stairs_01.tscn",
+	"source_blend": "C:\\Users\\sheensaw\\Downloads\\scene.blend",
+	"source_objects": [
+		"stairs_01"
+	],
+	"triangles": 260
+}

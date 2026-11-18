@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="PSXAnimeStyle" format=3 uid="uid://urngm5pau1sv"]
+
+[ext_resource type="Script" uid="uid://sqe1nvpdwna1" path="res://scripts/psx_anime_style.gd" id="1"]
+
+[resource]
+resource_name = "Anime PSX - rendu valide"
+script = ExtResource("1")
+tones = 1
+world_strength = 0.34
+outline_width = 0.003
+darkness_threshold = 0.265
+darkness_multiplier = 0.56

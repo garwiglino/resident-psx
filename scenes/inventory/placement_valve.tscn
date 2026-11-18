@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://byab5ud26i01q"]
+
+[ext_resource type="Script" uid="uid://d20x16abvtdmw" path="res://scripts/inventory/item_target.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/valve_support.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/valve_wheel.tscn" id="3"]
+[ext_resource type="Resource" uid="uid://bnydeq4jsqoy7" path="res://assets/inventory/items/valve_wheel.tres" id="4"]
+
+[sub_resource type="Animation" id="Installation"]
+resource_name = "installation"
+length = 0.65
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PointInsertion/PieceInstallee:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.65),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 1.5707963)]
+}
+
+[sub_resource type="AnimationLibrary" id="Animations"]
+_data = {
+&"installation": SubResource("Installation")
+}
+
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.28, 0.28, 0.25)
+
+[node name="PlacementVanne" type="Marker3D" unique_id=2043929550]
+script = ExtResource("1")
+required_item = ExtResource("4")
+visual_path = NodePath("Modele")
+installed_visual_path = NodePath("PointInsertion/PieceInstallee")
+select_part_first = true
+selection_label = "FIXATION DE LA VANNE"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("Modele/Socle/Axe"), NodePath("Modele/Socle/Flasque")])
+outline_color = Color(0.87, 0.84, 0.67, 1)
+camera_path = NodePath("CameraFixe")
+placement_socket_path = NodePath("PointInsertion")
+placement_start_path = NodePath("DepartPiece")
+animation_player_path = NodePath("AnimationMecanisme")
+installation_animation = &"installation"
+interaction_label = "INSTALLER LA ROUE"
+interaction_offset = Vector3(0, 0.73, 0.2)
+once = true
+
+[node name="Modele" type="Node3D" parent="." unique_id=1778764245]
+
+[node name="Socle" parent="Modele" unique_id=576756229 instance=ExtResource("2")]
+
+[node name="PointInsertion" type="Marker3D" parent="." unique_id=1695805783]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.73, 0.2)
+
+[node name="PieceInstallee" type="Node3D" parent="PointInsertion" unique_id=1825052088]
+transform = Transform3D(7.54979e-08, -1, 0, 1, 7.54979e-08, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="Roue" parent="PointInsertion/PieceInstallee" unique_id=70059197 instance=ExtResource("3")]
+
+[node name="DepartPiece" type="Marker3D" parent="." unique_id=1701530729]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.95, 0.95)
+
+[node name="CameraFixe" type="Camera3D" parent="." unique_id=2098977035]
+transform = Transform3D(0.56640744, -0.28399917, 0.7736453, 0, 0.9387471, 0.3446068, -0.82412535, -0.19518785, 0.53171337, 0.4503187, 0.9696734, 0.6960031)
+fov = 45.0
+far = 55.0
+
+[node name="AnimationMecanisme" type="AnimationPlayer" parent="." unique_id=1717345170]
+libraries/ = SubResource("Animations")
+
+[node name="ZoneSelection" type="Area3D" parent="."]
+position = Vector3(0, 0.73, 0.2)
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+[node name="Volume" type="CollisionShape3D" parent="ZoneSelection"]
+shape = SubResource("Selection")

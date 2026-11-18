@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ClothingItem" format=3]
+
+[ext_resource type="Script" path="res://scripts/clothing/clothing_item.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/character/clothing/sneakers.glb" id="2"]
+[ext_resource type="Resource" path="res://assets/character/clothing/textures/sneakers_montantes.tres" id="3"]
+
+[resource]
+script = ExtResource("1")
+id = &"sneakers"
+display_name = "Sneakers"
+scene = ExtResource("2")
+skin_metadata = "res://assets/character/clothing/sneakers.json"
+slot = 1
+texture_set = ExtResource("3")

@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bd3yqcsajlmsu"]
+
+[ext_resource type="Script" uid="uid://cdggmtbs2vhgq" path="res://scripts/player.gd" id="1"]
+[ext_resource type="Script" uid="uid://dvpd68d0c8gdf" path="res://scripts/character_motion.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://wxn7bjqttw8k" path="res://assets/character/cop_player.glb" id="3"]
+[ext_resource type="Script" uid="uid://f6xoev33snju" path="res://scripts/face_expressions.gd" id="4_face"]
+[ext_resource type="Script" uid="uid://bd67omhblygfj" path="res://scripts/clothing/character_clothing.gd" id="5_clothing"]
+[ext_resource type="Script" uid="uid://716th04rxx6c" path="res://scripts/character_appearance.gd" id="6_appearance"]
+[ext_resource type="Resource" uid="uid://jsp4vrdhmbax" path="res://assets/character/clothing/large_jeans_01.tres" id="7_jeans"]
+[ext_resource type="Resource" uid="uid://5pdqh88m4sqo" path="res://assets/character/clothing/winter_jacket.tres" id="8_smehm"]
+[ext_resource type="Resource" path="res://assets/character/clothing/sneakers.tres" id="9_sneakers"]
+[ext_resource type="Resource" uid="uid://c7tcichkjo8d2" path="res://assets/character/clothing/cop_outfit.tres" id="9_y4r1p"]
+
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+resource_local_to_scene = true
+radius = 0.24
+height = 1.72
+
+[sub_resource type="SphereShape3D" id="CameraShape"]
+resource_local_to_scene = true
+radius = 0.14
+
+[node name="Player" type="CharacterBody3D" unique_id=54807926]
+collision_layer = 2
+floor_snap_length = 0.3
+script = ExtResource("1")
+torso_yaw_limit_degrees = 25.0
+turn_in_place_speed = 1.5
+free_orbit_enabled = true
+exploration_turn_speed_degrees = 610.0
+exploration_head_turn_degrees = 48.0
+exploration_head_turn_response = null
+exploration_head_turn_speed_degrees = null
+camera_fov = 51.61
+camera_translation_lag = 0.0
+camera_rotation_lag = 0.0
+camera_max_translation_lag = 0.01
+camera_max_rotation_lag_degrees = 1.0
+camera_teleport_snap_distance = 0.5
+recoil_return_speed = 20.0
+shot_shake_strength = 1.0
+effects_volume_db = -15.5
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=395220488]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.86, 0)
+shape = SubResource("Capsule")
+
+[node name="Visual" type="Node3D" parent="." unique_id=169493845]
+
+[node name="CharacterMotion" type="Node3D" parent="Visual" unique_id=836678916]
+transform = Transform3D(-1, 0, -1.509958e-07, 0, 1, 0, 1.509958e-07, 0, -1, 0, 0, 0)
+script = ExtResource("2")
+
+[node name="cop" parent="Visual/CharacterMotion" unique_id=2094475901 instance=ExtResource("3")]
+
+[node name="Visage" type="Node" parent="." unique_id=781347722]
+script = ExtResource("4_face")
+
+[node name="Apparence" type="Node" parent="." unique_id=351099384]
+script = ExtResource("6_appearance")
+
+[node name="Tenue" type="Node" parent="." unique_id=1976497263]
+script = ExtResource("5_clothing")
+shoes = ExtResource("9_sneakers")
+pants = ExtResource("7_jeans")
+full_outfit = ExtResource("9_y4r1p")
+outerwear = ExtResource("8_smehm")
+_texture_choices = Dictionary[StringName, StringName]({
+&"large_jeans_01": &"Dark Indigo",
+&"winter_jacket": &"Police marine"
+})
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=125742920]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3540378, 0)
+
+[node name="SpringArm3D" type="SpringArm3D" parent="CameraPivot" unique_id=1864266943]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.35640568, 0, 0)
+shape = SubResource("CameraShape")
+spring_length = 1.7886839
+margin = 0.16
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot/SpringArm3D" unique_id=433119842]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.7886839)
+fov = 51.61
+near = 0.1
+far = 55.0

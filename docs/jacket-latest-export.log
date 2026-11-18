@@ -1,0 +1,13 @@
+00:03.125  blend            | Read blend: "C:\Users\sheensaw\Downloads\cop_base.blend"
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+15:00:38 | INFO: Starting glTF 2.0 export
+15:00:38 | WARNING: Armature must be the parent of skinned meshArmature is selected by its name, but may be false in case of instances
+15:00:38 | INFO: Extracting primitive: tripo_mesh_d500ee3b-cdfb-4132-90a0-3742af424f37
+15:00:38 | INFO: Primitives created: 1
+15:00:38 | INFO: Finished glTF 2.0 export in 0.21037769317626953 s
+
+WINTER_JACKET_DIRECT_EXPORTED {"sha256": "734c07bced1037521820de51aded374959ea33363b2e27739a9b1f688a91577c", "joints": 47, "weights_redistributed": false, "max_influences": 9, "overflow_vertices": 2, "bounds_y": [1.034225583076477, 1.437160849571228]}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:37:04)
+
+Blender quit

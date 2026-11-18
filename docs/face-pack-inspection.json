@@ -1,0 +1,291 @@
+{
+  "source": "C:\\Users\\sheensaw\\Downloads\\cop_face_expressions_psx_pack\\cop_face_expressions\\cop_base_expressions_psx.blend",
+  "scene": "Face_Expressions_Preview",
+  "scenes": [
+    "Face_Expressions_Preview",
+    "Scene"
+  ],
+  "frame": [
+    1,
+    180,
+    1
+  ],
+  "fps": 24.0,
+  "objects": [
+    {
+      "name": "Face_Expression_Controls",
+      "type": "EMPTY",
+      "parent": null
+    },
+    {
+      "name": "Cop_Face_Preview",
+      "type": "MESH",
+      "parent": null,
+      "vertices": 618,
+      "faces": 683,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "modifiers": [],
+      "materials": [
+        {
+          "name": "Material.001_Preview",
+          "faces": 645,
+          "nodes": [
+            {
+              "type": "BSDF_PRINCIPLED",
+              "name": "Principled BSDF",
+              "image": null
+            },
+            {
+              "type": "OUTPUT_MATERIAL",
+              "name": "Material Output",
+              "image": null
+            },
+            {
+              "type": "TEX_IMAGE",
+              "name": "Image Texture",
+              "image": "Cop_Body_Reference_256"
+            },
+            {
+              "type": "EMISSION",
+              "name": "Emission",
+              "image": null
+            }
+          ]
+        },
+        {
+          "name": "M_face_bottom_Preview",
+          "faces": 16,
+          "nodes": [
+            {
+              "type": "OUTPUT_MATERIAL",
+              "name": "Material Output",
+              "image": null
+            },
+            {
+              "type": "BSDF_PRINCIPLED",
+              "name": "Principled BSDF",
+              "image": null
+            },
+            {
+              "type": "TEX_IMAGE",
+              "name": "Face_bottom_Atlas",
+              "image": "Cop_Face_bottom_Atlas_512x256"
+            },
+            {
+              "type": "UVMAP",
+              "name": "UV Map",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math.001",
+              "image": null
+            },
+            {
+              "type": "COMBXYZ",
+              "name": "Combine XYZ",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math.002",
+              "image": null
+            },
+            {
+              "type": "EMISSION",
+              "name": "Emission",
+              "image": null
+            }
+          ]
+        },
+        {
+          "name": "M_face_top_Preview",
+          "faces": 22,
+          "nodes": [
+            {
+              "type": "OUTPUT_MATERIAL",
+              "name": "Material Output",
+              "image": null
+            },
+            {
+              "type": "BSDF_PRINCIPLED",
+              "name": "Principled BSDF",
+              "image": null
+            },
+            {
+              "type": "TEX_IMAGE",
+              "name": "Face_top_Atlas",
+              "image": "Cop_Face_top_Atlas_512x256"
+            },
+            {
+              "type": "UVMAP",
+              "name": "UV Map",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math.001",
+              "image": null
+            },
+            {
+              "type": "COMBXYZ",
+              "name": "Combine XYZ",
+              "image": null
+            },
+            {
+              "type": "VECT_MATH",
+              "name": "Vector Math.002",
+              "image": null
+            },
+            {
+              "type": "EMISSION",
+              "name": "Emission",
+              "image": null
+            }
+          ]
+        }
+      ],
+      "uv_ranges": {
+        "0": [
+          [
+            0.015425377525389194,
+            0.9468880295753479
+          ],
+          [
+            0.014926040545105934,
+            0.9846391677856445
+          ]
+        ],
+        "1": [
+          [
+            1.00399649143219,
+            1.648007869720459
+          ],
+          [
+            0.003996378742158413,
+            0.5490115284919739
+          ]
+        ],
+        "2": [
+          [
+            1.00399649143219,
+            1.3222734928131104
+          ],
+          [
+            0.4328988790512085,
+            0.9960035085678101
+          ]
+        ]
+      }
+    },
+    {
+      "name": "FaceExpressionsCamera",
+      "type": "CAMERA",
+      "parent": null
+    }
+  ],
+  "images": [
+    {
+      "name": "BEA643A1-2937-412C-B7AD-8E3BAF349A39.png",
+      "size": [
+        0,
+        0
+      ],
+      "path": "//..\\..\\BEA643A1-<UDIM>-412C-B7AD-8E3BAF349A39.png",
+      "packed": false,
+      "source": "TILED"
+    },
+    {
+      "name": "Cop_Body_Reference_256",
+      "size": [
+        256,
+        256
+      ],
+      "path": "//..\\..\\upload\\cop_corps_reference_256.png",
+      "packed": true,
+      "source": "FILE"
+    },
+    {
+      "name": "Cop_Face_bottom_Atlas_512x256",
+      "size": [
+        512,
+        256
+      ],
+      "path": "//..\\..\\upload\\face_bottom_atlas_512x256.png",
+      "packed": true,
+      "source": "FILE"
+    },
+    {
+      "name": "Cop_Face_top_Atlas_512x256",
+      "size": [
+        512,
+        256
+      ],
+      "path": "//..\\..\\upload\\face_top_atlas_512x256.png",
+      "packed": true,
+      "source": "FILE"
+    },
+    {
+      "name": "download (54).png",
+      "size": [
+        1024,
+        1024
+      ],
+      "path": "//..\\..\\upload\\download (54).png",
+      "packed": true,
+      "source": "TILED"
+    },
+    {
+      "name": "Image_0",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": true,
+      "source": "FILE"
+    },
+    {
+      "name": "Image_0.001",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": true,
+      "source": "FILE"
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "path": "",
+      "packed": false,
+      "source": "VIEWER"
+    },
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ],
+      "path": "",
+      "packed": false,
+      "source": "VIEWER"
+    }
+  ]
+}

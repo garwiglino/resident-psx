@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="InventoryItemDefinition" format=3 uid="uid://5ghy3j18v4ar"]
+
+[ext_resource type="Script" uid="uid://q1pmfy3gt2gd" path="res://scripts/inventory/item_definition.gd" id="1_0bfq1"]
+[ext_resource type="Script" uid="uid://bkx8ndylof05d" path="res://scripts/world_events/world_action.gd" id="2_2mqcj"]
+[ext_resource type="PackedScene" path="res://assets/inventory/models/lever_handle.tscn" id="3_2mqcj"]
+
+[resource]
+script = ExtResource("1_0bfq1")
+id = &"lever_handle"
+display_name = "Poignee de levier"
+description = "Une poignee reutilisable pour certains mecanismes."
+kind = 8
+essential = true
+consumed_on_use = false
+world_model = ExtResource("3_2mqcj")
+placeable = true

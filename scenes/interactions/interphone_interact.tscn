@@ -1,0 +1,301 @@
+[gd_scene format=3 uid="uid://c32ula5evfl4n"]
+
+[ext_resource type="Script" uid="uid://bfy5jhur1iou8" path="res://scripts/inventory/mechanism_access_settings.gd" id="2_vftx8"]
+[ext_resource type="PackedScene" uid="uid://c0g8ooti21bvl" path="res://assets/props/interphone/interphone.tscn" id="3_npsyf"]
+[ext_resource type="AudioStream" uid="uid://c1cehxh0joqo2" path="res://assets/audio/interactables/button_push.wav" id="5_npsyf"]
+[ext_resource type="Script" path="res://scripts/interactions/interphone_button.gd" id="Part"]
+[ext_resource type="Script" path="res://scripts/interactions/interphone.gd" id="Root"]
+
+[sub_resource type="Resource" id="Resource_m37f1"]
+resource_local_to_scene = true
+script = ExtResource("2_vftx8")
+bone_names = PackedStringArray()
+
+[sub_resource type="BoxShape3D" id="Selection"]
+size = Vector3(0.25, 0.25, 0.2)
+
+[node name="ObjetInteractif" type="Marker3D" unique_id=109613833]
+script = ExtResource("Root")
+close_when_complete = false
+access_settings = SubResource("Resource_m37f1")
+interaction_label = "INTERPHONE"
+interaction_offset = Vector3(0, 0.8, 0)
+
+[node name="Modele" type="Node3D" parent="." unique_id=641671173]
+
+[node name="interphone" parent="Modele" unique_id=2017592777 instance=ExtResource("3_npsyf")]
+
+[node name="Parties" type="Node3D" parent="." unique_id=1350574184]
+
+[node name="button_01" type="Marker3D" parent="Parties" unique_id=2058042680]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, 0.27284727, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+activation_sound = ExtResource("5_npsyf")
+mechanism_volume_db = 0.0
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Satō"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button")])
+requires_open = false
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_01" unique_id=2125577682]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_01/ZoneSelection" unique_id=1644313929]
+shape = SubResource("Selection")
+
+[node name="button_02" type="Marker3D" parent="Parties" unique_id=1815502512]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.07114961, -0.029212415, 0.2297123, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Tanaka"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_001")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_02" unique_id=1893861213]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_02/ZoneSelection" unique_id=886877639]
+shape = SubResource("Selection")
+
+[node name="button_03" type="Marker3D" parent="Parties" unique_id=1033356216]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, 0.18560795, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Yamamoto"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_002")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_03" unique_id=441032293]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_03/ZoneSelection" unique_id=305008816]
+shape = SubResource("Selection")
+
+[node name="button_04" type="Marker3D" parent="Parties" unique_id=1836949674]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, 0.14150366, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Katō"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_003")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_04" unique_id=112449742]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_04/ZoneSelection" unique_id=1419073003]
+shape = SubResource("Selection")
+
+[node name="button_05" type="Marker3D" parent="Parties" unique_id=1051610628]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, 0.06541161, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Suzuki"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_004")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_05" unique_id=1247101213]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_05/ZoneSelection" unique_id=707452315]
+shape = SubResource("Selection")
+
+[node name="button_06" type="Marker3D" parent="Parties" unique_id=1635016018]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, 0.021307312, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Watanabe"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_005")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_06" unique_id=1214487434]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_06/ZoneSelection" unique_id=3282085]
+shape = SubResource("Selection")
+
+[node name="button_07" type="Marker3D" parent="Parties" unique_id=629592328]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, -0.0216563, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Nakamura"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_006")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_07" unique_id=508406377]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_07/ZoneSelection" unique_id=1802097465]
+shape = SubResource("Selection")
+
+[node name="button_08" type="Marker3D" parent="Parties" unique_id=723123961]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.0711496, -0.029212415, -0.068011776, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Yoshida"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_007")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_08" unique_id=986576415]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_08/ZoneSelection" unique_id=1523006358]
+shape = SubResource("Selection")
+
+[node name="button_09" type="Marker3D" parent="Parties" unique_id=1265898843]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.07114961, 0.18197802, 0.2728473, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Takahashi"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_008")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_09" unique_id=1972958201]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_09/ZoneSelection" unique_id=1065643664]
+shape = SubResource("Selection")
+
+[node name="button_10" type="Marker3D" parent="Parties" unique_id=62399022]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.07114961, 0.18197802, 0.22825833, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Itō"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_009")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_10" unique_id=413589315]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_10/ZoneSelection" unique_id=650847473]
+shape = SubResource("Selection")
+
+[node name="button_11" type="Marker3D" parent="Parties" unique_id=1805703225]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.07114961, 0.18197802, 0.18415402, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Kobayashi"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_010")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_11" unique_id=186326078]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_11/ZoneSelection" unique_id=1212911966]
+shape = SubResource("Selection")
+
+[node name="button_12" type="Marker3D" parent="Parties" unique_id=1482572480]
+process_priority = 85
+transform = Transform3D(0.13679163, 0, 0, 0, 0.14345163, 0, 0, 0, 0.07114961, 0.18197802, 0.14101905, 0.053232167)
+script = ExtResource("Part")
+bone_names = PackedStringArray()
+visual_path = NodePath("../../Modele")
+selection_label = "Sonner : Yamada"
+selection_area_path = NodePath("ZoneSelection")
+highlight_paths = Array[NodePath]([NodePath("../../Modele/interphone/Modele/Origine/model/interphone_root/interphone_base/interphone_button_011")])
+requires_open = false
+interaction_label = "INTERPHONE"
+
+[node name="ZoneSelection" type="Area3D" parent="Parties/button_12" unique_id=251694505]
+collision_layer = 524288
+collision_mask = 0
+input_ray_pickable = false
+monitoring = false
+monitorable = false
+
+[node name="Volume" type="CollisionShape3D" parent="Parties/button_12/ZoneSelection" unique_id=865348657]
+shape = SubResource("Selection")
+
+[node name="CameraFixe" type="Camera3D" parent="." unique_id=1490453978]
+transform = Transform3D(1, 0, 0, 0, 0.9900304, 0.14085358, 0, -0.14085358, 0.9900304, 0, 0.2018468, 0.598374)
+fov = 46.221306
+far = 55.0
+
+[editable path="Modele/interphone"]
+[editable path="Modele/interphone/Modele"]

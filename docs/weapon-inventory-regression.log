@@ -1,0 +1,485 @@
+WorkerThreadPool: 16 threads, 4 max low-priority.
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+Loading resource: res://default_bus_layout.tres remapped: res://default_bus_layout.tres
+Completed load for: 'res://default_bus_layout.tres' remapped 'res://default_bus_layout.tres' at thread -1
+CORE API HASH: 3769296884
+EDITOR API HASH: 3146738256
+Loading resource: res://tests/weapon_inventory.gd remapped: res://tests/weapon_inventory.gd
+Completed load for: 'res://tests/weapon_inventory.gd' remapped 'res://tests/weapon_inventory.gd' at thread -1
+SceneTreeFTI: traversal method DEFAULT
+Loading resource: res://scripts/psx_audio.gd remapped: res://scripts/psx_audio.gd
+Completed load for: 'res://scripts/psx_audio.gd' remapped 'res://scripts/psx_audio.gd' at thread -1
+Loading resource: res://scripts/world_events/world_events.gd remapped: res://scripts/world_events/world_events.gd
+Loading resource: res://assets/dialogue/default_style.tres remapped: res://assets/dialogue/default_style.tres
+Loading resource: res://scripts/dialogue/dialogue_style.gd remapped: res://scripts/dialogue/dialogue_style.gd
+Loading resource: res://assets/fonts/m5x7.ttf remapped: res://assets/fonts/m5x7.ttf
+Loading resource: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata remapped: res://.godot/imported/m5x7.ttf-47a8993373daecfb025c7957e719fc41.fontdata
+Completed load for: 'res://assets/fonts/m5x7.ttf' remapped 'res://assets/fonts/m5x7.ttf' at thread -1
+Loading resource: res://assets/fonts/pixel-operator-bold.ttf remapped: res://assets/fonts/pixel-operator-bold.ttf
+Loading resource: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata remapped: res://.godot/imported/pixel-operator-bold.ttf-3c9f5033d9be85fb4ef8c54c928ee035.fontdata
+Completed load for: 'res://assets/fonts/pixel-operator-bold.ttf' remapped 'res://assets/fonts/pixel-operator-bold.ttf' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_open.wav remapped: res://assets/audio/ui/dialogue_open.wav
+Loading resource: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res remapped: res://.godot/imported/dialogue_open.wav-2ef1d15cc8c92f6bee62c2bebb83c565.res
+Completed load for: 'res://assets/audio/ui/dialogue_open.wav' remapped 'res://assets/audio/ui/dialogue_open.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_close.wav remapped: res://assets/audio/ui/dialogue_close.wav
+Loading resource: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res remapped: res://.godot/imported/dialogue_close.wav-b80dc138391bea2de467dc6dc96fbc52.res
+Completed load for: 'res://assets/audio/ui/dialogue_close.wav' remapped 'res://assets/audio/ui/dialogue_close.wav' at thread -1
+Loading resource: res://assets/audio/ui/dialogue_tick.wav remapped: res://assets/audio/ui/dialogue_tick.wav
+Loading resource: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res remapped: res://.godot/imported/dialogue_tick.wav-23685add2fed0cd2cd027574cc53558c.res
+Completed load for: 'res://assets/audio/ui/dialogue_tick.wav' remapped 'res://assets/audio/ui/dialogue_tick.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/talkie_start.wav remapped: res://assets/audio/dialogs/talkie_start.wav
+Loading resource: res://.godot/imported/talkie_start.wav-7e85a4cab6b1c053f23208b3381cf5cf.res remapped: res://.godot/imported/talkie_start.wav-7e85a4cab6b1c053f23208b3381cf5cf.res
+Completed load for: 'res://assets/audio/dialogs/talkie_start.wav' remapped 'res://assets/audio/dialogs/talkie_start.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/talkie_end.wav remapped: res://assets/audio/dialogs/talkie_end.wav
+Loading resource: res://.godot/imported/talkie_end.wav-b5224c663541efbaa51e247afc4d87a1.res remapped: res://.godot/imported/talkie_end.wav-b5224c663541efbaa51e247afc4d87a1.res
+Completed load for: 'res://assets/audio/dialogs/talkie_end.wav' remapped 'res://assets/audio/dialogs/talkie_end.wav' at thread -1
+Completed load for: 'res://scripts/dialogue/dialogue_style.gd' remapped 'res://scripts/dialogue/dialogue_style.gd' at thread -1
+Completed load for: 'res://assets/dialogue/default_style.tres' remapped 'res://assets/dialogue/default_style.tres' at thread -1
+Completed load for: 'res://scripts/world_events/world_events.gd' remapped 'res://scripts/world_events/world_events.gd' at thread -1
+Loading resource: res://scripts/inventory/inventory_state.gd remapped: res://scripts/inventory/inventory_state.gd
+Loading resource: res://assets/inventory/catalogue.tres remapped: res://assets/inventory/catalogue.tres
+Loading resource: res://assets/collection/images/back.res remapped: res://assets/collection/images/back.res
+Completed load for: 'res://assets/collection/images/back.res' remapped 'res://assets/collection/images/back.res' at thread -1
+Loading resource: res://assets/collection/images/mystery.res remapped: res://assets/collection/images/mystery.res
+Completed load for: 'res://assets/collection/images/mystery.res' remapped 'res://assets/collection/images/mystery.res' at thread -1
+Loading resource: res://scripts/inventory/card_definition.gd remapped: res://scripts/inventory/card_definition.gd
+Completed load for: 'res://scripts/inventory/card_definition.gd' remapped 'res://scripts/inventory/card_definition.gd' at thread -1
+Loading resource: res://assets/collection/cards/cendre_01.tres remapped: res://assets/collection/cards/cendre_01.tres
+Loading resource: res://assets/collection/images/cendre_01.res remapped: res://assets/collection/images/cendre_01.res
+Completed load for: 'res://assets/collection/images/cendre_01.res' remapped 'res://assets/collection/images/cendre_01.res' at thread -1
+Completed load for: 'res://assets/collection/cards/cendre_01.tres' remapped 'res://assets/collection/cards/cendre_01.tres' at thread -1
+Loading resource: res://assets/collection/cards/bastion_07.tres remapped: res://assets/collection/cards/bastion_07.tres
+Loading resource: res://assets/collection/images/bastion_07.res remapped: res://assets/collection/images/bastion_07.res
+Completed load for: 'res://assets/collection/images/bastion_07.res' remapped 'res://assets/collection/images/bastion_07.res' at thread -1
+Completed load for: 'res://assets/collection/cards/bastion_07.tres' remapped 'res://assets/collection/cards/bastion_07.tres' at thread -1
+Loading resource: res://assets/collection/cards/veuve_12.tres remapped: res://assets/collection/cards/veuve_12.tres
+Loading resource: res://assets/collection/images/veuve_12.res remapped: res://assets/collection/images/veuve_12.res
+Completed load for: 'res://assets/collection/images/veuve_12.res' remapped 'res://assets/collection/images/veuve_12.res' at thread -1
+Completed load for: 'res://assets/collection/cards/veuve_12.tres' remapped 'res://assets/collection/cards/veuve_12.tres' at thread -1
+Loading resource: res://assets/collection/cards/maree_04.tres remapped: res://assets/collection/cards/maree_04.tres
+Loading resource: res://assets/collection/images/maree_04.res remapped: res://assets/collection/images/maree_04.res
+Completed load for: 'res://assets/collection/images/maree_04.res' remapped 'res://assets/collection/images/maree_04.res' at thread -1
+Completed load for: 'res://assets/collection/cards/maree_04.tres' remapped 'res://assets/collection/cards/maree_04.tres' at thread -1
+Loading resource: res://assets/collection/cards/silex_09.tres remapped: res://assets/collection/cards/silex_09.tres
+Loading resource: res://assets/collection/images/silex_09.res remapped: res://assets/collection/images/silex_09.res
+Completed load for: 'res://assets/collection/images/silex_09.res' remapped 'res://assets/collection/images/silex_09.res' at thread -1
+Completed load for: 'res://assets/collection/cards/silex_09.tres' remapped 'res://assets/collection/cards/silex_09.tres' at thread -1
+Loading resource: res://assets/collection/cards/alouette_03.tres remapped: res://assets/collection/cards/alouette_03.tres
+Loading resource: res://assets/collection/images/alouette_03.res remapped: res://assets/collection/images/alouette_03.res
+Completed load for: 'res://assets/collection/images/alouette_03.res' remapped 'res://assets/collection/images/alouette_03.res' at thread -1
+Completed load for: 'res://assets/collection/cards/alouette_03.tres' remapped 'res://assets/collection/cards/alouette_03.tres' at thread -1
+Loading resource: res://assets/collection/cards/suture_06.tres remapped: res://assets/collection/cards/suture_06.tres
+Loading resource: res://assets/collection/images/suture_06.res remapped: res://assets/collection/images/suture_06.res
+Completed load for: 'res://assets/collection/images/suture_06.res' remapped 'res://assets/collection/images/suture_06.res' at thread -1
+Completed load for: 'res://assets/collection/cards/suture_06.tres' remapped 'res://assets/collection/cards/suture_06.tres' at thread -1
+Loading resource: res://assets/collection/cards/ossian_00.tres remapped: res://assets/collection/cards/ossian_00.tres
+Loading resource: res://assets/collection/images/ossian_00.res remapped: res://assets/collection/images/ossian_00.res
+Completed load for: 'res://assets/collection/images/ossian_00.res' remapped 'res://assets/collection/images/ossian_00.res' at thread -1
+Completed load for: 'res://assets/collection/cards/ossian_00.tres' remapped 'res://assets/collection/cards/ossian_00.tres' at thread -1
+Loading resource: res://assets/collection/cards/rapiere_11.tres remapped: res://assets/collection/cards/rapiere_11.tres
+Loading resource: res://assets/collection/images/rapiere_11.res remapped: res://assets/collection/images/rapiere_11.res
+Completed load for: 'res://assets/collection/images/rapiere_11.res' remapped 'res://assets/collection/images/rapiere_11.res' at thread -1
+Completed load for: 'res://assets/collection/cards/rapiere_11.tres' remapped 'res://assets/collection/cards/rapiere_11.tres' at thread -1
+Loading resource: res://assets/collection/cards/regent_08.tres remapped: res://assets/collection/cards/regent_08.tres
+Loading resource: res://assets/collection/images/regent_08.res remapped: res://assets/collection/images/regent_08.res
+Completed load for: 'res://assets/collection/images/regent_08.res' remapped 'res://assets/collection/images/regent_08.res' at thread -1
+Completed load for: 'res://assets/collection/cards/regent_08.tres' remapped 'res://assets/collection/cards/regent_08.tres' at thread -1
+Loading resource: res://assets/collection/cards/selene_15.tres remapped: res://assets/collection/cards/selene_15.tres
+Loading resource: res://assets/collection/images/selene_15.res remapped: res://assets/collection/images/selene_15.res
+Completed load for: 'res://assets/collection/images/selene_15.res' remapped 'res://assets/collection/images/selene_15.res' at thread -1
+Completed load for: 'res://assets/collection/cards/selene_15.tres' remapped 'res://assets/collection/cards/selene_15.tres' at thread -1
+Loading resource: res://assets/collection/cards/fracas_02.tres remapped: res://assets/collection/cards/fracas_02.tres
+Loading resource: res://assets/collection/images/fracas_02.res remapped: res://assets/collection/images/fracas_02.res
+Completed load for: 'res://assets/collection/images/fracas_02.res' remapped 'res://assets/collection/images/fracas_02.res' at thread -1
+Completed load for: 'res://assets/collection/cards/fracas_02.tres' remapped 'res://assets/collection/cards/fracas_02.tres' at thread -1
+Loading resource: res://assets/collection/cards/erg_10.tres remapped: res://assets/collection/cards/erg_10.tres
+Loading resource: res://assets/collection/images/erg_10.res remapped: res://assets/collection/images/erg_10.res
+Completed load for: 'res://assets/collection/images/erg_10.res' remapped 'res://assets/collection/images/erg_10.res' at thread -1
+Completed load for: 'res://assets/collection/cards/erg_10.tres' remapped 'res://assets/collection/cards/erg_10.tres' at thread -1
+Loading resource: res://assets/collection/cards/obscur_13.tres remapped: res://assets/collection/cards/obscur_13.tres
+Loading resource: res://assets/collection/images/obscur_13.res remapped: res://assets/collection/images/obscur_13.res
+Completed load for: 'res://assets/collection/images/obscur_13.res' remapped 'res://assets/collection/images/obscur_13.res' at thread -1
+Completed load for: 'res://assets/collection/cards/obscur_13.tres' remapped 'res://assets/collection/cards/obscur_13.tres' at thread -1
+Loading resource: res://assets/collection/cards/vigile_14.tres remapped: res://assets/collection/cards/vigile_14.tres
+Loading resource: res://assets/collection/images/vigile_14.res remapped: res://assets/collection/images/vigile_14.res
+Completed load for: 'res://assets/collection/images/vigile_14.res' remapped 'res://assets/collection/images/vigile_14.res' at thread -1
+Completed load for: 'res://assets/collection/cards/vigile_14.tres' remapped 'res://assets/collection/cards/vigile_14.tres' at thread -1
+Loading resource: res://scripts/inventory/item_definition.gd remapped: res://scripts/inventory/item_definition.gd
+Completed load for: 'res://scripts/inventory/item_definition.gd' remapped 'res://scripts/inventory/item_definition.gd' at thread -1
+Loading resource: res://assets/inventory/items/medkit.tres remapped: res://assets/inventory/items/medkit.tres
+Completed load for: 'res://assets/inventory/items/medkit.tres' remapped 'res://assets/inventory/items/medkit.tres' at thread -1
+Loading resource: res://assets/inventory/items/ammo_magnum.tres remapped: res://assets/inventory/items/ammo_magnum.tres
+Completed load for: 'res://assets/inventory/items/ammo_magnum.tres' remapped 'res://assets/inventory/items/ammo_magnum.tres' at thread -1
+Loading resource: res://assets/inventory/items/desert_eagle.tres remapped: res://assets/inventory/items/desert_eagle.tres
+Loading resource: res://assets/weapons/desert_eagle.tres remapped: res://assets/weapons/desert_eagle.tres
+Loading resource: res://scenes/pistol.tscn remapped: res://scenes/pistol.tscn
+Loading resource: res://scripts/weapon.gd remapped: res://scripts/weapon.gd
+Loading resource: res://assets/audio/weapons/bullet_floor_01.wav remapped: res://assets/audio/weapons/bullet_floor_01.wav
+Loading resource: res://.godot/imported/bullet_floor_01.wav-50c1a5763ca9694e66f8624d3c5a877e.res remapped: res://.godot/imported/bullet_floor_01.wav-50c1a5763ca9694e66f8624d3c5a877e.res
+Completed load for: 'res://assets/audio/weapons/bullet_floor_01.wav' remapped 'res://assets/audio/weapons/bullet_floor_01.wav' at thread -1
+Loading resource: res://assets/audio/weapons/bullet_floor_02.wav remapped: res://assets/audio/weapons/bullet_floor_02.wav
+Loading resource: res://.godot/imported/bullet_floor_02.wav-ff10918d6cb0f27ada4040598b0574b4.res remapped: res://.godot/imported/bullet_floor_02.wav-ff10918d6cb0f27ada4040598b0574b4.res
+Completed load for: 'res://assets/audio/weapons/bullet_floor_02.wav' remapped 'res://assets/audio/weapons/bullet_floor_02.wav' at thread -1
+Loading resource: res://assets/audio/weapons/bullet_floor_03.wav remapped: res://assets/audio/weapons/bullet_floor_03.wav
+Loading resource: res://.godot/imported/bullet_floor_03.wav-ddf0c091e4c13c2c96f27cedbb3d34ac.res remapped: res://.godot/imported/bullet_floor_03.wav-ddf0c091e4c13c2c96f27cedbb3d34ac.res
+Completed load for: 'res://assets/audio/weapons/bullet_floor_03.wav' remapped 'res://assets/audio/weapons/bullet_floor_03.wav' at thread -1
+Loading resource: res://assets/audio/weapons/mag_floor.wav remapped: res://assets/audio/weapons/mag_floor.wav
+Loading resource: res://.godot/imported/mag_floor.wav-935e2ad317eb23b45a004c362fbcb626.res remapped: res://.godot/imported/mag_floor.wav-935e2ad317eb23b45a004c362fbcb626.res
+Completed load for: 'res://assets/audio/weapons/mag_floor.wav' remapped 'res://assets/audio/weapons/mag_floor.wav' at thread -1
+Completed load for: 'res://scripts/weapon.gd' remapped 'res://scripts/weapon.gd' at thread -1
+Loading resource: res://assets/weapons/pistol.glb remapped: res://assets/weapons/pistol.glb
+Loading resource: res://.godot/imported/pistol.glb-cdade8e03d4fb9502a959a6883e8c7c8.scn remapped: res://.godot/imported/pistol.glb-cdade8e03d4fb9502a959a6883e8c7c8.scn
+Loading resource: res://assets/weapons/pistol_Image_0.png remapped: res://assets/weapons/pistol_Image_0.png
+Loading resource: res://.godot/imported/pistol_Image_0.png-b246cab3511461baf1c657387c3caf5a.s3tc.ctex remapped: res://.godot/imported/pistol_Image_0.png-b246cab3511461baf1c657387c3caf5a.s3tc.ctex
+Completed load for: 'res://assets/weapons/pistol_Image_0.png' remapped 'res://assets/weapons/pistol_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/pistol.glb' remapped 'res://assets/weapons/pistol.glb' at thread -1
+Completed load for: 'res://scenes/pistol.tscn' remapped 'res://scenes/pistol.tscn' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/eagle_shoot.wav remapped: res://assets/audio/weapons/d_eagle/eagle_shoot.wav
+Loading resource: res://.godot/imported/eagle_shoot.wav-3467dd8a1d207a5d4779d5cf58e59853.res remapped: res://.godot/imported/eagle_shoot.wav-3467dd8a1d207a5d4779d5cf58e59853.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/eagle_shoot.wav' remapped 'res://assets/audio/weapons/d_eagle/eagle_shoot.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_reload.wav remapped: res://assets/audio/weapons/d_eagle/deagle_reload.wav
+Loading resource: res://.godot/imported/deagle_reload.wav-c1185748367462ebebb9e5171e94659f.res remapped: res://.godot/imported/deagle_reload.wav-c1185748367462ebebb9e5171e94659f.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_reload.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_reload.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_aim.wav remapped: res://assets/audio/weapons/d_eagle/deagle_aim.wav
+Loading resource: res://.godot/imported/deagle_aim.wav-2f046443e057531eeef071751446078d.res remapped: res://.godot/imported/deagle_aim.wav-2f046443e057531eeef071751446078d.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_aim.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_aim.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_dry_01.wav remapped: res://assets/audio/weapons/d_eagle/deagle_dry_01.wav
+Loading resource: res://.godot/imported/deagle_dry_01.wav-6f35bddf31af638109debd68f618bed3.res remapped: res://.godot/imported/deagle_dry_01.wav-6f35bddf31af638109debd68f618bed3.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_dry_01.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_dry_01.wav' at thread -1
+Loading resource: res://assets/audio/weapons/d_eagle/deagle_dry_02.wav remapped: res://assets/audio/weapons/d_eagle/deagle_dry_02.wav
+Loading resource: res://.godot/imported/deagle_dry_02.wav-6763d156d4178692f7f1e77087d111b4.res remapped: res://.godot/imported/deagle_dry_02.wav-6763d156d4178692f7f1e77087d111b4.res
+Completed load for: 'res://assets/audio/weapons/d_eagle/deagle_dry_02.wav' remapped 'res://assets/audio/weapons/d_eagle/deagle_dry_02.wav' at thread -1
+Completed load for: 'res://assets/weapons/desert_eagle.tres' remapped 'res://assets/weapons/desert_eagle.tres' at thread -1
+Completed load for: 'res://assets/inventory/items/desert_eagle.tres' remapped 'res://assets/inventory/items/desert_eagle.tres' at thread -1
+Loading resource: res://assets/inventory/items/fuse_16a.tres remapped: res://assets/inventory/items/fuse_16a.tres
+Completed load for: 'res://assets/inventory/items/fuse_16a.tres' remapped 'res://assets/inventory/items/fuse_16a.tres' at thread -1
+Loading resource: res://assets/inventory/items/key_archives.tres remapped: res://assets/inventory/items/key_archives.tres
+Completed load for: 'res://assets/inventory/items/key_archives.tres' remapped 'res://assets/inventory/items/key_archives.tres' at thread -1
+Loading resource: res://assets/inventory/items/access_maintenance.tres remapped: res://assets/inventory/items/access_maintenance.tres
+Completed load for: 'res://assets/inventory/items/access_maintenance.tres' remapped 'res://assets/inventory/items/access_maintenance.tres' at thread -1
+Loading resource: res://assets/inventory/items/valve_wheel.tres remapped: res://assets/inventory/items/valve_wheel.tres
+Completed load for: 'res://assets/inventory/items/valve_wheel.tres' remapped 'res://assets/inventory/items/valve_wheel.tres' at thread -1
+Loading resource: res://assets/inventory/items/lever_handle.tres remapped: res://assets/inventory/items/lever_handle.tres
+Completed load for: 'res://assets/inventory/items/lever_handle.tres' remapped 'res://assets/inventory/items/lever_handle.tres' at thread -1
+Loading resource: res://assets/inventory/items/maintenance_note.tres remapped: res://assets/inventory/items/maintenance_note.tres
+Completed load for: 'res://assets/inventory/items/maintenance_note.tres' remapped 'res://assets/inventory/items/maintenance_note.tres' at thread -1
+Loading resource: res://assets/inventory/items/metal_parts.tres remapped: res://assets/inventory/items/metal_parts.tres
+Completed load for: 'res://assets/inventory/items/metal_parts.tres' remapped 'res://assets/inventory/items/metal_parts.tres' at thread -1
+Loading resource: res://scripts/inventory/catalogue.gd remapped: res://scripts/inventory/catalogue.gd
+Completed load for: 'res://scripts/inventory/catalogue.gd' remapped 'res://scripts/inventory/catalogue.gd' at thread -1
+Completed load for: 'res://assets/inventory/catalogue.tres' remapped 'res://assets/inventory/catalogue.tres' at thread -1
+Completed load for: 'res://scripts/inventory/inventory_state.gd' remapped 'res://scripts/inventory/inventory_state.gd' at thread -1
+Loading resource: res://scripts/levels/level_runtime.gd remapped: res://scripts/levels/level_runtime.gd
+Completed load for: 'res://scripts/levels/level_runtime.gd' remapped 'res://scripts/levels/level_runtime.gd' at thread -1
+Loaded system CA certificates
+Loading resource: res://scenes/main.tscn remapped: res://scenes/main.tscn
+Loading resource: res://scenes/couloir_pieces.tscn remapped: res://scenes/couloir_pieces.tscn
+Loading resource: res://assets/environment/scene_kit_surfaces_page_02.png remapped: res://assets/environment/scene_kit_surfaces_page_02.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_02.png-244b61fc76fc2e1c2ee7eb98cfa3e5c7.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_02.png-244b61fc76fc2e1c2ee7eb98cfa3e5c7.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_02.png' remapped 'res://assets/environment/scene_kit_surfaces_page_02.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_03.png remapped: res://assets/environment/scene_kit_surfaces_page_03.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_03.png-5f1f12372a34ec9c9bb068a135990bef.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_03.png-5f1f12372a34ec9c9bb068a135990bef.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_03.png' remapped 'res://assets/environment/scene_kit_surfaces_page_03.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_04.png remapped: res://assets/environment/scene_kit_surfaces_page_04.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_04.png-ad274e68868660f92e81e0593dffc25a.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_04.png-ad274e68868660f92e81e0593dffc25a.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_04.png' remapped 'res://assets/environment/scene_kit_surfaces_page_04.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_05.png remapped: res://assets/environment/scene_kit_surfaces_page_05.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_05.png-34c2b0497294e009e0daced7d99044fc.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_05.png-34c2b0497294e009e0daced7d99044fc.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_05.png' remapped 'res://assets/environment/scene_kit_surfaces_page_05.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_08.png remapped: res://assets/environment/scene_kit_surfaces_page_08.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_08.png-f65ceefa67b5e09891c15e30569bff4f.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_08.png-f65ceefa67b5e09891c15e30569bff4f.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_08.png' remapped 'res://assets/environment/scene_kit_surfaces_page_08.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_00.png remapped: res://assets/environment/scene_kit_surfaces_page_00.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_00.png-3d75885fcec7328f6148d7c591d21328.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_00.png-3d75885fcec7328f6148d7c591d21328.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_00.png' remapped 'res://assets/environment/scene_kit_surfaces_page_00.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_01.png remapped: res://assets/environment/scene_kit_surfaces_page_01.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_01.png-0915fb47a20eb33c1bdf81b4b0379428.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_01.png-0915fb47a20eb33c1bdf81b4b0379428.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_01.png' remapped 'res://assets/environment/scene_kit_surfaces_page_01.png' at thread -1
+Loading resource: res://assets/environment/scene_kit_surfaces_page_07.png remapped: res://assets/environment/scene_kit_surfaces_page_07.png
+Loading resource: res://.godot/imported/scene_kit_surfaces_page_07.png-3066f4bff8116e5870d89b8af0fdfd9f.s3tc.ctex remapped: res://.godot/imported/scene_kit_surfaces_page_07.png-3066f4bff8116e5870d89b8af0fdfd9f.s3tc.ctex
+Completed load for: 'res://assets/environment/scene_kit_surfaces_page_07.png' remapped 'res://assets/environment/scene_kit_surfaces_page_07.png' at thread -1
+Loading resource: res://assets/environment/surfaces_panel.png remapped: res://assets/environment/surfaces_panel.png
+Loading resource: res://.godot/imported/surfaces_panel.png-0bca4df2e1793106504c6f78f284b0b2.s3tc.ctex remapped: res://.godot/imported/surfaces_panel.png-0bca4df2e1793106504c6f78f284b0b2.s3tc.ctex
+Completed load for: 'res://assets/environment/surfaces_panel.png' remapped 'res://assets/environment/surfaces_panel.png' at thread -1
+Loading resource: res://scripts/psx_light_3d.gd remapped: res://scripts/psx_light_3d.gd
+Completed load for: 'res://scripts/psx_light_3d.gd' remapped 'res://scripts/psx_light_3d.gd' at thread -1
+Loading resource: res://assets/audio/levels/couloir_pieces.tres remapped: res://assets/audio/levels/couloir_pieces.tres
+Loading resource: res://assets/audio/ambiance/room_tone.wav remapped: res://assets/audio/ambiance/room_tone.wav
+Loading resource: res://.godot/imported/room_tone.wav-95582501b5783ee3a19b8532c4aedd17.res remapped: res://.godot/imported/room_tone.wav-95582501b5783ee3a19b8532c4aedd17.res
+Completed load for: 'res://assets/audio/ambiance/room_tone.wav' remapped 'res://assets/audio/ambiance/room_tone.wav' at thread -1
+Loading resource: res://assets/audio/music/dark_music_01.wav remapped: res://assets/audio/music/dark_music_01.wav
+Loading resource: res://.godot/imported/dark_music_01.wav-f32919c44ff352f1d8eeb7ece316091d.res remapped: res://.godot/imported/dark_music_01.wav-f32919c44ff352f1d8eeb7ece316091d.res
+Completed load for: 'res://assets/audio/music/dark_music_01.wav' remapped 'res://assets/audio/music/dark_music_01.wav' at thread -1
+Completed load for: 'res://assets/audio/levels/couloir_pieces.tres' remapped 'res://assets/audio/levels/couloir_pieces.tres' at thread -1
+Loading resource: res://scenes/enemies/enemy.tscn remapped: res://scenes/enemies/enemy.tscn
+Loading resource: res://scripts/enemy.gd remapped: res://scripts/enemy.gd
+Completed load for: 'res://scripts/enemy.gd' remapped 'res://scripts/enemy.gd' at thread -1
+Completed load for: 'res://scenes/enemies/enemy.tscn' remapped 'res://scenes/enemies/enemy.tscn' at thread -1
+Loading resource: res://scripts/world_events/world_objective.gd remapped: res://scripts/world_events/world_objective.gd
+Completed load for: 'res://scripts/world_events/world_objective.gd' remapped 'res://scripts/world_events/world_objective.gd' at thread -1
+Completed load for: 'res://scenes/couloir_pieces.tscn' remapped 'res://scenes/couloir_pieces.tscn' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav
+Loading resource: res://.godot/imported/1_Chapter_2.wav-897f2f988e042f4ac5bb8ae073804dca.res remapped: res://.godot/imported/1_Chapter_2.wav-897f2f988e042f4ac5bb8ae073804dca.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/1_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav
+Loading resource: res://.godot/imported/2_Chapter_2.wav-caa6cb73aaabb6d31f0eed47eef28c87.res remapped: res://.godot/imported/2_Chapter_2.wav-caa6cb73aaabb6d31f0eed47eef28c87.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/2_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/generated/intercom/1_Chapter_2_23e158a8d9a1fb207345eaac.res remapped: res://assets/audio/generated/intercom/1_Chapter_2_23e158a8d9a1fb207345eaac.res
+Completed load for: 'res://assets/audio/generated/intercom/1_Chapter_2_23e158a8d9a1fb207345eaac.res' remapped 'res://assets/audio/generated/intercom/1_Chapter_2_23e158a8d9a1fb207345eaac.res' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav
+Loading resource: res://.godot/imported/3_Chapter_2.wav-6d6729779c06c4827038a9020b4874c1.res remapped: res://.godot/imported/3_Chapter_2.wav-6d6729779c06c4827038a9020b4874c1.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/3_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav
+Loading resource: res://.godot/imported/4_Chapter_2.wav-ac01ab656a613fcfb3dcaef757fc5c92.res remapped: res://.godot/imported/4_Chapter_2.wav-ac01ab656a613fcfb3dcaef757fc5c92.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/4_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/generated/intercom/2_Chapter_2_fd3163a4ec9db9e82b733e69.res remapped: res://assets/audio/generated/intercom/2_Chapter_2_fd3163a4ec9db9e82b733e69.res
+Completed load for: 'res://assets/audio/generated/intercom/2_Chapter_2_fd3163a4ec9db9e82b733e69.res' remapped 'res://assets/audio/generated/intercom/2_Chapter_2_fd3163a4ec9db9e82b733e69.res' at thread -1
+Loading resource: res://assets/audio/generated/intercom/3_Chapter_2_aeb5b5a6d42327215e08e4bf.res remapped: res://assets/audio/generated/intercom/3_Chapter_2_aeb5b5a6d42327215e08e4bf.res
+Completed load for: 'res://assets/audio/generated/intercom/3_Chapter_2_aeb5b5a6d42327215e08e4bf.res' remapped 'res://assets/audio/generated/intercom/3_Chapter_2_aeb5b5a6d42327215e08e4bf.res' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav
+Loading resource: res://.godot/imported/5_Chapter_2.wav-0de32080e77587b594b106fefe5e3fe4.res remapped: res://.godot/imported/5_Chapter_2.wav-0de32080e77587b594b106fefe5e3fe4.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/5_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav
+Loading resource: res://.godot/imported/6_Chapter_2.wav-ada8da03ca5517a076c36ebc5316b399.res remapped: res://.godot/imported/6_Chapter_2.wav-ada8da03ca5517a076c36ebc5316b399.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/6_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav remapped: res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav
+Loading resource: res://.godot/imported/7_Chapter_2.wav-14101d83cfa5100db9f467a0d0ff0eef.res remapped: res://.godot/imported/7_Chapter_2.wav-14101d83cfa5100db9f467a0d0ff0eef.res
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/7_Chapter_2.wav' at thread -1
+Loading resource: res://assets/audio/generated/intercom/5_Chapter_2_ce9e11d8e9f620a30a71dc6f.res remapped: res://assets/audio/generated/intercom/5_Chapter_2_ce9e11d8e9f620a30a71dc6f.res
+Completed load for: 'res://assets/audio/generated/intercom/5_Chapter_2_ce9e11d8e9f620a30a71dc6f.res' remapped 'res://assets/audio/generated/intercom/5_Chapter_2_ce9e11d8e9f620a30a71dc6f.res' at thread -1
+Loading resource: res://assets/audio/generated/intercom/6_Chapter_2_78a1ca50404658f85167a280.res remapped: res://assets/audio/generated/intercom/6_Chapter_2_78a1ca50404658f85167a280.res
+Completed load for: 'res://assets/audio/generated/intercom/6_Chapter_2_78a1ca50404658f85167a280.res' remapped 'res://assets/audio/generated/intercom/6_Chapter_2_78a1ca50404658f85167a280.res' at thread -1
+Completed load for: 'res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres' remapped 'res://assets/audio/dialogs/sequences/first_enemy_kill/first_enemy_kill.tres' at thread -1
+Loading resource: res://scenes/systemes_jeu.tscn remapped: res://scenes/systemes_jeu.tscn
+Loading resource: res://scripts/game.gd remapped: res://scripts/game.gd
+Loading resource: res://scenes/dialogue/dialogue_system.tscn remapped: res://scenes/dialogue/dialogue_system.tscn
+Completed load for: 'res://scenes/dialogue/dialogue_system.tscn' remapped 'res://scenes/dialogue/dialogue_system.tscn' at thread -1
+Loading resource: res://scenes/cinematics/cinematic_system.tscn remapped: res://scenes/cinematics/cinematic_system.tscn
+Loading resource: res://scripts/cinematics/cinematic_manager.gd remapped: res://scripts/cinematics/cinematic_manager.gd
+Completed load for: 'res://scripts/cinematics/cinematic_manager.gd' remapped 'res://scripts/cinematics/cinematic_manager.gd' at thread -1
+Completed load for: 'res://scenes/cinematics/cinematic_system.tscn' remapped 'res://scenes/cinematics/cinematic_system.tscn' at thread -1
+Loading resource: res://scenes/inventory/inventory_menu.tscn remapped: res://scenes/inventory/inventory_menu.tscn
+Loading resource: res://scripts/inventory/inventory_menu.gd remapped: res://scripts/inventory/inventory_menu.gd
+Completed load for: 'res://scripts/inventory/inventory_menu.gd' remapped 'res://scripts/inventory/inventory_menu.gd' at thread -1
+Completed load for: 'res://scenes/inventory/inventory_menu.tscn' remapped 'res://scenes/inventory/inventory_menu.tscn' at thread -1
+Loading resource: res://assets/audio/weapons/hit_marker.wav remapped: res://assets/audio/weapons/hit_marker.wav
+Loading resource: res://.godot/imported/hit_marker.wav-ec8e49620564e4af14f182b182edf0ff.res remapped: res://.godot/imported/hit_marker.wav-ec8e49620564e4af14f182b182edf0ff.res
+Completed load for: 'res://assets/audio/weapons/hit_marker.wav' remapped 'res://assets/audio/weapons/hit_marker.wav' at thread -1
+Loading resource: res://assets/character/face/face_top_atlas_512x256.png remapped: res://assets/character/face/face_top_atlas_512x256.png
+Loading resource: res://.godot/imported/face_top_atlas_512x256.png-d2bac8a3b15455c432142d1f51efa0a8.ctex remapped: res://.godot/imported/face_top_atlas_512x256.png-d2bac8a3b15455c432142d1f51efa0a8.ctex
+Completed load for: 'res://assets/character/face/face_top_atlas_512x256.png' remapped 'res://assets/character/face/face_top_atlas_512x256.png' at thread -1
+Loading resource: res://assets/character/face/face_bottom_atlas_512x256.png remapped: res://assets/character/face/face_bottom_atlas_512x256.png
+Loading resource: res://.godot/imported/face_bottom_atlas_512x256.png-287f7a51c83c965428cbf18b1d93c173.ctex remapped: res://.godot/imported/face_bottom_atlas_512x256.png-287f7a51c83c965428cbf18b1d93c173.ctex
+Completed load for: 'res://assets/character/face/face_bottom_atlas_512x256.png' remapped 'res://assets/character/face/face_bottom_atlas_512x256.png' at thread -1
+Completed load for: 'res://scripts/game.gd' remapped 'res://scripts/game.gd' at thread -1
+Loading resource: res://scenes/player.tscn remapped: res://scenes/player.tscn
+Loading resource: res://assets/character/cop_player.glb remapped: res://assets/character/cop_player.glb
+Loading resource: res://.godot/imported/cop_player.glb-54303c2e3b29f689153f46ec0a56b886.scn remapped: res://.godot/imported/cop_player.glb-54303c2e3b29f689153f46ec0a56b886.scn
+Loading resource: res://assets/character/cop_player_cop_corps_cheveux_psx_256.png remapped: res://assets/character/cop_player_cop_corps_cheveux_psx_256.png
+Loading resource: res://.godot/imported/cop_player_cop_corps_cheveux_psx_256.png-38365f4ee31adeba57578d9109433447.ctex remapped: res://.godot/imported/cop_player_cop_corps_cheveux_psx_256.png-38365f4ee31adeba57578d9109433447.ctex
+Completed load for: 'res://assets/character/cop_player_cop_corps_cheveux_psx_256.png' remapped 'res://assets/character/cop_player_cop_corps_cheveux_psx_256.png' at thread -1
+Loading resource: res://assets/character/cop_player_face_bottom_neutral.png remapped: res://assets/character/cop_player_face_bottom_neutral.png
+Loading resource: res://.godot/imported/cop_player_face_bottom_neutral.png-ae018fda1251918dfd616730411f4982.ctex remapped: res://.godot/imported/cop_player_face_bottom_neutral.png-ae018fda1251918dfd616730411f4982.ctex
+Completed load for: 'res://assets/character/cop_player_face_bottom_neutral.png' remapped 'res://assets/character/cop_player_face_bottom_neutral.png' at thread -1
+Loading resource: res://assets/character/cop_player_face_top_neutral.png remapped: res://assets/character/cop_player_face_top_neutral.png
+Loading resource: res://.godot/imported/cop_player_face_top_neutral.png-ba4cb475c9d02d068f7e2df62f414b16.ctex remapped: res://.godot/imported/cop_player_face_top_neutral.png-ba4cb475c9d02d068f7e2df62f414b16.ctex
+Completed load for: 'res://assets/character/cop_player_face_top_neutral.png' remapped 'res://assets/character/cop_player_face_top_neutral.png' at thread -1
+Completed load for: 'res://assets/character/cop_player.glb' remapped 'res://assets/character/cop_player.glb' at thread -1
+Loading resource: res://scripts/face_expressions.gd remapped: res://scripts/face_expressions.gd
+Completed load for: 'res://scripts/face_expressions.gd' remapped 'res://scripts/face_expressions.gd' at thread -1
+Loading resource: res://scripts/clothing/character_clothing.gd remapped: res://scripts/clothing/character_clothing.gd
+Loading resource: res://assets/character/clothing/winter_jacket.tres remapped: res://assets/character/clothing/winter_jacket.tres
+Loading resource: res://scripts/clothing/clothing_item.gd remapped: res://scripts/clothing/clothing_item.gd
+Completed load for: 'res://scripts/clothing/clothing_item.gd' remapped 'res://scripts/clothing/clothing_item.gd' at thread -1
+Loading resource: res://assets/character/clothing/winter_jacket.glb remapped: res://assets/character/clothing/winter_jacket.glb
+Loading resource: res://.godot/imported/winter_jacket.glb-9a5273f5d6f31e3c0ba9c1b58bcc24e1.scn remapped: res://.godot/imported/winter_jacket.glb-9a5273f5d6f31e3c0ba9c1b58bcc24e1.scn
+Loading resource: res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png remapped: res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png
+Loading resource: res://.godot/imported/winter_jacket_winter_jacket_gray_psx_256.png-c1cb9288ed053f3a3a407f6264c873b7.ctex remapped: res://.godot/imported/winter_jacket_winter_jacket_gray_psx_256.png-c1cb9288ed053f3a3a407f6264c873b7.ctex
+Completed load for: 'res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png' remapped 'res://assets/character/clothing/winter_jacket_winter_jacket_gray_psx_256.png' at thread -1
+Completed load for: 'res://assets/character/clothing/winter_jacket.glb' remapped 'res://assets/character/clothing/winter_jacket.glb' at thread -1
+Loading resource: res://assets/character/clothing/winter_jacket_camo.png remapped: res://assets/character/clothing/winter_jacket_camo.png
+Loading resource: res://.godot/imported/winter_jacket_camo.png-4cd76c2e15b46e44e5eedd508f18e30a.s3tc.ctex remapped: res://.godot/imported/winter_jacket_camo.png-4cd76c2e15b46e44e5eedd508f18e30a.s3tc.ctex
+Completed load for: 'res://assets/character/clothing/winter_jacket_camo.png' remapped 'res://assets/character/clothing/winter_jacket_camo.png' at thread -1
+Completed load for: 'res://assets/character/clothing/winter_jacket.tres' remapped 'res://assets/character/clothing/winter_jacket.tres' at thread -1
+Completed load for: 'res://scripts/clothing/character_clothing.gd' remapped 'res://scripts/clothing/character_clothing.gd' at thread -1
+Loading resource: res://scripts/character_appearance.gd remapped: res://scripts/character_appearance.gd
+Completed load for: 'res://scripts/character_appearance.gd' remapped 'res://scripts/character_appearance.gd' at thread -1
+Loading resource: res://assets/character/download (57).png remapped: res://assets/character/download (57).png
+Loading resource: res://.godot/imported/download (57).png-151d4bb13af891019d5b30bc2e7b89f1.s3tc.ctex remapped: res://.godot/imported/download (57).png-151d4bb13af891019d5b30bc2e7b89f1.s3tc.ctex
+Completed load for: 'res://assets/character/download (57).png' remapped 'res://assets/character/download (57).png' at thread -1
+Completed load for: 'res://scenes/player.tscn' remapped 'res://scenes/player.tscn' at thread -1
+Completed load for: 'res://scenes/systemes_jeu.tscn' remapped 'res://scenes/systemes_jeu.tscn' at thread -1
+Completed load for: 'res://scenes/main.tscn' remapped 'res://scenes/main.tscn' at thread -1
+Loading resource: res://assets/character/legacy_animations/walk.res remapped: res://assets/character/legacy_animations/walk.res
+Completed load for: 'res://assets/character/legacy_animations/walk.res' remapped 'res://assets/character/legacy_animations/walk.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/backward.res remapped: res://assets/character/legacy_animations/backward.res
+Completed load for: 'res://assets/character/legacy_animations/backward.res' remapped 'res://assets/character/legacy_animations/backward.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/strafe_left.res remapped: res://assets/character/legacy_animations/strafe_left.res
+Completed load for: 'res://assets/character/legacy_animations/strafe_left.res' remapped 'res://assets/character/legacy_animations/strafe_left.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/strafe_right.res remapped: res://assets/character/legacy_animations/strafe_right.res
+Completed load for: 'res://assets/character/legacy_animations/strafe_right.res' remapped 'res://assets/character/legacy_animations/strafe_right.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/run.res remapped: res://assets/character/legacy_animations/run.res
+Completed load for: 'res://assets/character/legacy_animations/run.res' remapped 'res://assets/character/legacy_animations/run.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/aim.res remapped: res://assets/character/legacy_animations/aim.res
+Completed load for: 'res://assets/character/legacy_animations/aim.res' remapped 'res://assets/character/legacy_animations/aim.res' at thread -1
+Loading resource: res://assets/character/legacy_animations/aim_walk.res remapped: res://assets/character/legacy_animations/aim_walk.res
+Completed load for: 'res://assets/character/legacy_animations/aim_walk.res' remapped 'res://assets/character/legacy_animations/aim_walk.res' at thread -1
+Loading resource: res://assets/character/animations/player_pistol_aim_pose.glb remapped: res://assets/character/animations/player_pistol_aim_pose.glb
+Loading resource: res://.godot/imported/player_pistol_aim_pose.glb-81a4892079043e82c71208b73d38f38d.scn remapped: res://.godot/imported/player_pistol_aim_pose.glb-81a4892079043e82c71208b73d38f38d.scn
+Loading resource: res://assets/character/animations/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f63fed4f50c15856e06c2f82e0577295.s3tc.ctex remapped: res://.godot/imported/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f63fed4f50c15856e06c2f82e0577295.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_pistol_aim_pose_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_pistol_aim_pose.glb' remapped 'res://assets/character/animations/player_pistol_aim_pose.glb' at thread -1
+Loading resource: res://assets/character/animations/player_pistol_fire.glb remapped: res://assets/character/animations/player_pistol_fire.glb
+Loading resource: res://.godot/imported/player_pistol_fire.glb-68b23d76af63d98b76a77497f2ea0fac.scn remapped: res://.godot/imported/player_pistol_fire.glb-68b23d76af63d98b76a77497f2ea0fac.scn
+Loading resource: res://assets/character/animations/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b90f2e2e6d9481d3e4c1a403b0d91eb9.s3tc.ctex remapped: res://.godot/imported/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b90f2e2e6d9481d3e4c1a403b0d91eb9.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_pistol_fire_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_pistol_fire.glb' remapped 'res://assets/character/animations/player_pistol_fire.glb' at thread -1
+Loading resource: res://assets/character/animations/player_pistol_idle.glb remapped: res://assets/character/animations/player_pistol_idle.glb
+Loading resource: res://.godot/imported/player_pistol_idle.glb-7e8423ea59cb4ef9656c5ff1f7c83174.scn remapped: res://.godot/imported/player_pistol_idle.glb-7e8423ea59cb4ef9656c5ff1f7c83174.scn
+Loading resource: res://assets/character/animations/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-3d0d7baa39a06fea1bd062b78504a1ce.s3tc.ctex remapped: res://.godot/imported/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-3d0d7baa39a06fea1bd062b78504a1ce.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_pistol_idle_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_pistol_idle.glb' remapped 'res://assets/character/animations/player_pistol_idle.glb' at thread -1
+Loading resource: res://assets/character/animations/player_pistol_reload.glb remapped: res://assets/character/animations/player_pistol_reload.glb
+Loading resource: res://.godot/imported/player_pistol_reload.glb-193bb60cfadc16fb9006a9c5db7ab94a.scn remapped: res://.godot/imported/player_pistol_reload.glb-193bb60cfadc16fb9006a9c5db7ab94a.scn
+Loading resource: res://assets/character/animations/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-ea55972f7bd60fd3543a659bc2ae8f37.s3tc.ctex remapped: res://.godot/imported/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-ea55972f7bd60fd3543a659bc2ae8f37.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_pistol_reload_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_pistol_reload.glb' remapped 'res://assets/character/animations/player_pistol_reload.glb' at thread -1
+Loading resource: res://assets/character/animations/player_run_pistol.glb remapped: res://assets/character/animations/player_run_pistol.glb
+Loading resource: res://.godot/imported/player_run_pistol.glb-a8c205dc8486d72b58f44de3a620d600.scn remapped: res://.godot/imported/player_run_pistol.glb-a8c205dc8486d72b58f44de3a620d600.scn
+Loading resource: res://assets/character/animations/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-e7492c126d8aa8a3da7d90777d32f106.s3tc.ctex remapped: res://.godot/imported/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-e7492c126d8aa8a3da7d90777d32f106.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_run_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_run_pistol.glb' remapped 'res://assets/character/animations/player_run_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_turn_in_place_left.glb remapped: res://assets/character/animations/player_turn_in_place_left.glb
+Loading resource: res://.godot/imported/player_turn_in_place_left.glb-60e64203ff805a1d28cd3f1990185e7e.scn remapped: res://.godot/imported/player_turn_in_place_left.glb-60e64203ff805a1d28cd3f1990185e7e.scn
+Loading resource: res://assets/character/animations/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-a34af37984d53f4761b25938c122865c.s3tc.ctex remapped: res://.godot/imported/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-a34af37984d53f4761b25938c122865c.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_turn_in_place_left_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_turn_in_place_left.glb' remapped 'res://assets/character/animations/player_turn_in_place_left.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_backward_left_pistol.glb remapped: res://assets/character/animations/player_walk_backward_left_pistol.glb
+Loading resource: res://.godot/imported/player_walk_backward_left_pistol.glb-8dc2f952618a87793260ced0d1a7eb4e.scn remapped: res://.godot/imported/player_walk_backward_left_pistol.glb-8dc2f952618a87793260ced0d1a7eb4e.scn
+Loading resource: res://assets/character/animations/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f3d2af7b17be13f632f4fe040993f202.s3tc.ctex remapped: res://.godot/imported/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f3d2af7b17be13f632f4fe040993f202.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_backward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_backward_left_pistol.glb' remapped 'res://assets/character/animations/player_walk_backward_left_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_backward_pistol.glb remapped: res://assets/character/animations/player_walk_backward_pistol.glb
+Loading resource: res://.godot/imported/player_walk_backward_pistol.glb-9ce162b313f207a6c2cc2536bb9b50ac.scn remapped: res://.godot/imported/player_walk_backward_pistol.glb-9ce162b313f207a6c2cc2536bb9b50ac.scn
+Loading resource: res://assets/character/animations/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f575b8d1e4009c7e4a9fc56bd8fb7b48.s3tc.ctex remapped: res://.godot/imported/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-f575b8d1e4009c7e4a9fc56bd8fb7b48.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_backward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_backward_pistol.glb' remapped 'res://assets/character/animations/player_walk_backward_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_backward_right_pistol.glb remapped: res://assets/character/animations/player_walk_backward_right_pistol.glb
+Loading resource: res://.godot/imported/player_walk_backward_right_pistol.glb-90ad183a7c5c0063a5f41a603093d08a.scn remapped: res://.godot/imported/player_walk_backward_right_pistol.glb-90ad183a7c5c0063a5f41a603093d08a.scn
+Loading resource: res://assets/character/animations/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-0c6d45bd5fa0a96672a4dbfbb7350291.s3tc.ctex remapped: res://.godot/imported/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-0c6d45bd5fa0a96672a4dbfbb7350291.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_backward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_backward_right_pistol.glb' remapped 'res://assets/character/animations/player_walk_backward_right_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_forward_left_pistol.glb remapped: res://assets/character/animations/player_walk_forward_left_pistol.glb
+Loading resource: res://.godot/imported/player_walk_forward_left_pistol.glb-d047ffa13b3379a42cbdad2e16377b58.scn remapped: res://.godot/imported/player_walk_forward_left_pistol.glb-d047ffa13b3379a42cbdad2e16377b58.scn
+Loading resource: res://assets/character/animations/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-889761156b50ebde9f6c469915f9dcbc.s3tc.ctex remapped: res://.godot/imported/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-889761156b50ebde9f6c469915f9dcbc.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_forward_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_forward_left_pistol.glb' remapped 'res://assets/character/animations/player_walk_forward_left_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_forward_pistol.glb remapped: res://assets/character/animations/player_walk_forward_pistol.glb
+Loading resource: res://.godot/imported/player_walk_forward_pistol.glb-769124b2d0df2b40aecaa426fffd3347.scn remapped: res://.godot/imported/player_walk_forward_pistol.glb-769124b2d0df2b40aecaa426fffd3347.scn
+Loading resource: res://assets/character/animations/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-a27cc73115ce3a3cdb2e53e985acaf86.s3tc.ctex remapped: res://.godot/imported/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-a27cc73115ce3a3cdb2e53e985acaf86.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_forward_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_forward_pistol.glb' remapped 'res://assets/character/animations/player_walk_forward_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_forward_right_pistol.glb remapped: res://assets/character/animations/player_walk_forward_right_pistol.glb
+Loading resource: res://.godot/imported/player_walk_forward_right_pistol.glb-d76619a3b6f19da95ec1b6f7fbe6eeb9.scn remapped: res://.godot/imported/player_walk_forward_right_pistol.glb-d76619a3b6f19da95ec1b6f7fbe6eeb9.scn
+Loading resource: res://assets/character/animations/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-8005b752f8b442d70544164e33af8555.s3tc.ctex remapped: res://.godot/imported/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-8005b752f8b442d70544164e33af8555.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_forward_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_forward_right_pistol.glb' remapped 'res://assets/character/animations/player_walk_forward_right_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_strafe_left_pistol.glb remapped: res://assets/character/animations/player_walk_strafe_left_pistol.glb
+Loading resource: res://.godot/imported/player_walk_strafe_left_pistol.glb-3a23402f6d36ee21d90b277e21b7ee06.scn remapped: res://.godot/imported/player_walk_strafe_left_pistol.glb-3a23402f6d36ee21d90b277e21b7ee06.scn
+Loading resource: res://assets/character/animations/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b881803a1db3847fe7aecccd60d5a325.s3tc.ctex remapped: res://.godot/imported/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-b881803a1db3847fe7aecccd60d5a325.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_strafe_left_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_strafe_left_pistol.glb' remapped 'res://assets/character/animations/player_walk_strafe_left_pistol.glb' at thread -1
+Loading resource: res://assets/character/animations/player_walk_strafe_right_pistol.glb remapped: res://assets/character/animations/player_walk_strafe_right_pistol.glb
+Loading resource: res://.godot/imported/player_walk_strafe_right_pistol.glb-34ac16fa737a5bf90c99f7a33b5625ec.scn remapped: res://.godot/imported/player_walk_strafe_right_pistol.glb-34ac16fa737a5bf90c99f7a33b5625ec.scn
+Loading resource: res://assets/character/animations/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png remapped: res://assets/character/animations/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png
+Loading resource: res://.godot/imported/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-afd4c5ed626aff1dfb6a4b99386a677b.s3tc.ctex remapped: res://.godot/imported/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png-afd4c5ed626aff1dfb6a4b99386a677b.s3tc.ctex
+Completed load for: 'res://assets/character/animations/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' remapped 'res://assets/character/animations/player_walk_strafe_right_pistol_BEA643A1-2937-412C-B7AD-8E3BAF349A39.png' at thread -1
+Completed load for: 'res://assets/character/animations/player_walk_strafe_right_pistol.glb' remapped 'res://assets/character/animations/player_walk_strafe_right_pistol.glb' at thread -1
+Loading resource: res://assets/audio/step.wav remapped: res://assets/audio/step.wav
+Loading resource: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.res remapped: res://.godot/imported/step.wav-7c1afa4d3561f9fd67ecf320728c68cf.res
+Completed load for: 'res://assets/audio/step.wav' remapped 'res://assets/audio/step.wav' at thread -1
+Loading resource: res://assets/audio/hurt.wav remapped: res://assets/audio/hurt.wav
+Loading resource: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.res remapped: res://.godot/imported/hurt.wav-e638edfaf88190ba3ffee0adc26b7375.res
+Completed load for: 'res://assets/audio/hurt.wav' remapped 'res://assets/audio/hurt.wav' at thread -1
+Loading resource: res://assets/audio/pickup.wav remapped: res://assets/audio/pickup.wav
+Loading resource: res://.godot/imported/pickup.wav-005c0482069dd16ebcd4cedd7f327134.res remapped: res://.godot/imported/pickup.wav-005c0482069dd16ebcd4cedd7f327134.res
+Completed load for: 'res://assets/audio/pickup.wav' remapped 'res://assets/audio/pickup.wav' at thread -1
+Loading resource: res://assets/weapons/animations/pistol_fire.glb remapped: res://assets/weapons/animations/pistol_fire.glb
+Loading resource: res://.godot/imported/pistol_fire.glb-121b41b4c5f47025a4c0250742fe6732.scn remapped: res://.godot/imported/pistol_fire.glb-121b41b4c5f47025a4c0250742fe6732.scn
+Loading resource: res://assets/weapons/animations/pistol_fire_Image_0.png remapped: res://assets/weapons/animations/pistol_fire_Image_0.png
+Loading resource: res://.godot/imported/pistol_fire_Image_0.png-f1eb4863595b298356a161084ccc4920.s3tc.ctex remapped: res://.godot/imported/pistol_fire_Image_0.png-f1eb4863595b298356a161084ccc4920.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_fire_Image_0.png' remapped 'res://assets/weapons/animations/pistol_fire_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_fire.glb' remapped 'res://assets/weapons/animations/pistol_fire.glb' at thread -1
+Loading resource: res://assets/weapons/animations/pistol_idle.glb remapped: res://assets/weapons/animations/pistol_idle.glb
+Loading resource: res://.godot/imported/pistol_idle.glb-eec49b49fcde24c3b2eb78da07cd366a.scn remapped: res://.godot/imported/pistol_idle.glb-eec49b49fcde24c3b2eb78da07cd366a.scn
+Loading resource: res://assets/weapons/animations/pistol_idle_Image_0.png remapped: res://assets/weapons/animations/pistol_idle_Image_0.png
+Loading resource: res://.godot/imported/pistol_idle_Image_0.png-a3a6a4c6d766e90452f8ba974d230017.s3tc.ctex remapped: res://.godot/imported/pistol_idle_Image_0.png-a3a6a4c6d766e90452f8ba974d230017.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_idle_Image_0.png' remapped 'res://assets/weapons/animations/pistol_idle_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_idle.glb' remapped 'res://assets/weapons/animations/pistol_idle.glb' at thread -1
+Loading resource: res://assets/weapons/animations/pistol_reload.glb remapped: res://assets/weapons/animations/pistol_reload.glb
+Loading resource: res://.godot/imported/pistol_reload.glb-80fca6a1a94322aee7849e92095ba5c8.scn remapped: res://.godot/imported/pistol_reload.glb-80fca6a1a94322aee7849e92095ba5c8.scn
+Loading resource: res://assets/weapons/animations/pistol_reload_Image_0.png remapped: res://assets/weapons/animations/pistol_reload_Image_0.png
+Loading resource: res://.godot/imported/pistol_reload_Image_0.png-9b56d3a43ef7963e7218e2104a058b85.s3tc.ctex remapped: res://.godot/imported/pistol_reload_Image_0.png-9b56d3a43ef7963e7218e2104a058b85.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_reload_Image_0.png' remapped 'res://assets/weapons/animations/pistol_reload_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_reload.glb' remapped 'res://assets/weapons/animations/pistol_reload.glb' at thread -1
+Loading resource: res://assets/effects/muzzle_flash_atlas.png remapped: res://assets/effects/muzzle_flash_atlas.png
+Loading resource: res://.godot/imported/muzzle_flash_atlas.png-d45c4049c8dcb2c088d1fd1be6168755.ctex remapped: res://.godot/imported/muzzle_flash_atlas.png-d45c4049c8dcb2c088d1fd1be6168755.ctex
+Completed load for: 'res://assets/effects/muzzle_flash_atlas.png' remapped 'res://assets/effects/muzzle_flash_atlas.png' at thread -1
+Loading resource: res://assets/fonts/mgs1-codec-original.ttf remapped: res://assets/fonts/mgs1-codec-original.ttf
+Loading resource: res://.godot/imported/mgs1-codec-original.ttf-0d08a86456523821327c97ca0c85ff2b.fontdata remapped: res://.godot/imported/mgs1-codec-original.ttf-0d08a86456523821327c97ca0c85ff2b.fontdata
+Completed load for: 'res://assets/fonts/mgs1-codec-original.ttf' remapped 'res://assets/fonts/mgs1-codec-original.ttf' at thread -1
+Loading resource: res://assets/fonts/mgs1-ammo-hud.ttf remapped: res://assets/fonts/mgs1-ammo-hud.ttf
+Loading resource: res://.godot/imported/mgs1-ammo-hud.ttf-7cbc5316282bbd9f3a1400de04281e51.fontdata remapped: res://.godot/imported/mgs1-ammo-hud.ttf-7cbc5316282bbd9f3a1400de04281e51.fontdata
+Completed load for: 'res://assets/fonts/mgs1-ammo-hud.ttf' remapped 'res://assets/fonts/mgs1-ammo-hud.ttf' at thread -1
+Loading resource: res://shaders/psx_raster.gdshader remapped: res://shaders/psx_raster.gdshader
+Completed load for: 'res://shaders/psx_raster.gdshader' remapped 'res://shaders/psx_raster.gdshader' at thread -1
+bcdec: Decompression of a 256x256 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 256x256 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 256x256 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 128x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+bcdec: Decompression of a 64x256 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 256x64 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 256x64 DXT1 RGB8 image with 8 mipmaps took 0 ms.
+bcdec: Decompression of a 128x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+bcdec: Decompression of a 128x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+bcdec: Decompression of a 128x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+bcdec: Decompression of a 64x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+bcdec: Decompression of a 64x128 DXT1 RGB8 image with 7 mipmaps took 0 ms.
+Loading resource: res://assets/weapons/animations/pistol_fire.glb remapped: res://assets/weapons/animations/pistol_fire.glb
+Loading resource: res://.godot/imported/pistol_fire.glb-121b41b4c5f47025a4c0250742fe6732.scn remapped: res://.godot/imported/pistol_fire.glb-121b41b4c5f47025a4c0250742fe6732.scn
+Loading resource: res://assets/weapons/animations/pistol_fire_Image_0.png remapped: res://assets/weapons/animations/pistol_fire_Image_0.png
+Loading resource: res://.godot/imported/pistol_fire_Image_0.png-f1eb4863595b298356a161084ccc4920.s3tc.ctex remapped: res://.godot/imported/pistol_fire_Image_0.png-f1eb4863595b298356a161084ccc4920.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_fire_Image_0.png' remapped 'res://assets/weapons/animations/pistol_fire_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_fire.glb' remapped 'res://assets/weapons/animations/pistol_fire.glb' at thread -1
+Loading resource: res://assets/weapons/animations/pistol_idle.glb remapped: res://assets/weapons/animations/pistol_idle.glb
+Loading resource: res://.godot/imported/pistol_idle.glb-eec49b49fcde24c3b2eb78da07cd366a.scn remapped: res://.godot/imported/pistol_idle.glb-eec49b49fcde24c3b2eb78da07cd366a.scn
+Loading resource: res://assets/weapons/animations/pistol_idle_Image_0.png remapped: res://assets/weapons/animations/pistol_idle_Image_0.png
+Loading resource: res://.godot/imported/pistol_idle_Image_0.png-a3a6a4c6d766e90452f8ba974d230017.s3tc.ctex remapped: res://.godot/imported/pistol_idle_Image_0.png-a3a6a4c6d766e90452f8ba974d230017.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_idle_Image_0.png' remapped 'res://assets/weapons/animations/pistol_idle_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_idle.glb' remapped 'res://assets/weapons/animations/pistol_idle.glb' at thread -1
+Loading resource: res://assets/weapons/animations/pistol_reload.glb remapped: res://assets/weapons/animations/pistol_reload.glb
+Loading resource: res://.godot/imported/pistol_reload.glb-80fca6a1a94322aee7849e92095ba5c8.scn remapped: res://.godot/imported/pistol_reload.glb-80fca6a1a94322aee7849e92095ba5c8.scn
+Loading resource: res://assets/weapons/animations/pistol_reload_Image_0.png remapped: res://assets/weapons/animations/pistol_reload_Image_0.png
+Loading resource: res://.godot/imported/pistol_reload_Image_0.png-9b56d3a43ef7963e7218e2104a058b85.s3tc.ctex remapped: res://.godot/imported/pistol_reload_Image_0.png-9b56d3a43ef7963e7218e2104a058b85.s3tc.ctex
+Completed load for: 'res://assets/weapons/animations/pistol_reload_Image_0.png' remapped 'res://assets/weapons/animations/pistol_reload_Image_0.png' at thread -1
+Completed load for: 'res://assets/weapons/animations/pistol_reload.glb' remapped 'res://assets/weapons/animations/pistol_reload.glb' at thread -1
+WEAPON_INVENTORY_OK: individual magazines, typed reserves, cadence, semi-auto data, reload cancellation, equip delay, pickups, sound routing, cached visuals and death
